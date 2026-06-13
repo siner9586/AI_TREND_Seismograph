@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { listHotspots, listReports } from "../lib/data";
+const reports = listReports().sort((a: any, b: any) => String(b.report_date).localeCompare(String(a.report_date)));
+const hotspots = listHotspots().sort((a: any, b: any) => String(b.snapshot_hour).localeCompare(String(a.snapshot_hour)));
+---
+<BaseLayout title="归档 - AI 趋势地震仪">
+  <section class="page-title">
+    <h1>归档</h1>
+    <p class="subtitle">按日期查看历史日报与小时热点快照。</p>
+  </section>
+  <h2>每日报告</h2>
+  <table class="table">
+    <thead><tr><th>日期</th><th>最高震级</th><th>扫描规模</th><th>状态</th></tr></thead>
+    <tbody>
+      {reports.map((report: any) => (
+        <tr>
+          <td><a href={`/reports/${report.report_date}`}>{report.report_date}</a></td>
+          <td>M{report.max_magnitude || 0}</td>
+          <td>{report.total_items_scanned || 0}</td>
+          <td>{report.status || "generated"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  {!reports.length && <div class="empty">暂无日报归档。</div>}
+
+  <h2>小时热点</h2>
+  <table class="table">
+    <thead><tr><th>小时</th><th>最高震级</th><th>信号数</th><th>partial</th></tr></thead>
+    <tbody>
+      {hotspots.slice(0, 120).map((hotspot: any) => (
+        <tr>
+          <td>{hotspot.snapshot_hour}</td>
+          <td>M{hotspot.max_magnitude || 0}</td>
+          <td>{hotspot.total_items_scanned || 0}</td>
+          <td>{String(hotspot.partial || false)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  {!hotspots.length && <div class="empty">暂无小时归档。</div>}
+</BaseLayout>

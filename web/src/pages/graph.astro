@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CooccurrenceGraphLite from "../components/CooccurrenceGraphLite.astro";
+import { readJson } from "../lib/data";
+
+const graph = readJson<any>("data/graphs/cooccurrence/latest.json", { nodes: [], edges: [] });
+---
+<BaseLayout title="关键词共现网络 - AI 趋势地震仪">
+  <section class="page-title">
+    <h1>关键词共现网络</h1>
+    <p class="subtitle">基于 paper title、abstract、GitHub description、repo topics、method 和 dataset mentions 构建的轻量关系图。</p>
+  </section>
+  <CooccurrenceGraphLite graph={graph} />
+  <h2>高频节点</h2>
+  <table class="table">
+    <thead><tr><th>关键词</th><th>类型</th><th>次数</th><th>权重</th></tr></thead>
+    <tbody>{(graph.nodes || []).slice(0, 40).map((node: any) => <tr><td>{node.label}</td><td>{node.type}</td><td>{node.count}</td><td>{node.weight}</td></tr>)}</tbody>
+  </table>
+</BaseLayout>

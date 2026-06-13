@@ -1,0 +1,23 @@
+{
+  "name": "ai-trend-seismograph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "web",
+    "workers/trend-cron-worker"
+  ],
+  "scripts": {
+    "build": "npm --prefix web run build",
+    "dev": "npm --prefix web run dev",
+    "check": "npm --prefix web run check && tsc -p functions/tsconfig.json && npm --prefix workers/trend-cron-worker run check",
+    "copy-data": "node scripts/copy-data.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250612.0",
+    "typescript": "^5.6.3"
+  }
+}

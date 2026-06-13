@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import EvidenceChain from "../../components/EvidenceChain.astro";
+import Sparkline from "../../components/Sparkline.astro";
+import { latestBundle, slugTopic, taxonomy, topicBySlug } from "../../lib/data";
+
+export function getStaticPaths() {
+  return taxonomy().map((topic: any) => ({ params: { topic: slugTopic(topic.canonical_name) }, props: { topicConfig: topic } }));
+}
+
+const astroAny = Astro as any;
+const topicConfig = astroAny.props.topicConfig as any;
+const topicName = topicConfig?.canonical_name || topicBySlug(astroAny.params.topic || "");
+const { report } = latestBundle();
+const signal = (report?.top_anomalies || []).find((item: any) => item.topic === topicName);
+const charts = report?.trend_charts?.[topicName] || {};
+---
+<BaseLayout title={`${topicName} - AI 趋势地震仪`}>
+  <section class="page-title">
+    <h1>{topicName}</h1>
+    <p class="subtitle">{topicConfig?.description || "暂无 topic 描述。"}</p>
+  </section>
+
+  <section class="grid cols-4">
+    <div class="panel metric"><div class="value">M{signal?.magnitude || 0}</div><div class="label">最新震级</div></div>
+    <div class="panel metric"><div class="value">{signal?.metrics?.paper_count || 0}</div><div class="label">论文信号</div></div>
+    <div class="panel metric"><div class="value">{signal?.metrics?.repo_count || 0}</div><div class="label">Repo 信号</div></div>
+    <div class="panel metric"><div class="value">{signal?.confidence || 0}</div><div class="label">置信度</div></div>
+  </section>
+
+  <h2>历史震级变化</h2>
+  <section class="grid cols-3">
+    <div class="panel"><h3>30 天</h3><Sparkline points={charts["30d"] || signal?.trend_30d || []} /></div>
+    <div class="panel"><h3>90 天</h3><Sparkline points={charts["90d"] || signal?.trend_90d || []} /></div>
+    <div class="panel"><h3>180 天</h3><Sparkline points={charts["180d"] || signal?.trend_180d || []} /></div>
+  </section>
+
+  <h2>证据链</h2>
+  <section class="panel">
+    <p>{signal?.summary || "当前最新日报没有该方向的异常信号。"}</p>
+    <EvidenceChain evidence={signal?.evidence || []} />
+  </section>
+
+  <h2>高频方法与数据集</h2>
+  <section class="grid cols-2">
+    <div class="panel">
+      <h3>方法</h3>
+      <div class="row">{(signal?.related_methods || []).map((item: string) => <span class="tag">{item}</span>)}</div>
+      {!signal?.related_methods?.length && <p class="muted">暂无方法提及。</p>}
+    </div>
+    <div class="panel">
+      <h3>数据集 / Benchmark</h3>
+      <div class="row">{(signal?.related_datasets || []).map((item: string) => <span class="tag">{item}</span>)}</div>
+      {!signal?.related_datasets?.length && <p class="muted">暂无数据集提及。</p>}
+    </div>
+  </section>
+
+  <h2>代表论文与 Repo</h2>
+  <section class="grid cols-2">
+    <div class="panel"><h3>代表论文</h3><EvidenceChain evidence={signal?.representative_papers || []} /></div>
+    <div class="panel">
+      <h3>代表 Repo</h3>
+      {(signal?.related_repos || []).map((repo: any) => <p><a href={repo.source_url} target="_blank" rel="noopener noreferrer">{repo.title}</a></p>)}
+      {!signal?.related_repos?.length && <p class="muted">暂无代表 repo。</p>}
+    </div>
+  </section>
+
+  <h2>相关机构</h2>
+  <section class="panel">
+    <div class="row">{(signal?.related_institutions || topicConfig?.related_institutions || []).map((item: string) => <span class="tag">{item}</span>)}</div>
+  </section>
+</BaseLayout>

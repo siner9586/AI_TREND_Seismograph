@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HotspotTimeline from "../components/HotspotTimeline.astro";
+import TrendCard from "../components/TrendCard.astro";
+import WatchlistHitCard from "../components/WatchlistHitCard.astro";
+import { latestBundle, listHotspots } from "../lib/data";
+
+const { hourly } = latestBundle();
+const snapshots = listHotspots();
+---
+<BaseLayout title="小时热点 - AI 趋势地震仪">
+  <section class="page-title">
+    <h1>每小时热点脉冲</h1>
+    <p class="subtitle">展示最近 24 小时热点时间线、每小时最高震级、推送建议与 Watchlist 命中。</p>
+  </section>
+  <section class="grid cols-4">
+    <div class="panel metric"><div class="value">{hourly?.snapshot_hour || "未刷新"}</div><div class="label">最新小时</div></div>
+    <div class="panel metric"><div class="value">{hourly?.total_items_scanned ?? 0}</div><div class="label">新增信号数</div></div>
+    <div class="panel metric"><div class="value">M{Number(hourly?.max_magnitude || 0).toFixed(1)}</div><div class="label">最高震级</div></div>
+    <div class="panel metric"><div class="value">{hourly?.partial ? "partial" : "complete"}</div><div class="label">刷新状态</div></div>
+  </section>
+
+  <h2>最新热点</h2>
+  <section class="grid cols-2">
+    {(hourly?.top_hotspots || []).slice(0, 6).map((trend: any) => <TrendCard trend={trend} />)}
+    {!hourly?.top_hotspots?.length && <div class="empty">暂无最新热点。</div>}
+  </section>
+
+  <h2>时间线</h2>
+  <HotspotTimeline snapshots={snapshots} />
+
+  <h2>Watchlist 命中</h2>
+  <section class="grid cols-2">
+    {(hourly?.watchlist_hits || []).map((hit: any) => <WatchlistHitCard hit={hit} />)}
+    {!hourly?.watchlist_hits?.length && <div class="empty">当前小时没有 Watchlist 命中。</div>}
+  </section>
+</BaseLayout>

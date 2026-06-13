@@ -1,0 +1,13 @@
+---
+const { cluster } = Astro.props;
+---
+<article class="card stack">
+  <div class="between">
+    <div>
+      <h3>{cluster.institution_name}</h3>
+      <div class="muted">{cluster.topic}</div>
+    </div>
+    <span class="tag">集中度 {cluster.concentration_score}</span>
+  </div>
+  <div class="muted">论文 {cluster.matched_papers || 0} · repo {cluster.matched_repos || 0}</div>
+</article>

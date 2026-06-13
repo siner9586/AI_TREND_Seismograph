@@ -1,0 +1,5 @@
+---
+const { magnitude = 0 } = Astro.props;
+const level = Number(magnitude) >= 4 ? "high" : Number(magnitude) >= 3 ? "mid" : "";
+---
+<span class={`badge ${level}`}>M{Number(magnitude || 0).toFixed(1)}</span>

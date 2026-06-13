@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GithubSurgeCard from "../components/GithubSurgeCard.astro";
+import Sparkline from "../components/Sparkline.astro";
+import { latestBundle, readJson } from "../lib/data";
+
+const { report, hourly } = latestBundle();
+const repos = report?.github_surges || hourly?.github_surges || [];
+const repoHistory = readJson<any>("data/snapshots/repo_snapshots.json", { repos: {} }).repos || {};
+---
+<BaseLayout title="GitHub 趋势 - AI 趋势地震仪">
+  <section class="page-title">
+    <h1>GitHub 趋势</h1>
+    <p class="subtitle">展示 repo topic 匹配、star_delta_1h/24h/72h/7d 和历史增长曲线。</p>
+  </section>
+  <section class="grid cols-3">
+    {repos.slice(0, 12).map((repo: any) => <GithubSurgeCard repo={repo} />)}
+    {!repos.length && <div class="empty">暂无 GitHub 趋势数据。</div>}
+  </section>
+
+  <h2>Star 历史增长曲线</h2>
+  <section class="grid cols-2">
+    {Object.entries(repoHistory).slice(0, 12).map(([name, rows]: any) => (
+      <div class="panel">
+        <div class="between"><h3>{name}</h3><span class="tag">{rows.at(-1)?.stars || 0} stars</span></div>
+        <Sparkline points={rows} field="stars" label={`${name} stars`} />
+      </div>
+    ))}
+    {!Object.keys(repoHistory).length && <div class="empty">首次运行后会开始积累 repo snapshot，用于计算 star 增量。</div>}
+  </section>
+</BaseLayout>

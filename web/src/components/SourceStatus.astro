@@ -1,0 +1,14 @@
+---
+const { sources = [] } = Astro.props;
+---
+<div class="stack">
+  {sources?.length ? sources.map((source: any) => (
+    <div class="between card">
+      <div>
+        <strong>{source.source_name}</strong>
+        <div class="muted">{source.source_type} · items {source.items ?? 0}</div>
+      </div>
+      <span class="tag">{source.ok ? "正常" : "失败"}{source.partial ? " · partial" : ""}</span>
+    </div>
+  )) : <div class="empty">暂无数据源状态。</div>}
+</div>

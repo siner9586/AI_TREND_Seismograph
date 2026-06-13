@@ -1,0 +1,19 @@
+name = "ai-trend-seismograph-cron"
+main = "src/index.ts"
+compatibility_date = "2026-06-13"
+
+[triggers]
+crons = [
+  "8 * * * *",
+  "18 22 * * *",
+  "33,48 22 * * *",
+  "3,18,33,48 23 * * *",
+  "3,18,33,48 0 * * *",
+  "3,18,33,48 1 * * *",
+  "30 15 * * *"
+]
+
+[[kv_namespaces]]
+binding = "TREND_LOCKS"
+id = "replace-with-cloudflare-kv-namespace-id"
+preview_id = "replace-with-preview-kv-namespace-id"

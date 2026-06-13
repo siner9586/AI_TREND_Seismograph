@@ -1,0 +1,22 @@
+---
+import EvidenceChain from "./EvidenceChain.astro";
+import MagnitudeBadge from "./MagnitudeBadge.astro";
+import SeverityTag from "./SeverityTag.astro";
+import { slugTopic } from "../lib/data";
+const { trend } = Astro.props;
+---
+<article class="card stack">
+  <div class="between">
+    <div>
+      <h3><a href={`/trends/${slugTopic(trend.topic)}`}>{trend.topic}</a></h3>
+      <div class="row">
+        <SeverityTag label={trend.severity_label} />
+        {(trend.tags || []).slice(0, 4).map((tag: string) => <span class="tag">{tag}</span>)}
+      </div>
+    </div>
+    <MagnitudeBadge magnitude={trend.magnitude} />
+  </div>
+  <p>{trend.summary}</p>
+  <div class="muted">{trend.calculation_summary}</div>
+  <EvidenceChain evidence={trend.evidence || []} />
+</article>

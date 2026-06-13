@@ -1,0 +1,22 @@
+---
+import MagnitudeBadge from "./MagnitudeBadge.astro";
+const { snapshots = [] } = Astro.props;
+---
+<div class="stack">
+  {snapshots?.length ? snapshots.slice().reverse().slice(0, 24).map((snapshot: any) => (
+    <article class="card">
+      <div class="between">
+        <div>
+          <strong>{snapshot.snapshot_hour}</strong>
+          <div class="muted">新增信号 {snapshot.total_items_scanned || 0} · topics {snapshot.top_hotspots?.length || 0}</div>
+        </div>
+        <MagnitudeBadge magnitude={snapshot.max_magnitude || 0} />
+      </div>
+      <div class="row" style="margin-top:8px">
+        {(snapshot.top_hotspots || []).slice(0, 5).map((item: any) => (
+          <a class="tag" href={`/trends/${encodeURIComponent(item.topic)}`}>{item.topic} · M{item.magnitude}</a>
+        ))}
+      </div>
+    </article>
+  )) : <div class="empty">暂无小时热点快照。</div>}
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "trend-cron-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250612.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.20.0"
+  }
+}

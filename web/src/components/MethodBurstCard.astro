@@ -1,0 +1,12 @@
+---
+const { item } = Astro.props;
+---
+<article class="card">
+  <div class="between">
+    <div>
+      <h3>{item.term}</h3>
+      <div class="muted">{item.topic}</div>
+    </div>
+    <span class="tag">M{item.magnitude}</span>
+  </div>
+</article>

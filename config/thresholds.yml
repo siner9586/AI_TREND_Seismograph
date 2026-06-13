@@ -1,0 +1,32 @@
+default_push_magnitude: 3.8
+github_star_delta_24h: 50
+cross_source_minimum: 2
+institution_consecutive_72h: 3
+minimum_evidence_per_hotspot: 1
+windows:
+  hourly_hours: 1
+  short_hours: 6
+  daily_hours: 24
+  anomaly_hours: 72
+  weekly_days: 7
+  baseline_days: 30
+  long_windows_days:
+    - 30
+    - 90
+    - 180
+severity:
+  - min: 1.0
+    max: 2.0
+    label: 微弱波动
+  - min: 2.0
+    max: 3.0
+    label: 局部升温
+  - min: 3.0
+    max: 4.0
+    label: 明显异常
+  - min: 4.0
+    max: 5.0
+    label: 疑似爆发
+  - min: 5.0
+    max: 6.1
+    label: 强趋势震荡

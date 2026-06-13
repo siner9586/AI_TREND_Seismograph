@@ -1,0 +1,16 @@
+---
+const { repo } = Astro.props;
+---
+<article class="card stack">
+  <div class="between">
+    <div>
+      <h3><a href={repo.url || repo.source_url} target="_blank" rel="noopener noreferrer">{repo.repo_full_name}</a></h3>
+      <div class="muted">{repo.language || "Unknown"} · stars {repo.stars || 0}</div>
+    </div>
+    <span class="tag">24h +{repo.star_delta_24h || 0}</span>
+  </div>
+  <p class="muted">{repo.description || "暂无描述。"}</p>
+  <div class="row">
+    {(repo.matched_topics || []).slice(0, 4).map((topic: string) => <span class="tag">{topic}</span>)}
+  </div>
+</article>

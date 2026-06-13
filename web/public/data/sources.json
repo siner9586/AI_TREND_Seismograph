@@ -1,0 +1,66 @@
+{
+  "sources": [
+    {
+      "source_type": "paper",
+      "source_name": "arxiv",
+      "base_url": "https://export.arxiv.org/api/query",
+      "reliability_weight": 0.86,
+      "enabled": true,
+      "rate_limit_policy": {
+        "requests_per_minute": 20,
+        "user_agent_env": "TREND_SEISMOGRAPH_USER_AGENT"
+      },
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO",
+        "cs.IR",
+        "stat.ML"
+      ]
+    },
+    {
+      "source_type": "repo",
+      "source_name": "github",
+      "base_url": "https://api.github.com",
+      "reliability_weight": 0.82,
+      "enabled": true,
+      "rate_limit_policy": {
+        "requests_per_minute": 20,
+        "token_env": "GITHUB_TOKEN"
+      },
+      "queries": [
+        "artificial intelligence",
+        "machine learning",
+        "llm",
+        "agents",
+        "rag",
+        "robotics",
+        "coding agent"
+      ]
+    },
+    {
+      "source_type": "paper",
+      "source_name": "openalex",
+      "base_url": "https://api.openalex.org",
+      "reliability_weight": 0.72,
+      "enabled": false,
+      "rate_limit_policy": {
+        "requests_per_minute": 10,
+        "token_env": "OPENALEX_API_KEY"
+      }
+    },
+    {
+      "source_type": "paper",
+      "source_name": "semantic_scholar",
+      "base_url": "https://api.semanticscholar.org",
+      "reliability_weight": 0.78,
+      "enabled": false,
+      "rate_limit_policy": {
+        "requests_per_minute": 10,
+        "token_env": "SEMANTIC_SCHOLAR_API_KEY"
+      }
+    }
+  ]
+}

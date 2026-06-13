@@ -1,0 +1,15 @@
+---
+import MagnitudeBadge from "./MagnitudeBadge.astro";
+import EvidenceChain from "./EvidenceChain.astro";
+const { hit } = Astro.props;
+---
+<article class="card stack">
+  <div class="between">
+    <div>
+      <h3>{hit.watchlist_name}</h3>
+      <div class="muted">{hit.topic} · {hit.reason}</div>
+    </div>
+    <MagnitudeBadge magnitude={hit.magnitude} />
+  </div>
+  <EvidenceChain evidence={hit.evidence || []} />
+</article>

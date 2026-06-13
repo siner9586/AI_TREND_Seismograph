@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+const { title = "AI 趋势地震仪" } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="发现 AI 研究与工程方向的异常波动" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="/">AI 趋势地震仪</a>
+          <nav class="nav" aria-label="主导航">
+            <a href="/hotspots">小时热点</a>
+            <a href="/archive">归档</a>
+            <a href="/github">GitHub</a>
+            <a href="/institutions">机构</a>
+            <a href="/graph">共现网络</a>
+            <a href="/watchlist">Watchlist</a>
+            <a href="/sources">数据源</a>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <slot />
+      </main>
+      <footer class="footer">
+        AI Trend Seismograph · 趋势判断来自公开论文、代码与配置词典信号，不构成投资、科研选题或技术路线建议。
+      </footer>
+    </div>
+  </body>
+</html>

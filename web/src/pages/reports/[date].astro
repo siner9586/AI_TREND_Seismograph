@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TrendCard from "../../components/TrendCard.astro";
+import GithubSurgeCard from "../../components/GithubSurgeCard.astro";
+import InstitutionClusterCard from "../../components/InstitutionClusterCard.astro";
+import { listReports } from "../../lib/data";
+
+export function getStaticPaths() {
+  return listReports().map((report: any) => ({ params: { date: report.report_date }, props: { report } }));
+}
+
+const { report } = Astro.props;
+---
+<BaseLayout title={`日报 ${report.report_date} - AI 趋势地震仪`}>
+  <section class="page-title">
+    <h1>日报 {report.report_date}</h1>
+    <p class="subtitle">24/72 小时异常、30 天基线、机构发布、方法/数据集异常、GitHub 增长与 Watchlist 命中。</p>
+  </section>
+  <section class="grid cols-4">
+    <div class="panel metric"><div class="value">{report.total_papers_scanned}</div><div class="label">论文</div></div>
+    <div class="panel metric"><div class="value">{report.total_repos_scanned}</div><div class="label">Repo</div></div>
+    <div class="panel metric"><div class="value">{report.total_topics_tracked}</div><div class="label">跟踪方向</div></div>
+    <div class="panel metric"><div class="value">M{report.max_magnitude}</div><div class="label">最高震级</div></div>
+  </section>
+
+  <h2>趋势异常</h2>
+  <section class="grid cols-2">
+    {(report.top_anomalies || []).map((trend: any) => <TrendCard trend={trend} />)}
+    {!report.top_anomalies?.length && <div class="empty">本日报没有形成趋势异常。</div>}
+  </section>
+
+  <h2>GitHub 增长</h2>
+  <section class="grid cols-3">
+    {(report.github_surges || []).slice(0, 9).map((repo: any) => <GithubSurgeCard repo={repo} />)}
+  </section>
+
+  <h2>机构聚集</h2>
+  <section class="grid cols-3">
+    {(report.institution_clusters || []).slice(0, 9).map((cluster: any) => <InstitutionClusterCard cluster={cluster} />)}
+  </section>
+
+  <h2>Caveats</h2>
+  <section class="panel">
+    <ul>{(report.caveats || []).map((item: string) => <li>{item}</li>)}</ul>
+  </section>
+</BaseLayout>

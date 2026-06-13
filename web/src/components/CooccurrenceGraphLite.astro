@@ -1,0 +1,33 @@
+---
+const { graph = { nodes: [], edges: [] } } = Astro.props;
+const nodes = (graph.nodes || []).slice(0, 24);
+const edges = (graph.edges || []).slice(0, 36);
+const width = 760;
+const height = 360;
+const positioned = nodes.map((node: any, index: number) => {
+  const angle = (Math.PI * 2 * index) / Math.max(1, nodes.length);
+  const radius = 130 + (index % 3) * 22;
+  return {
+    ...node,
+    x: width / 2 + Math.cos(angle) * radius,
+    y: height / 2 + Math.sin(angle) * radius
+  };
+});
+const byId = new Map(positioned.map((node: any) => [node.id, node]));
+---
+{nodes.length ? (
+  <svg class="network" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="关键词共现网络">
+    {edges.map((edge: any) => {
+      const source: any = byId.get(edge.source);
+      const target: any = byId.get(edge.target);
+      if (!source || !target) return null;
+      return <line x1={source.x} y1={source.y} x2={target.x} y2={target.y} stroke="#d9dee7" stroke-width={Math.max(1, edge.weight * 3)} />;
+    })}
+    {positioned.map((node: any) => (
+      <g>
+        <circle cx={node.x} cy={node.y} r={8 + Math.min(12, node.count * 2)} fill={node.type === "topic" ? "#0f766e" : node.type === "dataset" ? "#b54708" : "#155eef"} opacity="0.88" />
+        <text x={node.x + 13} y={node.y + 4} font-size="12" fill="#17202a">{node.label}</text>
+      </g>
+    ))}
+  </svg>
+) : <div class="empty">暂无共现网络数据。</div>}

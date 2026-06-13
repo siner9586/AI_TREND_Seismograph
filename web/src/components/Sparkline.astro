@@ -1,0 +1,18 @@
+---
+const { points = [], field = "magnitude", label = "trend" } = Astro.props;
+const values = points.map((point: any) => Number(point?.[field] || 0));
+const width = 220;
+const height = 52;
+const max = Math.max(1, ...values);
+const path = values.length
+  ? values.map((value: number, index: number) => {
+      const x = values.length === 1 ? 0 : (index / (values.length - 1)) * width;
+      const y = height - (value / max) * (height - 8) - 4;
+      return `${index === 0 ? "M" : "L"}${x.toFixed(1)},${y.toFixed(1)}`;
+    }).join(" ")
+  : "";
+---
+<svg class="sparkline" viewBox={`0 0 ${width} ${height}`} role="img" aria-label={label}>
+  <line x1="0" y1={height - 4} x2={width} y2={height - 4} stroke="#d9dee7" />
+  {path && <path d={path} fill="none" stroke="#0f766e" stroke-width="2.4" />}
+</svg>
