@@ -20,7 +20,6 @@ def enrich_signal_curation(signal: dict[str, Any]) -> dict[str, Any]:
     metrics = enriched.get("metrics") or {}
     evidence = list(enriched.get("evidence") or [])
     source_urls = list(enriched.get("source_urls") or [])
-    key_drivers = list(enriched.get("key_drivers") or [])
     related_methods = list(enriched.get("related_methods") or [])
     related_datasets = list(enriched.get("related_datasets") or [])
     related_institutions = list(enriched.get("related_institutions") or [])
