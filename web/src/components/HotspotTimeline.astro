@@ -1,5 +1,6 @@
 ---
 import MagnitudeBadge from "./MagnitudeBadge.astro";
+import { formatBeijingHour } from "../lib/data";
 const { snapshots = [] } = Astro.props;
 ---
 <div class="stack">
@@ -7,7 +8,7 @@ const { snapshots = [] } = Astro.props;
     <article class="card">
       <div class="between">
         <div>
-          <strong>{snapshot.snapshot_hour}</strong>
+          <strong>{formatBeijingHour(snapshot.snapshot_hour)}</strong>
           <div class="muted">新增信号 {snapshot.total_items_scanned || 0} · topics {snapshot.top_hotspots?.length || 0}</div>
         </div>
         <MagnitudeBadge magnitude={snapshot.max_magnitude || 0} />
