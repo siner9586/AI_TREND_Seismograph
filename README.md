@@ -1,6 +1,6 @@
-# AI 趋势地震仪 / AI Trend Seismograph
+# AI 趋势脉冲 / AI Trend Seismograph
 
-AI 趋势地震仪是一个面向 AI 研究、开源项目、数据集、Benchmark、机构动态和工程生态的趋势异常波动侦测 MVP。它不是新闻流，而是把论文、GitHub、关键词、方法、数据集、机构和 Watchlist 聚合成可解释的“趋势震级”。
+AI 趋势脉冲是一个面向 AI 研究、开源项目、数据集、Benchmark、机构动态和工程生态的趋势异常波动侦测 MVP。它不是新闻流，而是把论文、GitHub、关键词、方法、数据集、机构和 Watchlist 聚合成可解释的“趋势脉冲”。
 
 ## 产品价值
 
@@ -21,7 +21,7 @@ arXiv / GitHub / optional APIs
         |
  Astro static site + Cloudflare Pages Functions API
         |
- Cloudflare Worker Cron + KV locks -> trigger pipeline
+ GitHub Actions schedule + optional Worker daily compensation
         |
  RSS / Telegram / Email / Webhook
 ```
@@ -31,58 +31,29 @@ arXiv / GitHub / optional APIs
 ## 本地运行
 
 ```bash
-cd /Users/wangzheng/Documents/vibecoding/AI_TREND_Seismograph
-
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
 npm install
 
 python -m trend_seismograph run-hourly --hour 2026-06-13T10 --storage=file --dry-run=false
 python -m trend_seismograph qa-hourly --hour 2026-06-13T10
-
-python -m trend_seismograph run-daily --date 2026-06-13 --storage=file --dry-run=false
-python -m trend_seismograph qa --date 2026-06-13
-
-pytest
 npm run build
 ```
 
 ## CLI
 
 ```bash
-python -m trend_seismograph fetch --date 2026-06-13
-python -m trend_seismograph fetch-hourly --hour 2026-06-13T10
-python -m trend_seismograph analyze --date 2026-06-13 --lookback-hours 72
-python -m trend_seismograph analyze-hourly --hour 2026-06-13T10
-python -m trend_seismograph report --date 2026-06-13
 python -m trend_seismograph run-hourly --hour 2026-06-13T10
 python -m trend_seismograph run-daily --date 2026-06-13
-python -m trend_seismograph sync-neon --date 2026-06-13
-python -m trend_seismograph push-hotspots --hour 2026-06-13T10
-python -m trend_seismograph qa --date 2026-06-13
 python -m trend_seismograph qa-hourly --hour 2026-06-13T10
-python -m trend_seismograph backfill --from 2026-06-01 --to 2026-06-13
+python -m trend_seismograph qa --date 2026-06-13
+python -m trend_seismograph push-hotspots --hour 2026-06-13T10
 ```
 
 通用参数：`--dry-run`、`--force`、`--no-push`、`--storage=file|neon|both`、`--source=arxiv,github,openalex`。
 
-## 数据源
-
-默认启用：
-
-- arXiv API：`cs.AI`、`cs.LG`、`cs.CL`、`cs.CV`、`cs.RO`、`cs.IR`、`stat.ML`。
-- GitHub REST Search API：无 token 可运行，配置 `GITHUB_TOKEN` 后速率更稳定。
-
-可选增强：
-
-- Semantic Scholar：配置 `SEMANTIC_SCHOLAR_API_KEY` 后可扩展。
-- OpenAlex：配置 `OPENALEX_API_KEY` 后可扩展。
-
-所有源保留 `source_url`，抓取失败不会阻断整体任务，失败状态写入 `source_status`。
-
-## 小时级刷新
+## 小时热点
 
 输出：
 
@@ -90,78 +61,33 @@ python -m trend_seismograph backfill --from 2026-06-01 --to 2026-06-13
 - `data/hotspots/latest.json`
 - `data/hotspots/index.json`
 
-小时热点包含扫描规模、最高震级、Top hotspots、Watchlist 命中、GitHub surges、方法/数据集/机构信号、source status、partial 和 caveats。
+小时热点包含扫描规模、最高震级、Top hotspots、Watchlist 命中、GitHub surges、方法/数据集/机构信号、source status、partial、caveats 和确定性重点总结。
 
-## 每日报告
+## 重点总结与展示规则
 
-输出：
+最新热点不接大模型，采用确定性规则总结器：`src/trend_seismograph/reports/curation.py`。
 
-- `data/reports/YYYY-MM-DD.json`
-- `data/reports/YYYY-MM-DD.md`
-- `data/latest.json`
-- `data/history/index.json`
+每个热点应生成并展示：
 
-日报包含 24/72 小时异常、30 天基线、90/180 天背景、机构发布频率、方法和数据集异常、GitHub 增长、冷门复活、跨源共振和观察建议。
+- `curated_summary`：结构化摘要。
+- `signal_takeaways`：重点结论。
+- `source_link_groups`：分组信号链接。
+- `evidence_digest`：证据摘要。
+- `signal_focus`：主导来源与核心信号字段。
 
-## 趋势震级算法
+前端详实卡片由 `web/src/components/TrendCard.astro` 统一渲染，旧数据缺少这些字段时会自动 fallback。详细规则见 `docs/site-style-rules.md`。
 
-每个 topic 计算：
+## 共现网络图规则
 
-- `current_1h_count`、`current_24h_count`、`current_72h_count`、`current_7d_count`
-- `baseline_daily_avg_30d`、`baseline_daily_std_30d`
-- `growth_rate`、`z_score`、`burst_score`
-- `source_diversity_score`、`cross_source_confirmation_score`
-- `institution_concentration_score`、`github_signal_score`
-- `dataset_signal_score`、`method_signal_score`、`cold_revival_score`
+`/graph/` 的关键词共现网络必须保持当前中文顶刊论文机制图风格：白底、克制配色、四层分区、节点卡片、柔和弧线、图例、窗口信息、图形读法和中心节点说明。实现文件：`web/src/components/CooccurrenceGraphLite.astro`。
 
-震级：
+## GitHub Actions
 
-```text
-M1.0-M2.0 微弱波动
-M2.0-M3.0 局部升温
-M3.0-M4.0 明显异常
-M4.0-M5.0 疑似爆发
-M5.0+ 强趋势震荡
-```
+- `.github/workflows/ci.yml`：lint、tests、TypeScript check、Astro build、schema/env validate。
+- `.github/workflows/hourly-hotspots.yml`：每 2 小时刷新一次小时热点，可手动触发。
+- `.github/workflows/daily-trend-seismograph.yml`：日报生成，可手动触发。
 
-每条趋势都包含 `calculation_summary`、`key_drivers`、`evidence`、`source_urls`、`caveats` 和 `confidence`。历史不足 30 天时会标记 `low_history_confidence=true`。
-
-## Watchlist
-
-配置文件：`config/watchlist.yml`。支持 topic、关键词、震级阈值、增长率阈值和推送开关。命中结果出现在首页、`/watchlist`、小时热点和日报 JSON 中。
-
-## 推送
-
-支持：
-
-- RSS：总是生成 `data/rss.xml`
-- Telegram：`TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_ID`
-- Email：`SMTP_HOST`、`SMTP_USER`、`SMTP_PASS`
-- Webhook：`PUSH_WEBHOOK_URL`
-
-去重规则：`dedupe_key = event_type + topic + date + severity_label`，同一事件 24 小时内只推一次。文件模式记录在 `data/push_events.json`。
-
-## Neon 配置
-
-```bash
-psql "$DATABASE_URL" -f db/migrations/001_init.sql
-python scripts/seed_taxonomy.py
-python -m trend_seismograph run-daily --date 2026-06-13 --storage=both
-```
-
-支持环境变量：`DATABASE_URL` 或 `NEON_DATABASE_URL`。Neon 不可用时，CLI 会保留文件输出，并把失败原因写入存储状态。
-
-主要表：
-
-- `sources`：数据源配置和权重。
-- `raw_items`：论文、repo 等原始信号。
-- `topics`、`item_topic_matches`：趋势 taxonomy 和匹配证据。
-- `hourly_snapshots`：小时级趋势快照。
-- `daily_reports`：每日报告索引。
-- `repo_snapshots`：GitHub star 历史。
-- `institutions`、`institution_topic_stats`：机构词典和机构-topic 统计。
-- `watchlists`：关注方向配置。
-- `push_events`：推送去重历史。
+Cloudflare 与 Actions 通过文件存在检查、KV lock 和 push dedupe 避免互相覆盖或重复推送。
 
 ## Cloudflare Pages
 
@@ -173,60 +99,6 @@ npm run build
 ```
 
 发布目录：`web/dist`。Pages Functions 位于 `functions/api`，API 默认查询 Neon，失败时读取静态 JSON asset。
-
-## Cloudflare Worker Cron
-
-Worker 目录：`workers/trend-cron-worker`。
-
-```bash
-cd workers/trend-cron-worker
-npm install
-npx wrangler dev --test-scheduled
-npx wrangler deploy
-```
-
-Cron UTC 配置：
-
-- 每小时第 8 分钟：`8 * * * *`
-- 每日北京时间 06:18：`18 22 * * *`
-- 补偿检查：`33,48 22 * * *`、`3,18,33,48 23 * * *`、`3,18,33,48 0 * * *`、`3,18,33,48 1 * * *`
-- 每日北京时间 23:30 维护：`30 15 * * *`
-
-Worker 使用 KV `TREND_LOCKS` 保存 `lock:hourly:YYYY-MM-DD-HH` 和 `lock:daily:YYYY-MM-DD`。触发方式优先 `PIPELINE_TRIGGER_URL`，否则通过 `GITHUB_TOKEN` + `GITHUB_REPOSITORY` 调用 GitHub Actions workflow_dispatch。
-
-## API
-
-Cloudflare Pages Functions：
-
-- `GET /api/latest`
-- `GET /api/hotspots/latest`
-- `GET /api/reports/:date`
-- `GET /api/topics`
-- `GET /api/topics/:topic`
-- `GET /api/topics/:topic/history?window=30d|90d|180d`
-- `GET /api/github/:repo/history`
-- `GET /api/institutions`
-- `GET /api/institutions/:name`
-- `GET /api/watchlist`
-- `GET /api/cooccurrence/latest`
-- `GET /api/sources/status`
-- `GET /api/health`
-
-示例：
-
-```bash
-curl "$PUBLIC_SITE_URL/api/latest"
-curl "$PUBLIC_SITE_URL/api/topics/World%20Model/history?window=90d"
-curl "$PUBLIC_SITE_URL/api/cooccurrence/latest"
-```
-
-## GitHub Actions
-
-- `.github/workflows/ci.yml`：lint、tests、TypeScript check、Astro build、schema/env validate。
-- `.github/workflows/hourly-hotspots.yml`：备用小时刷新，可手动触发。
-- `.github/workflows/daily-trend-seismograph.yml`：备用日报生成，可手动触发。
-
-Cloudflare 与 Actions 通过文件存在检查、KV lock 和 push dedupe 避免互相覆盖或重复推送。
 
 ## 站点页面
 
@@ -252,50 +124,9 @@ npm run build
 
 QA 检查日报、Markdown、latest 指针、小时 latest、evidence、source_url、magnitude、severity、source_status、mock 标记、文件 fallback 和推送去重。
 
-## 验证
-
-小时刷新：
-
-```bash
-python -m trend_seismograph run-hourly --hour 2026-06-13T10 --storage=file --dry-run=false
-python -m trend_seismograph qa-hourly --hour 2026-06-13T10
-```
-
-每日完整报告：
-
-```bash
-python -m trend_seismograph run-daily --date 2026-06-13 --storage=file --dry-run=false
-python -m trend_seismograph qa --date 2026-06-13
-```
-
-推送去重：
-
-```bash
-python -m trend_seismograph push-hotspots
-python -m trend_seismograph push-hotspots
-```
-
-第二次会跳过 24 小时内相同 `dedupe_key`。
-
 ## 局限性
 
 - arXiv affiliation 不稳定，机构识别以词典和可用 metadata 为主。
 - GitHub star 增量需要先积累 snapshot，首次运行不会判定 star 暴涨。
 - OpenAlex 和 Semantic Scholar 在 MVP 中是可选增强源。
-- Worker 负责 Cron、锁和触发；Python 计算在 Actions、外部 pipeline 或本地运行。
-- 历史不足 30 天时，基线置信度较低。
-
-## 路线图
-
-1. 趋势关系图谱增强。
-2. AI 方向早期预警。
-3. 趋势之间的因果链推断。
-4. 机构竞争态势。
-5. 论文-代码-数据集联动。
-6. 微信公众号自动推送。
-7. 个性化用户账户。
-8. 用户自定义 Watchlist 页面。
-9. LLM 辅助趋势解释。
-10. 多站点共用趋势数据库。
-11. API 订阅。
-12. 企业版趋势监控。
+- 历史不足 30 天时，趋势判断会标记低历史置信度。
