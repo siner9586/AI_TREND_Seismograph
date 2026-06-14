@@ -5,10 +5,10 @@ import { readJson } from "../lib/data";
 
 const graph = readJson<any>("data/graphs/cooccurrence/latest.json", { nodes: [], edges: [] });
 ---
-<BaseLayout title="关键词共现网络 - AI 趋势地震仪">
+<BaseLayout title="关键词共现网络 - AI 趋势脉冲">
   <section class="page-title">
     <h1>关键词共现网络</h1>
-    <p class="subtitle">基于 paper title、abstract、GitHub description、repo topics、method 和 dataset mentions 构建的轻量关系图。</p>
+    <p class="subtitle">基于公开论文与 GitHub 项目信号构建，呈现近期 AI 方向之间的语义关联、方法扩散与议题聚合结构。</p>
   </section>
   <CooccurrenceGraphLite graph={graph} />
   <h2>高频节点</h2>
