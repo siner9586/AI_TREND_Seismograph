@@ -46,10 +46,13 @@ def test_enrich_signal_curation_adds_stable_summary_fields() -> None:
 
     enriched = enrich_signal_curation(signal)
 
-    assert enriched["curation_method"] == "deterministic_rules_v1"
-    assert "Agents" in enriched["curated_summary"]
+    assert enriched["curation_method"] == "deterministic_natural_language_v2"
+    assert "本次抓取围绕「Agents」" in enriched["curated_summary"]
+    assert "example/agent-repo" in enriched["curated_summary"]
     assert "GitHub 项目 3 个" in enriched["signal_takeaways"][0]
+    assert enriched["signal_takeaways"][0].startswith("总体判断")
     assert "代表项目" in enriched["source_link_groups"]
     assert "论文来源" in enriched["source_link_groups"]
     assert enriched["source_link_groups"]["代表项目"][0]["url"] == "https://github.com/example/agent-repo"
     assert enriched["evidence_digest"][0]["matched_terms"] == ["agent", "MCP"]
+    assert enriched["signal_focus"]["representative_titles"] == ["example/agent-repo", "Agent Paper"]
