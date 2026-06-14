@@ -7,11 +7,12 @@ import MethodBurstCard from "../components/MethodBurstCard.astro";
 import InstitutionClusterCard from "../components/InstitutionClusterCard.astro";
 import SourceStatus from "../components/SourceStatus.astro";
 import WatchlistHitCard from "../components/WatchlistHitCard.astro";
-import { latestBundle } from "../lib/data";
+import { formatBeijingHour, latestBundle } from "../lib/data";
 
 const { hourly, report } = latestBundle();
 const anomalies = report?.top_anomalies || hourly?.top_hotspots || [];
 const maxMagnitude = report?.max_magnitude || hourly?.max_magnitude || 0;
+const latestHourLabel = formatBeijingHour(hourly?.snapshot_hour);
 ---
 <BaseLayout title="AI 趋势地震仪">
   <section class="page-title">
@@ -20,7 +21,7 @@ const maxMagnitude = report?.max_magnitude || hourly?.max_magnitude || 0;
   </section>
 
   <section class="grid cols-4">
-    <div class="panel metric"><div class="value">{hourly?.snapshot_hour || "未刷新"}</div><div class="label">最近小时刷新</div></div>
+    <div class="panel metric"><div class="value">{latestHourLabel}</div><div class="label">最近小时刷新</div></div>
     <div class="panel metric"><div class="value">{hourly?.total_items_scanned ?? 0}</div><div class="label">最近 1 小时新增信号</div></div>
     <div class="panel metric"><div class="value">M{Number(maxMagnitude || 0).toFixed(1)}</div><div class="label">当前最高震级</div></div>
     <div class="panel metric"><div class="value">{hourly?.push_recommended ? "是" : "否"}</div><div class="label">是否存在建议推送热点</div></div>
