@@ -12,6 +12,7 @@ from trend_seismograph.analytics.watchlist import detect_watchlist_hits
 from trend_seismograph.config import AppConfig
 from trend_seismograph.fetchers.arxiv import ArxivFetcher
 from trend_seismograph.fetchers.github import GitHubFetcher
+from trend_seismograph.reports.curation import enrich_signals_curation
 from trend_seismograph.storage.file_store import FileStore
 from trend_seismograph.storage.neon_store import NeonStore
 
@@ -47,6 +48,7 @@ def run_hourly(
     enriched = enrich_items(items, config)
     history = store.list_hourly_snapshots()
     signals = detect_anomalies(enriched, config=config, history_snapshots=history, now=hour_dt, window_hours=1)
+    signals = enrich_signals_curation(signals)
     watchlist_hits = detect_watchlist_hits(signals, config.watchlist)
     top_hotspots = signals[:10]
     snapshot = {
