@@ -1,9 +1,9 @@
 ---
-const { evidence = [] } = Astro.props;
+const { evidence = [], limit = 4 } = Astro.props;
 ---
 {evidence?.length ? (
   <ul class="evidence-list">
-    {evidence.slice(0, 4).map((item: any) => (
+    {evidence.slice(0, limit).map((item: any) => (
       <li>
         <a href={item.source_url} target="_blank" rel="noopener noreferrer">{item.title || item.source_url}</a>
         <span> · {item.source_name || item.source_type} · score {item.match_score ?? "-"}</span>
