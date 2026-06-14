@@ -8,7 +8,7 @@ const watchlists = watchlistConfig();
 const { report, hourly } = latestBundle();
 const hits = report?.watchlist?.hits || hourly?.watchlist_hits || [];
 ---
-<BaseLayout title="Watchlist - AI 趋势地震仪">
+<BaseLayout title="Watchlist - AI 趋势脉冲">
   <section class="page-title">
     <h1>Watchlist</h1>
     <p class="subtitle">关注方向、阈值、最近命中、历史震级与推送状态。</p>
@@ -19,7 +19,7 @@ const hits = report?.watchlist?.hits || hourly?.watchlist_hits || [];
         <h3>{item.name}</h3>
         <div class="muted">阈值 M{item.threshold_magnitude} · growth {item.threshold_growth_rate ?? "-"}</div>
         <div class="row">{(item.topics || []).map((topic: string) => <span class="tag">{topic}</span>)}</div>
-        <div class="muted">推送：{item.push_enabled ? "enabled" : "disabled"}</div>
+        <Sparkline points={[]} />
       </article>
     ))}
   </section>
@@ -27,11 +27,5 @@ const hits = report?.watchlist?.hits || hourly?.watchlist_hits || [];
   <section class="grid cols-2">
     {hits.map((hit: any) => <WatchlistHitCard hit={hit} />)}
     {!hits.length && <div class="empty">暂无 Watchlist 命中。</div>}
-  </section>
-  <h2>历史震级</h2>
-  <section class="grid cols-2">
-    {(report?.top_anomalies || []).filter((item: any) => hits.some((hit: any) => hit.topic === item.topic)).map((item: any) => (
-      <div class="panel"><h3>{item.topic}</h3><Sparkline points={item.trend_30d || []} /></div>
-    ))}
   </section>
 </BaseLayout>
