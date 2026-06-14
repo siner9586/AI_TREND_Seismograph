@@ -14,9 +14,9 @@ const anomalies = report?.top_anomalies || hourly?.top_hotspots || [];
 const maxMagnitude = report?.max_magnitude || hourly?.max_magnitude || 0;
 const latestHourLabel = formatBeijingHour(hourly?.snapshot_hour);
 ---
-<BaseLayout title="AI 趋势地震仪">
+<BaseLayout title="AI 趋势脉冲">
   <section class="page-title">
-    <h1>AI 趋势地震仪</h1>
+    <h1>AI 趋势脉冲</h1>
     <p class="subtitle">发现 AI 研究与工程方向的异常波动，聚合论文、开源项目、方法、数据集、Benchmark 与机构信号。</p>
   </section>
 
@@ -29,12 +29,12 @@ const latestHourLabel = formatBeijingHour(hourly?.snapshot_hour);
 
   <h2>Top 5 趋势异常</h2>
   <section class="grid cols-2">
-    {anomalies.length ? anomalies.slice(0, 5).map((trend: any) => <TrendCard trend={trend} />) : <div class="empty">暂无趋势异常。请先运行小时或日报流水线。</div>}
+    {anomalies.length ? anomalies.slice(0, 5).map((trend: any) => <TrendCard trend={trend} detailed={true} />) : <div class="empty">暂无趋势异常。请先运行小时或日报流水线。</div>}
   </section>
 
   <h2>过去 1 小时热点</h2>
   <section class="grid cols-2">
-    {(hourly?.top_hotspots || []).slice(0, 4).map((trend: any) => <TrendCard trend={trend} />)}
+    {(hourly?.top_hotspots || []).slice(0, 4).map((trend: any) => <TrendCard trend={trend} detailed={true} />)}
     {!hourly?.top_hotspots?.length && <div class="empty">暂无小时热点。</div>}
   </section>
 
