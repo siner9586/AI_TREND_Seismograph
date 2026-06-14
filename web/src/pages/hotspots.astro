@@ -9,10 +9,10 @@ const { hourly } = latestBundle();
 const snapshots = listHotspots();
 const latestHourLabel = formatBeijingHour(hourly?.snapshot_hour);
 ---
-<BaseLayout title="热点脉冲 - AI 趋势地震仪">
+<BaseLayout title="热点脉冲 - AI 趋势脉冲">
   <section class="page-title">
     <h1>热点脉冲</h1>
-    <p class="subtitle">展示最近 24 小时热点时间线、每小时最高震级、推送建议与 Watchlist 命中。</p>
+    <p class="subtitle">展示最近 24 小时热点时间线、推送建议与 Watchlist 命中。</p>
   </section>
   <section class="grid cols-4">
     <div class="panel metric"><div class="value">{latestHourLabel}</div><div class="label">最新小时</div></div>
