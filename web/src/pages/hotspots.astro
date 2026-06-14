@@ -22,8 +22,8 @@ const latestHourLabel = formatBeijingHour(hourly?.snapshot_hour);
   </section>
 
   <h2>最新热点</h2>
-  <section class="grid cols-2">
-    {(hourly?.top_hotspots || []).slice(0, 6).map((trend: any) => <TrendCard trend={trend} />)}
+  <section class="grid cols-2 latest-hotspots-grid">
+    {(hourly?.top_hotspots || []).slice(0, 6).map((trend: any) => <TrendCard trend={trend} detailed={true} />)}
     {!hourly?.top_hotspots?.length && <div class="empty">暂无最新热点。</div>}
   </section>
 
