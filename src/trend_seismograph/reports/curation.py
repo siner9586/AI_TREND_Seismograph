@@ -6,14 +6,13 @@ from urllib.parse import urlparse
 
 
 def enrich_signal_curation(signal: dict[str, Any]) -> dict[str, Any]:
-    """Add deterministic, model-free summaries for UI and downstream reports.
+    """Add deterministic, model-free, human-readable curation fields.
 
-    The goal is not to rewrite the trend signal with generative AI. Instead, it
-    turns existing structured fields into stable, explainable reading aids:
-    - curated_summary: one concise paragraph for the hotspot card.
-    - signal_takeaways: 3-6 bullet points explaining what was captured.
-    - source_link_groups: grouped links for papers, repos, method/data evidence.
-    - signal_focus: compact metadata for UI filtering and future APIs.
+    This module deliberately does not call LLMs. It converts structured crawler
+    outputs into natural Chinese summaries that are stable, explainable and easy
+    to audit. The summary should read like a short editor-written briefing, but
+    every sentence must be traceable to metrics, evidence, source URLs and the
+    configured taxonomy.
     """
 
     enriched = dict(signal)
@@ -25,6 +24,7 @@ def enrich_signal_curation(signal: dict[str, Any]) -> dict[str, Any]:
     related_institutions = list(enriched.get("related_institutions") or [])
     watch_keywords = list(enriched.get("suggested_watch_keywords") or [])
     caveats = list(enriched.get("caveats") or [])
+    tags = list(enriched.get("tags") or [])
 
     paper_count = int(metrics.get("paper_count") or metrics.get("current_paper_count") or 0)
     repo_count = int(metrics.get("repo_count") or metrics.get("current_repo_count") or 0)
@@ -35,54 +35,67 @@ def enrich_signal_curation(signal: dict[str, Any]) -> dict[str, Any]:
     magnitude = enriched.get("magnitude") or metrics.get("magnitude") or 0
     severity = enriched.get("severity_label") or "趋势波动"
     topic = enriched.get("topic") or "该方向"
+    confidence = enriched.get("confidence")
 
     dominant_source = _dominant_source(paper_count=paper_count, repo_count=repo_count)
-    focus_terms = _compact_terms(related_methods + related_datasets + watch_keywords, limit=6)
-    institution_terms = _compact_terms(related_institutions, limit=6)
-    source_mix = _source_mix_sentence(paper_count=paper_count, repo_count=repo_count)
-    method_dataset_sentence = _method_dataset_sentence(
-        related_methods=related_methods,
-        related_datasets=related_datasets,
-        method_mentions=method_mentions,
-        dataset_mentions=dataset_mentions,
-    )
-    institution_sentence = _institution_sentence(
-        related_institutions=related_institutions,
-        institution_mentions=institution_mentions,
-    )
-
-    curated_summary = (
-        f"{topic} 当前被判定为“{severity}”（M{_format_number(magnitude)}）。"
-        f"本轮信号主要来自{dominant_source}，{source_mix}"
-        f"{_star_sentence(star_delta)}"
-        f"{method_dataset_sentence}"
-        f"{institution_sentence}"
-        f"该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。"
-    )
-
-    signal_takeaways = _dedupe_keep_order(
-        [
-            _takeaway_source_mix(paper_count=paper_count, repo_count=repo_count),
-            _takeaway_star_delta(star_delta),
-            _takeaway_methods(related_methods, method_mentions),
-            _takeaway_datasets(related_datasets, dataset_mentions),
-            _takeaway_institutions(related_institutions, institution_mentions),
-            _takeaway_evidence(evidence),
-            _takeaway_confidence(metrics, caveats),
-            _takeaway_watch_keywords(watch_keywords),
-        ]
-    )
-
+    focus_terms = _compact_terms(related_methods + related_datasets + watch_keywords, limit=8)
+    institution_terms = _compact_terms(related_institutions, limit=8)
     source_link_groups = build_source_link_groups(evidence=evidence, source_urls=source_urls)
     evidence_digest = build_evidence_digest(evidence)
+    representative_titles = _representative_titles(evidence, limit=5)
+    source_mix = _source_mix_text(paper_count=paper_count, repo_count=repo_count)
+    evidence_mix = _evidence_mix_text(evidence)
 
-    enriched["curated_summary"] = " ".join(curated_summary.split())
-    enriched["signal_takeaways"] = signal_takeaways[:6]
+    curated_summary = build_curated_summary(
+        topic=topic,
+        severity=severity,
+        magnitude=magnitude,
+        confidence=confidence,
+        dominant_source=dominant_source,
+        source_mix=source_mix,
+        evidence_mix=evidence_mix,
+        representative_titles=representative_titles,
+        related_methods=related_methods,
+        related_datasets=related_datasets,
+        related_institutions=related_institutions,
+        watch_keywords=watch_keywords,
+        star_delta=star_delta,
+        method_mentions=method_mentions,
+        dataset_mentions=dataset_mentions,
+        institution_mentions=institution_mentions,
+        caveats=caveats,
+        tags=tags,
+    )
+
+    signal_takeaways = build_overall_takeaways(
+        topic=topic,
+        severity=severity,
+        magnitude=magnitude,
+        paper_count=paper_count,
+        repo_count=repo_count,
+        star_delta=star_delta,
+        method_mentions=method_mentions,
+        dataset_mentions=dataset_mentions,
+        institution_mentions=institution_mentions,
+        evidence=evidence,
+        related_methods=related_methods,
+        related_datasets=related_datasets,
+        related_institutions=related_institutions,
+        watch_keywords=watch_keywords,
+        caveats=caveats,
+        tags=tags,
+        confidence=confidence,
+    )
+
+    enriched["curated_summary"] = _clean_text(curated_summary)
+    enriched["signal_takeaways"] = signal_takeaways[:7]
     enriched["source_link_groups"] = source_link_groups
     enriched["evidence_digest"] = evidence_digest
     enriched["signal_focus"] = {
         "dominant_source": dominant_source,
+        "source_mix": source_mix,
         "focus_terms": focus_terms,
+        "representative_titles": representative_titles,
         "related_institutions": institution_terms,
         "paper_count": paper_count,
         "repo_count": repo_count,
@@ -91,12 +104,138 @@ def enrich_signal_curation(signal: dict[str, Any]) -> dict[str, Any]:
         "dataset_mentions": dataset_mentions,
         "institution_mentions": institution_mentions,
     }
-    enriched["curation_method"] = "deterministic_rules_v1"
+    enriched["curation_method"] = "deterministic_natural_language_v2"
     return enriched
 
 
 def enrich_signals_curation(signals: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [enrich_signal_curation(signal) for signal in signals]
+
+
+def build_curated_summary(
+    *,
+    topic: str,
+    severity: str,
+    magnitude: Any,
+    confidence: Any,
+    dominant_source: str,
+    source_mix: str,
+    evidence_mix: str,
+    representative_titles: list[str],
+    related_methods: list[str],
+    related_datasets: list[str],
+    related_institutions: list[str],
+    watch_keywords: list[str],
+    star_delta: int,
+    method_mentions: int,
+    dataset_mentions: int,
+    institution_mentions: int,
+    caveats: list[str],
+    tags: list[str],
+) -> str:
+    """Build a readable paragraph summarizing the full captured target set."""
+
+    opening = (
+        f"本次抓取围绕「{topic}」相关公开信号进行汇总，系统将其判定为“{severity}”（M{_format_number(magnitude)}）。"
+        f"从抓取目标看，当前信号主要来自{dominant_source}，{source_mix}"
+    )
+
+    evidence_sentence = ""
+    if representative_titles:
+        evidence_sentence = (
+            f"代表性目标包括{_join_terms(representative_titles, 5)}等，它们构成了本轮判断的主要证据链；"
+            f"{evidence_mix}。"
+        )
+    elif evidence_mix:
+        evidence_sentence = f"从证据结构看，{evidence_mix}。"
+
+    star_sentence = ""
+    if star_delta > 0:
+        star_sentence = f"开源侧 24 小时 star 增量约为 {star_delta}，说明该方向至少在短期工程关注度上出现了可观察的聚集。"
+    elif "开源" in dominant_source or "GitHub" in source_mix:
+        star_sentence = "当前尚未形成显著 star 增量，但多个项目同时进入抓取窗口，仍说明工程侧正在出现同步试验或主题聚合。"
+
+    method_sentence = ""
+    if related_methods:
+        method_sentence = f"方法层面，抓取内容集中关联到{_join_terms(related_methods, 6)}等线索，方法提及 {method_mentions} 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。"
+    elif method_mentions:
+        method_sentence = f"方法相关词共出现 {method_mentions} 次，但尚未形成稳定的高频方法标签，需要继续观察后续快照。"
+
+    dataset_sentence = ""
+    if related_datasets:
+        dataset_sentence = f"数据集或 Benchmark 层面出现{_join_terms(related_datasets, 6)}等信号，累计提及 {dataset_mentions} 次，可作为判断研究评测侧是否跟进的重要线索。"
+    elif dataset_mentions:
+        dataset_sentence = f"数据集或 Benchmark 相关信号出现 {dataset_mentions} 次，但目前还没有足够集中到某个明确对象。"
+
+    institution_sentence = ""
+    if related_institutions:
+        institution_sentence = f"机构与账号层面，相关信号涉及{_join_terms(related_institutions, 8)}，累计提及 {institution_mentions} 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。"
+    elif institution_mentions:
+        institution_sentence = f"机构相关信号出现 {institution_mentions} 次，但目前尚未形成清晰的集中机构或核心账号。"
+
+    watch_sentence = ""
+    if watch_keywords:
+        watch_sentence = f"后续应重点观察{_join_terms(watch_keywords, 8)}等词是否继续在论文、repo 和项目描述中同时出现。"
+
+    confidence_sentence = ""
+    if confidence is not None:
+        confidence_sentence = f"当前置信度为 {_format_number(confidence)}。"
+    if caveats:
+        confidence_sentence += f"需要注意的是，{caveats[0]}"
+    elif "低置信度" in tags or "历史不足" in tags:
+        confidence_sentence += "需要注意的是，历史基线仍在积累，当前结论更适合作为短期预警，而不是长期趋势定论。"
+
+    return "".join(
+        part
+        for part in [
+            opening,
+            evidence_sentence,
+            star_sentence,
+            method_sentence,
+            dataset_sentence,
+            institution_sentence,
+            watch_sentence,
+            confidence_sentence,
+        ]
+        if part
+    )
+
+
+def build_overall_takeaways(
+    *,
+    topic: str,
+    severity: str,
+    magnitude: Any,
+    paper_count: int,
+    repo_count: int,
+    star_delta: int,
+    method_mentions: int,
+    dataset_mentions: int,
+    institution_mentions: int,
+    evidence: list[dict[str, Any]],
+    related_methods: list[str],
+    related_datasets: list[str],
+    related_institutions: list[str],
+    watch_keywords: list[str],
+    caveats: list[str],
+    tags: list[str],
+    confidence: Any,
+) -> list[str]:
+    """Summarize multiple captured targets into overall conclusions."""
+
+    conclusions: list[str | None] = [
+        (
+            f"总体判断：{topic} 本轮由论文 {paper_count} 条、GitHub 项目 {repo_count} 个共同构成观测基础，"
+            f"当前强度为“{severity}”（M{_format_number(magnitude)}）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。"
+        ),
+        _conclusion_content_focus(evidence=evidence, related_methods=related_methods, related_datasets=related_datasets, watch_keywords=watch_keywords),
+        _conclusion_engineering(repo_count=repo_count, star_delta=star_delta, related_methods=related_methods),
+        _conclusion_research(paper_count=paper_count, related_datasets=related_datasets, method_mentions=method_mentions, dataset_mentions=dataset_mentions),
+        _conclusion_institution(related_institutions=related_institutions, institution_mentions=institution_mentions),
+        _conclusion_evidence(evidence=evidence),
+        _conclusion_next_step(watch_keywords=watch_keywords, caveats=caveats, tags=tags, confidence=confidence),
+    ]
+    return _dedupe_keep_order(conclusions)
 
 
 def build_source_link_groups(*, evidence: list[dict[str, Any]], source_urls: list[str]) -> dict[str, list[dict[str, str]]]:
@@ -137,7 +276,7 @@ def build_source_link_groups(*, evidence: list[dict[str, Any]], source_urls: lis
             }
         )
 
-    return {key: value[:8] for key, value in groups.items() if value}
+    return {key: value[:10] for key, value in groups.items() if value}
 
 
 def build_evidence_digest(evidence: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -163,6 +302,66 @@ def build_evidence_digest(evidence: list[dict[str, Any]]) -> list[dict[str, Any]
     return digest
 
 
+def _conclusion_content_focus(
+    *, evidence: list[dict[str, Any]], related_methods: list[str], related_datasets: list[str], watch_keywords: list[str]
+) -> str | None:
+    titles = _representative_titles(evidence, limit=4)
+    focus_terms = _compact_terms(related_methods + related_datasets + watch_keywords, limit=6)
+    if titles and focus_terms:
+        return f"内容重点：抓取到的多个目标集中指向{_join_terms(focus_terms, 6)}等线索，代表条目包括{_join_terms(titles, 4)}，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。"
+    if titles:
+        return f"内容重点：代表条目包括{_join_terms(titles, 4)}，这些目标共同构成当前热点的主要观察对象。"
+    if focus_terms:
+        return f"内容重点：当前抓取内容主要围绕{_join_terms(focus_terms, 6)}等词展开，后续需要观察这些词是否持续共现。"
+    return None
+
+
+def _conclusion_engineering(*, repo_count: int, star_delta: int, related_methods: list[str]) -> str | None:
+    if repo_count <= 0:
+        return None
+    if star_delta > 0:
+        return f"工程侧归纳：本轮包含 {repo_count} 个 GitHub 项目，24 小时 star 增量约 {star_delta}，说明该方向在开源生态中已出现可量化的短期关注度。"
+    method_tail = f"，并与{_join_terms(related_methods, 4)}等方法线索相连" if related_methods else ""
+    return f"工程侧归纳：本轮包含 {repo_count} 个 GitHub 项目{method_tail}。即便 star 增量尚不明显，多个项目同时出现也说明该方向正在发生工程侧试验或工具化探索。"
+
+
+def _conclusion_research(
+    *, paper_count: int, related_datasets: list[str], method_mentions: int, dataset_mentions: int
+) -> str | None:
+    if paper_count <= 0 and not related_datasets and not method_mentions and not dataset_mentions:
+        return None
+    if paper_count > 0:
+        dataset_part = f"，并出现{_join_terms(related_datasets, 4)}等数据集/Benchmark 线索" if related_datasets else ""
+        return f"研究侧归纳：本轮包含 {paper_count} 条论文信号{dataset_part}，可用于判断该热点是否从工程讨论进入研究问题、实验设计或评测基准层面。"
+    return f"研究侧归纳：虽然论文条目不足，但方法相关提及 {method_mentions} 次、数据集/Benchmark 相关提及 {dataset_mentions} 次，说明仍有研究线索值得跟踪。"
+
+
+def _conclusion_institution(*, related_institutions: list[str], institution_mentions: int) -> str | None:
+    if not related_institutions and not institution_mentions:
+        return None
+    if related_institutions:
+        return f"机构与账号归纳：相关信号涉及{_join_terms(related_institutions, 6)}，累计提及 {institution_mentions} 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。"
+    return f"机构与账号归纳：机构相关信号出现 {institution_mentions} 次，但目前还没有形成稳定的集中对象。"
+
+
+def _conclusion_evidence(evidence: list[dict[str, Any]]) -> str | None:
+    if not evidence:
+        return None
+    counter = Counter(item.get("source_type") or "source" for item in evidence)
+    mix = "、".join(f"{name} {count} 条" for name, count in counter.most_common())
+    return f"证据链归纳：代表性证据覆盖 {mix}。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。"
+
+
+def _conclusion_next_step(*, watch_keywords: list[str], caveats: list[str], tags: list[str], confidence: Any) -> str | None:
+    watch = f"后续重点观察{_join_terms(watch_keywords, 8)}是否继续出现" if watch_keywords else "后续重点观察该方向是否继续出现跨窗口重复信号"
+    confidence_part = f"当前置信度为 {_format_number(confidence)}，" if confidence is not None else ""
+    if caveats:
+        return f"观察建议：{watch}。{confidence_part}同时需要注意：{caveats[0]}"
+    if "低置信度" in tags or "历史不足" in tags:
+        return f"观察建议：{watch}。{confidence_part}由于历史样本仍在积累，当前更适合作为短期预警，而不是长期趋势定论。"
+    return f"观察建议：{watch}。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+
+
 def _dominant_source(*, paper_count: int, repo_count: int) -> str:
     if repo_count and paper_count:
         if repo_count > paper_count * 2:
@@ -177,7 +376,7 @@ def _dominant_source(*, paper_count: int, repo_count: int) -> str:
     return "公开抓取信号"
 
 
-def _source_mix_sentence(*, paper_count: int, repo_count: int) -> str:
+def _source_mix_text(*, paper_count: int, repo_count: int) -> str:
     parts = []
     if paper_count:
         parts.append(f"论文 {paper_count} 条")
@@ -188,83 +387,25 @@ def _source_mix_sentence(*, paper_count: int, repo_count: int) -> str:
     return "当前窗口内捕获到" + "、".join(parts) + "。"
 
 
-def _star_sentence(star_delta: int) -> str:
-    if star_delta > 0:
-        return f"相关项目 24 小时 star 增量合计约 {star_delta}，说明短期工程关注度出现集中变化。"
-    return "当前未观察到显著 24 小时 star 增量，仍需结合后续小时快照判断持续性。"
-
-
-def _method_dataset_sentence(*, related_methods: list[str], related_datasets: list[str], method_mentions: int, dataset_mentions: int) -> str:
-    sentences = []
-    if related_methods:
-        sentences.append(f"方法侧集中在{_join_terms(related_methods, 5)}等关键词，累计方法提及 {method_mentions} 次。")
-    elif method_mentions:
-        sentences.append(f"方法相关词出现 {method_mentions} 次，但当前未形成稳定方法标签。")
-    if related_datasets:
-        sentences.append(f"数据集/Benchmark 侧出现{_join_terms(related_datasets, 5)}等信号，累计提及 {dataset_mentions} 次。")
-    elif dataset_mentions:
-        sentences.append(f"数据集/Benchmark 相关词出现 {dataset_mentions} 次，但暂未形成高频标签。")
-    return "".join(sentences)
-
-
-def _institution_sentence(*, related_institutions: list[str], institution_mentions: int) -> str:
-    if related_institutions:
-        return f"机构或账号信号主要涉及{_join_terms(related_institutions, 5)}，相关提及 {institution_mentions} 次。"
-    if institution_mentions:
-        return f"机构相关信号出现 {institution_mentions} 次，但当前未形成明确集中对象。"
-    return ""
-
-
-def _takeaway_source_mix(*, paper_count: int, repo_count: int) -> str | None:
-    if paper_count or repo_count:
-        return f"信号来源结构：论文 {paper_count} 条，GitHub 项目 {repo_count} 个。"
-    return "当前热点主要来自结构化匹配结果，但缺少可拆分的论文/项目计数。"
-
-
-def _takeaway_star_delta(star_delta: int) -> str | None:
-    if star_delta > 0:
-        return f"开源热度：相关项目 24 小时 star 增量约 {star_delta}，可作为工程生态升温的短期指标。"
-    return None
-
-
-def _takeaway_methods(related_methods: list[str], method_mentions: int) -> str | None:
-    if related_methods:
-        return f"方法线索：{_join_terms(related_methods, 6)}；方法提及 {method_mentions} 次。"
-    return None
-
-
-def _takeaway_datasets(related_datasets: list[str], dataset_mentions: int) -> str | None:
-    if related_datasets:
-        return f"数据集/Benchmark 线索：{_join_terms(related_datasets, 6)}；相关提及 {dataset_mentions} 次。"
-    return None
-
-
-def _takeaway_institutions(related_institutions: list[str], institution_mentions: int) -> str | None:
-    if related_institutions:
-        return f"机构/账号线索：{_join_terms(related_institutions, 6)}；相关提及 {institution_mentions} 次。"
-    return None
-
-
-def _takeaway_evidence(evidence: list[dict[str, Any]]) -> str | None:
+def _evidence_mix_text(evidence: list[dict[str, Any]]) -> str:
     if not evidence:
-        return None
+        return ""
     counter = Counter(item.get("source_type") or "source" for item in evidence)
-    mix = "、".join(f"{name} {count} 条" for name, count in counter.most_common())
-    return f"证据链：代表性信号覆盖 {mix}，可点击下方链接回看原始来源。"
+    return "代表性证据覆盖" + "、".join(f"{name} {count} 条" for name, count in counter.most_common())
 
 
-def _takeaway_confidence(metrics: dict[str, Any], caveats: list[str]) -> str | None:
-    if metrics.get("low_history_confidence"):
-        return "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
-    if caveats:
-        return f"边界提示：{caveats[0]}"
-    return None
-
-
-def _takeaway_watch_keywords(watch_keywords: list[str]) -> str | None:
-    if watch_keywords:
-        return f"后续观察词：{_join_terms(watch_keywords, 8)}。"
-    return None
+def _representative_titles(evidence: list[dict[str, Any]], *, limit: int) -> list[str]:
+    titles: list[str] = []
+    seen: set[str] = set()
+    for item in evidence:
+        title = str(item.get("title") or _link_label(str(item.get("source_url") or ""))).strip()
+        if not title or title.lower() in seen:
+            continue
+        seen.add(title.lower())
+        titles.append(title)
+        if len(titles) >= limit:
+            break
+    return titles
 
 
 def _group_for_evidence(item: dict[str, Any]) -> str:
@@ -296,12 +437,12 @@ def _reason_for_evidence(item: dict[str, Any]) -> str:
     )
     score = item.get("match_score")
     if terms and score is not None:
-        return f"命中 {'、'.join(terms)}，匹配分 {score}。"
+        return f"命中 {'、'.join(terms)}，匹配分 {score}，因此被纳入本轮代表性证据。"
     if terms:
-        return f"命中 {'、'.join(terms)}。"
+        return f"命中 {'、'.join(terms)}，因此被纳入本轮代表性证据。"
     if score is not None:
-        return f"纳入代表性证据，匹配分 {score}。"
-    return "纳入代表性证据。"
+        return f"匹配分 {score}，因此被纳入本轮代表性证据。"
+    return "被纳入本轮代表性证据。"
 
 
 def _source_name_from_url(url: str) -> str:
@@ -352,12 +493,16 @@ def _dedupe_keep_order(values: list[str | None]) -> list[str]:
     for value in values:
         if not value:
             continue
-        text = " ".join(str(value).split())
+        text = _clean_text(str(value))
         if not text or text in seen:
             continue
         seen.add(text)
         rows.append(text)
     return rows
+
+
+def _clean_text(value: str) -> str:
+    return " ".join(value.split())
 
 
 def _format_number(value: Any) -> str:
