@@ -1,33 +1,217 @@
 ---
 const { graph = { nodes: [], edges: [] } } = Astro.props;
-const nodes = (graph.nodes || []).slice(0, 24);
-const edges = (graph.edges || []).slice(0, 36);
-const width = 760;
-const height = 360;
-const positioned = nodes.map((node: any, index: number) => {
-  const angle = (Math.PI * 2 * index) / Math.max(1, nodes.length);
-  const radius = 130 + (index % 3) * 22;
-  return {
-    ...node,
-    x: width / 2 + Math.cos(angle) * radius,
-    y: height / 2 + Math.sin(angle) * radius
-  };
-});
+const width = 1040;
+const height = 640;
+const rawNodes = graph.nodes || [];
+const rawEdges = graph.edges || [];
+
+const typeRank: Record<string, number> = { topic: 4, method: 3, dataset: 2, keyword: 1 };
+const typeLabels: Record<string, string> = {
+  topic: "议题 / 方向",
+  method: "方法 / 工具",
+  dataset: "数据 / Benchmark",
+  keyword: "高频关键词",
+};
+const typeColors: Record<string, { stroke: string; fill: string; text: string }> = {
+  topic: { stroke: "#1f4e5f", fill: "#edf5f5", text: "#173b46" },
+  method: { stroke: "#477b73", fill: "#f0f7f5", text: "#24534d" },
+  dataset: { stroke: "#9c6a36", fill: "#fbf4ea", text: "#70491f" },
+  keyword: { stroke: "#6b7280", fill: "#f6f7f9", text: "#344054" },
+};
+
+function normalizeId(value: string) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function normalizeLabel(value: string) {
+  const text = String(value || "").trim();
+  if (!text) return "未命名";
+  return text.length > 24 ? `${text.slice(0, 23)}…` : text;
+}
+
+function mergeNodes(nodes: any[]) {
+  const map = new Map<string, any>();
+  for (const node of nodes) {
+    const id = normalizeId(node.id || node.label);
+    if (!id) continue;
+    const existing = map.get(id);
+    if (!existing) {
+      map.set(id, { ...node, id, label: normalizeLabel(node.label || id) });
+      continue;
+    }
+    existing.count = Math.max(Number(existing.count || 0), Number(node.count || 0));
+    existing.weight = Math.max(Number(existing.weight || 0), Number(node.weight || 0));
+    if ((typeRank[node.type] || 0) > (typeRank[existing.type] || 0)) existing.type = node.type;
+    if (String(node.label || "").length > String(existing.label || "").length) existing.label = normalizeLabel(node.label);
+  }
+  return [...map.values()].sort((a, b) => (Number(b.weight || 0) - Number(a.weight || 0)) || (Number(b.count || 0) - Number(a.count || 0))).slice(0, 30);
+}
+
+const nodes = mergeNodes(rawNodes);
+const visibleIds = new Set(nodes.map((node: any) => node.id));
+const edges = rawEdges
+  .map((edge: any) => ({ ...edge, source: normalizeId(edge.source), target: normalizeId(edge.target) }))
+  .filter((edge: any) => edge.source !== edge.target && visibleIds.has(edge.source) && visibleIds.has(edge.target))
+  .sort((a: any, b: any) => Number(b.weight || 0) - Number(a.weight || 0))
+  .slice(0, 44);
+
+function clusterCenter(type: string) {
+  if (type === "topic") return { x: 440, y: 275, rx: 178, ry: 92, title: "核心议题层" };
+  if (type === "method") return { x: 760, y: 210, rx: 145, ry: 76, title: "方法工具层" };
+  if (type === "dataset") return { x: 760, y: 430, rx: 135, ry: 66, title: "数据基准层" };
+  return { x: 275, y: 430, rx: 168, ry: 86, title: "语义关键词层" };
+}
+
+const grouped = {
+  topic: nodes.filter((node: any) => node.type === "topic"),
+  method: nodes.filter((node: any) => node.type === "method"),
+  dataset: nodes.filter((node: any) => node.type === "dataset"),
+  keyword: nodes.filter((node: any) => !["topic", "method", "dataset"].includes(node.type)),
+};
+
+function assignPositions(items: any[], type: string) {
+  const center = clusterCenter(type);
+  const count = Math.max(1, items.length);
+  return items.map((node: any, index: number) => {
+    const angle = (-Math.PI / 2) + (Math.PI * 2 * index) / count;
+    const radiusScale = count <= 3 ? 0.54 : index % 2 === 0 ? 0.86 : 0.58;
+    const x = center.x + Math.cos(angle) * center.rx * radiusScale;
+    const y = center.y + Math.sin(angle) * center.ry * radiusScale;
+    const importance = Math.max(0.22, Math.min(1, Number(node.weight || 0)));
+    const labelWidth = Math.max(96, Math.min(176, normalizeLabel(node.label).length * 8.6 + 38));
+    return { ...node, x, y, importance, labelWidth, type };
+  });
+}
+
+const positioned = [
+  ...assignPositions(grouped.topic.slice(0, 9), "topic"),
+  ...assignPositions(grouped.method.slice(0, 7), "method"),
+  ...assignPositions(grouped.dataset.slice(0, 5), "dataset"),
+  ...assignPositions(grouped.keyword.slice(0, 9), "keyword"),
+];
 const byId = new Map(positioned.map((node: any) => [node.id, node]));
+const visibleEdges = edges.filter((edge: any) => byId.has(edge.source) && byId.has(edge.target));
+const topNodes = positioned.slice().sort((a: any, b: any) => Number(b.weight || 0) - Number(a.weight || 0)).slice(0, 5);
+const typeCounts = positioned.reduce((acc: Record<string, number>, node: any) => {
+  acc[node.type] = (acc[node.type] || 0) + 1;
+  return acc;
+}, {});
+
+function edgePath(source: any, target: any, index: number) {
+  const midX = (source.x + target.x) / 2;
+  const midY = (source.y + target.y) / 2;
+  const dx = target.x - source.x;
+  const dy = target.y - source.y;
+  const length = Math.max(1, Math.hypot(dx, dy));
+  const offset = ((index % 5) - 2) * 10;
+  const cx = midX - (dy / length) * offset;
+  const cy = midY + (dx / length) * offset;
+  return `M ${source.x} ${source.y} Q ${cx} ${cy} ${target.x} ${target.y}`;
+}
+
+function relationLabel(edge: any) {
+  return `共现 ${edge.cooccurrence_count || 0} 次`;
+}
 ---
-{nodes.length ? (
-  <svg class="network" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="关键词共现网络">
-    {edges.map((edge: any) => {
-      const source: any = byId.get(edge.source);
-      const target: any = byId.get(edge.target);
-      if (!source || !target) return null;
-      return <line x1={source.x} y1={source.y} x2={target.x} y2={target.y} stroke="#d9dee7" stroke-width={Math.max(1, edge.weight * 3)} />;
-    })}
-    {positioned.map((node: any) => (
-      <g>
-        <circle cx={node.x} cy={node.y} r={8 + Math.min(12, node.count * 2)} fill={node.type === "topic" ? "#0f766e" : node.type === "dataset" ? "#b54708" : "#155eef"} opacity="0.88" />
-        <text x={node.x + 13} y={node.y + 4} font-size="12" fill="#17202a">{node.label}</text>
+{positioned.length ? (
+  <div class="academic-network-wrap">
+    <svg class="network academic-network" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="关键词共现网络学术图谱">
+      <defs>
+        <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#101828" flood-opacity="0.12" />
+        </filter>
+        <marker id="arrowSoft" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 Z" fill="#98a2b3" opacity="0.72" />
+        </marker>
+      </defs>
+
+      <rect x="0" y="0" width={width} height={height} rx="18" fill="#ffffff" />
+      <path d="M70 104 H970 M70 204 H970 M70 304 H970 M70 404 H970 M70 504 H970 M180 70 V570 M380 70 V570 M580 70 V570 M780 70 V570" stroke="#eef2f6" stroke-width="1" />
+
+      <text x="64" y="50" class="network-title">关键词共现网络图谱</text>
+      <text x="64" y="75" class="network-subtitle">以节点频次、类型分层与边权强度呈现 AI 方向之间的共现结构</text>
+      <text x="848" y="52" class="network-window">窗口：{graph.window || "latest"}</text>
+
+      {(["topic", "method", "dataset", "keyword"] as const).map((type) => {
+        const center = clusterCenter(type);
+        const colors = typeColors[type];
+        return (
+          <g>
+            <ellipse cx={center.x} cy={center.y} rx={center.rx + 24} ry={center.ry + 24} fill={colors.fill} stroke={colors.stroke} stroke-width="1.2" stroke-dasharray="5 7" opacity="0.72" />
+            <text x={center.x - center.rx - 8} y={center.y - center.ry - 34} class="cluster-title" fill={colors.text}>{center.title}</text>
+            <text x={center.x - center.rx - 8} y={center.y - center.ry - 15} class="cluster-note" fill="#667085">{typeLabels[type]} · {typeCounts[type] || 0} 个节点</text>
+          </g>
+        );
+      })}
+
+      <g class="edge-layer">
+        {visibleEdges.map((edge: any, index: number) => {
+          const source: any = byId.get(edge.source);
+          const target: any = byId.get(edge.target);
+          const widthScale = 0.8 + Math.min(4.2, Number(edge.weight || 0) * 5);
+          return (
+            <g>
+              <path d={edgePath(source, target, index)} fill="none" stroke="#98a2b3" stroke-width={widthScale} opacity={0.26 + Math.min(0.38, Number(edge.weight || 0) * 0.56)} marker-end="url(#arrowSoft)">
+                <title>{source.label} → {target.label} · {relationLabel(edge)}</title>
+              </path>
+            </g>
+          );
+        })}
       </g>
-    ))}
-  </svg>
+
+      <g class="node-layer">
+        {positioned.map((node: any) => {
+          const colors = typeColors[node.type] || typeColors.keyword;
+          const cardW = node.labelWidth;
+          const cardH = 34 + Math.round(node.importance * 9);
+          const x = node.x - cardW / 2;
+          const y = node.y - cardH / 2;
+          return (
+            <g filter="url(#nodeShadow)">
+              <rect x={x} y={y} width={cardW} height={cardH} rx="10" fill="#ffffff" stroke={colors.stroke} stroke-width={1.1 + node.importance * 1.2} />
+              <circle cx={x + 17} cy={node.y} r={5.2 + node.importance * 4.2} fill={colors.stroke} opacity="0.88" />
+              <text x={x + 31} y={node.y - 2} class="node-label" fill={colors.text}>{normalizeLabel(node.label)}</text>
+              <text x={x + 31} y={node.y + 13} class="node-meta" fill="#667085">{typeLabels[node.type] || "关键词"} · {node.count || 0}</text>
+            </g>
+          );
+        })}
+      </g>
+
+      <g class="legend" transform="translate(64 565)">
+        {(["topic", "method", "dataset", "keyword"] as const).map((type, index) => {
+          const colors = typeColors[type];
+          return (
+            <g transform={`translate(${index * 174} 0)`}>
+              <circle cx="0" cy="0" r="6" fill={colors.stroke} />
+              <text x="12" y="4" class="legend-text">{typeLabels[type]}</text>
+            </g>
+          );
+        })}
+        <line x1="728" y1="0" x2="778" y2="0" stroke="#98a2b3" stroke-width="3" opacity="0.55" marker-end="url(#arrowSoft)" />
+        <text x="790" y="4" class="legend-text">边越粗，共现强度越高</text>
+      </g>
+    </svg>
+
+    <div class="network-reading panel">
+      <div>
+        <h3>图形读法</h3>
+        <p>图中按“核心议题—方法工具—数据基准—语义关键词”分区布局，节点越大代表频次或权重越高，连线越粗代表共现强度越高。整体风格采用中文社科论文机制图常见的白底、克制配色、分层边界与清晰注释。</p>
+      </div>
+      <div>
+        <h3>当前中心节点</h3>
+        <div class="network-focus-tags">
+          {topNodes.map((node: any) => <span class="tag">{node.label} · {node.count}</span>)}
+        </div>
+      </div>
+    </div>
+  </div>
 ) : <div class="empty">暂无共现网络数据。</div>}
+<style>
+  .network-title { font-size: 24px; font-weight: 760; fill: #17202a; letter-spacing: 0.02em; }
+  .network-subtitle, .network-window { font-size: 13px; fill: #667085; }
+  .cluster-title { font-size: 15px; font-weight: 760; }
+  .cluster-note { font-size: 12px; }
+  .node-label { font-size: 12.5px; font-weight: 740; }
+  .node-meta { font-size: 10.5px; }
+  .legend-text { font-size: 12px; fill: #475467; }
+</style>
