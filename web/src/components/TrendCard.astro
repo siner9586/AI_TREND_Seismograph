@@ -30,12 +30,12 @@ const signalFacts = [
 ].filter(Boolean);
 
 const fallbackTakeaways = [
-  signalFacts.length ? `信号结构：${signalFacts.join("、")}。` : null,
-  keyDrivers.length ? `驱动因素：${keyDrivers.slice(0, 4).join("；")}。` : null,
-  relatedMethods.length ? `方法线索：${relatedMethods.slice(0, 6).join("、")}。` : null,
-  relatedDatasets.length ? `数据集/Benchmark 线索：${relatedDatasets.slice(0, 6).join("、")}。` : null,
-  relatedInstitutions.length ? `机构/账号线索：${relatedInstitutions.slice(0, 6).join("、")}。` : null,
-  watchKeywords.length ? `后续观察词：${watchKeywords.slice(0, 8).join("、")}。` : null,
+  signalFacts.length ? `总体判断：本轮抓取由${signalFacts.join("、")}共同构成，说明该热点不是单一条目，而是一组围绕同一方向聚合的公开信号。` : null,
+  keyDrivers.length ? `内容重点：主要驱动因素包括${keyDrivers.slice(0, 4).join("；")}，可作为理解本轮热点来源的基础。` : null,
+  relatedMethods.length ? `方法归纳：相关内容集中在${relatedMethods.slice(0, 6).join("、")}等技术路径或工具线索。` : null,
+  relatedDatasets.length ? `研究归纳：数据集或 Benchmark 线索包括${relatedDatasets.slice(0, 6).join("、")}，可用于判断评测侧是否开始跟进。` : null,
+  relatedInstitutions.length ? `机构与账号归纳：相关信号涉及${relatedInstitutions.slice(0, 6).join("、")}，提示生态账号或机构活动可能出现集中。` : null,
+  watchKeywords.length ? `观察建议：后续重点观察${watchKeywords.slice(0, 8).join("、")}是否继续在论文、项目和描述文本中重复出现。` : null,
   metrics.low_history_confidence || caveats.length ? `边界提示：${caveats[0] || "历史样本不足，当前判断更适合作为短期预警。"}` : null,
 ].filter(Boolean) as string[];
 const takeaways = signalTakeaways.length ? signalTakeaways : fallbackTakeaways;
@@ -97,7 +97,7 @@ const displaySourceGroups = sourceLinkGroupEntries.length ? sourceLinkGroupEntri
 
   {detailed && (curatedSummary || signalFacts.length) ? (
     <section class="trend-detail-block summary-block">
-      <div class="detail-title">抓取内容重点</div>
+      <div class="detail-title">抓取目标全文总结</div>
       <p class="detail-summary">
         {curatedSummary || <>本轮热点主要由{signalFacts.join("、")}构成；系统结合突发强度、来源覆盖、机构/方法信号和历史基线，判断该方向处于“{trend.severity_label || "趋势波动"}”。</>}
       </p>
@@ -107,7 +107,7 @@ const displaySourceGroups = sourceLinkGroupEntries.length ? sourceLinkGroupEntri
 
   {detailed && takeaways.length ? (
     <section class="trend-detail-block">
-      <div class="detail-title">重点结论</div>
+      <div class="detail-title">总体归纳结论</div>
       <ul class="compact-list takeaway-list">
         {takeaways.slice(0, 7).map((item: string) => <li>{item}</li>)}
       </ul>
