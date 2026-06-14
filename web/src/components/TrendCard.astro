@@ -8,6 +8,8 @@ const { trend, detailed = false } = Astro.props;
 const metrics = trend.metrics || {};
 const evidence = trend.evidence || [];
 const sourceUrls = Array.from(new Set([...(trend.source_urls || []), ...evidence.map((item: any) => item.source_url)].filter(Boolean))).slice(0, 8) as string[];
+const sourceLinkGroups = trend.source_link_groups || {};
+const sourceLinkGroupEntries = Object.entries(sourceLinkGroups).filter(([, links]) => Array.isArray(links) && links.length) as [string, any[]][];
 const relatedMethods = trend.related_methods || [];
 const relatedDatasets = trend.related_datasets || [];
 const relatedInstitutions = trend.related_institutions || [];
@@ -15,6 +17,8 @@ const watchKeywords = trend.suggested_watch_keywords || [];
 const keyDrivers = trend.key_drivers || [];
 const caveats = trend.caveats || [];
 const evidenceKeywords = Array.from(new Set(evidence.flatMap((item: any) => item.matched_keywords || []).filter(Boolean))).slice(0, 8) as string[];
+const curatedSummary = trend.curated_summary || null;
+const signalTakeaways = trend.signal_takeaways || [];
 
 const signalFacts = [
   metrics.repo_count ? `GitHub 项目信号 ${metrics.repo_count} 个` : null,
@@ -54,16 +58,25 @@ function linkLabel(url: string) {
 
   <p>{trend.summary}</p>
 
-  {detailed && signalFacts.length ? (
+  {detailed && (curatedSummary || signalFacts.length) ? (
     <section class="trend-detail-block">
       <div class="detail-title">抓取内容重点</div>
       <p class="detail-summary">
-        本轮热点主要由{signalFacts.join("、")}构成；系统结合突发强度、来源覆盖、机构/方法信号和历史基线，判断该方向处于“{trend.severity_label || "趋势波动"}”。
+        {curatedSummary || <>本轮热点主要由{signalFacts.join("、")}构成；系统结合突发强度、来源覆盖、机构/方法信号和历史基线，判断该方向处于“{trend.severity_label || "趋势波动"}”。</>}
       </p>
     </section>
   ) : null}
 
-  {detailed && keyDrivers.length ? (
+  {detailed && signalTakeaways.length ? (
+    <section class="trend-detail-block">
+      <div class="detail-title">重点结论</div>
+      <ul class="compact-list">
+        {signalTakeaways.slice(0, 6).map((item: string) => <li>{item}</li>)}
+      </ul>
+    </section>
+  ) : null}
+
+  {detailed && !signalTakeaways.length && keyDrivers.length ? (
     <section class="trend-detail-block">
       <div class="detail-title">主要驱动因素</div>
       <ul class="compact-list">
@@ -98,7 +111,23 @@ function linkLabel(url: string) {
     </section>
   ) : <EvidenceChain evidence={evidence || []} />}
 
-  {detailed && sourceUrls.length ? (
+  {detailed && sourceLinkGroupEntries.length ? (
+    <section class="trend-detail-block signal-links">
+      <div class="detail-title">信号链接</div>
+      <div class="source-link-groups">
+        {sourceLinkGroupEntries.map(([groupName, links]) => (
+          <div class="source-link-group">
+            <div class="signal-label">{groupName}</div>
+            <div class="link-list">
+              {links.slice(0, 8).map((link: any) => (
+                <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.reason || link.title}>{link.title || linkLabel(link.url)}</a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  ) : detailed && sourceUrls.length ? (
     <section class="trend-detail-block signal-links">
       <div class="detail-title">信号链接</div>
       <div class="link-list">
