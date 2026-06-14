@@ -4,6 +4,7 @@ const width = 1040;
 const height = 640;
 const rawNodes = graph.nodes || [];
 const rawEdges = graph.edges || [];
+const typeOrder = ["topic", "method", "dataset", "keyword"];
 
 const typeRank: Record<string, number> = { topic: 4, method: 3, dataset: 2, keyword: 1 };
 const typeLabels: Record<string, string> = {
@@ -132,7 +133,7 @@ function relationLabel(edge: any) {
       <text x="64" y="75" class="network-subtitle">以节点频次、类型分层与边权强度呈现 AI 方向之间的共现结构</text>
       <text x="848" y="52" class="network-window">窗口：{graph.window || "latest"}</text>
 
-      {(["topic", "method", "dataset", "keyword"] as const).map((type) => {
+      {typeOrder.map((type) => {
         const center = clusterCenter(type);
         const colors = typeColors[type];
         return (
@@ -178,7 +179,7 @@ function relationLabel(edge: any) {
       </g>
 
       <g class="legend" transform="translate(64 565)">
-        {(["topic", "method", "dataset", "keyword"] as const).map((type, index) => {
+        {typeOrder.map((type, index) => {
           const colors = typeColors[type];
           return (
             <g transform={`translate(${index * 174} 0)`}>
