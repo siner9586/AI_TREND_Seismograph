@@ -2129,6 +2129,855 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Agents",
+      "magnitude": 6.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Agents",
+          "title": "Agents 出现强趋势震荡",
+          "magnitude": 6.0,
+          "severity_label": "强趋势震荡",
+          "summary": "Agents 在当前窗口内出现 0 条论文信号和 17 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=6.0，burst=8.966，growth_rate=-0.957，z_score=-16.145，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 17 个",
+            "24h star 增量 1108",
+            "方法提及：MCP",
+            "机构集中：Anthropic, lehanepatrick148-cloud, DietrichGebert"
+          ],
+          "metrics": {
+            "current_1h_count": 17,
+            "current_24h_count": 17,
+            "current_72h_count": 17,
+            "current_7d_count": 17,
+            "baseline_daily_avg_30d": 412.8,
+            "baseline_daily_std_30d": 23.515,
+            "baseline_72h_avg_30d": 1238.4,
+            "growth_rate": -0.957,
+            "z_score": -16.145,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 8.362,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.118,
+            "institution_signal_score": 0.364,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 17,
+            "github_star_delta": 1108,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 20,
+            "burst_score": 8.966,
+            "low_history_confidence": true,
+            "magnitude": 6.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DietrichGebert/ponytail",
+              "source_url": "https://github.com/DietrichGebert/ponytail",
+              "published_at": "2026-06-12T00:52:37Z",
+              "match_score": 0.95,
+              "matched_keywords": [
+                "agent",
+                "agents",
+                "ai agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "desktop-hermes/hermes-agent-desktop",
+              "source_url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+              "published_at": "2026-06-11T17:34:17Z",
+              "match_score": 0.95,
+              "matched_keywords": [
+                "agent",
+                "agents",
+                "ai agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "hvardhan878/ghostwork",
+              "source_url": "https://github.com/hvardhan878/ghostwork",
+              "published_at": "2026-06-09T13:34:34Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "alchaincyf/fanbox",
+              "source_url": "https://github.com/alchaincyf/fanbox",
+              "published_at": "2026-06-10T01:01:42Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "orange2ai/renwei-writing",
+              "source_url": "https://github.com/orange2ai/renwei-writing",
+              "published_at": "2026-06-12T21:45:48Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "ai agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lehanepatrick148-cloud/cipher-whitepaper",
+              "source_url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+              "published_at": "2026-06-11T14:50:44Z",
+              "match_score": 0.317,
+              "matched_keywords": [
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "cobusgreyling/loop-engineering",
+              "source_url": "https://github.com/cobusgreyling/loop-engineering",
+              "published_at": "2026-06-09T06:28:20Z",
+              "match_score": 0.317,
+              "matched_keywords": [
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "clarilayer/clarilayer",
+              "source_url": "https://github.com/clarilayer/clarilayer",
+              "published_at": "2026-06-08T13:17:43Z",
+              "match_score": 0.317,
+              "matched_keywords": [
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/BuilderIO/skills",
+            "https://github.com/DanMcInerney/architect-loop",
+            "https://github.com/DietrichGebert/ponytail",
+            "https://github.com/Enotrium/Nazgul",
+            "https://github.com/JimLiu/baoyu-design",
+            "https://github.com/agentic-in/inferoa",
+            "https://github.com/alchaincyf/fanbox",
+            "https://github.com/borhen68/TokenTamer",
+            "https://github.com/clarilayer/clarilayer",
+            "https://github.com/cobusgreyling/loop-engineering",
+            "https://github.com/desktop-hermes/hermes-agent-desktop",
+            "https://github.com/hvardhan878/ghostwork",
+            "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+            "https://github.com/omnigent-ai/omnigent",
+            "https://github.com/orange2ai/renwei-writing",
+            "https://github.com/plannotator/effective-html",
+            "https://github.com/s0912758806p/agentic-sop-to-work"
+          ],
+          "related_methods": [
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "Anthropic",
+            "lehanepatrick148-cloud",
+            "DietrichGebert",
+            "cobusgreyling",
+            "clarilayer",
+            "hvardhan878",
+            "agentic-in",
+            "OpenAI"
+          ],
+          "suggested_watch_keywords": [
+            "agent",
+            "code",
+            "claude",
+            "agents",
+            "your",
+            "skill",
+            "you",
+            "loop"
+          ],
+          "confidence": 0.57,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Agents:2026-06-14:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"orange2ai/renwei-writing\", \"source_url\": \"https://github.com/orange2ai/renwei-writing\", \"published_at\": \"2026-06-12T21:45:48Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]"
+        },
+        "snapshot_hour": "2026-06-14T01"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-14T01:39:08.499281+00:00",
+      "dedupe_key": "trend:Agents:2026-06-14:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Model Context Protocol",
+      "magnitude": 5.44,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Model Context Protocol",
+          "title": "Model Context Protocol 出现强趋势震荡",
+          "magnitude": 5.44,
+          "severity_label": "强趋势震荡",
+          "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.44，burst=5.167，growth_rate=-0.954，z_score=-9.214，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 9 个",
+            "24h star 增量 817",
+            "方法提及：MCP",
+            "机构集中：lehanepatrick148-cloud, DietrichGebert, Anthropic"
+          ],
+          "metrics": {
+            "current_1h_count": 9,
+            "current_24h_count": 9,
+            "current_72h_count": 9,
+            "current_7d_count": 9,
+            "baseline_daily_avg_30d": 216.0,
+            "baseline_daily_std_30d": 21.466,
+            "baseline_72h_avg_30d": 648.0,
+            "growth_rate": -0.954,
+            "z_score": -9.214,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.563,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.111,
+            "institution_signal_score": 0.276,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 9,
+            "github_star_delta": 817,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 10,
+            "burst_score": 5.167,
+            "low_history_confidence": true,
+            "magnitude": 5.44
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "cobusgreyling/loop-engineering",
+              "source_url": "https://github.com/cobusgreyling/loop-engineering",
+              "published_at": "2026-06-09T06:28:20Z",
+              "match_score": 0.537,
+              "matched_keywords": [
+                "MCP"
+              ],
+              "matched_methods": [
+                "MCP"
+              ],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "clarilayer/clarilayer",
+              "source_url": "https://github.com/clarilayer/clarilayer",
+              "published_at": "2026-06-08T13:17:43Z",
+              "match_score": 0.537,
+              "matched_keywords": [
+                "MCP"
+              ],
+              "matched_methods": [
+                "MCP"
+              ],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lehanepatrick148-cloud/cipher-whitepaper",
+              "source_url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+              "published_at": "2026-06-11T14:50:44Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DietrichGebert/ponytail",
+              "source_url": "https://github.com/DietrichGebert/ponytail",
+              "published_at": "2026-06-12T00:52:37Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "hvardhan878/ghostwork",
+              "source_url": "https://github.com/hvardhan878/ghostwork",
+              "published_at": "2026-06-09T13:34:34Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "desktop-hermes/hermes-agent-desktop",
+              "source_url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+              "published_at": "2026-06-11T17:34:17Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "omnigent-ai/omnigent",
+              "source_url": "https://github.com/omnigent-ai/omnigent",
+              "published_at": "2026-06-11T12:18:13Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "alchaincyf/fanbox",
+              "source_url": "https://github.com/alchaincyf/fanbox",
+              "published_at": "2026-06-10T01:01:42Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/BuilderIO/skills",
+            "https://github.com/DietrichGebert/ponytail",
+            "https://github.com/alchaincyf/fanbox",
+            "https://github.com/clarilayer/clarilayer",
+            "https://github.com/cobusgreyling/loop-engineering",
+            "https://github.com/desktop-hermes/hermes-agent-desktop",
+            "https://github.com/hvardhan878/ghostwork",
+            "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+            "https://github.com/omnigent-ai/omnigent"
+          ],
+          "related_methods": [
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "lehanepatrick148-cloud",
+            "DietrichGebert",
+            "Anthropic",
+            "cobusgreyling",
+            "clarilayer",
+            "hvardhan878",
+            "desktop-hermes",
+            "omnigent-ai"
+          ],
+          "suggested_watch_keywords": [
+            "agents",
+            "your",
+            "code",
+            "agent",
+            "coding",
+            "claude",
+            "you",
+            "ai-agents"
+          ],
+          "confidence": 0.57,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Model Context Protocol:2026-06-14:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"omnigent-ai/omnigent\", \"source_url\": \"https://github.com/omnigent-ai/omnigent\", \"published_at\": \"2026-06-11T12:18:13Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+        },
+        "snapshot_hour": "2026-06-14T01"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-14T01:39:08.499281+00:00",
+      "dedupe_key": "trend:Model Context Protocol:2026-06-14:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "RAG",
+      "magnitude": 5.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "RAG",
+          "title": "RAG 出现强趋势震荡",
+          "magnitude": 5.0,
+          "severity_label": "强趋势震荡",
+          "summary": "RAG 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.0，burst=4.814，growth_rate=-0.953，z_score=-161.0，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 7 个",
+            "24h star 增量 13",
+            "方法提及：RAG",
+            "机构集中：canwhite, minjie05, chen150450"
+          ],
+          "metrics": {
+            "current_1h_count": 7,
+            "current_24h_count": 7,
+            "current_72h_count": 7,
+            "current_7d_count": 7,
+            "baseline_daily_avg_30d": 168.0,
+            "baseline_daily_std_30d": 0.0,
+            "baseline_72h_avg_30d": 504.0,
+            "growth_rate": -0.953,
+            "z_score": -161.0,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.67,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.143,
+            "institution_signal_score": 0.329,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 1.144,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 7,
+            "github_star_delta": 13,
+            "method_mentions": 7,
+            "dataset_mentions": 0,
+            "institution_mentions": 8,
+            "burst_score": 4.814,
+            "low_history_confidence": true,
+            "magnitude": 5.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "bigmacfive/turbo-graph",
+              "source_url": "https://github.com/bigmacfive/turbo-graph",
+              "published_at": "2026-06-11T13:42:15Z",
+              "match_score": 0.84,
+              "matched_keywords": [
+                "RAG",
+                "rag",
+                "vector search"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "canwhite/MicroRAG",
+              "source_url": "https://github.com/canwhite/MicroRAG",
+              "published_at": "2026-06-08T01:45:46Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "minjie05/KnowBase_AI",
+              "source_url": "https://github.com/minjie05/KnowBase_AI",
+              "published_at": "2026-06-09T04:57:10Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "chen150450/local-multimodal-rag",
+              "source_url": "https://github.com/chen150450/local-multimodal-rag",
+              "published_at": "2026-06-11T14:31:08Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "avi350751/What-Is-RAG",
+              "source_url": "https://github.com/avi350751/What-Is-RAG",
+              "published_at": "2026-06-07T21:53:16Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "jaimeirazabal1/rag-architectures",
+              "source_url": "https://github.com/jaimeirazabal1/rag-architectures",
+              "published_at": "2026-06-11T10:13:14Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "mimfort/rag_for_git",
+              "source_url": "https://github.com/mimfort/rag_for_git",
+              "published_at": "2026-06-07T08:15:13Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/avi350751/What-Is-RAG",
+            "https://github.com/bigmacfive/turbo-graph",
+            "https://github.com/canwhite/MicroRAG",
+            "https://github.com/chen150450/local-multimodal-rag",
+            "https://github.com/jaimeirazabal1/rag-architectures",
+            "https://github.com/mimfort/rag_for_git",
+            "https://github.com/minjie05/KnowBase_AI"
+          ],
+          "related_methods": [
+            "RAG"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "canwhite",
+            "minjie05",
+            "chen150450",
+            "avi350751",
+            "OpenAI",
+            "jaimeirazabal1",
+            "bigmacfive",
+            "mimfort"
+          ],
+          "suggested_watch_keywords": [
+            "rag",
+            "implementation",
+            "canwhite",
+            "microrag",
+            "minimal",
+            "canwhite microrag",
+            "microrag minimal",
+            "minimal implementation"
+          ],
+          "confidence": 0.57,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:RAG:2026-06-14:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bigmacfive/turbo-graph\", \"source_url\": \"https://github.com/bigmacfive/turbo-graph\", \"published_at\": \"2026-06-11T13:42:15Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"vector search\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"canwhite/MicroRAG\", \"source_url\": \"https://github.com/canwhite/MicroRAG\", \"published_at\": \"2026-06-08T01:45:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"minjie05/KnowBase_AI\", \"source_url\": \"https://github.com/minjie05/KnowBase_AI\", \"published_at\": \"2026-06-09T04:57:10Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chen150450/local-multimodal-rag\", \"source_url\": \"https://github.com/chen150450/local-multimodal-rag\", \"published_at\": \"2026-06-11T14:31:08Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"avi350751/What-Is-RAG\", \"source_url\": \"https://github.com/avi350751/What-Is-RAG\", \"published_at\": \"2026-06-07T21:53:16Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jaimeirazabal1/rag-architectures\", \"source_url\": \"https://github.com/jaimeirazabal1/rag-architectures\", \"published_at\": \"2026-06-11T10:13:14Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mimfort/rag_for_git\", \"source_url\": \"https://github.com/mimfort/rag_for_git\", \"published_at\": \"2026-06-07T08:15:13Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]"
+        },
+        "snapshot_hour": "2026-06-14T01"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-14T01:39:08.499281+00:00",
+      "dedupe_key": "trend:RAG:2026-06-14:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "AI Coding",
+      "magnitude": 4.26,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "AI Coding",
+          "title": "AI Coding 出现疑似爆发",
+          "magnitude": 4.26,
+          "severity_label": "疑似爆发",
+          "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.26，burst=2.982，growth_rate=-0.96，z_score=-11.396，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 4 个",
+            "24h star 增量 85",
+            "方法提及：MCP",
+            "机构集中：Anthropic, cobusgreyling, OpenAI"
+          ],
+          "metrics": {
+            "current_1h_count": 4,
+            "current_24h_count": 4,
+            "current_72h_count": 4,
+            "current_7d_count": 4,
+            "baseline_daily_avg_30d": 124.8,
+            "baseline_daily_std_30d": 9.6,
+            "baseline_72h_avg_30d": 374.4,
+            "growth_rate": -0.96,
+            "z_score": -11.396,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.601,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.5,
+            "institution_signal_score": 1.099,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 85,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 7,
+            "burst_score": 2.982,
+            "low_history_confidence": true,
+            "magnitude": 4.26
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "cobusgreyling/loop-engineering",
+              "source_url": "https://github.com/cobusgreyling/loop-engineering",
+              "published_at": "2026-06-09T06:28:20Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "ai coding"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "borhen68/TokenTamer",
+              "source_url": "https://github.com/borhen68/TokenTamer",
+              "published_at": "2026-06-08T11:25:21Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "alchaincyf/fanbox",
+              "source_url": "https://github.com/alchaincyf/fanbox",
+              "published_at": "2026-06-10T01:01:42Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "BuilderIO/skills",
+              "source_url": "https://github.com/BuilderIO/skills",
+              "published_at": "2026-06-10T16:04:20Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/BuilderIO/skills",
+            "https://github.com/alchaincyf/fanbox",
+            "https://github.com/borhen68/TokenTamer",
+            "https://github.com/cobusgreyling/loop-engineering"
+          ],
+          "related_methods": [
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "Anthropic",
+            "cobusgreyling",
+            "OpenAI",
+            "borhen68",
+            "alchaincyf",
+            "BuilderIO"
+          ],
+          "suggested_watch_keywords": [
+            "agents",
+            "coding",
+            "loop-engineering",
+            "cobusgreyling",
+            "practical",
+            "patterns",
+            "starters",
+            "cli"
+          ],
+          "confidence": 0.46,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:AI Coding:2026-06-14:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"borhen68/TokenTamer\", \"source_url\": \"https://github.com/borhen68/TokenTamer\", \"published_at\": \"2026-06-08T11:25:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"BuilderIO/skills\", \"source_url\": \"https://github.com/BuilderIO/skills\", \"published_at\": \"2026-06-10T16:04:20Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+        },
+        "snapshot_hour": "2026-06-14T01"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-14T01:39:08.499281+00:00",
+      "dedupe_key": "trend:AI Coding:2026-06-14:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
