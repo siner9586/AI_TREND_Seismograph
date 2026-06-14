@@ -11,7 +11,7 @@ export function getStaticPaths() {
 
 const { report } = Astro.props;
 ---
-<BaseLayout title={`日报 ${report.report_date} - AI 趋势地震仪`}>
+<BaseLayout title={`日报 ${report.report_date} - AI 趋势脉冲`}>
   <section class="page-title">
     <h1>日报 {report.report_date}</h1>
     <p class="subtitle">24/72 小时异常、30 天基线、机构发布、方法/数据集异常、GitHub 增长与 Watchlist 命中。</p>
@@ -25,7 +25,7 @@ const { report } = Astro.props;
 
   <h2>趋势异常</h2>
   <section class="grid cols-2">
-    {(report.top_anomalies || []).map((trend: any) => <TrendCard trend={trend} />)}
+    {(report.top_anomalies || []).map((trend: any) => <TrendCard trend={trend} detailed={true} />)}
     {!report.top_anomalies?.length && <div class="empty">本日报没有形成趋势异常。</div>}
   </section>
 
@@ -37,10 +37,5 @@ const { report } = Astro.props;
   <h2>机构聚集</h2>
   <section class="grid cols-3">
     {(report.institution_clusters || []).slice(0, 9).map((cluster: any) => <InstitutionClusterCard cluster={cluster} />)}
-  </section>
-
-  <h2>Caveats</h2>
-  <section class="panel">
-    <ul>{(report.caveats || []).map((item: string) => <li>{item}</li>)}</ul>
   </section>
 </BaseLayout>
