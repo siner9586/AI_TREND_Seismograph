@@ -61,19 +61,19 @@ python -m trend_seismograph push-hotspots --hour 2026-06-13T10
 - `data/hotspots/latest.json`
 - `data/hotspots/index.json`
 
-小时热点包含扫描规模、最高震级、Top hotspots、Watchlist 命中、GitHub surges、方法/数据集/机构信号、source status、partial、caveats 和确定性重点总结。
+小时热点包含扫描规模、最高震级、Top hotspots、Watchlist 命中、GitHub surges、方法/数据集/机构信号、source status、partial、caveats 和确定性自然语言总结。
 
 ## 重点总结与展示规则
 
-最新热点不接大模型，采用确定性规则总结器：`src/trend_seismograph/reports/curation.py`。
+最新热点不接大模型，采用确定性自然语言总结器：`src/trend_seismograph/reports/curation.py`。
 
 每个热点应生成并展示：
 
-- `curated_summary`：结构化摘要。
-- `signal_takeaways`：重点结论。
+- `curated_summary`：抓取目标全文总结。它不是短字段拼接，而是一段自然语言解读，说明抓到了哪些代表目标、这些目标共同说明什么、工程侧/研究侧/机构账号侧各有什么重点，以及判断边界在哪里。
+- `signal_takeaways`：总体归纳结论。它归纳多个抓取目标的总体意义，覆盖总体判断、内容重点、工程侧归纳、研究侧归纳、机构账号归纳、证据链归纳和观察建议。
 - `source_link_groups`：分组信号链接。
 - `evidence_digest`：证据摘要。
-- `signal_focus`：主导来源与核心信号字段。
+- `signal_focus`：主导来源、代表目标与核心信号字段。
 
 前端详实卡片由 `web/src/components/TrendCard.astro` 统一渲染，旧数据缺少这些字段时会自动 fallback。详细规则见 `docs/site-style-rules.md`。
 
