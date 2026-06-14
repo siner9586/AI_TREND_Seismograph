@@ -6,7 +6,7 @@ import { latestBundle, sourcesConfig } from "../lib/data";
 const sources = sourcesConfig();
 const { report, hourly } = latestBundle();
 ---
-<BaseLayout title="数据源说明 - AI 趋势地震仪">
+<BaseLayout title="数据源说明 - AI 趋势脉冲">
   <section class="page-title">
     <h1>数据源与算法说明</h1>
     <p class="subtitle">说明系统抓取哪些源、如何限流、如何计算震级、如何降级与去重。</p>
@@ -18,23 +18,6 @@ const { report, hourly } = latestBundle();
   <h2>配置源</h2>
   <table class="table">
     <thead><tr><th>源</th><th>类型</th><th>权重</th><th>启用</th><th>Base URL</th></tr></thead>
-    <tbody>{sources.map((source: any) => <tr><td>{source.source_name}</td><td>{source.source_type}</td><td>{source.reliability_weight}</td><td>{String(source.enabled)}</td><td>{source.base_url}</td></tr>)}</tbody>
+    <tbody>{sources.map((source: any) => <tr><td>{source.source_name}</td><td>{source.type}</td><td>{source.weight}</td><td>{String(source.enabled)}</td><td>{source.base_url}</td></tr>)}</tbody>
   </table>
-
-  <h2>震级计算</h2>
-  <section class="panel stack">
-    <p>系统使用当前窗口信号、30 天基线、增长率、z_score、跨源确认、机构集中、GitHub star 增量、方法和数据集提及共同计算震级。</p>
-    <p class="muted">M1.0-M2.0 微弱波动；M2.0-M3.0 局部升温；M3.0-M4.0 明显异常；M4.0-M5.0 疑似爆发；M5.0+ 强趋势震荡。</p>
-  </section>
-
-  <h2>失败与局限</h2>
-  <section class="panel">
-    <ul>
-      <li>arXiv 与 GitHub 使用公开 API，配置 API Key 后可提升速率和覆盖。</li>
-      <li>Semantic Scholar、OpenAlex 是可选增强源，未配置时不会阻断生产报告。</li>
-      <li>历史不足 30 天时，系统会标记低历史置信度。</li>
-      <li>GitHub star 增量只从真实 snapshot 计算，首次运行不会伪造增长。</li>
-      <li>本产品不构成投资、科研选题或技术路线建议。</li>
-    </ul>
-  </section>
 </BaseLayout>
