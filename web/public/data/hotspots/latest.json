@@ -1,7 +1,7 @@
 {
-  "snapshot_hour": "2026-06-14T01",
-  "generated_at": "2026-06-14T01:39:07.908475+00:00",
-  "run_id": "hourly-20260614T01-ea06d7b8",
+  "snapshot_hour": "2026-06-14T09",
+  "generated_at": "2026-06-14T09:57:30.858071+00:00",
+  "run_id": "hourly-20260614T09-69dfc64a",
   "mode": "hourly",
   "total_items_scanned": 48,
   "total_papers_scanned": 0,
@@ -15,10 +15,10 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "Agents 在当前窗口内出现 0 条论文信号和 17 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.966，growth_rate=-0.957，z_score=-16.145，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=9.763，growth_rate=-0.956，z_score=-17.524，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 17 个",
-        "24h star 增量 1108",
+        "24h star 增量 2563",
         "方法提及：MCP",
         "机构集中：Anthropic, lehanepatrick148-cloud, DietrichGebert"
       ],
@@ -27,13 +27,13 @@
         "current_24h_count": 17,
         "current_72h_count": 17,
         "current_7d_count": 17,
-        "baseline_daily_avg_30d": 412.8,
-        "baseline_daily_std_30d": 23.515,
-        "baseline_72h_avg_30d": 1238.4,
-        "growth_rate": -0.957,
-        "z_score": -16.145,
+        "baseline_daily_avg_30d": 412.0,
+        "baseline_daily_std_30d": 21.541,
+        "baseline_72h_avg_30d": 1236.0,
+        "growth_rate": -0.956,
+        "z_score": -17.524,
         "paper_burst_score": 0.0,
-        "github_signal_score": 8.362,
+        "github_signal_score": 9.159,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.118,
@@ -43,11 +43,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 17,
-        "github_star_delta": 1108,
+        "github_star_delta": 2563,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 20,
-        "burst_score": 8.966,
+        "burst_score": 9.763,
         "low_history_confidence": true,
         "magnitude": 6.0
       },
@@ -99,20 +99,6 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "alchaincyf/fanbox",
-          "source_url": "https://github.com/alchaincyf/fanbox",
-          "published_at": "2026-06-10T01:01:42Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
           "title": "orange2ai/renwei-writing",
           "source_url": "https://github.com/orange2ai/renwei-writing",
           "published_at": "2026-06-12T21:45:48Z",
@@ -120,6 +106,20 @@
           "matched_keywords": [
             "agent",
             "ai agent"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "alchaincyf/fanbox",
+          "source_url": "https://github.com/alchaincyf/fanbox",
+          "published_at": "2026-06-10T01:01:42Z",
+          "match_score": 0.633,
+          "matched_keywords": [
+            "agent",
+            "agents"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -222,51 +222,251 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-06-14:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"orange2ai/renwei-writing\", \"source_url\": \"https://github.com/orange2ai/renwei-writing\", \"published_at\": \"2026-06-12T21:45:48Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"orange2ai/renwei-writing\", \"source_url\": \"https://github.com/orange2ai/renwei-writing\", \"published_at\": \"2026-06-12T21:45:48Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Agents 当前被判定为“强趋势震荡”（M6.0）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 17 个。相关项目 24 小时 star 增量合计约 2563，说明短期工程关注度出现集中变化。方法侧集中在MCP等关键词，累计方法提及 2 次。机构或账号信号主要涉及Anthropic、lehanepatrick148-cloud、DietrichGebert、cobusgreyling、clarilayer，相关提及 20 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 17 个。",
+        "开源热度：相关项目 24 小时 star 增量约 2563，可作为工程生态升温的短期指标。",
+        "方法线索：MCP；方法提及 2 次。",
+        "机构/账号线索：Anthropic、lehanepatrick148-cloud、DietrichGebert、cobusgreyling、clarilayer、hvardhan878；相关提及 20 次。",
+        "证据链：代表性信号覆盖 repo 8 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail",
+            "source": "github",
+            "reason": "命中 agent、agents、ai agent，匹配分 0.95。"
+          },
+          {
+            "title": "desktop-hermes/hermes-agent-desktop",
+            "url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+            "source": "github",
+            "reason": "命中 agent、agents、ai agent，匹配分 0.95。"
+          },
+          {
+            "title": "hvardhan878/ghostwork",
+            "url": "https://github.com/hvardhan878/ghostwork",
+            "source": "github",
+            "reason": "命中 agent、agents，匹配分 0.633。"
+          },
+          {
+            "title": "orange2ai/renwei-writing",
+            "url": "https://github.com/orange2ai/renwei-writing",
+            "source": "github",
+            "reason": "命中 agent、ai agent，匹配分 0.633。"
+          },
+          {
+            "title": "alchaincyf/fanbox",
+            "url": "https://github.com/alchaincyf/fanbox",
+            "source": "github",
+            "reason": "命中 agent、agents，匹配分 0.633。"
+          },
+          {
+            "title": "lehanepatrick148-cloud/cipher-whitepaper",
+            "url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+            "source": "github",
+            "reason": "命中 agents，匹配分 0.317。"
+          },
+          {
+            "title": "cobusgreyling/loop-engineering",
+            "url": "https://github.com/cobusgreyling/loop-engineering",
+            "source": "github",
+            "reason": "命中 agents，匹配分 0.317。"
+          },
+          {
+            "title": "clarilayer/clarilayer",
+            "url": "https://github.com/clarilayer/clarilayer",
+            "source": "github",
+            "reason": "命中 agents，匹配分 0.317。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "DietrichGebert/ponytail",
+          "source_url": "https://github.com/DietrichGebert/ponytail",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.95,
+          "matched_terms": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、agents、ai agent，匹配分 0.95。"
+        },
+        {
+          "title": "desktop-hermes/hermes-agent-desktop",
+          "source_url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.95,
+          "matched_terms": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、agents、ai agent，匹配分 0.95。"
+        },
+        {
+          "title": "hvardhan878/ghostwork",
+          "source_url": "https://github.com/hvardhan878/ghostwork",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.633,
+          "matched_terms": [
+            "agent",
+            "agents"
+          ],
+          "why_included": "命中 agent、agents，匹配分 0.633。"
+        },
+        {
+          "title": "orange2ai/renwei-writing",
+          "source_url": "https://github.com/orange2ai/renwei-writing",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.633,
+          "matched_terms": [
+            "agent",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、ai agent，匹配分 0.633。"
+        },
+        {
+          "title": "alchaincyf/fanbox",
+          "source_url": "https://github.com/alchaincyf/fanbox",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.633,
+          "matched_terms": [
+            "agent",
+            "agents"
+          ],
+          "why_included": "命中 agent、agents，匹配分 0.633。"
+        },
+        {
+          "title": "lehanepatrick148-cloud/cipher-whitepaper",
+          "source_url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.317,
+          "matched_terms": [
+            "agents"
+          ],
+          "why_included": "命中 agents，匹配分 0.317。"
+        },
+        {
+          "title": "cobusgreyling/loop-engineering",
+          "source_url": "https://github.com/cobusgreyling/loop-engineering",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.317,
+          "matched_terms": [
+            "agents"
+          ],
+          "why_included": "命中 agents，匹配分 0.317。"
+        },
+        {
+          "title": "clarilayer/clarilayer",
+          "source_url": "https://github.com/clarilayer/clarilayer",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.317,
+          "matched_terms": [
+            "agents"
+          ],
+          "why_included": "命中 agents，匹配分 0.317。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "MCP",
+          "agent",
+          "code",
+          "claude",
+          "agents",
+          "your"
+        ],
+        "related_institutions": [
+          "Anthropic",
+          "lehanepatrick148-cloud",
+          "DietrichGebert",
+          "cobusgreyling",
+          "clarilayer",
+          "hvardhan878"
+        ],
+        "paper_count": 0,
+        "repo_count": 17,
+        "github_star_delta": 2563,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 20
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Model Context Protocol",
       "title": "Model Context Protocol 出现强趋势震荡",
-      "magnitude": 5.44,
+      "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.44，burst=5.167，growth_rate=-0.954，z_score=-9.214，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 10 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=8.123，growth_rate=-0.949，z_score=-10.002，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 9 个",
-        "24h star 增量 817",
-        "方法提及：MCP",
+        "GitHub 项目 10 个",
+        "24h star 增量 2089",
+        "方法提及：MCP, RAG",
         "机构集中：lehanepatrick148-cloud, DietrichGebert, Anthropic"
       ],
       "metrics": {
-        "current_1h_count": 9,
-        "current_24h_count": 9,
-        "current_72h_count": 9,
-        "current_7d_count": 9,
+        "current_1h_count": 10,
+        "current_24h_count": 10,
+        "current_72h_count": 10,
+        "current_7d_count": 10,
         "baseline_daily_avg_30d": 216.0,
-        "baseline_daily_std_30d": 21.466,
+        "baseline_daily_std_30d": 19.596,
         "baseline_72h_avg_30d": 648.0,
-        "growth_rate": -0.954,
-        "z_score": -9.214,
+        "growth_rate": -0.949,
+        "z_score": -10.002,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.563,
+        "github_signal_score": 7.238,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.111,
-        "institution_signal_score": 0.276,
+        "institution_concentration_score": 0.1,
+        "institution_signal_score": 0.256,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.604,
+        "method_signal_score": 0.885,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 817,
-        "method_mentions": 2,
+        "repo_count": 10,
+        "github_star_delta": 2089,
+        "method_mentions": 4,
         "dataset_mentions": 0,
-        "institution_mentions": 10,
-        "burst_score": 5.167,
+        "institution_mentions": 11,
+        "burst_score": 8.123,
         "low_history_confidence": true,
-        "magnitude": 5.44
+        "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "nader0913/ocpp-rag",
+          "source_url": "https://github.com/nader0913/ocpp-rag",
+          "published_at": "2026-06-09T12:30:35Z",
+          "match_score": 0.767,
+          "matched_keywords": [
+            "MCP",
+            "MCP server"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -351,17 +551,6 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "alchaincyf/fanbox",
-          "source_url": "https://github.com/alchaincyf/fanbox",
-          "published_at": "2026-06-10T01:01:42Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -373,10 +562,12 @@
         "https://github.com/desktop-hermes/hermes-agent-desktop",
         "https://github.com/hvardhan878/ghostwork",
         "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+        "https://github.com/nader0913/ocpp-rag",
         "https://github.com/omnigent-ai/omnigent"
       ],
       "related_methods": [
-        "MCP"
+        "MCP",
+        "RAG"
       ],
       "related_datasets": [],
       "related_institutions": [
@@ -413,20 +604,188 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Model Context Protocol:2026-06-14:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"omnigent-ai/omnigent\", \"source_url\": \"https://github.com/omnigent-ai/omnigent\", \"published_at\": \"2026-06-11T12:18:13Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"nader0913/ocpp-rag\", \"source_url\": \"https://github.com/nader0913/ocpp-rag\", \"published_at\": \"2026-06-09T12:30:35Z\", \"match_score\": 0.767, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"omnigent-ai/omnigent\", \"source_url\": \"https://github.com/omnigent-ai/omnigent\", \"published_at\": \"2026-06-11T12:18:13Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Model Context Protocol 当前被判定为“强趋势震荡”（M6.0）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 10 个。相关项目 24 小时 star 增量合计约 2089，说明短期工程关注度出现集中变化。方法侧集中在MCP、RAG等关键词，累计方法提及 4 次。机构或账号信号主要涉及lehanepatrick148-cloud、DietrichGebert、Anthropic、cobusgreyling、clarilayer，相关提及 11 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 10 个。",
+        "开源热度：相关项目 24 小时 star 增量约 2089，可作为工程生态升温的短期指标。",
+        "方法线索：MCP、RAG；方法提及 4 次。",
+        "机构/账号线索：lehanepatrick148-cloud、DietrichGebert、Anthropic、cobusgreyling、clarilayer、hvardhan878；相关提及 11 次。",
+        "证据链：代表性信号覆盖 repo 8 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "nader0913/ocpp-rag",
+            "url": "https://github.com/nader0913/ocpp-rag",
+            "source": "github",
+            "reason": "命中 MCP、MCP server，匹配分 0.767。"
+          },
+          {
+            "title": "cobusgreyling/loop-engineering",
+            "url": "https://github.com/cobusgreyling/loop-engineering",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537。"
+          },
+          {
+            "title": "clarilayer/clarilayer",
+            "url": "https://github.com/clarilayer/clarilayer",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537。"
+          },
+          {
+            "title": "lehanepatrick148-cloud/cipher-whitepaper",
+            "url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.077。"
+          },
+          {
+            "title": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.077。"
+          },
+          {
+            "title": "hvardhan878/ghostwork",
+            "url": "https://github.com/hvardhan878/ghostwork",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.077。"
+          },
+          {
+            "title": "desktop-hermes/hermes-agent-desktop",
+            "url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.077。"
+          },
+          {
+            "title": "omnigent-ai/omnigent",
+            "url": "https://github.com/omnigent-ai/omnigent",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.077。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "nader0913/ocpp-rag",
+          "source_url": "https://github.com/nader0913/ocpp-rag",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.767,
+          "matched_terms": [
+            "MCP",
+            "MCP server"
+          ],
+          "why_included": "命中 MCP、MCP server，匹配分 0.767。"
+        },
+        {
+          "title": "cobusgreyling/loop-engineering",
+          "source_url": "https://github.com/cobusgreyling/loop-engineering",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537。"
+        },
+        {
+          "title": "clarilayer/clarilayer",
+          "source_url": "https://github.com/clarilayer/clarilayer",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537。"
+        },
+        {
+          "title": "lehanepatrick148-cloud/cipher-whitepaper",
+          "source_url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.077。"
+        },
+        {
+          "title": "DietrichGebert/ponytail",
+          "source_url": "https://github.com/DietrichGebert/ponytail",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.077。"
+        },
+        {
+          "title": "hvardhan878/ghostwork",
+          "source_url": "https://github.com/hvardhan878/ghostwork",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.077。"
+        },
+        {
+          "title": "desktop-hermes/hermes-agent-desktop",
+          "source_url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.077。"
+        },
+        {
+          "title": "omnigent-ai/omnigent",
+          "source_url": "https://github.com/omnigent-ai/omnigent",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.077。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "MCP",
+          "RAG",
+          "agents",
+          "your",
+          "code",
+          "agent"
+        ],
+        "related_institutions": [
+          "lehanepatrick148-cloud",
+          "DietrichGebert",
+          "Anthropic",
+          "cobusgreyling",
+          "clarilayer",
+          "hvardhan878"
+        ],
+        "paper_count": 0,
+        "repo_count": 10,
+        "github_star_delta": 2089,
+        "method_mentions": 4,
+        "dataset_mentions": 0,
+        "institution_mentions": 11
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "RAG",
       "title": "RAG 出现强趋势震荡",
-      "magnitude": 5.0,
+      "magnitude": 5.49,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.0，burst=4.814，growth_rate=-0.953，z_score=-161.0，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.49，burst=5.456，growth_rate=-0.953，z_score=-161.0，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 13",
-        "方法提及：RAG",
-        "机构集中：canwhite, minjie05, chen150450"
+        "24h star 增量 26",
+        "方法提及：RAG, MCP",
+        "机构集中：nader0913, canwhite, minjie05"
       ],
       "metrics": {
         "current_1h_count": 7,
@@ -439,23 +798,23 @@
         "growth_rate": -0.953,
         "z_score": -161.0,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.67,
+        "github_signal_score": 4.247,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
         "institution_signal_score": 0.329,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.144,
+        "method_signal_score": 1.208,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 13,
-        "method_mentions": 7,
+        "github_star_delta": 26,
+        "method_mentions": 8,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 4.814,
+        "burst_score": 5.456,
         "low_history_confidence": true,
-        "magnitude": 5.0
+        "magnitude": 5.49
       },
       "evidence": [
         {
@@ -469,6 +828,20 @@
             "RAG",
             "rag",
             "vector search"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "nader0913/ocpp-rag",
+          "source_url": "https://github.com/nader0913/ocpp-rag",
+          "published_at": "2026-06-09T12:30:35Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -542,20 +915,6 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "mimfort/rag_for_git",
-          "source_url": "https://github.com/mimfort/rag_for_git",
-          "published_at": "2026-06-07T08:15:13Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -564,32 +923,33 @@
         "https://github.com/canwhite/MicroRAG",
         "https://github.com/chen150450/local-multimodal-rag",
         "https://github.com/jaimeirazabal1/rag-architectures",
-        "https://github.com/mimfort/rag_for_git",
-        "https://github.com/minjie05/KnowBase_AI"
+        "https://github.com/minjie05/KnowBase_AI",
+        "https://github.com/nader0913/ocpp-rag"
       ],
       "related_methods": [
-        "RAG"
+        "RAG",
+        "MCP"
       ],
       "related_datasets": [],
       "related_institutions": [
+        "nader0913",
         "canwhite",
         "minjie05",
         "chen150450",
         "avi350751",
         "OpenAI",
         "jaimeirazabal1",
-        "bigmacfive",
-        "mimfort"
+        "bigmacfive"
       ],
       "suggested_watch_keywords": [
         "rag",
         "implementation",
-        "canwhite",
-        "microrag",
-        "minimal",
-        "canwhite microrag",
-        "microrag minimal",
-        "minimal implementation"
+        "ocpp",
+        "nader0913",
+        "ocpp-rag",
+        "mcp",
+        "server",
+        "knowledge"
       ],
       "confidence": 0.57,
       "caveats": [
@@ -605,18 +965,179 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:RAG:2026-06-14:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bigmacfive/turbo-graph\", \"source_url\": \"https://github.com/bigmacfive/turbo-graph\", \"published_at\": \"2026-06-11T13:42:15Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"vector search\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"canwhite/MicroRAG\", \"source_url\": \"https://github.com/canwhite/MicroRAG\", \"published_at\": \"2026-06-08T01:45:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"minjie05/KnowBase_AI\", \"source_url\": \"https://github.com/minjie05/KnowBase_AI\", \"published_at\": \"2026-06-09T04:57:10Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chen150450/local-multimodal-rag\", \"source_url\": \"https://github.com/chen150450/local-multimodal-rag\", \"published_at\": \"2026-06-11T14:31:08Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"avi350751/What-Is-RAG\", \"source_url\": \"https://github.com/avi350751/What-Is-RAG\", \"published_at\": \"2026-06-07T21:53:16Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jaimeirazabal1/rag-architectures\", \"source_url\": \"https://github.com/jaimeirazabal1/rag-architectures\", \"published_at\": \"2026-06-11T10:13:14Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mimfort/rag_for_git\", \"source_url\": \"https://github.com/mimfort/rag_for_git\", \"published_at\": \"2026-06-07T08:15:13Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bigmacfive/turbo-graph\", \"source_url\": \"https://github.com/bigmacfive/turbo-graph\", \"published_at\": \"2026-06-11T13:42:15Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"vector search\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"nader0913/ocpp-rag\", \"source_url\": \"https://github.com/nader0913/ocpp-rag\", \"published_at\": \"2026-06-09T12:30:35Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"canwhite/MicroRAG\", \"source_url\": \"https://github.com/canwhite/MicroRAG\", \"published_at\": \"2026-06-08T01:45:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"minjie05/KnowBase_AI\", \"source_url\": \"https://github.com/minjie05/KnowBase_AI\", \"published_at\": \"2026-06-09T04:57:10Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chen150450/local-multimodal-rag\", \"source_url\": \"https://github.com/chen150450/local-multimodal-rag\", \"published_at\": \"2026-06-11T14:31:08Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"avi350751/What-Is-RAG\", \"source_url\": \"https://github.com/avi350751/What-Is-RAG\", \"published_at\": \"2026-06-07T21:53:16Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jaimeirazabal1/rag-architectures\", \"source_url\": \"https://github.com/jaimeirazabal1/rag-architectures\", \"published_at\": \"2026-06-11T10:13:14Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "RAG 当前被判定为“强趋势震荡”（M5.5）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。相关项目 24 小时 star 增量合计约 26，说明短期工程关注度出现集中变化。方法侧集中在RAG、MCP等关键词，累计方法提及 8 次。机构或账号信号主要涉及nader0913、canwhite、minjie05、chen150450、avi350751，相关提及 8 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 7 个。",
+        "开源热度：相关项目 24 小时 star 增量约 26，可作为工程生态升温的短期指标。",
+        "方法线索：RAG、MCP；方法提及 8 次。",
+        "机构/账号线索：nader0913、canwhite、minjie05、chen150450、avi350751、OpenAI；相关提及 8 次。",
+        "证据链：代表性信号覆盖 repo 7 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "bigmacfive/turbo-graph",
+            "url": "https://github.com/bigmacfive/turbo-graph",
+            "source": "github",
+            "reason": "命中 RAG、vector search，匹配分 0.84。"
+          },
+          {
+            "title": "nader0913/ocpp-rag",
+            "url": "https://github.com/nader0913/ocpp-rag",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56。"
+          },
+          {
+            "title": "canwhite/MicroRAG",
+            "url": "https://github.com/canwhite/MicroRAG",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56。"
+          },
+          {
+            "title": "minjie05/KnowBase_AI",
+            "url": "https://github.com/minjie05/KnowBase_AI",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56。"
+          },
+          {
+            "title": "chen150450/local-multimodal-rag",
+            "url": "https://github.com/chen150450/local-multimodal-rag",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56。"
+          },
+          {
+            "title": "avi350751/What-Is-RAG",
+            "url": "https://github.com/avi350751/What-Is-RAG",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56。"
+          },
+          {
+            "title": "jaimeirazabal1/rag-architectures",
+            "url": "https://github.com/jaimeirazabal1/rag-architectures",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "bigmacfive/turbo-graph",
+          "source_url": "https://github.com/bigmacfive/turbo-graph",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.84,
+          "matched_terms": [
+            "RAG",
+            "vector search"
+          ],
+          "why_included": "命中 RAG、vector search，匹配分 0.84。"
+        },
+        {
+          "title": "nader0913/ocpp-rag",
+          "source_url": "https://github.com/nader0913/ocpp-rag",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56。"
+        },
+        {
+          "title": "canwhite/MicroRAG",
+          "source_url": "https://github.com/canwhite/MicroRAG",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56。"
+        },
+        {
+          "title": "minjie05/KnowBase_AI",
+          "source_url": "https://github.com/minjie05/KnowBase_AI",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56。"
+        },
+        {
+          "title": "chen150450/local-multimodal-rag",
+          "source_url": "https://github.com/chen150450/local-multimodal-rag",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56。"
+        },
+        {
+          "title": "avi350751/What-Is-RAG",
+          "source_url": "https://github.com/avi350751/What-Is-RAG",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56。"
+        },
+        {
+          "title": "jaimeirazabal1/rag-architectures",
+          "source_url": "https://github.com/jaimeirazabal1/rag-architectures",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "RAG",
+          "MCP",
+          "implementation",
+          "ocpp",
+          "nader0913",
+          "ocpp-rag"
+        ],
+        "related_institutions": [
+          "nader0913",
+          "canwhite",
+          "minjie05",
+          "chen150450",
+          "avi350751",
+          "OpenAI"
+        ],
+        "paper_count": 0,
+        "repo_count": 7,
+        "github_star_delta": 26,
+        "method_mentions": 8,
+        "dataset_mentions": 0,
+        "institution_mentions": 8
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "AI Coding",
       "title": "AI Coding 出现疑似爆发",
-      "magnitude": 4.26,
+      "magnitude": 4.45,
       "severity_label": "疑似爆发",
       "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.26，burst=2.982，growth_rate=-0.96，z_score=-11.396，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.45，burst=3.216，growth_rate=-0.959，z_score=-7.808，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 4 个",
-        "24h star 增量 85",
+        "24h star 增量 149",
         "方法提及：MCP",
         "机构集中：Anthropic, cobusgreyling, OpenAI"
       ],
@@ -625,13 +1146,13 @@
         "current_24h_count": 4,
         "current_72h_count": 4,
         "current_7d_count": 4,
-        "baseline_daily_avg_30d": 124.8,
-        "baseline_daily_std_30d": 9.6,
-        "baseline_72h_avg_30d": 374.4,
-        "growth_rate": -0.96,
-        "z_score": -11.396,
+        "baseline_daily_avg_30d": 120.0,
+        "baseline_daily_std_30d": 13.856,
+        "baseline_72h_avg_30d": 360.0,
+        "growth_rate": -0.959,
+        "z_score": -7.808,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.601,
+        "github_signal_score": 2.834,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.5,
@@ -641,13 +1162,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 85,
+        "github_star_delta": 149,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 7,
-        "burst_score": 2.982,
+        "burst_score": 3.216,
         "low_history_confidence": true,
-        "magnitude": 4.26
+        "magnitude": 4.45
       },
       "evidence": [
         {
@@ -740,18 +1261,121 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-06-14:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"borhen68/TokenTamer\", \"source_url\": \"https://github.com/borhen68/TokenTamer\", \"published_at\": \"2026-06-08T11:25:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"BuilderIO/skills\", \"source_url\": \"https://github.com/BuilderIO/skills\", \"published_at\": \"2026-06-10T16:04:20Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"borhen68/TokenTamer\", \"source_url\": \"https://github.com/borhen68/TokenTamer\", \"published_at\": \"2026-06-08T11:25:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"BuilderIO/skills\", \"source_url\": \"https://github.com/BuilderIO/skills\", \"published_at\": \"2026-06-10T16:04:20Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "AI Coding 当前被判定为“疑似爆发”（M4.5）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。相关项目 24 小时 star 增量合计约 149，说明短期工程关注度出现集中变化。方法侧集中在MCP等关键词，累计方法提及 1 次。机构或账号信号主要涉及Anthropic、cobusgreyling、OpenAI、borhen68、alchaincyf，相关提及 7 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 4 个。",
+        "开源热度：相关项目 24 小时 star 增量约 149，可作为工程生态升温的短期指标。",
+        "方法线索：MCP；方法提及 1 次。",
+        "机构/账号线索：Anthropic、cobusgreyling、OpenAI、borhen68、alchaincyf、BuilderIO；相关提及 7 次。",
+        "证据链：代表性信号覆盖 repo 4 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "cobusgreyling/loop-engineering",
+            "url": "https://github.com/cobusgreyling/loop-engineering",
+            "source": "github",
+            "reason": "命中 ai coding，匹配分 0.417。"
+          },
+          {
+            "title": "borhen68/TokenTamer",
+            "url": "https://github.com/borhen68/TokenTamer",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.083。"
+          },
+          {
+            "title": "alchaincyf/fanbox",
+            "url": "https://github.com/alchaincyf/fanbox",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.083。"
+          },
+          {
+            "title": "BuilderIO/skills",
+            "url": "https://github.com/BuilderIO/skills",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.083。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "cobusgreyling/loop-engineering",
+          "source_url": "https://github.com/cobusgreyling/loop-engineering",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.417,
+          "matched_terms": [
+            "ai coding"
+          ],
+          "why_included": "命中 ai coding，匹配分 0.417。"
+        },
+        {
+          "title": "borhen68/TokenTamer",
+          "source_url": "https://github.com/borhen68/TokenTamer",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.083。"
+        },
+        {
+          "title": "alchaincyf/fanbox",
+          "source_url": "https://github.com/alchaincyf/fanbox",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.083。"
+        },
+        {
+          "title": "BuilderIO/skills",
+          "source_url": "https://github.com/BuilderIO/skills",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.083。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "MCP",
+          "agents",
+          "coding",
+          "loop-engineering",
+          "cobusgreyling",
+          "practical"
+        ],
+        "related_institutions": [
+          "Anthropic",
+          "cobusgreyling",
+          "OpenAI",
+          "borhen68",
+          "alchaincyf",
+          "BuilderIO"
+        ],
+        "paper_count": 0,
+        "repo_count": 4,
+        "github_star_delta": 149,
+        "method_mentions": 1,
+        "dataset_mentions": 0,
+        "institution_mentions": 7
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Memory",
       "title": "Memory 出现明显异常",
-      "magnitude": 3.75,
+      "magnitude": 3.96,
       "severity_label": "明显异常",
       "summary": "Memory 在当前窗口内出现 0 条论文信号和 11 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.75，burst=3.155，growth_rate=-0.955，z_score=-11.261，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.96，burst=3.413，growth_rate=-0.955，z_score=-12.284，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 11 个",
-        "24h star 增量 857",
+        "24h star 增量 2149",
         "方法提及：MCP, RAG",
         "机构集中：lehanepatrick148-cloud, DietrichGebert, Anthropic"
       ],
@@ -761,12 +1385,12 @@
         "current_72h_count": 11,
         "current_7d_count": 11,
         "baseline_daily_avg_30d": 264.0,
-        "baseline_daily_std_30d": 21.466,
+        "baseline_daily_std_30d": 19.596,
         "baseline_72h_avg_30d": 792.0,
         "growth_rate": -0.955,
-        "z_score": -11.261,
+        "z_score": -12.284,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.393,
+        "github_signal_score": 2.65,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.091,
@@ -776,13 +1400,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 11,
-        "github_star_delta": 857,
+        "github_star_delta": 2149,
         "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 12,
-        "burst_score": 3.155,
+        "burst_score": 3.413,
         "low_history_confidence": true,
-        "magnitude": 3.75
+        "magnitude": 3.96
       },
       "evidence": [
         {
@@ -928,20 +1552,185 @@
         "低置信度",
         "历史不足"
       ],
-      "push_recommended": false,
+      "push_recommended": true,
       "dedupe_key": "trend:Memory:2026-06-14:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DanMcInerney/architect-loop\", \"source_url\": \"https://github.com/DanMcInerney/architect-loop\", \"published_at\": \"2026-06-12T01:54:12Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bigmacfive/turbo-graph\", \"source_url\": \"https://github.com/bigmacfive/turbo-graph\", \"published_at\": \"2026-06-11T13:42:15Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DanMcInerney/architect-loop\", \"source_url\": \"https://github.com/DanMcInerney/architect-loop\", \"published_at\": \"2026-06-12T01:54:12Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bigmacfive/turbo-graph\", \"source_url\": \"https://github.com/bigmacfive/turbo-graph\", \"published_at\": \"2026-06-11T13:42:15Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Memory 当前被判定为“明显异常”（M4.0）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。相关项目 24 小时 star 增量合计约 2149，说明短期工程关注度出现集中变化。方法侧集中在MCP、RAG等关键词，累计方法提及 3 次。机构或账号信号主要涉及lehanepatrick148-cloud、DietrichGebert、Anthropic、cobusgreyling、clarilayer，相关提及 12 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 11 个。",
+        "开源热度：相关项目 24 小时 star 增量约 2149，可作为工程生态升温的短期指标。",
+        "方法线索：MCP、RAG；方法提及 3 次。",
+        "机构/账号线索：lehanepatrick148-cloud、DietrichGebert、Anthropic、cobusgreyling、clarilayer、hvardhan878；相关提及 12 次。",
+        "证据链：代表性信号覆盖 repo 8 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "DanMcInerney/architect-loop",
+            "url": "https://github.com/DanMcInerney/architect-loop",
+            "source": "github",
+            "reason": "命中 memory，匹配分 0.28。"
+          },
+          {
+            "title": "bigmacfive/turbo-graph",
+            "url": "https://github.com/bigmacfive/turbo-graph",
+            "source": "github",
+            "reason": "命中 memory，匹配分 0.28。"
+          },
+          {
+            "title": "lehanepatrick148-cloud/cipher-whitepaper",
+            "url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.07。"
+          },
+          {
+            "title": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.07。"
+          },
+          {
+            "title": "cobusgreyling/loop-engineering",
+            "url": "https://github.com/cobusgreyling/loop-engineering",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.07。"
+          },
+          {
+            "title": "clarilayer/clarilayer",
+            "url": "https://github.com/clarilayer/clarilayer",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.07。"
+          },
+          {
+            "title": "hvardhan878/ghostwork",
+            "url": "https://github.com/hvardhan878/ghostwork",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.07。"
+          },
+          {
+            "title": "desktop-hermes/hermes-agent-desktop",
+            "url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.07。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "DanMcInerney/architect-loop",
+          "source_url": "https://github.com/DanMcInerney/architect-loop",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.28,
+          "matched_terms": [
+            "memory"
+          ],
+          "why_included": "命中 memory，匹配分 0.28。"
+        },
+        {
+          "title": "bigmacfive/turbo-graph",
+          "source_url": "https://github.com/bigmacfive/turbo-graph",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.28,
+          "matched_terms": [
+            "memory"
+          ],
+          "why_included": "命中 memory，匹配分 0.28。"
+        },
+        {
+          "title": "lehanepatrick148-cloud/cipher-whitepaper",
+          "source_url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.07。"
+        },
+        {
+          "title": "DietrichGebert/ponytail",
+          "source_url": "https://github.com/DietrichGebert/ponytail",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.07。"
+        },
+        {
+          "title": "cobusgreyling/loop-engineering",
+          "source_url": "https://github.com/cobusgreyling/loop-engineering",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.07。"
+        },
+        {
+          "title": "clarilayer/clarilayer",
+          "source_url": "https://github.com/clarilayer/clarilayer",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.07。"
+        },
+        {
+          "title": "hvardhan878/ghostwork",
+          "source_url": "https://github.com/hvardhan878/ghostwork",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.07。"
+        },
+        {
+          "title": "desktop-hermes/hermes-agent-desktop",
+          "source_url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.07。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "MCP",
+          "RAG",
+          "agents",
+          "code",
+          "your",
+          "agent"
+        ],
+        "related_institutions": [
+          "lehanepatrick148-cloud",
+          "DietrichGebert",
+          "Anthropic",
+          "cobusgreyling",
+          "clarilayer",
+          "hvardhan878"
+        ],
+        "paper_count": 0,
+        "repo_count": 11,
+        "github_star_delta": 2149,
+        "method_mentions": 3,
+        "dataset_mentions": 0,
+        "institution_mentions": 12
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Multimodal",
       "title": "Multimodal 出现明显异常",
-      "magnitude": 3.21,
+      "magnitude": 3.34,
       "severity_label": "明显异常",
       "summary": "Multimodal 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.21，burst=1.668，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.34，burst=1.832，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
-        "24h star 增量 10",
+        "24h star 增量 17",
         "方法提及：RAG",
         "机构集中：chen150450"
       ],
@@ -956,7 +1745,7 @@
         "growth_rate": -0.92,
         "z_score": -23.0,
         "paper_burst_score": 0.0,
-        "github_signal_score": 1.287,
+        "github_signal_score": 1.451,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 1.0,
@@ -966,13 +1755,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 10,
+        "github_star_delta": 17,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 1,
-        "burst_score": 1.668,
+        "burst_score": 1.832,
         "low_history_confidence": true,
-        "magnitude": 3.21
+        "magnitude": 3.34
       },
       "evidence": [
         {
@@ -1023,18 +1812,71 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Multimodal:2026-06-14:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chen150450/local-multimodal-rag\", \"source_url\": \"https://github.com/chen150450/local-multimodal-rag\", \"published_at\": \"2026-06-11T14:31:08Z\", \"match_score\": 0.313, \"matched_keywords\": [\"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chen150450/local-multimodal-rag\", \"source_url\": \"https://github.com/chen150450/local-multimodal-rag\", \"published_at\": \"2026-06-11T14:31:08Z\", \"match_score\": 0.313, \"matched_keywords\": [\"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Multimodal 当前被判定为“明显异常”（M3.3）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。相关项目 24 小时 star 增量合计约 17，说明短期工程关注度出现集中变化。方法侧集中在RAG等关键词，累计方法提及 1 次。机构或账号信号主要涉及chen150450，相关提及 1 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 1 个。",
+        "开源热度：相关项目 24 小时 star 增量约 17，可作为工程生态升温的短期指标。",
+        "方法线索：RAG；方法提及 1 次。",
+        "机构/账号线索：chen150450；相关提及 1 次。",
+        "证据链：代表性信号覆盖 repo 1 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "chen150450/local-multimodal-rag",
+            "url": "https://github.com/chen150450/local-multimodal-rag",
+            "source": "github",
+            "reason": "命中 multimodal，匹配分 0.313。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "chen150450/local-multimodal-rag",
+          "source_url": "https://github.com/chen150450/local-multimodal-rag",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.313,
+          "matched_terms": [
+            "multimodal"
+          ],
+          "why_included": "命中 multimodal，匹配分 0.313。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "RAG",
+          "chen150450",
+          "local-multimodal-rag",
+          "fully",
+          "local",
+          "multimodal"
+        ],
+        "related_institutions": [
+          "chen150450"
+        ],
+        "paper_count": 0,
+        "repo_count": 1,
+        "github_star_delta": 17,
+        "method_mentions": 1,
+        "dataset_mentions": 0,
+        "institution_mentions": 1
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Tool Use",
       "title": "Tool Use 出现局部升温",
-      "magnitude": 2.79,
+      "magnitude": 2.9,
       "severity_label": "局部升温",
       "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为局部升温。",
-      "calculation_summary": "magnitude=2.79，burst=1.853，growth_rate=-0.954，z_score=-9.214，cross_source=0.5。",
+      "calculation_summary": "magnitude=2.9，burst=1.991，growth_rate=-0.954，z_score=-10.051，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 9 个",
-        "24h star 增量 817",
+        "24h star 增量 2089",
         "方法提及：MCP",
         "机构集中：lehanepatrick148-cloud, DietrichGebert, Anthropic"
       ],
@@ -1044,12 +1886,12 @@
         "current_72h_count": 9,
         "current_7d_count": 9,
         "baseline_daily_avg_30d": 216.0,
-        "baseline_daily_std_30d": 21.466,
+        "baseline_daily_std_30d": 19.596,
         "baseline_72h_avg_30d": 648.0,
         "growth_rate": -0.954,
-        "z_score": -9.214,
+        "z_score": -10.051,
         "paper_burst_score": 0.0,
-        "github_signal_score": 1.249,
+        "github_signal_score": 1.387,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.111,
@@ -1059,13 +1901,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 817,
+        "github_star_delta": 2089,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 10,
-        "burst_score": 1.853,
+        "burst_score": 1.991,
         "low_history_confidence": true,
-        "magnitude": 2.79
+        "magnitude": 2.9
       },
       "evidence": [
         {
@@ -1206,18 +2048,179 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Tool Use:2026-06-14:局部升温",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"omnigent-ai/omnigent\", \"source_url\": \"https://github.com/omnigent-ai/omnigent\", \"published_at\": \"2026-06-11T12:18:13Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cobusgreyling/loop-engineering\", \"source_url\": \"https://github.com/cobusgreyling/loop-engineering\", \"published_at\": \"2026-06-09T06:28:20Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvardhan878/ghostwork\", \"source_url\": \"https://github.com/hvardhan878/ghostwork\", \"published_at\": \"2026-06-09T13:34:34Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lehanepatrick148-cloud/cipher-whitepaper\", \"source_url\": \"https://github.com/lehanepatrick148-cloud/cipher-whitepaper\", \"published_at\": \"2026-06-11T14:50:44Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DietrichGebert/ponytail\", \"source_url\": \"https://github.com/DietrichGebert/ponytail\", \"published_at\": \"2026-06-12T00:52:37Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"clarilayer/clarilayer\", \"source_url\": \"https://github.com/clarilayer/clarilayer\", \"published_at\": \"2026-06-08T13:17:43Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"desktop-hermes/hermes-agent-desktop\", \"source_url\": \"https://github.com/desktop-hermes/hermes-agent-desktop\", \"published_at\": \"2026-06-11T17:34:17Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"omnigent-ai/omnigent\", \"source_url\": \"https://github.com/omnigent-ai/omnigent\", \"published_at\": \"2026-06-11T12:18:13Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"alchaincyf/fanbox\", \"source_url\": \"https://github.com/alchaincyf/fanbox\", \"published_at\": \"2026-06-10T01:01:42Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Tool Use 当前被判定为“局部升温”（M2.9）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。相关项目 24 小时 star 增量合计约 2089，说明短期工程关注度出现集中变化。方法侧集中在MCP等关键词，累计方法提及 2 次。机构或账号信号主要涉及lehanepatrick148-cloud、DietrichGebert、Anthropic、cobusgreyling、clarilayer，相关提及 10 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 9 个。",
+        "开源热度：相关项目 24 小时 star 增量约 2089，可作为工程生态升温的短期指标。",
+        "方法线索：MCP；方法提及 2 次。",
+        "机构/账号线索：lehanepatrick148-cloud、DietrichGebert、Anthropic、cobusgreyling、clarilayer、hvardhan878；相关提及 10 次。",
+        "证据链：代表性信号覆盖 repo 8 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "cobusgreyling/loop-engineering",
+            "url": "https://github.com/cobusgreyling/loop-engineering",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.147。"
+          },
+          {
+            "title": "hvardhan878/ghostwork",
+            "url": "https://github.com/hvardhan878/ghostwork",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.147。"
+          },
+          {
+            "title": "lehanepatrick148-cloud/cipher-whitepaper",
+            "url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.073。"
+          },
+          {
+            "title": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.073。"
+          },
+          {
+            "title": "clarilayer/clarilayer",
+            "url": "https://github.com/clarilayer/clarilayer",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.073。"
+          },
+          {
+            "title": "desktop-hermes/hermes-agent-desktop",
+            "url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.073。"
+          },
+          {
+            "title": "omnigent-ai/omnigent",
+            "url": "https://github.com/omnigent-ai/omnigent",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.073。"
+          },
+          {
+            "title": "alchaincyf/fanbox",
+            "url": "https://github.com/alchaincyf/fanbox",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.073。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "cobusgreyling/loop-engineering",
+          "source_url": "https://github.com/cobusgreyling/loop-engineering",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.147,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.147。"
+        },
+        {
+          "title": "hvardhan878/ghostwork",
+          "source_url": "https://github.com/hvardhan878/ghostwork",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.147,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.147。"
+        },
+        {
+          "title": "lehanepatrick148-cloud/cipher-whitepaper",
+          "source_url": "https://github.com/lehanepatrick148-cloud/cipher-whitepaper",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.073,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.073。"
+        },
+        {
+          "title": "DietrichGebert/ponytail",
+          "source_url": "https://github.com/DietrichGebert/ponytail",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.073,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.073。"
+        },
+        {
+          "title": "clarilayer/clarilayer",
+          "source_url": "https://github.com/clarilayer/clarilayer",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.073,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.073。"
+        },
+        {
+          "title": "desktop-hermes/hermes-agent-desktop",
+          "source_url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.073,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.073。"
+        },
+        {
+          "title": "omnigent-ai/omnigent",
+          "source_url": "https://github.com/omnigent-ai/omnigent",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.073,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.073。"
+        },
+        {
+          "title": "alchaincyf/fanbox",
+          "source_url": "https://github.com/alchaincyf/fanbox",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.073,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.073。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "MCP",
+          "agents",
+          "your",
+          "code",
+          "agent",
+          "coding"
+        ],
+        "related_institutions": [
+          "lehanepatrick148-cloud",
+          "DietrichGebert",
+          "Anthropic",
+          "cobusgreyling",
+          "clarilayer",
+          "hvardhan878"
+        ],
+        "paper_count": 0,
+        "repo_count": 9,
+        "github_star_delta": 2089,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 10
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Transformer Alternative",
       "title": "Transformer Alternative 出现局部升温",
-      "magnitude": 2.36,
+      "magnitude": 2.37,
       "severity_label": "局部升温",
       "summary": "Transformer Alternative 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为局部升温。",
-      "calculation_summary": "magnitude=2.36，burst=0.438，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
+      "calculation_summary": "magnitude=2.37，burst=0.452，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
-        "24h star 增量 73",
+        "24h star 增量 89",
         "机构集中：plannotator"
       ],
       "metrics": {
@@ -1231,7 +2234,7 @@
         "growth_rate": -0.92,
         "z_score": -23.0,
         "paper_burst_score": 0.0,
-        "github_signal_score": 0.438,
+        "github_signal_score": 0.452,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 1.0,
@@ -1241,13 +2244,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 73,
+        "github_star_delta": 89,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 1,
-        "burst_score": 0.438,
+        "burst_score": 0.452,
         "low_history_confidence": true,
-        "magnitude": 2.36
+        "magnitude": 2.37
       },
       "evidence": [
         {
@@ -1293,7 +2296,58 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Transformer Alternative:2026-06-14:局部升温",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"plannotator/effective-html\", \"source_url\": \"https://github.com/plannotator/effective-html\", \"published_at\": \"2026-06-09T23:24:51Z\", \"match_score\": 0.072, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"plannotator/effective-html\", \"source_url\": \"https://github.com/plannotator/effective-html\", \"published_at\": \"2026-06-09T23:24:51Z\", \"match_score\": 0.072, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Transformer Alternative 当前被判定为“局部升温”（M2.4）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。相关项目 24 小时 star 增量合计约 89，说明短期工程关注度出现集中变化。机构或账号信号主要涉及plannotator，相关提及 1 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 1 个。",
+        "开源热度：相关项目 24 小时 star 增量约 89，可作为工程生态升温的短期指标。",
+        "机构/账号线索：plannotator；相关提及 1 次。",
+        "证据链：代表性信号覆盖 repo 1 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。",
+        "后续观察词：plannotator、effective-html、agent、skill、elegant、simple、html、plans。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "plannotator/effective-html",
+            "url": "https://github.com/plannotator/effective-html",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.072。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "plannotator/effective-html",
+          "source_url": "https://github.com/plannotator/effective-html",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.072,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.072。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "plannotator",
+          "effective-html",
+          "agent",
+          "skill",
+          "elegant",
+          "simple"
+        ],
+        "related_institutions": [
+          "plannotator"
+        ],
+        "paper_count": 0,
+        "repo_count": 1,
+        "github_star_delta": 89,
+        "method_mentions": 0,
+        "dataset_mentions": 0,
+        "institution_mentions": 1
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Multi-Agent",
@@ -1380,7 +2434,59 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Multi-Agent:2026-06-14:局部升温",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ludwigstr/WireHarness-MultiAgent-RL\", \"source_url\": \"https://github.com/ludwigstr/WireHarness-MultiAgent-RL\", \"published_at\": \"2026-06-08T11:53:14Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multiagent\"], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ludwigstr/WireHarness-MultiAgent-RL\", \"source_url\": \"https://github.com/ludwigstr/WireHarness-MultiAgent-RL\", \"published_at\": \"2026-06-08T11:53:14Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multiagent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Multi-Agent 当前被判定为“局部升温”（M2.1）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。当前未观察到显著 24 小时 star 增量，仍需结合后续小时快照判断持续性。机构或账号信号主要涉及ludwigstr，相关提及 1 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 1 个。",
+        "机构/账号线索：ludwigstr；相关提及 1 次。",
+        "证据链：代表性信号覆盖 repo 1 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。",
+        "后续观察词：ludwigstr、wireharness-multiagent-rl、gymnasium、environment、multi-robot、wire、handling、mujoco。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "ludwigstr/WireHarness-MultiAgent-RL",
+            "url": "https://github.com/ludwigstr/WireHarness-MultiAgent-RL",
+            "source": "github",
+            "reason": "命中 multiagent，匹配分 0.3。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "ludwigstr/WireHarness-MultiAgent-RL",
+          "source_url": "https://github.com/ludwigstr/WireHarness-MultiAgent-RL",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.3,
+          "matched_terms": [
+            "multiagent"
+          ],
+          "why_included": "命中 multiagent，匹配分 0.3。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "ludwigstr",
+          "wireharness-multiagent-rl",
+          "gymnasium",
+          "environment",
+          "multi-robot",
+          "wire"
+        ],
+        "related_institutions": [
+          "ludwigstr"
+        ],
+        "paper_count": 0,
+        "repo_count": 1,
+        "github_star_delta": 0,
+        "method_mentions": 0,
+        "dataset_mentions": 0,
+        "institution_mentions": 1
+      },
+      "curation_method": "deterministic_rules_v1"
     },
     {
       "topic": "Reasoning",
@@ -1465,7 +2571,57 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Reasoning:2026-06-14:局部升温",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Enotrium/Nazgul\", \"source_url\": \"https://github.com/Enotrium/Nazgul\", \"published_at\": \"2026-06-08T16:46:08Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]"
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Enotrium/Nazgul\", \"source_url\": \"https://github.com/Enotrium/Nazgul\", \"published_at\": \"2026-06-08T16:46:08Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "Reasoning 当前被判定为“局部升温”（M2.1）。本轮信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。当前未观察到显著 24 小时 star 增量，仍需结合后续小时快照判断持续性。机构或账号信号主要涉及Enotrium，相关提及 1 次。该结论由结构化抓取字段自动生成，适合用于判断短期关注度变化、工程生态试验强度和后续观察优先级。",
+      "signal_takeaways": [
+        "信号来源结构：论文 0 条，GitHub 项目 1 个。",
+        "机构/账号线索：Enotrium；相关提及 1 次。",
+        "证据链：代表性信号覆盖 repo 1 条，可点击下方链接回看原始来源。",
+        "置信度提示：历史样本不足，当前判断更适合作为短期预警，需连续观察 3-7 天。",
+        "后续观察词：nazgul、enotrium、unified、python、framework、time-optimal、multi-joint、trajectory。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "Enotrium/Nazgul",
+            "url": "https://github.com/Enotrium/Nazgul",
+            "source": "github",
+            "reason": "纳入代表性证据，匹配分 0.083。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "Enotrium/Nazgul",
+          "source_url": "https://github.com/Enotrium/Nazgul",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "纳入代表性证据，匹配分 0.083。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "focus_terms": [
+          "nazgul",
+          "enotrium",
+          "unified",
+          "python",
+          "framework",
+          "time-optimal"
+        ],
+        "related_institutions": [
+          "Enotrium"
+        ],
+        "paper_count": 0,
+        "repo_count": 1,
+        "github_star_delta": 0,
+        "method_mentions": 0,
+        "dataset_mentions": 0,
+        "institution_mentions": 1
+      },
+      "curation_method": "deterministic_rules_v1"
     }
   ],
   "watchlist_hits": [
@@ -1724,7 +2880,7 @@
     {
       "watchlist_name": "AI Coding 观察",
       "topic": "AI Coding",
-      "magnitude": 4.26,
+      "magnitude": 4.45,
       "severity_label": "疑似爆发",
       "threshold_magnitude": 3.2,
       "threshold_growth_rate": 1.0,
@@ -1768,41 +2924,17 @@
         }
       ],
       "dedupe_key": "watchlist:AI Coding 观察:AI Coding:疑似爆发"
-    },
-    {
-      "watchlist_name": "安全与对齐观察",
-      "topic": "LLM Security",
-      "magnitude": 2.11,
-      "severity_label": "局部升温",
-      "threshold_magnitude": 3.4,
-      "threshold_growth_rate": 1.0,
-      "push_enabled": true,
-      "reason": "增长率超过阈值",
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Wadan3/ai-api-firewall",
-          "source_url": "https://github.com/Wadan3/ai-api-firewall",
-          "published_at": "2026-06-07T04:33:56Z",
-          "match_score": 0.075,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "dedupe_key": "watchlist:安全与对齐观察:LLM Security:局部升温"
     }
   ],
   "github_surges": [
     {
       "repo_full_name": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 1536,
-      "star_delta_1h": 107,
-      "star_delta_24h": 389,
-      "star_delta_72h": 389,
-      "star_delta_7d": 389,
+      "stars": 2474,
+      "star_delta_1h": 938,
+      "star_delta_24h": 1327,
+      "star_delta_72h": 1327,
+      "star_delta_7d": 1327,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -1816,11 +2948,11 @@
     {
       "repo_full_name": "omnigent-ai/omnigent",
       "url": "https://github.com/omnigent-ai/omnigent",
-      "stars": 487,
-      "star_delta_1h": 115,
-      "star_delta_24h": 291,
-      "star_delta_72h": 291,
-      "star_delta_7d": 291,
+      "stars": 752,
+      "star_delta_1h": 265,
+      "star_delta_24h": 556,
+      "star_delta_72h": 556,
+      "star_delta_7d": 556,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -1834,11 +2966,11 @@
     {
       "repo_full_name": "JimLiu/baoyu-design",
       "url": "https://github.com/JimLiu/baoyu-design",
-      "stars": 943,
-      "star_delta_1h": 37,
-      "star_delta_24h": 88,
-      "star_delta_72h": 88,
-      "star_delta_7d": 88,
+      "stars": 1018,
+      "star_delta_1h": 75,
+      "star_delta_24h": 163,
+      "star_delta_72h": 163,
+      "star_delta_7d": 163,
       "matched_topics": [
         "Agents"
       ],
@@ -1849,11 +2981,11 @@
     {
       "repo_full_name": "orange2ai/renwei-writing",
       "url": "https://github.com/orange2ai/renwei-writing",
-      "stars": 422,
-      "star_delta_1h": 15,
-      "star_delta_24h": 83,
-      "star_delta_72h": 83,
-      "star_delta_7d": 83,
+      "stars": 489,
+      "star_delta_1h": 67,
+      "star_delta_24h": 150,
+      "star_delta_72h": 150,
+      "star_delta_7d": 150,
       "matched_topics": [
         "Agents"
       ],
@@ -1862,29 +2994,13 @@
       "source_url": "https://github.com/orange2ai/renwei-writing"
     },
     {
-      "repo_full_name": "plannotator/effective-html",
-      "url": "https://github.com/plannotator/effective-html",
-      "stars": 753,
-      "star_delta_1h": 13,
-      "star_delta_24h": 73,
-      "star_delta_72h": 73,
-      "star_delta_7d": 73,
-      "matched_topics": [
-        "Agents",
-        "Transformer Alternative"
-      ],
-      "language": "HTML",
-      "description": "Agent skill for elegant and simple html plans, architecture diagrams, or whatever else you can think of.",
-      "source_url": "https://github.com/plannotator/effective-html"
-    },
-    {
       "repo_full_name": "alchaincyf/fanbox",
       "url": "https://github.com/alchaincyf/fanbox",
-      "stars": 436,
-      "star_delta_1h": 25,
-      "star_delta_24h": 69,
-      "star_delta_72h": 69,
-      "star_delta_7d": 69,
+      "stars": 489,
+      "star_delta_1h": 53,
+      "star_delta_24h": 122,
+      "star_delta_72h": 122,
+      "star_delta_7d": 122,
       "matched_topics": [
         "Agents",
         "AI Coding",
@@ -1895,6 +3011,38 @@
       "language": "JavaScript",
       "description": "vibe coding 的驾驶舱：左边文件，右边/下边终端，中间看清每一次改动。 / The cockpit for vibe coding: browse files on the left, command agents on the right, watch every change in between.",
       "source_url": "https://github.com/alchaincyf/fanbox"
+    },
+    {
+      "repo_full_name": "plannotator/effective-html",
+      "url": "https://github.com/plannotator/effective-html",
+      "stars": 769,
+      "star_delta_1h": 16,
+      "star_delta_24h": 89,
+      "star_delta_72h": 89,
+      "star_delta_7d": 89,
+      "matched_topics": [
+        "Agents",
+        "Transformer Alternative"
+      ],
+      "language": "HTML",
+      "description": "Agent skill for elegant and simple html plans, architecture diagrams, or whatever else you can think of.",
+      "source_url": "https://github.com/plannotator/effective-html"
+    },
+    {
+      "repo_full_name": "DanMcInerney/architect-loop",
+      "url": "https://github.com/DanMcInerney/architect-loop",
+      "stars": 338,
+      "star_delta_1h": 18,
+      "star_delta_24h": 57,
+      "star_delta_72h": 57,
+      "star_delta_7d": 57,
+      "matched_topics": [
+        "Agents",
+        "Memory"
+      ],
+      "language": "HTML",
+      "description": "Claude Fable 5 as architect, GPT-5.5 Codex as builder, the repo as memory - a research-backed Claude Code skill for the cross-vendor agent loop",
+      "source_url": "https://github.com/DanMcInerney/architect-loop"
     },
     {
       "repo_full_name": "clarilayer/clarilayer",
@@ -1915,29 +3063,13 @@
       "source_url": "https://github.com/clarilayer/clarilayer"
     },
     {
-      "repo_full_name": "DanMcInerney/architect-loop",
-      "url": "https://github.com/DanMcInerney/architect-loop",
-      "stars": 320,
-      "star_delta_1h": 6,
-      "star_delta_24h": 39,
-      "star_delta_72h": 39,
-      "star_delta_7d": 39,
-      "matched_topics": [
-        "Agents",
-        "Memory"
-      ],
-      "language": "HTML",
-      "description": "Claude Fable 5 as architect, GPT-5.5 Codex as builder, the repo as memory - a research-backed Claude Code skill for the cross-vendor agent loop",
-      "source_url": "https://github.com/DanMcInerney/architect-loop"
-    },
-    {
       "repo_full_name": "john-rocky/coreai-model-zoo",
       "url": "https://github.com/john-rocky/coreai-model-zoo",
-      "stars": 100,
-      "star_delta_1h": 6,
-      "star_delta_24h": 33,
-      "star_delta_72h": 33,
-      "star_delta_7d": 33,
+      "stars": 112,
+      "star_delta_1h": 12,
+      "star_delta_24h": 45,
+      "star_delta_72h": 45,
+      "star_delta_7d": 45,
       "matched_topics": [],
       "language": "Swift",
       "description": "Community model zoo + knowledge base for Apple Core AI (iOS/macOS 27): Qwen3.5 & Gemma 4 converted end-to-end, verified on-device (iPhone 17 Pro GPU/ANE), conversion gotchas, custom Metal kernels, Swift runner",
@@ -1946,11 +3078,11 @@
     {
       "repo_full_name": "chen150450/local-multimodal-rag",
       "url": "https://github.com/chen150450/local-multimodal-rag",
-      "stars": 38,
-      "star_delta_1h": 3,
-      "star_delta_24h": 10,
-      "star_delta_72h": 10,
-      "star_delta_7d": 10,
+      "stars": 45,
+      "star_delta_1h": 7,
+      "star_delta_24h": 17,
+      "star_delta_72h": 17,
+      "star_delta_7d": 17,
       "matched_topics": [
         "RAG",
         "Multimodal"
@@ -1970,37 +3102,47 @@
     {
       "topic": "Model Context Protocol",
       "term": "MCP",
-      "magnitude": 5.44
+      "magnitude": 6.0
+    },
+    {
+      "topic": "Model Context Protocol",
+      "term": "RAG",
+      "magnitude": 6.0
     },
     {
       "topic": "RAG",
       "term": "RAG",
-      "magnitude": 5.0
+      "magnitude": 5.49
+    },
+    {
+      "topic": "RAG",
+      "term": "MCP",
+      "magnitude": 5.49
     },
     {
       "topic": "AI Coding",
       "term": "MCP",
-      "magnitude": 4.26
+      "magnitude": 4.45
     },
     {
       "topic": "Memory",
       "term": "MCP",
-      "magnitude": 3.75
+      "magnitude": 3.96
     },
     {
       "topic": "Memory",
       "term": "RAG",
-      "magnitude": 3.75
+      "magnitude": 3.96
     },
     {
       "topic": "Multimodal",
       "term": "RAG",
-      "magnitude": 3.21
+      "magnitude": 3.34
     },
     {
       "topic": "Tool Use",
       "term": "MCP",
-      "magnitude": 2.79
+      "magnitude": 2.9
     }
   ],
   "institution_signals": [
@@ -2032,77 +3174,77 @@
     {
       "topic": "Model Context Protocol",
       "term": "lehanepatrick148-cloud",
-      "magnitude": 5.44
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "DietrichGebert",
-      "magnitude": 5.44
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "Anthropic",
-      "magnitude": 5.44
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "cobusgreyling",
-      "magnitude": 5.44
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "clarilayer",
-      "magnitude": 5.44
+      "magnitude": 6.0
+    },
+    {
+      "topic": "RAG",
+      "term": "nader0913",
+      "magnitude": 5.49
     },
     {
       "topic": "RAG",
       "term": "canwhite",
-      "magnitude": 5.0
+      "magnitude": 5.49
     },
     {
       "topic": "RAG",
       "term": "minjie05",
-      "magnitude": 5.0
+      "magnitude": 5.49
     },
     {
       "topic": "RAG",
       "term": "chen150450",
-      "magnitude": 5.0
+      "magnitude": 5.49
     },
     {
       "topic": "RAG",
       "term": "avi350751",
-      "magnitude": 5.0
-    },
-    {
-      "topic": "RAG",
-      "term": "OpenAI",
-      "magnitude": 5.0
+      "magnitude": 5.49
     },
     {
       "topic": "AI Coding",
       "term": "Anthropic",
-      "magnitude": 4.26
+      "magnitude": 4.45
     },
     {
       "topic": "AI Coding",
       "term": "cobusgreyling",
-      "magnitude": 4.26
+      "magnitude": 4.45
     },
     {
       "topic": "AI Coding",
       "term": "OpenAI",
-      "magnitude": 4.26
+      "magnitude": 4.45
     },
     {
       "topic": "AI Coding",
       "term": "borhen68",
-      "magnitude": 4.26
+      "magnitude": 4.45
     },
     {
       "topic": "AI Coding",
       "term": "alchaincyf",
-      "magnitude": 4.26
+      "magnitude": 4.45
     }
   ],
   "source_status": [
@@ -2113,7 +3255,7 @@
       "error": null,
       "items": 0,
       "partial": false,
-      "fetched_at": "2026-06-14T01:39:00.890255+00:00"
+      "fetched_at": "2026-06-14T09:57:24.580919+00:00"
     },
     {
       "source_name": "github",
@@ -2122,7 +3264,7 @@
       "error": null,
       "items": 48,
       "partial": false,
-      "fetched_at": "2026-06-14T01:39:04.342568+00:00"
+      "fetched_at": "2026-06-14T09:57:27.845699+00:00"
     }
   ],
   "partial": false,
