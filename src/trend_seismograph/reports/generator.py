@@ -11,6 +11,7 @@ from trend_seismograph.analytics.github_growth import apply_star_deltas, save_re
 from trend_seismograph.analytics.scoring import enrich_items
 from trend_seismograph.analytics.watchlist import detect_watchlist_hits
 from trend_seismograph.config import AppConfig
+from trend_seismograph.reports.curation import enrich_signal_curation
 from trend_seismograph.reports.hourly import fetch_sources
 from trend_seismograph.reports.markdown import render_daily_markdown
 from trend_seismograph.storage.file_store import FileStore
@@ -65,8 +66,8 @@ def run_daily(
         "total_topics_tracked": len(config.taxonomy.get("topics", [])),
         "max_magnitude": max((signal["magnitude"] for signal in signals), default=0),
         "top_anomalies": enrich_daily_anomalies(signals, history),
-        "emerging_topics": [signal for signal in signals if signal["magnitude"] >= 3.0][:10],
-        "revived_topics": [signal for signal in signals if signal.get("metrics", {}).get("cold_revival_score")][:10],
+        "emerging_topics": [enrich_signal_curation(signal) for signal in signals if signal["magnitude"] >= 3.0][:10],
+        "revived_topics": [enrich_signal_curation(signal) for signal in signals if signal.get("metrics", {}).get("cold_revival_score")][:10],
         "institution_clusters": institution_clusters(signals),
         "github_surges": github_surges(enriched),
         "dataset_bursts": term_bursts(signals, "related_datasets"),
@@ -109,13 +110,13 @@ def run_daily(
 def enrich_daily_anomalies(signals: list[dict[str, Any]], history: list[dict[str, Any]]) -> list[dict[str, Any]]:
     enriched = []
     for signal in signals[:20]:
-        copied = dict(signal)
-        copied["why_it_matters"] = why_it_matters(signal)
-        copied["representative_papers"] = [e for e in signal.get("evidence", []) if e.get("source_type") == "paper"][:5]
-        copied["related_repos"] = [e for e in signal.get("evidence", []) if e.get("source_type") == "repo"][:5]
-        copied["trend_30d"] = topic_history(signal["topic"], history, days=30)
-        copied["trend_90d"] = topic_history(signal["topic"], history, days=90)
-        copied["trend_180d"] = topic_history(signal["topic"], history, days=180)
+        copied = enrich_signal_curation(signal)
+        copied["why_it_matters"] = why_it_matters(copied)
+        copied["representative_papers"] = [e for e in copied.get("evidence", []) if e.get("source_type") == "paper"][:5]
+        copied["related_repos"] = [e for e in copied.get("evidence", []) if e.get("source_type") == "repo"][:5]
+        copied["trend_30d"] = topic_history(copied["topic"], history, days=30)
+        copied["trend_90d"] = topic_history(copied["topic"], history, days=90)
+        copied["trend_180d"] = topic_history(copied["topic"], history, days=180)
         enriched.append(copied)
     return enriched
 
