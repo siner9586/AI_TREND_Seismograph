@@ -3,9 +3,44 @@ import EvidenceChain from "./EvidenceChain.astro";
 import MagnitudeBadge from "./MagnitudeBadge.astro";
 import SeverityTag from "./SeverityTag.astro";
 import { slugTopic } from "../lib/data";
-const { trend } = Astro.props;
+
+const { trend, detailed = false } = Astro.props;
+const metrics = trend.metrics || {};
+const evidence = trend.evidence || [];
+const sourceUrls = Array.from(new Set([...(trend.source_urls || []), ...evidence.map((item: any) => item.source_url)].filter(Boolean))).slice(0, 8) as string[];
+const relatedMethods = trend.related_methods || [];
+const relatedDatasets = trend.related_datasets || [];
+const relatedInstitutions = trend.related_institutions || [];
+const watchKeywords = trend.suggested_watch_keywords || [];
+const keyDrivers = trend.key_drivers || [];
+const caveats = trend.caveats || [];
+const evidenceKeywords = Array.from(new Set(evidence.flatMap((item: any) => item.matched_keywords || []).filter(Boolean))).slice(0, 8) as string[];
+
+const signalFacts = [
+  metrics.repo_count ? `GitHub 项目信号 ${metrics.repo_count} 个` : null,
+  metrics.paper_count ? `论文信号 ${metrics.paper_count} 条` : null,
+  metrics.github_star_delta ? `24h star 增量 ${metrics.github_star_delta}` : null,
+  metrics.method_mentions ? `方法提及 ${metrics.method_mentions} 次` : null,
+  metrics.dataset_mentions ? `数据集/Benchmark 提及 ${metrics.dataset_mentions} 次` : null,
+  metrics.institution_mentions ? `机构相关信号 ${metrics.institution_mentions} 次` : null,
+].filter(Boolean);
+
+function linkLabel(url: string) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname.includes("github.com")) {
+      return parsed.pathname.replace(/^\//, "") || url;
+    }
+    if (parsed.hostname.includes("arxiv.org")) {
+      return `arXiv ${parsed.pathname.split("/").filter(Boolean).pop() || "paper"}`;
+    }
+    return parsed.hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
 ---
-<article class="card stack">
+<article class:list={["card", "stack", detailed && "trend-card-detailed"]}>
   <div class="between">
     <div>
       <h3><a href={`/trends/${slugTopic(trend.topic)}`}>{trend.topic}</a></h3>
@@ -16,7 +51,61 @@ const { trend } = Astro.props;
     </div>
     <MagnitudeBadge magnitude={trend.magnitude} />
   </div>
+
   <p>{trend.summary}</p>
+
+  {detailed && signalFacts.length ? (
+    <section class="trend-detail-block">
+      <div class="detail-title">抓取内容重点</div>
+      <p class="detail-summary">
+        本轮热点主要由{signalFacts.join("、")}构成；系统结合突发强度、来源覆盖、机构/方法信号和历史基线，判断该方向处于“{trend.severity_label || "趋势波动"}”。
+      </p>
+    </section>
+  ) : null}
+
+  {detailed && keyDrivers.length ? (
+    <section class="trend-detail-block">
+      <div class="detail-title">主要驱动因素</div>
+      <ul class="compact-list">
+        {keyDrivers.slice(0, 6).map((item: string) => <li>{item}</li>)}
+      </ul>
+    </section>
+  ) : null}
+
+  {detailed && (relatedMethods.length || relatedDatasets.length || relatedInstitutions.length || evidenceKeywords.length || watchKeywords.length) ? (
+    <section class="trend-detail-block">
+      <div class="detail-title">信号解释</div>
+      <div class="signal-grid">
+        {relatedMethods.length ? <div><span class="signal-label">相关方法</span><p>{relatedMethods.slice(0, 6).join("、")}</p></div> : null}
+        {relatedDatasets.length ? <div><span class="signal-label">数据集 / Benchmark</span><p>{relatedDatasets.slice(0, 6).join("、")}</p></div> : null}
+        {relatedInstitutions.length ? <div><span class="signal-label">相关机构 / 账号</span><p>{relatedInstitutions.slice(0, 8).join("、")}</p></div> : null}
+        {evidenceKeywords.length ? <div><span class="signal-label">命中关键词</span><p>{evidenceKeywords.join("、")}</p></div> : null}
+        {watchKeywords.length ? <div><span class="signal-label">后续观察词</span><p>{watchKeywords.slice(0, 8).join("、")}</p></div> : null}
+      </div>
+    </section>
+  ) : null}
+
   <div class="muted">{trend.calculation_summary}</div>
-  <EvidenceChain evidence={trend.evidence || []} />
+
+  {detailed && caveats.length ? (
+    <div class="caveat-box">{caveats.slice(0, 2).join("；")}</div>
+  ) : null}
+
+  {detailed ? (
+    <section class="trend-detail-block">
+      <div class="detail-title">代表性信号</div>
+      <EvidenceChain evidence={evidence} limit={6} />
+    </section>
+  ) : <EvidenceChain evidence={evidence || []} />}
+
+  {detailed && sourceUrls.length ? (
+    <section class="trend-detail-block signal-links">
+      <div class="detail-title">信号链接</div>
+      <div class="link-list">
+        {sourceUrls.map((url: string) => (
+          <a href={url} target="_blank" rel="noopener noreferrer">{linkLabel(url)}</a>
+        ))}
+      </div>
+    </section>
+  ) : null}
 </article>
