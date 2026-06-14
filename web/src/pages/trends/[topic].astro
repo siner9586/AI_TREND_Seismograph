@@ -15,7 +15,7 @@ const { report } = latestBundle();
 const signal = (report?.top_anomalies || []).find((item: any) => item.topic === topicName);
 const charts = report?.trend_charts?.[topicName] || {};
 ---
-<BaseLayout title={`${topicName} - AI 趋势地震仪`}>
+<BaseLayout title={`${topicName} - AI 趋势脉冲`}>
   <section class="page-title">
     <h1>{topicName}</h1>
     <p class="subtitle">{topicConfig?.description || "暂无 topic 描述。"}</p>
@@ -37,7 +37,7 @@ const charts = report?.trend_charts?.[topicName] || {};
 
   <h2>证据链</h2>
   <section class="panel">
-    <p>{signal?.summary || "当前最新日报没有该方向的异常信号。"}</p>
+    <p>{signal?.curated_summary || signal?.summary || "当前最新日报没有该方向的异常信号。"}</p>
     <EvidenceChain evidence={signal?.evidence || []} />
   </section>
 
