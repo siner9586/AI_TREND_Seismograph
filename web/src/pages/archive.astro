@@ -4,7 +4,7 @@ import { listHotspots, listReports } from "../lib/data";
 const reports = listReports().sort((a: any, b: any) => String(b.report_date).localeCompare(String(a.report_date)));
 const hotspots = listHotspots().sort((a: any, b: any) => String(b.snapshot_hour).localeCompare(String(a.snapshot_hour)));
 ---
-<BaseLayout title="归档 - AI 趋势地震仪">
+<BaseLayout title="归档 - AI 趋势脉冲">
   <section class="page-title">
     <h1>归档</h1>
     <p class="subtitle">按日期查看历史日报与小时热点快照。</p>
