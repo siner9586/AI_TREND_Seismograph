@@ -11947,6 +11947,735 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Vision-Language-Action Model",
+      "magnitude": 5.23,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Vision-Language-Action Model",
+          "title": "Vision-Language-Action Model 出现强趋势震荡",
+          "magnitude": 5.23,
+          "severity_label": "强趋势震荡",
+          "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.23，burst=4.572，growth_rate=-0.954，z_score=-6.537，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 89",
+            "方法提及：VLA",
+            "机构集中：Tencent, Tencent-Hunyuan, cvlab-kaist"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 86.4,
+            "baseline_daily_std_30d": 11.758,
+            "baseline_72h_avg_30d": 259.2,
+            "growth_rate": -0.954,
+            "z_score": -6.537,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.19,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.597,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 89,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 4,
+            "burst_score": 4.572,
+            "low_history_confidence": true,
+            "magnitude": 5.23
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "published_at": "2026-06-12T03:47:21Z",
+              "match_score": 0.667,
+              "matched_keywords": [
+                "VLA",
+                "vision-language-action"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "cvlab-kaist/Geometric-Action-Model",
+              "source_url": "https://github.com/cvlab-kaist/Geometric-Action-Model",
+              "published_at": "2026-06-10T19:49:13Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "action model"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "sap-sim/sap_warp",
+              "source_url": "https://github.com/sap-sim/sap_warp",
+              "published_at": "2026-06-11T03:30:44Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+            "https://github.com/cvlab-kaist/Geometric-Action-Model",
+            "https://github.com/sap-sim/sap_warp"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "Tencent",
+            "Tencent-Hunyuan",
+            "cvlab-kaist",
+            "sap-sim"
+          ],
+          "suggested_watch_keywords": [
+            "robot",
+            "implementation",
+            "tencent-hunyuan",
+            "hy-embodied-0",
+            "vla",
+            "vision-language-action",
+            "real-world",
+            "stack"
+          ],
+          "confidence": 0.4,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Vision-Language-Action Model:2026-06-16:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tencent-Hunyuan/Hy-Embodied-0.5-VLA\", \"source_url\": \"https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA\", \"published_at\": \"2026-06-12T03:47:21Z\", \"match_score\": 0.667, \"matched_keywords\": [\"VLA\", \"vision-language-action\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cvlab-kaist/Geometric-Action-Model\", \"source_url\": \"https://github.com/cvlab-kaist/Geometric-Action-Model\", \"published_at\": \"2026-06-10T19:49:13Z\", \"match_score\": 0.333, \"matched_keywords\": [\"action model\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sap-sim/sap_warp\", \"source_url\": \"https://github.com/sap-sim/sap_warp\", \"published_at\": \"2026-06-11T03:30:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括Tencent-Hunyuan/Hy-Embodied-0.5-VLA、cvlab-kaist/Geometric-Action-Model、sap-sim/sap_warp等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 89，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Tencent、Tencent-Hunyuan、cvlab-kaist、sap-sim，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robot、implementation、tencent-hunyuan、hy-embodied-0、vla、vision-language-action、real-world、stack等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“强趋势震荡”（M5.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、robot、implementation、tencent-hunyuan、hy-embodied-0、vision-language-action等线索，代表条目包括Tencent-Hunyuan/Hy-Embodied-0.5-VLA、cvlab-kaist/Geometric-Action-Model、sap-sim/sap_warp，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 89，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及Tencent、Tencent-Hunyuan、cvlab-kaist、sap-sim，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察robot、implementation、tencent-hunyuan、hy-embodied-0、vla、vision-language-action、real-world、stack是否继续出现。当前置信度为 0.4，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+                "url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+                "source": "github",
+                "reason": "命中 VLA、vision-language-action，匹配分 0.667，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "cvlab-kaist/Geometric-Action-Model",
+                "url": "https://github.com/cvlab-kaist/Geometric-Action-Model",
+                "source": "github",
+                "reason": "命中 action model，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "sap-sim/sap_warp",
+                "url": "https://github.com/sap-sim/sap_warp",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.667,
+              "matched_terms": [
+                "VLA",
+                "vision-language-action"
+              ],
+              "why_included": "命中 VLA、vision-language-action，匹配分 0.667，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "cvlab-kaist/Geometric-Action-Model",
+              "source_url": "https://github.com/cvlab-kaist/Geometric-Action-Model",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "action model"
+              ],
+              "why_included": "命中 action model，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "sap-sim/sap_warp",
+              "source_url": "https://github.com/sap-sim/sap_warp",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "VLA",
+              "robot",
+              "implementation",
+              "tencent-hunyuan",
+              "hy-embodied-0",
+              "vision-language-action",
+              "real-world",
+              "stack"
+            ],
+            "representative_titles": [
+              "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "cvlab-kaist/Geometric-Action-Model",
+              "sap-sim/sap_warp"
+            ],
+            "related_institutions": [
+              "Tencent",
+              "Tencent-Hunyuan",
+              "cvlab-kaist",
+              "sap-sim"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 89,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 4
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-16T11"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-16T11:37:03.924769+00:00",
+      "dedupe_key": "trend:Vision-Language-Action Model:2026-06-16:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Multimodal",
+      "magnitude": 4.0,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Multimodal",
+          "title": "Multimodal 出现疑似爆发",
+          "magnitude": 4.0,
+          "severity_label": "疑似爆发",
+          "summary": "Multimodal 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.0，burst=2.968，growth_rate=-0.902，z_score=-2.473，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 2 个",
+            "24h star 增量 50",
+            "方法提及：RAG, VLA",
+            "机构集中：chen150450, Tencent, Tencent-Hunyuan"
+          ],
+          "metrics": {
+            "current_1h_count": 2,
+            "current_24h_count": 2,
+            "current_72h_count": 2,
+            "current_7d_count": 2,
+            "baseline_daily_avg_30d": 29.647,
+            "baseline_daily_std_30d": 10.18,
+            "baseline_72h_avg_30d": 88.941,
+            "growth_rate": -0.902,
+            "z_score": -2.473,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.364,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.5,
+            "institution_signal_score": 0.805,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 2,
+            "github_star_delta": 50,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 2.968,
+            "low_history_confidence": true,
+            "magnitude": 4.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "published_at": "2026-06-12T03:47:21Z",
+              "match_score": 0.392,
+              "matched_keywords": [
+                "vision-language"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "chen150450/local-multimodal-rag",
+              "source_url": "https://github.com/chen150450/local-multimodal-rag",
+              "published_at": "2026-06-11T14:31:08Z",
+              "match_score": 0.313,
+              "matched_keywords": [
+                "multimodal"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+            "https://github.com/chen150450/local-multimodal-rag"
+          ],
+          "related_methods": [
+            "RAG",
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "chen150450",
+            "Tencent",
+            "Tencent-Hunyuan"
+          ],
+          "suggested_watch_keywords": [
+            "chen150450",
+            "local-multimodal-rag",
+            "fully",
+            "local",
+            "multimodal",
+            "rag",
+            "pipeline",
+            "images"
+          ],
+          "confidence": 0.34,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Multimodal:2026-06-16:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tencent-Hunyuan/Hy-Embodied-0.5-VLA\", \"source_url\": \"https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA\", \"published_at\": \"2026-06-12T03:47:21Z\", \"match_score\": 0.392, \"matched_keywords\": [\"vision-language\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chen150450/local-multimodal-rag\", \"source_url\": \"https://github.com/chen150450/local-multimodal-rag\", \"published_at\": \"2026-06-11T14:31:08Z\", \"match_score\": 0.313, \"matched_keywords\": [\"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Multimodal」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括Tencent-Hunyuan/Hy-Embodied-0.5-VLA、chen150450/local-multimodal-rag等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 50，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、VLA等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及chen150450、Tencent、Tencent-Hunyuan，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察chen150450、local-multimodal-rag、fully、local、multimodal、rag、pipeline、images等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Multimodal 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“疑似爆发”（M4.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、VLA、chen150450、local-multimodal-rag、fully、local等线索，代表条目包括Tencent-Hunyuan/Hy-Embodied-0.5-VLA、chen150450/local-multimodal-rag，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 50，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及chen150450、Tencent、Tencent-Hunyuan，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 2 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察chen150450、local-multimodal-rag、fully、local、multimodal、rag、pipeline、images是否继续出现。当前置信度为 0.3，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+                "url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+                "source": "github",
+                "reason": "命中 vision-language，匹配分 0.392，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "chen150450/local-multimodal-rag",
+                "url": "https://github.com/chen150450/local-multimodal-rag",
+                "source": "github",
+                "reason": "命中 multimodal，匹配分 0.313，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.392,
+              "matched_terms": [
+                "vision-language"
+              ],
+              "why_included": "命中 vision-language，匹配分 0.392，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "chen150450/local-multimodal-rag",
+              "source_url": "https://github.com/chen150450/local-multimodal-rag",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.313,
+              "matched_terms": [
+                "multimodal"
+              ],
+              "why_included": "命中 multimodal，匹配分 0.313，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 2 个。",
+            "focus_terms": [
+              "RAG",
+              "VLA",
+              "chen150450",
+              "local-multimodal-rag",
+              "fully",
+              "local",
+              "multimodal",
+              "pipeline"
+            ],
+            "representative_titles": [
+              "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "chen150450/local-multimodal-rag"
+            ],
+            "related_institutions": [
+              "chen150450",
+              "Tencent",
+              "Tencent-Hunyuan"
+            ],
+            "paper_count": 0,
+            "repo_count": 2,
+            "github_star_delta": 50,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-16T11"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-16T11:37:03.924769+00:00",
+      "dedupe_key": "trend:Multimodal:2026-06-16:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Evaluation",
+      "magnitude": 3.35,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Evaluation",
+          "title": "Evaluation 出现明显异常",
+          "magnitude": 3.35,
+          "severity_label": "明显异常",
+          "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.35，burst=1.549，growth_rate=3.0，z_score=3.0，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 1",
+            "方法提及：MCP",
+            "机构集中：SIAM-AFROZ-TANMOY, JayanGupta, Anthropic",
+            "低基线方向出现冷门复活信号"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 0.0,
+            "baseline_daily_std_30d": 0.0,
+            "baseline_72h_avg_30d": 0.0,
+            "growth_rate": 3.0,
+            "z_score": 3.0,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 1.168,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.649,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 1.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 1,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 5,
+            "burst_score": 1.549,
+            "low_history_confidence": true,
+            "magnitude": 3.35
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "JayanGupta/Work_Shop",
+              "source_url": "https://github.com/JayanGupta/Work_Shop",
+              "published_at": "2026-06-15T13:22:13Z",
+              "match_score": 0.6,
+              "matched_keywords": [
+                "evaluation",
+                "model evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+              "source_url": "https://github.com/SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+              "published_at": "2026-06-13T07:27:07Z",
+              "match_score": 0.3,
+              "matched_keywords": [
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "keyuchen21/agentic-engineering-handbook",
+              "source_url": "https://github.com/keyuchen21/agentic-engineering-handbook",
+              "published_at": "2026-06-09T15:25:00Z",
+              "match_score": 0.3,
+              "matched_keywords": [
+                "evals"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/JayanGupta/Work_Shop",
+            "https://github.com/SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+            "https://github.com/keyuchen21/agentic-engineering-handbook"
+          ],
+          "related_methods": [
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "SIAM-AFROZ-TANMOY",
+            "JayanGupta",
+            "Anthropic",
+            "OpenAI",
+            "keyuchen21"
+          ],
+          "suggested_watch_keywords": [
+            "detection",
+            "evaluation",
+            "spam",
+            "siam-afroz-tanmoy",
+            "project-spammessageclassifier",
+            "message",
+            "machine",
+            "tf-idf"
+          ],
+          "confidence": 0.4,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "冷门复活",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Evaluation:2026-06-16:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JayanGupta/Work_Shop\", \"source_url\": \"https://github.com/JayanGupta/Work_Shop\", \"published_at\": \"2026-06-15T13:22:13Z\", \"match_score\": 0.6, \"matched_keywords\": [\"evaluation\", \"model evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier\", \"source_url\": \"https://github.com/SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier\", \"published_at\": \"2026-06-13T07:27:07Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"keyuchen21/agentic-engineering-handbook\", \"source_url\": \"https://github.com/keyuchen21/agentic-engineering-handbook\", \"published_at\": \"2026-06-09T15:25:00Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evals\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括JayanGupta/Work_Shop、SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier、keyuchen21/agentic-engineering-handbook等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 1，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及SIAM-AFROZ-TANMOY、JayanGupta、Anthropic、OpenAI、keyuchen21，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察detection、evaluation、spam、siam-afroz-tanmoy、project-spammessageclassifier、message、machine、tf-idf等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“明显异常”（M3.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向MCP、detection、evaluation、spam、siam-afroz-tanmoy、project-spammessageclassifier等线索，代表条目包括JayanGupta/Work_Shop、SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier、keyuchen21/agentic-engineering-handbook，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 1，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及SIAM-AFROZ-TANMOY、JayanGupta、Anthropic、OpenAI、keyuchen21，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察detection、evaluation、spam、siam-afroz-tanmoy、project-spammessageclassifier、message、machine、tf-idf是否继续出现。当前置信度为 0.4，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "JayanGupta/Work_Shop",
+                "url": "https://github.com/JayanGupta/Work_Shop",
+                "source": "github",
+                "reason": "命中 evaluation、model evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+                "url": "https://github.com/SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+                "source": "github",
+                "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "keyuchen21/agentic-engineering-handbook",
+                "url": "https://github.com/keyuchen21/agentic-engineering-handbook",
+                "source": "github",
+                "reason": "命中 evals，匹配分 0.3，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "JayanGupta/Work_Shop",
+              "source_url": "https://github.com/JayanGupta/Work_Shop",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.6,
+              "matched_terms": [
+                "evaluation",
+                "model evaluation"
+              ],
+              "why_included": "命中 evaluation、model evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+              "source_url": "https://github.com/SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.3,
+              "matched_terms": [
+                "evaluation"
+              ],
+              "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "keyuchen21/agentic-engineering-handbook",
+              "source_url": "https://github.com/keyuchen21/agentic-engineering-handbook",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.3,
+              "matched_terms": [
+                "evals"
+              ],
+              "why_included": "命中 evals，匹配分 0.3，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "MCP",
+              "detection",
+              "evaluation",
+              "spam",
+              "siam-afroz-tanmoy",
+              "project-spammessageclassifier",
+              "message",
+              "machine"
+            ],
+            "representative_titles": [
+              "JayanGupta/Work_Shop",
+              "SIAM-AFROZ-TANMOY/Project-SpamMessageClassifier",
+              "keyuchen21/agentic-engineering-handbook"
+            ],
+            "related_institutions": [
+              "SIAM-AFROZ-TANMOY",
+              "JayanGupta",
+              "Anthropic",
+              "OpenAI",
+              "keyuchen21"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 1,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 5
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-16T11"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-16T11:37:03.924769+00:00",
+      "dedupe_key": "trend:Evaluation:2026-06-16:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
