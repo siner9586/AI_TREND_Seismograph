@@ -23701,6 +23701,221 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Multimodal",
+      "magnitude": 3.98,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Multimodal",
+          "title": "Multimodal 出现明显异常",
+          "magnitude": 3.98,
+          "severity_label": "明显异常",
+          "summary": "Multimodal 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.98，burst=2.949，growth_rate=-0.924，z_score=-2.872，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 2 个",
+            "24h star 增量 7",
+            "方法提及：RAG, VLA",
+            "机构集中：ayaanmustafa, Tencent, Tencent-Hunyuan"
+          ],
+          "metrics": {
+            "current_1h_count": 2,
+            "current_24h_count": 2,
+            "current_72h_count": 2,
+            "current_7d_count": 2,
+            "baseline_daily_avg_30d": 38.545,
+            "baseline_daily_std_30d": 11.727,
+            "baseline_72h_avg_30d": 115.636,
+            "growth_rate": -0.924,
+            "z_score": -2.872,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.345,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.5,
+            "institution_signal_score": 0.805,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 2,
+            "github_star_delta": 7,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 2.949,
+            "low_history_confidence": false,
+            "magnitude": 3.98
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "published_at": "2026-06-12T03:47:21Z",
+              "match_score": 0.392,
+              "matched_keywords": [
+                "vision-language"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ayaanmustafa/Junas",
+              "source_url": "https://github.com/ayaanmustafa/Junas",
+              "published_at": "2026-06-15T23:34:52Z",
+              "match_score": 0.313,
+              "matched_keywords": [
+                "multimodal"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+            "https://github.com/ayaanmustafa/Junas"
+          ],
+          "related_methods": [
+            "RAG",
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "ayaanmustafa",
+            "Tencent",
+            "Tencent-Hunyuan"
+          ],
+          "suggested_watch_keywords": [
+            "ayaanmustafa",
+            "junas",
+            "multimodal",
+            "pdf",
+            "parser",
+            "rag",
+            "colpali",
+            "hybrid"
+          ],
+          "confidence": 0.49,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Multimodal:2026-06-19:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tencent-Hunyuan/Hy-Embodied-0.5-VLA\", \"source_url\": \"https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA\", \"published_at\": \"2026-06-12T03:47:21Z\", \"match_score\": 0.392, \"matched_keywords\": [\"vision-language\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ayaanmustafa/Junas\", \"source_url\": \"https://github.com/ayaanmustafa/Junas\", \"published_at\": \"2026-06-15T23:34:52Z\", \"match_score\": 0.313, \"matched_keywords\": [\"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Multimodal」相关公开信号进行汇总，系统将其判定为“明显异常”（M4.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括Tencent-Hunyuan/Hy-Embodied-0.5-VLA、ayaanmustafa/Junas等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 7，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、VLA等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及ayaanmustafa、Tencent、Tencent-Hunyuan，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察ayaanmustafa、junas、multimodal、pdf、parser、rag、colpali、hybrid等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。",
+          "signal_takeaways": [
+            "总体判断：Multimodal 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“明显异常”（M4.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、VLA、ayaanmustafa、junas、multimodal、pdf等线索，代表条目包括Tencent-Hunyuan/Hy-Embodied-0.5-VLA、ayaanmustafa/Junas，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 7，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及ayaanmustafa、Tencent、Tencent-Hunyuan，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 2 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察ayaanmustafa、junas、multimodal、pdf、parser、rag、colpali、hybrid是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+                "url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+                "source": "github",
+                "reason": "命中 vision-language，匹配分 0.392，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ayaanmustafa/Junas",
+                "url": "https://github.com/ayaanmustafa/Junas",
+                "source": "github",
+                "reason": "命中 multimodal，匹配分 0.313，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_url": "https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.392,
+              "matched_terms": [
+                "vision-language"
+              ],
+              "why_included": "命中 vision-language，匹配分 0.392，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ayaanmustafa/Junas",
+              "source_url": "https://github.com/ayaanmustafa/Junas",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.313,
+              "matched_terms": [
+                "multimodal"
+              ],
+              "why_included": "命中 multimodal，匹配分 0.313，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 2 个。",
+            "focus_terms": [
+              "RAG",
+              "VLA",
+              "ayaanmustafa",
+              "junas",
+              "multimodal",
+              "pdf",
+              "parser",
+              "colpali"
+            ],
+            "representative_titles": [
+              "Tencent-Hunyuan/Hy-Embodied-0.5-VLA",
+              "ayaanmustafa/Junas"
+            ],
+            "related_institutions": [
+              "ayaanmustafa",
+              "Tencent",
+              "Tencent-Hunyuan"
+            ],
+            "paper_count": 0,
+            "repo_count": 2,
+            "github_star_delta": 7,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-19T10"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-19T10:59:08.369490+00:00",
+      "dedupe_key": "trend:Multimodal:2026-06-19:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
