@@ -1,7 +1,7 @@
 {
-  "snapshot_hour": "2026-06-20T09",
-  "generated_at": "2026-06-20T09:44:32.444531+00:00",
-  "run_id": "hourly-20260620T09-5b0f4d57",
+  "snapshot_hour": "2026-06-20T12",
+  "generated_at": "2026-06-20T12:12:56.514815+00:00",
+  "run_id": "hourly-20260620T12-d54fb8c1",
   "mode": "hourly",
   "total_items_scanned": 52,
   "total_papers_scanned": 0,
@@ -15,11 +15,11 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "Agents 在当前窗口内出现 0 条论文信号和 17 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=7.765，growth_rate=-0.955，z_score=-11.724，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=7.885，growth_rate=-0.955，z_score=-11.852，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 17 个",
-        "24h star 增量 798",
-        "方法提及：MCP, RAG, ReAct",
+        "24h star 增量 833",
+        "方法提及：MCP, ReAct, RAG",
         "机构集中：Anthropic, OpenAI, dzcmemory-web"
       ],
       "metrics": {
@@ -27,27 +27,27 @@
         "current_24h_count": 17,
         "current_72h_count": 17,
         "current_7d_count": 17,
-        "baseline_daily_avg_30d": 396.878,
-        "baseline_daily_std_30d": 31.403,
-        "baseline_72h_avg_30d": 1190.634,
+        "baseline_daily_avg_30d": 397.143,
+        "baseline_daily_std_30d": 31.073,
+        "baseline_72h_avg_30d": 1191.429,
         "growth_rate": -0.955,
-        "z_score": -11.724,
+        "z_score": -11.852,
         "paper_burst_score": 0.0,
-        "github_signal_score": 6.779,
+        "github_signal_score": 6.814,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.118,
         "institution_signal_score": 0.369,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.985,
+        "method_signal_score": 1.07,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 17,
-        "github_star_delta": 798,
-        "method_mentions": 5,
+        "github_star_delta": 833,
+        "method_mentions": 6,
         "dataset_mentions": 0,
         "institution_mentions": 22,
-        "burst_score": 7.765,
+        "burst_score": 7.885,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -139,22 +139,24 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "mrtooher/fable-mode",
-          "source_url": "https://github.com/mrtooher/fable-mode",
-          "published_at": "2026-06-13T05:33:14Z",
-          "match_score": 0.396,
+          "title": "larlarua/AutoCVE",
+          "source_url": "https://github.com/larlarua/AutoCVE",
+          "published_at": "2026-06-15T14:50:47Z",
+          "match_score": 0.475,
           "matched_keywords": [
             "agent"
           ],
-          "matched_methods": [],
+          "matched_methods": [
+            "ReAct"
+          ],
           "matched_datasets": []
         },
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "baskduf/FableCodex",
-          "source_url": "https://github.com/baskduf/FableCodex",
-          "published_at": "2026-06-14T13:11:00Z",
+          "title": "mrtooher/fable-mode",
+          "source_url": "https://github.com/mrtooher/fable-mode",
+          "published_at": "2026-06-13T05:33:14Z",
           "match_score": 0.396,
           "matched_keywords": [
             "agent"
@@ -172,11 +174,11 @@
         "https://github.com/baskduf/FableCodex",
         "https://github.com/dongshuyan/compass-skills",
         "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+        "https://github.com/larlarua/AutoCVE",
         "https://github.com/majidmanzarpour/threejs-game-skills",
         "https://github.com/mrtooher/fable-mode",
         "https://github.com/rebel0789/codexpro",
         "https://github.com/ruvnet/agent-harness-generator",
-        "https://github.com/sgup/ai",
         "https://github.com/tongxuluo/gamecraft-bench",
         "https://github.com/udityamerit/NeuroLens-Knowledge-Retrieval-Engine",
         "https://github.com/vercel/eve",
@@ -184,8 +186,8 @@
       ],
       "related_methods": [
         "MCP",
-        "RAG",
-        "ReAct"
+        "ReAct",
+        "RAG"
       ],
       "related_datasets": [],
       "related_institutions": [
@@ -202,9 +204,9 @@
         "agent",
         "agents",
         "claude",
-        "coding",
-        "codex",
         "code",
+        "codex",
+        "coding",
         "skills",
         "llm"
       ],
@@ -219,16 +221,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-06-20:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TrenchesofChirac/claude-fable-5-free-desktop-app\", \"source_url\": \"https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app\", \"published_at\": \"2026-06-17T16:52:26Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"autonomous agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vercel/eve\", \"source_url\": \"https://github.com/vercel/eve\", \"published_at\": \"2026-06-16T10:51:20Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Forsy-AI/agent-apprenticeship\", \"source_url\": \"https://github.com/Forsy-AI/agent-apprenticeship\", \"published_at\": \"2026-06-19T16:19:37Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mrtooher/fable-mode\", \"source_url\": \"https://github.com/mrtooher/fable-mode\", \"published_at\": \"2026-06-13T05:33:14Z\", \"match_score\": 0.396, \"matched_keywords\": [\"agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"baskduf/FableCodex\", \"source_url\": \"https://github.com/baskduf/FableCodex\", \"published_at\": \"2026-06-14T13:11:00Z\", \"match_score\": 0.396, \"matched_keywords\": [\"agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 17 个。代表性目标包括dongshuyan/compass-skills、TrenchesofChirac/claude-fable-5-free-desktop-app、vercel/eve、Forsy-AI/agent-apprenticeship、ruvnet/agent-harness-generator等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 798，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Anthropic、OpenAI、dzcmemory-web、NVIDIA、Sorathiya123、TrenchesofChirac、vercel、mrtooher，累计提及 22 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、claude、coding、codex、code、skills、llm等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TrenchesofChirac/claude-fable-5-free-desktop-app\", \"source_url\": \"https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app\", \"published_at\": \"2026-06-17T16:52:26Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"autonomous agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vercel/eve\", \"source_url\": \"https://github.com/vercel/eve\", \"published_at\": \"2026-06-16T10:51:20Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Forsy-AI/agent-apprenticeship\", \"source_url\": \"https://github.com/Forsy-AI/agent-apprenticeship\", \"published_at\": \"2026-06-19T16:19:37Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"larlarua/AutoCVE\", \"source_url\": \"https://github.com/larlarua/AutoCVE\", \"published_at\": \"2026-06-15T14:50:47Z\", \"match_score\": 0.475, \"matched_keywords\": [\"agent\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mrtooher/fable-mode\", \"source_url\": \"https://github.com/mrtooher/fable-mode\", \"published_at\": \"2026-06-13T05:33:14Z\", \"match_score\": 0.396, \"matched_keywords\": [\"agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 17 个。代表性目标包括dongshuyan/compass-skills、TrenchesofChirac/claude-fable-5-free-desktop-app、vercel/eve、Forsy-AI/agent-apprenticeship、ruvnet/agent-harness-generator等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 833，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、ReAct、RAG等线索，方法提及 6 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Anthropic、OpenAI、dzcmemory-web、NVIDIA、Sorathiya123、TrenchesofChirac、vercel、mrtooher，累计提及 22 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、claude、code、codex、coding、skills、llm等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Agents 本轮由论文 0 条、GitHub 项目 17 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agent、agents、claude等线索，代表条目包括dongshuyan/compass-skills、TrenchesofChirac/claude-fable-5-free-desktop-app、vercel/eve、Forsy-AI/agent-apprenticeship，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 17 个 GitHub 项目，24 小时 star 增量约 798，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 5 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "内容重点：抓取到的多个目标集中指向MCP、ReAct、RAG、agent、agents、claude等线索，代表条目包括dongshuyan/compass-skills、TrenchesofChirac/claude-fable-5-free-desktop-app、vercel/eve、Forsy-AI/agent-apprenticeship，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 17 个 GitHub 项目，24 小时 star 增量约 833，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 6 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及Anthropic、OpenAI、dzcmemory-web、NVIDIA、Sorathiya123、TrenchesofChirac，累计提及 22 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agent、agents、claude、coding、codex、code、skills、llm是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、agents、claude、code、codex、coding、skills、llm是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -269,14 +271,14 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "mrtooher/fable-mode",
-            "url": "https://github.com/mrtooher/fable-mode",
+            "title": "larlarua/AutoCVE",
+            "url": "https://github.com/larlarua/AutoCVE",
             "source": "github",
-            "reason": "命中 agent，匹配分 0.396，因此被纳入本轮代表性证据。"
+            "reason": "命中 agent、ReAct，匹配分 0.475，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "baskduf/FableCodex",
-            "url": "https://github.com/baskduf/FableCodex",
+            "title": "mrtooher/fable-mode",
+            "url": "https://github.com/mrtooher/fable-mode",
             "source": "github",
             "reason": "命中 agent，匹配分 0.396，因此被纳入本轮代表性证据。"
           },
@@ -368,19 +370,20 @@
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "mrtooher/fable-mode",
-          "source_url": "https://github.com/mrtooher/fable-mode",
+          "title": "larlarua/AutoCVE",
+          "source_url": "https://github.com/larlarua/AutoCVE",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.396,
+          "match_score": 0.475,
           "matched_terms": [
-            "agent"
+            "agent",
+            "ReAct"
           ],
-          "why_included": "命中 agent，匹配分 0.396，因此被纳入本轮代表性证据。"
+          "why_included": "命中 agent、ReAct，匹配分 0.475，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "baskduf/FableCodex",
-          "source_url": "https://github.com/baskduf/FableCodex",
+          "title": "mrtooher/fable-mode",
+          "source_url": "https://github.com/mrtooher/fable-mode",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.396,
@@ -395,12 +398,12 @@
         "source_mix": "当前窗口内捕获到GitHub 项目 17 个。",
         "focus_terms": [
           "MCP",
-          "RAG",
           "ReAct",
+          "RAG",
           "agent",
           "agents",
           "claude",
-          "coding",
+          "code",
           "codex"
         ],
         "representative_titles": [
@@ -422,8 +425,8 @@
         ],
         "paper_count": 0,
         "repo_count": 17,
-        "github_star_delta": 798,
-        "method_mentions": 5,
+        "github_star_delta": 833,
+        "method_mentions": 6,
         "dataset_mentions": 0,
         "institution_mentions": 22
       },
@@ -435,25 +438,25 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=6.735，growth_rate=-0.95，z_score=-12.206，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=6.647，growth_rate=-0.95，z_score=-12.256，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 8 个",
-        "24h star 增量 66",
+        "24h star 增量 2",
         "方法提及：RAG, MCP, ReAct",
-        "机构集中：Happy-Chen-CH, douglasjordan2, udityamerit"
+        "机构集中：Happy-Chen-CH, douglasjordan2, Egoist-Machines"
       ],
       "metrics": {
         "current_1h_count": 8,
         "current_24h_count": 8,
         "current_72h_count": 8,
         "current_7d_count": 8,
-        "baseline_daily_avg_30d": 180.293,
-        "baseline_daily_std_30d": 13.115,
-        "baseline_72h_avg_30d": 540.878,
+        "baseline_daily_avg_30d": 180.571,
+        "baseline_daily_std_30d": 13.081,
+        "baseline_72h_avg_30d": 541.714,
         "growth_rate": -0.95,
-        "z_score": -12.206,
+        "z_score": -12.256,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.368,
+        "github_signal_score": 5.28,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.125,
@@ -463,11 +466,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 8,
-        "github_star_delta": 66,
+        "github_star_delta": 2,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 6.735,
+        "burst_score": 6.647,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -518,6 +521,20 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "Egoist-Machines/LodeDB",
+          "source_url": "https://github.com/Egoist-Machines/LodeDB",
+          "published_at": "2026-06-14T13:26:27Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "mudassar531/hearsay",
           "source_url": "https://github.com/mudassar531/hearsay",
           "published_at": "2026-06-13T01:31:57Z",
@@ -535,20 +552,6 @@
           "title": "ayaanmustafa/Junas",
           "source_url": "https://github.com/ayaanmustafa/Junas",
           "published_at": "2026-06-15T23:34:52Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Egoist-Machines/LodeDB",
-          "source_url": "https://github.com/Egoist-Machines/LodeDB",
-          "published_at": "2026-06-14T13:26:27Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -605,10 +608,10 @@
       "related_institutions": [
         "Happy-Chen-CH",
         "douglasjordan2",
+        "Egoist-Machines",
         "udityamerit",
         "mudassar531",
         "ayaanmustafa",
-        "Egoist-Machines",
         "verbio-labs",
         "Dhruv-kys"
       ],
@@ -632,14 +635,14 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:RAG:2026-06-20:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"udityamerit/NeuroLens-Knowledge-Retrieval-Engine\", \"source_url\": \"https://github.com/udityamerit/NeuroLens-Knowledge-Retrieval-Engine\", \"published_at\": \"2026-06-14T13:02:05Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"retrieval-augmented generation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"douglasjordan2/c0\", \"source_url\": \"https://github.com/douglasjordan2/c0\", \"published_at\": \"2026-06-14T13:49:20Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Happy-Chen-CH/Educational_RAG_System\", \"source_url\": \"https://github.com/Happy-Chen-CH/Educational_RAG_System\", \"published_at\": \"2026-06-15T11:50:53Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mudassar531/hearsay\", \"source_url\": \"https://github.com/mudassar531/hearsay\", \"published_at\": \"2026-06-13T01:31:57Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ayaanmustafa/Junas\", \"source_url\": \"https://github.com/ayaanmustafa/Junas\", \"published_at\": \"2026-06-15T23:34:52Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Egoist-Machines/LodeDB\", \"source_url\": \"https://github.com/Egoist-Machines/LodeDB\", \"published_at\": \"2026-06-14T13:26:27Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"verbio-labs/llm-ledger\", \"source_url\": \"https://github.com/verbio-labs/llm-ledger\", \"published_at\": \"2026-06-19T14:51:58Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Dhruv-kys/LEGO-rag\", \"source_url\": \"https://github.com/Dhruv-kys/LEGO-rag\", \"published_at\": \"2026-06-16T10:43:16Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括udityamerit/NeuroLens-Knowledge-Retrieval-Engine、douglasjordan2/c0、Happy-Chen-CH/Educational_RAG_System、mudassar531/hearsay、ayaanmustafa/Junas等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 66，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Happy-Chen-CH、douglasjordan2、udityamerit、mudassar531、ayaanmustafa、Egoist-Machines、verbio-labs、Dhruv-kys，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、system、knowledge、hybrid、vector、embeddings、local等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"udityamerit/NeuroLens-Knowledge-Retrieval-Engine\", \"source_url\": \"https://github.com/udityamerit/NeuroLens-Knowledge-Retrieval-Engine\", \"published_at\": \"2026-06-14T13:02:05Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"retrieval-augmented generation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"douglasjordan2/c0\", \"source_url\": \"https://github.com/douglasjordan2/c0\", \"published_at\": \"2026-06-14T13:49:20Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Happy-Chen-CH/Educational_RAG_System\", \"source_url\": \"https://github.com/Happy-Chen-CH/Educational_RAG_System\", \"published_at\": \"2026-06-15T11:50:53Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Egoist-Machines/LodeDB\", \"source_url\": \"https://github.com/Egoist-Machines/LodeDB\", \"published_at\": \"2026-06-14T13:26:27Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mudassar531/hearsay\", \"source_url\": \"https://github.com/mudassar531/hearsay\", \"published_at\": \"2026-06-13T01:31:57Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ayaanmustafa/Junas\", \"source_url\": \"https://github.com/ayaanmustafa/Junas\", \"published_at\": \"2026-06-15T23:34:52Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"verbio-labs/llm-ledger\", \"source_url\": \"https://github.com/verbio-labs/llm-ledger\", \"published_at\": \"2026-06-19T14:51:58Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Dhruv-kys/LEGO-rag\", \"source_url\": \"https://github.com/Dhruv-kys/LEGO-rag\", \"published_at\": \"2026-06-16T10:43:16Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括udityamerit/NeuroLens-Knowledge-Retrieval-Engine、douglasjordan2/c0、Happy-Chen-CH/Educational_RAG_System、Egoist-Machines/LodeDB、mudassar531/hearsay等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 2，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Happy-Chen-CH、douglasjordan2、Egoist-Machines、udityamerit、mudassar531、ayaanmustafa、verbio-labs、Dhruv-kys，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、system、knowledge、hybrid、vector、embeddings、local等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、llm、system、knowledge等线索，代表条目包括udityamerit/NeuroLens-Knowledge-Retrieval-Engine、douglasjordan2/c0、Happy-Chen-CH/Educational_RAG_System、mudassar531/hearsay，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 66，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、llm、system、knowledge等线索，代表条目包括udityamerit/NeuroLens-Knowledge-Retrieval-Engine、douglasjordan2/c0、Happy-Chen-CH/Educational_RAG_System、Egoist-Machines/LodeDB，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 2，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Happy-Chen-CH、douglasjordan2、udityamerit、mudassar531、ayaanmustafa、Egoist-Machines，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及Happy-Chen-CH、douglasjordan2、Egoist-Machines、udityamerit、mudassar531、ayaanmustafa，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察rag、llm、system、knowledge、hybrid、vector、embeddings、local是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -664,6 +667,12 @@
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
           {
+            "title": "Egoist-Machines/LodeDB",
+            "url": "https://github.com/Egoist-Machines/LodeDB",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
             "title": "mudassar531/hearsay",
             "url": "https://github.com/mudassar531/hearsay",
             "source": "github",
@@ -672,12 +681,6 @@
           {
             "title": "ayaanmustafa/Junas",
             "url": "https://github.com/ayaanmustafa/Junas",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Egoist-Machines/LodeDB",
-            "url": "https://github.com/Egoist-Machines/LodeDB",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
@@ -731,6 +734,17 @@
           "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "Egoist-Machines/LodeDB",
+          "source_url": "https://github.com/Egoist-Machines/LodeDB",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "mudassar531/hearsay",
           "source_url": "https://github.com/mudassar531/hearsay",
           "source_type": "repo",
@@ -744,17 +758,6 @@
         {
           "title": "ayaanmustafa/Junas",
           "source_url": "https://github.com/ayaanmustafa/Junas",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Egoist-Machines/LodeDB",
-          "source_url": "https://github.com/Egoist-Machines/LodeDB",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.56,
@@ -803,22 +806,22 @@
           "udityamerit/NeuroLens-Knowledge-Retrieval-Engine",
           "douglasjordan2/c0",
           "Happy-Chen-CH/Educational_RAG_System",
-          "mudassar531/hearsay",
-          "ayaanmustafa/Junas"
+          "Egoist-Machines/LodeDB",
+          "mudassar531/hearsay"
         ],
         "related_institutions": [
           "Happy-Chen-CH",
           "douglasjordan2",
+          "Egoist-Machines",
           "udityamerit",
           "mudassar531",
           "ayaanmustafa",
-          "Egoist-Machines",
           "verbio-labs",
           "Dhruv-kys"
         ],
         "paper_count": 0,
         "repo_count": 8,
-        "github_star_delta": 66,
+        "github_star_delta": 2,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 8
@@ -830,40 +833,40 @@
       "title": "Model Context Protocol 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 11 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.817，growth_rate=-0.951，z_score=-11.887，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 10 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=8.87，growth_rate=-0.955，z_score=-11.928，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 11 个",
-        "24h star 增量 540",
+        "GitHub 项目 10 个",
+        "24h star 增量 562",
         "方法提及：MCP, RAG",
         "机构集中：OpenAI, vercel, Plaer1"
       ],
       "metrics": {
-        "current_1h_count": 11,
-        "current_24h_count": 11,
-        "current_72h_count": 11,
-        "current_7d_count": 11,
-        "baseline_daily_avg_30d": 242.927,
-        "baseline_daily_std_30d": 18.511,
-        "baseline_72h_avg_30d": 728.78,
-        "growth_rate": -0.951,
-        "z_score": -11.887,
+        "current_1h_count": 10,
+        "current_24h_count": 10,
+        "current_72h_count": 10,
+        "current_7d_count": 10,
+        "baseline_daily_avg_30d": 243.429,
+        "baseline_daily_std_30d": 18.569,
+        "baseline_72h_avg_30d": 730.286,
+        "growth_rate": -0.955,
+        "z_score": -11.928,
         "paper_burst_score": 0.0,
-        "github_signal_score": 7.673,
+        "github_signal_score": 7.726,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.182,
-        "institution_signal_score": 0.492,
+        "institution_concentration_score": 0.2,
+        "institution_signal_score": 0.528,
         "dataset_signal_score": 0.0,
         "method_signal_score": 1.144,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 11,
-        "github_star_delta": 540,
+        "repo_count": 10,
+        "github_star_delta": 562,
         "method_mentions": 7,
         "dataset_mentions": 0,
-        "institution_mentions": 13,
-        "burst_score": 8.817,
+        "institution_mentions": 12,
+        "burst_score": 8.87,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -970,9 +973,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "dongshuyan/compass-skills",
-          "source_url": "https://github.com/dongshuyan/compass-skills",
-          "published_at": "2026-06-15T06:28:04Z",
+          "title": "Forsy-AI/agent-apprenticeship",
+          "source_url": "https://github.com/Forsy-AI/agent-apprenticeship",
+          "published_at": "2026-06-19T16:19:37Z",
           "match_score": 0.077,
           "matched_keywords": [],
           "matched_methods": [],
@@ -987,7 +990,6 @@
         "https://github.com/mudassar531/hearsay",
         "https://github.com/rebel0789/codexpro",
         "https://github.com/ruvnet/agent-harness-generator",
-        "https://github.com/sgup/ai",
         "https://github.com/tongxuluo/gamecraft-bench",
         "https://github.com/vercel/eve",
         "https://github.com/yolfinance/yolfi-agent"
@@ -1002,17 +1004,17 @@
         "vercel",
         "Plaer1",
         "rebel0789",
-        "dongshuyan",
         "Forsy-AI",
+        "dongshuyan",
         "douglasjordan2",
         "mudassar531"
       ],
       "suggested_watch_keywords": [
         "agents",
         "agent",
-        "coding",
         "mcp",
         "local",
+        "coding",
         "ai-agents",
         "cli",
         "harness"
@@ -1027,16 +1029,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Model Context Protocol:2026-06-20:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rebel0789/codexpro\", \"source_url\": \"https://github.com/rebel0789/codexpro\", \"published_at\": \"2026-06-16T21:22:43Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"douglasjordan2/c0\", \"source_url\": \"https://github.com/douglasjordan2/c0\", \"published_at\": \"2026-06-14T13:49:20Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mudassar531/hearsay\", \"source_url\": \"https://github.com/mudassar531/hearsay\", \"published_at\": \"2026-06-13T01:31:57Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vercel/eve\", \"source_url\": \"https://github.com/vercel/eve\", \"published_at\": \"2026-06-16T10:51:20Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Plaer1/junction\", \"source_url\": \"https://github.com/Plaer1/junction\", \"published_at\": \"2026-06-17T05:27:09Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括ruvnet/agent-harness-generator、yolfinance/yolfi-agent、rebel0789/codexpro、douglasjordan2/c0、mudassar531/hearsay等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 540，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、vercel、Plaer1、rebel0789、dongshuyan、Forsy-AI、douglasjordan2、mudassar531，累计提及 13 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、coding、mcp、local、ai-agents、cli、harness等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rebel0789/codexpro\", \"source_url\": \"https://github.com/rebel0789/codexpro\", \"published_at\": \"2026-06-16T21:22:43Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"douglasjordan2/c0\", \"source_url\": \"https://github.com/douglasjordan2/c0\", \"published_at\": \"2026-06-14T13:49:20Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mudassar531/hearsay\", \"source_url\": \"https://github.com/mudassar531/hearsay\", \"published_at\": \"2026-06-13T01:31:57Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vercel/eve\", \"source_url\": \"https://github.com/vercel/eve\", \"published_at\": \"2026-06-16T10:51:20Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Plaer1/junction\", \"source_url\": \"https://github.com/Plaer1/junction\", \"published_at\": \"2026-06-17T05:27:09Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Forsy-AI/agent-apprenticeship\", \"source_url\": \"https://github.com/Forsy-AI/agent-apprenticeship\", \"published_at\": \"2026-06-19T16:19:37Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 10 个。代表性目标包括ruvnet/agent-harness-generator、yolfinance/yolfi-agent、rebel0789/codexpro、douglasjordan2/c0、mudassar531/hearsay等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 562，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、vercel、Plaer1、rebel0789、Forsy-AI、dongshuyan、douglasjordan2、mudassar531，累计提及 12 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、mcp、local、coding、ai-agents、cli、harness等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 11 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、agent、coding、local等线索，代表条目包括ruvnet/agent-harness-generator、yolfinance/yolfi-agent、rebel0789/codexpro、douglasjordan2/c0，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 540，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 10 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、agent、local、coding等线索，代表条目包括ruvnet/agent-harness-generator、yolfinance/yolfi-agent、rebel0789/codexpro、douglasjordan2/c0，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 10 个 GitHub 项目，24 小时 star 增量约 562，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、vercel、Plaer1、rebel0789、dongshuyan、Forsy-AI，累计提及 13 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及OpenAI、vercel、Plaer1、rebel0789、Forsy-AI、dongshuyan，累计提及 12 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、agent、coding、mcp、local、ai-agents、cli、harness是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、agent、mcp、local、coding、ai-agents、cli、harness是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -1083,20 +1085,20 @@
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "dongshuyan/compass-skills",
-            "url": "https://github.com/dongshuyan/compass-skills",
+            "title": "Forsy-AI/agent-apprenticeship",
+            "url": "https://github.com/Forsy-AI/agent-apprenticeship",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Forsy-AI/agent-apprenticeship",
-            "url": "https://github.com/Forsy-AI/agent-apprenticeship",
+            "title": "dongshuyan/compass-skills",
+            "url": "https://github.com/dongshuyan/compass-skills",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           },
           {
-            "title": "sgup/ai",
-            "url": "https://github.com/sgup/ai",
+            "title": "tongxuluo/gamecraft-bench",
+            "url": "https://github.com/tongxuluo/gamecraft-bench",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
@@ -1179,8 +1181,8 @@
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "dongshuyan/compass-skills",
-          "source_url": "https://github.com/dongshuyan/compass-skills",
+          "title": "Forsy-AI/agent-apprenticeship",
+          "source_url": "https://github.com/Forsy-AI/agent-apprenticeship",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.077,
@@ -1190,14 +1192,14 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 11 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 10 个。",
         "focus_terms": [
           "MCP",
           "RAG",
           "agents",
           "agent",
-          "coding",
           "local",
+          "coding",
           "ai-agents",
           "cli"
         ],
@@ -1213,61 +1215,312 @@
           "vercel",
           "Plaer1",
           "rebel0789",
-          "dongshuyan",
           "Forsy-AI",
+          "dongshuyan",
           "douglasjordan2",
           "mudassar531"
         ],
         "paper_count": 0,
-        "repo_count": 11,
-        "github_star_delta": 540,
+        "repo_count": 10,
+        "github_star_delta": 562,
         "method_mentions": 7,
         "dataset_mentions": 0,
-        "institution_mentions": 13
+        "institution_mentions": 12
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
+      "topic": "Robotics",
+      "title": "Robotics 出现疑似爆发",
+      "magnitude": 4.8,
+      "severity_label": "疑似爆发",
+      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.8，burst=3.951，growth_rate=-0.959，z_score=-8.526，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 4 个",
+        "24h star 增量 18",
+        "机构集中：Playful-RATs, NuclearVenom, NVIDIA"
+      ],
+      "metrics": {
+        "current_1h_count": 4,
+        "current_24h_count": 4,
+        "current_72h_count": 4,
+        "current_7d_count": 4,
+        "baseline_daily_avg_30d": 120.0,
+        "baseline_daily_std_30d": 12.605,
+        "baseline_72h_avg_30d": 360.0,
+        "growth_rate": -0.959,
+        "z_score": -8.526,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 3.951,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.25,
+        "institution_signal_score": 0.486,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 0.0,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 4,
+        "github_star_delta": 18,
+        "method_mentions": 0,
+        "dataset_mentions": 0,
+        "institution_mentions": 5,
+        "burst_score": 3.951,
+        "low_history_confidence": false,
+        "magnitude": 4.8
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Dream-Machines-Robotics/vr-teleop-kit",
+          "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+          "published_at": "2026-06-19T18:52:37Z",
+          "match_score": 0.75,
+          "matched_keywords": [
+            "manipulation",
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Playful-RATs/RATs",
+          "source_url": "https://github.com/Playful-RATs/RATs",
+          "published_at": "2026-06-15T06:32:48Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robot learning"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "NuclearVenom/BulletLab",
+          "source_url": "https://github.com/NuclearVenom/BulletLab",
+          "published_at": "2026-06-13T17:24:46Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "TraceMachina/rules_omniverse",
+          "source_url": "https://github.com/TraceMachina/rules_omniverse",
+          "published_at": "2026-06-15T19:25:17Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+        "https://github.com/NuclearVenom/BulletLab",
+        "https://github.com/Playful-RATs/RATs",
+        "https://github.com/TraceMachina/rules_omniverse"
+      ],
+      "related_methods": [],
+      "related_datasets": [],
+      "related_institutions": [
+        "Playful-RATs",
+        "NuclearVenom",
+        "NVIDIA",
+        "TraceMachina",
+        "Dream-Machines-Robotics"
+      ],
+      "suggested_watch_keywords": [
+        "robotics",
+        "playful-rats",
+        "rats",
+        "implementation",
+        "playful",
+        "agentic",
+        "robot",
+        "playful-rats rats"
+      ],
+      "confidence": 0.61,
+      "caveats": [],
+      "tags": [
+        "GitHub 暴涨",
+        "机构集中",
+        "开源驱动",
+        "Watchlist 命中"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:Robotics:2026-06-20:疑似爆发",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Dream-Machines-Robotics/vr-teleop-kit\", \"source_url\": \"https://github.com/Dream-Machines-Robotics/vr-teleop-kit\", \"published_at\": \"2026-06-19T18:52:37Z\", \"match_score\": 0.75, \"matched_keywords\": [\"manipulation\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Playful-RATs/RATs\", \"source_url\": \"https://github.com/Playful-RATs/RATs\", \"published_at\": \"2026-06-15T06:32:48Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robot learning\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NuclearVenom/BulletLab\", \"source_url\": \"https://github.com/NuclearVenom/BulletLab\", \"published_at\": \"2026-06-13T17:24:46Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TraceMachina/rules_omniverse\", \"source_url\": \"https://github.com/TraceMachina/rules_omniverse\", \"published_at\": \"2026-06-15T19:25:17Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括Dream-Machines-Robotics/vr-teleop-kit、Playful-RATs/RATs、NuclearVenom/BulletLab、TraceMachina/rules_omniverse等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 18，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及Playful-RATs、NuclearVenom、NVIDIA、TraceMachina、Dream-Machines-Robotics，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、playful-rats、rats、implementation、playful、agentic、robot、playful-rats rats等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "signal_takeaways": [
+        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向robotics、playful-rats、rats、implementation、playful、agentic等线索，代表条目包括Dream-Machines-Robotics/vr-teleop-kit、Playful-RATs/RATs、NuclearVenom/BulletLab、TraceMachina/rules_omniverse，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 18，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "机构与账号归纳：相关信号涉及Playful-RATs、NuclearVenom、NVIDIA、TraceMachina、Dream-Machines-Robotics，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察robotics、playful-rats、rats、implementation、playful、agentic、robot、playful-rats rats是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "Dream-Machines-Robotics/vr-teleop-kit",
+            "url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+            "source": "github",
+            "reason": "命中 manipulation、robotics，匹配分 0.75，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "Playful-RATs/RATs",
+            "url": "https://github.com/Playful-RATs/RATs",
+            "source": "github",
+            "reason": "命中 robot learning，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "NuclearVenom/BulletLab",
+            "url": "https://github.com/NuclearVenom/BulletLab",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "TraceMachina/rules_omniverse",
+            "url": "https://github.com/TraceMachina/rules_omniverse",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "Dream-Machines-Robotics/vr-teleop-kit",
+          "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.75,
+          "matched_terms": [
+            "manipulation",
+            "robotics"
+          ],
+          "why_included": "命中 manipulation、robotics，匹配分 0.75，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "Playful-RATs/RATs",
+          "source_url": "https://github.com/Playful-RATs/RATs",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robot learning"
+          ],
+          "why_included": "命中 robot learning，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "NuclearVenom/BulletLab",
+          "source_url": "https://github.com/NuclearVenom/BulletLab",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "TraceMachina/rules_omniverse",
+          "source_url": "https://github.com/TraceMachina/rules_omniverse",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+        "focus_terms": [
+          "robotics",
+          "playful-rats",
+          "rats",
+          "implementation",
+          "playful",
+          "agentic",
+          "robot",
+          "playful-rats rats"
+        ],
+        "representative_titles": [
+          "Dream-Machines-Robotics/vr-teleop-kit",
+          "Playful-RATs/RATs",
+          "NuclearVenom/BulletLab",
+          "TraceMachina/rules_omniverse"
+        ],
+        "related_institutions": [
+          "Playful-RATs",
+          "NuclearVenom",
+          "NVIDIA",
+          "TraceMachina",
+          "Dream-Machines-Robotics"
+        ],
+        "paper_count": 0,
+        "repo_count": 4,
+        "github_star_delta": 18,
+        "method_mentions": 0,
+        "dataset_mentions": 0,
+        "institution_mentions": 5
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "AI Coding",
       "title": "AI Coding 出现疑似爆发",
-      "magnitude": 4.74,
+      "magnitude": 4.77,
       "severity_label": "疑似爆发",
-      "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.74，burst=4.039，growth_rate=-0.919，z_score=-3.144，cross_source=0.5。",
+      "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.77，burst=4.033，growth_rate=-0.929，z_score=-3.035，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 9 个",
-        "24h star 增量 287",
+        "GitHub 项目 8 个",
+        "24h star 增量 277",
         "方法提及：MCP",
         "机构集中：Anthropic, NVIDIA, Sorathiya123"
       ],
       "metrics": {
-        "current_1h_count": 9,
-        "current_24h_count": 9,
-        "current_72h_count": 9,
-        "current_7d_count": 9,
-        "baseline_daily_avg_30d": 122.927,
-        "baseline_daily_std_30d": 35.239,
-        "baseline_72h_avg_30d": 368.78,
-        "growth_rate": -0.919,
-        "z_score": -3.144,
+        "current_1h_count": 8,
+        "current_24h_count": 8,
+        "current_72h_count": 8,
+        "current_7d_count": 8,
+        "baseline_daily_avg_30d": 125.143,
+        "baseline_daily_std_30d": 37.597,
+        "baseline_72h_avg_30d": 375.429,
+        "growth_rate": -0.929,
+        "z_score": -3.035,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.435,
+        "github_signal_score": 3.429,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.222,
-        "institution_signal_score": 0.616,
+        "institution_concentration_score": 0.25,
+        "institution_signal_score": 0.677,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.604,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 287,
+        "repo_count": 8,
+        "github_star_delta": 277,
         "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 14,
-        "burst_score": 4.039,
+        "institution_mentions": 13,
+        "burst_score": 4.033,
         "low_history_confidence": false,
-        "magnitude": 4.74
+        "magnitude": 4.77
       },
       "evidence": [
         {
@@ -1325,19 +1578,6 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "sgup/ai",
-          "source_url": "https://github.com/sgup/ai",
-          "published_at": "2026-06-13T09:43:34Z",
-          "match_score": 0.417,
-          "matched_keywords": [
-            "ai coding"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
           "title": "Sorathiya123/claude-ai-free-desktop-app",
           "source_url": "https://github.com/Sorathiya123/claude-ai-free-desktop-app",
           "published_at": "2026-06-16T17:15:06Z",
@@ -1367,6 +1607,17 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "dongshuyan/compass-skills",
+          "source_url": "https://github.com/dongshuyan/compass-skills",
+          "published_at": "2026-06-15T06:28:04Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -1377,7 +1628,6 @@
         "https://github.com/baskduf/FableCodex",
         "https://github.com/dongshuyan/compass-skills",
         "https://github.com/rebel0789/codexpro",
-        "https://github.com/sgup/ai",
         "https://github.com/yolfinance/yolfi-agent"
       ],
       "related_methods": [
@@ -1396,10 +1646,10 @@
       ],
       "suggested_watch_keywords": [
         "coding",
-        "agents",
         "claude",
         "code",
         "local",
+        "agents",
         "agent",
         "free",
         "desktop"
@@ -1415,16 +1665,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-06-20:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Plaer1/junction\", \"source_url\": \"https://github.com/Plaer1/junction\", \"published_at\": \"2026-06-17T05:27:09Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rebel0789/codexpro\", \"source_url\": \"https://github.com/rebel0789/codexpro\", \"published_at\": \"2026-06-16T21:22:43Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"baskduf/FableCodex\", \"source_url\": \"https://github.com/baskduf/FableCodex\", \"published_at\": \"2026-06-14T13:11:00Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sgup/ai\", \"source_url\": \"https://github.com/sgup/ai\", \"published_at\": \"2026-06-13T09:43:34Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Sorathiya123/claude-ai-free-desktop-app\", \"source_url\": \"https://github.com/Sorathiya123/claude-ai-free-desktop-app\", \"published_at\": \"2026-06-16T17:15:06Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KorroAi/drunk-claude\", \"source_url\": \"https://github.com/KorroAi/drunk-claude\", \"published_at\": \"2026-06-13T20:05:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TrenchesofChirac/claude-fable-5-free-desktop-app\", \"source_url\": \"https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app\", \"published_at\": \"2026-06-17T16:52:26Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括Plaer1/junction、rebel0789/codexpro、baskduf/FableCodex、yolfinance/yolfi-agent、sgup/ai等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 287，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Anthropic、NVIDIA、Sorathiya123、KorroAi、MIT、TrenchesofChirac、Plaer1、rebel0789，累计提及 14 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agents、claude、code、local、agent、free、desktop等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Plaer1/junction\", \"source_url\": \"https://github.com/Plaer1/junction\", \"published_at\": \"2026-06-17T05:27:09Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rebel0789/codexpro\", \"source_url\": \"https://github.com/rebel0789/codexpro\", \"published_at\": \"2026-06-16T21:22:43Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"baskduf/FableCodex\", \"source_url\": \"https://github.com/baskduf/FableCodex\", \"published_at\": \"2026-06-14T13:11:00Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Sorathiya123/claude-ai-free-desktop-app\", \"source_url\": \"https://github.com/Sorathiya123/claude-ai-free-desktop-app\", \"published_at\": \"2026-06-16T17:15:06Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KorroAi/drunk-claude\", \"source_url\": \"https://github.com/KorroAi/drunk-claude\", \"published_at\": \"2026-06-13T20:05:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TrenchesofChirac/claude-fable-5-free-desktop-app\", \"source_url\": \"https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app\", \"published_at\": \"2026-06-17T16:52:26Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括Plaer1/junction、rebel0789/codexpro、baskduf/FableCodex、yolfinance/yolfi-agent、Sorathiya123/claude-ai-free-desktop-app等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 277，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Anthropic、NVIDIA、Sorathiya123、KorroAi、MIT、TrenchesofChirac、Plaer1、rebel0789，累计提及 13 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、claude、code、local、agents、agent、free、desktop等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“疑似爆发”（M4.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、coding、agents、claude、code、local等线索，代表条目包括Plaer1/junction、rebel0789/codexpro、baskduf/FableCodex、yolfinance/yolfi-agent，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 287，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“疑似爆发”（M4.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、coding、claude、code、local、agents等线索，代表条目包括Plaer1/junction、rebel0789/codexpro、baskduf/FableCodex、yolfinance/yolfi-agent，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 277，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Anthropic、NVIDIA、Sorathiya123、KorroAi、MIT、TrenchesofChirac，累计提及 14 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及Anthropic、NVIDIA、Sorathiya123、KorroAi、MIT、TrenchesofChirac，累计提及 13 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察coding、agents、claude、code、local、agent、free、desktop是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察coding、claude、code、local、agents、agent、free、desktop是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -1453,12 +1703,6 @@
             "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "sgup/ai",
-            "url": "https://github.com/sgup/ai",
-            "source": "github",
-            "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "Sorathiya123/claude-ai-free-desktop-app",
             "url": "https://github.com/Sorathiya123/claude-ai-free-desktop-app",
             "source": "github",
@@ -1480,7 +1724,7 @@
             "title": "dongshuyan/compass-skills",
             "url": "https://github.com/dongshuyan/compass-skills",
             "source": "github",
-            "reason": "关联到该热点的原始信号链接。"
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           }
         ]
       },
@@ -1530,17 +1774,6 @@
           "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "sgup/ai",
-          "source_url": "https://github.com/sgup/ai",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.417,
-          "matched_terms": [
-            "ai coding"
-          ],
-          "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
-        },
-        {
           "title": "Sorathiya123/claude-ai-free-desktop-app",
           "source_url": "https://github.com/Sorathiya123/claude-ai-free-desktop-app",
           "source_type": "repo",
@@ -1566,18 +1799,27 @@
           "match_score": 0.083,
           "matched_terms": [],
           "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "dongshuyan/compass-skills",
+          "source_url": "https://github.com/dongshuyan/compass-skills",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 9 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
         "focus_terms": [
           "MCP",
           "coding",
-          "agents",
           "claude",
           "code",
           "local",
+          "agents",
           "agent",
           "free"
         ],
@@ -1586,7 +1828,7 @@
           "rebel0789/codexpro",
           "baskduf/FableCodex",
           "yolfinance/yolfi-agent",
-          "sgup/ai"
+          "Sorathiya123/claude-ai-free-desktop-app"
         ],
         "related_institutions": [
           "Anthropic",
@@ -1599,24 +1841,24 @@
           "rebel0789"
         ],
         "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 287,
+        "repo_count": 8,
+        "github_star_delta": 277,
         "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 14
+        "institution_mentions": 13
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Speech",
       "title": "Speech 出现疑似爆发",
-      "magnitude": 4.72,
+      "magnitude": 4.75,
       "severity_label": "疑似爆发",
       "summary": "Speech 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.72，burst=4.112，growth_rate=-0.918，z_score=-2.571，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.75，burst=4.152，growth_rate=-0.923，z_score=-2.539，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 4 个",
-        "24h star 增量 98",
+        "24h star 增量 105",
         "方法提及：MCP, RAG",
         "机构集中：majidmanzarpour, mudassar531, rebelthor"
       ],
@@ -1625,13 +1867,13 @@
         "current_24h_count": 4,
         "current_72h_count": 4,
         "current_7d_count": 4,
-        "baseline_daily_avg_30d": 60.0,
-        "baseline_daily_std_30d": 20.785,
-        "baseline_72h_avg_30d": 180.0,
-        "growth_rate": -0.918,
-        "z_score": -2.571,
+        "baseline_daily_avg_30d": 64.0,
+        "baseline_daily_std_30d": 22.627,
+        "baseline_72h_avg_30d": 192.0,
+        "growth_rate": -0.923,
+        "z_score": -2.539,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.507,
+        "github_signal_score": 3.548,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.25,
@@ -1641,13 +1883,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 98,
+        "github_star_delta": 105,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 5,
-        "burst_score": 4.112,
+        "burst_score": 4.152,
         "low_history_confidence": true,
-        "magnitude": 4.72
+        "magnitude": 4.75
       },
       "evidence": [
         {
@@ -1743,11 +1985,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Speech:2026-06-20:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mudassar531/hearsay\", \"source_url\": \"https://github.com/mudassar531/hearsay\", \"published_at\": \"2026-06-13T01:31:57Z\", \"match_score\": 0.547, \"matched_keywords\": [\"audio\", \"speech\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"majidmanzarpour/threejs-game-skills\", \"source_url\": \"https://github.com/majidmanzarpour/threejs-game-skills\", \"published_at\": \"2026-06-14T04:06:26Z\", \"match_score\": 0.273, \"matched_keywords\": [\"audio\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rebelthor/warble\", \"source_url\": \"https://github.com/rebelthor/warble\", \"published_at\": \"2026-06-16T09:18:59Z\", \"match_score\": 0.068, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Gaurav-Gosain/small-talk\", \"source_url\": \"https://github.com/Gaurav-Gosain/small-talk\", \"published_at\": \"2026-06-13T12:22:48Z\", \"match_score\": 0.068, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Speech」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括mudassar531/hearsay、majidmanzarpour/threejs-game-skills、rebelthor/warble、Gaurav-Gosain/small-talk等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 98，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及majidmanzarpour、mudassar531、rebelthor、Gaurav-Gosain、NVIDIA，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察audio、podcast、local、robot、majidmanzarpour、threejs-game-skills、agent、skills等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+      "curated_summary": "本次抓取围绕「Speech」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括mudassar531/hearsay、majidmanzarpour/threejs-game-skills、rebelthor/warble、Gaurav-Gosain/small-talk等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 105，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及majidmanzarpour、mudassar531、rebelthor、Gaurav-Gosain、NVIDIA，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察audio、podcast、local、robot、majidmanzarpour、threejs-game-skills、agent、skills等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。需要注意的是，历史样本不足 30 天，基线置信度较低。",
       "signal_takeaways": [
-        "总体判断：Speech 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "总体判断：Speech 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、RAG、audio、podcast、local、robot等线索，代表条目包括mudassar531/hearsay、majidmanzarpour/threejs-game-skills、rebelthor/warble、Gaurav-Gosain/small-talk，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 98，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 105，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及majidmanzarpour、mudassar531、rebelthor、Gaurav-Gosain、NVIDIA，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1852,7 +2094,7 @@
         ],
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 98,
+        "github_star_delta": 105,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 5
@@ -1862,44 +2104,44 @@
     {
       "topic": "Memory",
       "title": "Memory 出现疑似爆发",
-      "magnitude": 4.6,
+      "magnitude": 4.64,
       "severity_label": "疑似爆发",
-      "summary": "Memory 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.6，burst=4.018，growth_rate=-0.962，z_score=-8.032，cross_source=0.5。",
+      "summary": "Memory 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.64，burst=4.04，growth_rate=-0.966，z_score=-7.908，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 9 个",
-        "24h star 增量 471",
+        "GitHub 项目 8 个",
+        "24h star 增量 490",
         "方法提及：MCP, RAG",
         "机构集中：OpenAI, vercel, Plaer1"
       ],
       "metrics": {
-        "current_1h_count": 9,
-        "current_24h_count": 9,
-        "current_72h_count": 9,
-        "current_7d_count": 9,
-        "baseline_daily_avg_30d": 263.415,
-        "baseline_daily_std_30d": 30.675,
-        "baseline_72h_avg_30d": 790.244,
-        "growth_rate": -0.962,
-        "z_score": -8.032,
+        "current_1h_count": 8,
+        "current_24h_count": 8,
+        "current_72h_count": 8,
+        "current_7d_count": 8,
+        "baseline_daily_avg_30d": 262.286,
+        "baseline_daily_std_30d": 31.157,
+        "baseline_72h_avg_30d": 786.857,
+        "growth_rate": -0.966,
+        "z_score": -7.908,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.133,
+        "github_signal_score": 3.155,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.222,
-        "institution_signal_score": 0.57,
+        "institution_concentration_score": 0.25,
+        "institution_signal_score": 0.621,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.885,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 471,
+        "repo_count": 8,
+        "github_star_delta": 490,
         "method_mentions": 4,
         "dataset_mentions": 0,
-        "institution_mentions": 11,
-        "burst_score": 4.018,
+        "institution_mentions": 10,
+        "burst_score": 4.04,
         "low_history_confidence": false,
-        "magnitude": 4.6
+        "magnitude": 4.64
       },
       "evidence": [
         {
@@ -1988,9 +2230,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "sgup/ai",
-          "source_url": "https://github.com/sgup/ai",
-          "published_at": "2026-06-13T09:43:34Z",
+          "title": "tongxuluo/gamecraft-bench",
+          "source_url": "https://github.com/tongxuluo/gamecraft-bench",
+          "published_at": "2026-06-16T13:49:46Z",
           "match_score": 0.07,
           "matched_keywords": [],
           "matched_methods": [],
@@ -2003,7 +2245,6 @@
         "https://github.com/dongshuyan/compass-skills",
         "https://github.com/douglasjordan2/c0",
         "https://github.com/ruvnet/agent-harness-generator",
-        "https://github.com/sgup/ai",
         "https://github.com/tongxuluo/gamecraft-bench",
         "https://github.com/vercel/eve",
         "https://github.com/yolfinance/yolfi-agent"
@@ -2017,8 +2258,8 @@
         "OpenAI",
         "vercel",
         "Plaer1",
-        "dongshuyan",
         "Forsy-AI",
+        "dongshuyan",
         "douglasjordan2",
         "ruvnet",
         "yolfinance"
@@ -2026,12 +2267,12 @@
       "suggested_watch_keywords": [
         "agents",
         "agent",
-        "coding",
         "ai-agents",
         "mcp",
         "harness",
         "code",
-        "coding agents"
+        "coding",
+        "cli"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -2043,16 +2284,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Memory:2026-06-20:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"douglasjordan2/c0\", \"source_url\": \"https://github.com/douglasjordan2/c0\", \"published_at\": \"2026-06-14T13:49:20Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vercel/eve\", \"source_url\": \"https://github.com/vercel/eve\", \"published_at\": \"2026-06-16T10:51:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Plaer1/junction\", \"source_url\": \"https://github.com/Plaer1/junction\", \"published_at\": \"2026-06-17T05:27:09Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Forsy-AI/agent-apprenticeship\", \"source_url\": \"https://github.com/Forsy-AI/agent-apprenticeship\", \"published_at\": \"2026-06-19T16:19:37Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sgup/ai\", \"source_url\": \"https://github.com/sgup/ai\", \"published_at\": \"2026-06-13T09:43:34Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括dongshuyan/compass-skills、ruvnet/agent-harness-generator、douglasjordan2/c0、vercel/eve、Plaer1/junction等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 471，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、vercel、Plaer1、dongshuyan、Forsy-AI、douglasjordan2、ruvnet、yolfinance，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、coding、ai-agents、mcp、harness、code、coding agents等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"douglasjordan2/c0\", \"source_url\": \"https://github.com/douglasjordan2/c0\", \"published_at\": \"2026-06-14T13:49:20Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vercel/eve\", \"source_url\": \"https://github.com/vercel/eve\", \"published_at\": \"2026-06-16T10:51:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Plaer1/junction\", \"source_url\": \"https://github.com/Plaer1/junction\", \"published_at\": \"2026-06-17T05:27:09Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Forsy-AI/agent-apprenticeship\", \"source_url\": \"https://github.com/Forsy-AI/agent-apprenticeship\", \"published_at\": \"2026-06-19T16:19:37Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yolfinance/yolfi-agent\", \"source_url\": \"https://github.com/yolfinance/yolfi-agent\", \"published_at\": \"2026-06-16T15:43:27Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tongxuluo/gamecraft-bench\", \"source_url\": \"https://github.com/tongxuluo/gamecraft-bench\", \"published_at\": \"2026-06-16T13:49:46Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括dongshuyan/compass-skills、ruvnet/agent-harness-generator、douglasjordan2/c0、vercel/eve、Plaer1/junction等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 490，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、vercel、Plaer1、Forsy-AI、dongshuyan、douglasjordan2、ruvnet、yolfinance，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、ai-agents、mcp、harness、code、coding、cli等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Memory 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“疑似爆发”（M4.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、agent、coding、ai-agents等线索，代表条目包括dongshuyan/compass-skills、ruvnet/agent-harness-generator、douglasjordan2/c0、vercel/eve，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 471，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：Memory 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“疑似爆发”（M4.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、agent、ai-agents、harness等线索，代表条目包括dongshuyan/compass-skills、ruvnet/agent-harness-generator、douglasjordan2/c0、vercel/eve，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 490，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 4 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、vercel、Plaer1、dongshuyan、Forsy-AI、douglasjordan2，累计提及 11 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及OpenAI、vercel、Plaer1、Forsy-AI、dongshuyan、douglasjordan2，累计提及 10 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、agent、coding、ai-agents、mcp、harness、code、coding agents是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、agent、ai-agents、mcp、harness、code、coding、cli是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -2099,16 +2340,10 @@
             "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "sgup/ai",
-            "url": "https://github.com/sgup/ai",
-            "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "tongxuluo/gamecraft-bench",
             "url": "https://github.com/tongxuluo/gamecraft-bench",
             "source": "github",
-            "reason": "关联到该热点的原始信号链接。"
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
           }
         ]
       },
@@ -2183,8 +2418,8 @@
           "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "sgup/ai",
-          "source_url": "https://github.com/sgup/ai",
+          "title": "tongxuluo/gamecraft-bench",
+          "source_url": "https://github.com/tongxuluo/gamecraft-bench",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.07,
@@ -2194,16 +2429,16 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 9 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
         "focus_terms": [
           "MCP",
           "RAG",
           "agents",
           "agent",
-          "coding",
           "ai-agents",
           "harness",
-          "code"
+          "code",
+          "coding"
         ],
         "representative_titles": [
           "dongshuyan/compass-skills",
@@ -2216,182 +2451,31 @@
           "OpenAI",
           "vercel",
           "Plaer1",
-          "dongshuyan",
           "Forsy-AI",
+          "dongshuyan",
           "douglasjordan2",
           "ruvnet",
           "yolfinance"
         ],
         "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 471,
+        "repo_count": 8,
+        "github_star_delta": 490,
         "method_mentions": 4,
         "dataset_mentions": 0,
-        "institution_mentions": 11
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
-      "topic": "Multi-Agent",
-      "title": "Multi-Agent 出现明显异常",
-      "magnitude": 3.87,
-      "severity_label": "明显异常",
-      "summary": "Multi-Agent 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.87，burst=2.279，growth_rate=-0.936，z_score=-2.53，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 1 个",
-        "24h star 增量 26",
-        "方法提及：MCP",
-        "机构集中：OpenAI, ruvnet"
-      ],
-      "metrics": {
-        "current_1h_count": 1,
-        "current_24h_count": 1,
-        "current_72h_count": 1,
-        "current_7d_count": 1,
-        "baseline_daily_avg_30d": 30.462,
-        "baseline_daily_std_30d": 10.645,
-        "baseline_72h_avg_30d": 91.385,
-        "growth_rate": -0.936,
-        "z_score": -2.53,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 1.897,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 1.0,
-        "institution_signal_score": 1.386,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 0.381,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 1,
-        "github_star_delta": 26,
-        "method_mentions": 1,
-        "dataset_mentions": 0,
-        "institution_mentions": 2,
-        "burst_score": 2.279,
-        "low_history_confidence": false,
-        "magnitude": 3.87
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "ruvnet/agent-harness-generator",
-          "source_url": "https://github.com/ruvnet/agent-harness-generator",
-          "published_at": "2026-06-13T18:29:11Z",
-          "match_score": 0.3,
-          "matched_keywords": [
-            "multi-agent"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/ruvnet/agent-harness-generator"
-      ],
-      "related_methods": [
-        "MCP"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "OpenAI",
-        "ruvnet"
-      ],
-      "suggested_watch_keywords": [
-        "agent-harness-generator",
-        "scaffold",
-        "own",
-        "mcp",
-        "codex",
-        "openclaw",
-        "rvm",
-        "ruvnet"
-      ],
-      "confidence": 0.43,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:Multi-Agent:2026-06-20:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multi-agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Multi-Agent」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括ruvnet/agent-harness-generator等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 26，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、ruvnet，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent-harness-generator、scaffold、own、mcp、codex、openclaw、rvm、ruvnet等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
-      "signal_takeaways": [
-        "总体判断：Multi-Agent 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“明显异常”（M3.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、agent-harness-generator、scaffold、own、codex、openclaw等线索，代表条目包括ruvnet/agent-harness-generator，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 26，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、ruvnet，累计提及 2 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agent-harness-generator、scaffold、own、mcp、codex、openclaw、rvm、ruvnet是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "ruvnet/agent-harness-generator",
-            "url": "https://github.com/ruvnet/agent-harness-generator",
-            "source": "github",
-            "reason": "命中 multi-agent，匹配分 0.3，因此被纳入本轮代表性证据。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "ruvnet/agent-harness-generator",
-          "source_url": "https://github.com/ruvnet/agent-harness-generator",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.3,
-          "matched_terms": [
-            "multi-agent"
-          ],
-          "why_included": "命中 multi-agent，匹配分 0.3，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 1 个。",
-        "focus_terms": [
-          "MCP",
-          "agent-harness-generator",
-          "scaffold",
-          "own",
-          "codex",
-          "openclaw",
-          "rvm",
-          "ruvnet"
-        ],
-        "representative_titles": [
-          "ruvnet/agent-harness-generator"
-        ],
-        "related_institutions": [
-          "OpenAI",
-          "ruvnet"
-        ],
-        "paper_count": 0,
-        "repo_count": 1,
-        "github_star_delta": 26,
-        "method_mentions": 1,
-        "dataset_mentions": 0,
-        "institution_mentions": 2
+        "institution_mentions": 10
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Alignment",
       "title": "Alignment 出现明显异常",
-      "magnitude": 3.78,
+      "magnitude": 3.79,
       "severity_label": "明显异常",
       "summary": "Alignment 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.78，burst=2.002，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.79，burst=2.009，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
-        "24h star 增量 92",
+        "24h star 增量 94",
         "机构集中：OpenAI, dongshuyan"
       ],
       "metrics": {
@@ -2405,7 +2489,7 @@
         "growth_rate": -0.92,
         "z_score": -23.0,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.002,
+        "github_signal_score": 2.009,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 1.0,
@@ -2415,13 +2499,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 92,
+        "github_star_delta": 94,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 2,
-        "burst_score": 2.002,
+        "burst_score": 2.009,
         "low_history_confidence": true,
-        "magnitude": 3.78
+        "magnitude": 3.79
       },
       "evidence": [
         {
@@ -2472,11 +2556,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Alignment:2026-06-20:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.317, \"matched_keywords\": [\"alignment\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Alignment」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括dongshuyan/compass-skills等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 92，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、dongshuyan，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察skills、dongshuyan、compass-skills、compass、personal、alignment、agents、agent-memory等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+      "curated_summary": "本次抓取围绕「Alignment」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括dongshuyan/compass-skills等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 94，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、dongshuyan，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察skills、dongshuyan、compass-skills、compass、personal、alignment、agents、agent-memory等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
       "signal_takeaways": [
         "总体判断：Alignment 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“明显异常”（M3.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向skills、dongshuyan、compass-skills、compass、personal、alignment等线索，代表条目包括dongshuyan/compass-skills，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 92，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 94，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及OpenAI、dongshuyan，累计提及 2 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察skills、dongshuyan、compass-skills、compass、personal、alignment、agents、agent-memory是否继续出现。当前置信度为 0.3，同时需要注意：历史样本不足 30 天，基线置信度较低。"
@@ -2526,7 +2610,7 @@
         ],
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 92,
+        "github_star_delta": 94,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 2
@@ -2534,56 +2618,57 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
-      "topic": "Robotics",
-      "title": "Robotics 出现明显异常",
-      "magnitude": 3.42,
+      "topic": "Multi-Agent",
+      "title": "Multi-Agent 出现明显异常",
+      "magnitude": 3.65,
       "severity_label": "明显异常",
-      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.42，burst=2.228，growth_rate=-0.959，z_score=-9.01，cross_source=0.5。",
+      "summary": "Multi-Agent 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+      "calculation_summary": "magnitude=3.65，burst=2.539，growth_rate=-0.904，z_score=-2.45，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 4 个",
-        "24h star 增量 33",
-        "机构集中：Playful-RATs, NuclearVenom, NVIDIA"
+        "GitHub 项目 2 个",
+        "24h star 增量 31",
+        "方法提及：MCP, ReAct",
+        "机构集中：OpenAI, ruvnet, larlarua"
       ],
       "metrics": {
-        "current_1h_count": 4,
-        "current_24h_count": 4,
-        "current_72h_count": 4,
-        "current_7d_count": 4,
-        "baseline_daily_avg_30d": 120.857,
-        "baseline_daily_std_30d": 11.969,
-        "baseline_72h_avg_30d": 362.571,
-        "growth_rate": -0.959,
-        "z_score": -9.01,
+        "current_1h_count": 2,
+        "current_24h_count": 2,
+        "current_72h_count": 2,
+        "current_7d_count": 2,
+        "baseline_daily_avg_30d": 30.222,
+        "baseline_daily_std_30d": 10.517,
+        "baseline_72h_avg_30d": 90.667,
+        "growth_rate": -0.904,
+        "z_score": -2.45,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.228,
+        "github_signal_score": 1.935,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.25,
-        "institution_signal_score": 0.486,
+        "institution_concentration_score": 0.5,
+        "institution_signal_score": 0.805,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.0,
+        "method_signal_score": 0.604,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 4,
-        "github_star_delta": 33,
-        "method_mentions": 0,
+        "repo_count": 2,
+        "github_star_delta": 31,
+        "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 5,
-        "burst_score": 2.228,
+        "institution_mentions": 3,
+        "burst_score": 2.539,
         "low_history_confidence": false,
-        "magnitude": 3.42
+        "magnitude": 3.65
       },
       "evidence": [
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "source_url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
-          "published_at": "2026-06-17T16:25:21Z",
-          "match_score": 0.417,
+          "title": "ruvnet/agent-harness-generator",
+          "source_url": "https://github.com/ruvnet/agent-harness-generator",
+          "published_at": "2026-06-13T18:29:11Z",
+          "match_score": 0.3,
           "matched_keywords": [
-            "robotics"
+            "multi-agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -2591,207 +2676,143 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Playful-RATs/RATs",
-          "source_url": "https://github.com/Playful-RATs/RATs",
-          "published_at": "2026-06-15T06:32:48Z",
-          "match_score": 0.333,
+          "title": "larlarua/AutoCVE",
+          "source_url": "https://github.com/larlarua/AutoCVE",
+          "published_at": "2026-06-15T14:50:47Z",
+          "match_score": 0.3,
           "matched_keywords": [
-            "robot learning"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "NuclearVenom/BulletLab",
-          "source_url": "https://github.com/NuclearVenom/BulletLab",
-          "published_at": "2026-06-13T17:24:46Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "TraceMachina/rules_omniverse",
-          "source_url": "https://github.com/TraceMachina/rules_omniverse",
-          "published_at": "2026-06-15T19:25:17Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
+            "multi-agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
         }
       ],
       "source_urls": [
-        "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
-        "https://github.com/NuclearVenom/BulletLab",
-        "https://github.com/Playful-RATs/RATs",
-        "https://github.com/TraceMachina/rules_omniverse"
+        "https://github.com/larlarua/AutoCVE",
+        "https://github.com/ruvnet/agent-harness-generator"
       ],
-      "related_methods": [],
+      "related_methods": [
+        "MCP",
+        "ReAct"
+      ],
       "related_datasets": [],
       "related_institutions": [
-        "Playful-RATs",
-        "NuclearVenom",
-        "NVIDIA",
-        "TraceMachina",
-        "Mostafasaad1"
+        "OpenAI",
+        "ruvnet",
+        "larlarua"
       ],
       "suggested_watch_keywords": [
-        "robot",
-        "robotics",
-        "playful-rats",
-        "rats",
-        "implementation",
-        "playful",
-        "agentic",
-        "playful-rats rats"
+        "agent",
+        "agent-harness-generator",
+        "scaffold",
+        "own",
+        "mcp",
+        "codex",
+        "openclaw",
+        "rvm"
       ],
-      "confidence": 0.61,
+      "confidence": 0.49,
       "caveats": [],
       "tags": [
         "GitHub 暴涨",
+        "方法扩散",
         "机构集中",
-        "开源驱动",
-        "Watchlist 命中"
+        "开源驱动"
       ],
-      "push_recommended": true,
-      "dedupe_key": "trend:Robotics:2026-06-20:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Mostafasaad1/ros2_mir_nav2_pick_place\", \"source_url\": \"https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place\", \"published_at\": \"2026-06-17T16:25:21Z\", \"match_score\": 0.417, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Playful-RATs/RATs\", \"source_url\": \"https://github.com/Playful-RATs/RATs\", \"published_at\": \"2026-06-15T06:32:48Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robot learning\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NuclearVenom/BulletLab\", \"source_url\": \"https://github.com/NuclearVenom/BulletLab\", \"published_at\": \"2026-06-13T17:24:46Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TraceMachina/rules_omniverse\", \"source_url\": \"https://github.com/TraceMachina/rules_omniverse\", \"published_at\": \"2026-06-15T19:25:17Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括Mostafasaad1/ros2_mir_nav2_pick_place、Playful-RATs/RATs、NuclearVenom/BulletLab、TraceMachina/rules_omniverse等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 33，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及Playful-RATs、NuclearVenom、NVIDIA、TraceMachina、Mostafasaad1，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robot、robotics、playful-rats、rats、implementation、playful、agentic、playful-rats rats等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "push_recommended": false,
+      "dedupe_key": "trend:Multi-Agent:2026-06-20:明显异常",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/agent-harness-generator\", \"source_url\": \"https://github.com/ruvnet/agent-harness-generator\", \"published_at\": \"2026-06-13T18:29:11Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multi-agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"larlarua/AutoCVE\", \"source_url\": \"https://github.com/larlarua/AutoCVE\", \"published_at\": \"2026-06-15T14:50:47Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multi-agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Multi-Agent」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括ruvnet/agent-harness-generator、larlarua/AutoCVE等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 31，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、ReAct等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、ruvnet、larlarua，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agent-harness-generator、scaffold、own、mcp、codex、openclaw、rvm等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。",
       "signal_takeaways": [
-        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“明显异常”（M3.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向robot、robotics、playful-rats、rats、implementation、playful等线索，代表条目包括Mostafasaad1/ros2_mir_nav2_pick_place、Playful-RATs/RATs、NuclearVenom/BulletLab、TraceMachina/rules_omniverse，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 33，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "机构与账号归纳：相关信号涉及Playful-RATs、NuclearVenom、NVIDIA、TraceMachina、Mostafasaad1，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robot、robotics、playful-rats、rats、implementation、playful、agentic、playful-rats rats是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "总体判断：Multi-Agent 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“明显异常”（M3.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、ReAct、agent、agent-harness-generator、scaffold、own等线索，代表条目包括ruvnet/agent-harness-generator、larlarua/AutoCVE，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 31，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、ruvnet、larlarua，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 2 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察agent、agent-harness-generator、scaffold、own、mcp、codex、openclaw、rvm是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
           {
-            "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-            "url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
+            "title": "ruvnet/agent-harness-generator",
+            "url": "https://github.com/ruvnet/agent-harness-generator",
             "source": "github",
-            "reason": "命中 robotics，匹配分 0.417，因此被纳入本轮代表性证据。"
+            "reason": "命中 multi-agent，匹配分 0.3，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Playful-RATs/RATs",
-            "url": "https://github.com/Playful-RATs/RATs",
+            "title": "larlarua/AutoCVE",
+            "url": "https://github.com/larlarua/AutoCVE",
             "source": "github",
-            "reason": "命中 robot learning，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "NuclearVenom/BulletLab",
-            "url": "https://github.com/NuclearVenom/BulletLab",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "TraceMachina/rules_omniverse",
-            "url": "https://github.com/TraceMachina/rules_omniverse",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+            "reason": "命中 multi-agent，匹配分 0.3，因此被纳入本轮代表性证据。"
           }
         ]
       },
       "evidence_digest": [
         {
-          "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "source_url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
+          "title": "ruvnet/agent-harness-generator",
+          "source_url": "https://github.com/ruvnet/agent-harness-generator",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.417,
+          "match_score": 0.3,
           "matched_terms": [
-            "robotics"
+            "multi-agent"
           ],
-          "why_included": "命中 robotics，匹配分 0.417，因此被纳入本轮代表性证据。"
+          "why_included": "命中 multi-agent，匹配分 0.3，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Playful-RATs/RATs",
-          "source_url": "https://github.com/Playful-RATs/RATs",
+          "title": "larlarua/AutoCVE",
+          "source_url": "https://github.com/larlarua/AutoCVE",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.333,
+          "match_score": 0.3,
           "matched_terms": [
-            "robot learning"
+            "multi-agent"
           ],
-          "why_included": "命中 robot learning，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "NuclearVenom/BulletLab",
-          "source_url": "https://github.com/NuclearVenom/BulletLab",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "TraceMachina/rules_omniverse",
-          "source_url": "https://github.com/TraceMachina/rules_omniverse",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          "why_included": "命中 multi-agent，匹配分 0.3，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 2 个。",
         "focus_terms": [
-          "robot",
-          "robotics",
-          "playful-rats",
-          "rats",
-          "implementation",
-          "playful",
-          "agentic",
-          "playful-rats rats"
+          "MCP",
+          "ReAct",
+          "agent",
+          "agent-harness-generator",
+          "scaffold",
+          "own",
+          "codex",
+          "openclaw"
         ],
         "representative_titles": [
-          "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "Playful-RATs/RATs",
-          "NuclearVenom/BulletLab",
-          "TraceMachina/rules_omniverse"
+          "ruvnet/agent-harness-generator",
+          "larlarua/AutoCVE"
         ],
         "related_institutions": [
-          "Playful-RATs",
-          "NuclearVenom",
-          "NVIDIA",
-          "TraceMachina",
-          "Mostafasaad1"
+          "OpenAI",
+          "ruvnet",
+          "larlarua"
         ],
         "paper_count": 0,
-        "repo_count": 4,
-        "github_star_delta": 33,
-        "method_mentions": 0,
+        "repo_count": 2,
+        "github_star_delta": 31,
+        "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 5
+        "institution_mentions": 3
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Reinforcement Learning",
       "title": "Reinforcement Learning 出现明显异常",
-      "magnitude": 3.35,
+      "magnitude": 3.36,
       "severity_label": "明显异常",
       "summary": "Reinforcement Learning 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.35，burst=1.9，growth_rate=-0.945，z_score=-4.564，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.36，burst=1.906，growth_rate=-0.945，z_score=-4.638，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 2 个",
-        "24h star 增量 92",
+        "24h star 增量 94",
         "机构集中：OpenAI, dongshuyan, NuclearVenom"
       ],
       "metrics": {
@@ -2799,13 +2820,13 @@
         "current_24h_count": 2,
         "current_72h_count": 2,
         "current_7d_count": 2,
-        "baseline_daily_avg_30d": 54.0,
-        "baseline_daily_std_30d": 10.392,
-        "baseline_72h_avg_30d": 162.0,
+        "baseline_daily_avg_30d": 53.538,
+        "baseline_daily_std_30d": 10.112,
+        "baseline_72h_avg_30d": 160.615,
         "growth_rate": -0.945,
-        "z_score": -4.564,
+        "z_score": -4.638,
         "paper_burst_score": 0.0,
-        "github_signal_score": 1.9,
+        "github_signal_score": 1.906,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.5,
@@ -2815,13 +2836,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 2,
-        "github_star_delta": 92,
+        "github_star_delta": 94,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 3,
-        "burst_score": 1.9,
+        "burst_score": 1.906,
         "low_history_confidence": true,
-        "magnitude": 3.35
+        "magnitude": 3.36
       },
       "evidence": [
         {
@@ -2884,11 +2905,11 @@
       "push_recommended": false,
       "dedupe_key": "trend:Reinforcement Learning:2026-06-20:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NuclearVenom/BulletLab\", \"source_url\": \"https://github.com/NuclearVenom/BulletLab\", \"published_at\": \"2026-06-13T17:24:46Z\", \"match_score\": 0.3, \"matched_keywords\": [\"reinforcement learning\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dongshuyan/compass-skills\", \"source_url\": \"https://github.com/dongshuyan/compass-skills\", \"published_at\": \"2026-06-15T06:28:04Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括NuclearVenom/BulletLab、dongshuyan/compass-skills等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 92，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、dongshuyan、NuclearVenom，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察skills、dongshuyan、compass-skills、compass、personal、alignment、agents、agent-memory等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括NuclearVenom/BulletLab、dongshuyan/compass-skills等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 94，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、dongshuyan、NuclearVenom，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察skills、dongshuyan、compass-skills、compass、personal、alignment、agents、agent-memory等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
       "signal_takeaways": [
         "总体判断：Reinforcement Learning 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“明显异常”（M3.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向skills、dongshuyan、compass-skills、compass、personal、alignment等线索，代表条目包括NuclearVenom/BulletLab、dongshuyan/compass-skills，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 92，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 94，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及OpenAI、dongshuyan、NuclearVenom，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 2 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察skills、dongshuyan、compass-skills、compass、personal、alignment、agents、agent-memory是否继续出现。当前置信度为 0.3，同时需要注意：历史样本不足 30 天，基线置信度较低。"
@@ -2955,7 +2976,7 @@
         ],
         "paper_count": 0,
         "repo_count": 2,
-        "github_star_delta": 92,
+        "github_star_delta": 94,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 3
@@ -2967,21 +2988,22 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Robotics",
-      "magnitude": 3.42,
-      "severity_label": "明显异常",
+      "magnitude": 4.8,
+      "severity_label": "疑似爆发",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
       "push_enabled": true,
-      "reason": "关键词命中",
+      "reason": "震级超过阈值、关键词命中",
       "evidence": [
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "source_url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
-          "published_at": "2026-06-17T16:25:21Z",
-          "match_score": 0.417,
+          "title": "Dream-Machines-Robotics/vr-teleop-kit",
+          "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+          "published_at": "2026-06-19T18:52:37Z",
+          "match_score": 0.75,
           "matched_keywords": [
+            "manipulation",
             "robotics"
           ],
           "matched_methods": [],
@@ -3014,12 +3036,12 @@
           "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:具身智能观察:Robotics:明显异常"
+      "dedupe_key": "watchlist:具身智能观察:Robotics:疑似爆发"
     },
     {
       "watchlist_name": "具身智能观察",
       "topic": "World Model",
-      "magnitude": 2.54,
+      "magnitude": 2.53,
       "severity_label": "局部升温",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3051,10 +3073,10 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "source_url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
-          "published_at": "2026-06-17T16:25:21Z",
-          "match_score": 0.167,
+          "title": "mrtooher/fable-mode",
+          "source_url": "https://github.com/mrtooher/fable-mode",
+          "published_at": "2026-06-13T05:33:14Z",
+          "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -3064,7 +3086,7 @@
     },
     {
       "watchlist_name": "具身智能观察",
-      "topic": "Embodied AI",
+      "topic": "Vision-Language-Action Model",
       "magnitude": 2.32,
       "severity_label": "局部升温",
       "threshold_magnitude": 3.5,
@@ -3075,9 +3097,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "source_url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
-          "published_at": "2026-06-17T16:25:21Z",
+          "title": "Dream-Machines-Robotics/vr-teleop-kit",
+          "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+          "published_at": "2026-06-19T18:52:37Z",
           "match_score": 0.167,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3106,11 +3128,11 @@
           "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:具身智能观察:Embodied AI:局部升温"
+      "dedupe_key": "watchlist:具身智能观察:Vision-Language-Action Model:局部升温"
     },
     {
       "watchlist_name": "具身智能观察",
-      "topic": "Vision-Language-Action Model",
+      "topic": "Embodied AI",
       "magnitude": 2.16,
       "severity_label": "局部升温",
       "threshold_magnitude": 3.5,
@@ -3143,16 +3165,16 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Mostafasaad1/ros2_mir_nav2_pick_place",
-          "source_url": "https://github.com/Mostafasaad1/ros2_mir_nav2_pick_place",
-          "published_at": "2026-06-17T16:25:21Z",
+          "title": "Dream-Machines-Robotics/vr-teleop-kit",
+          "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+          "published_at": "2026-06-19T18:52:37Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:具身智能观察:Vision-Language-Action Model:局部升温"
+      "dedupe_key": "watchlist:具身智能观察:Embodied AI:局部升温"
     },
     {
       "watchlist_name": "AI Coding 观察",
@@ -3212,7 +3234,7 @@
     {
       "watchlist_name": "AI Coding 观察",
       "topic": "AI Coding",
-      "magnitude": 4.74,
+      "magnitude": 4.77,
       "severity_label": "疑似爆发",
       "threshold_magnitude": 3.2,
       "threshold_growth_rate": 1.0,
@@ -3264,7 +3286,7 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "Alignment",
-      "magnitude": 3.78,
+      "magnitude": 3.79,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
@@ -3290,7 +3312,7 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "LLM Security",
-      "magnitude": 2.32,
+      "magnitude": 2.27,
       "severity_label": "局部升温",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
@@ -3307,6 +3329,17 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "larlarua/AutoCVE",
+          "source_url": "https://github.com/larlarua/AutoCVE",
+          "published_at": "2026-06-15T14:50:47Z",
+          "match_score": 0.075,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
         }
       ],
       "dedupe_key": "watchlist:安全与对齐观察:LLM Security:局部升温"
@@ -3316,11 +3349,11 @@
     {
       "repo_full_name": "vercel/eve",
       "url": "https://github.com/vercel/eve",
-      "stars": 1723,
-      "star_delta_1h": 56,
-      "star_delta_24h": 293,
-      "star_delta_72h": 1155,
-      "star_delta_7d": 1155,
+      "stars": 1758,
+      "star_delta_1h": 35,
+      "star_delta_24h": 255,
+      "star_delta_72h": 1190,
+      "star_delta_7d": 1190,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3334,11 +3367,11 @@
     {
       "repo_full_name": "leyten/shard",
       "url": "https://github.com/leyten/shard",
-      "stars": 218,
-      "star_delta_1h": 8,
-      "star_delta_24h": 140,
-      "star_delta_72h": 140,
-      "star_delta_7d": 140,
+      "stars": 231,
+      "star_delta_1h": 13,
+      "star_delta_24h": 120,
+      "star_delta_72h": 153,
+      "star_delta_7d": 153,
       "matched_topics": [],
       "language": "Python",
       "description": "Pipeline-parallel LLM inference across GPUs on separate machines.",
@@ -3347,11 +3380,11 @@
     {
       "repo_full_name": "majidmanzarpour/threejs-game-skills",
       "url": "https://github.com/majidmanzarpour/threejs-game-skills",
-      "stars": 362,
-      "star_delta_1h": 10,
-      "star_delta_24h": 96,
-      "star_delta_72h": 96,
-      "star_delta_7d": 96,
+      "stars": 370,
+      "star_delta_1h": 8,
+      "star_delta_24h": 104,
+      "star_delta_72h": 104,
+      "star_delta_7d": 104,
       "matched_topics": [
         "Agents",
         "Speech"
@@ -3363,11 +3396,11 @@
     {
       "repo_full_name": "dongshuyan/compass-skills",
       "url": "https://github.com/dongshuyan/compass-skills",
-      "stars": 388,
-      "star_delta_1h": 21,
-      "star_delta_24h": 92,
-      "star_delta_72h": 92,
-      "star_delta_7d": 92,
+      "stars": 390,
+      "star_delta_1h": 2,
+      "star_delta_24h": 94,
+      "star_delta_72h": 94,
+      "star_delta_7d": 94,
       "matched_topics": [
         "Agents",
         "Memory",
@@ -3382,11 +3415,11 @@
     {
       "repo_full_name": "rebel0789/codexpro",
       "url": "https://github.com/rebel0789/codexpro",
-      "stars": 472,
+      "stars": 489,
       "star_delta_1h": 17,
-      "star_delta_24h": 69,
-      "star_delta_72h": 236,
-      "star_delta_7d": 236,
+      "star_delta_24h": 72,
+      "star_delta_72h": 253,
+      "star_delta_7d": 253,
       "matched_topics": [
         "Model Context Protocol",
         "AI Coding",
@@ -3397,34 +3430,37 @@
       "source_url": "https://github.com/rebel0789/codexpro"
     },
     {
-      "repo_full_name": "Happy-Chen-CH/Educational_RAG_System",
-      "url": "https://github.com/Happy-Chen-CH/Educational_RAG_System",
-      "stars": 140,
-      "star_delta_1h": 0,
-      "star_delta_24h": 65,
-      "star_delta_72h": 76,
-      "star_delta_7d": 109,
+      "repo_full_name": "Forsy-AI/agent-apprenticeship",
+      "url": "https://github.com/Forsy-AI/agent-apprenticeship",
+      "stars": 403,
+      "star_delta_1h": 66,
+      "star_delta_24h": 66,
+      "star_delta_72h": 66,
+      "star_delta_7d": 66,
       "matched_topics": [
-        "RAG"
+        "Agents",
+        "Model Context Protocol",
+        "Tool Use",
+        "Memory"
       ],
-      "language": "Python",
-      "description": "面向教育场景的RAG智能问答系统，融合关键词匹配与语义检索双引擎，融合MySQL和RAG技术，先经过MySQL数据库的检索(还融合了Redis辅助储存和搜索)，若无符合条件答案，则进入RAG系统，RAG知识库中的知识储存在Milvus向量数据库中",
-      "source_url": "https://github.com/Happy-Chen-CH/Educational_RAG_System"
+      "language": null,
+      "description": "The living ecosystem for AI agents learning from real-world work through iterative loops and training-signal exchange.",
+      "source_url": "https://github.com/Forsy-AI/agent-apprenticeship"
     },
     {
-      "repo_full_name": "dzcmemory-web/bazi-ziwei-skill",
-      "url": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
-      "stars": 440,
-      "star_delta_1h": 5,
+      "repo_full_name": "anthropics/launch-your-agent",
+      "url": "https://github.com/anthropics/launch-your-agent",
+      "stars": 176,
+      "star_delta_1h": 17,
       "star_delta_24h": 44,
-      "star_delta_72h": 362,
-      "star_delta_7d": 362,
+      "star_delta_72h": 44,
+      "star_delta_7d": 44,
       "matched_topics": [
         "Agents"
       ],
-      "language": "TypeScript",
-      "description": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
-      "source_url": "https://github.com/dzcmemory-web/bazi-ziwei-skill"
+      "language": "HTML",
+      "description": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
+      "source_url": "https://github.com/anthropics/launch-your-agent"
     },
     {
       "repo_full_name": "Sorathiya123/claude-ai-free-desktop-app",
@@ -3443,28 +3479,13 @@
       "source_url": "https://github.com/Sorathiya123/claude-ai-free-desktop-app"
     },
     {
-      "repo_full_name": "Playful-RATs/RATs",
-      "url": "https://github.com/Playful-RATs/RATs",
-      "stars": 40,
-      "star_delta_1h": 2,
-      "star_delta_24h": 33,
-      "star_delta_72h": 33,
-      "star_delta_7d": 33,
-      "matched_topics": [
-        "Robotics"
-      ],
-      "language": "Python",
-      "description": "Implementation of paper \"Playful Agentic Robot Learning\"",
-      "source_url": "https://github.com/Playful-RATs/RATs"
-    },
-    {
       "repo_full_name": "tongxuluo/gamecraft-bench",
       "url": "https://github.com/tongxuluo/gamecraft-bench",
-      "stars": 117,
-      "star_delta_1h": 9,
-      "star_delta_24h": 30,
-      "star_delta_72h": 30,
-      "star_delta_7d": 30,
+      "stars": 118,
+      "star_delta_1h": 1,
+      "star_delta_24h": 31,
+      "star_delta_72h": 31,
+      "star_delta_7d": 31,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3474,6 +3495,23 @@
       "language": "Shell",
       "description": "Code and Data for paper \"GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?\"",
       "source_url": "https://github.com/tongxuluo/gamecraft-bench"
+    },
+    {
+      "repo_full_name": "TrenchesofChirac/claude-fable-5-free-desktop-app",
+      "url": "https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app",
+      "stars": 114,
+      "star_delta_1h": 1,
+      "star_delta_24h": 31,
+      "star_delta_72h": 31,
+      "star_delta_7d": 31,
+      "matched_topics": [
+        "Agents",
+        "AI Coding",
+        "Edge AI"
+      ],
+      "language": "TypeScript",
+      "description": "claude fable 5 free anthropic mythos class large language model llm chatbot free api access desktop app github download proxy wrapper agentic coding autonomous agent token optimization bypass open source pro plan trial",
+      "source_url": "https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app"
     }
   ],
   "dataset_bursts": [],
@@ -3485,12 +3523,12 @@
     },
     {
       "topic": "Agents",
-      "term": "RAG",
+      "term": "ReAct",
       "magnitude": 6.0
     },
     {
       "topic": "Agents",
-      "term": "ReAct",
+      "term": "RAG",
       "magnitude": 6.0
     },
     {
@@ -3521,47 +3559,52 @@
     {
       "topic": "AI Coding",
       "term": "MCP",
-      "magnitude": 4.74
+      "magnitude": 4.77
     },
     {
       "topic": "Speech",
       "term": "MCP",
-      "magnitude": 4.72
+      "magnitude": 4.75
     },
     {
       "topic": "Speech",
       "term": "RAG",
-      "magnitude": 4.72
+      "magnitude": 4.75
     },
     {
       "topic": "Memory",
       "term": "MCP",
-      "magnitude": 4.6
+      "magnitude": 4.64
     },
     {
       "topic": "Memory",
       "term": "RAG",
-      "magnitude": 4.6
+      "magnitude": 4.64
     },
     {
       "topic": "Multi-Agent",
       "term": "MCP",
-      "magnitude": 3.87
+      "magnitude": 3.65
     },
     {
-      "topic": "Tool Use",
-      "term": "MCP",
-      "magnitude": 3.12
-    },
-    {
-      "topic": "Tool Use",
-      "term": "RAG",
-      "magnitude": 3.12
+      "topic": "Multi-Agent",
+      "term": "ReAct",
+      "magnitude": 3.65
     },
     {
       "topic": "Tool Use",
       "term": "ReAct",
-      "magnitude": 3.12
+      "magnitude": 3.17
+    },
+    {
+      "topic": "Tool Use",
+      "term": "MCP",
+      "magnitude": 3.17
+    },
+    {
+      "topic": "Tool Use",
+      "term": "RAG",
+      "magnitude": 3.17
     },
     {
       "topic": "Long Context",
@@ -3571,11 +3614,6 @@
     {
       "topic": "Long Context",
       "term": "MCP",
-      "magnitude": 2.57
-    },
-    {
-      "topic": "Long Context",
-      "term": "ReAct",
       "magnitude": 2.57
     }
   ],
@@ -3617,17 +3655,17 @@
     },
     {
       "topic": "RAG",
+      "term": "Egoist-Machines",
+      "magnitude": 6.0
+    },
+    {
+      "topic": "RAG",
       "term": "udityamerit",
       "magnitude": 6.0
     },
     {
       "topic": "RAG",
       "term": "mudassar531",
-      "magnitude": 6.0
-    },
-    {
-      "topic": "RAG",
-      "term": "ayaanmustafa",
       "magnitude": 6.0
     },
     {
@@ -3652,44 +3690,44 @@
     },
     {
       "topic": "Model Context Protocol",
-      "term": "dongshuyan",
+      "term": "Forsy-AI",
       "magnitude": 6.0
     },
     {
-      "topic": "AI Coding",
-      "term": "Anthropic",
-      "magnitude": 4.74
+      "topic": "Robotics",
+      "term": "Playful-RATs",
+      "magnitude": 4.8
     },
     {
-      "topic": "AI Coding",
+      "topic": "Robotics",
+      "term": "NuclearVenom",
+      "magnitude": 4.8
+    },
+    {
+      "topic": "Robotics",
       "term": "NVIDIA",
-      "magnitude": 4.74
+      "magnitude": 4.8
     },
     {
-      "topic": "AI Coding",
-      "term": "Sorathiya123",
-      "magnitude": 4.74
+      "topic": "Robotics",
+      "term": "TraceMachina",
+      "magnitude": 4.8
     },
     {
-      "topic": "AI Coding",
-      "term": "KorroAi",
-      "magnitude": 4.74
-    },
-    {
-      "topic": "AI Coding",
-      "term": "MIT",
-      "magnitude": 4.74
+      "topic": "Robotics",
+      "term": "Dream-Machines-Robotics",
+      "magnitude": 4.8
     }
   ],
   "source_status": [
     {
       "source_name": "arxiv",
       "source_type": "paper",
-      "ok": true,
-      "error": null,
+      "ok": false,
+      "error": "GET https://export.arxiv.org/api/query failed after retries: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=20)",
       "items": 0,
-      "partial": false,
-      "fetched_at": "2026-06-20T09:44:25.383918+00:00"
+      "partial": true,
+      "fetched_at": "2026-06-20T12:11:49.606380+00:00"
     },
     {
       "source_name": "github",
@@ -3698,12 +3736,13 @@
       "error": null,
       "items": 52,
       "partial": false,
-      "fetched_at": "2026-06-20T09:44:28.900022+00:00"
+      "fetched_at": "2026-06-20T12:12:52.441183+00:00"
     }
   ],
-  "partial": false,
+  "partial": true,
   "push_recommended": true,
   "caveats": [
+    "以下来源失败或部分失败：arxiv。",
     "生产报告仅使用真实抓取数据；没有 API Key 时增强源会自动降级。"
   ]
 }

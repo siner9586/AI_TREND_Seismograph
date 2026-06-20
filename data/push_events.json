@@ -27803,6 +27803,286 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Robotics",
+      "magnitude": 4.8,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Robotics",
+          "title": "Robotics 出现疑似爆发",
+          "magnitude": 4.8,
+          "severity_label": "疑似爆发",
+          "summary": "Robotics 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.8，burst=3.951，growth_rate=-0.959，z_score=-8.526，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 4 个",
+            "24h star 增量 18",
+            "机构集中：Playful-RATs, NuclearVenom, NVIDIA"
+          ],
+          "metrics": {
+            "current_1h_count": 4,
+            "current_24h_count": 4,
+            "current_72h_count": 4,
+            "current_7d_count": 4,
+            "baseline_daily_avg_30d": 120.0,
+            "baseline_daily_std_30d": 12.605,
+            "baseline_72h_avg_30d": 360.0,
+            "growth_rate": -0.959,
+            "z_score": -8.526,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.951,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.25,
+            "institution_signal_score": 0.486,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 18,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 5,
+            "burst_score": 3.951,
+            "low_history_confidence": false,
+            "magnitude": 4.8
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Dream-Machines-Robotics/vr-teleop-kit",
+              "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+              "published_at": "2026-06-19T18:52:37Z",
+              "match_score": 0.75,
+              "matched_keywords": [
+                "manipulation",
+                "robotics"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Playful-RATs/RATs",
+              "source_url": "https://github.com/Playful-RATs/RATs",
+              "published_at": "2026-06-15T06:32:48Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "robot learning"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "NuclearVenom/BulletLab",
+              "source_url": "https://github.com/NuclearVenom/BulletLab",
+              "published_at": "2026-06-13T17:24:46Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "robotics"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "TraceMachina/rules_omniverse",
+              "source_url": "https://github.com/TraceMachina/rules_omniverse",
+              "published_at": "2026-06-15T19:25:17Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "robotics"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+            "https://github.com/NuclearVenom/BulletLab",
+            "https://github.com/Playful-RATs/RATs",
+            "https://github.com/TraceMachina/rules_omniverse"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "Playful-RATs",
+            "NuclearVenom",
+            "NVIDIA",
+            "TraceMachina",
+            "Dream-Machines-Robotics"
+          ],
+          "suggested_watch_keywords": [
+            "robotics",
+            "playful-rats",
+            "rats",
+            "implementation",
+            "playful",
+            "agentic",
+            "robot",
+            "playful-rats rats"
+          ],
+          "confidence": 0.61,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Robotics:2026-06-20:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Dream-Machines-Robotics/vr-teleop-kit\", \"source_url\": \"https://github.com/Dream-Machines-Robotics/vr-teleop-kit\", \"published_at\": \"2026-06-19T18:52:37Z\", \"match_score\": 0.75, \"matched_keywords\": [\"manipulation\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Playful-RATs/RATs\", \"source_url\": \"https://github.com/Playful-RATs/RATs\", \"published_at\": \"2026-06-15T06:32:48Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robot learning\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NuclearVenom/BulletLab\", \"source_url\": \"https://github.com/NuclearVenom/BulletLab\", \"published_at\": \"2026-06-13T17:24:46Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TraceMachina/rules_omniverse\", \"source_url\": \"https://github.com/TraceMachina/rules_omniverse\", \"published_at\": \"2026-06-15T19:25:17Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括Dream-Machines-Robotics/vr-teleop-kit、Playful-RATs/RATs、NuclearVenom/BulletLab、TraceMachina/rules_omniverse等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 18，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及Playful-RATs、NuclearVenom、NVIDIA、TraceMachina、Dream-Machines-Robotics，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、playful-rats、rats、implementation、playful、agentic、robot、playful-rats rats等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+          "signal_takeaways": [
+            "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向robotics、playful-rats、rats、implementation、playful、agentic等线索，代表条目包括Dream-Machines-Robotics/vr-teleop-kit、Playful-RATs/RATs、NuclearVenom/BulletLab、TraceMachina/rules_omniverse，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 18，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及Playful-RATs、NuclearVenom、NVIDIA、TraceMachina、Dream-Machines-Robotics，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察robotics、playful-rats、rats、implementation、playful、agentic、robot、playful-rats rats是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Dream-Machines-Robotics/vr-teleop-kit",
+                "url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+                "source": "github",
+                "reason": "命中 manipulation、robotics，匹配分 0.75，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Playful-RATs/RATs",
+                "url": "https://github.com/Playful-RATs/RATs",
+                "source": "github",
+                "reason": "命中 robot learning，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "NuclearVenom/BulletLab",
+                "url": "https://github.com/NuclearVenom/BulletLab",
+                "source": "github",
+                "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "TraceMachina/rules_omniverse",
+                "url": "https://github.com/TraceMachina/rules_omniverse",
+                "source": "github",
+                "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Dream-Machines-Robotics/vr-teleop-kit",
+              "source_url": "https://github.com/Dream-Machines-Robotics/vr-teleop-kit",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.75,
+              "matched_terms": [
+                "manipulation",
+                "robotics"
+              ],
+              "why_included": "命中 manipulation、robotics，匹配分 0.75，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Playful-RATs/RATs",
+              "source_url": "https://github.com/Playful-RATs/RATs",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "robot learning"
+              ],
+              "why_included": "命中 robot learning，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "NuclearVenom/BulletLab",
+              "source_url": "https://github.com/NuclearVenom/BulletLab",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "robotics"
+              ],
+              "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "TraceMachina/rules_omniverse",
+              "source_url": "https://github.com/TraceMachina/rules_omniverse",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "robotics"
+              ],
+              "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+            "focus_terms": [
+              "robotics",
+              "playful-rats",
+              "rats",
+              "implementation",
+              "playful",
+              "agentic",
+              "robot",
+              "playful-rats rats"
+            ],
+            "representative_titles": [
+              "Dream-Machines-Robotics/vr-teleop-kit",
+              "Playful-RATs/RATs",
+              "NuclearVenom/BulletLab",
+              "TraceMachina/rules_omniverse"
+            ],
+            "related_institutions": [
+              "Playful-RATs",
+              "NuclearVenom",
+              "NVIDIA",
+              "TraceMachina",
+              "Dream-Machines-Robotics"
+            ],
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 18,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 5
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-20T12"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-20T12:12:57.246057+00:00",
+      "dedupe_key": "trend:Robotics:2026-06-20:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
