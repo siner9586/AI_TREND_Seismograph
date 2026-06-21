@@ -1,5 +1,5 @@
 {
-  "window": "2026-06-21T20",
+  "window": "2026-06-21T21",
   "nodes": [
     {
       "id": "agents",
@@ -11,7 +11,7 @@
     {
       "id": "rag",
       "label": "RAG",
-      "type": "topic",
+      "type": "method",
       "count": 16,
       "weight": 1.0
     },
@@ -26,15 +26,8 @@
       "id": "model-context-protocol",
       "label": "Model Context Protocol",
       "type": "topic",
-      "count": 7,
-      "weight": 0.612
-    },
-    {
-      "id": "tool-use",
-      "label": "Tool Use",
-      "type": "topic",
-      "count": 7,
-      "weight": 0.612
+      "count": 8,
+      "weight": 0.671
     },
     {
       "id": "machine",
@@ -51,15 +44,15 @@
       "weight": 0.553
     },
     {
-      "id": "code",
-      "label": "code",
-      "type": "keyword",
-      "count": 5,
-      "weight": 0.494
+      "id": "tool-use",
+      "label": "Tool Use",
+      "type": "topic",
+      "count": 6,
+      "weight": 0.553
     },
     {
-      "id": "rag",
-      "label": "rag",
+      "id": "code",
+      "label": "code",
       "type": "keyword",
       "count": 5,
       "weight": 0.494
@@ -77,6 +70,13 @@
       "type": "topic",
       "count": 5,
       "weight": 0.494
+    },
+    {
+      "id": "rag",
+      "label": "rag",
+      "type": "keyword",
+      "count": 4,
+      "weight": 0.435
     },
     {
       "id": "memory",
@@ -149,9 +149,9 @@
       "weight": 0.376
     },
     {
-      "id": "react",
-      "label": "ReAct",
-      "type": "method",
+      "id": "knowledge",
+      "label": "knowledge",
+      "type": "keyword",
       "count": 3,
       "weight": 0.376
     },
@@ -198,6 +198,13 @@
       "weight": 0.318
     },
     {
+      "id": "projects",
+      "label": "projects",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.318
+    },
+    {
       "id": "artificial-intelligence",
       "label": "artificial-intelligence",
       "type": "keyword",
@@ -235,6 +242,13 @@
     {
       "id": "covering",
       "label": "covering",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.318
+    },
+    {
+      "id": "santanderai",
+      "label": "santanderai",
       "type": "keyword",
       "count": 2,
       "weight": 0.318
@@ -317,8 +331,15 @@
       "weight": 0.318
     },
     {
-      "id": "knowledge",
-      "label": "knowledge",
+      "id": "react",
+      "label": "ReAct",
+      "type": "method",
+      "count": 2,
+      "weight": 0.318
+    },
+    {
+      "id": "skill",
+      "label": "skill",
       "type": "keyword",
       "count": 2,
       "weight": 0.318
@@ -380,13 +401,6 @@
       "weight": 0.259
     },
     {
-      "id": "projects",
-      "label": "projects",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.259
-    },
-    {
       "id": "rihhanna",
       "label": "rihhanna",
       "type": "keyword",
@@ -406,552 +420,565 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.259
-    },
-    {
-      "id": "tahmida70",
-      "label": "tahmida70",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.259
-    },
-    {
-      "id": "tahmida70-artificial-intelligence",
-      "label": "tahmida70 artificial-intelligence",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.259
     }
   ],
   "edges": [
     {
       "source": "rag",
       "target": "rag",
-      "cooccurrence_count": 10,
+      "cooccurrence_count": 8,
       "weight": 1.0,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "rag",
       "target": "rag",
       "cooccurrence_count": 8,
-      "weight": 0.8,
+      "weight": 1.0,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "agents",
       "cooccurrence_count": 7,
-      "weight": 0.7,
+      "weight": 0.875,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "model-context-protocol",
-      "cooccurrence_count": 6,
-      "weight": 0.6,
+      "cooccurrence_count": 7,
+      "weight": 0.875,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
-      "source": "agents",
-      "target": "tool-use",
+      "source": "rag",
+      "target": "knowledge",
       "cooccurrence_count": 6,
-      "weight": 0.6,
+      "weight": 0.75,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "rag",
       "target": "llm",
       "cooccurrence_count": 6,
-      "weight": 0.6,
+      "weight": 0.75,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "tool-use",
+      "cooccurrence_count": 5,
+      "weight": 0.625,
+      "windows": [
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "agent",
       "cooccurrence_count": 5,
-      "weight": 0.5,
+      "weight": 0.625,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "agents",
       "cooccurrence_count": 4,
-      "weight": 0.4,
+      "weight": 0.5,
       "windows": [
-        "2026-06-21T20"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "knowledge",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "memory",
       "target": "rag",
       "cooccurrence_count": 4,
-      "weight": 0.4,
+      "weight": 0.5,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "rag",
+      "cooccurrence_count": 4,
+      "weight": 0.5,
+      "windows": [
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "rag",
       "cooccurrence_count": 4,
-      "weight": 0.4,
+      "weight": 0.5,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "robotics",
       "target": "world-model",
       "cooccurrence_count": 4,
-      "weight": 0.4,
+      "weight": 0.5,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "claude",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "code",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "tool-use",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "agents",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "model-context-protocol",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "mcp",
       "target": "model-context-protocol",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "skills",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "react",
-      "cooccurrence_count": 3,
-      "weight": 0.3,
-      "windows": [
-        "2026-06-21T20"
-      ]
-    },
-    {
-      "source": "react",
-      "target": "tool-use",
-      "cooccurrence_count": 3,
-      "weight": 0.3,
-      "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "embodied-ai",
       "target": "robotics",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "embodied-ai",
       "target": "world-model",
       "cooccurrence_count": 3,
-      "weight": 0.3,
+      "weight": 0.375,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "driven",
       "target": "real-time",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "code",
       "target": "machine",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "machine",
       "target": "project",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "edge-ai",
       "target": "free",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "free",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "windows",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "claude",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "code",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "free",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "claude",
       "target": "code",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "claude",
       "target": "free",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "edge-ai",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "rag",
       "target": "system",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "tool-use",
       "target": "api",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agent",
       "target": "building",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "tool-use",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "building",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "tool-use",
       "target": "agents",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "local",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "local",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "local",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "mcp",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "coding",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "coding",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "agents",
       "target": "memory",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "react",
+      "cooccurrence_count": 2,
+      "weight": 0.25,
+      "windows": [
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "react",
+      "target": "tool-use",
+      "cooccurrence_count": 2,
+      "weight": 0.25,
+      "windows": [
+        "2026-06-21T21"
       ]
     },
     {
       "source": "ai-coding",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "knowledge",
+      "cooccurrence_count": 2,
+      "weight": 0.25,
+      "windows": [
+        "2026-06-21T21"
       ]
     },
     {
       "source": "mcp",
       "target": "rag",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-06-21T20"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
       ]
     },
     {
       "source": "llm",
       "target": "rag",
       "cooccurrence_count": 2,
-      "weight": 0.2,
+      "weight": 0.25,
       "windows": [
-        "2026-06-21T20"
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "skill",
+      "cooccurrence_count": 2,
+      "weight": 0.25,
+      "windows": [
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "projects",
+      "cooccurrence_count": 2,
+      "weight": 0.25,
+      "windows": [
+        "2026-06-21T21"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "santanderai",
+      "cooccurrence_count": 2,
+      "weight": 0.25,
+      "windows": [
+        "2026-06-21T21"
       ]
     }
   ]
