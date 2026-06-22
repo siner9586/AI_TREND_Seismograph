@@ -1,5 +1,5 @@
 {
-  "window": "2026-06-22T12",
+  "window": "2026-06-22T18",
   "nodes": [
     {
       "id": "agents",
@@ -11,9 +11,9 @@
     {
       "id": "rag",
       "label": "RAG",
-      "type": "method",
-      "count": 14,
-      "weight": 0.9
+      "type": "topic",
+      "count": 16,
+      "weight": 1.0
     },
     {
       "id": "model-context-protocol",
@@ -30,16 +30,16 @@
       "weight": 0.55
     },
     {
-      "id": "robotics",
-      "label": "Robotics",
-      "type": "topic",
-      "count": 7,
-      "weight": 0.55
-    },
-    {
       "id": "code",
       "label": "code",
       "type": "keyword",
+      "count": 6,
+      "weight": 0.5
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics",
+      "type": "topic",
       "count": 6,
       "weight": 0.5
     },
@@ -100,30 +100,30 @@
       "weight": 0.4
     },
     {
-      "id": "embodied-ai",
-      "label": "Embodied AI",
+      "id": "react",
+      "label": "ReAct",
+      "type": "method",
+      "count": 3,
+      "weight": 0.35
+    },
+    {
+      "id": "santanderai",
+      "label": "santanderai",
+      "type": "keyword",
+      "count": 3,
+      "weight": 0.35
+    },
+    {
+      "id": "rag",
+      "label": "rag",
+      "type": "keyword",
+      "count": 3,
+      "weight": 0.35
+    },
+    {
+      "id": "long-context",
+      "label": "Long Context",
       "type": "topic",
-      "count": 4,
-      "weight": 0.4
-    },
-    {
-      "id": "management",
-      "label": "management",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.35
-    },
-    {
-      "id": "design",
-      "label": "design",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.35
-    },
-    {
-      "id": "windows",
-      "label": "windows",
-      "type": "keyword",
       "count": 3,
       "weight": 0.35
     },
@@ -142,9 +142,9 @@
       "weight": 0.35
     },
     {
-      "id": "react",
-      "label": "ReAct",
-      "type": "method",
+      "id": "embodied-ai",
+      "label": "Embodied AI",
+      "type": "topic",
       "count": 3,
       "weight": 0.35
     },
@@ -191,6 +191,13 @@
       "weight": 0.3
     },
     {
+      "id": "management",
+      "label": "management",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
       "id": "project",
       "label": "project",
       "type": "keyword",
@@ -219,15 +226,15 @@
       "weight": 0.3
     },
     {
-      "id": "edge-ai",
-      "label": "Edge AI",
-      "type": "topic",
+      "id": "building",
+      "label": "building",
+      "type": "keyword",
       "count": 2,
       "weight": 0.3
     },
     {
-      "id": "santanderai",
-      "label": "santanderai",
+      "id": "python",
+      "label": "python",
       "type": "keyword",
       "count": 2,
       "weight": 0.3
@@ -282,13 +289,6 @@
       "weight": 0.3
     },
     {
-      "id": "memory",
-      "label": "Memory",
-      "type": "topic",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
       "id": "api",
       "label": "api",
       "type": "keyword",
@@ -296,22 +296,22 @@
       "weight": 0.3
     },
     {
-      "id": "rag",
-      "label": "rag",
+      "id": "windows",
+      "label": "windows",
       "type": "keyword",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
+      "id": "memory",
+      "label": "Memory",
+      "type": "topic",
       "count": 2,
       "weight": 0.3
     },
     {
       "id": "multi-agent",
       "label": "Multi-Agent",
-      "type": "topic",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
-      "id": "long-context",
-      "label": "Long Context",
       "type": "topic",
       "count": 2,
       "weight": 0.3
@@ -359,8 +359,22 @@
       "weight": 0.3
     },
     {
+      "id": "robot",
+      "label": "robot",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
       "id": "kit",
       "label": "kit",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
+      "id": "design",
+      "label": "design",
       "type": "keyword",
       "count": 2,
       "weight": 0.3
@@ -406,20 +420,6 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.25
-    },
-    {
-      "id": "tahmida70-artificial-intelligence",
-      "label": "tahmida70 artificial-intelligence",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.25
-    },
-    {
-      "id": "chaingrid",
-      "label": "chaingrid",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.25
     }
   ],
   "edges": [
@@ -429,7 +429,16 @@
       "cooccurrence_count": 9,
       "weight": 1.0,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "rag",
+      "cooccurrence_count": 8,
+      "weight": 0.889,
+      "windows": [
+        "2026-06-22T18"
       ]
     },
     {
@@ -438,16 +447,16 @@
       "cooccurrence_count": 7,
       "weight": 0.778,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
       "source": "rag",
       "target": "rag",
-      "cooccurrence_count": 7,
-      "weight": 0.778,
+      "cooccurrence_count": 6,
+      "weight": 0.667,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -456,7 +465,7 @@
       "cooccurrence_count": 5,
       "weight": 0.556,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -465,7 +474,7 @@
       "cooccurrence_count": 5,
       "weight": 0.556,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -474,7 +483,7 @@
       "cooccurrence_count": 5,
       "weight": 0.556,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -483,7 +492,16 @@
       "cooccurrence_count": 5,
       "weight": 0.556,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "tool-use",
+      "cooccurrence_count": 4,
+      "weight": 0.444,
+      "windows": [
+        "2026-06-22T18"
       ]
     },
     {
@@ -492,7 +510,7 @@
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -501,25 +519,7 @@
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "tool-use",
-      "cooccurrence_count": 4,
-      "weight": 0.444,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "rag",
-      "cooccurrence_count": 4,
-      "weight": 0.444,
-      "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -528,7 +528,7 @@
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -537,7 +537,7 @@
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -546,70 +546,25 @@
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
-      "source": "embodied-ai",
-      "target": "robotics",
+      "source": "rag",
+      "target": "santanderai",
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
-      "source": "embodied-ai",
-      "target": "world-model",
+      "source": "long-context",
+      "target": "rag",
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "free",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "tool-use",
-      "target": "agents",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "skill",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -618,7 +573,7 @@
       "cooccurrence_count": 3,
       "weight": 0.333,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -627,7 +582,70 @@
       "cooccurrence_count": 3,
       "weight": 0.333,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "free",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "tool-use",
+      "target": "agents",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "model-context-protocol",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "model-context-protocol",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "skill",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "embodied-ai",
+      "target": "robotics",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "embodied-ai",
+      "target": "world-model",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-06-22T18"
       ]
     },
     {
@@ -636,7 +654,25 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "building",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "tool-use",
+      "target": "building",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
       ]
     },
     {
@@ -645,7 +681,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -654,7 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -663,7 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -672,7 +708,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -681,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -690,7 +726,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -699,43 +735,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "memory",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "windows",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "code",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "claude",
-      "target": "code",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -744,7 +744,43 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "windows",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "memory",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "code",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "claude",
+      "target": "code",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
       ]
     },
     {
@@ -753,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -762,16 +798,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "multi-agent",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -780,7 +807,16 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "multi-agent",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-06-22T18"
       ]
     },
     {
@@ -789,7 +825,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -798,7 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -807,7 +843,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -816,7 +852,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -825,7 +861,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -834,7 +870,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -843,7 +879,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -852,7 +888,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -861,7 +897,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -870,7 +906,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -879,7 +915,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -888,7 +924,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -897,7 +933,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -906,7 +942,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -915,16 +951,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "santanderai",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -933,7 +960,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -942,7 +969,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     },
     {
@@ -951,25 +978,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "long-context",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-06-22T12"
+        "2026-06-22T18"
       ]
     }
   ]
