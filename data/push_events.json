@@ -37843,6 +37843,242 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "LLM Security",
+      "magnitude": 2.63,
+      "severity_label": "局部升温",
+      "payload_json": {
+        "hotspot": {
+          "topic": "LLM Security",
+          "title": "LLM Security 出现局部升温",
+          "magnitude": 2.63,
+          "severity_label": "局部升温",
+          "summary": "LLM Security 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为局部升温。",
+          "calculation_summary": "magnitude=2.63，burst=0.567，growth_rate=3.0，z_score=3.0，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 132",
+            "机构集中：cloudflare, okasi, Gach0ng",
+            "低基线方向出现冷门复活信号"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 0.0,
+            "baseline_daily_std_30d": 0.0,
+            "baseline_72h_avg_30d": 0.0,
+            "growth_rate": 3.0,
+            "z_score": 3.0,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 0.567,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.536,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 1.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 132,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 0.567,
+            "low_history_confidence": true,
+            "magnitude": 2.63
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "cloudflare/security-audit-skill",
+              "source_url": "https://github.com/cloudflare/security-audit-skill",
+              "published_at": "2026-06-18T14:08:44Z",
+              "match_score": 0.075,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "okasi/detect-bot-client",
+              "source_url": "https://github.com/okasi/detect-bot-client",
+              "published_at": "2026-06-18T09:49:24Z",
+              "match_score": 0.075,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Gach0ng/AgentStalker",
+              "source_url": "https://github.com/Gach0ng/AgentStalker",
+              "published_at": "2026-06-18T10:17:44Z",
+              "match_score": 0.075,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Gach0ng/AgentStalker",
+            "https://github.com/cloudflare/security-audit-skill",
+            "https://github.com/okasi/detect-bot-client"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "cloudflare",
+            "okasi",
+            "Gach0ng"
+          ],
+          "suggested_watch_keywords": [
+            "cloudflare",
+            "security-audit-skill",
+            "coding-agent",
+            "skill",
+            "multi-phase",
+            "security",
+            "audits",
+            "independently"
+          ],
+          "confidence": 0.4,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "冷门复活",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:LLM Security:2026-06-23:局部升温",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cloudflare/security-audit-skill\", \"source_url\": \"https://github.com/cloudflare/security-audit-skill\", \"published_at\": \"2026-06-18T14:08:44Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okasi/detect-bot-client\", \"source_url\": \"https://github.com/okasi/detect-bot-client\", \"published_at\": \"2026-06-18T09:49:24Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Gach0ng/AgentStalker\", \"source_url\": \"https://github.com/Gach0ng/AgentStalker\", \"published_at\": \"2026-06-18T10:17:44Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「LLM Security」相关公开信号进行汇总，系统将其判定为“局部升温”（M2.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括cloudflare/security-audit-skill、okasi/detect-bot-client、Gach0ng/AgentStalker等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 132，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及cloudflare、okasi、Gach0ng，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察cloudflare、security-audit-skill、coding-agent、skill、multi-phase、security、audits、independently等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：LLM Security 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“局部升温”（M2.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向cloudflare、security-audit-skill、coding-agent、skill、multi-phase、security等线索，代表条目包括cloudflare/security-audit-skill、okasi/detect-bot-client、Gach0ng/AgentStalker，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 132，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及cloudflare、okasi、Gach0ng，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察cloudflare、security-audit-skill、coding-agent、skill、multi-phase、security、audits、independently是否继续出现。当前置信度为 0.4，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "cloudflare/security-audit-skill",
+                "url": "https://github.com/cloudflare/security-audit-skill",
+                "source": "github",
+                "reason": "匹配分 0.075，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "okasi/detect-bot-client",
+                "url": "https://github.com/okasi/detect-bot-client",
+                "source": "github",
+                "reason": "匹配分 0.075，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Gach0ng/AgentStalker",
+                "url": "https://github.com/Gach0ng/AgentStalker",
+                "source": "github",
+                "reason": "匹配分 0.075，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "cloudflare/security-audit-skill",
+              "source_url": "https://github.com/cloudflare/security-audit-skill",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.075,
+              "matched_terms": [],
+              "why_included": "匹配分 0.075，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "okasi/detect-bot-client",
+              "source_url": "https://github.com/okasi/detect-bot-client",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.075,
+              "matched_terms": [],
+              "why_included": "匹配分 0.075，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Gach0ng/AgentStalker",
+              "source_url": "https://github.com/Gach0ng/AgentStalker",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.075,
+              "matched_terms": [],
+              "why_included": "匹配分 0.075，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "cloudflare",
+              "security-audit-skill",
+              "coding-agent",
+              "skill",
+              "multi-phase",
+              "security",
+              "audits",
+              "independently"
+            ],
+            "representative_titles": [
+              "cloudflare/security-audit-skill",
+              "okasi/detect-bot-client",
+              "Gach0ng/AgentStalker"
+            ],
+            "related_institutions": [
+              "cloudflare",
+              "okasi",
+              "Gach0ng"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 132,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-23T23"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-23T23:32:06.029896+00:00",
+      "dedupe_key": "trend:LLM Security:2026-06-23:局部升温",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
