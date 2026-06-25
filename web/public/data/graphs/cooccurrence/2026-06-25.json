@@ -1,5 +1,5 @@
 {
-  "window": "2026-06-25T09",
+  "window": "2026-06-25T12",
   "nodes": [
     {
       "id": "agents",
@@ -12,15 +12,15 @@
       "id": "rag",
       "label": "RAG",
       "type": "topic",
-      "count": 15,
+      "count": 16,
       "weight": 1.0
     },
     {
       "id": "model-context-protocol",
       "label": "Model Context Protocol",
       "type": "topic",
-      "count": 10,
-      "weight": 0.756
+      "count": 11,
+      "weight": 0.811
     },
     {
       "id": "tool-use",
@@ -72,8 +72,15 @@
       "weight": 0.422
     },
     {
-      "id": "open-source",
-      "label": "open-source",
+      "id": "mcp",
+      "label": "MCP",
+      "type": "method",
+      "count": 3,
+      "weight": 0.367
+    },
+    {
+      "id": "codex",
+      "label": "codex",
       "type": "keyword",
       "count": 3,
       "weight": 0.367
@@ -89,6 +96,13 @@
       "id": "llm-security",
       "label": "LLM Security",
       "type": "topic",
+      "count": 3,
+      "weight": 0.367
+    },
+    {
+      "id": "open-source",
+      "label": "open-source",
+      "type": "keyword",
       "count": 3,
       "weight": 0.367
     },
@@ -163,6 +177,13 @@
       "weight": 0.311
     },
     {
+      "id": "edge-ai",
+      "label": "Edge AI",
+      "type": "topic",
+      "count": 2,
+      "weight": 0.311
+    },
+    {
       "id": "otosmane",
       "label": "otosmane",
       "type": "keyword",
@@ -178,15 +199,15 @@
     },
     {
       "id": "memory",
-      "label": "memory",
-      "type": "keyword",
+      "label": "Memory",
+      "type": "topic",
       "count": 2,
       "weight": 0.311
     },
     {
       "id": "memory",
-      "label": "Memory",
-      "type": "topic",
+      "label": "memory",
+      "type": "keyword",
       "count": 2,
       "weight": 0.311
     },
@@ -222,13 +243,6 @@
       "id": "one",
       "label": "one",
       "type": "keyword",
-      "count": 2,
-      "weight": 0.311
-    },
-    {
-      "id": "mcp",
-      "label": "MCP",
-      "type": "method",
       "count": 2,
       "weight": 0.311
     },
@@ -275,6 +289,20 @@
       "weight": 0.311
     },
     {
+      "id": "rag",
+      "label": "rag",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.311
+    },
+    {
+      "id": "cli",
+      "label": "cli",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.311
+    },
+    {
       "id": "teleoperation",
       "label": "teleoperation",
       "type": "keyword",
@@ -285,13 +313,6 @@
       "id": "multimodal",
       "label": "Multimodal",
       "type": "topic",
-      "count": 2,
-      "weight": 0.311
-    },
-    {
-      "id": "codex",
-      "label": "codex",
-      "type": "keyword",
       "count": 2,
       "weight": 0.311
     },
@@ -399,27 +420,6 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.256
-    },
-    {
-      "id": "ioai-2026",
-      "label": "ioai-2026",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.256
-    },
-    {
-      "id": "ioai-official",
-      "label": "ioai-official",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.256
-    },
-    {
-      "id": "olympiad",
-      "label": "olympiad",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.256
     }
   ],
   "edges": [
@@ -429,7 +429,16 @@
       "cooccurrence_count": 10,
       "weight": 1.0,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "rag",
+      "cooccurrence_count": 8,
+      "weight": 0.8,
+      "windows": [
+        "2026-06-25T12"
       ]
     },
     {
@@ -438,16 +447,7 @@
       "cooccurrence_count": 7,
       "weight": 0.7,
       "windows": [
-        "2026-06-25T09"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "rag",
-      "cooccurrence_count": 7,
-      "weight": 0.7,
-      "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -456,7 +456,7 @@
       "cooccurrence_count": 6,
       "weight": 0.6,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -465,7 +465,7 @@
       "cooccurrence_count": 5,
       "weight": 0.5,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -474,7 +474,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -483,7 +483,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -492,7 +492,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -501,7 +501,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -510,7 +510,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -519,7 +519,16 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "rag",
+      "cooccurrence_count": 4,
+      "weight": 0.4,
+      "windows": [
+        "2026-06-25T12"
       ]
     },
     {
@@ -528,7 +537,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -537,7 +546,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -546,7 +555,16 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "model-context-protocol",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-06-25T12"
       ]
     },
     {
@@ -555,7 +573,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -564,7 +582,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -573,7 +591,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -582,7 +600,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -591,7 +609,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -600,7 +618,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -609,7 +627,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -618,7 +636,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -627,7 +645,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -636,7 +654,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -645,7 +663,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -654,16 +672,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -672,7 +681,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -681,7 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -690,25 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "open-source",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-06-25T09"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "open-source",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -717,7 +708,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -726,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -735,7 +726,16 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "open-source",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-06-25T12"
       ]
     },
     {
@@ -744,7 +744,16 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "open-source",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-06-25T12"
       ]
     },
     {
@@ -753,7 +762,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -762,7 +771,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -771,7 +780,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -780,7 +789,43 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "cli",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "edge-ai",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-06-25T12"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-06-25T12"
       ]
     },
     {
@@ -789,7 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -798,7 +843,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -807,7 +852,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     },
     {
@@ -816,7 +861,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-06-25T09"
+        "2026-06-25T12"
       ]
     }
   ]
