@@ -1,0 +1,40 @@
+---
+import { slugTopic } from "../lib/data";
+
+const { trends = [], limit = 8 } = Astro.props;
+const rows = (trends || [])
+  .filter(Boolean)
+  .slice(0, limit)
+  .map((trend: any) => ({
+    topic: trend.topic || trend.title || "未命名趋势",
+    magnitude: Number(trend.magnitude || trend.metrics?.magnitude || 0),
+    severity: trend.severity_label || "未分级",
+  }));
+const maxMagnitude = Math.max(6, ...rows.map((row: any) => row.magnitude || 0));
+
+function levelClass(magnitude: number) {
+  if (magnitude >= 6) return "pulse-danger";
+  if (magnitude >= 5) return "pulse-amber";
+  if (magnitude >= 4) return "pulse-cyan";
+  return "pulse-muted";
+}
+---
+{rows.length ? (
+  <div class="pulse-list">
+    {rows.map((row: any) => {
+      const width = Math.min(100, Math.max(5, (row.magnitude / maxMagnitude) * 100));
+      return (
+        <a class="pulse-row" href={`/trends/${slugTopic(row.topic)}`}>
+          <div class="pulse-topic">
+            <strong>{row.topic}</strong>
+            <span>{row.severity}</span>
+          </div>
+          <div class="pulse-track">
+            <span class:list={["pulse-fill", levelClass(row.magnitude)]} style={`--pulse-width:${width}%`}></span>
+          </div>
+          <span class="pulse-mag">M{row.magnitude.toFixed(1)}</span>
+        </a>
+      );
+    })}
+  </div>
+) : <div class="empty">暂无可展示的趋势脉冲分布。</div>}
