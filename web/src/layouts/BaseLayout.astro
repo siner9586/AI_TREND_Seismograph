@@ -1,28 +1,41 @@
 ---
 import "../styles/global.css";
 const { title = "AI 趋势脉冲" } = Astro.props;
+const currentPath = Astro.url.pathname;
+const navItems = [
+  { href: "/hotspots", label: "热点" },
+  { href: "/archive", label: "日报" },
+  { href: "/graph", label: "图谱" },
+  { href: "/institutions", label: "机构" },
+  { href: "/github", label: "GitHub" },
+  { href: "/watchlist", label: "Watchlist" },
+  { href: "/sources", label: "数据源" },
+];
+function isActive(href: string) {
+  return currentPath === href || currentPath.startsWith(`${href}/`);
+}
 ---
 <!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="发现 AI 研究与工程方向的异常波动" />
+    <meta name="description" content="发现 AI 研究、开源项目、方法、Benchmark 与机构信号中的异常波动" />
     <title>{title}</title>
   </head>
   <body>
     <div class="shell">
       <header class="topbar">
         <div class="topbar-inner">
-          <a class="brand" href="/">AI 趋势脉冲</a>
+          <a class="brand" href="/">
+            <span class="brand-mark">AI</span>
+            <span>趋势脉冲</span>
+          </a>
           <nav class="nav" aria-label="主导航">
-            <a href="/hotspots">小时热点</a>
-            <a href="/archive">归档</a>
-            <a href="/github">GitHub</a>
-            <a href="/institutions">机构</a>
-            <a href="/graph">共现网络</a>
-            <a href="/watchlist">Watchlist</a>
-            <a href="/sources">数据源</a>
+            {navItems.map((item) => (
+              <a class:list={[isActive(item.href) && "active"]} href={item.href}>{item.label}</a>
+            ))}
+            <a class="nav-external" href="https://github.com/siner9586/AI_TREND_Seismograph" target="_blank" rel="noopener noreferrer">Repo</a>
           </nav>
         </div>
       </header>
