@@ -1,0 +1,20 @@
+---
+const { trend, limit = 4 } = Astro.props;
+const metrics = trend?.metrics || {};
+const tags = trend?.tags || [];
+const signalFocus = trend?.signal_focus || {};
+
+const dominantSource = signalFocus.dominant_source || (metrics.repo_count ? "GitHub 项目" : metrics.paper_count ? "论文信号" : "综合信号");
+const methodTag = (trend?.related_methods || [])[0] ? `方法：${(trend.related_methods || []).slice(0, 2).join(" / ")}` : null;
+const institutionTag = (trend?.related_institutions || [])[0] ? `机构：${(trend.related_institutions || []).slice(0, 2).join(" / ")}` : null;
+const grouped = [
+  trend?.severity_label ? { label: trend.severity_label, kind: "level" } : null,
+  dominantSource ? { label: `来源：${dominantSource}`, kind: "source" } : null,
+  methodTag ? { label: methodTag, kind: "method" } : null,
+  institutionTag ? { label: institutionTag, kind: "institution" } : null,
+  ...tags.slice(0, limit).map((tag: string) => ({ label: tag, kind: "plain" })),
+].filter(Boolean);
+---
+<div class="tag-cluster">
+  {grouped.map((item: any) => <span class:list={["tag", `tag-${item.kind}`]}>{item.label}</span>)}
+</div>
