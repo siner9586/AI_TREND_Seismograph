@@ -1,6 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroPulsePanel from "../components/HeroPulsePanel.astro";
+import SectionHeader from "../components/SectionHeader.astro";
 import TrendCard from "../components/TrendCard.astro";
+import TrendPulseBar from "../components/TrendPulseBar.astro";
+import SignalSourceMatrix from "../components/SignalSourceMatrix.astro";
 import GithubSurgeCard from "../components/GithubSurgeCard.astro";
 import DatasetBurstCard from "../components/DatasetBurstCard.astro";
 import MethodBurstCard from "../components/MethodBurstCard.astro";
@@ -13,70 +17,125 @@ const { hourly, report } = latestBundle();
 const anomalies = report?.top_anomalies || hourly?.top_hotspots || [];
 const maxMagnitude = report?.max_magnitude || hourly?.max_magnitude || 0;
 const latestHourLabel = formatBeijingHour(hourly?.snapshot_hour);
+const topTrend = anomalies[0];
+const githubSurges = report?.github_surges || hourly?.github_surges || [];
+const datasetBursts = report?.dataset_bursts || hourly?.dataset_bursts || [];
+const methodBursts = report?.method_bursts || hourly?.method_bursts || [];
+const institutionClusters = report?.institution_clusters || [];
+const watchHits = report?.watchlist?.hits || hourly?.watchlist_hits || [];
+
+function dominantSourceFor(trend: any) {
+  const metrics = trend?.metrics || {};
+  const rows = [
+    ["GitHub 项目", Number(metrics.repo_count || 0)],
+    ["论文信号", Number(metrics.paper_count || 0)],
+    ["方法提及", Number(metrics.method_mentions || 0)],
+    ["机构/账号", Number(metrics.institution_mentions || 0)],
+    ["Benchmark", Number(metrics.dataset_mentions || 0)],
+  ];
+  return rows.sort((a: any, b: any) => b[1] - a[1])[0]?.[1] ? rows.sort((a: any, b: any) => b[1] - a[1])[0][0] : "待观察";
+}
 ---
 <BaseLayout title="AI 趋势脉冲">
-  <section class="page-title">
-    <h1>AI 趋势脉冲</h1>
-    <p class="subtitle">发现 AI 研究与工程方向的异常波动，聚合论文、开源项目、方法、数据集、Benchmark 与机构信号。</p>
+  <HeroPulsePanel
+    latestHourLabel={latestHourLabel}
+    totalSignals={hourly?.total_items_scanned ?? report?.total_items_scanned ?? 0}
+    maxMagnitude={maxMagnitude}
+    pushRecommended={Boolean(hourly?.push_recommended || topTrend?.push_recommended)}
+    dominantSource={dominantSourceFor(topTrend)}
+    topTopic={topTrend?.topic || "暂无热点"}
+  />
+
+  <section class="overview-strip">
+    <div>
+      <span>当前 Top 1</span>
+      <strong>{topTrend?.topic || "暂无趋势异常"}</strong>
+      <p>{topTrend?.summary || "等待下一次真实抓取生成趋势信号。"}</p>
+    </div>
+    <div>
+      <span>窗口状态</span>
+      <strong>{hourly?.partial ? "Partial" : "Complete"}</strong>
+      <p>所有总结来自结构化字段的确定性呈现，不调用大模型生成。</p>
+    </div>
   </section>
 
-  <section class="grid cols-4">
-    <div class="panel metric"><div class="value">{latestHourLabel}</div><div class="label">最近小时刷新</div></div>
-    <div class="panel metric"><div class="value">{hourly?.total_items_scanned ?? 0}</div><div class="label">最近 1 小时新增信号</div></div>
-    <div class="panel metric"><div class="value">M{Number(maxMagnitude || 0).toFixed(1)}</div><div class="label">当前最高震级</div></div>
-    <div class="panel metric"><div class="value">{hourly?.push_recommended ? "是" : "否"}</div><div class="label">是否存在建议推送热点</div></div>
-  </section>
-
-  <h2>Top 5 趋势异常</h2>
-  <section class="grid cols-2">
+  <SectionHeader
+    eyebrow="Pulse Radar"
+    title="Top 5 趋势异常"
+    description="当前窗口中震级最高、证据链最集中的趋势方向。先看结论，再展开证据。"
+  />
+  <section class="grid cols-2 trend-grid">
     {anomalies.length ? anomalies.slice(0, 5).map((trend: any) => <TrendCard trend={trend} detailed={true} />) : <div class="empty">暂无趋势异常。请先运行小时或日报流水线。</div>}
   </section>
 
-  <h2>过去 1 小时热点</h2>
+  <section class="insight-grid">
+    <div class="panel insight-panel">
+      <SectionHeader
+        eyebrow="Magnitude"
+        title="今日趋势脉冲分布"
+        description="用震级条快速查看不同主题的异常强度。"
+      />
+      <TrendPulseBar trends={anomalies.length ? anomalies : hourly?.top_hotspots || []} />
+    </div>
+    <div class="panel insight-panel">
+      <SectionHeader
+        eyebrow="Signal Mix"
+        title="信号来源构成"
+        description="识别当前趋势主要由论文、开源项目、机构、方法还是 Benchmark 驱动。"
+      />
+      <SignalSourceMatrix trends={anomalies} hourly={hourly} report={report} />
+    </div>
+  </section>
+
+  <SectionHeader
+    eyebrow="Hot Window"
+    title="过去 1 小时热点"
+    description="保留小时级信号快照，用于判断趋势是否持续升温。"
+  />
   <section class="grid cols-2">
     {(hourly?.top_hotspots || []).slice(0, 4).map((trend: any) => <TrendCard trend={trend} detailed={true} />)}
     {!hourly?.top_hotspots?.length && <div class="empty">暂无小时热点。</div>}
   </section>
 
-  <h2>GitHub 暴涨项目</h2>
+  <SectionHeader eyebrow="Open Source" title="GitHub 暴涨项目" description="观察开源生态中短时间 star 增量和 topic 共振。" />
   <section class="grid cols-3">
-    {(report?.github_surges || hourly?.github_surges || []).slice(0, 6).map((repo: any) => <GithubSurgeCard repo={repo} />)}
-    {!(report?.github_surges || hourly?.github_surges || []).length && <div class="empty">暂无 GitHub 增长曲线；首次运行需要先积累 repo snapshot。</div>}
+    {githubSurges.slice(0, 6).map((repo: any) => <GithubSurgeCard repo={repo} />)}
+    {!githubSurges.length && <div class="empty">暂无 GitHub 增长曲线；首次运行需要先积累 repo snapshot。</div>}
   </section>
 
-  <h2>数据集 / Benchmark 异常</h2>
+  <SectionHeader eyebrow="Benchmark" title="数据集 / Benchmark 异常" description="观察评测、数据集和基准任务是否开始同步升温。" />
   <section class="grid cols-3">
-    {(report?.dataset_bursts || hourly?.dataset_bursts || []).slice(0, 6).map((item: any) => <DatasetBurstCard item={item} />)}
-    {!(report?.dataset_bursts || hourly?.dataset_bursts || []).length && <div class="empty">暂无数据集或 Benchmark 异常。</div>}
+    {datasetBursts.slice(0, 6).map((item: any) => <DatasetBurstCard item={item} />)}
+    {!datasetBursts.length && <div class="empty">暂无数据集或 Benchmark 异常。</div>}
   </section>
 
-  <h2>方法采用异常</h2>
+  <SectionHeader eyebrow="Method" title="方法采用异常" description="识别方法词、工具范式与工程实践的扩散信号。" />
   <section class="grid cols-3">
-    {(report?.method_bursts || hourly?.method_bursts || []).slice(0, 6).map((item: any) => <MethodBurstCard item={item} />)}
-    {!(report?.method_bursts || hourly?.method_bursts || []).length && <div class="empty">暂无方法扩散异常。</div>}
+    {methodBursts.slice(0, 6).map((item: any) => <MethodBurstCard item={item} />)}
+    {!methodBursts.length && <div class="empty">暂无方法扩散异常。</div>}
   </section>
 
-  <h2>机构连续发布信号</h2>
+  <SectionHeader eyebrow="Institution" title="机构连续发布信号" description="把机构和生态账号集中出现视为辅助线索，而非正式战略判断。" />
   <section class="grid cols-3">
-    {(report?.institution_clusters || []).slice(0, 6).map((cluster: any) => <InstitutionClusterCard cluster={cluster} />)}
-    {!report?.institution_clusters?.length && <div class="empty">暂无机构集中信号。</div>}
+    {institutionClusters.slice(0, 6).map((cluster: any) => <InstitutionClusterCard cluster={cluster} />)}
+    {!institutionClusters.length && <div class="empty">暂无机构集中信号。</div>}
   </section>
 
-  <h2>Watchlist 命中</h2>
+  <SectionHeader eyebrow="Watchlist" title="Watchlist 命中" description="关注预设方向在当前窗口是否达到提示阈值。" />
   <section class="grid cols-2">
-    {(report?.watchlist?.hits || hourly?.watchlist_hits || []).slice(0, 6).map((hit: any) => <WatchlistHitCard hit={hit} />)}
-    {!(report?.watchlist?.hits || hourly?.watchlist_hits || []).length && <div class="empty">当前没有 Watchlist 命中。</div>}
+    {watchHits.slice(0, 6).map((hit: any) => <WatchlistHitCard hit={hit} />)}
+    {!watchHits.length && <div class="empty">当前没有 Watchlist 命中。</div>}
   </section>
 
-  <h2>今日观察建议</h2>
-  <section class="panel">
+  <SectionHeader eyebrow="Next Signals" title="重点观察方向" description="用少量观察词跟踪后续 3–7 天是否形成持续信号。" />
+  <section class="panel watch-panel">
     {anomalies.length ? (
-      <ul>
-        {anomalies.slice(0, 6).map((trend: any) => <li>{trend.topic}：{(trend.suggested_watch_keywords || []).slice(0, 6).join("、") || "继续观察后续 3-7 天证据"}</li>)}
+      <ul class="watch-list">
+        {anomalies.slice(0, 6).map((trend: any) => <li><strong>{trend.topic}</strong><span>{(trend.suggested_watch_keywords || []).slice(0, 6).join("、") || "继续观察后续 3-7 天证据"}</span></li>)}
       </ul>
     ) : <p class="muted">暂无观察建议。</p>}
   </section>
 
-  <h2>数据源状态</h2>
+  <SectionHeader eyebrow="Sources" title="数据源状态" description="保留原始来源状态，方便判断本轮信号覆盖是否完整。" />
   <SourceStatus sources={report?.raw_sources_summary?.source_status || hourly?.source_status || []} />
 </BaseLayout>
