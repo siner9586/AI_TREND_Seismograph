@@ -1,0 +1,8 @@
+---
+const { label, value, meta = "", tone = "default" } = Astro.props;
+---
+<div class:list={["metric-tile", tone && `metric-tile-${tone}`]}>
+  <div class="metric-tile-label">{label}</div>
+  <div class="metric-tile-value">{value ?? "—"}</div>
+  {meta ? <div class="metric-tile-meta">{meta}</div> : null}
+</div>
