@@ -1,0 +1,34 @@
+---
+import MetricTile from "./MetricTile.astro";
+
+const {
+  latestHourLabel = "未刷新",
+  totalSignals = 0,
+  maxMagnitude = 0,
+  pushRecommended = false,
+  dominantSource = "待观察",
+  topTopic = "暂无热点",
+  sourceLine = "公开论文、GitHub、机构、方法、Benchmark 与 Watchlist 信号",
+} = Astro.props;
+
+const magnitudeLabel = `M${Number(maxMagnitude || 0).toFixed(1)}`;
+const pushLabel = pushRecommended ? "是" : "否";
+---
+<section class="hero-pulse-panel">
+  <div class="hero-radar" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <div class="hero-kicker">AI Trend Seismograph</div>
+    <h1>AI 趋势脉冲</h1>
+    <p>发现 AI 研究、开源项目、方法、Benchmark 与机构信号中的异常波动。</p>
+    <div class="hero-meta-row">
+      <span>最近刷新：{latestHourLabel}</span>
+      <span>数据源：{sourceLine}</span>
+    </div>
+  </div>
+  <div class="hero-metrics-grid">
+    <MetricTile label="当前最高震级" value={magnitudeLabel} meta="趋势异常强度" tone="danger" />
+    <MetricTile label="最近窗口信号" value={totalSignals} meta="真实抓取条目" tone="cyan" />
+    <MetricTile label="建议推送热点" value={pushLabel} meta="基于现有阈值" tone={pushRecommended ? "amber" : "default"} />
+    <MetricTile label="当前主导来源" value={dominantSource} meta={`Top 1：${topTopic}`} tone="blue" />
+  </div>
+</section>
