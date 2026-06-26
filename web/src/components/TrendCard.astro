@@ -1,7 +1,7 @@
 ---
 import EvidenceChain from "./EvidenceChain.astro";
 import MagnitudeBadge from "./MagnitudeBadge.astro";
-import SeverityTag from "./SeverityTag.astro";
+import TagCluster from "./TagCluster.astro";
 import { slugTopic } from "../lib/data";
 
 const { trend, detailed = false } = Astro.props;
@@ -19,6 +19,7 @@ const evidenceKeywords = Array.from(new Set(evidence.flatMap((item: any) => item
 const curatedSummary = trend.curated_summary || null;
 const signalTakeaways = trend.signal_takeaways || [];
 const signalFocus = trend.signal_focus || {};
+const magnitude = Number(trend.magnitude || metrics.magnitude || 0);
 
 const signalFacts = [
   metrics.repo_count ? `GitHub 项目信号 ${metrics.repo_count} 个` : null,
@@ -28,6 +29,15 @@ const signalFacts = [
   metrics.dataset_mentions ? `数据集/Benchmark 提及 ${metrics.dataset_mentions} 次` : null,
   metrics.institution_mentions ? `机构相关信号 ${metrics.institution_mentions} 次` : null,
 ].filter(Boolean);
+
+const keyMetrics = [
+  metrics.repo_count !== undefined ? { label: "GitHub", value: `${metrics.repo_count} 个` } : null,
+  metrics.paper_count !== undefined ? { label: "论文", value: `${metrics.paper_count} 条` } : null,
+  metrics.github_star_delta ? { label: "24h Star", value: `+${metrics.github_star_delta}` } : null,
+  metrics.method_mentions ? { label: "方法", value: `${metrics.method_mentions} 次` } : null,
+  metrics.institution_mentions ? { label: "机构", value: `${metrics.institution_mentions} 次` } : null,
+  metrics.dataset_mentions ? { label: "Benchmark", value: `${metrics.dataset_mentions} 次` } : null,
+].filter(Boolean).slice(0, 5);
 
 const fallbackTakeaways = [
   signalFacts.length ? `总体判断：本轮抓取由${signalFacts.join("、")}共同构成，说明该热点不是单一条目，而是一组围绕同一方向聚合的公开信号。` : null,
@@ -43,12 +53,8 @@ const takeaways = signalTakeaways.length ? signalTakeaways : fallbackTakeaways;
 function linkLabel(url: string) {
   try {
     const parsed = new URL(url);
-    if (parsed.hostname.includes("github.com")) {
-      return parsed.pathname.replace(/^\//, "") || url;
-    }
-    if (parsed.hostname.includes("arxiv.org")) {
-      return `arXiv ${parsed.pathname.split("/").filter(Boolean).pop() || "paper"}`;
-    }
+    if (parsed.hostname.includes("github.com")) return parsed.pathname.replace(/^\//, "") || url;
+    if (parsed.hostname.includes("arxiv.org")) return `arXiv ${parsed.pathname.split("/").filter(Boolean).pop() || "paper"}`;
     return parsed.hostname.replace(/^www\./, "");
   } catch {
     return url;
@@ -77,94 +83,116 @@ function fallbackGroups(urls: string[]) {
   return Array.from(groups.entries());
 }
 
+function magnitudeClass(value: number) {
+  if (value >= 6) return "trend-critical";
+  if (value >= 5) return "trend-high";
+  if (value >= 4) return "trend-mid";
+  return "trend-low";
+}
+
 const sourceLinkGroups = trend.source_link_groups || {};
 const sourceLinkGroupEntries = Object.entries(sourceLinkGroups).filter(([, links]) => Array.isArray(links) && links.length) as [string, any[]][];
 const displaySourceGroups = sourceLinkGroupEntries.length ? sourceLinkGroupEntries : fallbackGroups(sourceUrls);
+const leadSentence = trend.summary || curatedSummary || (signalFacts.length ? `该趋势由${signalFacts.join("、")}构成。` : "当前暂无可读摘要。");
+const dominantSource = signalFocus.dominant_source || (metrics.repo_count ? "GitHub 项目" : metrics.paper_count ? "论文信号" : "综合信号");
 ---
-<article class:list={["card", "stack", detailed && "trend-card-detailed"]}>
-  <div class="between">
-    <div>
-      <h3><a href={`/trends/${slugTopic(trend.topic)}`}>{trend.topic}</a></h3>
-      <div class="row">
-        <SeverityTag label={trend.severity_label} />
-        {(trend.tags || []).slice(0, 4).map((tag: string) => <span class="tag">{tag}</span>)}
-      </div>
+<article class:list={["card", "trend-card", magnitudeClass(magnitude), detailed && "trend-card-detailed"]}>
+  <div class="trend-card-accent" aria-hidden="true"></div>
+  <div class="trend-card-head">
+    <div class="trend-title-group">
+      <a class="trend-topic" href={`/trends/${slugTopic(trend.topic)}`}>{trend.topic}</a>
+      <div class="trend-subline">{trend.severity_label || "未分级"} · 主导信号：{dominantSource}</div>
     </div>
-    <MagnitudeBadge magnitude={trend.magnitude} />
+    <MagnitudeBadge magnitude={magnitude} />
   </div>
 
-  <p>{trend.summary}</p>
+  <TagCluster trend={trend} />
 
-  {detailed && (curatedSummary || signalFacts.length) ? (
-    <section class="trend-detail-block summary-block">
-      <div class="detail-title">抓取目标全文总结</div>
-      <p class="detail-summary">
-        {curatedSummary || <>本轮热点主要由{signalFacts.join("、")}构成；系统结合突发强度、来源覆盖、机构/方法信号和历史基线，判断该方向处于“{trend.severity_label || "趋势波动"}”。</>}
-      </p>
-      <div class="summary-method">确定性规则总结 · 不调用大模型 · 字段来源：metrics / evidence / source_urls / taxonomy</div>
-    </section>
+  <p class="trend-lead">{leadSentence}</p>
+
+  {keyMetrics.length ? (
+    <div class="trend-key-metrics">
+      {keyMetrics.map((item: any) => (
+        <div>
+          <span>{item.label}</span>
+          <strong>{item.value}</strong>
+        </div>
+      ))}
+    </div>
   ) : null}
 
-  {detailed && takeaways.length ? (
-    <section class="trend-detail-block">
-      <div class="detail-title">总体归纳结论</div>
-      <ul class="compact-list takeaway-list">
-        {takeaways.slice(0, 7).map((item: string) => <li>{item}</li>)}
-      </ul>
-    </section>
-  ) : null}
-
-  {detailed && (relatedMethods.length || relatedDatasets.length || relatedInstitutions.length || evidenceKeywords.length || watchKeywords.length || signalFocus.dominant_source) ? (
-    <section class="trend-detail-block">
-      <div class="detail-title">信号解释</div>
-      <div class="signal-grid">
-        {signalFocus.dominant_source ? <div><span class="signal-label">主导来源</span><p>{signalFocus.dominant_source}</p></div> : null}
-        {relatedMethods.length ? <div><span class="signal-label">相关方法</span><p>{relatedMethods.slice(0, 6).join("、")}</p></div> : null}
-        {relatedDatasets.length ? <div><span class="signal-label">数据集 / Benchmark</span><p>{relatedDatasets.slice(0, 6).join("、")}</p></div> : null}
-        {relatedInstitutions.length ? <div><span class="signal-label">相关机构 / 账号</span><p>{relatedInstitutions.slice(0, 8).join("、")}</p></div> : null}
-        {evidenceKeywords.length ? <div><span class="signal-label">命中关键词</span><p>{evidenceKeywords.join("、")}</p></div> : null}
-        {watchKeywords.length ? <div><span class="signal-label">后续观察词</span><p>{watchKeywords.slice(0, 8).join("、")}</p></div> : null}
-      </div>
-    </section>
-  ) : null}
-
-  <div class="muted">{trend.calculation_summary}</div>
-
-  {detailed && caveats.length ? (
-    <div class="caveat-box">{caveats.slice(0, 2).join("；")}</div>
-  ) : null}
-
-  {detailed && evidenceDigest.length ? (
-    <section class="trend-detail-block">
-      <div class="detail-title">证据摘要</div>
-      <ul class="compact-list evidence-digest-list">
-        {evidenceDigest.slice(0, 5).map((item: any) => <li><a href={item.source_url} target="_blank" rel="noopener noreferrer">{item.title}</a>：{item.why_included}</li>)}
-      </ul>
-    </section>
-  ) : null}
+  {trend.calculation_summary ? <div class="calculation-pill">{trend.calculation_summary}</div> : null}
 
   {detailed ? (
-    <section class="trend-detail-block">
-      <div class="detail-title">代表性信号</div>
-      <EvidenceChain evidence={evidence} limit={6} />
-    </section>
-  ) : <EvidenceChain evidence={evidence || []} />}
+    <details class="trend-details">
+      <summary><span>展开证据链与完整解释</span></summary>
 
-  {detailed && displaySourceGroups.length ? (
-    <section class="trend-detail-block signal-links">
-      <div class="detail-title">信号链接</div>
-      <div class="source-link-groups">
-        {displaySourceGroups.map(([groupName, links]) => (
-          <div class="source-link-group">
-            <div class="signal-label">{groupName}</div>
-            <div class="link-list">
-              {links.slice(0, 10).map((link: any) => (
-                <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.reason || link.title}>{link.title || linkLabel(link.url)}</a>
-              ))}
-            </div>
+      {(curatedSummary || signalFacts.length) ? (
+        <section class="trend-detail-block summary-block">
+          <div class="detail-title">抓取目标全文总结</div>
+          <p class="detail-summary">
+            {curatedSummary || <>本轮热点主要由{signalFacts.join("、")}构成；系统结合突发强度、来源覆盖、机构/方法信号和历史基线，判断该方向处于“{trend.severity_label || "趋势波动"}”。</>}
+          </p>
+          <div class="summary-method">确定性规则总结 · 不调用大模型 · 字段来源：metrics / evidence / source_urls / taxonomy</div>
+        </section>
+      ) : null}
+
+      {takeaways.length ? (
+        <section class="trend-detail-block">
+          <div class="detail-title">总体归纳结论</div>
+          <ul class="compact-list takeaway-list">
+            {takeaways.slice(0, 7).map((item: string) => <li>{item}</li>)}
+          </ul>
+        </section>
+      ) : null}
+
+      {(relatedMethods.length || relatedDatasets.length || relatedInstitutions.length || evidenceKeywords.length || watchKeywords.length || signalFocus.dominant_source) ? (
+        <section class="trend-detail-block">
+          <div class="detail-title">信号解释</div>
+          <div class="signal-grid">
+            {signalFocus.dominant_source ? <div><span class="signal-label">主导来源</span><p>{signalFocus.dominant_source}</p></div> : null}
+            {relatedMethods.length ? <div><span class="signal-label">相关方法</span><p>{relatedMethods.slice(0, 6).join("、")}</p></div> : null}
+            {relatedDatasets.length ? <div><span class="signal-label">数据集 / Benchmark</span><p>{relatedDatasets.slice(0, 6).join("、")}</p></div> : null}
+            {relatedInstitutions.length ? <div><span class="signal-label">相关机构 / 账号</span><p>{relatedInstitutions.slice(0, 8).join("、")}</p></div> : null}
+            {evidenceKeywords.length ? <div><span class="signal-label">命中关键词</span><p>{evidenceKeywords.join("、")}</p></div> : null}
+            {watchKeywords.length ? <div><span class="signal-label">后续观察词</span><p>{watchKeywords.slice(0, 8).join("、")}</p></div> : null}
           </div>
-        ))}
-      </div>
-    </section>
-  ) : null}
+        </section>
+      ) : null}
+
+      {caveats.length ? <div class="caveat-box">{caveats.slice(0, 2).join("；")}</div> : null}
+
+      {evidenceDigest.length ? (
+        <section class="trend-detail-block">
+          <div class="detail-title">证据摘要</div>
+          <ul class="compact-list evidence-digest-list">
+            {evidenceDigest.slice(0, 5).map((item: any) => <li><a href={item.source_url} target="_blank" rel="noopener noreferrer">{item.title}</a>：{item.why_included}</li>)}
+          </ul>
+        </section>
+      ) : null}
+
+      <section class="trend-detail-block">
+        <div class="detail-title">代表性信号</div>
+        <EvidenceChain evidence={evidence} limit={6} />
+      </section>
+
+      {displaySourceGroups.length ? (
+        <section class="trend-detail-block signal-links">
+          <div class="detail-title">信号链接</div>
+          <div class="source-link-groups">
+            {displaySourceGroups.map(([groupName, links]) => (
+              <div class="source-link-group">
+                <div class="signal-label">{groupName}</div>
+                <div class="link-list">
+                  {links.slice(0, 10).map((link: any) => (
+                    <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.reason || link.title}>{link.title || linkLabel(link.url)}</a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
+    </details>
+  ) : <EvidenceChain evidence={evidence || []} />}
 </article>
