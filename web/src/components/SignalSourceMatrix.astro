@@ -1,0 +1,44 @@
+---
+const { trends = [], hourly = null, report = null } = Astro.props;
+
+const metricRows = (trends || []).map((trend: any) => trend.metrics || {});
+const sum = (key: string) => metricRows.reduce((total: number, metrics: any) => total + Number(metrics?.[key] || 0), 0);
+const repoCount = sum("repo_count") || Number(hourly?.total_repos_scanned || report?.total_repos_scanned || 0);
+const paperCount = sum("paper_count") || Number(hourly?.total_papers_scanned || report?.total_papers_scanned || 0);
+const methodMentions = sum("method_mentions");
+const datasetMentions = sum("dataset_mentions");
+const institutionMentions = sum("institution_mentions");
+const totalSignals = Number(hourly?.total_items_scanned || report?.total_items_scanned || repoCount + paperCount || 0);
+
+const rows = [
+  { label: "GitHub 项目", value: repoCount, tone: "blue", hint: "开源项目与 star 增量" },
+  { label: "论文信号", value: paperCount, tone: "cyan", hint: "论文与研究条目" },
+  { label: "方法提及", value: methodMentions, tone: "purple", hint: "技术路径与工具范式" },
+  { label: "机构/账号", value: institutionMentions, tone: "amber", hint: "机构与生态账号线索" },
+  { label: "Benchmark", value: datasetMentions, tone: "green", hint: "数据集与评测侧信号" },
+].filter((row) => row.value > 0 || totalSignals > 0);
+
+const maxValue = Math.max(1, ...rows.map((row) => row.value));
+const dominant = rows.length ? [...rows].sort((a, b) => b.value - a.value)[0] : null;
+const summary = dominant
+  ? `当前窗口主要由${dominant.label}驱动，建议结合证据链判断它是否已形成跨来源共振。`
+  : "当前窗口暂无足够来源信号。";
+---
+<div class="source-matrix">
+  <div class="source-matrix-summary">{summary}</div>
+  <div class="source-matrix-grid">
+    {rows.map((row) => {
+      const width = Math.min(100, Math.max(6, (row.value / maxValue) * 100));
+      return (
+        <div class:list={["source-matrix-item", row === dominant && "is-dominant"]}>
+          <div class="source-matrix-head">
+            <span>{row.label}</span>
+            <strong>{row.value}</strong>
+          </div>
+          <div class="source-matrix-bar"><span class={`source-matrix-fill source-${row.tone}`} style={`--source-width:${width}%`}></span></div>
+          <div class="source-matrix-hint">{row.hint}</div>
+        </div>
+      );
+    })}
+  </div>
+</div>
