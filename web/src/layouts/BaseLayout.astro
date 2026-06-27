@@ -31,12 +31,21 @@ function isActive(href: string) {
             <span class="brand-mark">AI</span>
             <span>趋势脉冲</span>
           </a>
-          <nav class="nav" aria-label="主导航">
-            {navItems.map((item) => (
-              <a class:list={[isActive(item.href) && "active"]} href={item.href}>{item.label}</a>
-            ))}
-            <a class="nav-external" href="https://github.com/siner9586/AI_TREND_Seismograph" target="_blank" rel="noopener noreferrer">Repo</a>
-          </nav>
+          <div class="topbar-actions">
+            <nav class="nav" aria-label="主导航">
+              {navItems.map((item) => (
+                <a class:list={[isActive(item.href) && "active"]} href={item.href}>{item.label}</a>
+              ))}
+            </nav>
+            <details class="wechat-nav">
+              <summary>公众号</summary>
+              <div class="wechat-popover" role="dialog" aria-label="公众号二维码">
+                <div class="wechat-popover-title">公众号：灵感与观点交流</div>
+                <img src="/wechat-qr.svg" alt="公众号二维码" loading="lazy" />
+                <div class="wechat-popover-hint">微信扫码关注</div>
+              </div>
+            </details>
+          </div>
         </div>
       </header>
       <main class="page">
