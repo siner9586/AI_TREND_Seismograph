@@ -38,10 +38,10 @@ function isActive(href: string) {
                 <a class:list={[isActive(item.href) && "active"]} href={item.href}>{item.label}</a>
               ))}
             </nav>
-            <details class="wechat-nav">
+            <details class="wechat-nav" data-wechat-popover>
               <summary>公众号</summary>
               <div class="wechat-popover" role="dialog" aria-label="公众号二维码">
-                <div class="wechat-close" aria-hidden="true">×</div>
+                <button class="wechat-close" type="button" aria-label="关闭公众号二维码" data-wechat-close>×</button>
                 <div class="wechat-popover-label">扫码关注公众号：</div>
                 <div class="wechat-popover-title">灵感与观点交流</div>
                 <img src="/wechat-qr.svg" alt="公众号二维码" loading="lazy" />
@@ -57,5 +57,22 @@ function isActive(href: string) {
         AI Trend Seismograph · 趋势判断来自公开论文、代码与配置词典信号，不构成投资、科研选题或技术路线建议。
       </footer>
     </div>
+    <script is:inline>
+      document.addEventListener("click", (event) => {
+        const popover = document.querySelector("[data-wechat-popover]");
+        if (!popover) return;
+        const target = event.target;
+        if (!(target instanceof Node)) return;
+        const closeButton = target instanceof Element ? target.closest("[data-wechat-close]") : null;
+        if (closeButton || !popover.contains(target)) {
+          popover.removeAttribute("open");
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") return;
+        document.querySelector("[data-wechat-popover]")?.removeAttribute("open");
+      });
+    </script>
   </body>
 </html>
