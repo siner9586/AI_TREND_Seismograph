@@ -59017,6 +59017,687 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Benchmark",
+      "magnitude": 4.08,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Benchmark",
+          "title": "Benchmark 出现疑似爆发",
+          "magnitude": 4.08,
+          "severity_label": "疑似爆发",
+          "summary": "Benchmark 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.08，burst=3.335，growth_rate=-0.887，z_score=-1.788，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 4 个",
+            "24h star 增量 33",
+            "方法提及：RAG",
+            "机构集中：yyh-001, benchflow-ai, ruvnet"
+          ],
+          "metrics": {
+            "current_1h_count": 4,
+            "current_24h_count": 4,
+            "current_72h_count": 4,
+            "current_7d_count": 4,
+            "baseline_daily_avg_30d": 43.2,
+            "baseline_daily_std_30d": 20.923,
+            "baseline_72h_avg_30d": 129.6,
+            "growth_rate": -0.887,
+            "z_score": -1.788,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.731,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.25,
+            "institution_signal_score": 0.448,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 33,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 4,
+            "burst_score": 3.335,
+            "low_history_confidence": true,
+            "magnitude": 4.08
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Emmimal/context-graph-benchmark",
+              "source_url": "https://github.com/Emmimal/context-graph-benchmark",
+              "published_at": "2026-06-23T07:09:25Z",
+              "match_score": 0.367,
+              "matched_keywords": [
+                "benchmark"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "yyh-001/llm-value-rankings",
+              "source_url": "https://github.com/yyh-001/llm-value-rankings",
+              "published_at": "2026-06-23T10:55:23Z",
+              "match_score": 0.293,
+              "matched_keywords": [
+                "benchmark"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ruvnet/rupixel",
+              "source_url": "https://github.com/ruvnet/rupixel",
+              "published_at": "2026-06-25T20:17:50Z",
+              "match_score": 0.293,
+              "matched_keywords": [
+                "benchmark"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "published_at": "2026-06-24T08:10:33Z",
+              "match_score": 0.073,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Emmimal/context-graph-benchmark",
+            "https://github.com/benchflow-ai/awesome-evals",
+            "https://github.com/ruvnet/rupixel",
+            "https://github.com/yyh-001/llm-value-rankings"
+          ],
+          "related_methods": [
+            "RAG"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "yyh-001",
+            "benchflow-ai",
+            "ruvnet",
+            "Emmimal"
+          ],
+          "suggested_watch_keywords": [
+            "llm",
+            "benchmark",
+            "rag",
+            "openrouter",
+            "yyh-001",
+            "llm-value-rankings",
+            "daily",
+            "value"
+          ],
+          "confidence": 0.46,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Benchmark:2026-06-29:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Emmimal/context-graph-benchmark\", \"source_url\": \"https://github.com/Emmimal/context-graph-benchmark\", \"published_at\": \"2026-06-23T07:09:25Z\", \"match_score\": 0.367, \"matched_keywords\": [\"benchmark\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yyh-001/llm-value-rankings\", \"source_url\": \"https://github.com/yyh-001/llm-value-rankings\", \"published_at\": \"2026-06-23T10:55:23Z\", \"match_score\": 0.293, \"matched_keywords\": [\"benchmark\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/rupixel\", \"source_url\": \"https://github.com/ruvnet/rupixel\", \"published_at\": \"2026-06-25T20:17:50Z\", \"match_score\": 0.293, \"matched_keywords\": [\"benchmark\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchflow-ai/awesome-evals\", \"source_url\": \"https://github.com/benchflow-ai/awesome-evals\", \"published_at\": \"2026-06-24T08:10:33Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Benchmark」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.1）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括Emmimal/context-graph-benchmark、yyh-001/llm-value-rankings、ruvnet/rupixel、benchflow-ai/awesome-evals等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 33，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及yyh-001、benchflow-ai、ruvnet、Emmimal，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察llm、benchmark、rag、openrouter、yyh-001、llm-value-rankings、daily、value等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Benchmark 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.1）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、llm、benchmark、openrouter、yyh-001、llm-value-rankings等线索，代表条目包括Emmimal/context-graph-benchmark、yyh-001/llm-value-rankings、ruvnet/rupixel、benchflow-ai/awesome-evals，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 33，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及yyh-001、benchflow-ai、ruvnet、Emmimal，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察llm、benchmark、rag、openrouter、yyh-001、llm-value-rankings、daily、value是否继续出现。当前置信度为 0.5，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Emmimal/context-graph-benchmark",
+                "url": "https://github.com/Emmimal/context-graph-benchmark",
+                "source": "github",
+                "reason": "命中 benchmark，匹配分 0.367，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "yyh-001/llm-value-rankings",
+                "url": "https://github.com/yyh-001/llm-value-rankings",
+                "source": "github",
+                "reason": "命中 benchmark，匹配分 0.293，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ruvnet/rupixel",
+                "url": "https://github.com/ruvnet/rupixel",
+                "source": "github",
+                "reason": "命中 benchmark，匹配分 0.293，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "benchflow-ai/awesome-evals",
+                "url": "https://github.com/benchflow-ai/awesome-evals",
+                "source": "github",
+                "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Emmimal/context-graph-benchmark",
+              "source_url": "https://github.com/Emmimal/context-graph-benchmark",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.367,
+              "matched_terms": [
+                "benchmark"
+              ],
+              "why_included": "命中 benchmark，匹配分 0.367，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "yyh-001/llm-value-rankings",
+              "source_url": "https://github.com/yyh-001/llm-value-rankings",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.293,
+              "matched_terms": [
+                "benchmark"
+              ],
+              "why_included": "命中 benchmark，匹配分 0.293，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ruvnet/rupixel",
+              "source_url": "https://github.com/ruvnet/rupixel",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.293,
+              "matched_terms": [
+                "benchmark"
+              ],
+              "why_included": "命中 benchmark，匹配分 0.293，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.073,
+              "matched_terms": [],
+              "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+            "focus_terms": [
+              "RAG",
+              "llm",
+              "benchmark",
+              "openrouter",
+              "yyh-001",
+              "llm-value-rankings",
+              "daily",
+              "value"
+            ],
+            "representative_titles": [
+              "Emmimal/context-graph-benchmark",
+              "yyh-001/llm-value-rankings",
+              "ruvnet/rupixel",
+              "benchflow-ai/awesome-evals"
+            ],
+            "related_institutions": [
+              "yyh-001",
+              "benchflow-ai",
+              "ruvnet",
+              "Emmimal"
+            ],
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 33,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 4
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T23"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T23:17:50.875192+00:00",
+      "dedupe_key": "trend:Benchmark:2026-06-29:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Memory",
+      "magnitude": 3.91,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Memory",
+          "title": "Memory 出现明显异常",
+          "magnitude": 3.91,
+          "severity_label": "明显异常",
+          "summary": "Memory 在当前窗口内出现 0 条论文信号和 11 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.91，burst=3.446，growth_rate=-0.953，z_score=-5.583，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 11 个",
+            "24h star 增量 160",
+            "方法提及：RAG, MCP",
+            "机构集中：benchflow-ai, Apple, lightbearco"
+          ],
+          "metrics": {
+            "current_1h_count": 11,
+            "current_24h_count": 11,
+            "current_72h_count": 11,
+            "current_7d_count": 11,
+            "baseline_daily_avg_30d": 255.91,
+            "baseline_daily_std_30d": 42.864,
+            "baseline_72h_avg_30d": 767.73,
+            "growth_rate": -0.953,
+            "z_score": -5.583,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.461,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.091,
+            "institution_signal_score": 0.246,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.985,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 11,
+            "github_star_delta": 160,
+            "method_mentions": 5,
+            "dataset_mentions": 0,
+            "institution_mentions": 13,
+            "burst_score": 3.446,
+            "low_history_confidence": false,
+            "magnitude": 3.91
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Emmimal/context-graph-benchmark",
+              "source_url": "https://github.com/Emmimal/context-graph-benchmark",
+              "published_at": "2026-06-23T07:09:25Z",
+              "match_score": 0.28,
+              "matched_keywords": [
+                "memory"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "published_at": "2026-06-24T08:10:33Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lightbearco/tupper",
+              "source_url": "https://github.com/lightbearco/tupper",
+              "published_at": "2026-06-23T18:07:33Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "published_at": "2026-06-23T17:09:31Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "winsznx/theeleven",
+              "source_url": "https://github.com/winsznx/theeleven",
+              "published_at": "2026-06-25T07:42:50Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "amplifthq/opentag",
+              "source_url": "https://github.com/amplifthq/opentag",
+              "published_at": "2026-06-24T08:05:12Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "YurunChen/repo-docs-skills",
+              "source_url": "https://github.com/YurunChen/repo-docs-skills",
+              "published_at": "2026-06-23T05:44:10Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "qataruts/monlite",
+              "source_url": "https://github.com/qataruts/monlite",
+              "published_at": "2026-06-26T15:04:14Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Emmimal/context-graph-benchmark",
+            "https://github.com/Reyzowter/Hello-Agents",
+            "https://github.com/YurunChen/repo-docs-skills",
+            "https://github.com/amplifthq/opentag",
+            "https://github.com/benchflow-ai/awesome-evals",
+            "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+            "https://github.com/lightbearco/tupper",
+            "https://github.com/qataruts/monlite",
+            "https://github.com/vancyland/DataClaw0",
+            "https://github.com/winsznx/theeleven",
+            "https://github.com/y-times-y/y"
+          ],
+          "related_methods": [
+            "RAG",
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "benchflow-ai",
+            "Apple",
+            "lightbearco",
+            "OpenAI",
+            "Reyzowter",
+            "winsznx",
+            "amplifthq",
+            "YurunChen"
+          ],
+          "suggested_watch_keywords": [
+            "agents",
+            "code",
+            "ai-agents",
+            "agent",
+            "codex",
+            "coding",
+            "building",
+            "open-source"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Memory:2026-06-29:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Emmimal/context-graph-benchmark\", \"source_url\": \"https://github.com/Emmimal/context-graph-benchmark\", \"published_at\": \"2026-06-23T07:09:25Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchflow-ai/awesome-evals\", \"source_url\": \"https://github.com/benchflow-ai/awesome-evals\", \"published_at\": \"2026-06-24T08:10:33Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lightbearco/tupper\", \"source_url\": \"https://github.com/lightbearco/tupper\", \"published_at\": \"2026-06-23T18:07:33Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Reyzowter/Hello-Agents\", \"source_url\": \"https://github.com/Reyzowter/Hello-Agents\", \"published_at\": \"2026-06-23T17:09:31Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"winsznx/theeleven\", \"source_url\": \"https://github.com/winsznx/theeleven\", \"published_at\": \"2026-06-25T07:42:50Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amplifthq/opentag\", \"source_url\": \"https://github.com/amplifthq/opentag\", \"published_at\": \"2026-06-24T08:05:12Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YurunChen/repo-docs-skills\", \"source_url\": \"https://github.com/YurunChen/repo-docs-skills\", \"published_at\": \"2026-06-23T05:44:10Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"qataruts/monlite\", \"source_url\": \"https://github.com/qataruts/monlite\", \"published_at\": \"2026-06-26T15:04:14Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括Emmimal/context-graph-benchmark、benchflow-ai/awesome-evals、lightbearco/tupper、Reyzowter/Hello-Agents、winsznx/theeleven等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 160，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及benchflow-ai、Apple、lightbearco、OpenAI、Reyzowter、winsznx、amplifthq、YurunChen，累计提及 13 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、code、ai-agents、agent、codex、coding、building、open-source等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Memory 本轮由论文 0 条、GitHub 项目 11 个共同构成观测基础，当前强度为“明显异常”（M3.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、MCP、agents、code、ai-agents、agent等线索，代表条目包括Emmimal/context-graph-benchmark、benchflow-ai/awesome-evals、lightbearco/tupper、Reyzowter/Hello-Agents，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 160，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 5 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及benchflow-ai、Apple、lightbearco、OpenAI、Reyzowter、winsznx，累计提及 13 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察agents、code、ai-agents、agent、codex、coding、building、open-source是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Emmimal/context-graph-benchmark",
+                "url": "https://github.com/Emmimal/context-graph-benchmark",
+                "source": "github",
+                "reason": "命中 memory，匹配分 0.28，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "benchflow-ai/awesome-evals",
+                "url": "https://github.com/benchflow-ai/awesome-evals",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "lightbearco/tupper",
+                "url": "https://github.com/lightbearco/tupper",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Reyzowter/Hello-Agents",
+                "url": "https://github.com/Reyzowter/Hello-Agents",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "winsznx/theeleven",
+                "url": "https://github.com/winsznx/theeleven",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "amplifthq/opentag",
+                "url": "https://github.com/amplifthq/opentag",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "YurunChen/repo-docs-skills",
+                "url": "https://github.com/YurunChen/repo-docs-skills",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "qataruts/monlite",
+                "url": "https://github.com/qataruts/monlite",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "gamedev-skills/awesome-gamedev-agent-skills",
+                "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              },
+              {
+                "title": "vancyland/DataClaw0",
+                "url": "https://github.com/vancyland/DataClaw0",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Emmimal/context-graph-benchmark",
+              "source_url": "https://github.com/Emmimal/context-graph-benchmark",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.28,
+              "matched_terms": [
+                "memory"
+              ],
+              "why_included": "命中 memory，匹配分 0.28，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "lightbearco/tupper",
+              "source_url": "https://github.com/lightbearco/tupper",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "winsznx/theeleven",
+              "source_url": "https://github.com/winsznx/theeleven",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "amplifthq/opentag",
+              "source_url": "https://github.com/amplifthq/opentag",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "YurunChen/repo-docs-skills",
+              "source_url": "https://github.com/YurunChen/repo-docs-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "qataruts/monlite",
+              "source_url": "https://github.com/qataruts/monlite",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 11 个。",
+            "focus_terms": [
+              "RAG",
+              "MCP",
+              "agents",
+              "code",
+              "ai-agents",
+              "agent",
+              "codex",
+              "coding"
+            ],
+            "representative_titles": [
+              "Emmimal/context-graph-benchmark",
+              "benchflow-ai/awesome-evals",
+              "lightbearco/tupper",
+              "Reyzowter/Hello-Agents",
+              "winsznx/theeleven"
+            ],
+            "related_institutions": [
+              "benchflow-ai",
+              "Apple",
+              "lightbearco",
+              "OpenAI",
+              "Reyzowter",
+              "winsznx",
+              "amplifthq",
+              "YurunChen"
+            ],
+            "paper_count": 0,
+            "repo_count": 11,
+            "github_star_delta": 160,
+            "method_mentions": 5,
+            "dataset_mentions": 0,
+            "institution_mentions": 13
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T23"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T23:17:50.875192+00:00",
+      "dedupe_key": "trend:Memory:2026-06-29:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
