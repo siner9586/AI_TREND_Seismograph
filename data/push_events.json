@@ -55880,6 +55880,3143 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Agents",
+      "magnitude": 6.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Agents",
+          "title": "Agents 出现强趋势震荡",
+          "magnitude": 6.0,
+          "severity_label": "强趋势震荡",
+          "summary": "Agents 在当前窗口内出现 0 条论文信号和 19 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=6.0，burst=10.146，growth_rate=-0.953，z_score=-9.842，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 19 个",
+            "24h star 增量 500",
+            "方法提及：RAG, MCP, ReAct",
+            "机构集中：OpenAI, benchflow-ai, eli-labz"
+          ],
+          "metrics": {
+            "current_1h_count": 19,
+            "current_24h_count": 19,
+            "current_72h_count": 19,
+            "current_7d_count": 19,
+            "baseline_daily_avg_30d": 426.743,
+            "baseline_daily_std_30d": 40.429,
+            "baseline_72h_avg_30d": 1280.229,
+            "growth_rate": -0.953,
+            "z_score": -9.842,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 8.938,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.211,
+            "institution_signal_score": 0.709,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 1.208,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 19,
+            "github_star_delta": 500,
+            "method_mentions": 8,
+            "dataset_mentions": 0,
+            "institution_mentions": 27,
+            "burst_score": 10.146,
+            "low_history_confidence": false,
+            "magnitude": 6.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "published_at": "2026-06-23T17:09:31Z",
+              "match_score": 0.95,
+              "matched_keywords": [
+                "agent",
+                "agents",
+                "ai agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "published_at": "2026-06-24T08:10:33Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "eli-labz/Godcoder",
+              "source_url": "https://github.com/eli-labz/Godcoder",
+              "published_at": "2026-06-27T00:56:36Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "ai agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "NotASithLord/peerd",
+              "source_url": "https://github.com/NotASithLord/peerd",
+              "published_at": "2026-06-22T05:55:13Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "ai agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "amplifthq/opentag",
+              "source_url": "https://github.com/amplifthq/opentag",
+              "published_at": "2026-06-24T08:05:12Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "iart-ai/motion-skills",
+              "source_url": "https://github.com/iart-ai/motion-skills",
+              "published_at": "2026-06-22T12:40:08Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "YurunChen/repo-docs-skills",
+              "source_url": "https://github.com/YurunChen/repo-docs-skills",
+              "published_at": "2026-06-23T05:44:10Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "gamedev-skills/awesome-gamedev-agent-skills",
+              "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+              "published_at": "2026-06-24T07:18:39Z",
+              "match_score": 0.633,
+              "matched_keywords": [
+                "agent",
+                "agents"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/HKUDS/AgentSpace",
+            "https://github.com/NotASithLord/peerd",
+            "https://github.com/OvOhao/auto-paper-collecter",
+            "https://github.com/QwenLM/Qwen-AgentWorld",
+            "https://github.com/Reyzowter/Hello-Agents",
+            "https://github.com/YurunChen/repo-docs-skills",
+            "https://github.com/abundantbeing/hermes-browser-extension",
+            "https://github.com/amplifthq/opentag",
+            "https://github.com/benchflow-ai/awesome-evals",
+            "https://github.com/eli-labz/Godcoder",
+            "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+            "https://github.com/hirokawaguchi/open-genai",
+            "https://github.com/iart-ai/motion-skills",
+            "https://github.com/ikarma/claude-mythos-ai-anthropic-desktop-app",
+            "https://github.com/lightbearco/tupper",
+            "https://github.com/qataruts/monlite",
+            "https://github.com/vancyland/DataClaw0",
+            "https://github.com/winsznx/theeleven",
+            "https://github.com/y-times-y/y"
+          ],
+          "related_methods": [
+            "RAG",
+            "MCP",
+            "ReAct"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "OpenAI",
+            "benchflow-ai",
+            "eli-labz",
+            "NotASithLord",
+            "Reyzowter",
+            "Anthropic",
+            "ikarma",
+            "Apple"
+          ],
+          "suggested_watch_keywords": [
+            "agent",
+            "agents",
+            "your",
+            "coding",
+            "code",
+            "open-source",
+            "llm",
+            "ai-agents"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Agents:2026-06-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Reyzowter/Hello-Agents\", \"source_url\": \"https://github.com/Reyzowter/Hello-Agents\", \"published_at\": \"2026-06-23T17:09:31Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchflow-ai/awesome-evals\", \"source_url\": \"https://github.com/benchflow-ai/awesome-evals\", \"published_at\": \"2026-06-24T08:10:33Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"eli-labz/Godcoder\", \"source_url\": \"https://github.com/eli-labz/Godcoder\", \"published_at\": \"2026-06-27T00:56:36Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NotASithLord/peerd\", \"source_url\": \"https://github.com/NotASithLord/peerd\", \"published_at\": \"2026-06-22T05:55:13Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amplifthq/opentag\", \"source_url\": \"https://github.com/amplifthq/opentag\", \"published_at\": \"2026-06-24T08:05:12Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"iart-ai/motion-skills\", \"source_url\": \"https://github.com/iart-ai/motion-skills\", \"published_at\": \"2026-06-22T12:40:08Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YurunChen/repo-docs-skills\", \"source_url\": \"https://github.com/YurunChen/repo-docs-skills\", \"published_at\": \"2026-06-23T05:44:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gamedev-skills/awesome-gamedev-agent-skills\", \"source_url\": \"https://github.com/gamedev-skills/awesome-gamedev-agent-skills\", \"published_at\": \"2026-06-24T07:18:39Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 19 个。代表性目标包括Reyzowter/Hello-Agents、benchflow-ai/awesome-evals、eli-labz/Godcoder、NotASithLord/peerd、amplifthq/opentag等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 500，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 8 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、benchflow-ai、eli-labz、NotASithLord、Reyzowter、Anthropic、ikarma、Apple，累计提及 27 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、your、coding、code、open-source、llm、ai-agents等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Agents 本轮由论文 0 条、GitHub 项目 19 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agent、agents、your等线索，代表条目包括Reyzowter/Hello-Agents、benchflow-ai/awesome-evals、eli-labz/Godcoder、NotASithLord/peerd，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 19 个 GitHub 项目，24 小时 star 增量约 500，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 8 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及OpenAI、benchflow-ai、eli-labz、NotASithLord、Reyzowter、Anthropic，累计提及 27 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察agent、agents、your、coding、code、open-source、llm、ai-agents是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Reyzowter/Hello-Agents",
+                "url": "https://github.com/Reyzowter/Hello-Agents",
+                "source": "github",
+                "reason": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "benchflow-ai/awesome-evals",
+                "url": "https://github.com/benchflow-ai/awesome-evals",
+                "source": "github",
+                "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "eli-labz/Godcoder",
+                "url": "https://github.com/eli-labz/Godcoder",
+                "source": "github",
+                "reason": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "NotASithLord/peerd",
+                "url": "https://github.com/NotASithLord/peerd",
+                "source": "github",
+                "reason": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "amplifthq/opentag",
+                "url": "https://github.com/amplifthq/opentag",
+                "source": "github",
+                "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "iart-ai/motion-skills",
+                "url": "https://github.com/iart-ai/motion-skills",
+                "source": "github",
+                "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "YurunChen/repo-docs-skills",
+                "url": "https://github.com/YurunChen/repo-docs-skills",
+                "source": "github",
+                "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "gamedev-skills/awesome-gamedev-agent-skills",
+                "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+                "source": "github",
+                "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "HKUDS/AgentSpace",
+                "url": "https://github.com/HKUDS/AgentSpace",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              },
+              {
+                "title": "OvOhao/auto-paper-collecter",
+                "url": "https://github.com/OvOhao/auto-paper-collecter",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.95,
+              "matched_terms": [
+                "agent",
+                "agents",
+                "ai agent"
+              ],
+              "why_included": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "agents"
+              ],
+              "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "eli-labz/Godcoder",
+              "source_url": "https://github.com/eli-labz/Godcoder",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "ai agent"
+              ],
+              "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "NotASithLord/peerd",
+              "source_url": "https://github.com/NotASithLord/peerd",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "ai agent"
+              ],
+              "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "amplifthq/opentag",
+              "source_url": "https://github.com/amplifthq/opentag",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "agents"
+              ],
+              "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "iart-ai/motion-skills",
+              "source_url": "https://github.com/iart-ai/motion-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "agents"
+              ],
+              "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "YurunChen/repo-docs-skills",
+              "source_url": "https://github.com/YurunChen/repo-docs-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "agents"
+              ],
+              "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "gamedev-skills/awesome-gamedev-agent-skills",
+              "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.633,
+              "matched_terms": [
+                "agent",
+                "agents"
+              ],
+              "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 19 个。",
+            "focus_terms": [
+              "RAG",
+              "MCP",
+              "ReAct",
+              "agent",
+              "agents",
+              "your",
+              "coding",
+              "code"
+            ],
+            "representative_titles": [
+              "Reyzowter/Hello-Agents",
+              "benchflow-ai/awesome-evals",
+              "eli-labz/Godcoder",
+              "NotASithLord/peerd",
+              "amplifthq/opentag"
+            ],
+            "related_institutions": [
+              "OpenAI",
+              "benchflow-ai",
+              "eli-labz",
+              "NotASithLord",
+              "Reyzowter",
+              "Anthropic",
+              "ikarma",
+              "Apple"
+            ],
+            "paper_count": 0,
+            "repo_count": 19,
+            "github_star_delta": 500,
+            "method_mentions": 8,
+            "dataset_mentions": 0,
+            "institution_mentions": 27
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Agents:2026-06-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "AI Coding",
+      "magnitude": 6.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "AI Coding",
+          "title": "AI Coding 出现强趋势震荡",
+          "magnitude": 6.0,
+          "severity_label": "强趋势震荡",
+          "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=6.0，burst=6.283，growth_rate=-0.95，z_score=-2.955，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 6 个",
+            "24h star 增量 181",
+            "方法提及：MCP",
+            "机构集中：OpenAI, eli-labz, Anthropic"
+          ],
+          "metrics": {
+            "current_1h_count": 6,
+            "current_24h_count": 6,
+            "current_72h_count": 6,
+            "current_7d_count": 6,
+            "baseline_daily_avg_30d": 138.514,
+            "baseline_daily_std_30d": 43.85,
+            "baseline_72h_avg_30d": 415.543,
+            "growth_rate": -0.95,
+            "z_score": -2.955,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 5.901,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.167,
+            "institution_signal_score": 0.4,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 6,
+            "github_star_delta": 181,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 9,
+            "burst_score": 6.283,
+            "low_history_confidence": false,
+            "magnitude": 6.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "eli-labz/Godcoder",
+              "source_url": "https://github.com/eli-labz/Godcoder",
+              "published_at": "2026-06-27T00:56:36Z",
+              "match_score": 0.75,
+              "matched_keywords": [
+                "ai coding",
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "iart-ai/motion-skills",
+              "source_url": "https://github.com/iart-ai/motion-skills",
+              "published_at": "2026-06-22T12:40:08Z",
+              "match_score": 0.75,
+              "matched_keywords": [
+                "ai coding",
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "gamedev-skills/awesome-gamedev-agent-skills",
+              "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+              "published_at": "2026-06-24T07:18:39Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "ai coding"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "y-times-y/y",
+              "source_url": "https://github.com/y-times-y/y",
+              "published_at": "2026-06-23T16:01:44Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ikarma/claude-mythos-ai-anthropic-desktop-app",
+              "source_url": "https://github.com/ikarma/claude-mythos-ai-anthropic-desktop-app",
+              "published_at": "2026-06-23T17:25:43Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "YurunChen/repo-docs-skills",
+              "source_url": "https://github.com/YurunChen/repo-docs-skills",
+              "published_at": "2026-06-23T05:44:10Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/YurunChen/repo-docs-skills",
+            "https://github.com/eli-labz/Godcoder",
+            "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+            "https://github.com/iart-ai/motion-skills",
+            "https://github.com/ikarma/claude-mythos-ai-anthropic-desktop-app",
+            "https://github.com/y-times-y/y"
+          ],
+          "related_methods": [
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "OpenAI",
+            "eli-labz",
+            "Anthropic",
+            "ikarma",
+            "ByteDance",
+            "iart-ai",
+            "YurunChen",
+            "gamedev-skills"
+          ],
+          "suggested_watch_keywords": [
+            "agent",
+            "coding",
+            "your",
+            "open-source",
+            "llm",
+            "code",
+            "claude",
+            "project"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:AI Coding:2026-06-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"eli-labz/Godcoder\", \"source_url\": \"https://github.com/eli-labz/Godcoder\", \"published_at\": \"2026-06-27T00:56:36Z\", \"match_score\": 0.75, \"matched_keywords\": [\"ai coding\", \"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"iart-ai/motion-skills\", \"source_url\": \"https://github.com/iart-ai/motion-skills\", \"published_at\": \"2026-06-22T12:40:08Z\", \"match_score\": 0.75, \"matched_keywords\": [\"ai coding\", \"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gamedev-skills/awesome-gamedev-agent-skills\", \"source_url\": \"https://github.com/gamedev-skills/awesome-gamedev-agent-skills\", \"published_at\": \"2026-06-24T07:18:39Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"y-times-y/y\", \"source_url\": \"https://github.com/y-times-y/y\", \"published_at\": \"2026-06-23T16:01:44Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ikarma/claude-mythos-ai-anthropic-desktop-app\", \"source_url\": \"https://github.com/ikarma/claude-mythos-ai-anthropic-desktop-app\", \"published_at\": \"2026-06-23T17:25:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YurunChen/repo-docs-skills\", \"source_url\": \"https://github.com/YurunChen/repo-docs-skills\", \"published_at\": \"2026-06-23T05:44:10Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括eli-labz/Godcoder、iart-ai/motion-skills、gamedev-skills/awesome-gamedev-agent-skills、y-times-y/y、ikarma/claude-mythos-ai-anthropic-desktop-app等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 181，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、eli-labz、Anthropic、ikarma、ByteDance、iart-ai、YurunChen、gamedev-skills，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、coding、your、open-source、llm、code、claude、project等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向MCP、agent、coding、your、open-source、llm等线索，代表条目包括eli-labz/Godcoder、iart-ai/motion-skills、gamedev-skills/awesome-gamedev-agent-skills、y-times-y/y，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 181，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及OpenAI、eli-labz、Anthropic、ikarma、ByteDance、iart-ai，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察agent、coding、your、open-source、llm、code、claude、project是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "eli-labz/Godcoder",
+                "url": "https://github.com/eli-labz/Godcoder",
+                "source": "github",
+                "reason": "命中 ai coding、coding agent，匹配分 0.75，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "iart-ai/motion-skills",
+                "url": "https://github.com/iart-ai/motion-skills",
+                "source": "github",
+                "reason": "命中 ai coding、coding agent，匹配分 0.75，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "gamedev-skills/awesome-gamedev-agent-skills",
+                "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+                "source": "github",
+                "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "y-times-y/y",
+                "url": "https://github.com/y-times-y/y",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ikarma/claude-mythos-ai-anthropic-desktop-app",
+                "url": "https://github.com/ikarma/claude-mythos-ai-anthropic-desktop-app",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "YurunChen/repo-docs-skills",
+                "url": "https://github.com/YurunChen/repo-docs-skills",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "eli-labz/Godcoder",
+              "source_url": "https://github.com/eli-labz/Godcoder",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.75,
+              "matched_terms": [
+                "ai coding",
+                "coding agent"
+              ],
+              "why_included": "命中 ai coding、coding agent，匹配分 0.75，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "iart-ai/motion-skills",
+              "source_url": "https://github.com/iart-ai/motion-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.75,
+              "matched_terms": [
+                "ai coding",
+                "coding agent"
+              ],
+              "why_included": "命中 ai coding、coding agent，匹配分 0.75，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "gamedev-skills/awesome-gamedev-agent-skills",
+              "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "ai coding"
+              ],
+              "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "y-times-y/y",
+              "source_url": "https://github.com/y-times-y/y",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ikarma/claude-mythos-ai-anthropic-desktop-app",
+              "source_url": "https://github.com/ikarma/claude-mythos-ai-anthropic-desktop-app",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "YurunChen/repo-docs-skills",
+              "source_url": "https://github.com/YurunChen/repo-docs-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 6 个。",
+            "focus_terms": [
+              "MCP",
+              "agent",
+              "coding",
+              "your",
+              "open-source",
+              "llm",
+              "code",
+              "claude"
+            ],
+            "representative_titles": [
+              "eli-labz/Godcoder",
+              "iart-ai/motion-skills",
+              "gamedev-skills/awesome-gamedev-agent-skills",
+              "y-times-y/y",
+              "ikarma/claude-mythos-ai-anthropic-desktop-app"
+            ],
+            "related_institutions": [
+              "OpenAI",
+              "eli-labz",
+              "Anthropic",
+              "ikarma",
+              "ByteDance",
+              "iart-ai",
+              "YurunChen",
+              "gamedev-skills"
+            ],
+            "paper_count": 0,
+            "repo_count": 6,
+            "github_star_delta": 181,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 9
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:AI Coding:2026-06-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "RAG",
+      "magnitude": 6.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "RAG",
+          "title": "RAG 出现强趋势震荡",
+          "magnitude": 6.0,
+          "severity_label": "强趋势震荡",
+          "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=6.0，burst=5.729，growth_rate=-0.952，z_score=-13.669，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 8 个",
+            "24h star 增量 132",
+            "方法提及：RAG, ReAct",
+            "机构集中：OpenAI, Reyzowter, Aliu-AiRobot"
+          ],
+          "metrics": {
+            "current_1h_count": 8,
+            "current_24h_count": 8,
+            "current_72h_count": 8,
+            "current_7d_count": 8,
+            "baseline_daily_avg_30d": 186.514,
+            "baseline_daily_std_30d": 12.06,
+            "baseline_72h_avg_30d": 559.543,
+            "growth_rate": -0.952,
+            "z_score": -13.669,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.463,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.5,
+            "institution_signal_score": 1.354,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 1.266,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 8,
+            "github_star_delta": 132,
+            "method_mentions": 9,
+            "dataset_mentions": 0,
+            "institution_mentions": 13,
+            "burst_score": 5.729,
+            "low_history_confidence": false,
+            "magnitude": 6.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ruvnet/rupixel",
+              "source_url": "https://github.com/ruvnet/rupixel",
+              "published_at": "2026-06-25T20:17:50Z",
+              "match_score": 0.63,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "published_at": "2026-06-23T17:09:31Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Aliu-AiRobot/ESEILANE",
+              "source_url": "https://github.com/Aliu-AiRobot/ESEILANE",
+              "published_at": "2026-06-28T19:14:42Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "hirokawaguchi/open-genai",
+              "source_url": "https://github.com/hirokawaguchi/open-genai",
+              "published_at": "2026-06-26T22:52:08Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "OvOhao/auto-paper-collecter",
+              "source_url": "https://github.com/OvOhao/auto-paper-collecter",
+              "published_at": "2026-06-25T06:10:54Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "qataruts/monlite",
+              "source_url": "https://github.com/qataruts/monlite",
+              "published_at": "2026-06-26T15:04:14Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "janderswag/legal-document-chat",
+              "source_url": "https://github.com/janderswag/legal-document-chat",
+              "published_at": "2026-06-22T01:45:06Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Kelsus/kelsus-oss-ai-ref-arch",
+              "source_url": "https://github.com/Kelsus/kelsus-oss-ai-ref-arch",
+              "published_at": "2026-06-24T19:10:50Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Aliu-AiRobot/ESEILANE",
+            "https://github.com/Kelsus/kelsus-oss-ai-ref-arch",
+            "https://github.com/OvOhao/auto-paper-collecter",
+            "https://github.com/Reyzowter/Hello-Agents",
+            "https://github.com/hirokawaguchi/open-genai",
+            "https://github.com/janderswag/legal-document-chat",
+            "https://github.com/qataruts/monlite",
+            "https://github.com/ruvnet/rupixel"
+          ],
+          "related_methods": [
+            "RAG",
+            "ReAct"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "OpenAI",
+            "Reyzowter",
+            "Aliu-AiRobot",
+            "hirokawaguchi",
+            "OvOhao",
+            "ruvnet",
+            "qataruts",
+            "janderswag"
+          ],
+          "suggested_watch_keywords": [
+            "llm",
+            "rag",
+            "self-hosted",
+            "document",
+            "applications",
+            "langchain",
+            "openai",
+            "llms"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:RAG:2026-06-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/rupixel\", \"source_url\": \"https://github.com/ruvnet/rupixel\", \"published_at\": \"2026-06-25T20:17:50Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Reyzowter/Hello-Agents\", \"source_url\": \"https://github.com/Reyzowter/Hello-Agents\", \"published_at\": \"2026-06-23T17:09:31Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Aliu-AiRobot/ESEILANE\", \"source_url\": \"https://github.com/Aliu-AiRobot/ESEILANE\", \"published_at\": \"2026-06-28T19:14:42Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hirokawaguchi/open-genai\", \"source_url\": \"https://github.com/hirokawaguchi/open-genai\", \"published_at\": \"2026-06-26T22:52:08Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OvOhao/auto-paper-collecter\", \"source_url\": \"https://github.com/OvOhao/auto-paper-collecter\", \"published_at\": \"2026-06-25T06:10:54Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"qataruts/monlite\", \"source_url\": \"https://github.com/qataruts/monlite\", \"published_at\": \"2026-06-26T15:04:14Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"janderswag/legal-document-chat\", \"source_url\": \"https://github.com/janderswag/legal-document-chat\", \"published_at\": \"2026-06-22T01:45:06Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Kelsus/kelsus-oss-ai-ref-arch\", \"source_url\": \"https://github.com/Kelsus/kelsus-oss-ai-ref-arch\", \"published_at\": \"2026-06-24T19:10:50Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括ruvnet/rupixel、Reyzowter/Hello-Agents、Aliu-AiRobot/ESEILANE、hirokawaguchi/open-genai、OvOhao/auto-paper-collecter等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 132，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、Reyzowter、Aliu-AiRobot、hirokawaguchi、OvOhao、ruvnet、qataruts、janderswag，累计提及 13 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察llm、rag、self-hosted、document、applications、langchain、openai、llms等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、ReAct、llm、self-hosted、document、applications等线索，代表条目包括ruvnet/rupixel、Reyzowter/Hello-Agents、Aliu-AiRobot/ESEILANE、hirokawaguchi/open-genai，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 132，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 9 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及OpenAI、Reyzowter、Aliu-AiRobot、hirokawaguchi、OvOhao、ruvnet，累计提及 13 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察llm、rag、self-hosted、document、applications、langchain、openai、llms是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "ruvnet/rupixel",
+                "url": "https://github.com/ruvnet/rupixel",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Reyzowter/Hello-Agents",
+                "url": "https://github.com/Reyzowter/Hello-Agents",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Aliu-AiRobot/ESEILANE",
+                "url": "https://github.com/Aliu-AiRobot/ESEILANE",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "hirokawaguchi/open-genai",
+                "url": "https://github.com/hirokawaguchi/open-genai",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "OvOhao/auto-paper-collecter",
+                "url": "https://github.com/OvOhao/auto-paper-collecter",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "qataruts/monlite",
+                "url": "https://github.com/qataruts/monlite",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "janderswag/legal-document-chat",
+                "url": "https://github.com/janderswag/legal-document-chat",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Kelsus/kelsus-oss-ai-ref-arch",
+                "url": "https://github.com/Kelsus/kelsus-oss-ai-ref-arch",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "ruvnet/rupixel",
+              "source_url": "https://github.com/ruvnet/rupixel",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.63,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Aliu-AiRobot/ESEILANE",
+              "source_url": "https://github.com/Aliu-AiRobot/ESEILANE",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "hirokawaguchi/open-genai",
+              "source_url": "https://github.com/hirokawaguchi/open-genai",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "OvOhao/auto-paper-collecter",
+              "source_url": "https://github.com/OvOhao/auto-paper-collecter",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "qataruts/monlite",
+              "source_url": "https://github.com/qataruts/monlite",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "janderswag/legal-document-chat",
+              "source_url": "https://github.com/janderswag/legal-document-chat",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Kelsus/kelsus-oss-ai-ref-arch",
+              "source_url": "https://github.com/Kelsus/kelsus-oss-ai-ref-arch",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
+            "focus_terms": [
+              "RAG",
+              "ReAct",
+              "llm",
+              "self-hosted",
+              "document",
+              "applications",
+              "langchain",
+              "openai"
+            ],
+            "representative_titles": [
+              "ruvnet/rupixel",
+              "Reyzowter/Hello-Agents",
+              "Aliu-AiRobot/ESEILANE",
+              "hirokawaguchi/open-genai",
+              "OvOhao/auto-paper-collecter"
+            ],
+            "related_institutions": [
+              "OpenAI",
+              "Reyzowter",
+              "Aliu-AiRobot",
+              "hirokawaguchi",
+              "OvOhao",
+              "ruvnet",
+              "qataruts",
+              "janderswag"
+            ],
+            "paper_count": 0,
+            "repo_count": 8,
+            "github_star_delta": 132,
+            "method_mentions": 9,
+            "dataset_mentions": 0,
+            "institution_mentions": 13
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:RAG:2026-06-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Model Context Protocol",
+      "magnitude": 6.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Model Context Protocol",
+          "title": "Model Context Protocol 出现强趋势震荡",
+          "magnitude": 6.0,
+          "severity_label": "强趋势震荡",
+          "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 14 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=6.0，burst=5.962，growth_rate=-0.943，z_score=-5.735，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 14 个",
+            "24h star 增量 369",
+            "方法提及：MCP, RAG",
+            "机构集中：OpenAI, benchflow-ai, eli-labz"
+          ],
+          "metrics": {
+            "current_1h_count": 14,
+            "current_24h_count": 14,
+            "current_72h_count": 14,
+            "current_7d_count": 14,
+            "baseline_daily_avg_30d": 264.457,
+            "baseline_daily_std_30d": 42.674,
+            "baseline_72h_avg_30d": 793.371,
+            "growth_rate": -0.943,
+            "z_score": -5.735,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.976,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.143,
+            "institution_signal_score": 0.435,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.985,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 14,
+            "github_star_delta": 369,
+            "method_mentions": 5,
+            "dataset_mentions": 0,
+            "institution_mentions": 19,
+            "burst_score": 5.962,
+            "low_history_confidence": false,
+            "magnitude": 6.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lightbearco/tupper",
+              "source_url": "https://github.com/lightbearco/tupper",
+              "published_at": "2026-06-23T18:07:33Z",
+              "match_score": 0.537,
+              "matched_keywords": [
+                "MCP"
+              ],
+              "matched_methods": [
+                "MCP"
+              ],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "winsznx/theeleven",
+              "source_url": "https://github.com/winsznx/theeleven",
+              "published_at": "2026-06-25T07:42:50Z",
+              "match_score": 0.537,
+              "matched_keywords": [
+                "MCP"
+              ],
+              "matched_methods": [
+                "MCP"
+              ],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "eli-labz/Godcoder",
+              "source_url": "https://github.com/eli-labz/Godcoder",
+              "published_at": "2026-06-27T00:56:36Z",
+              "match_score": 0.46,
+              "matched_keywords": [
+                "MCP"
+              ],
+              "matched_methods": [
+                "MCP"
+              ],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "published_at": "2026-06-24T08:10:33Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "published_at": "2026-06-23T17:09:31Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "QwenLM/Qwen-AgentWorld",
+              "source_url": "https://github.com/QwenLM/Qwen-AgentWorld",
+              "published_at": "2026-06-22T13:48:37Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "HKUDS/AgentSpace",
+              "source_url": "https://github.com/HKUDS/AgentSpace",
+              "published_at": "2026-06-22T04:08:03Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "amplifthq/opentag",
+              "source_url": "https://github.com/amplifthq/opentag",
+              "published_at": "2026-06-24T08:05:12Z",
+              "match_score": 0.077,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/HKUDS/AgentSpace",
+            "https://github.com/QwenLM/Qwen-AgentWorld",
+            "https://github.com/Reyzowter/Hello-Agents",
+            "https://github.com/YurunChen/repo-docs-skills",
+            "https://github.com/amplifthq/opentag",
+            "https://github.com/benchflow-ai/awesome-evals",
+            "https://github.com/eli-labz/Godcoder",
+            "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+            "https://github.com/iart-ai/motion-skills",
+            "https://github.com/lightbearco/tupper",
+            "https://github.com/qataruts/monlite",
+            "https://github.com/vancyland/DataClaw0",
+            "https://github.com/winsznx/theeleven",
+            "https://github.com/y-times-y/y"
+          ],
+          "related_methods": [
+            "MCP",
+            "RAG"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "OpenAI",
+            "benchflow-ai",
+            "eli-labz",
+            "Reyzowter",
+            "Apple",
+            "lightbearco",
+            "winsznx",
+            "Alibaba"
+          ],
+          "suggested_watch_keywords": [
+            "agents",
+            "agent",
+            "coding",
+            "code",
+            "your",
+            "open-source",
+            "ai-agents",
+            "codex"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Model Context Protocol:2026-06-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lightbearco/tupper\", \"source_url\": \"https://github.com/lightbearco/tupper\", \"published_at\": \"2026-06-23T18:07:33Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"winsznx/theeleven\", \"source_url\": \"https://github.com/winsznx/theeleven\", \"published_at\": \"2026-06-25T07:42:50Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"eli-labz/Godcoder\", \"source_url\": \"https://github.com/eli-labz/Godcoder\", \"published_at\": \"2026-06-27T00:56:36Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchflow-ai/awesome-evals\", \"source_url\": \"https://github.com/benchflow-ai/awesome-evals\", \"published_at\": \"2026-06-24T08:10:33Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Reyzowter/Hello-Agents\", \"source_url\": \"https://github.com/Reyzowter/Hello-Agents\", \"published_at\": \"2026-06-23T17:09:31Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QwenLM/Qwen-AgentWorld\", \"source_url\": \"https://github.com/QwenLM/Qwen-AgentWorld\", \"published_at\": \"2026-06-22T13:48:37Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"HKUDS/AgentSpace\", \"source_url\": \"https://github.com/HKUDS/AgentSpace\", \"published_at\": \"2026-06-22T04:08:03Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amplifthq/opentag\", \"source_url\": \"https://github.com/amplifthq/opentag\", \"published_at\": \"2026-06-24T08:05:12Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 14 个。代表性目标包括lightbearco/tupper、winsznx/theeleven、eli-labz/Godcoder、benchflow-ai/awesome-evals、Reyzowter/Hello-Agents等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 369，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、benchflow-ai、eli-labz、Reyzowter、Apple、lightbearco、winsznx、Alibaba，累计提及 19 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、coding、code、your、open-source、ai-agents、codex等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 14 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、agent、coding、code等线索，代表条目包括lightbearco/tupper、winsznx/theeleven、eli-labz/Godcoder、benchflow-ai/awesome-evals，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 14 个 GitHub 项目，24 小时 star 增量约 369，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 5 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及OpenAI、benchflow-ai、eli-labz、Reyzowter、Apple、lightbearco，累计提及 19 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察agents、agent、coding、code、your、open-source、ai-agents、codex是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "lightbearco/tupper",
+                "url": "https://github.com/lightbearco/tupper",
+                "source": "github",
+                "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "winsznx/theeleven",
+                "url": "https://github.com/winsznx/theeleven",
+                "source": "github",
+                "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "eli-labz/Godcoder",
+                "url": "https://github.com/eli-labz/Godcoder",
+                "source": "github",
+                "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "benchflow-ai/awesome-evals",
+                "url": "https://github.com/benchflow-ai/awesome-evals",
+                "source": "github",
+                "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Reyzowter/Hello-Agents",
+                "url": "https://github.com/Reyzowter/Hello-Agents",
+                "source": "github",
+                "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "QwenLM/Qwen-AgentWorld",
+                "url": "https://github.com/QwenLM/Qwen-AgentWorld",
+                "source": "github",
+                "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "HKUDS/AgentSpace",
+                "url": "https://github.com/HKUDS/AgentSpace",
+                "source": "github",
+                "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "amplifthq/opentag",
+                "url": "https://github.com/amplifthq/opentag",
+                "source": "github",
+                "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "YurunChen/repo-docs-skills",
+                "url": "https://github.com/YurunChen/repo-docs-skills",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              },
+              {
+                "title": "gamedev-skills/awesome-gamedev-agent-skills",
+                "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "lightbearco/tupper",
+              "source_url": "https://github.com/lightbearco/tupper",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.537,
+              "matched_terms": [
+                "MCP"
+              ],
+              "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "winsznx/theeleven",
+              "source_url": "https://github.com/winsznx/theeleven",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.537,
+              "matched_terms": [
+                "MCP"
+              ],
+              "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "eli-labz/Godcoder",
+              "source_url": "https://github.com/eli-labz/Godcoder",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.46,
+              "matched_terms": [
+                "MCP"
+              ],
+              "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.077,
+              "matched_terms": [],
+              "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Reyzowter/Hello-Agents",
+              "source_url": "https://github.com/Reyzowter/Hello-Agents",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.077,
+              "matched_terms": [],
+              "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "QwenLM/Qwen-AgentWorld",
+              "source_url": "https://github.com/QwenLM/Qwen-AgentWorld",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.077,
+              "matched_terms": [],
+              "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "HKUDS/AgentSpace",
+              "source_url": "https://github.com/HKUDS/AgentSpace",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.077,
+              "matched_terms": [],
+              "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "amplifthq/opentag",
+              "source_url": "https://github.com/amplifthq/opentag",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.077,
+              "matched_terms": [],
+              "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 14 个。",
+            "focus_terms": [
+              "MCP",
+              "RAG",
+              "agents",
+              "agent",
+              "coding",
+              "code",
+              "your",
+              "open-source"
+            ],
+            "representative_titles": [
+              "lightbearco/tupper",
+              "winsznx/theeleven",
+              "eli-labz/Godcoder",
+              "benchflow-ai/awesome-evals",
+              "Reyzowter/Hello-Agents"
+            ],
+            "related_institutions": [
+              "OpenAI",
+              "benchflow-ai",
+              "eli-labz",
+              "Reyzowter",
+              "Apple",
+              "lightbearco",
+              "winsznx",
+              "Alibaba"
+            ],
+            "paper_count": 0,
+            "repo_count": 14,
+            "github_star_delta": 369,
+            "method_mentions": 5,
+            "dataset_mentions": 0,
+            "institution_mentions": 19
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Model Context Protocol:2026-06-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Reinforcement Learning",
+      "magnitude": 5.61,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Reinforcement Learning",
+          "title": "Reinforcement Learning 出现强趋势震荡",
+          "magnitude": 5.61,
+          "severity_label": "强趋势震荡",
+          "summary": "Reinforcement Learning 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.61，burst=4.496，growth_rate=-0.958，z_score=-3.781，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 1 个",
+            "24h star 增量 31",
+            "机构集中：benchflow-ai"
+          ],
+          "metrics": {
+            "current_1h_count": 1,
+            "current_24h_count": 1,
+            "current_72h_count": 1,
+            "current_7d_count": 1,
+            "baseline_daily_avg_30d": 46.588,
+            "baseline_daily_std_30d": 11.056,
+            "baseline_72h_avg_30d": 139.765,
+            "growth_rate": -0.958,
+            "z_score": -3.781,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.496,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 1.0,
+            "institution_signal_score": 1.099,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 31,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 1,
+            "burst_score": 4.496,
+            "low_history_confidence": false,
+            "magnitude": 5.61
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "published_at": "2026-06-24T08:10:33Z",
+              "match_score": 0.6,
+              "matched_keywords": [
+                "RL",
+                "rl"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/benchflow-ai/awesome-evals"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "benchflow-ai"
+          ],
+          "suggested_watch_keywords": [
+            "benchmarks",
+            "benchflow-ai",
+            "awesome-evals",
+            "curated",
+            "non-bs",
+            "library",
+            "best",
+            "resources"
+          ],
+          "confidence": 0.43,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Reinforcement Learning:2026-06-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchflow-ai/awesome-evals\", \"source_url\": \"https://github.com/benchflow-ai/awesome-evals\", \"published_at\": \"2026-06-24T08:10:33Z\", \"match_score\": 0.6, \"matched_keywords\": [\"RL\", \"rl\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括benchflow-ai/awesome-evals等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 31，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及benchflow-ai，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察benchmarks、benchflow-ai、awesome-evals、curated、non-bs、library、best、resources等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
+          "signal_takeaways": [
+            "总体判断：Reinforcement Learning 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“强趋势震荡”（M5.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向benchmarks、benchflow-ai、awesome-evals、curated、non-bs、library等线索，代表条目包括benchflow-ai/awesome-evals，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 31，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及benchflow-ai，累计提及 1 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察benchmarks、benchflow-ai、awesome-evals、curated、non-bs、library、best、resources是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "benchflow-ai/awesome-evals",
+                "url": "https://github.com/benchflow-ai/awesome-evals",
+                "source": "github",
+                "reason": "命中 RL，匹配分 0.6，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.6,
+              "matched_terms": [
+                "RL"
+              ],
+              "why_included": "命中 RL，匹配分 0.6，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 1 个。",
+            "focus_terms": [
+              "benchmarks",
+              "benchflow-ai",
+              "awesome-evals",
+              "curated",
+              "non-bs",
+              "library",
+              "best",
+              "resources"
+            ],
+            "representative_titles": [
+              "benchflow-ai/awesome-evals"
+            ],
+            "related_institutions": [
+              "benchflow-ai"
+            ],
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 31,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 1
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Reinforcement Learning:2026-06-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Evaluation",
+      "magnitude": 5.61,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Evaluation",
+          "title": "Evaluation 出现强趋势震荡",
+          "magnitude": 5.61,
+          "severity_label": "强趋势震荡",
+          "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.61，burst=4.496，growth_rate=-0.939，z_score=-1.834，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 1 个",
+            "24h star 增量 31",
+            "机构集中：benchflow-ai"
+          ],
+          "metrics": {
+            "current_1h_count": 1,
+            "current_24h_count": 1,
+            "current_72h_count": 1,
+            "current_7d_count": 1,
+            "baseline_daily_avg_30d": 31.579,
+            "baseline_daily_std_30d": 15.675,
+            "baseline_72h_avg_30d": 94.737,
+            "growth_rate": -0.939,
+            "z_score": -1.834,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.496,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 1.0,
+            "institution_signal_score": 1.099,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 31,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 1,
+            "burst_score": 4.496,
+            "low_history_confidence": false,
+            "magnitude": 5.61
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "published_at": "2026-06-24T08:10:33Z",
+              "match_score": 0.6,
+              "matched_keywords": [
+                "evals",
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/benchflow-ai/awesome-evals"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "benchflow-ai"
+          ],
+          "suggested_watch_keywords": [
+            "benchmarks",
+            "benchflow-ai",
+            "awesome-evals",
+            "curated",
+            "non-bs",
+            "library",
+            "best",
+            "resources"
+          ],
+          "confidence": 0.43,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Evaluation:2026-06-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchflow-ai/awesome-evals\", \"source_url\": \"https://github.com/benchflow-ai/awesome-evals\", \"published_at\": \"2026-06-24T08:10:33Z\", \"match_score\": 0.6, \"matched_keywords\": [\"evals\", \"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括benchflow-ai/awesome-evals等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 31，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及benchflow-ai，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察benchmarks、benchflow-ai、awesome-evals、curated、non-bs、library、best、resources等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
+          "signal_takeaways": [
+            "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“强趋势震荡”（M5.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向benchmarks、benchflow-ai、awesome-evals、curated、non-bs、library等线索，代表条目包括benchflow-ai/awesome-evals，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 31，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及benchflow-ai，累计提及 1 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察benchmarks、benchflow-ai、awesome-evals、curated、non-bs、library、best、resources是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "benchflow-ai/awesome-evals",
+                "url": "https://github.com/benchflow-ai/awesome-evals",
+                "source": "github",
+                "reason": "命中 evals、evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "benchflow-ai/awesome-evals",
+              "source_url": "https://github.com/benchflow-ai/awesome-evals",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.6,
+              "matched_terms": [
+                "evals",
+                "evaluation"
+              ],
+              "why_included": "命中 evals、evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 1 个。",
+            "focus_terms": [
+              "benchmarks",
+              "benchflow-ai",
+              "awesome-evals",
+              "curated",
+              "non-bs",
+              "library",
+              "best",
+              "resources"
+            ],
+            "representative_titles": [
+              "benchflow-ai/awesome-evals"
+            ],
+            "related_institutions": [
+              "benchflow-ai"
+            ],
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 31,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 1
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Evaluation:2026-06-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "World Model",
+      "magnitude": 4.29,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "World Model",
+          "title": "World Model 出现疑似爆发",
+          "magnitude": 4.29,
+          "severity_label": "疑似爆发",
+          "summary": "World Model 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.29，burst=3.476，growth_rate=-0.948，z_score=-6.129，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 4 个",
+            "24h star 增量 47",
+            "方法提及：VLA",
+            "机构集中：Alibaba, QwenLM, nicklashansen"
+          ],
+          "metrics": {
+            "current_1h_count": 4,
+            "current_24h_count": 4,
+            "current_72h_count": 4,
+            "current_7d_count": 4,
+            "baseline_daily_avg_30d": 94.667,
+            "baseline_daily_std_30d": 13.792,
+            "baseline_72h_avg_30d": 284.0,
+            "growth_rate": -0.948,
+            "z_score": -6.129,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.095,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.25,
+            "institution_signal_score": 0.486,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 47,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 5,
+            "burst_score": 3.476,
+            "low_history_confidence": false,
+            "magnitude": 4.29
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "nicklashansen/mmbench2",
+              "source_url": "https://github.com/nicklashansen/mmbench2",
+              "published_at": "2026-06-25T17:30:13Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "world models"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "QwenLM/Qwen-AgentWorld",
+              "source_url": "https://github.com/QwenLM/Qwen-AgentWorld",
+              "published_at": "2026-06-22T13:48:37Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "world models"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "published_at": "2026-06-23T00:14:44Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "SyrNitram/recon-ground-drone",
+              "source_url": "https://github.com/SyrNitram/recon-ground-drone",
+              "published_at": "2026-06-23T22:19:40Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/QwenLM/Qwen-AgentWorld",
+            "https://github.com/SyrNitram/recon-ground-drone",
+            "https://github.com/insight-vla/insight",
+            "https://github.com/nicklashansen/mmbench2"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "Alibaba",
+            "QwenLM",
+            "nicklashansen",
+            "insight-vla",
+            "SyrNitram"
+          ],
+          "suggested_watch_keywords": [
+            "world",
+            "code",
+            "robotics",
+            "qwen-agentworld",
+            "qwenlm",
+            "general",
+            "agents",
+            "qwenlm qwen-agentworld"
+          ],
+          "confidence": 0.61,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:World Model:2026-06-29:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"nicklashansen/mmbench2\", \"source_url\": \"https://github.com/nicklashansen/mmbench2\", \"published_at\": \"2026-06-25T17:30:13Z\", \"match_score\": 0.417, \"matched_keywords\": [\"world models\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QwenLM/Qwen-AgentWorld\", \"source_url\": \"https://github.com/QwenLM/Qwen-AgentWorld\", \"published_at\": \"2026-06-22T13:48:37Z\", \"match_score\": 0.333, \"matched_keywords\": [\"world models\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"insight-vla/insight\", \"source_url\": \"https://github.com/insight-vla/insight\", \"published_at\": \"2026-06-23T00:14:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SyrNitram/recon-ground-drone\", \"source_url\": \"https://github.com/SyrNitram/recon-ground-drone\", \"published_at\": \"2026-06-23T22:19:40Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「World Model」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.3）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括nicklashansen/mmbench2、QwenLM/Qwen-AgentWorld、insight-vla/insight、SyrNitram/recon-ground-drone等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 47，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Alibaba、QwenLM、nicklashansen、insight-vla、SyrNitram，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察world、code、robotics、qwen-agentworld、qwenlm、general、agents、qwenlm qwen-agentworld等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+          "signal_takeaways": [
+            "总体判断：World Model 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.3）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、world、code、robotics、qwen-agentworld、qwenlm等线索，代表条目包括nicklashansen/mmbench2、QwenLM/Qwen-AgentWorld、insight-vla/insight、SyrNitram/recon-ground-drone，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 47，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及Alibaba、QwenLM、nicklashansen、insight-vla、SyrNitram，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察world、code、robotics、qwen-agentworld、qwenlm、general、agents、qwenlm qwen-agentworld是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "nicklashansen/mmbench2",
+                "url": "https://github.com/nicklashansen/mmbench2",
+                "source": "github",
+                "reason": "命中 world models，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "QwenLM/Qwen-AgentWorld",
+                "url": "https://github.com/QwenLM/Qwen-AgentWorld",
+                "source": "github",
+                "reason": "命中 world models，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "insight-vla/insight",
+                "url": "https://github.com/insight-vla/insight",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "SyrNitram/recon-ground-drone",
+                "url": "https://github.com/SyrNitram/recon-ground-drone",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "nicklashansen/mmbench2",
+              "source_url": "https://github.com/nicklashansen/mmbench2",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "world models"
+              ],
+              "why_included": "命中 world models，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "QwenLM/Qwen-AgentWorld",
+              "source_url": "https://github.com/QwenLM/Qwen-AgentWorld",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "world models"
+              ],
+              "why_included": "命中 world models，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "SyrNitram/recon-ground-drone",
+              "source_url": "https://github.com/SyrNitram/recon-ground-drone",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+            "focus_terms": [
+              "VLA",
+              "world",
+              "code",
+              "robotics",
+              "qwen-agentworld",
+              "qwenlm",
+              "general",
+              "agents"
+            ],
+            "representative_titles": [
+              "nicklashansen/mmbench2",
+              "QwenLM/Qwen-AgentWorld",
+              "insight-vla/insight",
+              "SyrNitram/recon-ground-drone"
+            ],
+            "related_institutions": [
+              "Alibaba",
+              "QwenLM",
+              "nicklashansen",
+              "insight-vla",
+              "SyrNitram"
+            ],
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 47,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 5
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:World Model:2026-06-29:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Multimodal",
+      "magnitude": 4.12,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Multimodal",
+          "title": "Multimodal 出现疑似爆发",
+          "magnitude": 4.12,
+          "severity_label": "疑似爆发",
+          "summary": "Multimodal 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.12，burst=3.328，growth_rate=-0.918，z_score=-2.781，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 4",
+            "方法提及：RAG, VLA",
+            "机构集中：ruvnet, insight-vla, vancyland"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 48.0,
+            "baseline_daily_std_30d": 15.179,
+            "baseline_72h_avg_30d": 144.0,
+            "growth_rate": -0.918,
+            "z_score": -2.781,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.724,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.536,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 4,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 3.328,
+            "low_history_confidence": false,
+            "magnitude": 4.12
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "vancyland/DataClaw0",
+              "source_url": "https://github.com/vancyland/DataClaw0",
+              "published_at": "2026-06-23T07:11:55Z",
+              "match_score": 0.627,
+              "matched_keywords": [
+                "VLM",
+                "multimodal"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ruvnet/rupixel",
+              "source_url": "https://github.com/ruvnet/rupixel",
+              "published_at": "2026-06-25T20:17:50Z",
+              "match_score": 0.313,
+              "matched_keywords": [
+                "multimodal"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "published_at": "2026-06-23T00:14:44Z",
+              "match_score": 0.313,
+              "matched_keywords": [
+                "VLM"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/insight-vla/insight",
+            "https://github.com/ruvnet/rupixel",
+            "https://github.com/vancyland/DataClaw0"
+          ],
+          "related_methods": [
+            "RAG",
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "ruvnet",
+            "insight-vla",
+            "vancyland"
+          ],
+          "suggested_watch_keywords": [
+            "code",
+            "rust",
+            "rupixel",
+            "visual",
+            "rag",
+            "ruvector",
+            "hnsw",
+            "embeddings"
+          ],
+          "confidence": 0.55,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Multimodal:2026-06-29:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vancyland/DataClaw0\", \"source_url\": \"https://github.com/vancyland/DataClaw0\", \"published_at\": \"2026-06-23T07:11:55Z\", \"match_score\": 0.627, \"matched_keywords\": [\"VLM\", \"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ruvnet/rupixel\", \"source_url\": \"https://github.com/ruvnet/rupixel\", \"published_at\": \"2026-06-25T20:17:50Z\", \"match_score\": 0.313, \"matched_keywords\": [\"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"insight-vla/insight\", \"source_url\": \"https://github.com/insight-vla/insight\", \"published_at\": \"2026-06-23T00:14:44Z\", \"match_score\": 0.313, \"matched_keywords\": [\"VLM\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Multimodal」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.1）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括vancyland/DataClaw0、ruvnet/rupixel、insight-vla/insight等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 4，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、VLA等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及ruvnet、insight-vla、vancyland，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察code、rust、rupixel、visual、rag、ruvector、hnsw、embeddings等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+          "signal_takeaways": [
+            "总体判断：Multimodal 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“疑似爆发”（M4.1）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、VLA、code、rust、rupixel、visual等线索，代表条目包括vancyland/DataClaw0、ruvnet/rupixel、insight-vla/insight，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 4，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及ruvnet、insight-vla、vancyland，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察code、rust、rupixel、visual、rag、ruvector、hnsw、embeddings是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "vancyland/DataClaw0",
+                "url": "https://github.com/vancyland/DataClaw0",
+                "source": "github",
+                "reason": "命中 VLM、multimodal，匹配分 0.627，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ruvnet/rupixel",
+                "url": "https://github.com/ruvnet/rupixel",
+                "source": "github",
+                "reason": "命中 multimodal，匹配分 0.313，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "insight-vla/insight",
+                "url": "https://github.com/insight-vla/insight",
+                "source": "github",
+                "reason": "命中 VLM，匹配分 0.313，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "vancyland/DataClaw0",
+              "source_url": "https://github.com/vancyland/DataClaw0",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.627,
+              "matched_terms": [
+                "VLM",
+                "multimodal"
+              ],
+              "why_included": "命中 VLM、multimodal，匹配分 0.627，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ruvnet/rupixel",
+              "source_url": "https://github.com/ruvnet/rupixel",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.313,
+              "matched_terms": [
+                "multimodal"
+              ],
+              "why_included": "命中 multimodal，匹配分 0.313，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.313,
+              "matched_terms": [
+                "VLM"
+              ],
+              "why_included": "命中 VLM，匹配分 0.313，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "RAG",
+              "VLA",
+              "code",
+              "rust",
+              "rupixel",
+              "visual",
+              "ruvector",
+              "hnsw"
+            ],
+            "representative_titles": [
+              "vancyland/DataClaw0",
+              "ruvnet/rupixel",
+              "insight-vla/insight"
+            ],
+            "related_institutions": [
+              "ruvnet",
+              "insight-vla",
+              "vancyland"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 4,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Multimodal:2026-06-29:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Robotics",
+      "magnitude": 3.64,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Robotics",
+          "title": "Robotics 出现明显异常",
+          "magnitude": 3.64,
+          "severity_label": "明显异常",
+          "summary": "Robotics 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.64，burst=2.72，growth_rate=-0.947，z_score=-4.917，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 5 个",
+            "24h star 增量 8",
+            "方法提及：VLA",
+            "机构集中：nicklashansen, ExistentialRobotics, insight-vla"
+          ],
+          "metrics": {
+            "current_1h_count": 5,
+            "current_24h_count": 5,
+            "current_72h_count": 5,
+            "current_7d_count": 5,
+            "baseline_daily_avg_30d": 112.449,
+            "baseline_daily_std_30d": 20.853,
+            "baseline_72h_avg_30d": 337.348,
+            "growth_rate": -0.947,
+            "z_score": -4.917,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.339,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.2,
+            "institution_signal_score": 0.416,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 8,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 6,
+            "burst_score": 2.72,
+            "low_history_confidence": false,
+            "magnitude": 3.64
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ExistentialRobotics/SERF-mapping",
+              "source_url": "https://github.com/ExistentialRobotics/SERF-mapping",
+              "published_at": "2026-06-23T16:29:32Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "manipulation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DAGroup-PKU/PhysisForcing",
+              "source_url": "https://github.com/DAGroup-PKU/PhysisForcing",
+              "published_at": "2026-06-28T11:11:39Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "manipulation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "nicklashansen/mmbench2",
+              "source_url": "https://github.com/nicklashansen/mmbench2",
+              "published_at": "2026-06-25T17:30:13Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "robotics"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "published_at": "2026-06-23T00:14:44Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "robotics"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "SyrNitram/recon-ground-drone",
+              "source_url": "https://github.com/SyrNitram/recon-ground-drone",
+              "published_at": "2026-06-23T22:19:40Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "robotics"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/DAGroup-PKU/PhysisForcing",
+            "https://github.com/ExistentialRobotics/SERF-mapping",
+            "https://github.com/SyrNitram/recon-ground-drone",
+            "https://github.com/insight-vla/insight",
+            "https://github.com/nicklashansen/mmbench2"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "nicklashansen",
+            "ExistentialRobotics",
+            "insight-vla",
+            "DAGroup-PKU",
+            "Peking University",
+            "SyrNitram"
+          ],
+          "suggested_watch_keywords": [
+            "code",
+            "world",
+            "robotics",
+            "manipulation",
+            "nicklashansen",
+            "mmbench2",
+            "official",
+            "repository"
+          ],
+          "confidence": 0.67,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Robotics:2026-06-29:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ExistentialRobotics/SERF-mapping\", \"source_url\": \"https://github.com/ExistentialRobotics/SERF-mapping\", \"published_at\": \"2026-06-23T16:29:32Z\", \"match_score\": 0.417, \"matched_keywords\": [\"manipulation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DAGroup-PKU/PhysisForcing\", \"source_url\": \"https://github.com/DAGroup-PKU/PhysisForcing\", \"published_at\": \"2026-06-28T11:11:39Z\", \"match_score\": 0.417, \"matched_keywords\": [\"manipulation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"nicklashansen/mmbench2\", \"source_url\": \"https://github.com/nicklashansen/mmbench2\", \"published_at\": \"2026-06-25T17:30:13Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"insight-vla/insight\", \"source_url\": \"https://github.com/insight-vla/insight\", \"published_at\": \"2026-06-23T00:14:44Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SyrNitram/recon-ground-drone\", \"source_url\": \"https://github.com/SyrNitram/recon-ground-drone\", \"published_at\": \"2026-06-23T22:19:40Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括ExistentialRobotics/SERF-mapping、DAGroup-PKU/PhysisForcing、nicklashansen/mmbench2、insight-vla/insight、SyrNitram/recon-ground-drone等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 8，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及nicklashansen、ExistentialRobotics、insight-vla、DAGroup-PKU、Peking University、SyrNitram，累计提及 6 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察code、world、robotics、manipulation、nicklashansen、mmbench2、official、repository等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“明显异常”（M3.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、code、world、robotics、manipulation、nicklashansen等线索，代表条目包括ExistentialRobotics/SERF-mapping、DAGroup-PKU/PhysisForcing、nicklashansen/mmbench2、insight-vla/insight，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 8，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及nicklashansen、ExistentialRobotics、insight-vla、DAGroup-PKU、Peking University、SyrNitram，累计提及 6 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 5 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察code、world、robotics、manipulation、nicklashansen、mmbench2、official、repository是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "ExistentialRobotics/SERF-mapping",
+                "url": "https://github.com/ExistentialRobotics/SERF-mapping",
+                "source": "github",
+                "reason": "命中 manipulation，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "DAGroup-PKU/PhysisForcing",
+                "url": "https://github.com/DAGroup-PKU/PhysisForcing",
+                "source": "github",
+                "reason": "命中 manipulation，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "nicklashansen/mmbench2",
+                "url": "https://github.com/nicklashansen/mmbench2",
+                "source": "github",
+                "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "insight-vla/insight",
+                "url": "https://github.com/insight-vla/insight",
+                "source": "github",
+                "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "SyrNitram/recon-ground-drone",
+                "url": "https://github.com/SyrNitram/recon-ground-drone",
+                "source": "github",
+                "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "ExistentialRobotics/SERF-mapping",
+              "source_url": "https://github.com/ExistentialRobotics/SERF-mapping",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "manipulation"
+              ],
+              "why_included": "命中 manipulation，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "DAGroup-PKU/PhysisForcing",
+              "source_url": "https://github.com/DAGroup-PKU/PhysisForcing",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "manipulation"
+              ],
+              "why_included": "命中 manipulation，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "nicklashansen/mmbench2",
+              "source_url": "https://github.com/nicklashansen/mmbench2",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "robotics"
+              ],
+              "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "robotics"
+              ],
+              "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "SyrNitram/recon-ground-drone",
+              "source_url": "https://github.com/SyrNitram/recon-ground-drone",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "robotics"
+              ],
+              "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 5 个。",
+            "focus_terms": [
+              "VLA",
+              "code",
+              "world",
+              "robotics",
+              "manipulation",
+              "nicklashansen",
+              "mmbench2",
+              "official"
+            ],
+            "representative_titles": [
+              "ExistentialRobotics/SERF-mapping",
+              "DAGroup-PKU/PhysisForcing",
+              "nicklashansen/mmbench2",
+              "insight-vla/insight",
+              "SyrNitram/recon-ground-drone"
+            ],
+            "related_institutions": [
+              "nicklashansen",
+              "ExistentialRobotics",
+              "insight-vla",
+              "DAGroup-PKU",
+              "Peking University",
+              "SyrNitram"
+            ],
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 8,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 6
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Robotics:2026-06-29:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Vision-Language-Action Model",
+      "magnitude": 3.64,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Vision-Language-Action Model",
+          "title": "Vision-Language-Action Model 出现明显异常",
+          "magnitude": 3.64,
+          "severity_label": "明显异常",
+          "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.64，burst=2.72，growth_rate=-0.936，z_score=-5.305，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 5 个",
+            "24h star 增量 8",
+            "方法提及：VLA",
+            "机构集中：nicklashansen, ExistentialRobotics, insight-vla"
+          ],
+          "metrics": {
+            "current_1h_count": 5,
+            "current_24h_count": 5,
+            "current_72h_count": 5,
+            "current_7d_count": 5,
+            "baseline_daily_avg_30d": 93.0,
+            "baseline_daily_std_30d": 15.588,
+            "baseline_72h_avg_30d": 279.0,
+            "growth_rate": -0.936,
+            "z_score": -5.305,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.339,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.2,
+            "institution_signal_score": 0.416,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 8,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 6,
+            "burst_score": 2.72,
+            "low_history_confidence": false,
+            "magnitude": 3.64
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "published_at": "2026-06-23T00:14:44Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "VLA"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "nicklashansen/mmbench2",
+              "source_url": "https://github.com/nicklashansen/mmbench2",
+              "published_at": "2026-06-25T17:30:13Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ExistentialRobotics/SERF-mapping",
+              "source_url": "https://github.com/ExistentialRobotics/SERF-mapping",
+              "published_at": "2026-06-23T16:29:32Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DAGroup-PKU/PhysisForcing",
+              "source_url": "https://github.com/DAGroup-PKU/PhysisForcing",
+              "published_at": "2026-06-28T11:11:39Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "SyrNitram/recon-ground-drone",
+              "source_url": "https://github.com/SyrNitram/recon-ground-drone",
+              "published_at": "2026-06-23T22:19:40Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/DAGroup-PKU/PhysisForcing",
+            "https://github.com/ExistentialRobotics/SERF-mapping",
+            "https://github.com/SyrNitram/recon-ground-drone",
+            "https://github.com/insight-vla/insight",
+            "https://github.com/nicklashansen/mmbench2"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "nicklashansen",
+            "ExistentialRobotics",
+            "insight-vla",
+            "DAGroup-PKU",
+            "Peking University",
+            "SyrNitram"
+          ],
+          "suggested_watch_keywords": [
+            "code",
+            "world",
+            "robotics",
+            "manipulation",
+            "nicklashansen",
+            "mmbench2",
+            "official",
+            "repository"
+          ],
+          "confidence": 0.67,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Vision-Language-Action Model:2026-06-29:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"insight-vla/insight\", \"source_url\": \"https://github.com/insight-vla/insight\", \"published_at\": \"2026-06-23T00:14:44Z\", \"match_score\": 0.417, \"matched_keywords\": [\"VLA\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"nicklashansen/mmbench2\", \"source_url\": \"https://github.com/nicklashansen/mmbench2\", \"published_at\": \"2026-06-25T17:30:13Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ExistentialRobotics/SERF-mapping\", \"source_url\": \"https://github.com/ExistentialRobotics/SERF-mapping\", \"published_at\": \"2026-06-23T16:29:32Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DAGroup-PKU/PhysisForcing\", \"source_url\": \"https://github.com/DAGroup-PKU/PhysisForcing\", \"published_at\": \"2026-06-28T11:11:39Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SyrNitram/recon-ground-drone\", \"source_url\": \"https://github.com/SyrNitram/recon-ground-drone\", \"published_at\": \"2026-06-23T22:19:40Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括insight-vla/insight、nicklashansen/mmbench2、ExistentialRobotics/SERF-mapping、DAGroup-PKU/PhysisForcing、SyrNitram/recon-ground-drone等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 8，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及nicklashansen、ExistentialRobotics、insight-vla、DAGroup-PKU、Peking University、SyrNitram，累计提及 6 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察code、world、robotics、manipulation、nicklashansen、mmbench2、official、repository等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“明显异常”（M3.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、code、world、robotics、manipulation、nicklashansen等线索，代表条目包括insight-vla/insight、nicklashansen/mmbench2、ExistentialRobotics/SERF-mapping、DAGroup-PKU/PhysisForcing，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 8，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及nicklashansen、ExistentialRobotics、insight-vla、DAGroup-PKU、Peking University、SyrNitram，累计提及 6 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 5 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察code、world、robotics、manipulation、nicklashansen、mmbench2、official、repository是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "insight-vla/insight",
+                "url": "https://github.com/insight-vla/insight",
+                "source": "github",
+                "reason": "命中 VLA，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "nicklashansen/mmbench2",
+                "url": "https://github.com/nicklashansen/mmbench2",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ExistentialRobotics/SERF-mapping",
+                "url": "https://github.com/ExistentialRobotics/SERF-mapping",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "DAGroup-PKU/PhysisForcing",
+                "url": "https://github.com/DAGroup-PKU/PhysisForcing",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "SyrNitram/recon-ground-drone",
+                "url": "https://github.com/SyrNitram/recon-ground-drone",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "insight-vla/insight",
+              "source_url": "https://github.com/insight-vla/insight",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "VLA"
+              ],
+              "why_included": "命中 VLA，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "nicklashansen/mmbench2",
+              "source_url": "https://github.com/nicklashansen/mmbench2",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ExistentialRobotics/SERF-mapping",
+              "source_url": "https://github.com/ExistentialRobotics/SERF-mapping",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "DAGroup-PKU/PhysisForcing",
+              "source_url": "https://github.com/DAGroup-PKU/PhysisForcing",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "SyrNitram/recon-ground-drone",
+              "source_url": "https://github.com/SyrNitram/recon-ground-drone",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 5 个。",
+            "focus_terms": [
+              "VLA",
+              "code",
+              "world",
+              "robotics",
+              "manipulation",
+              "nicklashansen",
+              "mmbench2",
+              "official"
+            ],
+            "representative_titles": [
+              "insight-vla/insight",
+              "nicklashansen/mmbench2",
+              "ExistentialRobotics/SERF-mapping",
+              "DAGroup-PKU/PhysisForcing",
+              "SyrNitram/recon-ground-drone"
+            ],
+            "related_institutions": [
+              "nicklashansen",
+              "ExistentialRobotics",
+              "insight-vla",
+              "DAGroup-PKU",
+              "Peking University",
+              "SyrNitram"
+            ],
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 8,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 6
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-06-29T05"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-06-29T05:01:31.163513+00:00",
+      "dedupe_key": "trend:Vision-Language-Action Model:2026-06-29:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
