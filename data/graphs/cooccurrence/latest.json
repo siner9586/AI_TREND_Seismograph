@@ -1,5 +1,5 @@
 {
-  "window": "2026-07-10T11",
+  "window": "2026-07-10T15",
   "nodes": [
     {
       "id": "agents",
@@ -26,8 +26,8 @@
       "id": "ai-coding",
       "label": "AI Coding",
       "type": "topic",
-      "count": 9,
-      "weight": 0.533
+      "count": 10,
+      "weight": 0.57
     },
     {
       "id": "mcp",
@@ -42,6 +42,13 @@
       "type": "topic",
       "count": 7,
       "weight": 0.459
+    },
+    {
+      "id": "claude",
+      "label": "claude",
+      "type": "keyword",
+      "count": 5,
+      "weight": 0.385
     },
     {
       "id": "tool-use",
@@ -86,13 +93,6 @@
       "weight": 0.348
     },
     {
-      "id": "claude",
-      "label": "claude",
-      "type": "keyword",
-      "count": 4,
-      "weight": 0.348
-    },
-    {
       "id": "intelligence",
       "label": "intelligence",
       "type": "keyword",
@@ -126,13 +126,6 @@
       "type": "topic",
       "count": 4,
       "weight": 0.348
-    },
-    {
-      "id": "machine",
-      "label": "machine",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.311
     },
     {
       "id": "coding",
@@ -177,15 +170,29 @@
       "weight": 0.274
     },
     {
+      "id": "fable",
+      "label": "fable",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.274
+    },
+    {
       "id": "moe",
       "label": "MoE",
-      "type": "topic",
+      "type": "method",
       "count": 2,
       "weight": 0.274
     },
     {
       "id": "donaldmorry",
       "label": "donaldmorry",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.274
+    },
+    {
+      "id": "challenge",
+      "label": "challenge",
       "type": "keyword",
       "count": 2,
       "weight": 0.274
@@ -200,6 +207,13 @@
     {
       "id": "python",
       "label": "python",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.274
+    },
+    {
+      "id": "machine",
+      "label": "machine",
       "type": "keyword",
       "count": 2,
       "weight": 0.274
@@ -275,9 +289,9 @@
       "weight": 0.274
     },
     {
-      "id": "observability",
-      "label": "observability",
-      "type": "keyword",
+      "id": "evaluation",
+      "label": "Evaluation",
+      "type": "topic",
       "count": 2,
       "weight": 0.274
     },
@@ -394,13 +408,6 @@
       "weight": 0.237
     },
     {
-      "id": "fable",
-      "label": "fable",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.237
-    },
-    {
       "id": "fable-5",
       "label": "fable-5",
       "type": "keyword",
@@ -413,13 +420,6 @@
       "type": "topic",
       "count": 1,
       "weight": 0.237
-    },
-    {
-      "id": "mythos-class",
-      "label": "mythos-class",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.237
     }
   ],
   "edges": [
@@ -429,7 +429,16 @@
       "cooccurrence_count": 11,
       "weight": 1.0,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "agents",
+      "cooccurrence_count": 10,
+      "weight": 0.909,
+      "windows": [
+        "2026-07-10T15"
       ]
     },
     {
@@ -438,7 +447,7 @@
       "cooccurrence_count": 10,
       "weight": 0.909,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -447,16 +456,7 @@
       "cooccurrence_count": 10,
       "weight": 0.909,
       "windows": [
-        "2026-07-10T11"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "agents",
-      "cooccurrence_count": 9,
-      "weight": 0.818,
-      "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -465,7 +465,7 @@
       "cooccurrence_count": 7,
       "weight": 0.636,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -474,7 +474,7 @@
       "cooccurrence_count": 7,
       "weight": 0.636,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -483,7 +483,25 @@
       "cooccurrence_count": 7,
       "weight": 0.636,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "claude",
+      "cooccurrence_count": 5,
+      "weight": 0.455,
+      "windows": [
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "claude",
+      "cooccurrence_count": 5,
+      "weight": 0.455,
+      "windows": [
+        "2026-07-10T15"
       ]
     },
     {
@@ -492,7 +510,7 @@
       "cooccurrence_count": 5,
       "weight": 0.455,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -501,7 +519,7 @@
       "cooccurrence_count": 5,
       "weight": 0.455,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -510,7 +528,7 @@
       "cooccurrence_count": 5,
       "weight": 0.455,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -519,25 +537,7 @@
       "cooccurrence_count": 5,
       "weight": 0.455,
       "windows": [
-        "2026-07-10T11"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "claude",
-      "cooccurrence_count": 4,
-      "weight": 0.364,
-      "windows": [
-        "2026-07-10T11"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "claude",
-      "cooccurrence_count": 4,
-      "weight": 0.364,
-      "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -546,7 +546,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -555,7 +555,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -564,7 +564,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -573,7 +573,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -582,7 +582,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -591,7 +591,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -600,7 +600,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -609,7 +609,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -618,7 +618,7 @@
       "cooccurrence_count": 4,
       "weight": 0.364,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -627,16 +627,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "agents",
-      "cooccurrence_count": 3,
-      "weight": 0.273,
-      "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -645,16 +636,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "coding",
-      "cooccurrence_count": 3,
-      "weight": 0.273,
-      "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -663,7 +645,25 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "agents",
+      "cooccurrence_count": 3,
+      "weight": 0.273,
+      "windows": [
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "coding",
+      "cooccurrence_count": 3,
+      "weight": 0.273,
+      "windows": [
+        "2026-07-10T15"
       ]
     },
     {
@@ -672,7 +672,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -681,7 +681,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -690,7 +690,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -699,7 +699,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -708,7 +708,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -717,7 +717,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -726,7 +726,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -735,7 +735,7 @@
       "cooccurrence_count": 3,
       "weight": 0.273,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -744,7 +744,34 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "fable",
+      "cooccurrence_count": 2,
+      "weight": 0.182,
+      "windows": [
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "fable",
+      "cooccurrence_count": 2,
+      "weight": 0.182,
+      "windows": [
+        "2026-07-10T15"
+      ]
+    },
+    {
+      "source": "claude",
+      "target": "fable",
+      "cooccurrence_count": 2,
+      "weight": 0.182,
+      "windows": [
+        "2026-07-10T15"
       ]
     },
     {
@@ -753,7 +780,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -762,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -771,7 +798,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -780,7 +807,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -789,7 +816,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -798,7 +825,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -807,7 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -816,7 +843,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -825,7 +852,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -834,7 +861,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -843,7 +870,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -852,7 +879,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -861,7 +888,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -870,7 +897,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -879,7 +906,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -888,16 +915,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "observability",
-      "cooccurrence_count": 2,
-      "weight": 0.182,
-      "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -906,7 +924,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -915,7 +933,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -924,7 +942,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -933,7 +951,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -942,7 +960,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -951,7 +969,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -960,7 +978,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -969,7 +987,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -978,7 +996,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     },
     {
@@ -987,7 +1005,7 @@
       "cooccurrence_count": 2,
       "weight": 0.182,
       "windows": [
-        "2026-07-10T11"
+        "2026-07-10T15"
       ]
     }
   ]
