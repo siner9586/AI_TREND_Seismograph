@@ -1,0 +1,123 @@
+{
+  "report_date": "2026-07-16",
+  "source_window": {
+    "start": "2026-07-14T00:00:00+00:00",
+    "end": "2026-07-17T00:00:00+00:00",
+    "lookback_hours": 72
+  },
+  "baseline_window": {
+    "days": 30,
+    "low_history_confidence": false
+  },
+  "generated_at": "2026-07-16T23:16:04.740062+00:00",
+  "run_id": "daily-20260716-dc4ecddf",
+  "mode": "daily",
+  "status": "generated",
+  "total_items_scanned": 0,
+  "total_papers_scanned": 0,
+  "total_repos_scanned": 0,
+  "total_topics_tracked": 40,
+  "max_magnitude": 0,
+  "top_anomalies": [],
+  "emerging_topics": [],
+  "revived_topics": [],
+  "institution_clusters": [],
+  "github_surges": [],
+  "dataset_bursts": [],
+  "method_bursts": [],
+  "watchlist": {
+    "hits": [],
+    "configured": [
+      {
+        "name": "具身智能观察",
+        "topics": [
+          "Robotics",
+          "Embodied AI",
+          "Vision-Language-Action Model",
+          "World Model"
+        ],
+        "keywords": [
+          "robotics",
+          "VLA",
+          "world model",
+          "sim-to-real"
+        ],
+        "threshold_magnitude": 3.5,
+        "threshold_growth_rate": 1.2,
+        "push_enabled": true
+      },
+      {
+        "name": "AI Coding 观察",
+        "topics": [
+          "AI Coding",
+          "Agents",
+          "Computer Use Agent"
+        ],
+        "keywords": [
+          "SWE-bench",
+          "coding agent",
+          "repository-level"
+        ],
+        "threshold_magnitude": 3.2,
+        "threshold_growth_rate": 1.0,
+        "push_enabled": true
+      },
+      {
+        "name": "安全与对齐观察",
+        "topics": [
+          "Alignment",
+          "LLM Security",
+          "Evaluation"
+        ],
+        "keywords": [
+          "alignment",
+          "jailbreak",
+          "red teaming",
+          "evaluation"
+        ],
+        "threshold_magnitude": 3.4,
+        "threshold_growth_rate": 1.0,
+        "push_enabled": true
+      }
+    ]
+  },
+  "cooccurrence_summary": {
+    "node_count": 0,
+    "edge_count": 0,
+    "top_nodes": []
+  },
+  "trend_charts": {},
+  "raw_sources_summary": {
+    "source_status": [
+      {
+        "source_name": "arxiv",
+        "source_type": "paper",
+        "ok": true,
+        "error": null,
+        "items": 0,
+        "partial": false,
+        "fetched_at": "2026-07-16T23:15:03.399779+00:00"
+      },
+      {
+        "source_name": "github",
+        "source_type": "repo",
+        "ok": false,
+        "error": "artificial intelligence: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github; machine learning: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github; llm: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github; agents: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github; rag: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github; robotics: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github; coding agent: GET https://api.github.com/search/repositories failed after retries: 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github",
+        "items": 0,
+        "partial": true,
+        "fetched_at": "2026-07-16T23:15:06.703347+00:00"
+      }
+    ],
+    "partial": true
+  },
+  "confidence_summary": {
+    "average_confidence": 0,
+    "low_history_topics": 0,
+    "note": "无趋势信号。"
+  },
+  "caveats": [
+    "以下来源失败或部分失败：github。",
+    "当前窗口未抓取到可匹配信号；日报不生成趋势判断。",
+    "生产报告仅使用真实抓取数据；没有 API Key 时增强源会自动降级。"
+  ]
+}
