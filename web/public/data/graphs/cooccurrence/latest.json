@@ -1,5 +1,5 @@
 {
-  "window": "2026-07-15",
+  "window": "2026-07-16T03",
   "nodes": [
     {
       "id": "agents",
@@ -26,8 +26,15 @@
       "id": "tool-use",
       "label": "Tool Use",
       "type": "topic",
-      "count": 8,
-      "weight": 0.621
+      "count": 9,
+      "weight": 0.674
+    },
+    {
+      "id": "agent",
+      "label": "agent",
+      "type": "keyword",
+      "count": 7,
+      "weight": 0.568
     },
     {
       "id": "artificial",
@@ -44,23 +51,9 @@
       "weight": 0.516
     },
     {
-      "id": "agent",
-      "label": "agent",
-      "type": "keyword",
-      "count": 6,
-      "weight": 0.516
-    },
-    {
       "id": "memory",
       "label": "Memory",
       "type": "topic",
-      "count": 6,
-      "weight": 0.516
-    },
-    {
-      "id": "mcp",
-      "label": "MCP",
-      "type": "method",
       "count": 5,
       "weight": 0.463
     },
@@ -79,18 +72,18 @@
       "weight": 0.411
     },
     {
+      "id": "mcp",
+      "label": "MCP",
+      "type": "method",
+      "count": 4,
+      "weight": 0.411
+    },
+    {
       "id": "open-source",
       "label": "open-source",
       "type": "keyword",
       "count": 4,
       "weight": 0.411
-    },
-    {
-      "id": "video",
-      "label": "video",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.358
     },
     {
       "id": "project",
@@ -128,15 +121,8 @@
       "weight": 0.358
     },
     {
-      "id": "mcp",
-      "label": "mcp",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.358
-    },
-    {
-      "id": "memory",
-      "label": "memory",
+      "id": "rag",
+      "label": "rag",
       "type": "keyword",
       "count": 3,
       "weight": 0.358
@@ -170,8 +156,15 @@
       "weight": 0.305
     },
     {
-      "id": "waifugal",
-      "label": "waifugal",
+      "id": "code",
+      "label": "code",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.305
+    },
+    {
+      "id": "video",
+      "label": "video",
       "type": "keyword",
       "count": 2,
       "weight": 0.305
@@ -198,13 +191,6 @@
       "weight": 0.305
     },
     {
-      "id": "platform",
-      "label": "platform",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.305
-    },
-    {
       "id": "guide",
       "label": "guide",
       "type": "keyword",
@@ -219,16 +205,16 @@
       "weight": 0.305
     },
     {
-      "id": "autonomous",
-      "label": "autonomous",
-      "type": "keyword",
+      "id": "reinforcement-learning",
+      "label": "Reinforcement Learning",
+      "type": "topic",
       "count": 2,
       "weight": 0.305
     },
     {
-      "id": "reinforcement-learning",
-      "label": "Reinforcement Learning",
-      "type": "topic",
+      "id": "autonomous",
+      "label": "autonomous",
+      "type": "keyword",
       "count": 2,
       "weight": 0.305
     },
@@ -240,8 +226,22 @@
       "weight": 0.305
     },
     {
-      "id": "opencode",
-      "label": "opencode",
+      "id": "mcp",
+      "label": "mcp",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.305
+    },
+    {
+      "id": "memory",
+      "label": "memory",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.305
+    },
+    {
+      "id": "skill",
+      "label": "skill",
       "type": "keyword",
       "count": 2,
       "weight": 0.305
@@ -249,13 +249,6 @@
     {
       "id": "personal",
       "label": "personal",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.305
-    },
-    {
-      "id": "rag",
-      "label": "rag",
       "type": "keyword",
       "count": 2,
       "weight": 0.305
@@ -420,6 +413,13 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.253
+    },
+    {
+      "id": "racpsc2025",
+      "label": "racpsc2025",
+      "type": "keyword",
+      "count": 1,
+      "weight": 0.253
     }
   ],
   "edges": [
@@ -429,7 +429,7 @@
       "cooccurrence_count": 9,
       "weight": 1.0,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -438,16 +438,34 @@
       "cooccurrence_count": 7,
       "weight": 0.778,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
       "source": "agents",
       "target": "agent",
+      "cooccurrence_count": 7,
+      "weight": 0.778,
+      "windows": [
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "tool-use",
       "cooccurrence_count": 6,
       "weight": 0.667,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "rag",
+      "cooccurrence_count": 6,
+      "weight": 0.667,
+      "windows": [
+        "2026-07-16T03"
       ]
     },
     {
@@ -456,52 +474,25 @@
       "cooccurrence_count": 5,
       "weight": 0.556,
       "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "tool-use",
-      "cooccurrence_count": 5,
-      "weight": 0.556,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 5,
-      "weight": 0.556,
-      "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "tool-use",
-      "cooccurrence_count": 4,
-      "weight": 0.444,
+      "cooccurrence_count": 5,
+      "weight": 0.556,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
-      "source": "agents",
-      "target": "memory",
+      "source": "mcp",
+      "target": "model-context-protocol",
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "rag",
-      "cooccurrence_count": 4,
-      "weight": 0.444,
-      "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -510,7 +501,7 @@
       "cooccurrence_count": 4,
       "weight": 0.444,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -519,7 +510,16 @@
       "cooccurrence_count": 3,
       "weight": 0.333,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "open-source",
+      "cooccurrence_count": 3,
+      "weight": 0.333,
+      "windows": [
+        "2026-07-16T03"
       ]
     },
     {
@@ -528,7 +528,7 @@
       "cooccurrence_count": 3,
       "weight": 0.333,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -537,25 +537,7 @@
       "cooccurrence_count": 3,
       "weight": 0.333,
       "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "mcp",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "mcp",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -564,34 +546,7 @@
       "cooccurrence_count": 3,
       "weight": 0.333,
       "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "mcp",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "mcp",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "memory",
-      "target": "memory",
-      "cooccurrence_count": 3,
-      "weight": 0.333,
-      "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -600,7 +555,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -609,7 +564,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -618,7 +573,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -627,7 +582,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -636,7 +591,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -645,7 +600,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -654,7 +609,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -663,7 +618,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -672,7 +627,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -681,7 +636,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -690,7 +645,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -699,7 +654,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -708,16 +663,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "video",
-      "target": "waifugal",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -726,7 +672,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -735,7 +681,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -744,7 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -753,16 +699,16 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
-      "source": "model-context-protocol",
+      "source": "agents",
       "target": "open-source",
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -771,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -780,7 +726,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -789,7 +735,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -798,169 +744,88 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
       "source": "agents",
-      "target": "opencode",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "codex",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "codex",
       "target": "mcp",
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
-      "source": "codex",
-      "target": "memory",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "memory",
-      "target": "codex",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "codex",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "codex",
-      "target": "opencode",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "memory",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "memory",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "opencode",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "memory",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "memory",
+      "source": "agents",
       "target": "mcp",
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
-      "source": "mcp",
-      "target": "opencode",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
+      "source": "agents",
       "target": "memory",
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "memory",
-      "target": "opencode",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "memory",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
-      ]
-    },
-    {
-      "source": "memory",
-      "target": "opencode",
-      "cooccurrence_count": 2,
-      "weight": 0.222,
-      "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
       "source": "model-context-protocol",
-      "target": "opencode",
+      "target": "codex",
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "mcp",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "mcp",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "memory",
+      "target": "memory",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "agent",
+      "target": "skill",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "skill",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-07-16T03"
       ]
     },
     {
@@ -969,7 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -978,7 +843,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -987,7 +852,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -996,7 +861,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -1005,7 +870,7 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
       ]
     },
     {
@@ -1014,7 +879,16 @@
       "cooccurrence_count": 2,
       "weight": 0.222,
       "windows": [
-        "2026-07-15"
+        "2026-07-16T03"
+      ]
+    },
+    {
+      "source": "memory",
+      "target": "agent",
+      "cooccurrence_count": 2,
+      "weight": 0.222,
+      "windows": [
+        "2026-07-16T03"
       ]
     }
   ]
