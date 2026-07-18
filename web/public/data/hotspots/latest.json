@@ -1,11 +1,11 @@
 {
-  "snapshot_hour": "2026-07-18T06",
-  "generated_at": "2026-07-18T06:21:04.809909+00:00",
-  "run_id": "hourly-20260718T06-d677ac5e",
+  "snapshot_hour": "2026-07-18T09",
+  "generated_at": "2026-07-18T09:47:07.498255+00:00",
+  "run_id": "hourly-20260718T09-3eaa2220",
   "mode": "hourly",
-  "total_items_scanned": 52,
+  "total_items_scanned": 50,
   "total_papers_scanned": 0,
-  "total_repos_scanned": 52,
+  "total_repos_scanned": 50,
   "total_topics_tracked": 40,
   "max_magnitude": 6.0,
   "top_hotspots": [
@@ -15,11 +15,11 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "Agents 在当前窗口内出现 0 条论文信号和 19 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.325，growth_rate=-0.959，z_score=-6.847，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=8.254，growth_rate=-0.959，z_score=-6.857，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 19 个",
-        "24h star 增量 4734",
-        "方法提及：RAG, MCP, ReAct",
+        "24h star 增量 4540",
+        "方法提及：RAG, ReAct, MCP",
         "机构集中：OpenAI, PengZhang64, QuantumByteOSS"
       ],
       "metrics": {
@@ -27,31 +27,45 @@
         "current_24h_count": 19,
         "current_72h_count": 19,
         "current_7d_count": 19,
-        "baseline_daily_avg_30d": 482.379,
-        "baseline_daily_std_30d": 66.678,
-        "baseline_72h_avg_30d": 1447.138,
+        "baseline_daily_avg_30d": 482.266,
+        "baseline_daily_std_30d": 66.557,
+        "baseline_72h_avg_30d": 1446.798,
         "growth_rate": -0.959,
-        "z_score": -6.847,
+        "z_score": -6.857,
         "paper_burst_score": 0.0,
-        "github_signal_score": 7.255,
+        "github_signal_score": 7.268,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.158,
         "institution_signal_score": 0.514,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.07,
+        "method_signal_score": 0.985,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 19,
-        "github_star_delta": 4734,
-        "method_mentions": 6,
+        "github_star_delta": 4540,
+        "method_mentions": 5,
         "dataset_mentions": 0,
         "institution_mentions": 24,
-        "burst_score": 8.325,
+        "burst_score": 8.254,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "published_at": "2026-07-16T11:37:15Z",
+          "match_score": 0.633,
+          "matched_keywords": [
+            "agent",
+            "agents"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -72,20 +86,6 @@
           "title": "vshulcz/deja-vu",
           "source_url": "https://github.com/vshulcz/deja-vu",
           "published_at": "2026-07-14T07:45:44Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
-          "published_at": "2026-07-11T08:48:07Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -171,6 +171,7 @@
         "https://github.com/KlaatAI/klaatcode",
         "https://github.com/LijingJim/J-AEIS",
         "https://github.com/PengZhang64/circuit-framework",
+        "https://github.com/PromptPartner/agentsmith",
         "https://github.com/QuantumByteOSS/quantumbyte",
         "https://github.com/VKirill/claude-lane-stack",
         "https://github.com/agutinbaigo28/financial-agent-api",
@@ -179,7 +180,6 @@
         "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
         "https://github.com/pyang5166/gbro-collage-broll",
         "https://github.com/rollingSirius/equity-research-skill",
-        "https://github.com/sandbaseai/managed-agents",
         "https://github.com/sorryhumans/clawdmeter-plus",
         "https://github.com/stackblitz/bolt-slides",
         "https://github.com/thesysdev/appless",
@@ -188,28 +188,28 @@
       ],
       "related_methods": [
         "RAG",
-        "MCP",
-        "ReAct"
+        "ReAct",
+        "MCP"
       ],
       "related_datasets": [],
       "related_institutions": [
         "OpenAI",
         "PengZhang64",
         "QuantumByteOSS",
-        "barretlee",
+        "PromptPartner",
         "thesysdev",
+        "barretlee",
         "xAI",
-        "xai-org",
-        "mereyabdenbekuly-ctrl"
+        "xai-org"
       ],
       "suggested_watch_keywords": [
         "agent",
         "claude",
         "llm",
+        "codex",
         "coding",
         "code",
-        "multi-agent",
-        "open-source",
+        "agents",
         "ai-agents"
       ],
       "confidence": 0.72,
@@ -223,19 +223,25 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-07-18:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"barretlee/agent-pulse\", \"source_url\": \"https://github.com/barretlee/agent-pulse\", \"published_at\": \"2026-07-11T14:38:25Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sandbaseai/managed-agents\", \"source_url\": \"https://github.com/sandbaseai/managed-agents\", \"published_at\": \"2026-07-11T08:48:07Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JimLiu/baocut\", \"source_url\": \"https://github.com/JimLiu/baocut\", \"published_at\": \"2026-07-13T07:06:42Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VKirill/claude-lane-stack\", \"source_url\": \"https://github.com/VKirill/claude-lane-stack\", \"published_at\": \"2026-07-11T04:14:51Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rollingSirius/equity-research-skill\", \"source_url\": \"https://github.com/rollingSirius/equity-research-skill\", \"published_at\": \"2026-07-14T02:49:07Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 19 个。代表性目标包括barretlee/agent-pulse、vshulcz/deja-vu、sandbaseai/managed-agents、LijingJim/J-AEIS、JimLiu/baocut等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 4734，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 6 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、PengZhang64、QuantumByteOSS、barretlee、thesysdev、xAI、xai-org、mereyabdenbekuly-ctrl，累计提及 24 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、claude、llm、coding、code、multi-agent、open-source、ai-agents等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"barretlee/agent-pulse\", \"source_url\": \"https://github.com/barretlee/agent-pulse\", \"published_at\": \"2026-07-11T14:38:25Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JimLiu/baocut\", \"source_url\": \"https://github.com/JimLiu/baocut\", \"published_at\": \"2026-07-13T07:06:42Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VKirill/claude-lane-stack\", \"source_url\": \"https://github.com/VKirill/claude-lane-stack\", \"published_at\": \"2026-07-11T04:14:51Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rollingSirius/equity-research-skill\", \"source_url\": \"https://github.com/rollingSirius/equity-research-skill\", \"published_at\": \"2026-07-14T02:49:07Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 19 个。代表性目标包括PromptPartner/agentsmith、barretlee/agent-pulse、vshulcz/deja-vu、LijingJim/J-AEIS、JimLiu/baocut等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 4540，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCP等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、PengZhang64、QuantumByteOSS、PromptPartner、thesysdev、barretlee、xAI、xai-org，累计提及 24 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、claude、llm、codex、coding、code、agents、ai-agents等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Agents 本轮由论文 0 条、GitHub 项目 19 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agent、claude、llm等线索，代表条目包括barretlee/agent-pulse、vshulcz/deja-vu、sandbaseai/managed-agents、LijingJim/J-AEIS，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 19 个 GitHub 项目，24 小时 star 增量约 4734，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 6 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、PengZhang64、QuantumByteOSS、barretlee、thesysdev、xAI，累计提及 24 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCP、agent、claude、llm等线索，代表条目包括PromptPartner/agentsmith、barretlee/agent-pulse、vshulcz/deja-vu、LijingJim/J-AEIS，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 19 个 GitHub 项目，24 小时 star 增量约 4540，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 5 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、PengZhang64、QuantumByteOSS、PromptPartner、thesysdev、barretlee，累计提及 24 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agent、claude、llm、coding、code、multi-agent、open-source、ai-agents是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、claude、llm、codex、coding、code、agents、ai-agents是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "PromptPartner/agentsmith",
+            "url": "https://github.com/PromptPartner/agentsmith",
+            "source": "github",
+            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "barretlee/agent-pulse",
             "url": "https://github.com/barretlee/agent-pulse",
@@ -245,12 +251,6 @@
           {
             "title": "vshulcz/deja-vu",
             "url": "https://github.com/vshulcz/deja-vu",
-            "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "sandbaseai/managed-agents",
-            "url": "https://github.com/sandbaseai/managed-agents",
             "source": "github",
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
@@ -300,6 +300,18 @@
       },
       "evidence_digest": [
         {
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.633,
+          "matched_terms": [
+            "agent",
+            "agents"
+          ],
+          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "barretlee/agent-pulse",
           "source_url": "https://github.com/barretlee/agent-pulse",
           "source_type": "repo",
@@ -314,18 +326,6 @@
         {
           "title": "vshulcz/deja-vu",
           "source_url": "https://github.com/vshulcz/deja-vu",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "agents"
-          ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.633,
@@ -401,18 +401,18 @@
         "source_mix": "当前窗口内捕获到GitHub 项目 19 个。",
         "focus_terms": [
           "RAG",
-          "MCP",
           "ReAct",
+          "MCP",
           "agent",
           "claude",
           "llm",
-          "coding",
-          "code"
+          "codex",
+          "coding"
         ],
         "representative_titles": [
+          "PromptPartner/agentsmith",
           "barretlee/agent-pulse",
           "vshulcz/deja-vu",
-          "sandbaseai/managed-agents",
           "LijingJim/J-AEIS",
           "JimLiu/baocut"
         ],
@@ -420,16 +420,16 @@
           "OpenAI",
           "PengZhang64",
           "QuantumByteOSS",
-          "barretlee",
+          "PromptPartner",
           "thesysdev",
+          "barretlee",
           "xAI",
-          "xai-org",
-          "mereyabdenbekuly-ctrl"
+          "xai-org"
         ],
         "paper_count": 0,
         "repo_count": 19,
-        "github_star_delta": 4734,
-        "method_mentions": 6,
+        "github_star_delta": 4540,
+        "method_mentions": 5,
         "dataset_mentions": 0,
         "institution_mentions": 24
       },
@@ -440,40 +440,40 @@
       "title": "AI Coding 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.926，growth_rate=-0.962，z_score=-3.416，cross_source=0.5。",
+      "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=8.941，growth_rate=-0.956，z_score=-3.391，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 5 个",
-        "24h star 增量 4249",
+        "GitHub 项目 6 个",
+        "24h star 增量 4058",
         "方法提及：MCP",
-        "机构集中：OpenAI, xAI, xai-org"
+        "机构集中：OpenAI, PromptPartner, xAI"
       ],
       "metrics": {
-        "current_1h_count": 5,
-        "current_24h_count": 5,
-        "current_72h_count": 5,
-        "current_7d_count": 5,
-        "baseline_daily_avg_30d": 158.483,
-        "baseline_daily_std_30d": 43.936,
-        "baseline_72h_avg_30d": 475.448,
-        "growth_rate": -0.962,
-        "z_score": -3.416,
+        "current_1h_count": 6,
+        "current_24h_count": 6,
+        "current_72h_count": 6,
+        "current_7d_count": 6,
+        "baseline_daily_avg_30d": 158.318,
+        "baseline_daily_std_30d": 43.914,
+        "baseline_72h_avg_30d": 474.953,
+        "growth_rate": -0.956,
+        "z_score": -3.391,
         "paper_burst_score": 0.0,
-        "github_signal_score": 8.545,
+        "github_signal_score": 8.56,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.4,
-        "institution_signal_score": 0.959,
+        "institution_concentration_score": 0.333,
+        "institution_signal_score": 0.828,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.381,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 5,
-        "github_star_delta": 4249,
+        "repo_count": 6,
+        "github_star_delta": 4058,
         "method_mentions": 1,
         "dataset_mentions": 0,
-        "institution_mentions": 9,
-        "burst_score": 8.926,
+        "institution_mentions": 10,
+        "burst_score": 8.941,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -521,6 +521,17 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "published_at": "2026-07-16T11:37:15Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "vshulcz/deja-vu",
           "source_url": "https://github.com/vshulcz/deja-vu",
           "published_at": "2026-07-14T07:45:44Z",
@@ -543,6 +554,7 @@
       ],
       "source_urls": [
         "https://github.com/KlaatAI/klaatcode",
+        "https://github.com/PromptPartner/agentsmith",
         "https://github.com/VKirill/claude-lane-stack",
         "https://github.com/calesthio/generative-media-skills",
         "https://github.com/vshulcz/deja-vu",
@@ -554,25 +566,25 @@
       "related_datasets": [],
       "related_institutions": [
         "OpenAI",
+        "PromptPartner",
         "xAI",
         "xai-org",
         "Alibaba",
         "vshulcz",
         "VKirill",
-        "KlaatAI",
-        "calesthio"
+        "KlaatAI"
       ],
       "suggested_watch_keywords": [
         "coding",
-        "agent",
         "claude",
-        "code",
         "codex",
-        "xai-org",
-        "grok-build",
-        "spacexai"
+        "agent",
+        "harness",
+        "agents",
+        "code",
+        "gemini"
       ],
-      "confidence": 0.67,
+      "confidence": 0.72,
       "caveats": [],
       "tags": [
         "GitHub 暴涨",
@@ -583,16 +595,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-07-18:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.75, \"matched_keywords\": [\"ai coding\", \"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"xai-org/grok-build\", \"source_url\": \"https://github.com/xai-org/grok-build\", \"published_at\": \"2026-07-14T20:04:23Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"calesthio/generative-media-skills\", \"source_url\": \"https://github.com/calesthio/generative-media-skills\", \"published_at\": \"2026-07-11T04:16:24Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VKirill/claude-lane-stack\", \"source_url\": \"https://github.com/VKirill/claude-lane-stack\", \"published_at\": \"2026-07-11T04:14:51Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括KlaatAI/klaatcode、xai-org/grok-build、calesthio/generative-media-skills、vshulcz/deja-vu、VKirill/claude-lane-stack等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 4249，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、xAI、xai-org、Alibaba、vshulcz、VKirill、KlaatAI、calesthio，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agent、claude、code、codex、xai-org、grok-build、spacexai等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.75, \"matched_keywords\": [\"ai coding\", \"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"xai-org/grok-build\", \"source_url\": \"https://github.com/xai-org/grok-build\", \"published_at\": \"2026-07-14T20:04:23Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"calesthio/generative-media-skills\", \"source_url\": \"https://github.com/calesthio/generative-media-skills\", \"published_at\": \"2026-07-11T04:16:24Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VKirill/claude-lane-stack\", \"source_url\": \"https://github.com/VKirill/claude-lane-stack\", \"published_at\": \"2026-07-11T04:14:51Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括KlaatAI/klaatcode、xai-org/grok-build、calesthio/generative-media-skills、PromptPartner/agentsmith、vshulcz/deja-vu等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 4058，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、PromptPartner、xAI、xai-org、Alibaba、vshulcz、VKirill、KlaatAI，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、claude、codex、agent、harness、agents、code、gemini等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、coding、agent、claude、code、codex等线索，代表条目包括KlaatAI/klaatcode、xai-org/grok-build、calesthio/generative-media-skills、vshulcz/deja-vu，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 4249，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、coding、claude、codex、agent、harness等线索，代表条目包括KlaatAI/klaatcode、xai-org/grok-build、calesthio/generative-media-skills、PromptPartner/agentsmith，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 4058，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、xAI、xai-org、Alibaba、vshulcz、VKirill，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 5 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察coding、agent、claude、code、codex、xai-org、grok-build、spacexai是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "机构与账号归纳：相关信号涉及OpenAI、PromptPartner、xAI、xai-org、Alibaba、vshulcz，累计提及 10 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察coding、claude、codex、agent、harness、agents、code、gemini是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -613,6 +625,12 @@
             "url": "https://github.com/calesthio/generative-media-skills",
             "source": "github",
             "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "PromptPartner/agentsmith",
+            "url": "https://github.com/PromptPartner/agentsmith",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           },
           {
             "title": "vshulcz/deja-vu",
@@ -664,6 +682,15 @@
           "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "vshulcz/deja-vu",
           "source_url": "https://github.com/vshulcz/deja-vu",
           "source_type": "repo",
@@ -684,53 +711,53 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 5 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 6 个。",
         "focus_terms": [
           "MCP",
           "coding",
-          "agent",
           "claude",
-          "code",
           "codex",
-          "xai-org",
-          "grok-build"
+          "agent",
+          "harness",
+          "agents",
+          "code"
         ],
         "representative_titles": [
           "KlaatAI/klaatcode",
           "xai-org/grok-build",
           "calesthio/generative-media-skills",
-          "vshulcz/deja-vu",
-          "VKirill/claude-lane-stack"
+          "PromptPartner/agentsmith",
+          "vshulcz/deja-vu"
         ],
         "related_institutions": [
           "OpenAI",
+          "PromptPartner",
           "xAI",
           "xai-org",
           "Alibaba",
           "vshulcz",
           "VKirill",
-          "KlaatAI",
-          "calesthio"
+          "KlaatAI"
         ],
         "paper_count": 0,
-        "repo_count": 5,
-        "github_star_delta": 4249,
+        "repo_count": 6,
+        "github_star_delta": 4058,
         "method_mentions": 1,
         "dataset_mentions": 0,
-        "institution_mentions": 9
+        "institution_mentions": 10
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Robotics",
       "title": "Robotics 出现强趋势震荡",
-      "magnitude": 5.77,
+      "magnitude": 5.76,
       "severity_label": "强趋势震荡",
       "summary": "Robotics 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.77，burst=4.851，growth_rate=-0.953，z_score=-3.817，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.76，burst=4.844，growth_rate=-0.953，z_score=-3.823，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 4 个",
-        "24h star 增量 27",
+        "24h star 增量 22",
         "机构集中：XiaomiRobotics, THMOS2025, taeyunwoo"
       ],
       "metrics": {
@@ -738,13 +765,13 @@
         "current_24h_count": 4,
         "current_72h_count": 4,
         "current_7d_count": 4,
-        "baseline_daily_avg_30d": 105.081,
-        "baseline_daily_std_30d": 25.48,
-        "baseline_72h_avg_30d": 315.243,
+        "baseline_daily_avg_30d": 105.04,
+        "baseline_daily_std_30d": 25.43,
+        "baseline_72h_avg_30d": 315.121,
         "growth_rate": -0.953,
-        "z_score": -3.817,
+        "z_score": -3.823,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.851,
+        "github_signal_score": 4.844,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.5,
@@ -754,13 +781,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 27,
+        "github_star_delta": 22,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 4,
-        "burst_score": 4.851,
+        "burst_score": 4.844,
         "low_history_confidence": false,
-        "magnitude": 5.77
+        "magnitude": 5.76
       },
       "evidence": [
         {
@@ -851,11 +878,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Robotics:2026-07-18:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"taeyunwoo/DexHOI2Sim\", \"source_url\": \"https://github.com/taeyunwoo/DexHOI2Sim\", \"published_at\": \"2026-07-13T08:05:18Z\", \"match_score\": 0.75, \"matched_keywords\": [\"manipulation\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"XiaomiRobotics/Xiaomi-Robotics-U0\", \"source_url\": \"https://github.com/XiaomiRobotics/Xiaomi-Robotics-U0\", \"published_at\": \"2026-07-13T12:14:12Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"XiaomiRobotics/Xiaomi-Robotics-1\", \"source_url\": \"https://github.com/XiaomiRobotics/Xiaomi-Robotics-1\", \"published_at\": \"2026-07-15T14:37:37Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"THMOS2025/MOS-9-Open-Source-Humanoid-Robot\", \"source_url\": \"https://github.com/THMOS2025/MOS-9-Open-Source-Humanoid-Robot\", \"published_at\": \"2026-07-15T13:25:34Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括taeyunwoo/DexHOI2Sim、XiaomiRobotics/Xiaomi-Robotics-U0、XiaomiRobotics/Xiaomi-Robotics-1、THMOS2025/MOS-9-Open-Source-Humanoid-Robot等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 27，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及XiaomiRobotics、THMOS2025、taeyunwoo，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察xiaomirobotics、xiaomi-robotics-u0、xiaomirobotics xiaomi-robotics-u0、xiaomi-robotics-1、code、xiaomirobotics xiaomi-robotics-1、xiaomi-robotics-1 code、code xiaomi-robotics-1等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括taeyunwoo/DexHOI2Sim、XiaomiRobotics/Xiaomi-Robotics-U0、XiaomiRobotics/Xiaomi-Robotics-1、THMOS2025/MOS-9-Open-Source-Humanoid-Robot等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 22，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及XiaomiRobotics、THMOS2025、taeyunwoo，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察xiaomirobotics、xiaomi-robotics-u0、xiaomirobotics xiaomi-robotics-u0、xiaomi-robotics-1、code、xiaomirobotics xiaomi-robotics-1、xiaomi-robotics-1 code、code xiaomi-robotics-1等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
         "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“强趋势震荡”（M5.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向xiaomirobotics、xiaomi-robotics-u0、xiaomirobotics xiaomi-robotics-u0、xiaomi-robotics-1、code、xiaomirobotics xiaomi-robotics-1等线索，代表条目包括taeyunwoo/DexHOI2Sim、XiaomiRobotics/Xiaomi-Robotics-U0、XiaomiRobotics/Xiaomi-Robotics-1、THMOS2025/MOS-9-Open-Source-Humanoid-Robot，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 27，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 22，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及XiaomiRobotics、THMOS2025、taeyunwoo，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察xiaomirobotics、xiaomi-robotics-u0、xiaomirobotics xiaomi-robotics-u0、xiaomi-robotics-1、code、xiaomirobotics xiaomi-robotics-1、xiaomi-robotics-1 code、code xiaomi-robotics-1是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
@@ -961,382 +988,10 @@
         ],
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 27,
+        "github_star_delta": 22,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 4
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
-      "topic": "Model Context Protocol",
-      "title": "Model Context Protocol 出现强趋势震荡",
-      "magnitude": 5.58,
-      "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.58，burst=5.177，growth_rate=-0.966，z_score=-6.716，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 9 个",
-        "24h star 增量 125",
-        "方法提及：MCP, RAG",
-        "机构集中：OpenAI, QuantumByteOSS, barretlee"
-      ],
-      "metrics": {
-        "current_1h_count": 9,
-        "current_24h_count": 9,
-        "current_72h_count": 9,
-        "current_7d_count": 9,
-        "baseline_daily_avg_30d": 293.793,
-        "baseline_daily_std_30d": 41.404,
-        "baseline_72h_avg_30d": 881.379,
-        "growth_rate": -0.966,
-        "z_score": -6.716,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 4.415,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.222,
-        "institution_signal_score": 0.586,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 0.762,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 125,
-        "method_mentions": 3,
-        "dataset_mentions": 0,
-        "institution_mentions": 12,
-        "burst_score": 5.177,
-        "low_history_confidence": false,
-        "magnitude": 5.58
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "vshulcz/deja-vu",
-          "source_url": "https://github.com/vshulcz/deja-vu",
-          "published_at": "2026-07-14T07:45:44Z",
-          "match_score": 0.537,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
-          "published_at": "2026-07-11T08:48:07Z",
-          "match_score": 0.537,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "QuantumByteOSS/quantumbyte",
-          "source_url": "https://github.com/QuantumByteOSS/quantumbyte",
-          "published_at": "2026-07-14T04:53:39Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "barretlee/agent-pulse",
-          "source_url": "https://github.com/barretlee/agent-pulse",
-          "published_at": "2026-07-11T14:38:25Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "mereyabdenbekuly-ctrl/clodex-ide",
-          "source_url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-          "published_at": "2026-07-12T10:35:44Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "LijingJim/J-AEIS",
-          "source_url": "https://github.com/LijingJim/J-AEIS",
-          "published_at": "2026-07-13T16:42:20Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "JimLiu/baocut",
-          "source_url": "https://github.com/JimLiu/baocut",
-          "published_at": "2026-07-13T07:06:42Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "VKirill/claude-lane-stack",
-          "source_url": "https://github.com/VKirill/claude-lane-stack",
-          "published_at": "2026-07-11T04:14:51Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/JimLiu/baocut",
-        "https://github.com/KlaatAI/klaatcode",
-        "https://github.com/LijingJim/J-AEIS",
-        "https://github.com/QuantumByteOSS/quantumbyte",
-        "https://github.com/VKirill/claude-lane-stack",
-        "https://github.com/barretlee/agent-pulse",
-        "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-        "https://github.com/sandbaseai/managed-agents",
-        "https://github.com/vshulcz/deja-vu"
-      ],
-      "related_methods": [
-        "MCP",
-        "RAG"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "OpenAI",
-        "QuantumByteOSS",
-        "barretlee",
-        "mereyabdenbekuly-ctrl",
-        "Alibaba",
-        "vshulcz",
-        "sandbaseai",
-        "LijingJim"
-      ],
-      "suggested_watch_keywords": [
-        "claude",
-        "open-source",
-        "ai-agents",
-        "agent",
-        "agents",
-        "code",
-        "codex",
-        "coding"
-      ],
-      "confidence": 0.72,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:Model Context Protocol:2026-07-18:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sandbaseai/managed-agents\", \"source_url\": \"https://github.com/sandbaseai/managed-agents\", \"published_at\": \"2026-07-11T08:48:07Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuantumByteOSS/quantumbyte\", \"source_url\": \"https://github.com/QuantumByteOSS/quantumbyte\", \"published_at\": \"2026-07-14T04:53:39Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"barretlee/agent-pulse\", \"source_url\": \"https://github.com/barretlee/agent-pulse\", \"published_at\": \"2026-07-11T14:38:25Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mereyabdenbekuly-ctrl/clodex-ide\", \"source_url\": \"https://github.com/mereyabdenbekuly-ctrl/clodex-ide\", \"published_at\": \"2026-07-12T10:35:44Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JimLiu/baocut\", \"source_url\": \"https://github.com/JimLiu/baocut\", \"published_at\": \"2026-07-13T07:06:42Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VKirill/claude-lane-stack\", \"source_url\": \"https://github.com/VKirill/claude-lane-stack\", \"published_at\": \"2026-07-11T04:14:51Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括vshulcz/deja-vu、sandbaseai/managed-agents、QuantumByteOSS/quantumbyte、barretlee/agent-pulse、mereyabdenbekuly-ctrl/clodex-ide等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 125，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、QuantumByteOSS、barretlee、mereyabdenbekuly-ctrl、Alibaba、vshulcz、sandbaseai、LijingJim，累计提及 12 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察claude、open-source、ai-agents、agent、agents、code、codex、coding等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
-      "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M5.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、claude、open-source、ai-agents、agent等线索，代表条目包括vshulcz/deja-vu、sandbaseai/managed-agents、QuantumByteOSS/quantumbyte、barretlee/agent-pulse，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 125，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 3 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、QuantumByteOSS、barretlee、mereyabdenbekuly-ctrl、Alibaba、vshulcz，累计提及 12 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察claude、open-source、ai-agents、agent、agents、code、codex、coding是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "vshulcz/deja-vu",
-            "url": "https://github.com/vshulcz/deja-vu",
-            "source": "github",
-            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "sandbaseai/managed-agents",
-            "url": "https://github.com/sandbaseai/managed-agents",
-            "source": "github",
-            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "QuantumByteOSS/quantumbyte",
-            "url": "https://github.com/QuantumByteOSS/quantumbyte",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "barretlee/agent-pulse",
-            "url": "https://github.com/barretlee/agent-pulse",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "mereyabdenbekuly-ctrl/clodex-ide",
-            "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "LijingJim/J-AEIS",
-            "url": "https://github.com/LijingJim/J-AEIS",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "JimLiu/baocut",
-            "url": "https://github.com/JimLiu/baocut",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "VKirill/claude-lane-stack",
-            "url": "https://github.com/VKirill/claude-lane-stack",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "KlaatAI/klaatcode",
-            "url": "https://github.com/KlaatAI/klaatcode",
-            "source": "github",
-            "reason": "关联到该热点的原始信号链接。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "vshulcz/deja-vu",
-          "source_url": "https://github.com/vshulcz/deja-vu",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.537,
-          "matched_terms": [
-            "MCP"
-          ],
-          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.537,
-          "matched_terms": [
-            "MCP"
-          ],
-          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "QuantumByteOSS/quantumbyte",
-          "source_url": "https://github.com/QuantumByteOSS/quantumbyte",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "barretlee/agent-pulse",
-          "source_url": "https://github.com/barretlee/agent-pulse",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "mereyabdenbekuly-ctrl/clodex-ide",
-          "source_url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "LijingJim/J-AEIS",
-          "source_url": "https://github.com/LijingJim/J-AEIS",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "JimLiu/baocut",
-          "source_url": "https://github.com/JimLiu/baocut",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "VKirill/claude-lane-stack",
-          "source_url": "https://github.com/VKirill/claude-lane-stack",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 9 个。",
-        "focus_terms": [
-          "MCP",
-          "RAG",
-          "claude",
-          "open-source",
-          "ai-agents",
-          "agent",
-          "agents",
-          "code"
-        ],
-        "representative_titles": [
-          "vshulcz/deja-vu",
-          "sandbaseai/managed-agents",
-          "QuantumByteOSS/quantumbyte",
-          "barretlee/agent-pulse",
-          "mereyabdenbekuly-ctrl/clodex-ide"
-        ],
-        "related_institutions": [
-          "OpenAI",
-          "QuantumByteOSS",
-          "barretlee",
-          "mereyabdenbekuly-ctrl",
-          "Alibaba",
-          "vshulcz",
-          "sandbaseai",
-          "LijingJim"
-        ],
-        "paper_count": 0,
-        "repo_count": 9,
-        "github_star_delta": 125,
-        "method_mentions": 3,
-        "dataset_mentions": 0,
-        "institution_mentions": 12
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -1346,10 +1001,10 @@
       "magnitude": 5.53,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.53，burst=5.527，growth_rate=-0.95，z_score=-11.227，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.53，burst=5.533，growth_rate=-0.95，z_score=-11.234，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 8 个",
-        "24h star 增量 113",
+        "24h star 增量 111",
         "方法提及：RAG",
         "机构集中：CyberSunil, Chaelsoo, agutinbaigo28"
       ],
@@ -1358,13 +1013,13 @@
         "current_24h_count": 8,
         "current_72h_count": 8,
         "current_7d_count": 8,
-        "baseline_daily_avg_30d": 179.069,
-        "baseline_daily_std_30d": 14.238,
-        "baseline_72h_avg_30d": 537.207,
+        "baseline_daily_avg_30d": 179.124,
+        "baseline_daily_std_30d": 14.232,
+        "baseline_72h_avg_30d": 537.373,
         "growth_rate": -0.95,
-        "z_score": -11.227,
+        "z_score": -11.234,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.318,
+        "github_signal_score": 4.325,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.125,
@@ -1374,11 +1029,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 8,
-        "github_star_delta": 113,
+        "github_star_delta": 111,
         "method_mentions": 8,
         "dataset_mentions": 0,
         "institution_mentions": 9,
-        "burst_score": 5.527,
+        "burst_score": 5.533,
         "low_history_confidence": false,
         "magnitude": 5.53
       },
@@ -1541,11 +1196,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:RAG:2026-07-18:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"CyberSunil/LLMVault\", \"source_url\": \"https://github.com/CyberSunil/LLMVault\", \"published_at\": \"2026-07-15T08:18:22Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Chaelsoo/Zetsu\", \"source_url\": \"https://github.com/Chaelsoo/Zetsu\", \"published_at\": \"2026-07-13T01:44:01Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"agutinbaigo28/financial-agent-api\", \"source_url\": \"https://github.com/agutinbaigo28/financial-agent-api\", \"published_at\": \"2026-07-14T07:15:38Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"youxiandechilun/Guido\", \"source_url\": \"https://github.com/youxiandechilun/Guido\", \"published_at\": \"2026-07-11T06:23:14Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mate-matt/rag-memory-lab\", \"source_url\": \"https://github.com/mate-matt/rag-memory-lab\", \"published_at\": \"2026-07-12T04:46:56Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yuyu66688/fit-mirror\", \"source_url\": \"https://github.com/yuyu66688/fit-mirror\", \"published_at\": \"2026-07-12T10:34:57Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gopalmani/QueryMindAI\", \"source_url\": \"https://github.com/gopalmani/QueryMindAI\", \"published_at\": \"2026-07-11T10:41:40Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括CyberSunil/LLMVault、Chaelsoo/Zetsu、agutinbaigo28/financial-agent-api、youxiandechilun/Guido、mate-matt/rag-memory-lab等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 113，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 8 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及CyberSunil、Chaelsoo、agutinbaigo28、youxiandechilun、mate-matt、LijingJim、OpenAI、yuyu66688，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、agent、security、platform、fastapi、owasp、genai等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括CyberSunil/LLMVault、Chaelsoo/Zetsu、agutinbaigo28/financial-agent-api、youxiandechilun/Guido、mate-matt/rag-memory-lab等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 111，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 8 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及CyberSunil、Chaelsoo、agutinbaigo28、youxiandechilun、mate-matt、LijingJim、OpenAI、yuyu66688，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、agent、security、platform、fastapi、owasp、genai等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M5.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、llm、agent、security、platform、fastapi等线索，代表条目包括CyberSunil/LLMVault、Chaelsoo/Zetsu、agutinbaigo28/financial-agent-api、youxiandechilun/Guido，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 113，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 111，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 8 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及CyberSunil、Chaelsoo、agutinbaigo28、youxiandechilun、mate-matt、LijingJim，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1725,7 +1380,7 @@
         ],
         "paper_count": 0,
         "repo_count": 8,
-        "github_star_delta": 113,
+        "github_star_delta": 111,
         "method_mentions": 8,
         "dataset_mentions": 0,
         "institution_mentions": 9
@@ -1733,12 +1388,378 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
+      "topic": "Model Context Protocol",
+      "title": "Model Context Protocol 出现强趋势震荡",
+      "magnitude": 5.51,
+      "severity_label": "强趋势震荡",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.51，burst=5.023，growth_rate=-0.966，z_score=-6.673，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 9 个",
+        "24h star 增量 137",
+        "方法提及：MCP, RAG",
+        "机构集中：OpenAI, QuantumByteOSS, PromptPartner"
+      ],
+      "metrics": {
+        "current_1h_count": 9,
+        "current_24h_count": 9,
+        "current_72h_count": 9,
+        "current_7d_count": 9,
+        "baseline_daily_avg_30d": 293.459,
+        "baseline_daily_std_30d": 41.627,
+        "baseline_72h_avg_30d": 880.378,
+        "growth_rate": -0.966,
+        "z_score": -6.673,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 4.418,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.222,
+        "institution_signal_score": 0.586,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 0.604,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 9,
+        "github_star_delta": 137,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 12,
+        "burst_score": 5.023,
+        "low_history_confidence": false,
+        "magnitude": 5.51
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "vshulcz/deja-vu",
+          "source_url": "https://github.com/vshulcz/deja-vu",
+          "published_at": "2026-07-14T07:45:44Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "QuantumByteOSS/quantumbyte",
+          "source_url": "https://github.com/QuantumByteOSS/quantumbyte",
+          "published_at": "2026-07-14T04:53:39Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "published_at": "2026-07-16T11:37:15Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "barretlee/agent-pulse",
+          "source_url": "https://github.com/barretlee/agent-pulse",
+          "published_at": "2026-07-11T14:38:25Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "mereyabdenbekuly-ctrl/clodex-ide",
+          "source_url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+          "published_at": "2026-07-12T10:35:44Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "LijingJim/J-AEIS",
+          "source_url": "https://github.com/LijingJim/J-AEIS",
+          "published_at": "2026-07-13T16:42:20Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "JimLiu/baocut",
+          "source_url": "https://github.com/JimLiu/baocut",
+          "published_at": "2026-07-13T07:06:42Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "VKirill/claude-lane-stack",
+          "source_url": "https://github.com/VKirill/claude-lane-stack",
+          "published_at": "2026-07-11T04:14:51Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/JimLiu/baocut",
+        "https://github.com/KlaatAI/klaatcode",
+        "https://github.com/LijingJim/J-AEIS",
+        "https://github.com/PromptPartner/agentsmith",
+        "https://github.com/QuantumByteOSS/quantumbyte",
+        "https://github.com/VKirill/claude-lane-stack",
+        "https://github.com/barretlee/agent-pulse",
+        "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+        "https://github.com/vshulcz/deja-vu"
+      ],
+      "related_methods": [
+        "MCP",
+        "RAG"
+      ],
+      "related_datasets": [],
+      "related_institutions": [
+        "OpenAI",
+        "QuantumByteOSS",
+        "PromptPartner",
+        "barretlee",
+        "mereyabdenbekuly-ctrl",
+        "Alibaba",
+        "vshulcz",
+        "LijingJim"
+      ],
+      "suggested_watch_keywords": [
+        "claude",
+        "agents",
+        "codex",
+        "ai-agents",
+        "open-source",
+        "code",
+        "coding",
+        "agent"
+      ],
+      "confidence": 0.72,
+      "caveats": [],
+      "tags": [
+        "GitHub 暴涨",
+        "方法扩散",
+        "机构集中",
+        "开源驱动"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:Model Context Protocol:2026-07-18:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuantumByteOSS/quantumbyte\", \"source_url\": \"https://github.com/QuantumByteOSS/quantumbyte\", \"published_at\": \"2026-07-14T04:53:39Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"barretlee/agent-pulse\", \"source_url\": \"https://github.com/barretlee/agent-pulse\", \"published_at\": \"2026-07-11T14:38:25Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mereyabdenbekuly-ctrl/clodex-ide\", \"source_url\": \"https://github.com/mereyabdenbekuly-ctrl/clodex-ide\", \"published_at\": \"2026-07-12T10:35:44Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JimLiu/baocut\", \"source_url\": \"https://github.com/JimLiu/baocut\", \"published_at\": \"2026-07-13T07:06:42Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VKirill/claude-lane-stack\", \"source_url\": \"https://github.com/VKirill/claude-lane-stack\", \"published_at\": \"2026-07-11T04:14:51Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括vshulcz/deja-vu、QuantumByteOSS/quantumbyte、PromptPartner/agentsmith、barretlee/agent-pulse、mereyabdenbekuly-ctrl/clodex-ide等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 137，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、QuantumByteOSS、PromptPartner、barretlee、mereyabdenbekuly-ctrl、Alibaba、vshulcz、LijingJim，累计提及 12 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察claude、agents、codex、ai-agents、open-source、code、coding、agent等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "signal_takeaways": [
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M5.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、claude、agents、codex、ai-agents等线索，代表条目包括vshulcz/deja-vu、QuantumByteOSS/quantumbyte、PromptPartner/agentsmith、barretlee/agent-pulse，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 137，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、QuantumByteOSS、PromptPartner、barretlee、mereyabdenbekuly-ctrl、Alibaba，累计提及 12 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察claude、agents、codex、ai-agents、open-source、code、coding、agent是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "vshulcz/deja-vu",
+            "url": "https://github.com/vshulcz/deja-vu",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "QuantumByteOSS/quantumbyte",
+            "url": "https://github.com/QuantumByteOSS/quantumbyte",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "PromptPartner/agentsmith",
+            "url": "https://github.com/PromptPartner/agentsmith",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "barretlee/agent-pulse",
+            "url": "https://github.com/barretlee/agent-pulse",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "mereyabdenbekuly-ctrl/clodex-ide",
+            "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "LijingJim/J-AEIS",
+            "url": "https://github.com/LijingJim/J-AEIS",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "JimLiu/baocut",
+            "url": "https://github.com/JimLiu/baocut",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "VKirill/claude-lane-stack",
+            "url": "https://github.com/VKirill/claude-lane-stack",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "KlaatAI/klaatcode",
+            "url": "https://github.com/KlaatAI/klaatcode",
+            "source": "github",
+            "reason": "关联到该热点的原始信号链接。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "vshulcz/deja-vu",
+          "source_url": "https://github.com/vshulcz/deja-vu",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "QuantumByteOSS/quantumbyte",
+          "source_url": "https://github.com/QuantumByteOSS/quantumbyte",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "barretlee/agent-pulse",
+          "source_url": "https://github.com/barretlee/agent-pulse",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "mereyabdenbekuly-ctrl/clodex-ide",
+          "source_url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "LijingJim/J-AEIS",
+          "source_url": "https://github.com/LijingJim/J-AEIS",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "JimLiu/baocut",
+          "source_url": "https://github.com/JimLiu/baocut",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "VKirill/claude-lane-stack",
+          "source_url": "https://github.com/VKirill/claude-lane-stack",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 9 个。",
+        "focus_terms": [
+          "MCP",
+          "RAG",
+          "claude",
+          "agents",
+          "codex",
+          "ai-agents",
+          "open-source",
+          "code"
+        ],
+        "representative_titles": [
+          "vshulcz/deja-vu",
+          "QuantumByteOSS/quantumbyte",
+          "PromptPartner/agentsmith",
+          "barretlee/agent-pulse",
+          "mereyabdenbekuly-ctrl/clodex-ide"
+        ],
+        "related_institutions": [
+          "OpenAI",
+          "QuantumByteOSS",
+          "PromptPartner",
+          "barretlee",
+          "mereyabdenbekuly-ctrl",
+          "Alibaba",
+          "vshulcz",
+          "LijingJim"
+        ],
+        "paper_count": 0,
+        "repo_count": 9,
+        "github_star_delta": 137,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 12
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
       "topic": "Speech",
       "title": "Speech 出现疑似爆发",
-      "magnitude": 4.65,
+      "magnitude": 4.72,
       "severity_label": "疑似爆发",
       "summary": "Speech 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.65，burst=3.084，growth_rate=-0.967，z_score=-2.153，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.72，burst=3.174，growth_rate=-0.966，z_score=-2.077，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
         "24h star 增量 7",
@@ -1749,13 +1770,13 @@
         "current_24h_count": 1,
         "current_72h_count": 1,
         "current_7d_count": 1,
-        "baseline_daily_avg_30d": 59.077,
-        "baseline_daily_std_30d": 25.978,
-        "baseline_72h_avg_30d": 177.231,
-        "growth_rate": -0.967,
-        "z_score": -2.153,
+        "baseline_daily_avg_30d": 57.778,
+        "baseline_daily_std_30d": 26.339,
+        "baseline_72h_avg_30d": 173.333,
+        "growth_rate": -0.966,
+        "z_score": -2.077,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.084,
+        "github_signal_score": 3.174,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 1.0,
@@ -1769,9 +1790,9 @@
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 2,
-        "burst_score": 3.084,
+        "burst_score": 3.174,
         "low_history_confidence": false,
-        "magnitude": 4.65
+        "magnitude": 4.72
       },
       "evidence": [
         {
@@ -1888,10 +1909,10 @@
       "magnitude": 4.56,
       "severity_label": "疑似爆发",
       "summary": "Reinforcement Learning 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.56，burst=3.57，growth_rate=-0.907，z_score=-2.104，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.56，burst=3.567，growth_rate=-0.907，z_score=-2.101，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 3 个",
-        "24h star 增量 6",
+        "24h star 增量 5",
         "机构集中：Anthropic, Extraltodeus, Roboparty"
       ],
       "metrics": {
@@ -1899,13 +1920,13 @@
         "current_24h_count": 3,
         "current_72h_count": 3,
         "current_7d_count": 3,
-        "baseline_daily_avg_30d": 41.939,
-        "baseline_daily_std_30d": 17.508,
-        "baseline_72h_avg_30d": 125.818,
+        "baseline_daily_avg_30d": 42.24,
+        "baseline_daily_std_30d": 17.675,
+        "baseline_72h_avg_30d": 126.72,
         "growth_rate": -0.907,
-        "z_score": -2.104,
+        "z_score": -2.101,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.57,
+        "github_signal_score": 3.567,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.333,
@@ -1915,11 +1936,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 3,
-        "github_star_delta": 6,
+        "github_star_delta": 5,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 4,
-        "burst_score": 3.57,
+        "burst_score": 3.567,
         "low_history_confidence": false,
         "magnitude": 4.56
       },
@@ -1994,11 +2015,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Reinforcement Learning:2026-07-18:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Roboparty/UFO\", \"source_url\": \"https://github.com/Roboparty/UFO\", \"published_at\": \"2026-07-13T08:01:01Z\", \"match_score\": 0.6, \"matched_keywords\": [\"RL\", \"rl\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Extraltodeus/J-Wash\", \"source_url\": \"https://github.com/Extraltodeus/J-Wash\", \"published_at\": \"2026-07-13T20:23:26Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"THMOS2025/MOS-9-Open-Source-Humanoid-Robot\", \"source_url\": \"https://github.com/THMOS2025/MOS-9-Open-Source-Humanoid-Robot\", \"published_at\": \"2026-07-15T13:25:34Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括Roboparty/UFO、Extraltodeus/J-Wash、THMOS2025/MOS-9-Open-Source-Humanoid-Robot等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 6，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及Anthropic、Extraltodeus、Roboparty、THMOS2025，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察open-source、humanoid、j-wash、anthropic、extraltodeus、jacobian-brainwash、manual、alignment等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括Roboparty/UFO、Extraltodeus/J-Wash、THMOS2025/MOS-9-Open-Source-Humanoid-Robot等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 5，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及Anthropic、Extraltodeus、Roboparty、THMOS2025，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察open-source、humanoid、j-wash、anthropic、extraltodeus、jacobian-brainwash、manual、alignment等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
         "总体判断：Reinforcement Learning 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“疑似爆发”（M4.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向open-source、humanoid、j-wash、anthropic、extraltodeus、jacobian-brainwash等线索，代表条目包括Roboparty/UFO、Extraltodeus/J-Wash、THMOS2025/MOS-9-Open-Source-Humanoid-Robot，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 6，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 5，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及Anthropic、Extraltodeus、Roboparty、THMOS2025，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察open-source、humanoid、j-wash、anthropic、extraltodeus、jacobian-brainwash、manual、alignment是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
@@ -2082,7 +2103,7 @@
         ],
         "paper_count": 0,
         "repo_count": 3,
-        "github_star_delta": 6,
+        "github_star_delta": 5,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 4
@@ -2092,44 +2113,44 @@
     {
       "topic": "Memory",
       "title": "Memory 出现疑似爆发",
-      "magnitude": 4.37,
+      "magnitude": 4.32,
       "severity_label": "疑似爆发",
       "summary": "Memory 在当前窗口内出现 0 条论文信号和 11 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.37，burst=3.787，growth_rate=-0.956，z_score=-5.541，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.32，burst=3.666，growth_rate=-0.956，z_score=-5.557，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 11 个",
-        "24h star 增量 125",
-        "方法提及：MCP, RAG",
-        "机构集中：OpenAI, QuantumByteOSS, barretlee"
+        "24h star 增量 138",
+        "方法提及：RAG, MCP",
+        "机构集中：OpenAI, QuantumByteOSS, PromptPartner"
       ],
       "metrics": {
         "current_1h_count": 11,
         "current_24h_count": 11,
         "current_72h_count": 11,
         "current_7d_count": 11,
-        "baseline_daily_avg_30d": 270.6,
-        "baseline_daily_std_30d": 45.848,
-        "baseline_72h_avg_30d": 811.8,
+        "baseline_daily_avg_30d": 270.559,
+        "baseline_daily_std_30d": 45.708,
+        "baseline_72h_avg_30d": 811.677,
         "growth_rate": -0.956,
-        "z_score": -5.541,
+        "z_score": -5.557,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.902,
+        "github_signal_score": 2.903,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.182,
         "institution_signal_score": 0.504,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.885,
+        "method_signal_score": 0.762,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 11,
-        "github_star_delta": 125,
-        "method_mentions": 4,
+        "github_star_delta": 138,
+        "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 14,
-        "burst_score": 3.787,
+        "burst_score": 3.666,
         "low_history_confidence": false,
-        "magnitude": 4.37
+        "magnitude": 4.32
       },
       "evidence": [
         {
@@ -2185,6 +2206,17 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "published_at": "2026-07-16T11:37:15Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "barretlee/agent-pulse",
           "source_url": "https://github.com/barretlee/agent-pulse",
           "published_at": "2026-07-11T14:38:25Z",
@@ -2207,17 +2239,6 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
-          "published_at": "2026-07-11T08:48:07Z",
-          "match_score": 0.07,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
           "title": "LijingJim/J-AEIS",
           "source_url": "https://github.com/LijingJim/J-AEIS",
           "published_at": "2026-07-13T16:42:20Z",
@@ -2231,39 +2252,39 @@
         "https://github.com/JimLiu/baocut",
         "https://github.com/KlaatAI/klaatcode",
         "https://github.com/LijingJim/J-AEIS",
+        "https://github.com/PromptPartner/agentsmith",
         "https://github.com/QuantumByteOSS/quantumbyte",
         "https://github.com/UIseries/ai-robot",
         "https://github.com/VKirill/claude-lane-stack",
         "https://github.com/barretlee/agent-pulse",
         "https://github.com/mate-matt/rag-memory-lab",
         "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-        "https://github.com/sandbaseai/managed-agents",
         "https://github.com/vshulcz/deja-vu"
       ],
       "related_methods": [
-        "MCP",
-        "RAG"
+        "RAG",
+        "MCP"
       ],
       "related_datasets": [],
       "related_institutions": [
         "OpenAI",
         "QuantumByteOSS",
+        "PromptPartner",
         "barretlee",
         "mereyabdenbekuly-ctrl",
         "Alibaba",
         "vshulcz",
-        "sandbaseai",
         "mate-matt"
       ],
       "suggested_watch_keywords": [
         "claude",
-        "open-source",
-        "ai-agents",
-        "agent",
         "agents",
-        "code",
         "codex",
-        "coding"
+        "ai-agents",
+        "open-source",
+        "code",
+        "coding",
+        "agent"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -2275,16 +2296,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Memory:2026-07-18:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mate-matt/rag-memory-lab\", \"source_url\": \"https://github.com/mate-matt/rag-memory-lab\", \"published_at\": \"2026-07-12T04:46:56Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"UIseries/ai-robot\", \"source_url\": \"https://github.com/UIseries/ai-robot\", \"published_at\": \"2026-07-13T06:40:48Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuantumByteOSS/quantumbyte\", \"source_url\": \"https://github.com/QuantumByteOSS/quantumbyte\", \"published_at\": \"2026-07-14T04:53:39Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"barretlee/agent-pulse\", \"source_url\": \"https://github.com/barretlee/agent-pulse\", \"published_at\": \"2026-07-11T14:38:25Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mereyabdenbekuly-ctrl/clodex-ide\", \"source_url\": \"https://github.com/mereyabdenbekuly-ctrl/clodex-ide\", \"published_at\": \"2026-07-12T10:35:44Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sandbaseai/managed-agents\", \"source_url\": \"https://github.com/sandbaseai/managed-agents\", \"published_at\": \"2026-07-11T08:48:07Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括vshulcz/deja-vu、mate-matt/rag-memory-lab、UIseries/ai-robot、QuantumByteOSS/quantumbyte、barretlee/agent-pulse等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 125，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、QuantumByteOSS、barretlee、mereyabdenbekuly-ctrl、Alibaba、vshulcz、sandbaseai、mate-matt，累计提及 14 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察claude、open-source、ai-agents、agent、agents、code、codex、coding等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vshulcz/deja-vu\", \"source_url\": \"https://github.com/vshulcz/deja-vu\", \"published_at\": \"2026-07-14T07:45:44Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mate-matt/rag-memory-lab\", \"source_url\": \"https://github.com/mate-matt/rag-memory-lab\", \"published_at\": \"2026-07-12T04:46:56Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"UIseries/ai-robot\", \"source_url\": \"https://github.com/UIseries/ai-robot\", \"published_at\": \"2026-07-13T06:40:48Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuantumByteOSS/quantumbyte\", \"source_url\": \"https://github.com/QuantumByteOSS/quantumbyte\", \"published_at\": \"2026-07-14T04:53:39Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"barretlee/agent-pulse\", \"source_url\": \"https://github.com/barretlee/agent-pulse\", \"published_at\": \"2026-07-11T14:38:25Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mereyabdenbekuly-ctrl/clodex-ide\", \"source_url\": \"https://github.com/mereyabdenbekuly-ctrl/clodex-ide\", \"published_at\": \"2026-07-12T10:35:44Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LijingJim/J-AEIS\", \"source_url\": \"https://github.com/LijingJim/J-AEIS\", \"published_at\": \"2026-07-13T16:42:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.3）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括vshulcz/deja-vu、mate-matt/rag-memory-lab、UIseries/ai-robot、QuantumByteOSS/quantumbyte、PromptPartner/agentsmith等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 138，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、QuantumByteOSS、PromptPartner、barretlee、mereyabdenbekuly-ctrl、Alibaba、vshulcz、mate-matt，累计提及 14 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察claude、agents、codex、ai-agents、open-source、code、coding、agent等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Memory 本轮由论文 0 条、GitHub 项目 11 个共同构成观测基础，当前强度为“疑似爆发”（M4.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、claude、open-source、ai-agents、agent等线索，代表条目包括vshulcz/deja-vu、mate-matt/rag-memory-lab、UIseries/ai-robot、QuantumByteOSS/quantumbyte，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 125，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 4 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、QuantumByteOSS、barretlee、mereyabdenbekuly-ctrl、Alibaba、vshulcz，累计提及 14 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Memory 本轮由论文 0 条、GitHub 项目 11 个共同构成观测基础，当前强度为“疑似爆发”（M4.3）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、claude、agents、codex、ai-agents等线索，代表条目包括vshulcz/deja-vu、mate-matt/rag-memory-lab、UIseries/ai-robot、QuantumByteOSS/quantumbyte，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 138，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 3 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、QuantumByteOSS、PromptPartner、barretlee、mereyabdenbekuly-ctrl、Alibaba，累计提及 14 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察claude、open-source、ai-agents、agent、agents、code、codex、coding是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察claude、agents、codex、ai-agents、open-source、code、coding、agent是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -2313,6 +2334,12 @@
             "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
           },
           {
+            "title": "PromptPartner/agentsmith",
+            "url": "https://github.com/PromptPartner/agentsmith",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
             "title": "barretlee/agent-pulse",
             "url": "https://github.com/barretlee/agent-pulse",
             "source": "github",
@@ -2321,12 +2348,6 @@
           {
             "title": "mereyabdenbekuly-ctrl/clodex-ide",
             "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-            "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "sandbaseai/managed-agents",
-            "url": "https://github.com/sandbaseai/managed-agents",
             "source": "github",
             "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
           },
@@ -2394,6 +2415,15 @@
           "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "barretlee/agent-pulse",
           "source_url": "https://github.com/barretlee/agent-pulse",
           "source_type": "repo",
@@ -2405,15 +2435,6 @@
         {
           "title": "mereyabdenbekuly-ctrl/clodex-ide",
           "source_url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.07,
-          "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.07,
@@ -2434,13 +2455,13 @@
         "dominant_source": "开源项目",
         "source_mix": "当前窗口内捕获到GitHub 项目 11 个。",
         "focus_terms": [
-          "MCP",
           "RAG",
+          "MCP",
           "claude",
-          "open-source",
-          "ai-agents",
-          "agent",
           "agents",
+          "codex",
+          "ai-agents",
+          "open-source",
           "code"
         ],
         "representative_titles": [
@@ -2448,22 +2469,22 @@
           "mate-matt/rag-memory-lab",
           "UIseries/ai-robot",
           "QuantumByteOSS/quantumbyte",
-          "barretlee/agent-pulse"
+          "PromptPartner/agentsmith"
         ],
         "related_institutions": [
           "OpenAI",
           "QuantumByteOSS",
+          "PromptPartner",
           "barretlee",
           "mereyabdenbekuly-ctrl",
           "Alibaba",
           "vshulcz",
-          "sandbaseai",
           "mate-matt"
         ],
         "paper_count": 0,
         "repo_count": 11,
-        "github_star_delta": 125,
-        "method_mentions": 4,
+        "github_star_delta": 138,
+        "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 14
       },
@@ -2475,10 +2496,10 @@
       "magnitude": 4.2,
       "severity_label": "疑似爆发",
       "summary": "LLM Security 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.2，burst=3.306，growth_rate=-0.943，z_score=-1.923，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.2，burst=3.304，growth_rate=-0.942，z_score=-1.941，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 2 个",
-        "24h star 增量 107",
+        "24h star 增量 100",
         "方法提及：RAG",
         "机构集中：CyberSunil, Chaelsoo"
       ],
@@ -2487,13 +2508,13 @@
         "current_24h_count": 2,
         "current_72h_count": 2,
         "current_7d_count": 2,
-        "baseline_daily_avg_30d": 51.2,
-        "baseline_daily_std_30d": 24.58,
-        "baseline_72h_avg_30d": 153.6,
-        "growth_rate": -0.943,
-        "z_score": -1.923,
+        "baseline_daily_avg_30d": 51.13,
+        "baseline_daily_std_30d": 24.316,
+        "baseline_72h_avg_30d": 153.391,
+        "growth_rate": -0.942,
+        "z_score": -1.941,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.701,
+        "github_signal_score": 2.7,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.5,
@@ -2503,11 +2524,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 2,
-        "github_star_delta": 107,
+        "github_star_delta": 100,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 2,
-        "burst_score": 3.306,
+        "burst_score": 3.304,
         "low_history_confidence": false,
         "magnitude": 4.2
       },
@@ -2571,11 +2592,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:LLM Security:2026-07-18:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"CyberSunil/LLMVault\", \"source_url\": \"https://github.com/CyberSunil/LLMVault\", \"published_at\": \"2026-07-15T08:18:22Z\", \"match_score\": 0.375, \"matched_keywords\": [\"prompt injection\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Chaelsoo/Zetsu\", \"source_url\": \"https://github.com/Chaelsoo/Zetsu\", \"published_at\": \"2026-07-13T01:44:01Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「LLM Security」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括CyberSunil/LLMVault、Chaelsoo/Zetsu等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 107，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及CyberSunil、Chaelsoo，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察security、rag、owasp、llm、genai、cybersunil、llmvault、intentionally等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。",
+      "curated_summary": "本次抓取围绕「LLM Security」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括CyberSunil/LLMVault、Chaelsoo/Zetsu等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 100，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及CyberSunil、Chaelsoo，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察security、rag、owasp、llm、genai、cybersunil、llmvault、intentionally等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。",
       "signal_takeaways": [
         "总体判断：LLM Security 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“疑似爆发”（M4.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、security、owasp、llm、genai、cybersunil等线索，代表条目包括CyberSunil/LLMVault、Chaelsoo/Zetsu，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 107，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 100，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及CyberSunil、Chaelsoo，累计提及 2 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 2 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -2642,7 +2663,7 @@
         ],
         "paper_count": 0,
         "repo_count": 2,
-        "github_star_delta": 107,
+        "github_star_delta": 100,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 2
@@ -2652,13 +2673,13 @@
     {
       "topic": "Video Generation",
       "title": "Video Generation 出现明显异常",
-      "magnitude": 3.79,
+      "magnitude": 3.81,
       "severity_label": "明显异常",
       "summary": "Video Generation 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.79，burst=2.475，growth_rate=-0.928，z_score=-2.114，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.81，burst=2.493，growth_rate=-0.934，z_score=-2.325，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 6 个",
-        "24h star 增量 65",
+        "24h star 增量 84",
         "机构集中：OpenAI, pratyushmishra234, QuantumByteOSS"
       ],
       "metrics": {
@@ -2666,13 +2687,13 @@
         "current_24h_count": 6,
         "current_72h_count": 6,
         "current_7d_count": 6,
-        "baseline_daily_avg_30d": 96.0,
-        "baseline_daily_std_30d": 41.569,
-        "baseline_72h_avg_30d": 288.0,
-        "growth_rate": -0.928,
-        "z_score": -2.114,
+        "baseline_daily_avg_30d": 105.6,
+        "baseline_daily_std_30d": 41.845,
+        "baseline_72h_avg_30d": 316.8,
+        "growth_rate": -0.934,
+        "z_score": -2.325,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.475,
+        "github_signal_score": 2.493,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.333,
@@ -2682,13 +2703,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 65,
+        "github_star_delta": 84,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 2.475,
+        "burst_score": 2.493,
         "low_history_confidence": true,
-        "magnitude": 3.79
+        "magnitude": 3.81
       },
       "evidence": [
         {
@@ -2800,14 +2821,14 @@
         "低置信度",
         "历史不足"
       ],
-      "push_recommended": false,
+      "push_recommended": true,
       "dedupe_key": "trend:Video Generation:2026-07-18:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"calesthio/generative-media-skills\", \"source_url\": \"https://github.com/calesthio/generative-media-skills\", \"published_at\": \"2026-07-11T04:16:24Z\", \"match_score\": 0.375, \"matched_keywords\": [\"text-to-video\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pratyushmishra234/Smart-Waste-Management-using-Artificial-Intelligence\", \"source_url\": \"https://github.com/pratyushmishra234/Smart-Waste-Management-using-Artificial-Intelligence\", \"published_at\": \"2026-07-16T06:50:10Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuantumByteOSS/quantumbyte\", \"source_url\": \"https://github.com/QuantumByteOSS/quantumbyte\", \"published_at\": \"2026-07-14T04:53:39Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pyang5166/gbro-collage-broll\", \"source_url\": \"https://github.com/pyang5166/gbro-collage-broll\", \"published_at\": \"2026-07-15T12:45:47Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"taeyunwoo/DexHOI2Sim\", \"source_url\": \"https://github.com/taeyunwoo/DexHOI2Sim\", \"published_at\": \"2026-07-13T08:05:18Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Video Generation」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括calesthio/generative-media-skills、pratyushmishra234/Smart-Waste-Management-using-Artificial-Intelligence、QuantumByteOSS/quantumbyte、pyang5166/gbro-collage-broll、taeyunwoo/DexHOI2Sim等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 65，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、pratyushmishra234、QuantumByteOSS、pyang5166、taeyunwoo、KlaatAI、calesthio，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、smart、generation、open-source、coding、waste、pratyushmishra234、smart-waste-management-using-artificial-intelligence等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+      "curated_summary": "本次抓取围绕「Video Generation」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括calesthio/generative-media-skills、pratyushmishra234/Smart-Waste-Management-using-Artificial-Intelligence、QuantumByteOSS/quantumbyte、pyang5166/gbro-collage-broll、taeyunwoo/DexHOI2Sim等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 84，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、pratyushmishra234、QuantumByteOSS、pyang5166、taeyunwoo、KlaatAI、calesthio，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、smart、generation、open-source、coding、waste、pratyushmishra234、smart-waste-management-using-artificial-intelligence等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。需要注意的是，历史样本不足 30 天，基线置信度较低。",
       "signal_takeaways": [
         "总体判断：Video Generation 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“明显异常”（M3.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向agent、smart、generation、open-source、coding、waste等线索，代表条目包括calesthio/generative-media-skills、pratyushmishra234/Smart-Waste-Management-using-Artificial-Intelligence、QuantumByteOSS/quantumbyte、pyang5166/gbro-collage-broll，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 65，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 84，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及OpenAI、pratyushmishra234、QuantumByteOSS、pyang5166、taeyunwoo、KlaatAI，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察agent、smart、generation、open-source、coding、waste、pratyushmishra234、smart-waste-management-using-artificial-intelligence是否继续出现。当前置信度为 0.6，同时需要注意：历史样本不足 30 天，基线置信度较低。"
@@ -2941,7 +2962,7 @@
         ],
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 65,
+        "github_star_delta": 84,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 8
@@ -2953,7 +2974,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Robotics",
-      "magnitude": 5.77,
+      "magnitude": 5.76,
       "severity_label": "强趋势震荡",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3156,6 +3177,20 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "published_at": "2026-07-16T11:37:15Z",
+          "match_score": 0.633,
+          "matched_keywords": [
+            "agent",
+            "agents"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "barretlee/agent-pulse",
           "source_url": "https://github.com/barretlee/agent-pulse",
           "published_at": "2026-07-11T14:38:25Z",
@@ -3180,20 +3215,6 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "sandbaseai/managed-agents",
-          "source_url": "https://github.com/sandbaseai/managed-agents",
-          "published_at": "2026-07-11T08:48:07Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "dedupe_key": "watchlist:AI Coding 观察:Agents:强趋势震荡"
@@ -3206,7 +3227,7 @@
       "threshold_magnitude": 3.2,
       "threshold_growth_rate": 1.0,
       "push_enabled": true,
-      "reason": "震级超过阈值、关键词命中",
+      "reason": "震级超过阈值",
       "evidence": [
         {
           "source_type": "repo",
@@ -3291,7 +3312,7 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "Alignment",
-      "magnitude": 3.49,
+      "magnitude": 3.5,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
@@ -3319,11 +3340,11 @@
     {
       "repo_full_name": "xai-org/grok-build",
       "url": "https://github.com/xai-org/grok-build",
-      "stars": 17119,
-      "star_delta_1h": 353,
-      "star_delta_24h": 4185,
-      "star_delta_72h": 16643,
-      "star_delta_7d": 16643,
+      "stars": 17503,
+      "star_delta_1h": 384,
+      "star_delta_24h": 3993,
+      "star_delta_72h": 17027,
+      "star_delta_7d": 17027,
       "matched_topics": [
         "AI Coding",
         "Agents"
@@ -3333,11 +3354,24 @@
       "source_url": "https://github.com/xai-org/grok-build"
     },
     {
+      "repo_full_name": "nethical6/conversation-steganography",
+      "url": "https://github.com/nethical6/conversation-steganography",
+      "stars": 451,
+      "star_delta_1h": 101,
+      "star_delta_24h": 247,
+      "star_delta_72h": 247,
+      "star_delta_7d": 247,
+      "matched_topics": [],
+      "language": "Go",
+      "description": "Use LLMs to hide secret messages inside normal looking conversations",
+      "source_url": "https://github.com/nethical6/conversation-steganography"
+    },
+    {
       "repo_full_name": "PengZhang64/circuit-framework",
       "url": "https://github.com/PengZhang64/circuit-framework",
       "stars": 479,
       "star_delta_1h": 0,
-      "star_delta_24h": 171,
+      "star_delta_24h": 111,
       "star_delta_72h": 301,
       "star_delta_7d": 301,
       "matched_topics": [
@@ -3349,26 +3383,13 @@
       "source_url": "https://github.com/PengZhang64/circuit-framework"
     },
     {
-      "repo_full_name": "nethical6/conversation-steganography",
-      "url": "https://github.com/nethical6/conversation-steganography",
-      "stars": 350,
-      "star_delta_1h": 48,
-      "star_delta_24h": 146,
-      "star_delta_72h": 146,
-      "star_delta_7d": 146,
-      "matched_topics": [],
-      "language": "Go",
-      "description": "Use LLMS to hide secret messages inside normal looking conversations",
-      "source_url": "https://github.com/nethical6/conversation-steganography"
-    },
-    {
       "repo_full_name": "CyberSunil/LLMVault",
       "url": "https://github.com/CyberSunil/LLMVault",
-      "stars": 163,
-      "star_delta_1h": 6,
-      "star_delta_24h": 104,
-      "star_delta_72h": 132,
-      "star_delta_7d": 132,
+      "stars": 166,
+      "star_delta_1h": 3,
+      "star_delta_24h": 97,
+      "star_delta_72h": 135,
+      "star_delta_7d": 135,
       "matched_topics": [
         "RAG",
         "LLM Security",
@@ -3381,11 +3402,11 @@
     {
       "repo_full_name": "stackblitz/bolt-slides",
       "url": "https://github.com/stackblitz/bolt-slides",
-      "stars": 324,
-      "star_delta_1h": 9,
-      "star_delta_24h": 60,
-      "star_delta_72h": 60,
-      "star_delta_7d": 60,
+      "stars": 339,
+      "star_delta_1h": 15,
+      "star_delta_24h": 75,
+      "star_delta_72h": 75,
+      "star_delta_7d": 75,
       "matched_topics": [
         "Agents"
       ],
@@ -3396,11 +3417,11 @@
     {
       "repo_full_name": "JimLiu/baocut",
       "url": "https://github.com/JimLiu/baocut",
-      "stars": 174,
-      "star_delta_1h": 9,
-      "star_delta_24h": 40,
-      "star_delta_72h": 57,
-      "star_delta_7d": 57,
+      "stars": 186,
+      "star_delta_1h": 12,
+      "star_delta_24h": 49,
+      "star_delta_72h": 69,
+      "star_delta_7d": 69,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3412,13 +3433,45 @@
       "source_url": "https://github.com/JimLiu/baocut"
     },
     {
+      "repo_full_name": "pyang5166/gbro-collage-broll",
+      "url": "https://github.com/pyang5166/gbro-collage-broll",
+      "stars": 313,
+      "star_delta_1h": 16,
+      "star_delta_24h": 45,
+      "star_delta_72h": 45,
+      "star_delta_7d": 45,
+      "matched_topics": [
+        "Agents",
+        "Video Generation",
+        "3D Generation"
+      ],
+      "language": "Python",
+      "description": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
+      "source_url": "https://github.com/pyang5166/gbro-collage-broll"
+    },
+    {
+      "repo_full_name": "rollingSirius/equity-research-skill",
+      "url": "https://github.com/rollingSirius/equity-research-skill",
+      "stars": 79,
+      "star_delta_1h": 15,
+      "star_delta_24h": 39,
+      "star_delta_72h": 39,
+      "star_delta_7d": 39,
+      "matched_topics": [
+        "Agents"
+      ],
+      "language": "Python",
+      "description": "机构级个股投研报告 Agent Skill（九章结构 + 多方法估值交叉验证），适用于 Claude Code / Cowork / Codex 等 AI Agent 工具",
+      "source_url": "https://github.com/rollingSirius/equity-research-skill"
+    },
+    {
       "repo_full_name": "vshulcz/deja-vu",
       "url": "https://github.com/vshulcz/deja-vu",
-      "stars": 342,
-      "star_delta_1h": 3,
-      "star_delta_24h": 36,
-      "star_delta_72h": 228,
-      "star_delta_7d": 228,
+      "stars": 348,
+      "star_delta_1h": 6,
+      "star_delta_24h": 35,
+      "star_delta_72h": 234,
+      "star_delta_7d": 234,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3431,45 +3484,13 @@
       "source_url": "https://github.com/vshulcz/deja-vu"
     },
     {
-      "repo_full_name": "zengweishuai/ScaleBFM",
-      "url": "https://github.com/zengweishuai/ScaleBFM",
-      "stars": 42,
-      "star_delta_1h": 1,
-      "star_delta_24h": 31,
-      "star_delta_72h": 31,
-      "star_delta_7d": 31,
-      "matched_topics": [
-        "MoE"
-      ],
-      "language": null,
-      "description": "The official implementation of the paper \"Scaling Behavior Foundation Model for Humanoid Robots\"",
-      "source_url": "https://github.com/zengweishuai/ScaleBFM"
-    },
-    {
-      "repo_full_name": "pyang5166/gbro-collage-broll",
-      "url": "https://github.com/pyang5166/gbro-collage-broll",
-      "stars": 297,
-      "star_delta_1h": 16,
-      "star_delta_24h": 29,
-      "star_delta_72h": 29,
-      "star_delta_7d": 29,
-      "matched_topics": [
-        "Agents",
-        "Video Generation",
-        "3D Generation"
-      ],
-      "language": "Python",
-      "description": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
-      "source_url": "https://github.com/pyang5166/gbro-collage-broll"
-    },
-    {
       "repo_full_name": "thesysdev/appless",
       "url": "https://github.com/thesysdev/appless",
-      "stars": 203,
-      "star_delta_1h": 7,
-      "star_delta_24h": 27,
-      "star_delta_72h": 27,
-      "star_delta_7d": 27,
+      "stars": 211,
+      "star_delta_1h": 8,
+      "star_delta_24h": 35,
+      "star_delta_72h": 35,
+      "star_delta_7d": 35,
       "matched_topics": [
         "Agents",
         "Tool Use"
@@ -3488,12 +3509,12 @@
     },
     {
       "topic": "Agents",
-      "term": "MCP",
+      "term": "ReAct",
       "magnitude": 6.0
     },
     {
       "topic": "Agents",
-      "term": "ReAct",
+      "term": "MCP",
       "magnitude": 6.0
     },
     {
@@ -3502,29 +3523,29 @@
       "magnitude": 6.0
     },
     {
-      "topic": "Model Context Protocol",
-      "term": "MCP",
-      "magnitude": 5.58
-    },
-    {
-      "topic": "Model Context Protocol",
-      "term": "RAG",
-      "magnitude": 5.58
-    },
-    {
       "topic": "RAG",
       "term": "RAG",
       "magnitude": 5.53
     },
     {
-      "topic": "Memory",
+      "topic": "Model Context Protocol",
       "term": "MCP",
-      "magnitude": 4.37
+      "magnitude": 5.51
+    },
+    {
+      "topic": "Model Context Protocol",
+      "term": "RAG",
+      "magnitude": 5.51
     },
     {
       "topic": "Memory",
       "term": "RAG",
-      "magnitude": 4.37
+      "magnitude": 4.32
+    },
+    {
+      "topic": "Memory",
+      "term": "MCP",
+      "magnitude": 4.32
     },
     {
       "topic": "LLM Security",
@@ -3532,44 +3553,39 @@
       "magnitude": 4.2
     },
     {
-      "topic": "Multi-Agent",
-      "term": "MCP",
-      "magnitude": 3.74
-    },
-    {
-      "topic": "Multi-Agent",
-      "term": "RAG",
-      "magnitude": 3.74
-    },
-    {
       "topic": "Vision-Language-Action Model",
       "term": "VLA",
       "magnitude": 3.71
     },
     {
-      "topic": "Tool Use",
-      "term": "MCP",
-      "magnitude": 3.02
+      "topic": "Multi-Agent",
+      "term": "RAG",
+      "magnitude": 3.68
     },
     {
       "topic": "Tool Use",
       "term": "ReAct",
-      "magnitude": 3.02
+      "magnitude": 2.97
+    },
+    {
+      "topic": "Tool Use",
+      "term": "MCP",
+      "magnitude": 2.97
     },
     {
       "topic": "Tool Use",
       "term": "RAG",
-      "magnitude": 3.02
+      "magnitude": 2.97
     },
     {
       "topic": "Benchmark",
       "term": "VLA",
-      "magnitude": 2.6
+      "magnitude": 2.86
     },
     {
       "topic": "Evaluation",
       "term": "VLA",
-      "magnitude": 2.46
+      "magnitude": 2.73
     }
   ],
   "institution_signals": [
@@ -3590,7 +3606,7 @@
     },
     {
       "topic": "Agents",
-      "term": "barretlee",
+      "term": "PromptPartner",
       "magnitude": 6.0
     },
     {
@@ -3601,6 +3617,11 @@
     {
       "topic": "AI Coding",
       "term": "OpenAI",
+      "magnitude": 6.0
+    },
+    {
+      "topic": "AI Coding",
+      "term": "PromptPartner",
       "magnitude": 6.0
     },
     {
@@ -3619,49 +3640,19 @@
       "magnitude": 6.0
     },
     {
-      "topic": "AI Coding",
-      "term": "vshulcz",
-      "magnitude": 6.0
-    },
-    {
       "topic": "Robotics",
       "term": "XiaomiRobotics",
-      "magnitude": 5.77
+      "magnitude": 5.76
     },
     {
       "topic": "Robotics",
       "term": "THMOS2025",
-      "magnitude": 5.77
+      "magnitude": 5.76
     },
     {
       "topic": "Robotics",
       "term": "taeyunwoo",
-      "magnitude": 5.77
-    },
-    {
-      "topic": "Model Context Protocol",
-      "term": "OpenAI",
-      "magnitude": 5.58
-    },
-    {
-      "topic": "Model Context Protocol",
-      "term": "QuantumByteOSS",
-      "magnitude": 5.58
-    },
-    {
-      "topic": "Model Context Protocol",
-      "term": "barretlee",
-      "magnitude": 5.58
-    },
-    {
-      "topic": "Model Context Protocol",
-      "term": "mereyabdenbekuly-ctrl",
-      "magnitude": 5.58
-    },
-    {
-      "topic": "Model Context Protocol",
-      "term": "Alibaba",
-      "magnitude": 5.58
+      "magnitude": 5.76
     },
     {
       "topic": "RAG",
@@ -3672,6 +3663,31 @@
       "topic": "RAG",
       "term": "Chaelsoo",
       "magnitude": 5.53
+    },
+    {
+      "topic": "RAG",
+      "term": "agutinbaigo28",
+      "magnitude": 5.53
+    },
+    {
+      "topic": "RAG",
+      "term": "youxiandechilun",
+      "magnitude": 5.53
+    },
+    {
+      "topic": "RAG",
+      "term": "mate-matt",
+      "magnitude": 5.53
+    },
+    {
+      "topic": "Model Context Protocol",
+      "term": "OpenAI",
+      "magnitude": 5.51
+    },
+    {
+      "topic": "Model Context Protocol",
+      "term": "QuantumByteOSS",
+      "magnitude": 5.51
     }
   ],
   "source_status": [
@@ -3682,16 +3698,16 @@
       "error": null,
       "items": 0,
       "partial": false,
-      "fetched_at": "2026-07-18T06:20:57.643049+00:00"
+      "fetched_at": "2026-07-18T09:47:00.981492+00:00"
     },
     {
       "source_name": "github",
       "source_type": "repo",
       "ok": true,
       "error": null,
-      "items": 52,
+      "items": 50,
       "partial": false,
-      "fetched_at": "2026-07-18T06:21:01.077590+00:00"
+      "fetched_at": "2026-07-18T09:47:04.308021+00:00"
     }
   ],
   "partial": false,
