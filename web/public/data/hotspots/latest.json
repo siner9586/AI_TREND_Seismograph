@@ -1,7 +1,7 @@
 {
-  "snapshot_hour": "2026-07-23T17",
-  "generated_at": "2026-07-23T17:49:03.024981+00:00",
-  "run_id": "hourly-20260723T17-e265501d",
+  "snapshot_hour": "2026-07-23T19",
+  "generated_at": "2026-07-23T19:47:34.657260+00:00",
+  "run_id": "hourly-20260723T19-7f43fdc2",
   "mode": "hourly",
   "total_items_scanned": 52,
   "total_papers_scanned": 0,
@@ -14,44 +14,59 @@
       "title": "Agents 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Agents 在当前窗口内出现 0 条论文信号和 22 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=7.634，growth_rate=-0.954，z_score=-7.505，cross_source=0.5。",
+      "summary": "Agents 在当前窗口内出现 0 条论文信号和 23 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=10.811，growth_rate=-0.952，z_score=-7.502，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 22 个",
-        "24h star 增量 1313",
+        "GitHub 项目 23 个",
+        "24h star 增量 1048",
         "方法提及：MCP, RAG, ReAct",
         "机构集中：OpenAI, KGupta171025, EthanXiang777"
       ],
       "metrics": {
-        "current_1h_count": 22,
-        "current_24h_count": 22,
-        "current_72h_count": 22,
-        "current_7d_count": 22,
-        "baseline_daily_avg_30d": 494.38,
-        "baseline_daily_std_30d": 61.944,
-        "baseline_72h_avg_30d": 1483.14,
-        "growth_rate": -0.954,
-        "z_score": -7.505,
+        "current_1h_count": 23,
+        "current_24h_count": 23,
+        "current_72h_count": 23,
+        "current_7d_count": 23,
+        "baseline_daily_avg_30d": 494.519,
+        "baseline_daily_std_30d": 61.854,
+        "baseline_72h_avg_30d": 1483.556,
+        "growth_rate": -0.952,
+        "z_score": -7.502,
         "paper_burst_score": 0.0,
-        "github_signal_score": 6.268,
+        "github_signal_score": 9.4,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.091,
-        "institution_signal_score": 0.3,
+        "institution_concentration_score": 0.087,
+        "institution_signal_score": 0.29,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.367,
+        "method_signal_score": 1.411,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 22,
-        "github_star_delta": 1313,
-        "method_mentions": 11,
+        "repo_count": 23,
+        "github_star_delta": 1048,
+        "method_mentions": 12,
         "dataset_mentions": 0,
-        "institution_mentions": 25,
-        "burst_score": 7.634,
+        "institution_mentions": 26,
+        "burst_score": 10.811,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
+          "published_at": "2026-07-20T10:47:56Z",
+          "match_score": 0.95,
+          "matched_keywords": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -69,9 +84,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "PromptPartner/agentsmith",
-          "source_url": "https://github.com/PromptPartner/agentsmith",
-          "published_at": "2026-07-16T11:37:15Z",
+          "title": "KlaatAI/klaatcode",
+          "source_url": "https://github.com/KlaatAI/klaatcode",
+          "published_at": "2026-07-17T11:38:10Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -83,9 +98,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "KlaatAI/klaatcode",
-          "source_url": "https://github.com/KlaatAI/klaatcode",
-          "published_at": "2026-07-17T11:38:10Z",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "published_at": "2026-07-16T11:37:15Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -149,20 +164,6 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "risa-labs-inc/BossConsole",
-          "source_url": "https://github.com/risa-labs-inc/BossConsole",
-          "published_at": "2026-07-21T01:01:05Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -179,6 +180,7 @@
         "https://github.com/NullLabTests/software-periodic-table",
         "https://github.com/PromptPartner/agentsmith",
         "https://github.com/Tencent-Hunyuan/Hyra-results",
+        "https://github.com/TryCaspian/caspian-sdk",
         "https://github.com/gnipbao/story-to-handdrawn-video",
         "https://github.com/livetennisapi/livetennisapi-mcp",
         "https://github.com/lopopolo/harness-engineering",
@@ -201,19 +203,19 @@
         "EthanXiang777",
         "KinetiNode",
         "thesysdev",
-        "PromptPartner",
         "KlaatAI",
+        "PromptPartner",
         "livetennisapi"
       ],
       "suggested_watch_keywords": [
-        "agents",
         "agent",
+        "agents",
         "llm",
         "claude",
         "coding",
         "gemini",
-        "codex",
-        "system"
+        "your",
+        "codex"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -226,19 +228,25 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-07-23:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pireel/pireel\", \"source_url\": \"https://github.com/pireel/pireel\", \"published_at\": \"2026-07-20T09:34:24Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Kritt-ai/open-kritt\", \"source_url\": \"https://github.com/Kritt-ai/open-kritt\", \"published_at\": \"2026-07-20T20:26:24Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Drobiazkin/ai-agent-architecture\", \"source_url\": \"https://github.com/Drobiazkin/ai-agent-architecture\", \"published_at\": \"2026-07-17T17:57:55Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"MisterBooo/llm-interview-questions\", \"source_url\": \"https://github.com/MisterBooo/llm-interview-questions\", \"published_at\": \"2026-07-19T02:55:27Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"risa-labs-inc/BossConsole\", \"source_url\": \"https://github.com/risa-labs-inc/BossConsole\", \"published_at\": \"2026-07-21T01:01:05Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 22 个。代表性目标包括KGupta171025/KALKI-1.5、PromptPartner/agentsmith、KlaatAI/klaatcode、pireel/pireel、Kritt-ai/open-kritt等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1313，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、KGupta171025、EthanXiang777、KinetiNode、thesysdev、PromptPartner、KlaatAI、livetennisapi，累计提及 25 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、llm、claude、coding、gemini、codex、system等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TryCaspian/caspian-sdk\", \"source_url\": \"https://github.com/TryCaspian/caspian-sdk\", \"published_at\": \"2026-07-20T10:47:56Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pireel/pireel\", \"source_url\": \"https://github.com/pireel/pireel\", \"published_at\": \"2026-07-20T09:34:24Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Kritt-ai/open-kritt\", \"source_url\": \"https://github.com/Kritt-ai/open-kritt\", \"published_at\": \"2026-07-20T20:26:24Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Drobiazkin/ai-agent-architecture\", \"source_url\": \"https://github.com/Drobiazkin/ai-agent-architecture\", \"published_at\": \"2026-07-17T17:57:55Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"MisterBooo/llm-interview-questions\", \"source_url\": \"https://github.com/MisterBooo/llm-interview-questions\", \"published_at\": \"2026-07-19T02:55:27Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 23 个。代表性目标包括TryCaspian/caspian-sdk、KGupta171025/KALKI-1.5、KlaatAI/klaatcode、PromptPartner/agentsmith、pireel/pireel等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1048，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 12 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、KGupta171025、EthanXiang777、KinetiNode、thesysdev、KlaatAI、PromptPartner、livetennisapi，累计提及 26 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、llm、claude、coding、gemini、your、codex等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 22 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、agent、llm等线索，代表条目包括KGupta171025/KALKI-1.5、PromptPartner/agentsmith、KlaatAI/klaatcode、pireel/pireel，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 22 个 GitHub 项目，24 小时 star 增量约 1313，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、KGupta171025、EthanXiang777、KinetiNode、thesysdev、PromptPartner，累计提及 25 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 23 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agent、agents、llm等线索，代表条目包括TryCaspian/caspian-sdk、KGupta171025/KALKI-1.5、KlaatAI/klaatcode、PromptPartner/agentsmith，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 23 个 GitHub 项目，24 小时 star 增量约 1048，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 12 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、KGupta171025、EthanXiang777、KinetiNode、thesysdev、KlaatAI，累计提及 26 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、agent、llm、claude、coding、gemini、codex、system是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、agents、llm、claude、coding、gemini、your、codex是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "TryCaspian/caspian-sdk",
+            "url": "https://github.com/TryCaspian/caspian-sdk",
+            "source": "github",
+            "reason": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "KGupta171025/KALKI-1.5",
             "url": "https://github.com/KGupta171025/KALKI-1.5",
@@ -246,14 +254,14 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "PromptPartner/agentsmith",
-            "url": "https://github.com/PromptPartner/agentsmith",
+            "title": "KlaatAI/klaatcode",
+            "url": "https://github.com/KlaatAI/klaatcode",
             "source": "github",
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "KlaatAI/klaatcode",
-            "url": "https://github.com/KlaatAI/klaatcode",
+            "title": "PromptPartner/agentsmith",
+            "url": "https://github.com/PromptPartner/agentsmith",
             "source": "github",
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
@@ -282,12 +290,6 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "risa-labs-inc/BossConsole",
-            "url": "https://github.com/risa-labs-inc/BossConsole",
-            "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "0xwilliamortiz/agents-council",
             "url": "https://github.com/0xwilliamortiz/agents-council",
             "source": "github",
@@ -303,6 +305,19 @@
       },
       "evidence_digest": [
         {
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.95,
+          "matched_terms": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "KGupta171025/KALKI-1.5",
           "source_url": "https://github.com/KGupta171025/KALKI-1.5",
           "source_type": "repo",
@@ -315,8 +330,8 @@
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "PromptPartner/agentsmith",
-          "source_url": "https://github.com/PromptPartner/agentsmith",
+          "title": "KlaatAI/klaatcode",
+          "source_url": "https://github.com/KlaatAI/klaatcode",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.633,
@@ -327,8 +342,8 @@
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "KlaatAI/klaatcode",
-          "source_url": "https://github.com/KlaatAI/klaatcode",
+          "title": "PromptPartner/agentsmith",
+          "source_url": "https://github.com/PromptPartner/agentsmith",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.633,
@@ -385,39 +400,27 @@
             "agents"
           ],
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "risa-labs-inc/BossConsole",
-          "source_url": "https://github.com/risa-labs-inc/BossConsole",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "agents"
-          ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 22 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 23 个。",
         "focus_terms": [
           "MCP",
           "RAG",
           "ReAct",
-          "agents",
           "agent",
+          "agents",
           "llm",
           "claude",
           "coding"
         ],
         "representative_titles": [
+          "TryCaspian/caspian-sdk",
           "KGupta171025/KALKI-1.5",
-          "PromptPartner/agentsmith",
           "KlaatAI/klaatcode",
-          "pireel/pireel",
-          "Kritt-ai/open-kritt"
+          "PromptPartner/agentsmith",
+          "pireel/pireel"
         ],
         "related_institutions": [
           "OpenAI",
@@ -425,16 +428,16 @@
           "EthanXiang777",
           "KinetiNode",
           "thesysdev",
-          "PromptPartner",
           "KlaatAI",
+          "PromptPartner",
           "livetennisapi"
         ],
         "paper_count": 0,
-        "repo_count": 22,
-        "github_star_delta": 1313,
-        "method_mentions": 11,
+        "repo_count": 23,
+        "github_star_delta": 1048,
+        "method_mentions": 12,
         "dataset_mentions": 0,
-        "institution_mentions": 25
+        "institution_mentions": 26
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -444,24 +447,24 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=5.269，growth_rate=-0.953，z_score=-3.435，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=5.282，growth_rate=-0.953，z_score=-3.441，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 6 个",
-        "24h star 增量 48",
-        "机构集中：OpenAI, PromptPartner, KlaatAI"
+        "24h star 增量 41",
+        "机构集中：OpenAI, KlaatAI, PromptPartner"
       ],
       "metrics": {
         "current_1h_count": 6,
         "current_24h_count": 6,
         "current_72h_count": 6,
         "current_7d_count": 6,
-        "baseline_daily_avg_30d": 148.562,
-        "baseline_daily_std_30d": 40.504,
-        "baseline_72h_avg_30d": 445.686,
+        "baseline_daily_avg_30d": 148.543,
+        "baseline_daily_std_30d": 40.421,
+        "baseline_72h_avg_30d": 445.63,
         "growth_rate": -0.953,
-        "z_score": -3.435,
+        "z_score": -3.441,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.269,
+        "github_signal_score": 5.282,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.333,
@@ -471,11 +474,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 48,
+        "github_star_delta": 41,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 9,
-        "burst_score": 5.269,
+        "burst_score": 5.282,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -564,8 +567,8 @@
       "related_datasets": [],
       "related_institutions": [
         "OpenAI",
-        "PromptPartner",
         "KlaatAI",
+        "PromptPartner",
         "Tencent",
         "Tencent-Hunyuan",
         "NullLabTests",
@@ -579,8 +582,8 @@
         "agent",
         "codex",
         "llm",
-        "gemini",
-        "promptpartner"
+        "klaatai",
+        "open-source"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -593,14 +596,14 @@
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-07-23:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.75, \"matched_keywords\": [\"ai coding\", \"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"smixs/mentor\", \"source_url\": \"https://github.com/smixs/mentor\", \"published_at\": \"2026-07-19T05:21:15Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tencent-Hunyuan/Hyra-results\", \"source_url\": \"https://github.com/Tencent-Hunyuan/Hyra-results\", \"published_at\": \"2026-07-17T02:27:25Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NullLabTests/software-periodic-table\", \"source_url\": \"https://github.com/NullLabTests/software-periodic-table\", \"published_at\": \"2026-07-19T14:28:56Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ogulcancelik/agent-skills\", \"source_url\": \"https://github.com/ogulcancelik/agent-skills\", \"published_at\": \"2026-07-16T16:13:23Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括KlaatAI/klaatcode、smixs/mentor、PromptPartner/agentsmith、Tencent-Hunyuan/Hyra-results、NullLabTests/software-periodic-table等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 48，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、PromptPartner、KlaatAI、Tencent、Tencent-Hunyuan、NullLabTests、smixs、ogulcancelik，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agents、claude、agent、codex、llm、gemini、promptpartner等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括KlaatAI/klaatcode、smixs/mentor、PromptPartner/agentsmith、Tencent-Hunyuan/Hyra-results、NullLabTests/software-periodic-table等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 41，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及OpenAI、KlaatAI、PromptPartner、Tencent、Tencent-Hunyuan、NullLabTests、smixs、ogulcancelik，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agents、claude、agent、codex、llm、klaatai、open-source等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向coding、agents、claude、agent、codex、llm等线索，代表条目包括KlaatAI/klaatcode、smixs/mentor、PromptPartner/agentsmith、Tencent-Hunyuan/Hyra-results，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 48，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "机构与账号归纳：相关信号涉及OpenAI、PromptPartner、KlaatAI、Tencent、Tencent-Hunyuan、NullLabTests，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 41，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "机构与账号归纳：相关信号涉及OpenAI、KlaatAI、PromptPartner、Tencent、Tencent-Hunyuan、NullLabTests，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察coding、agents、claude、agent、codex、llm、gemini、promptpartner是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察coding、agents、claude、agent、codex、llm、klaatai、open-source是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -713,8 +716,8 @@
           "agent",
           "codex",
           "llm",
-          "gemini",
-          "promptpartner"
+          "klaatai",
+          "open-source"
         ],
         "representative_titles": [
           "KlaatAI/klaatcode",
@@ -725,8 +728,8 @@
         ],
         "related_institutions": [
           "OpenAI",
-          "PromptPartner",
           "KlaatAI",
+          "PromptPartner",
           "Tencent",
           "Tencent-Hunyuan",
           "NullLabTests",
@@ -735,7 +738,7 @@
         ],
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 48,
+        "github_star_delta": 41,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 9
@@ -747,40 +750,40 @@
       "title": "Model Context Protocol 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 16 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.686，growth_rate=-0.943，z_score=-5.926，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 17 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=8.734，growth_rate=-0.94，z_score=-5.883，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 16 个",
-        "24h star 增量 528",
+        "GitHub 项目 17 个",
+        "24h star 增量 453",
         "方法提及：MCP, RAG",
         "机构集中：OpenAI, KGupta171025, KinetiNode"
       ],
       "metrics": {
-        "current_1h_count": 16,
-        "current_24h_count": 16,
-        "current_72h_count": 16,
-        "current_7d_count": 16,
-        "baseline_daily_avg_30d": 297.322,
-        "baseline_daily_std_30d": 46.475,
-        "baseline_72h_avg_30d": 891.967,
-        "growth_rate": -0.943,
-        "z_score": -5.926,
+        "current_1h_count": 17,
+        "current_24h_count": 17,
+        "current_72h_count": 17,
+        "current_7d_count": 17,
+        "baseline_daily_avg_30d": 297.679,
+        "baseline_daily_std_30d": 46.711,
+        "baseline_72h_avg_30d": 893.037,
+        "growth_rate": -0.94,
+        "z_score": -5.883,
         "paper_burst_score": 0.0,
         "github_signal_score": 7.367,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.125,
-        "institution_signal_score": 0.374,
+        "institution_concentration_score": 0.118,
+        "institution_signal_score": 0.358,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.319,
+        "method_signal_score": 1.367,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 16,
-        "github_star_delta": 528,
-        "method_mentions": 10,
+        "repo_count": 17,
+        "github_star_delta": 453,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 18,
-        "burst_score": 8.686,
+        "institution_mentions": 19,
+        "burst_score": 8.734,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -807,6 +810,21 @@
           "title": "KGupta171025/KALKI-1.5",
           "source_url": "https://github.com/KGupta171025/KALKI-1.5",
           "published_at": "2026-07-21T15:08:03Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
+          "published_at": "2026-07-20T10:47:56Z",
           "match_score": 0.537,
           "matched_keywords": [
             "MCP"
@@ -886,17 +904,6 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "PromptPartner/agentsmith",
-          "source_url": "https://github.com/PromptPartner/agentsmith",
-          "published_at": "2026-07-16T11:37:15Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -910,6 +917,7 @@
         "https://github.com/MisterBooo/llm-interview-questions",
         "https://github.com/NullLabTests/software-periodic-table",
         "https://github.com/PromptPartner/agentsmith",
+        "https://github.com/TryCaspian/caspian-sdk",
         "https://github.com/livetennisapi/livetennisapi-mcp",
         "https://github.com/ogulcancelik/agent-skills",
         "https://github.com/pireel/pireel",
@@ -926,11 +934,11 @@
         "OpenAI",
         "KGupta171025",
         "KinetiNode",
-        "PromptPartner",
         "KlaatAI",
+        "PromptPartner",
         "livetennisapi",
-        "pireel",
-        "yc-duan"
+        "TryCaspian",
+        "pireel"
       ],
       "suggested_watch_keywords": [
         "agents",
@@ -938,8 +946,8 @@
         "agent",
         "llm",
         "gemini",
-        "codex",
         "coding",
+        "codex",
         "open-source"
       ],
       "confidence": 0.72,
@@ -952,16 +960,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Model Context Protocol:2026-07-23:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"livetennisapi/livetennisapi-mcp\", \"source_url\": \"https://github.com/livetennisapi/livetennisapi-mcp\", \"published_at\": \"2026-07-18T23:17:55Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yc-duan/fastctx\", \"source_url\": \"https://github.com/yc-duan/fastctx\", \"published_at\": \"2026-07-17T03:05:57Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Drobiazkin/ai-agent-architecture\", \"source_url\": \"https://github.com/Drobiazkin/ai-agent-architecture\", \"published_at\": \"2026-07-17T17:57:55Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"risa-labs-inc/BossConsole\", \"source_url\": \"https://github.com/risa-labs-inc/BossConsole\", \"published_at\": \"2026-07-21T01:01:05Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pireel/pireel\", \"source_url\": \"https://github.com/pireel/pireel\", \"published_at\": \"2026-07-20T09:34:24Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KinetiNode/claude-fable-5-system-prompt-clean\", \"source_url\": \"https://github.com/KinetiNode/claude-fable-5-system-prompt-clean\", \"published_at\": \"2026-07-19T06:09:52Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 16 个。代表性目标包括livetennisapi/livetennisapi-mcp、KGupta171025/KALKI-1.5、yc-duan/fastctx、Drobiazkin/ai-agent-architecture、risa-labs-inc/BossConsole等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 528，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、KGupta171025、KinetiNode、PromptPartner、KlaatAI、livetennisapi、pireel、yc-duan，累计提及 18 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、agent、llm、gemini、codex、coding、open-source等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"livetennisapi/livetennisapi-mcp\", \"source_url\": \"https://github.com/livetennisapi/livetennisapi-mcp\", \"published_at\": \"2026-07-18T23:17:55Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TryCaspian/caspian-sdk\", \"source_url\": \"https://github.com/TryCaspian/caspian-sdk\", \"published_at\": \"2026-07-20T10:47:56Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yc-duan/fastctx\", \"source_url\": \"https://github.com/yc-duan/fastctx\", \"published_at\": \"2026-07-17T03:05:57Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Drobiazkin/ai-agent-architecture\", \"source_url\": \"https://github.com/Drobiazkin/ai-agent-architecture\", \"published_at\": \"2026-07-17T17:57:55Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"risa-labs-inc/BossConsole\", \"source_url\": \"https://github.com/risa-labs-inc/BossConsole\", \"published_at\": \"2026-07-21T01:01:05Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pireel/pireel\", \"source_url\": \"https://github.com/pireel/pireel\", \"published_at\": \"2026-07-20T09:34:24Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KinetiNode/claude-fable-5-system-prompt-clean\", \"source_url\": \"https://github.com/KinetiNode/claude-fable-5-system-prompt-clean\", \"published_at\": \"2026-07-19T06:09:52Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 17 个。代表性目标包括livetennisapi/livetennisapi-mcp、KGupta171025/KALKI-1.5、TryCaspian/caspian-sdk、yc-duan/fastctx、Drobiazkin/ai-agent-architecture等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 453，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、KGupta171025、KinetiNode、KlaatAI、PromptPartner、livetennisapi、TryCaspian、pireel，累计提及 19 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、agent、llm、gemini、coding、codex、open-source等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 16 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、claude、agent、llm等线索，代表条目包括livetennisapi/livetennisapi-mcp、KGupta171025/KALKI-1.5、yc-duan/fastctx、Drobiazkin/ai-agent-architecture，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 16 个 GitHub 项目，24 小时 star 增量约 528，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 10 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、KGupta171025、KinetiNode、PromptPartner、KlaatAI、livetennisapi，累计提及 18 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 17 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、claude、agent、llm等线索，代表条目包括livetennisapi/livetennisapi-mcp、KGupta171025/KALKI-1.5、TryCaspian/caspian-sdk、yc-duan/fastctx，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 17 个 GitHub 项目，24 小时 star 增量约 453，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、KGupta171025、KinetiNode、KlaatAI、PromptPartner、livetennisapi，累计提及 19 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、claude、agent、llm、gemini、codex、coding、open-source是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、claude、agent、llm、gemini、coding、codex、open-source是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -974,6 +982,12 @@
           {
             "title": "KGupta171025/KALKI-1.5",
             "url": "https://github.com/KGupta171025/KALKI-1.5",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "TryCaspian/caspian-sdk",
+            "url": "https://github.com/TryCaspian/caspian-sdk",
             "source": "github",
             "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
           },
@@ -1008,12 +1022,6 @@
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "PromptPartner/agentsmith",
-            "url": "https://github.com/PromptPartner/agentsmith",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "0xwilliamortiz/agents-council",
             "url": "https://github.com/0xwilliamortiz/agents-council",
             "source": "github",
@@ -1043,6 +1051,17 @@
         {
           "title": "KGupta171025/KALKI-1.5",
           "source_url": "https://github.com/KGupta171025/KALKI-1.5",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.537,
@@ -1103,20 +1122,11 @@
           "match_score": 0.077,
           "matched_terms": [],
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "PromptPartner/agentsmith",
-          "source_url": "https://github.com/PromptPartner/agentsmith",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 16 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 17 个。",
         "focus_terms": [
           "MCP",
           "RAG",
@@ -1125,44 +1135,44 @@
           "agent",
           "llm",
           "gemini",
-          "codex"
+          "coding"
         ],
         "representative_titles": [
           "livetennisapi/livetennisapi-mcp",
           "KGupta171025/KALKI-1.5",
+          "TryCaspian/caspian-sdk",
           "yc-duan/fastctx",
-          "Drobiazkin/ai-agent-architecture",
-          "risa-labs-inc/BossConsole"
+          "Drobiazkin/ai-agent-architecture"
         ],
         "related_institutions": [
           "OpenAI",
           "KGupta171025",
           "KinetiNode",
-          "PromptPartner",
           "KlaatAI",
+          "PromptPartner",
           "livetennisapi",
-          "pireel",
-          "yc-duan"
+          "TryCaspian",
+          "pireel"
         ],
         "paper_count": 0,
-        "repo_count": 16,
-        "github_star_delta": 528,
-        "method_mentions": 10,
+        "repo_count": 17,
+        "github_star_delta": 453,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 18
+        "institution_mentions": 19
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "RAG",
       "title": "RAG 出现强趋势震荡",
-      "magnitude": 5.24,
+      "magnitude": 5.23,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.24，burst=5.242，growth_rate=-0.945，z_score=-10.077，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.23，burst=5.239，growth_rate=-0.945，z_score=-10.004，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 9 个",
-        "24h star 增量 43",
+        "24h star 增量 39",
         "方法提及：RAG, MCP",
         "机构集中：KGupta171025, drpwchen, Drobiazkin"
       ],
@@ -1171,13 +1181,13 @@
         "current_24h_count": 9,
         "current_72h_count": 9,
         "current_7d_count": 9,
-        "baseline_daily_avg_30d": 179.405,
-        "baseline_daily_std_30d": 15.91,
-        "baseline_72h_avg_30d": 538.215,
+        "baseline_daily_avg_30d": 179.556,
+        "baseline_daily_std_30d": 16.049,
+        "baseline_72h_avg_30d": 538.667,
         "growth_rate": -0.945,
-        "z_score": -10.077,
+        "z_score": -10.004,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.875,
+        "github_signal_score": 3.872,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.111,
@@ -1187,13 +1197,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 43,
+        "github_star_delta": 39,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 11,
-        "burst_score": 5.242,
+        "burst_score": 5.239,
         "low_history_confidence": false,
-        "magnitude": 5.24
+        "magnitude": 5.23
       },
       "evidence": [
         {
@@ -1356,11 +1366,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:RAG:2026-07-23:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"phoenix-zhou/industrial-general-rag\", \"source_url\": \"https://github.com/phoenix-zhou/industrial-general-rag\", \"published_at\": \"2026-07-21T13:59:07Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"awslabs/unified-kg-rag-on-aws\", \"source_url\": \"https://github.com/awslabs/unified-kg-rag-on-aws\", \"published_at\": \"2026-07-20T23:39:01Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"drpwchen/textbook-to-note\", \"source_url\": \"https://github.com/drpwchen/textbook-to-note\", \"published_at\": \"2026-07-19T03:33:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Drobiazkin/ai-agent-architecture\", \"source_url\": \"https://github.com/Drobiazkin/ai-agent-architecture\", \"published_at\": \"2026-07-17T17:57:55Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Rubric4Setwise/Rubric4Setwise\", \"source_url\": \"https://github.com/Rubric4Setwise/Rubric4Setwise\", \"published_at\": \"2026-07-21T12:57:04Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"HealerCodeLabs/ai-knowledge-rag-langchain\", \"source_url\": \"https://github.com/HealerCodeLabs/ai-knowledge-rag-langchain\", \"published_at\": \"2026-07-20T08:46:05Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"MisterBooo/llm-interview-questions\", \"source_url\": \"https://github.com/MisterBooo/llm-interview-questions\", \"published_at\": \"2026-07-19T02:55:27Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括KGupta171025/KALKI-1.5、phoenix-zhou/industrial-general-rag、awslabs/unified-kg-rag-on-aws、drpwchen/textbook-to-note、Drobiazkin/ai-agent-architecture等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 43，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及KGupta171025、drpwchen、Drobiazkin、Rubric4Setwise、HealerCodeLabs、phoenix-zhou、MisterBooo、Amazon，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、evaluation、your、own、knowledge、mechanisms、intelligence等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括KGupta171025/KALKI-1.5、phoenix-zhou/industrial-general-rag、awslabs/unified-kg-rag-on-aws、drpwchen/textbook-to-note、Drobiazkin/ai-agent-architecture等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 39，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及KGupta171025、drpwchen、Drobiazkin、Rubric4Setwise、HealerCodeLabs、phoenix-zhou、MisterBooo、Amazon，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、evaluation、your、own、knowledge、mechanisms、intelligence等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：RAG 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M5.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、MCP、llm、evaluation、your、own等线索，代表条目包括KGupta171025/KALKI-1.5、phoenix-zhou/industrial-general-rag、awslabs/unified-kg-rag-on-aws、drpwchen/textbook-to-note，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 43，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 39，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及KGupta171025、drpwchen、Drobiazkin、Rubric4Setwise、HealerCodeLabs、phoenix-zhou，累计提及 11 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1546,7 +1556,7 @@
         ],
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 43,
+        "github_star_delta": 39,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 11
@@ -1559,10 +1569,10 @@
       "magnitude": 4.79,
       "severity_label": "疑似爆发",
       "summary": "Benchmark 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.79，burst=4.301，growth_rate=-0.927，z_score=-2.668，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.79，burst=4.295，growth_rate=-0.928，z_score=-2.685，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 4 个",
-        "24h star 增量 27",
+        "24h star 增量 25",
         "方法提及：RAG",
         "机构集中：Rubric4Setwise, phoenix-zhou, Eval-core"
       ],
@@ -1571,13 +1581,13 @@
         "current_24h_count": 4,
         "current_72h_count": 4,
         "current_7d_count": 4,
-        "baseline_daily_avg_30d": 67.2,
-        "baseline_daily_std_30d": 22.684,
-        "baseline_72h_avg_30d": 201.6,
-        "growth_rate": -0.927,
-        "z_score": -2.668,
+        "baseline_daily_avg_30d": 68.129,
+        "baseline_daily_std_30d": 22.888,
+        "baseline_72h_avg_30d": 204.387,
+        "growth_rate": -0.928,
+        "z_score": -2.685,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.538,
+        "github_signal_score": 3.532,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.25,
@@ -1587,11 +1597,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 27,
+        "github_star_delta": 25,
         "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 4,
-        "burst_score": 4.301,
+        "burst_score": 4.295,
         "low_history_confidence": false,
         "magnitude": 4.79
       },
@@ -1681,11 +1691,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Benchmark:2026-07-23:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DavidSunok/CLEAR-LeWM\", \"source_url\": \"https://github.com/DavidSunok/CLEAR-LeWM\", \"published_at\": \"2026-07-21T09:24:37Z\", \"match_score\": 0.66, \"matched_keywords\": [\"benchmark\", \"evaluation suite\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Rubric4Setwise/Rubric4Setwise\", \"source_url\": \"https://github.com/Rubric4Setwise/Rubric4Setwise\", \"published_at\": \"2026-07-21T12:57:04Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"phoenix-zhou/industrial-general-rag\", \"source_url\": \"https://github.com/phoenix-zhou/industrial-general-rag\", \"published_at\": \"2026-07-21T13:59:07Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Eval-core/evalcore\", \"source_url\": \"https://github.com/Eval-core/evalcore\", \"published_at\": \"2026-07-17T03:26:45Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Benchmark」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括DavidSunok/CLEAR-LeWM、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 27，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察evaluation、rag、rubric4setwise、rubric-oriented、document、set、selection、rubric4setwise rubric4setwise等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "curated_summary": "本次抓取围绕「Benchmark」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括DavidSunok/CLEAR-LeWM、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 25，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察evaluation、rag、rubric4setwise、rubric-oriented、document、set、selection、rubric4setwise rubric4setwise等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
         "总体判断：Benchmark 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、evaluation、rubric4setwise、rubric-oriented、document、set等线索，代表条目包括DavidSunok/CLEAR-LeWM、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 27，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 25，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 3 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1787,7 +1797,7 @@
         ],
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 27,
+        "github_star_delta": 25,
         "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 4
@@ -1800,10 +1810,10 @@
       "magnitude": 4.79,
       "severity_label": "疑似爆发",
       "summary": "Edge AI 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.79，burst=4.066，growth_rate=-0.933，z_score=-3.55，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.79，burst=4.068，growth_rate=-0.933，z_score=-3.569，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 3 个",
-        "24h star 增量 22",
+        "24h star 增量 23",
         "方法提及：RAG",
         "机构集中：Narasimha440, phoenix-zhou, OpenBMB"
       ],
@@ -1812,13 +1822,13 @@
         "current_24h_count": 3,
         "current_72h_count": 3,
         "current_7d_count": 3,
-        "baseline_daily_avg_30d": 58.839,
-        "baseline_daily_std_30d": 14.73,
-        "baseline_72h_avg_30d": 176.516,
+        "baseline_daily_avg_30d": 59.048,
+        "baseline_daily_std_30d": 14.705,
+        "baseline_72h_avg_30d": 177.143,
         "growth_rate": -0.933,
-        "z_score": -3.55,
+        "z_score": -3.569,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.684,
+        "github_signal_score": 3.686,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.333,
@@ -1828,11 +1838,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 3,
-        "github_star_delta": 22,
+        "github_star_delta": 23,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 3,
-        "burst_score": 4.066,
+        "burst_score": 4.068,
         "low_history_confidence": false,
         "magnitude": 4.79
       },
@@ -1909,11 +1919,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Edge AI:2026-07-23:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenBMB/MiniCPM-Robot\", \"source_url\": \"https://github.com/OpenBMB/MiniCPM-Robot\", \"published_at\": \"2026-07-18T19:35:23Z\", \"match_score\": 0.547, \"matched_keywords\": [\"on-device AI\", \"on-device ai\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Narasimha440/mlsentinel\", \"source_url\": \"https://github.com/Narasimha440/mlsentinel\", \"published_at\": \"2026-07-18T10:17:27Z\", \"match_score\": 0.068, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"phoenix-zhou/industrial-general-rag\", \"source_url\": \"https://github.com/phoenix-zhou/industrial-general-rag\", \"published_at\": \"2026-07-21T13:59:07Z\", \"match_score\": 0.068, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Edge AI」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括OpenBMB/MiniCPM-Robot、Narasimha440/mlsentinel、phoenix-zhou/industrial-general-rag等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 22，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Narasimha440、phoenix-zhou、OpenBMB，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察mlsentinel、narasimha440、monitors、machine、detects、data、drift、performance等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "curated_summary": "本次抓取围绕「Edge AI」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括OpenBMB/MiniCPM-Robot、Narasimha440/mlsentinel、phoenix-zhou/industrial-general-rag等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 23，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Narasimha440、phoenix-zhou、OpenBMB，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察mlsentinel、narasimha440、monitors、machine、detects、data、drift、performance等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
         "总体判断：Edge AI 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“疑似爆发”（M4.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、mlsentinel、narasimha440、monitors、machine、detects等线索，代表条目包括OpenBMB/MiniCPM-Robot、Narasimha440/mlsentinel、phoenix-zhou/industrial-general-rag，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 22，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 23，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及Narasimha440、phoenix-zhou、OpenBMB，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1997,7 +2007,7 @@
         ],
         "paper_count": 0,
         "repo_count": 3,
-        "github_star_delta": 22,
+        "github_star_delta": 23,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 3
@@ -2007,13 +2017,13 @@
     {
       "topic": "Evaluation",
       "title": "Evaluation 出现疑似爆发",
-      "magnitude": 4.54,
+      "magnitude": 4.53,
       "severity_label": "疑似爆发",
       "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.54，burst=3.979，growth_rate=-0.879，z_score=-2.076，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.53，burst=3.974，growth_rate=-0.881，z_score=-2.005，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 4 个",
-        "24h star 增量 27",
+        "24h star 增量 25",
         "方法提及：RAG",
         "机构集中：Rubric4Setwise, phoenix-zhou, Eval-core"
       ],
@@ -2022,13 +2032,13 @@
         "current_24h_count": 4,
         "current_72h_count": 4,
         "current_7d_count": 4,
-        "baseline_daily_avg_30d": 40.276,
-        "baseline_daily_std_30d": 16.473,
-        "baseline_72h_avg_30d": 120.828,
-        "growth_rate": -0.879,
-        "z_score": -2.076,
+        "baseline_daily_avg_30d": 40.909,
+        "baseline_daily_std_30d": 17.412,
+        "baseline_72h_avg_30d": 122.727,
+        "growth_rate": -0.881,
+        "z_score": -2.005,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.217,
+        "github_signal_score": 3.211,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.25,
@@ -2038,13 +2048,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 27,
+        "github_star_delta": 25,
         "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 4,
-        "burst_score": 3.979,
+        "burst_score": 3.974,
         "low_history_confidence": false,
-        "magnitude": 4.54
+        "magnitude": 4.53
       },
       "evidence": [
         {
@@ -2139,11 +2149,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Evaluation:2026-07-23:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DavidSunok/CLEAR-LeWM\", \"source_url\": \"https://github.com/DavidSunok/CLEAR-LeWM\", \"published_at\": \"2026-07-21T09:24:37Z\", \"match_score\": 0.6, \"matched_keywords\": [\"benchmark evaluation\", \"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Rubric4Setwise/Rubric4Setwise\", \"source_url\": \"https://github.com/Rubric4Setwise/Rubric4Setwise\", \"published_at\": \"2026-07-21T12:57:04Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"phoenix-zhou/industrial-general-rag\", \"source_url\": \"https://github.com/phoenix-zhou/industrial-general-rag\", \"published_at\": \"2026-07-21T13:59:07Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Eval-core/evalcore\", \"source_url\": \"https://github.com/Eval-core/evalcore\", \"published_at\": \"2026-07-17T03:26:45Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括DavidSunok/CLEAR-LeWM、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 27，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察evaluation、rag、rubric4setwise、rubric-oriented、document、set、selection、rubric4setwise rubric4setwise等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括DavidSunok/CLEAR-LeWM、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 25，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察evaluation、rag、rubric4setwise、rubric-oriented、document、set、selection、rubric4setwise rubric4setwise等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
         "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、evaluation、rubric4setwise、rubric-oriented、document、set等线索，代表条目包括DavidSunok/CLEAR-LeWM、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 27，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 25，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 3 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -2251,7 +2261,7 @@
         ],
         "paper_count": 0,
         "repo_count": 4,
-        "github_star_delta": 27,
+        "github_star_delta": 25,
         "method_mentions": 3,
         "dataset_mentions": 0,
         "institution_mentions": 4
@@ -2264,10 +2274,10 @@
       "magnitude": 3.36,
       "severity_label": "明显异常",
       "summary": "World Model 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.36，burst=2.264，growth_rate=-0.927，z_score=-2.244，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.36，burst=2.271，growth_rate=-0.927，z_score=-2.247，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 17",
+        "24h star 增量 16",
         "机构集中：jadhavdurvesh, ameritusweb, yingfanxu"
       ],
       "metrics": {
@@ -2275,13 +2285,13 @@
         "current_24h_count": 7,
         "current_72h_count": 7,
         "current_7d_count": 7,
-        "baseline_daily_avg_30d": 108.167,
-        "baseline_daily_std_30d": 44.091,
-        "baseline_72h_avg_30d": 324.5,
+        "baseline_daily_avg_30d": 108.579,
+        "baseline_daily_std_30d": 44.216,
+        "baseline_72h_avg_30d": 325.738,
         "growth_rate": -0.927,
-        "z_score": -2.244,
+        "z_score": -2.247,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.264,
+        "github_signal_score": 2.271,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
@@ -2291,11 +2301,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 17,
+        "github_star_delta": 16,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 2.264,
+        "burst_score": 2.271,
         "low_history_confidence": false,
         "magnitude": 3.36
       },
@@ -2422,11 +2432,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:World Model:2026-07-23:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DavidSunok/CLEAR-LeWM\", \"source_url\": \"https://github.com/DavidSunok/CLEAR-LeWM\", \"published_at\": \"2026-07-21T09:24:37Z\", \"match_score\": 0.417, \"matched_keywords\": [\"world models\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NVIDIA-Omniverse/ovstage\", \"source_url\": \"https://github.com/NVIDIA-Omniverse/ovstage\", \"published_at\": \"2026-07-16T22:42:03Z\", \"match_score\": 0.167, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jadhavdurvesh/DMJ-LLM\", \"source_url\": \"https://github.com/jadhavdurvesh/DMJ-LLM\", \"published_at\": \"2026-07-16T14:34:49Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ameritusweb/ArtificialBiologicalIntelligence\", \"source_url\": \"https://github.com/ameritusweb/ArtificialBiologicalIntelligence\", \"published_at\": \"2026-07-21T16:03:27Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yingfanxu/etf-quant-research-system\", \"source_url\": \"https://github.com/yingfanxu/etf-quant-research-system\", \"published_at\": \"2026-07-21T12:23:34Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"iuliaferoli/backtoengineering\", \"source_url\": \"https://github.com/iuliaferoli/backtoengineering\", \"published_at\": \"2026-07-16T15:01:01Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chayanforyou/Robokeeper-Firmware\", \"source_url\": \"https://github.com/chayanforyou/Robokeeper-Firmware\", \"published_at\": \"2026-07-16T04:43:09Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「World Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括DavidSunok/CLEAR-LeWM、NVIDIA-Omniverse/ovstage、jadhavdurvesh/DMJ-LLM、ameritusweb/ArtificialBiologicalIntelligence、yingfanxu/etf-quant-research-system等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 17，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及jadhavdurvesh、ameritusweb、yingfanxu、DavidSunok、iuliaferoli、chayanforyou、NVIDIA、NVIDIA-Omniverse，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm、open-source、engineering-focused等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「World Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括DavidSunok/CLEAR-LeWM、NVIDIA-Omniverse/ovstage、jadhavdurvesh/DMJ-LLM、ameritusweb/ArtificialBiologicalIntelligence、yingfanxu/etf-quant-research-system等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 16，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及jadhavdurvesh、ameritusweb、yingfanxu、DavidSunok、iuliaferoli、chayanforyou、NVIDIA、NVIDIA-Omniverse，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm、open-source、engineering-focused等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：World Model 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“明显异常”（M3.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm等线索，代表条目包括DavidSunok/CLEAR-LeWM、NVIDIA-Omniverse/ovstage、jadhavdurvesh/DMJ-LLM、ameritusweb/ArtificialBiologicalIntelligence，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 17，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 16，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及jadhavdurvesh、ameritusweb、yingfanxu、DavidSunok、iuliaferoli、chayanforyou，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm、open-source、engineering-focused是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
@@ -2576,7 +2586,7 @@
         ],
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 17,
+        "github_star_delta": 16,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 8
@@ -2586,44 +2596,44 @@
     {
       "topic": "Tool Use",
       "title": "Tool Use 出现明显异常",
-      "magnitude": 3.16,
+      "magnitude": 3.17,
       "severity_label": "明显异常",
-      "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 17 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.16，burst=2.568，growth_rate=-0.942，z_score=-5.365，cross_source=0.5。",
+      "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 18 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+      "calculation_summary": "magnitude=3.17，burst=2.617，growth_rate=-0.939，z_score=-5.278，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 17 个",
-        "24h star 增量 221",
+        "GitHub 项目 18 个",
+        "24h star 增量 199",
         "方法提及：MCP, RAG, ReAct",
         "机构集中：OpenAI, KGupta171025, Pravishraz"
       ],
       "metrics": {
-        "current_1h_count": 17,
-        "current_24h_count": 17,
-        "current_72h_count": 17,
-        "current_7d_count": 17,
-        "baseline_daily_avg_30d": 310.714,
-        "baseline_daily_std_30d": 53.746,
-        "baseline_72h_avg_30d": 932.143,
-        "growth_rate": -0.942,
-        "z_score": -5.365,
+        "current_1h_count": 18,
+        "current_24h_count": 18,
+        "current_72h_count": 18,
+        "current_7d_count": 18,
+        "baseline_daily_avg_30d": 312.421,
+        "baseline_daily_std_30d": 54.782,
+        "baseline_72h_avg_30d": 937.263,
+        "growth_rate": -0.939,
+        "z_score": -5.278,
         "paper_burst_score": 0.0,
         "github_signal_score": 1.25,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.118,
-        "institution_signal_score": 0.358,
+        "institution_concentration_score": 0.111,
+        "institution_signal_score": 0.343,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.319,
+        "method_signal_score": 1.367,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 17,
-        "github_star_delta": 221,
-        "method_mentions": 10,
+        "repo_count": 18,
+        "github_star_delta": 199,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 19,
-        "burst_score": 2.568,
+        "institution_mentions": 20,
+        "burst_score": 2.617,
         "low_history_confidence": false,
-        "magnitude": 3.16
+        "magnitude": 3.17
       },
       "evidence": [
         {
@@ -2708,9 +2718,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "yc-duan/fastctx",
-          "source_url": "https://github.com/yc-duan/fastctx",
-          "published_at": "2026-07-17T03:05:57Z",
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
+          "published_at": "2026-07-20T10:47:56Z",
           "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
@@ -2729,6 +2739,7 @@
         "https://github.com/NullLabTests/software-periodic-table",
         "https://github.com/Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence",
         "https://github.com/PromptPartner/agentsmith",
+        "https://github.com/TryCaspian/caspian-sdk",
         "https://github.com/livetennisapi/livetennisapi-mcp",
         "https://github.com/ogulcancelik/agent-skills",
         "https://github.com/risa-labs-inc/BossConsole",
@@ -2748,19 +2759,19 @@
         "Pravishraz",
         "KinetiNode",
         "thesysdev",
-        "PromptPartner",
         "KlaatAI",
+        "PromptPartner",
         "livetennisapi"
       ],
       "suggested_watch_keywords": [
         "agents",
         "claude",
         "llm",
-        "gemini",
-        "codex",
-        "coding",
         "agent",
-        "system"
+        "gemini",
+        "your",
+        "coding",
+        "codex"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -2772,16 +2783,16 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Tool Use:2026-07-23:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"thesysdev/appless\", \"source_url\": \"https://github.com/thesysdev/appless\", \"published_at\": \"2026-07-16T07:08:49Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence\", \"source_url\": \"https://github.com/Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence\", \"published_at\": \"2026-07-18T06:54:05Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KinetiNode/claude-fable-5-system-prompt-clean\", \"source_url\": \"https://github.com/KinetiNode/claude-fable-5-system-prompt-clean\", \"published_at\": \"2026-07-19T06:09:52Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"livetennisapi/livetennisapi-mcp\", \"source_url\": \"https://github.com/livetennisapi/livetennisapi-mcp\", \"published_at\": \"2026-07-18T23:17:55Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yc-duan/fastctx\", \"source_url\": \"https://github.com/yc-duan/fastctx\", \"published_at\": \"2026-07-17T03:05:57Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 17 个。代表性目标包括thesysdev/appless、PromptPartner/agentsmith、KGupta171025/KALKI-1.5、Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence、KinetiNode/claude-fable-5-system-prompt-clean等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 221，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、KGupta171025、Pravishraz、KinetiNode、thesysdev、PromptPartner、KlaatAI、livetennisapi，累计提及 19 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、llm、gemini、codex、coding、agent、system等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"thesysdev/appless\", \"source_url\": \"https://github.com/thesysdev/appless\", \"published_at\": \"2026-07-16T07:08:49Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PromptPartner/agentsmith\", \"source_url\": \"https://github.com/PromptPartner/agentsmith\", \"published_at\": \"2026-07-16T11:37:15Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KGupta171025/KALKI-1.5\", \"source_url\": \"https://github.com/KGupta171025/KALKI-1.5\", \"published_at\": \"2026-07-21T15:08:03Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence\", \"source_url\": \"https://github.com/Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence\", \"published_at\": \"2026-07-18T06:54:05Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KinetiNode/claude-fable-5-system-prompt-clean\", \"source_url\": \"https://github.com/KinetiNode/claude-fable-5-system-prompt-clean\", \"published_at\": \"2026-07-19T06:09:52Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KlaatAI/klaatcode\", \"source_url\": \"https://github.com/KlaatAI/klaatcode\", \"published_at\": \"2026-07-17T11:38:10Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"livetennisapi/livetennisapi-mcp\", \"source_url\": \"https://github.com/livetennisapi/livetennisapi-mcp\", \"published_at\": \"2026-07-18T23:17:55Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TryCaspian/caspian-sdk\", \"source_url\": \"https://github.com/TryCaspian/caspian-sdk\", \"published_at\": \"2026-07-20T10:47:56Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 18 个。代表性目标包括thesysdev/appless、PromptPartner/agentsmith、KGupta171025/KALKI-1.5、Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence、KinetiNode/claude-fable-5-system-prompt-clean等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 199，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、KGupta171025、Pravishraz、KinetiNode、thesysdev、KlaatAI、PromptPartner、livetennisapi，累计提及 20 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、llm、agent、gemini、your、coding、codex等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Tool Use 本轮由论文 0 条、GitHub 项目 17 个共同构成观测基础，当前强度为“明显异常”（M3.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "总体判断：Tool Use 本轮由论文 0 条、GitHub 项目 18 个共同构成观测基础，当前强度为“明显异常”（M3.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、claude、llm等线索，代表条目包括thesysdev/appless、PromptPartner/agentsmith、KGupta171025/KALKI-1.5、Pravishraz/Smart-Waste-Management-using-Artificial_Intelligence，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 17 个 GitHub 项目，24 小时 star 增量约 221，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 10 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、KGupta171025、Pravishraz、KinetiNode、thesysdev、PromptPartner，累计提及 19 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "工程侧归纳：本轮包含 18 个 GitHub 项目，24 小时 star 增量约 199，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、KGupta171025、Pravishraz、KinetiNode、thesysdev、KlaatAI，累计提及 20 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、claude、llm、gemini、codex、coding、agent、system是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、claude、llm、agent、gemini、your、coding、codex是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -2828,8 +2839,8 @@
             "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "yc-duan/fastctx",
-            "url": "https://github.com/yc-duan/fastctx",
+            "title": "TryCaspian/caspian-sdk",
+            "url": "https://github.com/TryCaspian/caspian-sdk",
             "source": "github",
             "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
@@ -2914,8 +2925,8 @@
           "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "yc-duan/fastctx",
-          "source_url": "https://github.com/yc-duan/fastctx",
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.073,
@@ -2925,7 +2936,7 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 17 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 18 个。",
         "focus_terms": [
           "MCP",
           "RAG",
@@ -2933,8 +2944,8 @@
           "agents",
           "claude",
           "llm",
-          "gemini",
-          "codex"
+          "agent",
+          "gemini"
         ],
         "representative_titles": [
           "thesysdev/appless",
@@ -2949,29 +2960,29 @@
           "Pravishraz",
           "KinetiNode",
           "thesysdev",
-          "PromptPartner",
           "KlaatAI",
+          "PromptPartner",
           "livetennisapi"
         ],
         "paper_count": 0,
-        "repo_count": 17,
-        "github_star_delta": 221,
-        "method_mentions": 10,
+        "repo_count": 18,
+        "github_star_delta": 199,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 19
+        "institution_mentions": 20
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Robotics",
-      "title": "Robotics 出现局部升温",
-      "magnitude": 2.99,
-      "severity_label": "局部升温",
-      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为局部升温。",
-      "calculation_summary": "magnitude=2.99，burst=1.808，growth_rate=-0.926，z_score=-3.442，cross_source=0.5。",
+      "title": "Robotics 出现明显异常",
+      "magnitude": 3.0,
+      "severity_label": "明显异常",
+      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+      "calculation_summary": "magnitude=3.0，burst=1.814，growth_rate=-0.926，z_score=-3.425，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 17",
+        "24h star 增量 16",
         "机构集中：jadhavdurvesh, ameritusweb, yingfanxu"
       ],
       "metrics": {
@@ -2979,13 +2990,13 @@
         "current_24h_count": 7,
         "current_72h_count": 7,
         "current_7d_count": 7,
-        "baseline_daily_avg_30d": 107.575,
-        "baseline_daily_std_30d": 28.218,
-        "baseline_72h_avg_30d": 322.726,
+        "baseline_daily_avg_30d": 107.841,
+        "baseline_daily_std_30d": 28.439,
+        "baseline_72h_avg_30d": 323.524,
         "growth_rate": -0.926,
-        "z_score": -3.442,
+        "z_score": -3.425,
         "paper_burst_score": 0.0,
-        "github_signal_score": 1.808,
+        "github_signal_score": 1.814,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
@@ -2995,13 +3006,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 17,
+        "github_star_delta": 16,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 1.808,
+        "burst_score": 1.814,
         "low_history_confidence": false,
-        "magnitude": 2.99
+        "magnitude": 3.0
       },
       "evidence": [
         {
@@ -3136,13 +3147,13 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Robotics:2026-07-23:局部升温",
+      "dedupe_key": "trend:Robotics:2026-07-23:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jadhavdurvesh/DMJ-LLM\", \"source_url\": \"https://github.com/jadhavdurvesh/DMJ-LLM\", \"published_at\": \"2026-07-16T14:34:49Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ameritusweb/ArtificialBiologicalIntelligence\", \"source_url\": \"https://github.com/ameritusweb/ArtificialBiologicalIntelligence\", \"published_at\": \"2026-07-21T16:03:27Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yingfanxu/etf-quant-research-system\", \"source_url\": \"https://github.com/yingfanxu/etf-quant-research-system\", \"published_at\": \"2026-07-21T12:23:34Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DavidSunok/CLEAR-LeWM\", \"source_url\": \"https://github.com/DavidSunok/CLEAR-LeWM\", \"published_at\": \"2026-07-21T09:24:37Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"iuliaferoli/backtoengineering\", \"source_url\": \"https://github.com/iuliaferoli/backtoengineering\", \"published_at\": \"2026-07-16T15:01:01Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chayanforyou/Robokeeper-Firmware\", \"source_url\": \"https://github.com/chayanforyou/Robokeeper-Firmware\", \"published_at\": \"2026-07-16T04:43:09Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"NVIDIA-Omniverse/ovstage\", \"source_url\": \"https://github.com/NVIDIA-Omniverse/ovstage\", \"published_at\": \"2026-07-16T22:42:03Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“局部升温”（M3.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括jadhavdurvesh/DMJ-LLM、ameritusweb/ArtificialBiologicalIntelligence、yingfanxu/etf-quant-research-system、DavidSunok/CLEAR-LeWM、iuliaferoli/backtoengineering等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 17，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及jadhavdurvesh、ameritusweb、yingfanxu、DavidSunok、iuliaferoli、chayanforyou、NVIDIA、NVIDIA-Omniverse，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm、open-source、engineering-focused等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括jadhavdurvesh/DMJ-LLM、ameritusweb/ArtificialBiologicalIntelligence、yingfanxu/etf-quant-research-system、DavidSunok/CLEAR-LeWM、iuliaferoli/backtoengineering等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 16，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及jadhavdurvesh、ameritusweb、yingfanxu、DavidSunok、iuliaferoli、chayanforyou、NVIDIA、NVIDIA-Omniverse，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm、open-source、engineering-focused等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“局部升温”（M3.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“明显异常”（M3.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm等线索，代表条目包括jadhavdurvesh/DMJ-LLM、ameritusweb/ArtificialBiologicalIntelligence、yingfanxu/etf-quant-research-system、DavidSunok/CLEAR-LeWM，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 17，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 16，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及jadhavdurvesh、ameritusweb、yingfanxu、DavidSunok、iuliaferoli、chayanforyou，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察robotics、intelligence、world、llm、jadhavdurvesh、dmj-llm、open-source、engineering-focused是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
@@ -3304,7 +3315,7 @@
         ],
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 17,
+        "github_star_delta": 16,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 8
@@ -3364,8 +3375,8 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Robotics",
-      "magnitude": 2.99,
-      "severity_label": "局部升温",
+      "magnitude": 3.0,
+      "severity_label": "明显异常",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
       "push_enabled": true,
@@ -3411,7 +3422,7 @@
           "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:具身智能观察:Robotics:局部升温"
+      "dedupe_key": "watchlist:具身智能观察:Robotics:明显异常"
     },
     {
       "watchlist_name": "具身智能观察",
@@ -3518,13 +3529,14 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "KGupta171025/KALKI-1.5",
-          "source_url": "https://github.com/KGupta171025/KALKI-1.5",
-          "published_at": "2026-07-21T15:08:03Z",
-          "match_score": 0.633,
+          "title": "TryCaspian/caspian-sdk",
+          "source_url": "https://github.com/TryCaspian/caspian-sdk",
+          "published_at": "2026-07-20T10:47:56Z",
+          "match_score": 0.95,
           "matched_keywords": [
             "agent",
-            "agents"
+            "agents",
+            "ai agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -3532,9 +3544,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "PromptPartner/agentsmith",
-          "source_url": "https://github.com/PromptPartner/agentsmith",
-          "published_at": "2026-07-16T11:37:15Z",
+          "title": "KGupta171025/KALKI-1.5",
+          "source_url": "https://github.com/KGupta171025/KALKI-1.5",
+          "published_at": "2026-07-21T15:08:03Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -3614,7 +3626,7 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "Evaluation",
-      "magnitude": 4.54,
+      "magnitude": 4.53,
       "severity_label": "疑似爆发",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
@@ -3669,11 +3681,11 @@
     {
       "repo_full_name": "Jakubantalik/thinking-orbs",
       "url": "https://github.com/Jakubantalik/thinking-orbs",
-      "stars": 795,
-      "star_delta_1h": 27,
-      "star_delta_24h": 389,
-      "star_delta_72h": 452,
-      "star_delta_7d": 452,
+      "stars": 810,
+      "star_delta_1h": 15,
+      "star_delta_24h": 313,
+      "star_delta_72h": 467,
+      "star_delta_7d": 467,
       "matched_topics": [
         "Agents"
       ],
@@ -3684,11 +3696,11 @@
     {
       "repo_full_name": "pireel/pireel",
       "url": "https://github.com/pireel/pireel",
-      "stars": 642,
-      "star_delta_1h": 20,
-      "star_delta_24h": 313,
-      "star_delta_72h": 313,
-      "star_delta_7d": 313,
+      "stars": 647,
+      "star_delta_1h": 5,
+      "star_delta_24h": 260,
+      "star_delta_72h": 318,
+      "star_delta_7d": 318,
       "matched_topics": [
         "Agents",
         "Model Context Protocol"
@@ -3700,11 +3712,11 @@
     {
       "repo_full_name": "gnipbao/story-to-handdrawn-video",
       "url": "https://github.com/gnipbao/story-to-handdrawn-video",
-      "stars": 532,
-      "star_delta_1h": 22,
-      "star_delta_24h": 192,
-      "star_delta_72h": 192,
-      "star_delta_7d": 192,
+      "stars": 536,
+      "star_delta_1h": 4,
+      "star_delta_24h": 151,
+      "star_delta_72h": 196,
+      "star_delta_7d": 196,
       "matched_topics": [
         "Agents"
       ],
@@ -3713,32 +3725,32 @@
       "source_url": "https://github.com/gnipbao/story-to-handdrawn-video"
     },
     {
+      "repo_full_name": "nethical6/conversation-steganography",
+      "url": "https://github.com/nethical6/conversation-steganography",
+      "stars": 1067,
+      "star_delta_1h": 3,
+      "star_delta_24h": 123,
+      "star_delta_72h": 201,
+      "star_delta_7d": 863,
+      "matched_topics": [],
+      "language": "Go",
+      "description": "Use LLMs to hide messages inside normal looking conversations",
+      "source_url": "https://github.com/nethical6/conversation-steganography"
+    },
+    {
       "repo_full_name": "lopopolo/harness-engineering",
       "url": "https://github.com/lopopolo/harness-engineering",
-      "stars": 2256,
-      "star_delta_1h": 13,
-      "star_delta_24h": 184,
-      "star_delta_72h": 1626,
-      "star_delta_7d": 1905,
+      "stars": 2259,
+      "star_delta_1h": 3,
+      "star_delta_24h": 115,
+      "star_delta_72h": 1612,
+      "star_delta_7d": 1908,
       "matched_topics": [
         "Agents"
       ],
       "language": "Python",
       "description": "🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering",
       "source_url": "https://github.com/lopopolo/harness-engineering"
-    },
-    {
-      "repo_full_name": "nethical6/conversation-steganography",
-      "url": "https://github.com/nethical6/conversation-steganography",
-      "stars": 1064,
-      "star_delta_1h": 6,
-      "star_delta_24h": 126,
-      "star_delta_72h": 210,
-      "star_delta_7d": 860,
-      "matched_topics": [],
-      "language": "Go",
-      "description": "Use LLMs to hide messages inside normal looking conversations",
-      "source_url": "https://github.com/nethical6/conversation-steganography"
     },
     {
       "repo_full_name": "yc-duan/fastctx",
@@ -3761,11 +3773,11 @@
     {
       "repo_full_name": "Kritt-ai/open-kritt",
       "url": "https://github.com/Kritt-ai/open-kritt",
-      "stars": 354,
-      "star_delta_1h": 4,
-      "star_delta_24h": 55,
-      "star_delta_72h": 287,
-      "star_delta_7d": 287,
+      "stars": 355,
+      "star_delta_1h": 1,
+      "star_delta_24h": 46,
+      "star_delta_72h": 288,
+      "star_delta_7d": 288,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3780,11 +3792,11 @@
     {
       "repo_full_name": "KlaatAI/klaatcode",
       "url": "https://github.com/KlaatAI/klaatcode",
-      "stars": 252,
-      "star_delta_1h": 0,
-      "star_delta_24h": 24,
-      "star_delta_72h": 103,
-      "star_delta_7d": 166,
+      "stars": 261,
+      "star_delta_1h": 9,
+      "star_delta_24h": 23,
+      "star_delta_72h": 109,
+      "star_delta_7d": 175,
       "matched_topics": [
         "AI Coding",
         "Agents",
@@ -3797,32 +3809,28 @@
       "source_url": "https://github.com/KlaatAI/klaatcode"
     },
     {
-      "repo_full_name": "risa-labs-inc/BossConsole",
-      "url": "https://github.com/risa-labs-inc/BossConsole",
-      "stars": 166,
-      "star_delta_1h": 5,
+      "repo_full_name": "OpenBMB/MiniCPM-Robot",
+      "url": "https://github.com/OpenBMB/MiniCPM-Robot",
+      "stars": 232,
+      "star_delta_1h": 2,
       "star_delta_24h": 22,
-      "star_delta_72h": 22,
-      "star_delta_7d": 22,
+      "star_delta_72h": 84,
+      "star_delta_7d": 216,
       "matched_topics": [
-        "Agents",
-        "Model Context Protocol",
-        "Scientific Discovery",
-        "Tool Use",
-        "Memory"
+        "Edge AI"
       ],
-      "language": "Kotlin",
-      "description": "Open-source, multi-platform harness for AI agents — a native, multi-threaded operator's console (JVM, not Electron) to run Claude Code, Codex, Gemini or OpenCode with a real browser, terminal, editor, secrets & 100+ MCP tools. Built for enterprises, science & research.",
-      "source_url": "https://github.com/risa-labs-inc/BossConsole"
+      "language": "Python",
+      "description": "A Smarter and Faster On-Device AI Brain for Robots",
+      "source_url": "https://github.com/OpenBMB/MiniCPM-Robot"
     },
     {
       "repo_full_name": "KinetiNode/claude-fable-5-system-prompt-clean",
       "url": "https://github.com/KinetiNode/claude-fable-5-system-prompt-clean",
-      "stars": 389,
+      "stars": 391,
       "star_delta_1h": 2,
-      "star_delta_24h": 21,
-      "star_delta_72h": 195,
-      "star_delta_7d": 195,
+      "star_delta_24h": 19,
+      "star_delta_72h": 197,
+      "star_delta_7d": 197,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3864,12 +3872,12 @@
     {
       "topic": "RAG",
       "term": "RAG",
-      "magnitude": 5.24
+      "magnitude": 5.23
     },
     {
       "topic": "RAG",
       "term": "MCP",
-      "magnitude": 5.24
+      "magnitude": 5.23
     },
     {
       "topic": "Benchmark",
@@ -3884,32 +3892,32 @@
     {
       "topic": "Evaluation",
       "term": "RAG",
-      "magnitude": 4.54
+      "magnitude": 4.53
     },
     {
       "topic": "Tool Use",
       "term": "MCP",
-      "magnitude": 3.16
+      "magnitude": 3.17
     },
     {
       "topic": "Tool Use",
       "term": "RAG",
-      "magnitude": 3.16
+      "magnitude": 3.17
     },
     {
       "topic": "Tool Use",
       "term": "ReAct",
-      "magnitude": 3.16
+      "magnitude": 3.17
     },
     {
       "topic": "Multi-Agent",
       "term": "MCP",
-      "magnitude": 2.89
+      "magnitude": 2.87
     },
     {
       "topic": "Multi-Agent",
       "term": "RAG",
-      "magnitude": 2.89
+      "magnitude": 2.87
     },
     {
       "topic": "Transformer Alternative",
@@ -3924,12 +3932,12 @@
     {
       "topic": "Memory",
       "term": "MCP",
-      "magnitude": 2.63
+      "magnitude": 2.64
     },
     {
       "topic": "Memory",
       "term": "RAG",
-      "magnitude": 2.63
+      "magnitude": 2.64
     },
     {
       "topic": "Scientific Discovery",
@@ -3970,12 +3978,12 @@
     },
     {
       "topic": "AI Coding",
-      "term": "PromptPartner",
+      "term": "KlaatAI",
       "magnitude": 6.0
     },
     {
       "topic": "AI Coding",
-      "term": "KlaatAI",
+      "term": "PromptPartner",
       "magnitude": 6.0
     },
     {
@@ -4005,38 +4013,38 @@
     },
     {
       "topic": "Model Context Protocol",
-      "term": "PromptPartner",
+      "term": "KlaatAI",
       "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
-      "term": "KlaatAI",
+      "term": "PromptPartner",
       "magnitude": 6.0
     },
     {
       "topic": "RAG",
       "term": "KGupta171025",
-      "magnitude": 5.24
+      "magnitude": 5.23
     },
     {
       "topic": "RAG",
       "term": "drpwchen",
-      "magnitude": 5.24
+      "magnitude": 5.23
     },
     {
       "topic": "RAG",
       "term": "Drobiazkin",
-      "magnitude": 5.24
+      "magnitude": 5.23
     },
     {
       "topic": "RAG",
       "term": "Rubric4Setwise",
-      "magnitude": 5.24
+      "magnitude": 5.23
     },
     {
       "topic": "RAG",
       "term": "HealerCodeLabs",
-      "magnitude": 5.24
+      "magnitude": 5.23
     }
   ],
   "source_status": [
@@ -4047,7 +4055,7 @@
       "error": null,
       "items": 0,
       "partial": false,
-      "fetched_at": "2026-07-23T17:48:55.401978+00:00"
+      "fetched_at": "2026-07-23T19:47:27.421377+00:00"
     },
     {
       "source_name": "github",
@@ -4056,7 +4064,7 @@
       "error": null,
       "items": 52,
       "partial": false,
-      "fetched_at": "2026-07-23T17:48:58.770500+00:00"
+      "fetched_at": "2026-07-23T19:47:30.960141+00:00"
     }
   ],
   "partial": false,
