@@ -155901,6 +155901,323 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Evaluation",
+      "magnitude": 5.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Evaluation",
+          "title": "Evaluation 出现强趋势震荡",
+          "magnitude": 5.0,
+          "severity_label": "强趋势震荡",
+          "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.0，burst=4.603，growth_rate=-0.879，z_score=-1.504，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 5 个",
+            "24h star 增量 70",
+            "方法提及：RAG",
+            "机构集中：SeanJ1ang, Rubric4Setwise, phoenix-zhou"
+          ],
+          "metrics": {
+            "current_1h_count": 5,
+            "current_24h_count": 5,
+            "current_72h_count": 5,
+            "current_7d_count": 5,
+            "baseline_daily_avg_30d": 48.742,
+            "baseline_daily_std_30d": 28.093,
+            "baseline_72h_avg_30d": 146.227,
+            "growth_rate": -0.879,
+            "z_score": -1.504,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.84,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.2,
+            "institution_signal_score": 0.389,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.762,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 70,
+            "method_mentions": 3,
+            "dataset_mentions": 0,
+            "institution_mentions": 5,
+            "burst_score": 4.603,
+            "low_history_confidence": false,
+            "magnitude": 5.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DavidSunok/CLEAR-LeWM",
+              "source_url": "https://github.com/DavidSunok/CLEAR-LeWM",
+              "published_at": "2026-07-21T09:24:37Z",
+              "match_score": 0.6,
+              "matched_keywords": [
+                "benchmark evaluation",
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "SeanJ1ang/design-judge-skills",
+              "source_url": "https://github.com/SeanJ1ang/design-judge-skills",
+              "published_at": "2026-07-18T07:27:32Z",
+              "match_score": 0.3,
+              "matched_keywords": [
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Rubric4Setwise/Rubric4Setwise",
+              "source_url": "https://github.com/Rubric4Setwise/Rubric4Setwise",
+              "published_at": "2026-07-21T12:57:04Z",
+              "match_score": 0.3,
+              "matched_keywords": [
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "phoenix-zhou/industrial-general-rag",
+              "source_url": "https://github.com/phoenix-zhou/industrial-general-rag",
+              "published_at": "2026-07-21T13:59:07Z",
+              "match_score": 0.3,
+              "matched_keywords": [
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Eval-core/evalcore",
+              "source_url": "https://github.com/Eval-core/evalcore",
+              "published_at": "2026-07-17T03:26:45Z",
+              "match_score": 0.3,
+              "matched_keywords": [
+                "evaluation"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/DavidSunok/CLEAR-LeWM",
+            "https://github.com/Eval-core/evalcore",
+            "https://github.com/Rubric4Setwise/Rubric4Setwise",
+            "https://github.com/SeanJ1ang/design-judge-skills",
+            "https://github.com/phoenix-zhou/industrial-general-rag"
+          ],
+          "related_methods": [
+            "RAG"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "SeanJ1ang",
+            "Rubric4Setwise",
+            "phoenix-zhou",
+            "Eval-core",
+            "DavidSunok"
+          ],
+          "suggested_watch_keywords": [
+            "evaluation",
+            "rag",
+            "award",
+            "seanj1ang",
+            "design-judge-skills",
+            "evidence-driven",
+            "agent",
+            "skills"
+          ],
+          "confidence": 0.67,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Evaluation:2026-07-24:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DavidSunok/CLEAR-LeWM\", \"source_url\": \"https://github.com/DavidSunok/CLEAR-LeWM\", \"published_at\": \"2026-07-21T09:24:37Z\", \"match_score\": 0.6, \"matched_keywords\": [\"benchmark evaluation\", \"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SeanJ1ang/design-judge-skills\", \"source_url\": \"https://github.com/SeanJ1ang/design-judge-skills\", \"published_at\": \"2026-07-18T07:27:32Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Rubric4Setwise/Rubric4Setwise\", \"source_url\": \"https://github.com/Rubric4Setwise/Rubric4Setwise\", \"published_at\": \"2026-07-21T12:57:04Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"phoenix-zhou/industrial-general-rag\", \"source_url\": \"https://github.com/phoenix-zhou/industrial-general-rag\", \"published_at\": \"2026-07-21T13:59:07Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Eval-core/evalcore\", \"source_url\": \"https://github.com/Eval-core/evalcore\", \"published_at\": \"2026-07-17T03:26:45Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括DavidSunok/CLEAR-LeWM、SeanJ1ang/design-judge-skills、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag、Eval-core/evalcore等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 70，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 3 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及SeanJ1ang、Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察evaluation、rag、award、seanj1ang、design-judge-skills、evidence-driven、agent、skills等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“强趋势震荡”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、evaluation、award、seanj1ang、design-judge-skills、evidence-driven等线索，代表条目包括DavidSunok/CLEAR-LeWM、SeanJ1ang/design-judge-skills、Rubric4Setwise/Rubric4Setwise、phoenix-zhou/industrial-general-rag，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 70，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 3 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及SeanJ1ang、Rubric4Setwise、phoenix-zhou、Eval-core、DavidSunok，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 5 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察evaluation、rag、award、seanj1ang、design-judge-skills、evidence-driven、agent、skills是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "DavidSunok/CLEAR-LeWM",
+                "url": "https://github.com/DavidSunok/CLEAR-LeWM",
+                "source": "github",
+                "reason": "命中 benchmark evaluation、evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "SeanJ1ang/design-judge-skills",
+                "url": "https://github.com/SeanJ1ang/design-judge-skills",
+                "source": "github",
+                "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Rubric4Setwise/Rubric4Setwise",
+                "url": "https://github.com/Rubric4Setwise/Rubric4Setwise",
+                "source": "github",
+                "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "phoenix-zhou/industrial-general-rag",
+                "url": "https://github.com/phoenix-zhou/industrial-general-rag",
+                "source": "github",
+                "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Eval-core/evalcore",
+                "url": "https://github.com/Eval-core/evalcore",
+                "source": "github",
+                "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "DavidSunok/CLEAR-LeWM",
+              "source_url": "https://github.com/DavidSunok/CLEAR-LeWM",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.6,
+              "matched_terms": [
+                "benchmark evaluation",
+                "evaluation"
+              ],
+              "why_included": "命中 benchmark evaluation、evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "SeanJ1ang/design-judge-skills",
+              "source_url": "https://github.com/SeanJ1ang/design-judge-skills",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.3,
+              "matched_terms": [
+                "evaluation"
+              ],
+              "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Rubric4Setwise/Rubric4Setwise",
+              "source_url": "https://github.com/Rubric4Setwise/Rubric4Setwise",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.3,
+              "matched_terms": [
+                "evaluation"
+              ],
+              "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "phoenix-zhou/industrial-general-rag",
+              "source_url": "https://github.com/phoenix-zhou/industrial-general-rag",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.3,
+              "matched_terms": [
+                "evaluation"
+              ],
+              "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Eval-core/evalcore",
+              "source_url": "https://github.com/Eval-core/evalcore",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.3,
+              "matched_terms": [
+                "evaluation"
+              ],
+              "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 5 个。",
+            "focus_terms": [
+              "RAG",
+              "evaluation",
+              "award",
+              "seanj1ang",
+              "design-judge-skills",
+              "evidence-driven",
+              "agent",
+              "skills"
+            ],
+            "representative_titles": [
+              "DavidSunok/CLEAR-LeWM",
+              "SeanJ1ang/design-judge-skills",
+              "Rubric4Setwise/Rubric4Setwise",
+              "phoenix-zhou/industrial-general-rag",
+              "Eval-core/evalcore"
+            ],
+            "related_institutions": [
+              "SeanJ1ang",
+              "Rubric4Setwise",
+              "phoenix-zhou",
+              "Eval-core",
+              "DavidSunok"
+            ],
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 70,
+            "method_mentions": 3,
+            "dataset_mentions": 0,
+            "institution_mentions": 5
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-07-24T21"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-07-24T21:30:04.671554+00:00",
+      "dedupe_key": "trend:Evaluation:2026-07-24:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
