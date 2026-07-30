@@ -1,11 +1,11 @@
 {
-  "snapshot_hour": "2026-07-30T03",
-  "generated_at": "2026-07-30T03:32:00.909396+00:00",
-  "run_id": "hourly-20260730T03-a1dd215b",
+  "snapshot_hour": "2026-07-30T06",
+  "generated_at": "2026-07-30T06:43:16.838432+00:00",
+  "run_id": "hourly-20260730T06-675d0909",
   "mode": "hourly",
-  "total_items_scanned": 47,
+  "total_items_scanned": 48,
   "total_papers_scanned": 0,
-  "total_repos_scanned": 47,
+  "total_repos_scanned": 48,
   "total_topics_tracked": 40,
   "max_magnitude": 6.0,
   "top_hotspots": [
@@ -14,44 +14,60 @@
       "title": "Agents 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Agents 在当前窗口内出现 0 条论文信号和 20 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.353，growth_rate=-0.959，z_score=-7.946，cross_source=0.5。",
+      "summary": "Agents 在当前窗口内出现 0 条论文信号和 22 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=9.442，growth_rate=-0.955，z_score=-7.924，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 20 个",
-        "24h star 增量 1797",
-        "方法提及：RAG, MCP",
+        "GitHub 项目 22 个",
+        "24h star 增量 1662",
+        "方法提及：RAG, MCP, ReAct",
         "机构集中：OpenAI, 0xwilliamortiz, XYZ-AI-Lab"
       ],
       "metrics": {
-        "current_1h_count": 20,
-        "current_24h_count": 20,
-        "current_72h_count": 20,
-        "current_7d_count": 20,
-        "baseline_daily_avg_30d": 512.063,
-        "baseline_daily_std_30d": 60.926,
-        "baseline_72h_avg_30d": 1536.19,
-        "growth_rate": -0.959,
-        "z_score": -7.946,
+        "current_1h_count": 22,
+        "current_24h_count": 22,
+        "current_72h_count": 22,
+        "current_7d_count": 22,
+        "baseline_daily_avg_30d": 512.158,
+        "baseline_daily_std_30d": 60.857,
+        "baseline_72h_avg_30d": 1536.474,
+        "growth_rate": -0.955,
+        "z_score": -7.924,
         "paper_burst_score": 0.0,
-        "github_signal_score": 7.21,
+        "github_signal_score": 8.031,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.15,
-        "institution_signal_score": 0.483,
+        "institution_concentration_score": 0.182,
+        "institution_signal_score": 0.599,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.144,
+        "method_signal_score": 1.411,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 20,
-        "github_star_delta": 1797,
-        "method_mentions": 7,
+        "repo_count": 22,
+        "github_star_delta": 1662,
+        "method_mentions": 12,
         "dataset_mentions": 0,
-        "institution_mentions": 25,
-        "burst_score": 8.353,
+        "institution_mentions": 27,
+        "burst_score": 9.442,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
+          "published_at": "2026-07-24T07:28:41Z",
+          "match_score": 0.792,
+          "matched_keywords": [
+            "agent",
+            "ai agent"
+          ],
+          "matched_methods": [
+            "ReAct"
+          ],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -149,20 +165,6 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "AmazingAng/old-coder",
-          "source_url": "https://github.com/AmazingAng/old-coder",
-          "published_at": "2026-07-27T05:03:11Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -170,6 +172,7 @@
         "https://github.com/0xwilliamortiz/ponytail-improved",
         "https://github.com/AmazingAng/old-coder",
         "https://github.com/Leehyunbin0131/claude-ros2-skills",
+        "https://github.com/Pinvou/pinvou-agent",
         "https://github.com/Sdraugel/albert",
         "https://github.com/VictorTaelin/OptMem",
         "https://github.com/WutIsHummus/TrueDeck",
@@ -177,6 +180,7 @@
         "https://github.com/XYZ-AI-Lab/axrl",
         "https://github.com/YasmeenGull/AI-ML-Week4-Tasks",
         "https://github.com/bestdeejay-design/awesome-ai-handbook",
+        "https://github.com/bybit-exchange/kaas",
         "https://github.com/deerwork-ai/deer-workflow",
         "https://github.com/gavamedia/deltafin",
         "https://github.com/krishagarwal314/autodev-studio",
@@ -189,7 +193,8 @@
       ],
       "related_methods": [
         "RAG",
-        "MCP"
+        "MCP",
+        "ReAct"
       ],
       "related_datasets": [],
       "related_institutions": [
@@ -205,12 +210,12 @@
       "suggested_watch_keywords": [
         "agent",
         "agents",
-        "code",
-        "claude",
         "coding",
+        "code",
+        "ai-agent",
+        "claude",
         "training",
-        "your",
-        "rag"
+        "your"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -223,19 +228,25 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-07-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/ponytail-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/ponytail-improved\", \"published_at\": \"2026-07-28T14:16:19Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yu123-tqy/equipdoc-agent\", \"source_url\": \"https://github.com/yu123-tqy/equipdoc-agent\", \"published_at\": \"2026-07-28T09:10:36Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"AmazingAng/old-coder\", \"source_url\": \"https://github.com/AmazingAng/old-coder\", \"published_at\": \"2026-07-27T05:03:11Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 20 个。代表性目标包括deerwork-ai/deer-workflow、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct、krishagarwal314/autodev-studio等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1797，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、0xwilliamortiz、XYZ-AI-Lab、YasmeenGull、bestdeejay-design、sean-adamsex7235、Anthropic、mikehasa，累计提及 25 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、code、claude、coding、training、your、rag等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Pinvou/pinvou-agent\", \"source_url\": \"https://github.com/Pinvou/pinvou-agent\", \"published_at\": \"2026-07-24T07:28:41Z\", \"match_score\": 0.792, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/ponytail-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/ponytail-improved\", \"published_at\": \"2026-07-28T14:16:19Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yu123-tqy/equipdoc-agent\", \"source_url\": \"https://github.com/yu123-tqy/equipdoc-agent\", \"published_at\": \"2026-07-28T09:10:36Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 22 个。代表性目标包括Pinvou/pinvou-agent、deerwork-ai/deer-workflow、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1662，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 12 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、0xwilliamortiz、XYZ-AI-Lab、YasmeenGull、bestdeejay-design、sean-adamsex7235、Anthropic、mikehasa，累计提及 27 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、coding、code、ai-agent、claude、training、your等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 20 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、agent、agents、code、claude等线索，代表条目包括deerwork-ai/deer-workflow、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 20 个 GitHub 项目，24 小时 star 增量约 1797，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、0xwilliamortiz、XYZ-AI-Lab、YasmeenGull、bestdeejay-design、sean-adamsex7235，累计提及 25 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 22 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agent、agents、coding等线索，代表条目包括Pinvou/pinvou-agent、deerwork-ai/deer-workflow、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 22 个 GitHub 项目，24 小时 star 增量约 1662，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 12 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、0xwilliamortiz、XYZ-AI-Lab、YasmeenGull、bestdeejay-design、sean-adamsex7235，累计提及 27 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agent、agents、code、claude、coding、training、your、rag是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、agents、coding、code、ai-agent、claude、training、your是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "Pinvou/pinvou-agent",
+            "url": "https://github.com/Pinvou/pinvou-agent",
+            "source": "github",
+            "reason": "命中 agent、ai agent、ReAct，匹配分 0.792，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "deerwork-ai/deer-workflow",
             "url": "https://github.com/deerwork-ai/deer-workflow",
@@ -282,23 +293,30 @@
             "title": "AmazingAng/old-coder",
             "url": "https://github.com/AmazingAng/old-coder",
             "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            "reason": "关联到该热点的原始信号链接。"
           },
           {
             "title": "Leehyunbin0131/claude-ros2-skills",
             "url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
-          },
-          {
-            "title": "Sdraugel/albert",
-            "url": "https://github.com/Sdraugel/albert",
-            "source": "github",
-            "reason": "关联到该热点的原始信号链接。"
           }
         ]
       },
       "evidence_digest": [
+        {
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.792,
+          "matched_terms": [
+            "agent",
+            "ai agent",
+            "ReAct"
+          ],
+          "why_included": "命中 agent、ai agent、ReAct，匹配分 0.792，因此被纳入本轮代表性证据。"
+        },
         {
           "title": "deerwork-ai/deer-workflow",
           "source_url": "https://github.com/deerwork-ai/deer-workflow",
@@ -382,39 +400,27 @@
             "ai agent"
           ],
           "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "AmazingAng/old-coder",
-          "source_url": "https://github.com/AmazingAng/old-coder",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "agents"
-          ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 20 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 22 个。",
         "focus_terms": [
           "RAG",
           "MCP",
+          "ReAct",
           "agent",
           "agents",
-          "code",
-          "claude",
           "coding",
-          "training"
+          "code",
+          "ai-agent"
         ],
         "representative_titles": [
+          "Pinvou/pinvou-agent",
           "deerwork-ai/deer-workflow",
           "bestdeejay-design/awesome-ai-handbook",
           "0xwilliamortiz/openclaude-improved",
-          "mikehasa/agentacct",
-          "krishagarwal314/autodev-studio"
+          "mikehasa/agentacct"
         ],
         "related_institutions": [
           "OpenAI",
@@ -427,11 +433,11 @@
           "mikehasa"
         ],
         "paper_count": 0,
-        "repo_count": 20,
-        "github_star_delta": 1797,
-        "method_mentions": 7,
+        "repo_count": 22,
+        "github_star_delta": 1662,
+        "method_mentions": 12,
         "dataset_mentions": 0,
-        "institution_mentions": 25
+        "institution_mentions": 27
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -440,40 +446,40 @@
       "title": "Model Context Protocol 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 12 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=6.077，growth_rate=-0.959，z_score=-5.091，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 14 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=6.366，growth_rate=-0.952，z_score=-5.063，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 12 个",
-        "24h star 增量 627",
-        "方法提及：MCP, RAG",
+        "GitHub 项目 14 个",
+        "24h star 增量 530",
+        "方法提及：MCP, RAG, ReAct",
         "机构集中：OpenAI, bestdeejay-design, 0xwilliamortiz"
       ],
       "metrics": {
-        "current_1h_count": 12,
-        "current_24h_count": 12,
-        "current_72h_count": 12,
-        "current_7d_count": 12,
-        "baseline_daily_avg_30d": 312.474,
-        "baseline_daily_std_30d": 58.026,
-        "baseline_72h_avg_30d": 937.423,
-        "growth_rate": -0.959,
-        "z_score": -5.091,
+        "current_1h_count": 14,
+        "current_24h_count": 14,
+        "current_72h_count": 14,
+        "current_7d_count": 14,
+        "baseline_daily_avg_30d": 312.569,
+        "baseline_daily_std_30d": 57.966,
+        "baseline_72h_avg_30d": 937.708,
+        "growth_rate": -0.952,
+        "z_score": -5.063,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.007,
+        "github_signal_score": 4.999,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.25,
-        "institution_signal_score": 0.736,
+        "institution_concentration_score": 0.286,
+        "institution_signal_score": 0.87,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.07,
+        "method_signal_score": 1.367,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 12,
-        "github_star_delta": 627,
-        "method_mentions": 6,
+        "repo_count": 14,
+        "github_star_delta": 530,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 17,
-        "burst_score": 6.077,
+        "institution_mentions": 19,
+        "burst_score": 6.366,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -500,6 +506,36 @@
           "source_url": "https://github.com/mikehasa/agentacct",
           "published_at": "2026-07-24T16:28:06Z",
           "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "bybit-exchange/kaas",
+          "source_url": "https://github.com/bybit-exchange/kaas",
+          "published_at": "2026-07-29T13:01:22Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
+          "published_at": "2026-07-24T07:28:41Z",
+          "match_score": 0.46,
           "matched_keywords": [
             "MCP"
           ],
@@ -559,37 +595,17 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "gavamedia/deltafin",
-          "source_url": "https://github.com/gavamedia/deltafin",
-          "published_at": "2026-07-28T01:01:23Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "krishagarwal314/autodev-studio",
-          "source_url": "https://github.com/krishagarwal314/autodev-studio",
-          "published_at": "2026-07-24T09:55:46Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
         "https://github.com/0xwilliamortiz/openclaude-improved",
         "https://github.com/AmazingAng/old-coder",
         "https://github.com/Leehyunbin0131/claude-ros2-skills",
+        "https://github.com/Pinvou/pinvou-agent",
         "https://github.com/VictorTaelin/OptMem",
         "https://github.com/XYZ-AI-Lab/AxisAgentic",
         "https://github.com/bestdeejay-design/awesome-ai-handbook",
+        "https://github.com/bybit-exchange/kaas",
         "https://github.com/deerwork-ai/deer-workflow",
         "https://github.com/gavamedia/deltafin",
         "https://github.com/krishagarwal314/autodev-studio",
@@ -599,7 +615,8 @@
       ],
       "related_methods": [
         "MCP",
-        "RAG"
+        "RAG",
+        "ReAct"
       ],
       "related_datasets": [],
       "related_institutions": [
@@ -609,18 +626,18 @@
         "Anthropic",
         "mikehasa",
         "deerwork-ai",
-        "Apple",
-        "gavamedia"
+        "krishagarwal314",
+        "Pinvou"
       ],
       "suggested_watch_keywords": [
         "agents",
-        "claude",
         "coding",
         "agent",
+        "mcp",
+        "ai-agent",
+        "claude",
         "code",
-        "your",
-        "local",
-        "first"
+        "your"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -632,16 +649,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Model Context Protocol:2026-07-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tianyupaipai-cmd/stackchan-cloud-mcp\", \"source_url\": \"https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp\", \"published_at\": \"2026-07-27T05:32:54Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"realchendahuang/pi-config\", \"source_url\": \"https://github.com/realchendahuang/pi-config\", \"published_at\": \"2026-07-25T09:35:04Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gavamedia/deltafin\", \"source_url\": \"https://github.com/gavamedia/deltafin\", \"published_at\": \"2026-07-28T01:01:23Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 12 个。代表性目标包括0xwilliamortiz/openclaude-improved、mikehasa/agentacct、tianyupaipai-cmd/stackchan-cloud-mcp、realchendahuang/pi-config、bestdeejay-design/awesome-ai-handbook等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 627，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 6 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、Apple、gavamedia，累计提及 17 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、coding、agent、code、your、local、first等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bybit-exchange/kaas\", \"source_url\": \"https://github.com/bybit-exchange/kaas\", \"published_at\": \"2026-07-29T13:01:22Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Pinvou/pinvou-agent\", \"source_url\": \"https://github.com/Pinvou/pinvou-agent\", \"published_at\": \"2026-07-24T07:28:41Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tianyupaipai-cmd/stackchan-cloud-mcp\", \"source_url\": \"https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp\", \"published_at\": \"2026-07-27T05:32:54Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"realchendahuang/pi-config\", \"source_url\": \"https://github.com/realchendahuang/pi-config\", \"published_at\": \"2026-07-25T09:35:04Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 14 个。代表性目标包括0xwilliamortiz/openclaude-improved、mikehasa/agentacct、bybit-exchange/kaas、Pinvou/pinvou-agent、tianyupaipai-cmd/stackchan-cloud-mcp等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 530，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、krishagarwal314、Pinvou，累计提及 19 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、coding、agent、mcp、ai-agent、claude、code、your等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 12 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、agents、claude、coding、agent等线索，代表条目包括0xwilliamortiz/openclaude-improved、mikehasa/agentacct、tianyupaipai-cmd/stackchan-cloud-mcp、realchendahuang/pi-config，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 12 个 GitHub 项目，24 小时 star 增量约 627，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 6 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 17 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 14 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、coding、agent等线索，代表条目包括0xwilliamortiz/openclaude-improved、mikehasa/agentacct、bybit-exchange/kaas、Pinvou/pinvou-agent，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 14 个 GitHub 项目，24 小时 star 增量约 530，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 19 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、claude、coding、agent、code、your、local、first是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、coding、agent、mcp、ai-agent、claude、code、your是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -656,6 +673,18 @@
             "url": "https://github.com/mikehasa/agentacct",
             "source": "github",
             "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "bybit-exchange/kaas",
+            "url": "https://github.com/bybit-exchange/kaas",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "Pinvou/pinvou-agent",
+            "url": "https://github.com/Pinvou/pinvou-agent",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
           },
           {
             "title": "tianyupaipai-cmd/stackchan-cloud-mcp",
@@ -678,18 +707,6 @@
           {
             "title": "deerwork-ai/deer-workflow",
             "url": "https://github.com/deerwork-ai/deer-workflow",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "gavamedia/deltafin",
-            "url": "https://github.com/gavamedia/deltafin",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "krishagarwal314/autodev-studio",
-            "url": "https://github.com/krishagarwal314/autodev-studio",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
@@ -731,6 +748,28 @@
           "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "bybit-exchange/kaas",
+          "source_url": "https://github.com/bybit-exchange/kaas",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.46,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "tianyupaipai-cmd/stackchan-cloud-mcp",
           "source_url": "https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp",
           "source_type": "repo",
@@ -769,45 +808,27 @@
           "match_score": 0.077,
           "matched_terms": [],
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "gavamedia/deltafin",
-          "source_url": "https://github.com/gavamedia/deltafin",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "krishagarwal314/autodev-studio",
-          "source_url": "https://github.com/krishagarwal314/autodev-studio",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 12 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 14 个。",
         "focus_terms": [
           "MCP",
           "RAG",
+          "ReAct",
           "agents",
-          "claude",
           "coding",
           "agent",
-          "code",
-          "your"
+          "ai-agent",
+          "claude"
         ],
         "representative_titles": [
           "0xwilliamortiz/openclaude-improved",
           "mikehasa/agentacct",
-          "tianyupaipai-cmd/stackchan-cloud-mcp",
-          "realchendahuang/pi-config",
-          "bestdeejay-design/awesome-ai-handbook"
+          "bybit-exchange/kaas",
+          "Pinvou/pinvou-agent",
+          "tianyupaipai-cmd/stackchan-cloud-mcp"
         ],
         "related_institutions": [
           "OpenAI",
@@ -816,407 +837,15 @@
           "Anthropic",
           "mikehasa",
           "deerwork-ai",
-          "Apple",
-          "gavamedia"
-        ],
-        "paper_count": 0,
-        "repo_count": 12,
-        "github_star_delta": 627,
-        "method_mentions": 6,
-        "dataset_mentions": 0,
-        "institution_mentions": 17
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
-      "topic": "RAG",
-      "title": "RAG 出现强趋势震荡",
-      "magnitude": 5.82,
-      "severity_label": "强趋势震荡",
-      "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.82，burst=5.397，growth_rate=-0.952，z_score=-7.735，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 8 个",
-        "24h star 增量 58",
-        "方法提及：RAG",
-        "机构集中：OpenAI, bestdeejay-design, krishagarwal314"
-      ],
-      "metrics": {
-        "current_1h_count": 8,
-        "current_24h_count": 8,
-        "current_72h_count": 8,
-        "current_7d_count": 8,
-        "baseline_daily_avg_30d": 184.696,
-        "baseline_daily_std_30d": 21.843,
-        "baseline_72h_avg_30d": 554.087,
-        "growth_rate": -0.952,
-        "z_score": -7.735,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 4.189,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.375,
-        "institution_signal_score": 0.962,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 1.208,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 8,
-        "github_star_delta": 58,
-        "method_mentions": 8,
-        "dataset_mentions": 0,
-        "institution_mentions": 11,
-        "burst_score": 5.397,
-        "low_history_confidence": false,
-        "magnitude": 5.82
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "200lz/llm-engineering-platform",
-          "source_url": "https://github.com/200lz/llm-engineering-platform",
-          "published_at": "2026-07-26T10:15:30Z",
-          "match_score": 0.63,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "bestdeejay-design/awesome-ai-handbook",
-          "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
-          "published_at": "2026-07-23T17:32:32Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "krishagarwal314/autodev-studio",
-          "source_url": "https://github.com/krishagarwal314/autodev-studio",
-          "published_at": "2026-07-24T09:55:46Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Kathir1310/AI-RAG",
-          "source_url": "https://github.com/Kathir1310/AI-RAG",
-          "published_at": "2026-07-27T04:59:28Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "cookyman74/llmwiki-harness",
-          "source_url": "https://github.com/cookyman74/llmwiki-harness",
-          "published_at": "2026-07-26T01:03:43Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "yu123-tqy/equipdoc-agent",
-          "source_url": "https://github.com/yu123-tqy/equipdoc-agent",
-          "published_at": "2026-07-28T09:10:36Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "zhiweio/data-driven-ai-guide",
-          "source_url": "https://github.com/zhiweio/data-driven-ai-guide",
-          "published_at": "2026-07-26T08:00:00Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "benchen4395/alpha_agentic_search",
-          "source_url": "https://github.com/benchen4395/alpha_agentic_search",
-          "published_at": "2026-07-28T05:58:28Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/200lz/llm-engineering-platform",
-        "https://github.com/Kathir1310/AI-RAG",
-        "https://github.com/benchen4395/alpha_agentic_search",
-        "https://github.com/bestdeejay-design/awesome-ai-handbook",
-        "https://github.com/cookyman74/llmwiki-harness",
-        "https://github.com/krishagarwal314/autodev-studio",
-        "https://github.com/yu123-tqy/equipdoc-agent",
-        "https://github.com/zhiweio/data-driven-ai-guide"
-      ],
-      "related_methods": [
-        "RAG"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "OpenAI",
-        "bestdeejay-design",
-        "krishagarwal314",
-        "Kathir1310",
-        "cookyman74",
-        "yu123-tqy",
-        "zhiweio",
-        "benchen4395"
-      ],
-      "suggested_watch_keywords": [
-        "rag",
-        "agents",
-        "engineering",
-        "review",
-        "llm",
-        "your",
-        "local",
-        "ollama"
-      ],
-      "confidence": 0.72,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:RAG:2026-07-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"200lz/llm-engineering-platform\", \"source_url\": \"https://github.com/200lz/llm-engineering-platform\", \"published_at\": \"2026-07-26T10:15:30Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Kathir1310/AI-RAG\", \"source_url\": \"https://github.com/Kathir1310/AI-RAG\", \"published_at\": \"2026-07-27T04:59:28Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cookyman74/llmwiki-harness\", \"source_url\": \"https://github.com/cookyman74/llmwiki-harness\", \"published_at\": \"2026-07-26T01:03:43Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yu123-tqy/equipdoc-agent\", \"source_url\": \"https://github.com/yu123-tqy/equipdoc-agent\", \"published_at\": \"2026-07-28T09:10:36Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zhiweio/data-driven-ai-guide\", \"source_url\": \"https://github.com/zhiweio/data-driven-ai-guide\", \"published_at\": \"2026-07-26T08:00:00Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchen4395/alpha_agentic_search\", \"source_url\": \"https://github.com/benchen4395/alpha_agentic_search\", \"published_at\": \"2026-07-28T05:58:28Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括200lz/llm-engineering-platform、bestdeejay-design/awesome-ai-handbook、krishagarwal314/autodev-studio、Kathir1310/AI-RAG、cookyman74/llmwiki-harness等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 58，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 8 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、krishagarwal314、Kathir1310、cookyman74、yu123-tqy、zhiweio、benchen4395，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、agents、engineering、review、llm、your、local、ollama等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
-      "signal_takeaways": [
-        "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M5.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、agents、engineering、review、llm、your等线索，代表条目包括200lz/llm-engineering-platform、bestdeejay-design/awesome-ai-handbook、krishagarwal314/autodev-studio、Kathir1310/AI-RAG，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 58，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 8 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、krishagarwal314、Kathir1310、cookyman74、yu123-tqy，累计提及 11 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察rag、agents、engineering、review、llm、your、local、ollama是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "200lz/llm-engineering-platform",
-            "url": "https://github.com/200lz/llm-engineering-platform",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "bestdeejay-design/awesome-ai-handbook",
-            "url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "krishagarwal314/autodev-studio",
-            "url": "https://github.com/krishagarwal314/autodev-studio",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Kathir1310/AI-RAG",
-            "url": "https://github.com/Kathir1310/AI-RAG",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "cookyman74/llmwiki-harness",
-            "url": "https://github.com/cookyman74/llmwiki-harness",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "yu123-tqy/equipdoc-agent",
-            "url": "https://github.com/yu123-tqy/equipdoc-agent",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "zhiweio/data-driven-ai-guide",
-            "url": "https://github.com/zhiweio/data-driven-ai-guide",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "benchen4395/alpha_agentic_search",
-            "url": "https://github.com/benchen4395/alpha_agentic_search",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "200lz/llm-engineering-platform",
-          "source_url": "https://github.com/200lz/llm-engineering-platform",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.63,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "bestdeejay-design/awesome-ai-handbook",
-          "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "krishagarwal314/autodev-studio",
-          "source_url": "https://github.com/krishagarwal314/autodev-studio",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Kathir1310/AI-RAG",
-          "source_url": "https://github.com/Kathir1310/AI-RAG",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "cookyman74/llmwiki-harness",
-          "source_url": "https://github.com/cookyman74/llmwiki-harness",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "yu123-tqy/equipdoc-agent",
-          "source_url": "https://github.com/yu123-tqy/equipdoc-agent",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "zhiweio/data-driven-ai-guide",
-          "source_url": "https://github.com/zhiweio/data-driven-ai-guide",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "benchen4395/alpha_agentic_search",
-          "source_url": "https://github.com/benchen4395/alpha_agentic_search",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
-        "focus_terms": [
-          "RAG",
-          "agents",
-          "engineering",
-          "review",
-          "llm",
-          "your",
-          "local",
-          "ollama"
-        ],
-        "representative_titles": [
-          "200lz/llm-engineering-platform",
-          "bestdeejay-design/awesome-ai-handbook",
-          "krishagarwal314/autodev-studio",
-          "Kathir1310/AI-RAG",
-          "cookyman74/llmwiki-harness"
-        ],
-        "related_institutions": [
-          "OpenAI",
-          "bestdeejay-design",
           "krishagarwal314",
-          "Kathir1310",
-          "cookyman74",
-          "yu123-tqy",
-          "zhiweio",
-          "benchen4395"
+          "Pinvou"
         ],
         "paper_count": 0,
-        "repo_count": 8,
-        "github_star_delta": 58,
-        "method_mentions": 8,
+        "repo_count": 14,
+        "github_star_delta": 530,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 11
+        "institution_mentions": 19
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -1226,10 +855,10 @@
       "magnitude": 5.61,
       "severity_label": "强趋势震荡",
       "summary": "Reinforcement Learning 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.61，burst=4.505，growth_rate=-0.956，z_score=-1.867，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.61，burst=4.507，growth_rate=-0.956，z_score=-1.867，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
-        "24h star 增量 191",
+        "24h star 增量 192",
         "机构集中：XYZ-AI-Lab"
       ],
       "metrics": {
@@ -1243,7 +872,7 @@
         "growth_rate": -0.956,
         "z_score": -1.867,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.505,
+        "github_signal_score": 4.507,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 1.0,
@@ -1253,11 +882,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 191,
+        "github_star_delta": 192,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 1,
-        "burst_score": 4.505,
+        "burst_score": 4.507,
         "low_history_confidence": false,
         "magnitude": 5.61
       },
@@ -1305,11 +934,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Reinforcement Learning:2026-07-30:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"XYZ-AI-Lab/axrl\", \"source_url\": \"https://github.com/XYZ-AI-Lab/axrl\", \"published_at\": \"2026-07-23T06:07:23Z\", \"match_score\": 0.6, \"matched_keywords\": [\"RL\", \"rl\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括XYZ-AI-Lab/axrl等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 191，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及XYZ-AI-Lab，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察xyz-ai-lab、axrl、axisrl、agentic、post-training、framework、built、sglang等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
+      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括XYZ-AI-Lab/axrl等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 192，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及XYZ-AI-Lab，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察xyz-ai-lab、axrl、axisrl、agentic、post-training、framework、built、sglang等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
       "signal_takeaways": [
         "总体判断：Reinforcement Learning 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“强趋势震荡”（M5.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向xyz-ai-lab、axrl、axisrl、agentic、post-training、framework等线索，代表条目包括XYZ-AI-Lab/axrl，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 191，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 192，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及XYZ-AI-Lab，累计提及 1 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察xyz-ai-lab、axrl、axisrl、agentic、post-training、framework、built、sglang是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
@@ -1358,7 +987,7 @@
         ],
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 191,
+        "github_star_delta": 192,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 1
@@ -1366,15 +995,782 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
+      "topic": "RAG",
+      "title": "RAG 出现强趋势震荡",
+      "magnitude": 5.51,
+      "severity_label": "强趋势震荡",
+      "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.51，burst=5.049，growth_rate=-0.952，z_score=-7.735，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 8 个",
+        "24h star 增量 47",
+        "方法提及：RAG, MCP, ReAct",
+        "机构集中：OpenAI, bestdeejay-design, krishagarwal314"
+      ],
+      "metrics": {
+        "current_1h_count": 8,
+        "current_24h_count": 8,
+        "current_72h_count": 8,
+        "current_7d_count": 8,
+        "baseline_daily_avg_30d": 184.696,
+        "baseline_daily_std_30d": 21.843,
+        "baseline_72h_avg_30d": 554.087,
+        "growth_rate": -0.952,
+        "z_score": -7.735,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 3.731,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.375,
+        "institution_signal_score": 0.962,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 1.319,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 8,
+        "github_star_delta": 47,
+        "method_mentions": 10,
+        "dataset_mentions": 0,
+        "institution_mentions": 11,
+        "burst_score": 5.049,
+        "low_history_confidence": false,
+        "magnitude": 5.51
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "bestdeejay-design/awesome-ai-handbook",
+          "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
+          "published_at": "2026-07-23T17:32:32Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "krishagarwal314/autodev-studio",
+          "source_url": "https://github.com/krishagarwal314/autodev-studio",
+          "published_at": "2026-07-24T09:55:46Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Kathir1310/AI-RAG",
+          "source_url": "https://github.com/Kathir1310/AI-RAG",
+          "published_at": "2026-07-27T04:59:28Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "bybit-exchange/kaas",
+          "source_url": "https://github.com/bybit-exchange/kaas",
+          "published_at": "2026-07-29T13:01:22Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "cookyman74/llmwiki-harness",
+          "source_url": "https://github.com/cookyman74/llmwiki-harness",
+          "published_at": "2026-07-26T01:03:43Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "yu123-tqy/equipdoc-agent",
+          "source_url": "https://github.com/yu123-tqy/equipdoc-agent",
+          "published_at": "2026-07-28T09:10:36Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "benchen4395/alpha_agentic_search",
+          "source_url": "https://github.com/benchen4395/alpha_agentic_search",
+          "published_at": "2026-07-28T05:58:28Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "zhiweio/data-driven-ai-guide",
+          "source_url": "https://github.com/zhiweio/data-driven-ai-guide",
+          "published_at": "2026-07-26T08:00:00Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/Kathir1310/AI-RAG",
+        "https://github.com/benchen4395/alpha_agentic_search",
+        "https://github.com/bestdeejay-design/awesome-ai-handbook",
+        "https://github.com/bybit-exchange/kaas",
+        "https://github.com/cookyman74/llmwiki-harness",
+        "https://github.com/krishagarwal314/autodev-studio",
+        "https://github.com/yu123-tqy/equipdoc-agent",
+        "https://github.com/zhiweio/data-driven-ai-guide"
+      ],
+      "related_methods": [
+        "RAG",
+        "MCP",
+        "ReAct"
+      ],
+      "related_datasets": [],
+      "related_institutions": [
+        "OpenAI",
+        "bestdeejay-design",
+        "krishagarwal314",
+        "Kathir1310",
+        "bybit-exchange",
+        "cookyman74",
+        "yu123-tqy",
+        "benchen4395"
+      ],
+      "suggested_watch_keywords": [
+        "rag",
+        "agents",
+        "review",
+        "markdown",
+        "wiki",
+        "llm",
+        "your",
+        "local"
+      ],
+      "confidence": 0.72,
+      "caveats": [],
+      "tags": [
+        "GitHub 暴涨",
+        "方法扩散",
+        "机构集中",
+        "开源驱动"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:RAG:2026-07-30:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Kathir1310/AI-RAG\", \"source_url\": \"https://github.com/Kathir1310/AI-RAG\", \"published_at\": \"2026-07-27T04:59:28Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bybit-exchange/kaas\", \"source_url\": \"https://github.com/bybit-exchange/kaas\", \"published_at\": \"2026-07-29T13:01:22Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cookyman74/llmwiki-harness\", \"source_url\": \"https://github.com/cookyman74/llmwiki-harness\", \"published_at\": \"2026-07-26T01:03:43Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yu123-tqy/equipdoc-agent\", \"source_url\": \"https://github.com/yu123-tqy/equipdoc-agent\", \"published_at\": \"2026-07-28T09:10:36Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"benchen4395/alpha_agentic_search\", \"source_url\": \"https://github.com/benchen4395/alpha_agentic_search\", \"published_at\": \"2026-07-28T05:58:28Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zhiweio/data-driven-ai-guide\", \"source_url\": \"https://github.com/zhiweio/data-driven-ai-guide\", \"published_at\": \"2026-07-26T08:00:00Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括bestdeejay-design/awesome-ai-handbook、krishagarwal314/autodev-studio、Kathir1310/AI-RAG、bybit-exchange/kaas、cookyman74/llmwiki-harness等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 47，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、krishagarwal314、Kathir1310、bybit-exchange、cookyman74、yu123-tqy、benchen4395，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、agents、review、markdown、wiki、llm、your、local等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "signal_takeaways": [
+        "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M5.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agents、review、markdown等线索，代表条目包括bestdeejay-design/awesome-ai-handbook、krishagarwal314/autodev-studio、Kathir1310/AI-RAG、bybit-exchange/kaas，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 47，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 10 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、krishagarwal314、Kathir1310、bybit-exchange、cookyman74，累计提及 11 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察rag、agents、review、markdown、wiki、llm、your、local是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "bestdeejay-design/awesome-ai-handbook",
+            "url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "krishagarwal314/autodev-studio",
+            "url": "https://github.com/krishagarwal314/autodev-studio",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "Kathir1310/AI-RAG",
+            "url": "https://github.com/Kathir1310/AI-RAG",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "bybit-exchange/kaas",
+            "url": "https://github.com/bybit-exchange/kaas",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "cookyman74/llmwiki-harness",
+            "url": "https://github.com/cookyman74/llmwiki-harness",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "yu123-tqy/equipdoc-agent",
+            "url": "https://github.com/yu123-tqy/equipdoc-agent",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "benchen4395/alpha_agentic_search",
+            "url": "https://github.com/benchen4395/alpha_agentic_search",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "zhiweio/data-driven-ai-guide",
+            "url": "https://github.com/zhiweio/data-driven-ai-guide",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "bestdeejay-design/awesome-ai-handbook",
+          "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "krishagarwal314/autodev-studio",
+          "source_url": "https://github.com/krishagarwal314/autodev-studio",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "Kathir1310/AI-RAG",
+          "source_url": "https://github.com/Kathir1310/AI-RAG",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "bybit-exchange/kaas",
+          "source_url": "https://github.com/bybit-exchange/kaas",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "cookyman74/llmwiki-harness",
+          "source_url": "https://github.com/cookyman74/llmwiki-harness",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "yu123-tqy/equipdoc-agent",
+          "source_url": "https://github.com/yu123-tqy/equipdoc-agent",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "benchen4395/alpha_agentic_search",
+          "source_url": "https://github.com/benchen4395/alpha_agentic_search",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "zhiweio/data-driven-ai-guide",
+          "source_url": "https://github.com/zhiweio/data-driven-ai-guide",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
+        "focus_terms": [
+          "RAG",
+          "MCP",
+          "ReAct",
+          "agents",
+          "review",
+          "markdown",
+          "wiki",
+          "llm"
+        ],
+        "representative_titles": [
+          "bestdeejay-design/awesome-ai-handbook",
+          "krishagarwal314/autodev-studio",
+          "Kathir1310/AI-RAG",
+          "bybit-exchange/kaas",
+          "cookyman74/llmwiki-harness"
+        ],
+        "related_institutions": [
+          "OpenAI",
+          "bestdeejay-design",
+          "krishagarwal314",
+          "Kathir1310",
+          "bybit-exchange",
+          "cookyman74",
+          "yu123-tqy",
+          "benchen4395"
+        ],
+        "paper_count": 0,
+        "repo_count": 8,
+        "github_star_delta": 47,
+        "method_mentions": 10,
+        "dataset_mentions": 0,
+        "institution_mentions": 11
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
+      "topic": "Memory",
+      "title": "Memory 出现强趋势震荡",
+      "magnitude": 5.1,
+      "severity_label": "强趋势震荡",
+      "summary": "Memory 在当前窗口内出现 0 条论文信号和 11 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.1，burst=4.397，growth_rate=-0.959，z_score=-5.844，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 11 个",
+        "24h star 增量 523",
+        "方法提及：RAG, MCP, ReAct",
+        "机构集中：OpenAI, bestdeejay-design, 0xwilliamortiz"
+      ],
+      "metrics": {
+        "current_1h_count": 11,
+        "current_24h_count": 11,
+        "current_72h_count": 11,
+        "current_7d_count": 11,
+        "baseline_daily_avg_30d": 292.291,
+        "baseline_daily_std_30d": 47.13,
+        "baseline_72h_avg_30d": 876.872,
+        "growth_rate": -0.959,
+        "z_score": -5.844,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 3.253,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.364,
+        "institution_signal_score": 1.051,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 1.144,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 11,
+        "github_star_delta": 523,
+        "method_mentions": 7,
+        "dataset_mentions": 0,
+        "institution_mentions": 16,
+        "burst_score": 4.397,
+        "low_history_confidence": false,
+        "magnitude": 5.1
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "VictorTaelin/OptMem",
+          "source_url": "https://github.com/VictorTaelin/OptMem",
+          "published_at": "2026-07-25T16:58:43Z",
+          "match_score": 0.35,
+          "matched_keywords": [
+            "memory"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "bestdeejay-design/awesome-ai-handbook",
+          "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
+          "published_at": "2026-07-23T17:32:32Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "0xwilliamortiz/openclaude-improved",
+          "source_url": "https://github.com/0xwilliamortiz/openclaude-improved",
+          "published_at": "2026-07-26T21:58:28Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "mikehasa/agentacct",
+          "source_url": "https://github.com/mikehasa/agentacct",
+          "published_at": "2026-07-24T16:28:06Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "deerwork-ai/deer-workflow",
+          "source_url": "https://github.com/deerwork-ai/deer-workflow",
+          "published_at": "2026-07-26T04:20:50Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "krishagarwal314/autodev-studio",
+          "source_url": "https://github.com/krishagarwal314/autodev-studio",
+          "published_at": "2026-07-24T09:55:46Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "XYZ-AI-Lab/AxisAgentic",
+          "source_url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+          "published_at": "2026-07-23T04:03:31Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "gavamedia/deltafin",
+          "source_url": "https://github.com/gavamedia/deltafin",
+          "published_at": "2026-07-28T01:01:23Z",
+          "match_score": 0.07,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/0xwilliamortiz/openclaude-improved",
+        "https://github.com/AmazingAng/old-coder",
+        "https://github.com/Leehyunbin0131/claude-ros2-skills",
+        "https://github.com/VictorTaelin/OptMem",
+        "https://github.com/XYZ-AI-Lab/AxisAgentic",
+        "https://github.com/bestdeejay-design/awesome-ai-handbook",
+        "https://github.com/bybit-exchange/kaas",
+        "https://github.com/deerwork-ai/deer-workflow",
+        "https://github.com/gavamedia/deltafin",
+        "https://github.com/krishagarwal314/autodev-studio",
+        "https://github.com/mikehasa/agentacct"
+      ],
+      "related_methods": [
+        "RAG",
+        "MCP",
+        "ReAct"
+      ],
+      "related_datasets": [],
+      "related_institutions": [
+        "OpenAI",
+        "bestdeejay-design",
+        "0xwilliamortiz",
+        "Anthropic",
+        "mikehasa",
+        "deerwork-ai",
+        "krishagarwal314",
+        "VictorTaelin"
+      ],
+      "suggested_watch_keywords": [
+        "agents",
+        "coding",
+        "code",
+        "your",
+        "local",
+        "first",
+        "prompt",
+        "engineering"
+      ],
+      "confidence": 0.72,
+      "caveats": [],
+      "tags": [
+        "GitHub 暴涨",
+        "方法扩散",
+        "机构集中",
+        "开源驱动"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:Memory:2026-07-30:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VictorTaelin/OptMem\", \"source_url\": \"https://github.com/VictorTaelin/OptMem\", \"published_at\": \"2026-07-25T16:58:43Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"XYZ-AI-Lab/AxisAgentic\", \"source_url\": \"https://github.com/XYZ-AI-Lab/AxisAgentic\", \"published_at\": \"2026-07-23T04:03:31Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gavamedia/deltafin\", \"source_url\": \"https://github.com/gavamedia/deltafin\", \"published_at\": \"2026-07-28T01:01:23Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.1）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括VictorTaelin/OptMem、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct、deerwork-ai/deer-workflow等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 523，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、krishagarwal314、VictorTaelin，累计提及 16 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、coding、code、your、local、first、prompt、engineering等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "signal_takeaways": [
+        "总体判断：Memory 本轮由论文 0 条、GitHub 项目 11 个共同构成观测基础，当前强度为“强趋势震荡”（M5.1）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agents、coding、code等线索，代表条目包括VictorTaelin/OptMem、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 523，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 16 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察agents、coding、code、your、local、first、prompt、engineering是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "VictorTaelin/OptMem",
+            "url": "https://github.com/VictorTaelin/OptMem",
+            "source": "github",
+            "reason": "命中 memory，匹配分 0.35，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "bestdeejay-design/awesome-ai-handbook",
+            "url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "0xwilliamortiz/openclaude-improved",
+            "url": "https://github.com/0xwilliamortiz/openclaude-improved",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "mikehasa/agentacct",
+            "url": "https://github.com/mikehasa/agentacct",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "deerwork-ai/deer-workflow",
+            "url": "https://github.com/deerwork-ai/deer-workflow",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "krishagarwal314/autodev-studio",
+            "url": "https://github.com/krishagarwal314/autodev-studio",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "XYZ-AI-Lab/AxisAgentic",
+            "url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "gavamedia/deltafin",
+            "url": "https://github.com/gavamedia/deltafin",
+            "source": "github",
+            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "AmazingAng/old-coder",
+            "url": "https://github.com/AmazingAng/old-coder",
+            "source": "github",
+            "reason": "关联到该热点的原始信号链接。"
+          },
+          {
+            "title": "Leehyunbin0131/claude-ros2-skills",
+            "url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
+            "source": "github",
+            "reason": "关联到该热点的原始信号链接。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "VictorTaelin/OptMem",
+          "source_url": "https://github.com/VictorTaelin/OptMem",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.35,
+          "matched_terms": [
+            "memory"
+          ],
+          "why_included": "命中 memory，匹配分 0.35，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "bestdeejay-design/awesome-ai-handbook",
+          "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "0xwilliamortiz/openclaude-improved",
+          "source_url": "https://github.com/0xwilliamortiz/openclaude-improved",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "mikehasa/agentacct",
+          "source_url": "https://github.com/mikehasa/agentacct",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "deerwork-ai/deer-workflow",
+          "source_url": "https://github.com/deerwork-ai/deer-workflow",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "krishagarwal314/autodev-studio",
+          "source_url": "https://github.com/krishagarwal314/autodev-studio",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "XYZ-AI-Lab/AxisAgentic",
+          "source_url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "gavamedia/deltafin",
+          "source_url": "https://github.com/gavamedia/deltafin",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.07,
+          "matched_terms": [],
+          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 11 个。",
+        "focus_terms": [
+          "RAG",
+          "MCP",
+          "ReAct",
+          "agents",
+          "coding",
+          "code",
+          "your",
+          "local"
+        ],
+        "representative_titles": [
+          "VictorTaelin/OptMem",
+          "bestdeejay-design/awesome-ai-handbook",
+          "0xwilliamortiz/openclaude-improved",
+          "mikehasa/agentacct",
+          "deerwork-ai/deer-workflow"
+        ],
+        "related_institutions": [
+          "OpenAI",
+          "bestdeejay-design",
+          "0xwilliamortiz",
+          "Anthropic",
+          "mikehasa",
+          "deerwork-ai",
+          "krishagarwal314",
+          "VictorTaelin"
+        ],
+        "paper_count": 0,
+        "repo_count": 11,
+        "github_star_delta": 523,
+        "method_mentions": 7,
+        "dataset_mentions": 0,
+        "institution_mentions": 16
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
       "topic": "AI Coding",
       "title": "AI Coding 出现强趋势震荡",
-      "magnitude": 5.05,
+      "magnitude": 5.03,
       "severity_label": "强趋势震荡",
       "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.05，burst=4.556，growth_rate=-0.937，z_score=-3.577，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.03，burst=4.553，growth_rate=-0.937，z_score=-3.57，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 9 个",
-        "24h star 增量 351",
+        "24h star 增量 283",
         "方法提及：MCP, RAG",
         "机构集中：OpenAI, bestdeejay-design, 0xwilliamortiz"
       ],
@@ -1383,29 +1779,29 @@
         "current_24h_count": 9,
         "current_72h_count": 9,
         "current_7d_count": 9,
-        "baseline_daily_avg_30d": 157.945,
-        "baseline_daily_std_30d": 40.644,
-        "baseline_72h_avg_30d": 473.834,
+        "baseline_daily_avg_30d": 158.04,
+        "baseline_daily_std_30d": 40.751,
+        "baseline_72h_avg_30d": 474.119,
         "growth_rate": -0.937,
-        "z_score": -3.577,
+        "z_score": -3.57,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.671,
+        "github_signal_score": 3.668,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.222,
-        "institution_signal_score": 0.602,
+        "institution_signal_score": 0.586,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.885,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 351,
+        "github_star_delta": 283,
         "method_mentions": 4,
         "dataset_mentions": 0,
-        "institution_mentions": 13,
-        "burst_score": 4.556,
+        "institution_mentions": 12,
+        "burst_score": 4.553,
         "low_history_confidence": false,
-        "magnitude": 5.05
+        "magnitude": 5.03
       },
       "evidence": [
         {
@@ -1522,8 +1918,8 @@
         "Anthropic",
         "mikehasa",
         "deerwork-ai",
-        "Apple",
-        "gavamedia"
+        "gavamedia",
+        "Leehyunbin0131"
       ],
       "suggested_watch_keywords": [
         "coding",
@@ -1547,13 +1943,13 @@
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-07-30:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"realchendahuang/pi-config\", \"source_url\": \"https://github.com/realchendahuang/pi-config\", \"published_at\": \"2026-07-25T09:35:04Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gavamedia/deltafin\", \"source_url\": \"https://github.com/gavamedia/deltafin\", \"published_at\": \"2026-07-28T01:01:23Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Leehyunbin0131/claude-ros2-skills\", \"source_url\": \"https://github.com/Leehyunbin0131/claude-ros2-skills\", \"published_at\": \"2026-07-23T07:57:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"AmazingAng/old-coder\", \"source_url\": \"https://github.com/AmazingAng/old-coder\", \"published_at\": \"2026-07-27T05:03:11Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括realchendahuang/pi-config、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct、deerwork-ai/deer-workflow等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 351，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、Apple、gavamedia，累计提及 13 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agents、claude、agent、your、local、first、engineering等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括realchendahuang/pi-config、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct、deerwork-ai/deer-workflow等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 283，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、gavamedia、Leehyunbin0131，累计提及 12 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agents、claude、agent、your、local、first、engineering等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、RAG、coding、agents、claude、agent等线索，代表条目包括realchendahuang/pi-config、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 351，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 283，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 4 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 13 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 12 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察coding、agents、claude、agent、your、local、first、engineering是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -1718,28 +2114,28 @@
           "Anthropic",
           "mikehasa",
           "deerwork-ai",
-          "Apple",
-          "gavamedia"
+          "gavamedia",
+          "Leehyunbin0131"
         ],
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 351,
+        "github_star_delta": 283,
         "method_mentions": 4,
         "dataset_mentions": 0,
-        "institution_mentions": 13
+        "institution_mentions": 12
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "World Model",
-      "title": "World Model 出现疑似爆发",
-      "magnitude": 4.93,
-      "severity_label": "疑似爆发",
-      "summary": "World Model 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.93，burst=4.309，growth_rate=-0.952，z_score=-2.524，cross_source=0.5。",
+      "title": "World Model 出现强趋势震荡",
+      "magnitude": 5.02,
+      "severity_label": "强趋势震荡",
+      "summary": "World Model 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.02，burst=4.423，growth_rate=-0.952，z_score=-2.531，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 5 个",
-        "24h star 增量 14",
+        "24h star 增量 17",
         "方法提及：MCP",
         "机构集中：NVIDIA, Stanford, lucidrains"
       ],
@@ -1748,13 +2144,13 @@
         "current_24h_count": 5,
         "current_72h_count": 5,
         "current_7d_count": 5,
-        "baseline_daily_avg_30d": 124.679,
-        "baseline_daily_std_30d": 46.425,
-        "baseline_72h_avg_30d": 374.038,
+        "baseline_daily_avg_30d": 124.65,
+        "baseline_daily_std_30d": 46.282,
+        "baseline_72h_avg_30d": 373.95,
         "growth_rate": -0.952,
-        "z_score": -2.524,
+        "z_score": -2.531,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.927,
+        "github_signal_score": 4.042,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.2,
@@ -1764,13 +2160,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 5,
-        "github_star_delta": 14,
+        "github_star_delta": 17,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 7,
-        "burst_score": 4.309,
+        "burst_score": 4.423,
         "low_history_confidence": false,
-        "magnitude": 4.93
+        "magnitude": 5.02
       },
       "evidence": [
         {
@@ -1847,9 +2243,9 @@
         "NVIDIA",
         "Stanford",
         "lucidrains",
+        "zju3dv",
         "robosurvey-project",
         "Leehyunbin0131",
-        "zju3dv",
         "tianyupaipai-cmd"
       ],
       "suggested_watch_keywords": [
@@ -1872,15 +2268,15 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:World Model:2026-07-30:疑似爆发",
+      "dedupe_key": "trend:World Model:2026-07-30:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zju3dv/INTACT-JEPA\", \"source_url\": \"https://github.com/zju3dv/INTACT-JEPA\", \"published_at\": \"2026-07-28T14:57:30Z\", \"match_score\": 0.75, \"matched_keywords\": [\"dynamics model\", \"world models\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lucidrains/robo_ttt\", \"source_url\": \"https://github.com/lucidrains/robo_ttt\", \"published_at\": \"2026-07-27T21:43:26Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"robosurvey-project/robosurvey\", \"source_url\": \"https://github.com/robosurvey-project/robosurvey\", \"published_at\": \"2026-07-24T20:40:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Leehyunbin0131/claude-ros2-skills\", \"source_url\": \"https://github.com/Leehyunbin0131/claude-ros2-skills\", \"published_at\": \"2026-07-23T07:57:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tianyupaipai-cmd/stackchan-cloud-mcp\", \"source_url\": \"https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp\", \"published_at\": \"2026-07-27T05:32:54Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「World Model」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括zju3dv/INTACT-JEPA、lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills、tianyupaipai-cmd/stackchan-cloud-mcp等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 14，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及NVIDIA、Stanford、lucidrains、robosurvey-project、Leehyunbin0131、zju3dv、tianyupaipai-cmd，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、claude、lucidrains、robo、ttt、implementation、robottt、proposed等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「World Model」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括zju3dv/INTACT-JEPA、lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills、tianyupaipai-cmd/stackchan-cloud-mcp等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 17，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及NVIDIA、Stanford、lucidrains、zju3dv、robosurvey-project、Leehyunbin0131、tianyupaipai-cmd，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、claude、lucidrains、robo、ttt、implementation、robottt、proposed等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：World Model 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“疑似爆发”（M4.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "总体判断：World Model 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“强趋势震荡”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、robotics、claude、lucidrains、robo、ttt等线索，代表条目包括zju3dv/INTACT-JEPA、lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 14，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 17，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及NVIDIA、Stanford、lucidrains、robosurvey-project、Leehyunbin0131、zju3dv，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及NVIDIA、Stanford、lucidrains、zju3dv、robosurvey-project、Leehyunbin0131，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 5 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察robotics、claude、lucidrains、robo、ttt、implementation、robottt、proposed是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -1992,14 +2388,14 @@
           "NVIDIA",
           "Stanford",
           "lucidrains",
+          "zju3dv",
           "robosurvey-project",
           "Leehyunbin0131",
-          "zju3dv",
           "tianyupaipai-cmd"
         ],
         "paper_count": 0,
         "repo_count": 5,
-        "github_star_delta": 14,
+        "github_star_delta": 17,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 7
@@ -2007,59 +2403,72 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
-      "topic": "Memory",
-      "title": "Memory 出现疑似爆发",
-      "magnitude": 4.87,
+      "topic": "Tool Use",
+      "title": "Tool Use 出现疑似爆发",
+      "magnitude": 4.14,
       "severity_label": "疑似爆发",
-      "summary": "Memory 在当前窗口内出现 0 条论文信号和 10 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.87，burst=4.144，growth_rate=-0.963，z_score=-5.882，cross_source=0.5。",
+      "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 12 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.14，burst=3.311，growth_rate=-0.957，z_score=-5.237，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 10 个",
-        "24h star 增量 621",
-        "方法提及：RAG, MCP",
+        "GitHub 项目 12 个",
+        "24h star 增量 523",
+        "方法提及：MCP, RAG, ReAct",
         "机构集中：OpenAI, bestdeejay-design, 0xwilliamortiz"
       ],
       "metrics": {
-        "current_1h_count": 10,
-        "current_24h_count": 10,
-        "current_72h_count": 10,
-        "current_7d_count": 10,
-        "baseline_daily_avg_30d": 292.425,
-        "baseline_daily_std_30d": 47.015,
-        "baseline_72h_avg_30d": 877.274,
-        "growth_rate": -0.963,
-        "z_score": -5.882,
+        "current_1h_count": 12,
+        "current_24h_count": 12,
+        "current_72h_count": 12,
+        "current_7d_count": 12,
+        "baseline_daily_avg_30d": 302.897,
+        "baseline_daily_std_30d": 54.552,
+        "baseline_72h_avg_30d": 908.69,
+        "growth_rate": -0.957,
+        "z_score": -5.237,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.259,
+        "github_signal_score": 2.045,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.3,
-        "institution_signal_score": 0.85,
+        "institution_concentration_score": 0.333,
+        "institution_signal_score": 0.981,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.885,
+        "method_signal_score": 1.266,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 10,
-        "github_star_delta": 621,
-        "method_mentions": 4,
+        "repo_count": 12,
+        "github_star_delta": 523,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 15,
-        "burst_score": 4.144,
+        "institution_mentions": 17,
+        "burst_score": 3.311,
         "low_history_confidence": false,
-        "magnitude": 4.87
+        "magnitude": 4.14
       },
       "evidence": [
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "VictorTaelin/OptMem",
-          "source_url": "https://github.com/VictorTaelin/OptMem",
-          "published_at": "2026-07-25T16:58:43Z",
-          "match_score": 0.35,
-          "matched_keywords": [
-            "memory"
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
+          "published_at": "2026-07-24T07:28:41Z",
+          "match_score": 0.22,
+          "matched_keywords": [],
+          "matched_methods": [
+            "ReAct"
           ],
-          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "bybit-exchange/kaas",
+          "source_url": "https://github.com/bybit-exchange/kaas",
+          "published_at": "2026-07-29T13:01:22Z",
+          "match_score": 0.22,
+          "matched_keywords": [],
+          "matched_methods": [
+            "ReAct"
+          ],
           "matched_datasets": []
         },
         {
@@ -2068,7 +2477,7 @@
           "title": "bestdeejay-design/awesome-ai-handbook",
           "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
           "published_at": "2026-07-23T17:32:32Z",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -2079,7 +2488,7 @@
           "title": "0xwilliamortiz/openclaude-improved",
           "source_url": "https://github.com/0xwilliamortiz/openclaude-improved",
           "published_at": "2026-07-26T21:58:28Z",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -2090,7 +2499,7 @@
           "title": "mikehasa/agentacct",
           "source_url": "https://github.com/mikehasa/agentacct",
           "published_at": "2026-07-24T16:28:06Z",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -2101,18 +2510,7 @@
           "title": "deerwork-ai/deer-workflow",
           "source_url": "https://github.com/deerwork-ai/deer-workflow",
           "published_at": "2026-07-26T04:20:50Z",
-          "match_score": 0.07,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "gavamedia/deltafin",
-          "source_url": "https://github.com/gavamedia/deltafin",
-          "published_at": "2026-07-28T01:01:23Z",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -2123,7 +2521,7 @@
           "title": "krishagarwal314/autodev-studio",
           "source_url": "https://github.com/krishagarwal314/autodev-studio",
           "published_at": "2026-07-24T09:55:46Z",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -2131,10 +2529,10 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "XYZ-AI-Lab/AxisAgentic",
-          "source_url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
-          "published_at": "2026-07-23T04:03:31Z",
-          "match_score": 0.07,
+          "title": "VictorTaelin/OptMem",
+          "source_url": "https://github.com/VictorTaelin/OptMem",
+          "published_at": "2026-07-25T16:58:43Z",
+          "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
@@ -2144,17 +2542,20 @@
         "https://github.com/0xwilliamortiz/openclaude-improved",
         "https://github.com/AmazingAng/old-coder",
         "https://github.com/Leehyunbin0131/claude-ros2-skills",
+        "https://github.com/Pinvou/pinvou-agent",
         "https://github.com/VictorTaelin/OptMem",
         "https://github.com/XYZ-AI-Lab/AxisAgentic",
         "https://github.com/bestdeejay-design/awesome-ai-handbook",
+        "https://github.com/bybit-exchange/kaas",
         "https://github.com/deerwork-ai/deer-workflow",
         "https://github.com/gavamedia/deltafin",
         "https://github.com/krishagarwal314/autodev-studio",
         "https://github.com/mikehasa/agentacct"
       ],
       "related_methods": [
+        "MCP",
         "RAG",
-        "MCP"
+        "ReAct"
       ],
       "related_datasets": [],
       "related_institutions": [
@@ -2164,18 +2565,18 @@
         "Anthropic",
         "mikehasa",
         "deerwork-ai",
-        "Apple",
-        "gavamedia"
+        "krishagarwal314",
+        "Pinvou"
       ],
       "suggested_watch_keywords": [
         "agents",
+        "ai-agent",
+        "coding",
+        "agent",
         "code",
         "your",
         "local",
-        "first",
-        "prompt",
-        "engineering",
-        "ai-agent"
+        "first"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -2186,67 +2587,67 @@
         "开源驱动"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Memory:2026-07-30:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VictorTaelin/OptMem\", \"source_url\": \"https://github.com/VictorTaelin/OptMem\", \"published_at\": \"2026-07-25T16:58:43Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gavamedia/deltafin\", \"source_url\": \"https://github.com/gavamedia/deltafin\", \"published_at\": \"2026-07-28T01:01:23Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"XYZ-AI-Lab/AxisAgentic\", \"source_url\": \"https://github.com/XYZ-AI-Lab/AxisAgentic\", \"published_at\": \"2026-07-23T04:03:31Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 10 个。代表性目标包括VictorTaelin/OptMem、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct、deerwork-ai/deer-workflow等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 621，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、Apple、gavamedia，累计提及 15 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、code、your、local、first、prompt、engineering、ai-agent等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Tool Use:2026-07-30:疑似爆发",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Pinvou/pinvou-agent\", \"source_url\": \"https://github.com/Pinvou/pinvou-agent\", \"published_at\": \"2026-07-24T07:28:41Z\", \"match_score\": 0.22, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bybit-exchange/kaas\", \"source_url\": \"https://github.com/bybit-exchange/kaas\", \"published_at\": \"2026-07-29T13:01:22Z\", \"match_score\": 0.22, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bestdeejay-design/awesome-ai-handbook\", \"source_url\": \"https://github.com/bestdeejay-design/awesome-ai-handbook\", \"published_at\": \"2026-07-23T17:32:32Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"0xwilliamortiz/openclaude-improved\", \"source_url\": \"https://github.com/0xwilliamortiz/openclaude-improved\", \"published_at\": \"2026-07-26T21:58:28Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/agentacct\", \"source_url\": \"https://github.com/mikehasa/agentacct\", \"published_at\": \"2026-07-24T16:28:06Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"deerwork-ai/deer-workflow\", \"source_url\": \"https://github.com/deerwork-ai/deer-workflow\", \"published_at\": \"2026-07-26T04:20:50Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VictorTaelin/OptMem\", \"source_url\": \"https://github.com/VictorTaelin/OptMem\", \"published_at\": \"2026-07-25T16:58:43Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.1）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 12 个。代表性目标包括Pinvou/pinvou-agent、bybit-exchange/kaas、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 523，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai、krishagarwal314、Pinvou，累计提及 17 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、ai-agent、coding、agent、code、your、local、first等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Memory 本轮由论文 0 条、GitHub 项目 10 个共同构成观测基础，当前强度为“疑似爆发”（M4.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、agents、code、your、local等线索，代表条目包括VictorTaelin/OptMem、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved、mikehasa/agentacct，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 10 个 GitHub 项目，24 小时 star 增量约 621，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 4 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 15 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Tool Use 本轮由论文 0 条、GitHub 项目 12 个共同构成观测基础，当前强度为“疑似爆发”（M4.1）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、ai-agent、coding等线索，代表条目包括Pinvou/pinvou-agent、bybit-exchange/kaas、bestdeejay-design/awesome-ai-handbook、0xwilliamortiz/openclaude-improved，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 12 个 GitHub 项目，24 小时 star 增量约 523，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 9 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、bestdeejay-design、0xwilliamortiz、Anthropic、mikehasa、deerwork-ai，累计提及 17 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、code、your、local、first、prompt、engineering、ai-agent是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、ai-agent、coding、agent、code、your、local、first是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
           {
-            "title": "VictorTaelin/OptMem",
-            "url": "https://github.com/VictorTaelin/OptMem",
+            "title": "Pinvou/pinvou-agent",
+            "url": "https://github.com/Pinvou/pinvou-agent",
             "source": "github",
-            "reason": "命中 memory，匹配分 0.35，因此被纳入本轮代表性证据。"
+            "reason": "命中 ReAct，匹配分 0.22，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "bybit-exchange/kaas",
+            "url": "https://github.com/bybit-exchange/kaas",
+            "source": "github",
+            "reason": "命中 ReAct，匹配分 0.22，因此被纳入本轮代表性证据。"
           },
           {
             "title": "bestdeejay-design/awesome-ai-handbook",
             "url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
             "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
             "title": "0xwilliamortiz/openclaude-improved",
             "url": "https://github.com/0xwilliamortiz/openclaude-improved",
             "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
             "title": "mikehasa/agentacct",
             "url": "https://github.com/mikehasa/agentacct",
             "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
             "title": "deerwork-ai/deer-workflow",
             "url": "https://github.com/deerwork-ai/deer-workflow",
             "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "gavamedia/deltafin",
-            "url": "https://github.com/gavamedia/deltafin",
-            "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
             "title": "krishagarwal314/autodev-studio",
             "url": "https://github.com/krishagarwal314/autodev-studio",
             "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "XYZ-AI-Lab/AxisAgentic",
-            "url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+            "title": "VictorTaelin/OptMem",
+            "url": "https://github.com/VictorTaelin/OptMem",
             "source": "github",
-            "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
             "title": "AmazingAng/old-coder",
@@ -2264,99 +2665,101 @@
       },
       "evidence_digest": [
         {
-          "title": "VictorTaelin/OptMem",
-          "source_url": "https://github.com/VictorTaelin/OptMem",
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.35,
+          "match_score": 0.22,
           "matched_terms": [
-            "memory"
+            "ReAct"
           ],
-          "why_included": "命中 memory，匹配分 0.35，因此被纳入本轮代表性证据。"
+          "why_included": "命中 ReAct，匹配分 0.22，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "bybit-exchange/kaas",
+          "source_url": "https://github.com/bybit-exchange/kaas",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.22,
+          "matched_terms": [
+            "ReAct"
+          ],
+          "why_included": "命中 ReAct，匹配分 0.22，因此被纳入本轮代表性证据。"
         },
         {
           "title": "bestdeejay-design/awesome-ai-handbook",
           "source_url": "https://github.com/bestdeejay-design/awesome-ai-handbook",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
           "title": "0xwilliamortiz/openclaude-improved",
           "source_url": "https://github.com/0xwilliamortiz/openclaude-improved",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
           "title": "mikehasa/agentacct",
           "source_url": "https://github.com/mikehasa/agentacct",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
           "title": "deerwork-ai/deer-workflow",
           "source_url": "https://github.com/deerwork-ai/deer-workflow",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "gavamedia/deltafin",
-          "source_url": "https://github.com/gavamedia/deltafin",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.07,
-          "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
           "title": "krishagarwal314/autodev-studio",
           "source_url": "https://github.com/krishagarwal314/autodev-studio",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "XYZ-AI-Lab/AxisAgentic",
-          "source_url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+          "title": "VictorTaelin/OptMem",
+          "source_url": "https://github.com/VictorTaelin/OptMem",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.07,
+          "match_score": 0.073,
           "matched_terms": [],
-          "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 10 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 12 个。",
         "focus_terms": [
-          "RAG",
           "MCP",
+          "RAG",
+          "ReAct",
           "agents",
-          "code",
-          "your",
-          "local",
-          "first",
-          "prompt"
+          "ai-agent",
+          "coding",
+          "agent",
+          "code"
         ],
         "representative_titles": [
-          "VictorTaelin/OptMem",
+          "Pinvou/pinvou-agent",
+          "bybit-exchange/kaas",
           "bestdeejay-design/awesome-ai-handbook",
           "0xwilliamortiz/openclaude-improved",
-          "mikehasa/agentacct",
-          "deerwork-ai/deer-workflow"
+          "mikehasa/agentacct"
         ],
         "related_institutions": [
           "OpenAI",
@@ -2365,15 +2768,15 @@
           "Anthropic",
           "mikehasa",
           "deerwork-ai",
-          "Apple",
-          "gavamedia"
+          "krishagarwal314",
+          "Pinvou"
         ],
         "paper_count": 0,
-        "repo_count": 10,
-        "github_star_delta": 621,
-        "method_mentions": 4,
+        "repo_count": 12,
+        "github_star_delta": 523,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 15
+        "institution_mentions": 17
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -2383,10 +2786,10 @@
       "magnitude": 3.74,
       "severity_label": "明显异常",
       "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.74，burst=2.96，growth_rate=-0.946，z_score=-3.972，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.74，burst=2.969，growth_rate=-0.946，z_score=-3.988，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 6 个",
-        "24h star 增量 54",
+        "24h star 增量 52",
         "方法提及：VLA, MCP",
         "机构集中：sii-research, NVIDIA, Stanford"
       ],
@@ -2395,13 +2798,13 @@
         "current_24h_count": 6,
         "current_72h_count": 6,
         "current_7d_count": 6,
-        "baseline_daily_avg_30d": 128.41,
-        "baseline_daily_std_30d": 29.821,
-        "baseline_72h_avg_30d": 385.231,
+        "baseline_daily_avg_30d": 128.542,
+        "baseline_daily_std_30d": 29.728,
+        "baseline_72h_avg_30d": 385.627,
         "growth_rate": -0.946,
-        "z_score": -3.972,
+        "z_score": -3.988,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.356,
+        "github_signal_score": 2.365,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.167,
@@ -2411,11 +2814,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 54,
+        "github_star_delta": 52,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 2.96,
+        "burst_score": 2.969,
         "low_history_confidence": false,
         "magnitude": 3.74
       },
@@ -2447,6 +2850,17 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "zju3dv/INTACT-JEPA",
+          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
+          "published_at": "2026-07-28T14:57:30Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "robosurvey-project/robosurvey",
           "source_url": "https://github.com/robosurvey-project/robosurvey",
           "published_at": "2026-07-24T20:40:30Z",
@@ -2461,17 +2875,6 @@
           "title": "Leehyunbin0131/claude-ros2-skills",
           "source_url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
           "published_at": "2026-07-23T07:57:44Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "zju3dv/INTACT-JEPA",
-          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
-          "published_at": "2026-07-28T14:57:30Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -2507,9 +2910,9 @@
         "NVIDIA",
         "Stanford",
         "lucidrains",
+        "zju3dv",
         "robosurvey-project",
         "Leehyunbin0131",
-        "zju3dv",
         "tianyupaipai-cmd"
       ],
       "suggested_watch_keywords": [
@@ -2533,14 +2936,14 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Vision-Language-Action Model:2026-07-30:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sii-research/tau-0-vla\", \"source_url\": \"https://github.com/sii-research/tau-0-vla\", \"published_at\": \"2026-07-26T07:57:08Z\", \"match_score\": 0.333, \"matched_keywords\": [\"VLA\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lucidrains/robo_ttt\", \"source_url\": \"https://github.com/lucidrains/robo_ttt\", \"published_at\": \"2026-07-27T21:43:26Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"robosurvey-project/robosurvey\", \"source_url\": \"https://github.com/robosurvey-project/robosurvey\", \"published_at\": \"2026-07-24T20:40:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Leehyunbin0131/claude-ros2-skills\", \"source_url\": \"https://github.com/Leehyunbin0131/claude-ros2-skills\", \"published_at\": \"2026-07-23T07:57:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zju3dv/INTACT-JEPA\", \"source_url\": \"https://github.com/zju3dv/INTACT-JEPA\", \"published_at\": \"2026-07-28T14:57:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tianyupaipai-cmd/stackchan-cloud-mcp\", \"source_url\": \"https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp\", \"published_at\": \"2026-07-27T05:32:54Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括sii-research/tau-0-vla、lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills、zju3dv/INTACT-JEPA等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 54，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及sii-research、NVIDIA、Stanford、lucidrains、robosurvey-project、Leehyunbin0131、zju3dv、tianyupaipai-cmd，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、implementation、robot、claude、sii-research、tau-0-vla、repo、official等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sii-research/tau-0-vla\", \"source_url\": \"https://github.com/sii-research/tau-0-vla\", \"published_at\": \"2026-07-26T07:57:08Z\", \"match_score\": 0.333, \"matched_keywords\": [\"VLA\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lucidrains/robo_ttt\", \"source_url\": \"https://github.com/lucidrains/robo_ttt\", \"published_at\": \"2026-07-27T21:43:26Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zju3dv/INTACT-JEPA\", \"source_url\": \"https://github.com/zju3dv/INTACT-JEPA\", \"published_at\": \"2026-07-28T14:57:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"robosurvey-project/robosurvey\", \"source_url\": \"https://github.com/robosurvey-project/robosurvey\", \"published_at\": \"2026-07-24T20:40:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Leehyunbin0131/claude-ros2-skills\", \"source_url\": \"https://github.com/Leehyunbin0131/claude-ros2-skills\", \"published_at\": \"2026-07-23T07:57:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tianyupaipai-cmd/stackchan-cloud-mcp\", \"source_url\": \"https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp\", \"published_at\": \"2026-07-27T05:32:54Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括sii-research/tau-0-vla、lucidrains/robo_ttt、zju3dv/INTACT-JEPA、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 52，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及sii-research、NVIDIA、Stanford、lucidrains、zju3dv、robosurvey-project、Leehyunbin0131、tianyupaipai-cmd，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、implementation、robot、claude、sii-research、tau-0-vla、repo、official等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“明显异常”（M3.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向VLA、MCP、robotics、implementation、robot、claude等线索，代表条目包括sii-research/tau-0-vla、lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 54，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "内容重点：抓取到的多个目标集中指向VLA、MCP、robotics、implementation、robot、claude等线索，代表条目包括sii-research/tau-0-vla、lucidrains/robo_ttt、zju3dv/INTACT-JEPA、robosurvey-project/robosurvey，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 52，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及sii-research、NVIDIA、Stanford、lucidrains、robosurvey-project、Leehyunbin0131，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及sii-research、NVIDIA、Stanford、lucidrains、zju3dv、robosurvey-project，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察robotics、implementation、robot、claude、sii-research、tau-0-vla、repo、official是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -2559,6 +2962,12 @@
             "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           },
           {
+            "title": "zju3dv/INTACT-JEPA",
+            "url": "https://github.com/zju3dv/INTACT-JEPA",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          },
+          {
             "title": "robosurvey-project/robosurvey",
             "url": "https://github.com/robosurvey-project/robosurvey",
             "source": "github",
@@ -2567,12 +2976,6 @@
           {
             "title": "Leehyunbin0131/claude-ros2-skills",
             "url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "zju3dv/INTACT-JEPA",
-            "url": "https://github.com/zju3dv/INTACT-JEPA",
             "source": "github",
             "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           },
@@ -2606,6 +3009,15 @@
           "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "zju3dv/INTACT-JEPA",
+          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "robosurvey-project/robosurvey",
           "source_url": "https://github.com/robosurvey-project/robosurvey",
           "source_type": "repo",
@@ -2617,15 +3029,6 @@
         {
           "title": "Leehyunbin0131/claude-ros2-skills",
           "source_url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "zju3dv/INTACT-JEPA",
-          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.083,
@@ -2658,23 +3061,23 @@
         "representative_titles": [
           "sii-research/tau-0-vla",
           "lucidrains/robo_ttt",
+          "zju3dv/INTACT-JEPA",
           "robosurvey-project/robosurvey",
-          "Leehyunbin0131/claude-ros2-skills",
-          "zju3dv/INTACT-JEPA"
+          "Leehyunbin0131/claude-ros2-skills"
         ],
         "related_institutions": [
           "sii-research",
           "NVIDIA",
           "Stanford",
           "lucidrains",
+          "zju3dv",
           "robosurvey-project",
           "Leehyunbin0131",
-          "zju3dv",
           "tianyupaipai-cmd"
         ],
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 54,
+        "github_star_delta": 52,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 8
@@ -2684,13 +3087,13 @@
     {
       "topic": "Multi-Agent",
       "title": "Multi-Agent 出现明显异常",
-      "magnitude": 3.41,
+      "magnitude": 3.4,
       "severity_label": "明显异常",
       "summary": "Multi-Agent 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.41，burst=2.295，growth_rate=-0.944，z_score=-2.99，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.4，burst=2.286，growth_rate=-0.944，z_score=-3.0，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 3 个",
-        "24h star 增量 55",
+        "24h star 增量 33",
         "方法提及：RAG",
         "机构集中：OpenAI, krishagarwal314, WutIsHummus"
       ],
@@ -2699,13 +3102,13 @@
         "current_24h_count": 3,
         "current_72h_count": 3,
         "current_7d_count": 3,
-        "baseline_daily_avg_30d": 70.615,
-        "baseline_daily_std_30d": 21.61,
-        "baseline_72h_avg_30d": 211.846,
+        "baseline_daily_avg_30d": 70.624,
+        "baseline_daily_std_30d": 21.542,
+        "baseline_72h_avg_30d": 211.873,
         "growth_rate": -0.944,
-        "z_score": -2.99,
+        "z_score": -3.0,
         "paper_burst_score": 0.0,
-        "github_signal_score": 1.914,
+        "github_signal_score": 1.905,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.333,
@@ -2715,13 +3118,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 3,
-        "github_star_delta": 55,
+        "github_star_delta": 33,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 4,
-        "burst_score": 2.295,
+        "burst_score": 2.286,
         "low_history_confidence": false,
-        "magnitude": 3.41
+        "magnitude": 3.4
       },
       "evidence": [
         {
@@ -2800,11 +3203,11 @@
       "push_recommended": false,
       "dedupe_key": "trend:Multi-Agent:2026-07-30:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"krishagarwal314/autodev-studio\", \"source_url\": \"https://github.com/krishagarwal314/autodev-studio\", \"published_at\": \"2026-07-24T09:55:46Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multi-agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"WutIsHummus/TrueDeck\", \"source_url\": \"https://github.com/WutIsHummus/TrueDeck\", \"published_at\": \"2026-07-27T21:49:43Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multi-agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Sdraugel/albert\", \"source_url\": \"https://github.com/Sdraugel/albert\", \"published_at\": \"2026-07-23T19:24:10Z\", \"match_score\": 0.3, \"matched_keywords\": [\"multi-agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Multi-Agent」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括krishagarwal314/autodev-studio、WutIsHummus/TrueDeck、Sdraugel/albert等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 55，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、krishagarwal314、WutIsHummus、Sdraugel，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察multi-agent、autonomous、harness、code、claude、sdlc、krishagarwal314、autodev-studio等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "curated_summary": "本次抓取围绕「Multi-Agent」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括krishagarwal314/autodev-studio、WutIsHummus/TrueDeck、Sdraugel/albert等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 33，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、krishagarwal314、WutIsHummus、Sdraugel，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察multi-agent、autonomous、harness、code、claude、sdlc、krishagarwal314、autodev-studio等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
         "总体判断：Multi-Agent 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“明显异常”（M3.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、multi-agent、autonomous、harness、code、claude等线索，代表条目包括krishagarwal314/autodev-studio、WutIsHummus/TrueDeck、Sdraugel/albert，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 55，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 33，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及OpenAI、krishagarwal314、WutIsHummus、Sdraugel，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -2893,329 +3296,10 @@
         ],
         "paper_count": 0,
         "repo_count": 3,
-        "github_star_delta": 55,
+        "github_star_delta": 33,
         "method_mentions": 1,
         "dataset_mentions": 0,
         "institution_mentions": 4
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
-      "topic": "Robotics",
-      "title": "Robotics 出现明显异常",
-      "magnitude": 3.18,
-      "severity_label": "明显异常",
-      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.18，burst=2.168，growth_rate=-0.937，z_score=-3.278，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 6 个",
-        "24h star 增量 14",
-        "方法提及：MCP",
-        "机构集中：NVIDIA, Stanford, lucidrains"
-      ],
-      "metrics": {
-        "current_1h_count": 6,
-        "current_24h_count": 6,
-        "current_72h_count": 6,
-        "current_7d_count": 6,
-        "baseline_daily_avg_30d": 110.75,
-        "baseline_daily_std_30d": 30.959,
-        "baseline_72h_avg_30d": 332.25,
-        "growth_rate": -0.937,
-        "z_score": -3.278,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 1.787,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.167,
-        "institution_signal_score": 0.384,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 0.381,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 6,
-        "github_star_delta": 14,
-        "method_mentions": 1,
-        "dataset_mentions": 0,
-        "institution_mentions": 8,
-        "burst_score": 2.168,
-        "low_history_confidence": false,
-        "magnitude": 3.18
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "lucidrains/robo_ttt",
-          "source_url": "https://github.com/lucidrains/robo_ttt",
-          "published_at": "2026-07-27T21:43:26Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "robosurvey-project/robosurvey",
-          "source_url": "https://github.com/robosurvey-project/robosurvey",
-          "published_at": "2026-07-24T20:40:30Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Leehyunbin0131/claude-ros2-skills",
-          "source_url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-          "published_at": "2026-07-23T07:57:44Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "zju3dv/INTACT-JEPA",
-          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
-          "published_at": "2026-07-28T14:57:30Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "tianyupaipai-cmd/stackchan-cloud-mcp",
-          "source_url": "https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp",
-          "published_at": "2026-07-27T05:32:54Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Nova-Valley/agibot-x2-navigation",
-          "source_url": "https://github.com/Nova-Valley/agibot-x2-navigation",
-          "published_at": "2026-07-24T01:39:02Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/Leehyunbin0131/claude-ros2-skills",
-        "https://github.com/Nova-Valley/agibot-x2-navigation",
-        "https://github.com/lucidrains/robo_ttt",
-        "https://github.com/robosurvey-project/robosurvey",
-        "https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp",
-        "https://github.com/zju3dv/INTACT-JEPA"
-      ],
-      "related_methods": [
-        "MCP"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "NVIDIA",
-        "Stanford",
-        "lucidrains",
-        "robosurvey-project",
-        "Leehyunbin0131",
-        "zju3dv",
-        "tianyupaipai-cmd",
-        "Nova-Valley"
-      ],
-      "suggested_watch_keywords": [
-        "robotics",
-        "claude",
-        "ros",
-        "robot",
-        "lucidrains",
-        "robo",
-        "ttt",
-        "implementation"
-      ],
-      "confidence": 0.72,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动",
-        "Watchlist 命中"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:Robotics:2026-07-30:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lucidrains/robo_ttt\", \"source_url\": \"https://github.com/lucidrains/robo_ttt\", \"published_at\": \"2026-07-27T21:43:26Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"robosurvey-project/robosurvey\", \"source_url\": \"https://github.com/robosurvey-project/robosurvey\", \"published_at\": \"2026-07-24T20:40:30Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Leehyunbin0131/claude-ros2-skills\", \"source_url\": \"https://github.com/Leehyunbin0131/claude-ros2-skills\", \"published_at\": \"2026-07-23T07:57:44Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zju3dv/INTACT-JEPA\", \"source_url\": \"https://github.com/zju3dv/INTACT-JEPA\", \"published_at\": \"2026-07-28T14:57:30Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tianyupaipai-cmd/stackchan-cloud-mcp\", \"source_url\": \"https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp\", \"published_at\": \"2026-07-27T05:32:54Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Nova-Valley/agibot-x2-navigation\", \"source_url\": \"https://github.com/Nova-Valley/agibot-x2-navigation\", \"published_at\": \"2026-07-24T01:39:02Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills、zju3dv/INTACT-JEPA、tianyupaipai-cmd/stackchan-cloud-mcp等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 14，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及NVIDIA、Stanford、lucidrains、robosurvey-project、Leehyunbin0131、zju3dv、tianyupaipai-cmd、Nova-Valley，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、claude、ros、robot、lucidrains、robo、ttt、implementation等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
-      "signal_takeaways": [
-        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“明显异常”（M3.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、robotics、claude、ros、robot、lucidrains等线索，代表条目包括lucidrains/robo_ttt、robosurvey-project/robosurvey、Leehyunbin0131/claude-ros2-skills、zju3dv/INTACT-JEPA，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 14，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及NVIDIA、Stanford、lucidrains、robosurvey-project、Leehyunbin0131、zju3dv，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robotics、claude、ros、robot、lucidrains、robo、ttt、implementation是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "lucidrains/robo_ttt",
-            "url": "https://github.com/lucidrains/robo_ttt",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "robosurvey-project/robosurvey",
-            "url": "https://github.com/robosurvey-project/robosurvey",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Leehyunbin0131/claude-ros2-skills",
-            "url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "zju3dv/INTACT-JEPA",
-            "url": "https://github.com/zju3dv/INTACT-JEPA",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "tianyupaipai-cmd/stackchan-cloud-mcp",
-            "url": "https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Nova-Valley/agibot-x2-navigation",
-            "url": "https://github.com/Nova-Valley/agibot-x2-navigation",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "lucidrains/robo_ttt",
-          "source_url": "https://github.com/lucidrains/robo_ttt",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "robosurvey-project/robosurvey",
-          "source_url": "https://github.com/robosurvey-project/robosurvey",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Leehyunbin0131/claude-ros2-skills",
-          "source_url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "zju3dv/INTACT-JEPA",
-          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "tianyupaipai-cmd/stackchan-cloud-mcp",
-          "source_url": "https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Nova-Valley/agibot-x2-navigation",
-          "source_url": "https://github.com/Nova-Valley/agibot-x2-navigation",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 6 个。",
-        "focus_terms": [
-          "MCP",
-          "robotics",
-          "claude",
-          "ros",
-          "robot",
-          "lucidrains",
-          "robo",
-          "ttt"
-        ],
-        "representative_titles": [
-          "lucidrains/robo_ttt",
-          "robosurvey-project/robosurvey",
-          "Leehyunbin0131/claude-ros2-skills",
-          "zju3dv/INTACT-JEPA",
-          "tianyupaipai-cmd/stackchan-cloud-mcp"
-        ],
-        "related_institutions": [
-          "NVIDIA",
-          "Stanford",
-          "lucidrains",
-          "robosurvey-project",
-          "Leehyunbin0131",
-          "zju3dv",
-          "tianyupaipai-cmd",
-          "Nova-Valley"
-        ],
-        "paper_count": 0,
-        "repo_count": 6,
-        "github_star_delta": 14,
-        "method_mentions": 1,
-        "dataset_mentions": 0,
-        "institution_mentions": 8
       },
       "curation_method": "deterministic_natural_language_v2"
     }
@@ -3224,8 +3308,8 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "World Model",
-      "magnitude": 4.93,
-      "severity_label": "疑似爆发",
+      "magnitude": 5.02,
+      "severity_label": "强趋势震荡",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
       "push_enabled": true,
@@ -3268,7 +3352,7 @@
           "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:具身智能观察:World Model:疑似爆发"
+      "dedupe_key": "watchlist:具身智能观察:World Model:强趋势震荡"
     },
     {
       "watchlist_name": "具身智能观察",
@@ -3307,9 +3391,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "robosurvey-project/robosurvey",
-          "source_url": "https://github.com/robosurvey-project/robosurvey",
-          "published_at": "2026-07-24T20:40:30Z",
+          "title": "zju3dv/INTACT-JEPA",
+          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
+          "published_at": "2026-07-28T14:57:30Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3321,7 +3405,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Robotics",
-      "magnitude": 3.18,
+      "magnitude": 3.22,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3344,9 +3428,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "robosurvey-project/robosurvey",
-          "source_url": "https://github.com/robosurvey-project/robosurvey",
-          "published_at": "2026-07-24T20:40:30Z",
+          "title": "zju3dv/INTACT-JEPA",
+          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
+          "published_at": "2026-07-28T14:57:30Z",
           "match_score": 0.333,
           "matched_keywords": [
             "robotics"
@@ -3357,9 +3441,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Leehyunbin0131/claude-ros2-skills",
-          "source_url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-          "published_at": "2026-07-23T07:57:44Z",
+          "title": "robosurvey-project/robosurvey",
+          "source_url": "https://github.com/robosurvey-project/robosurvey",
+          "published_at": "2026-07-24T20:40:30Z",
           "match_score": 0.333,
           "matched_keywords": [
             "robotics"
@@ -3373,7 +3457,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Embodied AI",
-      "magnitude": 2.11,
+      "magnitude": 2.12,
       "severity_label": "局部升温",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3394,9 +3478,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "robosurvey-project/robosurvey",
-          "source_url": "https://github.com/robosurvey-project/robosurvey",
-          "published_at": "2026-07-24T20:40:30Z",
+          "title": "zju3dv/INTACT-JEPA",
+          "source_url": "https://github.com/zju3dv/INTACT-JEPA",
+          "published_at": "2026-07-28T14:57:30Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3405,9 +3489,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Leehyunbin0131/claude-ros2-skills",
-          "source_url": "https://github.com/Leehyunbin0131/claude-ros2-skills",
-          "published_at": "2026-07-23T07:57:44Z",
+          "title": "robosurvey-project/robosurvey",
+          "source_url": "https://github.com/robosurvey-project/robosurvey",
+          "published_at": "2026-07-24T20:40:30Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3426,6 +3510,22 @@
       "push_enabled": true,
       "reason": "震级超过阈值",
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Pinvou/pinvou-agent",
+          "source_url": "https://github.com/Pinvou/pinvou-agent",
+          "published_at": "2026-07-24T07:28:41Z",
+          "match_score": 0.792,
+          "matched_keywords": [
+            "agent",
+            "ai agent"
+          ],
+          "matched_methods": [
+            "ReAct"
+          ],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -3453,20 +3553,6 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "0xwilliamortiz/openclaude-improved",
-          "source_url": "https://github.com/0xwilliamortiz/openclaude-improved",
-          "published_at": "2026-07-26T21:58:28Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "dedupe_key": "watchlist:AI Coding 观察:Agents:强趋势震荡"
@@ -3474,7 +3560,7 @@
     {
       "watchlist_name": "AI Coding 观察",
       "topic": "AI Coding",
-      "magnitude": 5.05,
+      "magnitude": 5.03,
       "severity_label": "强趋势震荡",
       "threshold_magnitude": 3.2,
       "threshold_growth_rate": 1.0,
@@ -3522,8 +3608,8 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "Evaluation",
-      "magnitude": 2.2,
-      "severity_label": "局部升温",
+      "magnitude": 1.96,
+      "severity_label": "微弱波动",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
       "push_enabled": true,
@@ -3569,18 +3655,18 @@
           "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:安全与对齐观察:Evaluation:局部升温"
+      "dedupe_key": "watchlist:安全与对齐观察:Evaluation:微弱波动"
     }
   ],
   "github_surges": [
     {
       "repo_full_name": "kvcache-ai/AgentENV",
       "url": "https://github.com/kvcache-ai/AgentENV",
-      "stars": 2232,
-      "star_delta_1h": 154,
-      "star_delta_24h": 811,
-      "star_delta_72h": 1780,
-      "star_delta_7d": 1780,
+      "stars": 2343,
+      "star_delta_1h": 111,
+      "star_delta_24h": 862,
+      "star_delta_72h": 1891,
+      "star_delta_7d": 1891,
       "matched_topics": [
         "Agents"
       ],
@@ -3591,11 +3677,11 @@
     {
       "repo_full_name": "gavamedia/deltafin",
       "url": "https://github.com/gavamedia/deltafin",
-      "stars": 342,
-      "star_delta_1h": 28,
-      "star_delta_24h": 260,
-      "star_delta_72h": 265,
-      "star_delta_7d": 265,
+      "stars": 358,
+      "star_delta_1h": 16,
+      "star_delta_24h": 212,
+      "star_delta_72h": 281,
+      "star_delta_7d": 281,
       "matched_topics": [
         "Agents",
         "AI Coding",
@@ -3604,17 +3690,17 @@
         "Memory"
       ],
       "language": "Python",
-      "description": "Run Kimi K3, a 2.8T-parameter Mixture-of-Experts LLM, on a single Apple Silicon Mac. Streams MXFP4 experts on demand over HTTP into a local disk cache — fused NEON kernels, Metal/MPS compute, exact reproducible decoding, and an OpenAI-compatible API server for local chat and coding agents.",
+      "description": "Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.",
       "source_url": "https://github.com/gavamedia/deltafin"
     },
     {
       "repo_full_name": "XYZ-AI-Lab/axrl",
       "url": "https://github.com/XYZ-AI-Lab/axrl",
-      "stars": 636,
-      "star_delta_1h": 69,
-      "star_delta_24h": 191,
-      "star_delta_72h": 326,
-      "star_delta_7d": 326,
+      "stars": 637,
+      "star_delta_1h": 1,
+      "star_delta_24h": 192,
+      "star_delta_72h": 327,
+      "star_delta_7d": 327,
       "matched_topics": [
         "Reinforcement Learning",
         "Agents"
@@ -3624,29 +3710,13 @@
       "source_url": "https://github.com/XYZ-AI-Lab/axrl"
     },
     {
-      "repo_full_name": "0xwilliamortiz/ponytail-improved",
-      "url": "https://github.com/0xwilliamortiz/ponytail-improved",
-      "stars": 547,
-      "star_delta_1h": 2,
-      "star_delta_24h": 159,
-      "star_delta_72h": 401,
-      "star_delta_7d": 401,
-      "matched_topics": [
-        "Agents",
-        "Edge AI"
-      ],
-      "language": "JavaScript",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "source_url": "https://github.com/0xwilliamortiz/ponytail-improved"
-    },
-    {
       "repo_full_name": "XYZ-AI-Lab/AxisAgentic",
       "url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
-      "stars": 493,
-      "star_delta_1h": 20,
-      "star_delta_24h": 142,
-      "star_delta_72h": 143,
-      "star_delta_7d": 143,
+      "stars": 517,
+      "star_delta_1h": 24,
+      "star_delta_24h": 145,
+      "star_delta_72h": 167,
+      "star_delta_7d": 167,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3658,13 +3728,29 @@
       "source_url": "https://github.com/XYZ-AI-Lab/AxisAgentic"
     },
     {
+      "repo_full_name": "0xwilliamortiz/ponytail-improved",
+      "url": "https://github.com/0xwilliamortiz/ponytail-improved",
+      "stars": 550,
+      "star_delta_1h": 3,
+      "star_delta_24h": 76,
+      "star_delta_72h": 404,
+      "star_delta_7d": 404,
+      "matched_topics": [
+        "Agents",
+        "Edge AI"
+      ],
+      "language": "JavaScript",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "source_url": "https://github.com/0xwilliamortiz/ponytail-improved"
+    },
+    {
       "repo_full_name": "VictorTaelin/OptMem",
       "url": "https://github.com/VictorTaelin/OptMem",
-      "stars": 884,
-      "star_delta_1h": 15,
-      "star_delta_24h": 89,
-      "star_delta_72h": 619,
-      "star_delta_7d": 619,
+      "stars": 885,
+      "star_delta_1h": 1,
+      "star_delta_24h": 72,
+      "star_delta_72h": 504,
+      "star_delta_7d": 620,
       "matched_topics": [
         "Memory",
         "Agents",
@@ -3676,13 +3762,28 @@
       "source_url": "https://github.com/VictorTaelin/OptMem"
     },
     {
+      "repo_full_name": "sii-research/tau-0-vla",
+      "url": "https://github.com/sii-research/tau-0-vla",
+      "stars": 205,
+      "star_delta_1h": 1,
+      "star_delta_24h": 35,
+      "star_delta_72h": 192,
+      "star_delta_7d": 192,
+      "matched_topics": [
+        "Vision-Language-Action Model"
+      ],
+      "language": "Python",
+      "description": "This repo is the official implementation of \"τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation\".",
+      "source_url": "https://github.com/sii-research/tau-0-vla"
+    },
+    {
       "repo_full_name": "krishagarwal314/autodev-studio",
       "url": "https://github.com/krishagarwal314/autodev-studio",
-      "stars": 111,
-      "star_delta_1h": 2,
-      "star_delta_24h": 43,
-      "star_delta_72h": 87,
-      "star_delta_7d": 93,
+      "stars": 112,
+      "star_delta_1h": 1,
+      "star_delta_24h": 28,
+      "star_delta_72h": 88,
+      "star_delta_7d": 94,
       "matched_topics": [
         "Agents",
         "RAG",
@@ -3695,28 +3796,13 @@
       "source_url": "https://github.com/krishagarwal314/autodev-studio"
     },
     {
-      "repo_full_name": "sii-research/tau-0-vla",
-      "url": "https://github.com/sii-research/tau-0-vla",
-      "stars": 204,
-      "star_delta_1h": 2,
-      "star_delta_24h": 40,
-      "star_delta_72h": 191,
-      "star_delta_7d": 191,
-      "matched_topics": [
-        "Vision-Language-Action Model"
-      ],
-      "language": "Python",
-      "description": "This repo is the official implementation of \"τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation\".",
-      "source_url": "https://github.com/sii-research/tau-0-vla"
-    },
-    {
       "repo_full_name": "AmazingAng/old-coder",
       "url": "https://github.com/AmazingAng/old-coder",
-      "stars": 159,
-      "star_delta_1h": 4,
-      "star_delta_24h": 37,
-      "star_delta_72h": 83,
-      "star_delta_7d": 83,
+      "stars": 160,
+      "star_delta_1h": 1,
+      "star_delta_24h": 24,
+      "star_delta_72h": 84,
+      "star_delta_7d": 84,
       "matched_topics": [
         "Agents",
         "AI Coding",
@@ -3731,11 +3817,11 @@
     {
       "repo_full_name": "deerwork-ai/deer-workflow",
       "url": "https://github.com/deerwork-ai/deer-workflow",
-      "stars": 348,
-      "star_delta_1h": 3,
-      "star_delta_24h": 29,
-      "star_delta_72h": 202,
-      "star_delta_7d": 202,
+      "stars": 349,
+      "star_delta_1h": 1,
+      "star_delta_24h": 21,
+      "star_delta_72h": 203,
+      "star_delta_7d": 203,
       "matched_topics": [
         "Agents",
         "AI Coding",
@@ -3761,6 +3847,11 @@
       "magnitude": 6.0
     },
     {
+      "topic": "Agents",
+      "term": "ReAct",
+      "magnitude": 6.0
+    },
+    {
       "topic": "Model Context Protocol",
       "term": "MCP",
       "magnitude": 6.0
@@ -3768,37 +3859,72 @@
     {
       "topic": "Model Context Protocol",
       "term": "RAG",
+      "magnitude": 6.0
+    },
+    {
+      "topic": "Model Context Protocol",
+      "term": "ReAct",
       "magnitude": 6.0
     },
     {
       "topic": "RAG",
       "term": "RAG",
-      "magnitude": 5.82
+      "magnitude": 5.51
+    },
+    {
+      "topic": "RAG",
+      "term": "MCP",
+      "magnitude": 5.51
+    },
+    {
+      "topic": "RAG",
+      "term": "ReAct",
+      "magnitude": 5.51
+    },
+    {
+      "topic": "Memory",
+      "term": "RAG",
+      "magnitude": 5.1
+    },
+    {
+      "topic": "Memory",
+      "term": "MCP",
+      "magnitude": 5.1
+    },
+    {
+      "topic": "Memory",
+      "term": "ReAct",
+      "magnitude": 5.1
     },
     {
       "topic": "AI Coding",
       "term": "MCP",
-      "magnitude": 5.05
+      "magnitude": 5.03
     },
     {
       "topic": "AI Coding",
       "term": "RAG",
-      "magnitude": 5.05
+      "magnitude": 5.03
     },
     {
       "topic": "World Model",
       "term": "MCP",
-      "magnitude": 4.93
+      "magnitude": 5.02
     },
     {
-      "topic": "Memory",
-      "term": "RAG",
-      "magnitude": 4.87
-    },
-    {
-      "topic": "Memory",
+      "topic": "Tool Use",
       "term": "MCP",
-      "magnitude": 4.87
+      "magnitude": 4.14
+    },
+    {
+      "topic": "Tool Use",
+      "term": "RAG",
+      "magnitude": 4.14
+    },
+    {
+      "topic": "Tool Use",
+      "term": "ReAct",
+      "magnitude": 4.14
     },
     {
       "topic": "Vision-Language-Action Model",
@@ -3809,46 +3935,6 @@
       "topic": "Vision-Language-Action Model",
       "term": "MCP",
       "magnitude": 3.74
-    },
-    {
-      "topic": "Multi-Agent",
-      "term": "RAG",
-      "magnitude": 3.41
-    },
-    {
-      "topic": "Robotics",
-      "term": "MCP",
-      "magnitude": 3.18
-    },
-    {
-      "topic": "Video Generation",
-      "term": "RAG",
-      "magnitude": 2.89
-    },
-    {
-      "topic": "3D Generation",
-      "term": "RAG",
-      "magnitude": 2.88
-    },
-    {
-      "topic": "Tool Use",
-      "term": "RAG",
-      "magnitude": 2.8
-    },
-    {
-      "topic": "Tool Use",
-      "term": "MCP",
-      "magnitude": 2.8
-    },
-    {
-      "topic": "Long Context",
-      "term": "RAG",
-      "magnitude": 2.45
-    },
-    {
-      "topic": "Evaluation",
-      "term": "RAG",
-      "magnitude": 2.2
     }
   ],
   "institution_signals": [
@@ -3903,54 +3989,54 @@
       "magnitude": 6.0
     },
     {
-      "topic": "RAG",
-      "term": "OpenAI",
-      "magnitude": 5.82
-    },
-    {
-      "topic": "RAG",
-      "term": "bestdeejay-design",
-      "magnitude": 5.82
-    },
-    {
-      "topic": "RAG",
-      "term": "krishagarwal314",
-      "magnitude": 5.82
-    },
-    {
-      "topic": "RAG",
-      "term": "Kathir1310",
-      "magnitude": 5.82
-    },
-    {
-      "topic": "RAG",
-      "term": "cookyman74",
-      "magnitude": 5.82
-    },
-    {
       "topic": "Reinforcement Learning",
       "term": "XYZ-AI-Lab",
       "magnitude": 5.61
     },
     {
-      "topic": "AI Coding",
+      "topic": "RAG",
       "term": "OpenAI",
-      "magnitude": 5.05
+      "magnitude": 5.51
     },
     {
-      "topic": "AI Coding",
+      "topic": "RAG",
       "term": "bestdeejay-design",
-      "magnitude": 5.05
+      "magnitude": 5.51
     },
     {
-      "topic": "AI Coding",
+      "topic": "RAG",
+      "term": "krishagarwal314",
+      "magnitude": 5.51
+    },
+    {
+      "topic": "RAG",
+      "term": "Kathir1310",
+      "magnitude": 5.51
+    },
+    {
+      "topic": "RAG",
+      "term": "bybit-exchange",
+      "magnitude": 5.51
+    },
+    {
+      "topic": "Memory",
+      "term": "OpenAI",
+      "magnitude": 5.1
+    },
+    {
+      "topic": "Memory",
+      "term": "bestdeejay-design",
+      "magnitude": 5.1
+    },
+    {
+      "topic": "Memory",
       "term": "0xwilliamortiz",
-      "magnitude": 5.05
+      "magnitude": 5.1
     },
     {
-      "topic": "AI Coding",
+      "topic": "Memory",
       "term": "Anthropic",
-      "magnitude": 5.05
+      "magnitude": 5.1
     }
   ],
   "source_status": [
@@ -3961,16 +4047,16 @@
       "error": null,
       "items": 0,
       "partial": false,
-      "fetched_at": "2026-07-30T03:31:53.724112+00:00"
+      "fetched_at": "2026-07-30T06:43:09.741688+00:00"
     },
     {
       "source_name": "github",
       "source_type": "repo",
       "ok": true,
       "error": null,
-      "items": 47,
+      "items": 48,
       "partial": false,
-      "fetched_at": "2026-07-30T03:31:57.208611+00:00"
+      "fetched_at": "2026-07-30T06:43:13.176362+00:00"
     }
   ],
   "partial": false,
