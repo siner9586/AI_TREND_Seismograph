@@ -221217,6 +221217,256 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Reasoning",
+      "magnitude": 4.0,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Reasoning",
+          "title": "Reasoning 出现疑似爆发",
+          "magnitude": 4.0,
+          "severity_label": "疑似爆发",
+          "summary": "Reasoning 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.0，burst=3.076，growth_rate=-0.937，z_score=-2.941，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 44",
+            "方法提及：RAG",
+            "机构集中：UditAkhourii, TOPDEV99999, teee000"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 62.4,
+            "baseline_daily_std_30d": 19.2,
+            "baseline_72h_avg_30d": 187.2,
+            "growth_rate": -0.937,
+            "z_score": -2.941,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.695,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.536,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 44,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 3.076,
+            "low_history_confidence": true,
+            "magnitude": 4.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "UditAkhourii/neuroarxiv",
+              "source_url": "https://github.com/UditAkhourii/neuroarxiv",
+              "published_at": "2026-08-05T10:26:26Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "reasoning"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "TOPDEV99999/AI-Knowledge-Management-Platform",
+              "source_url": "https://github.com/TOPDEV99999/AI-Knowledge-Management-Platform",
+              "published_at": "2026-08-03T07:36:22Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "reasoning"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "teee000/LiLa-WAM",
+              "source_url": "https://github.com/teee000/LiLa-WAM",
+              "published_at": "2026-08-04T13:50:02Z",
+              "match_score": 0.333,
+              "matched_keywords": [
+                "reasoning"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/TOPDEV99999/AI-Knowledge-Management-Platform",
+            "https://github.com/UditAkhourii/neuroarxiv",
+            "https://github.com/teee000/LiLa-WAM"
+          ],
+          "related_methods": [
+            "RAG"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "UditAkhourii",
+            "TOPDEV99999",
+            "teee000"
+          ],
+          "suggested_watch_keywords": [
+            "reasoning",
+            "arxiv",
+            "uditakhourii",
+            "neuroarxiv",
+            "skill",
+            "kill",
+            "from-scratch",
+            "coding"
+          ],
+          "confidence": 0.4,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Reasoning:2026-08-09:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"UditAkhourii/neuroarxiv\", \"source_url\": \"https://github.com/UditAkhourii/neuroarxiv\", \"published_at\": \"2026-08-05T10:26:26Z\", \"match_score\": 0.417, \"matched_keywords\": [\"reasoning\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"TOPDEV99999/AI-Knowledge-Management-Platform\", \"source_url\": \"https://github.com/TOPDEV99999/AI-Knowledge-Management-Platform\", \"published_at\": \"2026-08-03T07:36:22Z\", \"match_score\": 0.333, \"matched_keywords\": [\"reasoning\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"teee000/LiLa-WAM\", \"source_url\": \"https://github.com/teee000/LiLa-WAM\", \"published_at\": \"2026-08-04T13:50:02Z\", \"match_score\": 0.333, \"matched_keywords\": [\"reasoning\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Reasoning」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括UditAkhourii/neuroarxiv、TOPDEV99999/AI-Knowledge-Management-Platform、teee000/LiLa-WAM等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 44，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及UditAkhourii、TOPDEV99999、teee000，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察reasoning、arxiv、uditakhourii、neuroarxiv、skill、kill、from-scratch、coding等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Reasoning 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“疑似爆发”（M4.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、reasoning、arxiv、uditakhourii、neuroarxiv、skill等线索，代表条目包括UditAkhourii/neuroarxiv、TOPDEV99999/AI-Knowledge-Management-Platform、teee000/LiLa-WAM，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 44，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及UditAkhourii、TOPDEV99999、teee000，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察reasoning、arxiv、uditakhourii、neuroarxiv、skill、kill、from-scratch、coding是否继续出现。当前置信度为 0.4，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "UditAkhourii/neuroarxiv",
+                "url": "https://github.com/UditAkhourii/neuroarxiv",
+                "source": "github",
+                "reason": "命中 reasoning，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "TOPDEV99999/AI-Knowledge-Management-Platform",
+                "url": "https://github.com/TOPDEV99999/AI-Knowledge-Management-Platform",
+                "source": "github",
+                "reason": "命中 reasoning，匹配分 0.333，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "teee000/LiLa-WAM",
+                "url": "https://github.com/teee000/LiLa-WAM",
+                "source": "github",
+                "reason": "命中 reasoning，匹配分 0.333，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "UditAkhourii/neuroarxiv",
+              "source_url": "https://github.com/UditAkhourii/neuroarxiv",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "reasoning"
+              ],
+              "why_included": "命中 reasoning，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "TOPDEV99999/AI-Knowledge-Management-Platform",
+              "source_url": "https://github.com/TOPDEV99999/AI-Knowledge-Management-Platform",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "reasoning"
+              ],
+              "why_included": "命中 reasoning，匹配分 0.333，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "teee000/LiLa-WAM",
+              "source_url": "https://github.com/teee000/LiLa-WAM",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.333,
+              "matched_terms": [
+                "reasoning"
+              ],
+              "why_included": "命中 reasoning，匹配分 0.333，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "RAG",
+              "reasoning",
+              "arxiv",
+              "uditakhourii",
+              "neuroarxiv",
+              "skill",
+              "kill",
+              "from-scratch"
+            ],
+            "representative_titles": [
+              "UditAkhourii/neuroarxiv",
+              "TOPDEV99999/AI-Knowledge-Management-Platform",
+              "teee000/LiLa-WAM"
+            ],
+            "related_institutions": [
+              "UditAkhourii",
+              "TOPDEV99999",
+              "teee000"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 44,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-08-09T20"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-08-09T20:53:26.006566+00:00",
+      "dedupe_key": "trend:Reasoning:2026-08-09:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
