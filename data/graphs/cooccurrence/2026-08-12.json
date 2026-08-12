@@ -1,5 +1,5 @@
 {
-  "window": "2026-08-12T05",
+  "window": "2026-08-12T07",
   "nodes": [
     {
       "id": "agents",
@@ -11,9 +11,9 @@
     {
       "id": "rag",
       "label": "RAG",
-      "type": "method",
-      "count": 18,
-      "weight": 0.983
+      "type": "topic",
+      "count": 16,
+      "weight": 0.896
     },
     {
       "id": "agent",
@@ -72,15 +72,22 @@
       "weight": 0.417
     },
     {
-      "id": "machine",
-      "label": "machine",
-      "type": "keyword",
-      "count": 5,
-      "weight": 0.417
-    },
-    {
       "id": "intelligence",
       "label": "intelligence",
+      "type": "keyword",
+      "count": 4,
+      "weight": 0.374
+    },
+    {
+      "id": "open-source",
+      "label": "open-source",
+      "type": "keyword",
+      "count": 4,
+      "weight": 0.374
+    },
+    {
+      "id": "machine",
+      "label": "machine",
       "type": "keyword",
       "count": 4,
       "weight": 0.374
@@ -149,13 +156,6 @@
       "weight": 0.33
     },
     {
-      "id": "open-source",
-      "label": "open-source",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.33
-    },
-    {
       "id": "powered",
       "label": "powered",
       "type": "keyword",
@@ -186,6 +186,20 @@
     {
       "id": "system",
       "label": "system",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.287
+    },
+    {
+      "id": "analysis",
+      "label": "analysis",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.287
+    },
+    {
+      "id": "motion",
+      "label": "motion",
       "type": "keyword",
       "count": 2,
       "weight": 0.287
@@ -233,20 +247,6 @@
       "weight": 0.287
     },
     {
-      "id": "intelligent",
-      "label": "intelligent",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.287
-    },
-    {
-      "id": "platform",
-      "label": "platform",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.287
-    },
-    {
       "id": "agent-loop",
       "label": "agent-loop",
       "type": "keyword",
@@ -264,6 +264,13 @@
       "id": "typescript",
       "label": "typescript",
       "type": "keyword",
+      "count": 2,
+      "weight": 0.287
+    },
+    {
+      "id": "reasoning",
+      "label": "Reasoning",
+      "type": "topic",
       "count": 2,
       "weight": 0.287
     },
@@ -413,13 +420,6 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.243
-    },
-    {
-      "id": "ai-stone-paper-scissors",
-      "label": "ai-stone-paper-scissors",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.243
     }
   ],
   "edges": [
@@ -429,16 +429,7 @@
       "cooccurrence_count": 10,
       "weight": 1.0,
       "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "rag",
-      "cooccurrence_count": 9,
-      "weight": 0.9,
-      "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -447,7 +438,16 @@
       "cooccurrence_count": 8,
       "weight": 0.8,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "rag",
+      "cooccurrence_count": 8,
+      "weight": 0.8,
+      "windows": [
+        "2026-08-12T07"
       ]
     },
     {
@@ -456,7 +456,7 @@
       "cooccurrence_count": 8,
       "weight": 0.8,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -465,7 +465,7 @@
       "cooccurrence_count": 8,
       "weight": 0.8,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -474,7 +474,7 @@
       "cooccurrence_count": 7,
       "weight": 0.7,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -483,7 +483,7 @@
       "cooccurrence_count": 7,
       "weight": 0.7,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -492,7 +492,7 @@
       "cooccurrence_count": 7,
       "weight": 0.7,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -501,7 +501,7 @@
       "cooccurrence_count": 5,
       "weight": 0.5,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -510,25 +510,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "intelligent",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "platform",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -537,7 +519,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -546,7 +528,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -555,7 +537,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -564,7 +546,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -573,7 +555,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -582,7 +564,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -591,7 +573,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -600,7 +582,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -609,7 +591,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -618,7 +600,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -627,7 +609,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -636,7 +618,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -645,7 +627,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -654,7 +636,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -663,7 +645,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -672,16 +654,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "agents",
-      "cooccurrence_count": 3,
-      "weight": 0.3,
-      "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -690,7 +663,16 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "agents",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-08-12T07"
       ]
     },
     {
@@ -699,7 +681,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -708,7 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -717,7 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -726,7 +708,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -735,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -744,16 +726,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "machine",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -762,7 +735,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -771,7 +744,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -780,7 +753,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -789,7 +762,25 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "reasoning",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "reasoning",
+      "target": "skill",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-08-12T07"
       ]
     },
     {
@@ -798,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -807,7 +798,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -816,7 +807,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -825,7 +816,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -834,7 +825,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -843,7 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -852,7 +843,34 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "number",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "sms",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-08-12T07"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "sv-number",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-08-12T07"
       ]
     },
     {
@@ -861,34 +879,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "number",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "sms",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-08-12T05"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "sv-number",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -897,7 +888,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -906,7 +897,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -915,7 +906,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -924,7 +915,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -933,7 +924,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -942,7 +933,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -951,7 +942,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -960,7 +951,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -969,7 +960,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -978,7 +969,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -987,7 +978,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -996,7 +987,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -1005,7 +996,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -1014,7 +1005,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -1023,7 +1014,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -1032,7 +1023,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
@@ -1041,16 +1032,16 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     },
     {
       "source": "rag",
-      "target": "llm",
+      "target": "tool-use",
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-08-12T05"
+        "2026-08-12T07"
       ]
     }
   ]
