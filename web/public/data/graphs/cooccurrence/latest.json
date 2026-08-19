@@ -1,5 +1,5 @@
 {
-  "window": "2026-08-19T01",
+  "window": "2026-08-19T03",
   "nodes": [
     {
       "id": "agents",
@@ -37,6 +37,20 @@
       "weight": 0.45
     },
     {
+      "id": "robotics",
+      "label": "Robotics",
+      "type": "topic",
+      "count": 7,
+      "weight": 0.45
+    },
+    {
+      "id": "world-model",
+      "label": "World Model",
+      "type": "topic",
+      "count": 7,
+      "weight": 0.45
+    },
+    {
       "id": "artificial",
       "label": "artificial",
       "type": "keyword",
@@ -51,32 +65,18 @@
       "weight": 0.414
     },
     {
+      "id": "multimodal",
+      "label": "Multimodal",
+      "type": "topic",
+      "count": 6,
+      "weight": 0.414
+    },
+    {
       "id": "mcp",
       "label": "MCP",
       "type": "method",
       "count": 6,
       "weight": 0.414
-    },
-    {
-      "id": "robotics",
-      "label": "Robotics",
-      "type": "topic",
-      "count": 6,
-      "weight": 0.414
-    },
-    {
-      "id": "world-model",
-      "label": "World Model",
-      "type": "topic",
-      "count": 6,
-      "weight": 0.414
-    },
-    {
-      "id": "multimodal",
-      "label": "Multimodal",
-      "type": "topic",
-      "count": 5,
-      "weight": 0.379
     },
     {
       "id": "machine",
@@ -156,13 +156,6 @@
       "weight": 0.307
     },
     {
-      "id": "framework",
-      "label": "framework",
-      "type": "keyword",
-      "count": 3,
-      "weight": 0.307
-    },
-    {
       "id": "llm",
       "label": "llm",
       "type": "keyword",
@@ -207,6 +200,13 @@
     {
       "id": "python",
       "label": "python",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.271
+    },
+    {
+      "id": "framework",
+      "label": "framework",
       "type": "keyword",
       "count": 2,
       "weight": 0.271
@@ -289,16 +289,16 @@
       "weight": 0.271
     },
     {
-      "id": "gui-agent",
-      "label": "GUI Agent",
-      "type": "topic",
+      "id": "codex",
+      "label": "codex",
+      "type": "keyword",
       "count": 2,
       "weight": 0.271
     },
     {
-      "id": "codex",
-      "label": "codex",
-      "type": "keyword",
+      "id": "gui-agent",
+      "label": "GUI Agent",
+      "type": "method",
       "count": 2,
       "weight": 0.271
     },
@@ -341,13 +341,6 @@
       "id": "robotic",
       "label": "robotic",
       "type": "keyword",
-      "count": 2,
-      "weight": 0.271
-    },
-    {
-      "id": "reinforcement-learning",
-      "label": "Reinforcement Learning",
-      "type": "topic",
       "count": 2,
       "weight": 0.271
     },
@@ -420,6 +413,13 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.236
+    },
+    {
+      "id": "free",
+      "label": "free",
+      "type": "keyword",
+      "count": 1,
+      "weight": 0.236
     }
   ],
   "edges": [
@@ -429,7 +429,7 @@
       "cooccurrence_count": 15,
       "weight": 1.0,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -438,7 +438,7 @@
       "cooccurrence_count": 11,
       "weight": 0.733,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -447,7 +447,7 @@
       "cooccurrence_count": 10,
       "weight": 0.667,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -456,7 +456,7 @@
       "cooccurrence_count": 8,
       "weight": 0.533,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -465,7 +465,16 @@
       "cooccurrence_count": 7,
       "weight": 0.467,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
+      ]
+    },
+    {
+      "source": "robotics",
+      "target": "world-model",
+      "cooccurrence_count": 7,
+      "weight": 0.467,
+      "windows": [
+        "2026-08-19T03"
       ]
     },
     {
@@ -474,7 +483,7 @@
       "cooccurrence_count": 6,
       "weight": 0.4,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -483,7 +492,7 @@
       "cooccurrence_count": 6,
       "weight": 0.4,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -492,7 +501,7 @@
       "cooccurrence_count": 6,
       "weight": 0.4,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -501,16 +510,7 @@
       "cooccurrence_count": 6,
       "weight": 0.4,
       "windows": [
-        "2026-08-19T01"
-      ]
-    },
-    {
-      "source": "robotics",
-      "target": "world-model",
-      "cooccurrence_count": 6,
-      "weight": 0.4,
-      "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -519,7 +519,7 @@
       "cooccurrence_count": 5,
       "weight": 0.333,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -528,7 +528,7 @@
       "cooccurrence_count": 5,
       "weight": 0.333,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -537,7 +537,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -546,7 +546,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -555,7 +555,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -564,7 +564,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -573,7 +573,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -582,7 +582,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -591,7 +591,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -600,7 +600,7 @@
       "cooccurrence_count": 4,
       "weight": 0.267,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -609,7 +609,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -618,7 +618,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -627,7 +627,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -636,7 +636,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -645,7 +645,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -654,7 +654,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -663,7 +663,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -672,7 +672,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -681,7 +681,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -690,7 +690,7 @@
       "cooccurrence_count": 3,
       "weight": 0.2,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -699,7 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -708,7 +708,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -717,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -726,7 +726,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -735,7 +735,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -744,7 +744,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -753,7 +753,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -762,7 +762,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -771,7 +771,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -780,7 +780,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -789,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -798,7 +798,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -807,7 +807,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -816,7 +816,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -825,7 +825,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -834,7 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -843,7 +843,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -852,7 +852,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -861,7 +861,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -870,7 +870,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -879,7 +879,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -888,7 +888,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -897,7 +897,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -906,7 +906,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -915,7 +915,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -924,7 +924,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -933,7 +933,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -942,7 +942,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -951,7 +951,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -960,7 +960,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -969,7 +969,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -978,7 +978,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -987,7 +987,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -996,25 +996,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "gui-agent",
-      "cooccurrence_count": 2,
-      "weight": 0.133,
-      "windows": [
-        "2026-08-19T01"
-      ]
-    },
-    {
-      "source": "gui-agent",
-      "target": "dsh",
-      "cooccurrence_count": 2,
-      "weight": 0.133,
-      "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1023,7 +1005,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1032,7 +1014,25 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "gui-agent",
+      "cooccurrence_count": 2,
+      "weight": 0.133,
+      "windows": [
+        "2026-08-19T03"
+      ]
+    },
+    {
+      "source": "gui-agent",
+      "target": "dsh",
+      "cooccurrence_count": 2,
+      "weight": 0.133,
+      "windows": [
+        "2026-08-19T03"
       ]
     },
     {
@@ -1041,7 +1041,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1050,7 +1050,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1059,7 +1059,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1068,7 +1068,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1077,7 +1077,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1086,16 +1086,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
-      ]
-    },
-    {
-      "source": "multimodal",
-      "target": "deepseek",
-      "cooccurrence_count": 2,
-      "weight": 0.133,
-      "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1104,7 +1095,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1113,7 +1104,16 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
+      ]
+    },
+    {
+      "source": "multimodal",
+      "target": "deepseek",
+      "cooccurrence_count": 2,
+      "weight": 0.133,
+      "windows": [
+        "2026-08-19T03"
       ]
     },
     {
@@ -1122,7 +1122,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     },
     {
@@ -1131,7 +1131,7 @@
       "cooccurrence_count": 2,
       "weight": 0.133,
       "windows": [
-        "2026-08-19T01"
+        "2026-08-19T03"
       ]
     }
   ]
