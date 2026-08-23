@@ -276969,6 +276969,251 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "LLM Security",
+      "magnitude": 3.96,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "LLM Security",
+          "title": "LLM Security 出现明显异常",
+          "magnitude": 3.96,
+          "severity_label": "明显异常",
+          "summary": "LLM Security 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.96，burst=2.505，growth_rate=3.0，z_score=3.0，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 13",
+            "方法提及：MCP",
+            "机构集中：Zyrexnn, sanjarbiy, azrtydxb",
+            "低基线方向出现冷门复活信号"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 0.0,
+            "baseline_daily_std_30d": 0.0,
+            "baseline_72h_avg_30d": 0.0,
+            "growth_rate": 3.0,
+            "z_score": 3.0,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 1.901,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.536,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 1.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 13,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 2.505,
+            "low_history_confidence": true,
+            "magnitude": 3.96
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Zyrexnn/Cybermes",
+              "source_url": "https://github.com/Zyrexnn/Cybermes",
+              "published_at": "2026-08-19T13:25:08Z",
+              "match_score": 0.375,
+              "matched_keywords": [
+                "red teaming"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "sanjarbiy/bugbountyrules",
+              "source_url": "https://github.com/sanjarbiy/bugbountyrules",
+              "published_at": "2026-08-17T18:15:38Z",
+              "match_score": 0.075,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "azrtydxb/procoder",
+              "source_url": "https://github.com/azrtydxb/procoder",
+              "published_at": "2026-08-16T07:47:17Z",
+              "match_score": 0.075,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Zyrexnn/Cybermes",
+            "https://github.com/azrtydxb/procoder",
+            "https://github.com/sanjarbiy/bugbountyrules"
+          ],
+          "related_methods": [
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "Zyrexnn",
+            "sanjarbiy",
+            "azrtydxb"
+          ],
+          "suggested_watch_keywords": [
+            "agent",
+            "zyrexnn",
+            "cybermes",
+            "autonomous",
+            "offensive",
+            "security",
+            "bug",
+            "bounty"
+          ],
+          "confidence": 0.4,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "冷门复活",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:LLM Security:2026-08-23:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Zyrexnn/Cybermes\", \"source_url\": \"https://github.com/Zyrexnn/Cybermes\", \"published_at\": \"2026-08-19T13:25:08Z\", \"match_score\": 0.375, \"matched_keywords\": [\"red teaming\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sanjarbiy/bugbountyrules\", \"source_url\": \"https://github.com/sanjarbiy/bugbountyrules\", \"published_at\": \"2026-08-17T18:15:38Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"azrtydxb/procoder\", \"source_url\": \"https://github.com/azrtydxb/procoder\", \"published_at\": \"2026-08-16T07:47:17Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「LLM Security」相关公开信号进行汇总，系统将其判定为“明显异常”（M4.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括Zyrexnn/Cybermes、sanjarbiy/bugbountyrules、azrtydxb/procoder等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 13，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Zyrexnn、sanjarbiy、azrtydxb，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、zyrexnn、cybermes、autonomous、offensive、security、bug、bounty等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：LLM Security 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“明显异常”（M4.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向MCP、agent、zyrexnn、cybermes、autonomous、offensive等线索，代表条目包括Zyrexnn/Cybermes、sanjarbiy/bugbountyrules、azrtydxb/procoder，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 13，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及Zyrexnn、sanjarbiy、azrtydxb，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察agent、zyrexnn、cybermes、autonomous、offensive、security、bug、bounty是否继续出现。当前置信度为 0.4，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Zyrexnn/Cybermes",
+                "url": "https://github.com/Zyrexnn/Cybermes",
+                "source": "github",
+                "reason": "命中 red teaming，匹配分 0.375，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "sanjarbiy/bugbountyrules",
+                "url": "https://github.com/sanjarbiy/bugbountyrules",
+                "source": "github",
+                "reason": "匹配分 0.075，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "azrtydxb/procoder",
+                "url": "https://github.com/azrtydxb/procoder",
+                "source": "github",
+                "reason": "匹配分 0.075，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Zyrexnn/Cybermes",
+              "source_url": "https://github.com/Zyrexnn/Cybermes",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.375,
+              "matched_terms": [
+                "red teaming"
+              ],
+              "why_included": "命中 red teaming，匹配分 0.375，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "sanjarbiy/bugbountyrules",
+              "source_url": "https://github.com/sanjarbiy/bugbountyrules",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.075,
+              "matched_terms": [],
+              "why_included": "匹配分 0.075，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "azrtydxb/procoder",
+              "source_url": "https://github.com/azrtydxb/procoder",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.075,
+              "matched_terms": [],
+              "why_included": "匹配分 0.075，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "MCP",
+              "agent",
+              "zyrexnn",
+              "cybermes",
+              "autonomous",
+              "offensive",
+              "security",
+              "bug"
+            ],
+            "representative_titles": [
+              "Zyrexnn/Cybermes",
+              "sanjarbiy/bugbountyrules",
+              "azrtydxb/procoder"
+            ],
+            "related_institutions": [
+              "Zyrexnn",
+              "sanjarbiy",
+              "azrtydxb"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 13,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-08-23T03"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-08-23T03:17:22.861003+00:00",
+      "dedupe_key": "trend:LLM Security:2026-08-23:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
