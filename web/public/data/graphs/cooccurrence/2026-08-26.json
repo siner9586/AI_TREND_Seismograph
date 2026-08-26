@@ -1,5 +1,5 @@
 {
-  "window": "2026-08-26T03",
+  "window": "2026-08-26T04",
   "nodes": [
     {
       "id": "agents",
@@ -26,8 +26,8 @@
       "id": "agent",
       "label": "agent",
       "type": "keyword",
-      "count": 9,
-      "weight": 0.591
+      "count": 8,
+      "weight": 0.548
     },
     {
       "id": "tool-use",
@@ -44,18 +44,25 @@
       "weight": 0.504
     },
     {
-      "id": "skill",
-      "label": "skill",
-      "type": "keyword",
-      "count": 5,
-      "weight": 0.417
+      "id": "world-model",
+      "label": "World Model",
+      "type": "topic",
+      "count": 6,
+      "weight": 0.461
     },
     {
       "id": "agents",
       "label": "agents",
       "type": "keyword",
-      "count": 5,
-      "weight": 0.417
+      "count": 6,
+      "weight": 0.461
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics",
+      "type": "topic",
+      "count": 6,
+      "weight": 0.461
     },
     {
       "id": "coding",
@@ -65,22 +72,15 @@
       "weight": 0.417
     },
     {
-      "id": "robotics",
-      "label": "Robotics",
-      "type": "topic",
-      "count": 5,
-      "weight": 0.417
-    },
-    {
-      "id": "world-model",
-      "label": "World Model",
-      "type": "topic",
+      "id": "open-source",
+      "label": "open-source",
+      "type": "keyword",
       "count": 4,
       "weight": 0.374
     },
     {
-      "id": "open-source",
-      "label": "open-source",
+      "id": "skill",
+      "label": "skill",
       "type": "keyword",
       "count": 4,
       "weight": 0.374
@@ -110,13 +110,6 @@
       "id": "mcp",
       "label": "MCP",
       "type": "method",
-      "count": 3,
-      "weight": 0.33
-    },
-    {
-      "id": "alphaparkinc",
-      "label": "alphaparkinc",
-      "type": "keyword",
       "count": 3,
       "weight": 0.33
     },
@@ -198,6 +191,13 @@
       "weight": 0.287
     },
     {
+      "id": "benchmark",
+      "label": "Benchmark",
+      "type": "topic",
+      "count": 2,
+      "weight": 0.287
+    },
+    {
       "id": "rag",
       "label": "rag",
       "type": "keyword",
@@ -207,6 +207,13 @@
     {
       "id": "one",
       "label": "one",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.287
+    },
+    {
+      "id": "video",
+      "label": "video",
       "type": "keyword",
       "count": 2,
       "weight": 0.287
@@ -247,16 +254,9 @@
       "weight": 0.287
     },
     {
-      "id": "vision-language-action-model",
-      "label": "Vision-Language-Action Model",
+      "id": "embodied-ai",
+      "label": "Embodied AI",
       "type": "topic",
-      "count": 2,
-      "weight": 0.287
-    },
-    {
-      "id": "planner",
-      "label": "planner",
-      "type": "keyword",
       "count": 2,
       "weight": 0.287
     },
@@ -264,13 +264,6 @@
       "id": "robotic",
       "label": "robotic",
       "type": "keyword",
-      "count": 2,
-      "weight": 0.287
-    },
-    {
-      "id": "benchmark",
-      "label": "Benchmark",
-      "type": "topic",
       "count": 2,
       "weight": 0.287
     },
@@ -420,6 +413,13 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.243
+    },
+    {
+      "id": "vehicle",
+      "label": "vehicle",
+      "type": "keyword",
+      "count": 1,
+      "weight": 0.243
     }
   ],
   "edges": [
@@ -429,16 +429,16 @@
       "cooccurrence_count": 13,
       "weight": 1.0,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
       "source": "agents",
       "target": "agent",
-      "cooccurrence_count": 9,
-      "weight": 0.692,
+      "cooccurrence_count": 8,
+      "weight": 0.615,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -447,7 +447,7 @@
       "cooccurrence_count": 7,
       "weight": 0.538,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -456,7 +456,7 @@
       "cooccurrence_count": 6,
       "weight": 0.462,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -465,7 +465,7 @@
       "cooccurrence_count": 6,
       "weight": 0.462,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -474,7 +474,7 @@
       "cooccurrence_count": 6,
       "weight": 0.462,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -483,16 +483,16 @@
       "cooccurrence_count": 5,
       "weight": 0.385,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
       "source": "agents",
-      "target": "skill",
+      "target": "agents",
       "cooccurrence_count": 5,
       "weight": 0.385,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -501,7 +501,7 @@
       "cooccurrence_count": 5,
       "weight": 0.385,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -510,7 +510,7 @@
       "cooccurrence_count": 5,
       "weight": 0.385,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -519,16 +519,34 @@
       "cooccurrence_count": 5,
       "weight": 0.385,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "robotics",
+      "target": "world-model",
+      "cooccurrence_count": 5,
+      "weight": 0.385,
+      "windows": [
+        "2026-08-26T04"
       ]
     },
     {
       "source": "agents",
-      "target": "agents",
+      "target": "skill",
       "cooccurrence_count": 4,
       "weight": 0.308,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "coding",
+      "cooccurrence_count": 4,
+      "weight": 0.308,
+      "windows": [
+        "2026-08-26T04"
       ]
     },
     {
@@ -537,7 +555,7 @@
       "cooccurrence_count": 4,
       "weight": 0.308,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -546,7 +564,7 @@
       "cooccurrence_count": 4,
       "weight": 0.308,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -555,16 +573,7 @@
       "cooccurrence_count": 4,
       "weight": 0.308,
       "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "coding",
-      "cooccurrence_count": 4,
-      "weight": 0.308,
-      "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -573,7 +582,7 @@
       "cooccurrence_count": 3,
       "weight": 0.231,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -582,7 +591,7 @@
       "cooccurrence_count": 3,
       "weight": 0.231,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -591,16 +600,7 @@
       "cooccurrence_count": 3,
       "weight": 0.231,
       "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "agent",
-      "target": "skill",
-      "cooccurrence_count": 3,
-      "weight": 0.231,
-      "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -609,7 +609,7 @@
       "cooccurrence_count": 3,
       "weight": 0.231,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -618,16 +618,7 @@
       "cooccurrence_count": 3,
       "weight": 0.231,
       "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "robotics",
-      "target": "world-model",
-      "cooccurrence_count": 3,
-      "weight": 0.231,
-      "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -636,7 +627,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -645,7 +636,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -654,7 +645,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -663,7 +654,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -672,7 +663,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -681,7 +672,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -690,7 +681,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -699,7 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -708,7 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -717,7 +708,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -726,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -735,7 +726,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -744,7 +735,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -753,7 +744,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -762,7 +753,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -771,7 +762,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -780,7 +771,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -789,7 +780,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -798,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -807,7 +798,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -816,25 +807,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "mcp",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "tool-use",
-      "target": "mcp",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -843,160 +816,25 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "agents",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "coding",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
       "source": "model-context-protocol",
-      "target": "one",
+      "target": "mcp",
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
-      "source": "rag",
-      "target": "one",
+      "source": "tool-use",
+      "target": "mcp",
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "skill",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "bypass",
-      "target": "cheat",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "bypass",
-      "target": "rage",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "bypass",
-      "target": "undetected",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "cheat",
-      "target": "rage",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "cheat",
-      "target": "undetected",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "rage",
-      "target": "undetected",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "robotics",
-      "target": "vision-language-action-model",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "alphaparkinc",
-      "target": "planner",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "alphaparkinc",
-      "target": "robotic",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
-      ]
-    },
-    {
-      "source": "planner",
-      "target": "robotic",
-      "cooccurrence_count": 2,
-      "weight": 0.154,
-      "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -1005,7 +843,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -1014,7 +852,160 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "agents",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "coding",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "one",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "one",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "video",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "skill",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "video",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "bypass",
+      "target": "cheat",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "bypass",
+      "target": "rage",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "bypass",
+      "target": "undetected",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "cheat",
+      "target": "rage",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "cheat",
+      "target": "undetected",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "rage",
+      "target": "undetected",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "embodied-ai",
+      "target": "robotics",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "embodied-ai",
+      "target": "world-model",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
       ]
     },
     {
@@ -1023,7 +1014,16 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
+      ]
+    },
+    {
+      "source": "agent",
+      "target": "skill",
+      "cooccurrence_count": 2,
+      "weight": 0.154,
+      "windows": [
+        "2026-08-26T04"
       ]
     },
     {
@@ -1032,7 +1032,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     },
     {
@@ -1041,7 +1041,7 @@
       "cooccurrence_count": 2,
       "weight": 0.154,
       "windows": [
-        "2026-08-26T03"
+        "2026-08-26T04"
       ]
     }
   ]
