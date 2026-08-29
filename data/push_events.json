@@ -296569,6 +296569,751 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Memory",
+      "magnitude": 6.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Memory",
+          "title": "Memory 出现强趋势震荡",
+          "magnitude": 6.0,
+          "severity_label": "强趋势震荡",
+          "summary": "Memory 在当前窗口内出现 0 条论文信号和 12 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=6.0，burst=6.586，growth_rate=-0.964，z_score=-4.115，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 12 个",
+            "24h star 增量 713",
+            "方法提及：MCP, ReAct",
+            "机构集中：OpenAI, OnlyTerp, JordyZomer"
+          ],
+          "metrics": {
+            "current_1h_count": 12,
+            "current_24h_count": 12,
+            "current_72h_count": 12,
+            "current_7d_count": 12,
+            "baseline_daily_avg_30d": 358.067,
+            "baseline_daily_std_30d": 83.093,
+            "baseline_72h_avg_30d": 1074.201,
+            "growth_rate": -0.964,
+            "z_score": -4.115,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 5.701,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.167,
+            "institution_signal_score": 0.472,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.885,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 12,
+            "github_star_delta": 713,
+            "method_mentions": 4,
+            "dataset_mentions": 0,
+            "institution_mentions": 15,
+            "burst_score": 6.586,
+            "low_history_confidence": false,
+            "magnitude": 6.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "JordyZomer/lemmalog",
+              "source_url": "https://github.com/JordyZomer/lemmalog",
+              "published_at": "2026-08-27T07:06:55Z",
+              "match_score": 0.63,
+              "matched_keywords": [
+                "agent memory",
+                "memory"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "halofyai/halofy",
+              "source_url": "https://github.com/halofyai/halofy",
+              "published_at": "2026-08-22T06:09:53Z",
+              "match_score": 0.35,
+              "matched_keywords": [
+                "memory"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lxl0825/RagMempool",
+              "source_url": "https://github.com/lxl0825/RagMempool",
+              "published_at": "2026-08-26T02:12:18Z",
+              "match_score": 0.28,
+              "matched_keywords": [
+                "memory"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "OnlyTerp/opengrok",
+              "source_url": "https://github.com/OnlyTerp/opengrok",
+              "published_at": "2026-08-27T18:30:44Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ApodexAI/FrontierAgent",
+              "source_url": "https://github.com/ApodexAI/FrontierAgent",
+              "published_at": "2026-08-22T05:07:35Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "kgoedecke/doop",
+              "source_url": "https://github.com/kgoedecke/doop",
+              "published_at": "2026-08-22T15:40:51Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "rokbenko/quackd",
+              "source_url": "https://github.com/rokbenko/quackd",
+              "published_at": "2026-08-28T09:09:16Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "acryldev/acryl",
+              "source_url": "https://github.com/acryldev/acryl",
+              "published_at": "2026-08-25T15:53:56Z",
+              "match_score": 0.07,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/ADScanPro/Claude-AD",
+            "https://github.com/ApodexAI/FrontierAgent",
+            "https://github.com/JordyZomer/lemmalog",
+            "https://github.com/OnlyTerp/opengrok",
+            "https://github.com/acryldev/acryl",
+            "https://github.com/halofyai/halofy",
+            "https://github.com/hkqr/my-free-code",
+            "https://github.com/kgoedecke/doop",
+            "https://github.com/kharmanskyi/open-steps",
+            "https://github.com/lxl0825/RagMempool",
+            "https://github.com/rokbenko/quackd",
+            "https://github.com/usedotai/dot-reflex"
+          ],
+          "related_methods": [
+            "MCP",
+            "ReAct"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "OpenAI",
+            "OnlyTerp",
+            "JordyZomer",
+            "ApodexAI",
+            "kgoedecke",
+            "halofyai",
+            "lxl0825",
+            "rokbenko"
+          ],
+          "suggested_watch_keywords": [
+            "agent",
+            "agents",
+            "your",
+            "claude",
+            "coding",
+            "you",
+            "llm",
+            "mcp"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Memory:2026-08-29:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JordyZomer/lemmalog\", \"source_url\": \"https://github.com/JordyZomer/lemmalog\", \"published_at\": \"2026-08-27T07:06:55Z\", \"match_score\": 0.63, \"matched_keywords\": [\"agent memory\", \"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"halofyai/halofy\", \"source_url\": \"https://github.com/halofyai/halofy\", \"published_at\": \"2026-08-22T06:09:53Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lxl0825/RagMempool\", \"source_url\": \"https://github.com/lxl0825/RagMempool\", \"published_at\": \"2026-08-26T02:12:18Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OnlyTerp/opengrok\", \"source_url\": \"https://github.com/OnlyTerp/opengrok\", \"published_at\": \"2026-08-27T18:30:44Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ApodexAI/FrontierAgent\", \"source_url\": \"https://github.com/ApodexAI/FrontierAgent\", \"published_at\": \"2026-08-22T05:07:35Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kgoedecke/doop\", \"source_url\": \"https://github.com/kgoedecke/doop\", \"published_at\": \"2026-08-22T15:40:51Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rokbenko/quackd\", \"source_url\": \"https://github.com/rokbenko/quackd\", \"published_at\": \"2026-08-28T09:09:16Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"acryldev/acryl\", \"source_url\": \"https://github.com/acryldev/acryl\", \"published_at\": \"2026-08-25T15:53:56Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 12 个。代表性目标包括JordyZomer/lemmalog、halofyai/halofy、lxl0825/RagMempool、OnlyTerp/opengrok、ApodexAI/FrontierAgent等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 713，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、ReAct等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、OnlyTerp、JordyZomer、ApodexAI、kgoedecke、halofyai、lxl0825、rokbenko，累计提及 15 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、your、claude、coding、you、llm、mcp等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Memory 本轮由论文 0 条、GitHub 项目 12 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向MCP、ReAct、agent、agents、your、claude等线索，代表条目包括JordyZomer/lemmalog、halofyai/halofy、lxl0825/RagMempool、OnlyTerp/opengrok，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 12 个 GitHub 项目，24 小时 star 增量约 713，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 4 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及OpenAI、OnlyTerp、JordyZomer、ApodexAI、kgoedecke、halofyai，累计提及 15 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察agent、agents、your、claude、coding、you、llm、mcp是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "JordyZomer/lemmalog",
+                "url": "https://github.com/JordyZomer/lemmalog",
+                "source": "github",
+                "reason": "命中 agent memory、memory，匹配分 0.63，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "halofyai/halofy",
+                "url": "https://github.com/halofyai/halofy",
+                "source": "github",
+                "reason": "命中 memory，匹配分 0.35，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "lxl0825/RagMempool",
+                "url": "https://github.com/lxl0825/RagMempool",
+                "source": "github",
+                "reason": "命中 memory，匹配分 0.28，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "OnlyTerp/opengrok",
+                "url": "https://github.com/OnlyTerp/opengrok",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ApodexAI/FrontierAgent",
+                "url": "https://github.com/ApodexAI/FrontierAgent",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "kgoedecke/doop",
+                "url": "https://github.com/kgoedecke/doop",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "rokbenko/quackd",
+                "url": "https://github.com/rokbenko/quackd",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "acryldev/acryl",
+                "url": "https://github.com/acryldev/acryl",
+                "source": "github",
+                "reason": "匹配分 0.07，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ADScanPro/Claude-AD",
+                "url": "https://github.com/ADScanPro/Claude-AD",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              },
+              {
+                "title": "hkqr/my-free-code",
+                "url": "https://github.com/hkqr/my-free-code",
+                "source": "github",
+                "reason": "关联到该热点的原始信号链接。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "JordyZomer/lemmalog",
+              "source_url": "https://github.com/JordyZomer/lemmalog",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.63,
+              "matched_terms": [
+                "agent memory",
+                "memory"
+              ],
+              "why_included": "命中 agent memory、memory，匹配分 0.63，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "halofyai/halofy",
+              "source_url": "https://github.com/halofyai/halofy",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.35,
+              "matched_terms": [
+                "memory"
+              ],
+              "why_included": "命中 memory，匹配分 0.35，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "lxl0825/RagMempool",
+              "source_url": "https://github.com/lxl0825/RagMempool",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.28,
+              "matched_terms": [
+                "memory"
+              ],
+              "why_included": "命中 memory，匹配分 0.28，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "OnlyTerp/opengrok",
+              "source_url": "https://github.com/OnlyTerp/opengrok",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ApodexAI/FrontierAgent",
+              "source_url": "https://github.com/ApodexAI/FrontierAgent",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "kgoedecke/doop",
+              "source_url": "https://github.com/kgoedecke/doop",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "rokbenko/quackd",
+              "source_url": "https://github.com/rokbenko/quackd",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "acryldev/acryl",
+              "source_url": "https://github.com/acryldev/acryl",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.07,
+              "matched_terms": [],
+              "why_included": "匹配分 0.07，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 12 个。",
+            "focus_terms": [
+              "MCP",
+              "ReAct",
+              "agent",
+              "agents",
+              "your",
+              "claude",
+              "coding",
+              "you"
+            ],
+            "representative_titles": [
+              "JordyZomer/lemmalog",
+              "halofyai/halofy",
+              "lxl0825/RagMempool",
+              "OnlyTerp/opengrok",
+              "ApodexAI/FrontierAgent"
+            ],
+            "related_institutions": [
+              "OpenAI",
+              "OnlyTerp",
+              "JordyZomer",
+              "ApodexAI",
+              "kgoedecke",
+              "halofyai",
+              "lxl0825",
+              "rokbenko"
+            ],
+            "paper_count": 0,
+            "repo_count": 12,
+            "github_star_delta": 713,
+            "method_mentions": 4,
+            "dataset_mentions": 0,
+            "institution_mentions": 15
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-08-29T16"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-08-29T16:45:33.452650+00:00",
+      "dedupe_key": "trend:Memory:2026-08-29:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "AI Coding",
+      "magnitude": 4.08,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "AI Coding",
+          "title": "AI Coding 出现疑似爆发",
+          "magnitude": 4.08,
+          "severity_label": "疑似爆发",
+          "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.08，burst=3.134，growth_rate=-0.96，z_score=-4.514，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 6 个",
+            "24h star 增量 210",
+            "机构集中：itshen, CHENG-LIANG1, acryldev"
+          ],
+          "metrics": {
+            "current_1h_count": 6,
+            "current_24h_count": 6,
+            "current_72h_count": 6,
+            "current_7d_count": 6,
+            "baseline_daily_avg_30d": 174.523,
+            "baseline_daily_std_30d": 36.334,
+            "baseline_72h_avg_30d": 523.57,
+            "growth_rate": -0.96,
+            "z_score": -4.514,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.134,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.167,
+            "institution_signal_score": 0.366,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 6,
+            "github_star_delta": 210,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 7,
+            "burst_score": 3.134,
+            "low_history_confidence": false,
+            "magnitude": 4.08
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "CHENG-LIANG1/real-company-interview-ai-coding-projects",
+              "source_url": "https://github.com/CHENG-LIANG1/real-company-interview-ai-coding-projects",
+              "published_at": "2026-08-26T02:22:48Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "ai coding"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "acryldev/acryl",
+              "source_url": "https://github.com/acryldev/acryl",
+              "published_at": "2026-08-25T15:53:56Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "kharmanskyi/open-steps",
+              "source_url": "https://github.com/kharmanskyi/open-steps",
+              "published_at": "2026-08-25T14:24:24Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "itshen/source-reading-methodology",
+              "source_url": "https://github.com/itshen/source-reading-methodology",
+              "published_at": "2026-08-23T02:51:45Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "hkqr/my-free-code",
+              "source_url": "https://github.com/hkqr/my-free-code",
+              "published_at": "2026-08-27T17:59:23Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "usedotai/dot-reflex",
+              "source_url": "https://github.com/usedotai/dot-reflex",
+              "published_at": "2026-08-28T14:00:16Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/CHENG-LIANG1/real-company-interview-ai-coding-projects",
+            "https://github.com/acryldev/acryl",
+            "https://github.com/hkqr/my-free-code",
+            "https://github.com/itshen/source-reading-methodology",
+            "https://github.com/kharmanskyi/open-steps",
+            "https://github.com/usedotai/dot-reflex"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "itshen",
+            "CHENG-LIANG1",
+            "acryldev",
+            "hkqr",
+            "MIT",
+            "kharmanskyi",
+            "usedotai"
+          ],
+          "suggested_watch_keywords": [
+            "coding",
+            "agent",
+            "ai-coding",
+            "claude-code",
+            "documentation",
+            "llm",
+            "ai-agents",
+            "open-source"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:AI Coding:2026-08-29:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"CHENG-LIANG1/real-company-interview-ai-coding-projects\", \"source_url\": \"https://github.com/CHENG-LIANG1/real-company-interview-ai-coding-projects\", \"published_at\": \"2026-08-26T02:22:48Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"acryldev/acryl\", \"source_url\": \"https://github.com/acryldev/acryl\", \"published_at\": \"2026-08-25T15:53:56Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kharmanskyi/open-steps\", \"source_url\": \"https://github.com/kharmanskyi/open-steps\", \"published_at\": \"2026-08-25T14:24:24Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"itshen/source-reading-methodology\", \"source_url\": \"https://github.com/itshen/source-reading-methodology\", \"published_at\": \"2026-08-23T02:51:45Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hkqr/my-free-code\", \"source_url\": \"https://github.com/hkqr/my-free-code\", \"published_at\": \"2026-08-27T17:59:23Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"usedotai/dot-reflex\", \"source_url\": \"https://github.com/usedotai/dot-reflex\", \"published_at\": \"2026-08-28T14:00:16Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.1）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括CHENG-LIANG1/real-company-interview-ai-coding-projects、acryldev/acryl、kharmanskyi/open-steps、itshen/source-reading-methodology、hkqr/my-free-code等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 210，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及itshen、CHENG-LIANG1、acryldev、hkqr、MIT、kharmanskyi、usedotai，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agent、ai-coding、claude-code、documentation、llm、ai-agents、open-source等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“疑似爆发”（M4.1）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向coding、agent、ai-coding、claude-code、documentation、llm等线索，代表条目包括CHENG-LIANG1/real-company-interview-ai-coding-projects、acryldev/acryl、kharmanskyi/open-steps、itshen/source-reading-methodology，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 210，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及itshen、CHENG-LIANG1、acryldev、hkqr、MIT、kharmanskyi，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察coding、agent、ai-coding、claude-code、documentation、llm、ai-agents、open-source是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "CHENG-LIANG1/real-company-interview-ai-coding-projects",
+                "url": "https://github.com/CHENG-LIANG1/real-company-interview-ai-coding-projects",
+                "source": "github",
+                "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "acryldev/acryl",
+                "url": "https://github.com/acryldev/acryl",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "kharmanskyi/open-steps",
+                "url": "https://github.com/kharmanskyi/open-steps",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "itshen/source-reading-methodology",
+                "url": "https://github.com/itshen/source-reading-methodology",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "hkqr/my-free-code",
+                "url": "https://github.com/hkqr/my-free-code",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "usedotai/dot-reflex",
+                "url": "https://github.com/usedotai/dot-reflex",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "CHENG-LIANG1/real-company-interview-ai-coding-projects",
+              "source_url": "https://github.com/CHENG-LIANG1/real-company-interview-ai-coding-projects",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "ai coding"
+              ],
+              "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "acryldev/acryl",
+              "source_url": "https://github.com/acryldev/acryl",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "kharmanskyi/open-steps",
+              "source_url": "https://github.com/kharmanskyi/open-steps",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "itshen/source-reading-methodology",
+              "source_url": "https://github.com/itshen/source-reading-methodology",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "hkqr/my-free-code",
+              "source_url": "https://github.com/hkqr/my-free-code",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "usedotai/dot-reflex",
+              "source_url": "https://github.com/usedotai/dot-reflex",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 6 个。",
+            "focus_terms": [
+              "coding",
+              "agent",
+              "ai-coding",
+              "claude-code",
+              "documentation",
+              "llm",
+              "ai-agents",
+              "open-source"
+            ],
+            "representative_titles": [
+              "CHENG-LIANG1/real-company-interview-ai-coding-projects",
+              "acryldev/acryl",
+              "kharmanskyi/open-steps",
+              "itshen/source-reading-methodology",
+              "hkqr/my-free-code"
+            ],
+            "related_institutions": [
+              "itshen",
+              "CHENG-LIANG1",
+              "acryldev",
+              "hkqr",
+              "MIT",
+              "kharmanskyi",
+              "usedotai"
+            ],
+            "paper_count": 0,
+            "repo_count": 6,
+            "github_star_delta": 210,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 7
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-08-29T16"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-08-29T16:45:33.452650+00:00",
+      "dedupe_key": "trend:AI Coding:2026-08-29:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
