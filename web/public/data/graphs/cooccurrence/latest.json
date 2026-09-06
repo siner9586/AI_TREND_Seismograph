@@ -1,5 +1,5 @@
 {
-  "window": "2026-09-06T15",
+  "window": "2026-09-06T18",
   "nodes": [
     {
       "id": "agents",
@@ -11,7 +11,7 @@
     {
       "id": "rag",
       "label": "RAG",
-      "type": "method",
+      "type": "topic",
       "count": 16,
       "weight": 0.896
     },
@@ -19,15 +19,15 @@
       "id": "model-context-protocol",
       "label": "Model Context Protocol",
       "type": "topic",
-      "count": 12,
-      "weight": 0.722
+      "count": 11,
+      "weight": 0.678
     },
     {
       "id": "tool-use",
       "label": "Tool Use",
       "type": "topic",
-      "count": 10,
-      "weight": 0.635
+      "count": 9,
+      "weight": 0.591
     },
     {
       "id": "agents",
@@ -47,8 +47,8 @@
       "id": "agent",
       "label": "agent",
       "type": "keyword",
-      "count": 6,
-      "weight": 0.461
+      "count": 7,
+      "weight": 0.504
     },
     {
       "id": "world-model",
@@ -116,6 +116,20 @@
     {
       "id": "engineering",
       "label": "engineering",
+      "type": "keyword",
+      "count": 3,
+      "weight": 0.33
+    },
+    {
+      "id": "curated",
+      "label": "curated",
+      "type": "keyword",
+      "count": 3,
+      "weight": 0.33
+    },
+    {
+      "id": "list",
+      "label": "list",
       "type": "keyword",
       "count": 3,
       "weight": 0.33
@@ -233,20 +247,6 @@
       "weight": 0.287
     },
     {
-      "id": "curated",
-      "label": "curated",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.287
-    },
-    {
-      "id": "list",
-      "label": "list",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.287
-    },
-    {
       "id": "reasoning",
       "label": "Reasoning",
       "type": "topic",
@@ -298,6 +298,13 @@
     {
       "id": "codex",
       "label": "codex",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.287
+    },
+    {
+      "id": "skills",
+      "label": "skills",
       "type": "keyword",
       "count": 2,
       "weight": 0.287
@@ -413,500 +420,511 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.243
-    },
-    {
-      "id": "state",
-      "label": "state",
-      "type": "keyword",
-      "count": 1,
-      "weight": 0.243
     }
   ],
   "edges": [
     {
       "source": "agents",
       "target": "model-context-protocol",
-      "cooccurrence_count": 11,
+      "cooccurrence_count": 10,
       "weight": 1.0,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "tool-use",
-      "cooccurrence_count": 10,
-      "weight": 0.909,
+      "cooccurrence_count": 9,
+      "weight": 0.9,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "agents",
       "cooccurrence_count": 8,
-      "weight": 0.727,
+      "weight": 0.8,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "rag",
       "cooccurrence_count": 8,
-      "weight": 0.727,
+      "weight": 0.8,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "rag",
       "cooccurrence_count": 8,
-      "weight": 0.727,
+      "weight": 0.8,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "rag",
       "cooccurrence_count": 8,
-      "weight": 0.727,
+      "weight": 0.8,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "agent",
+      "cooccurrence_count": 7,
+      "weight": 0.7,
+      "windows": [
+        "2026-09-06T18"
       ]
     },
     {
       "source": "tool-use",
       "target": "agents",
       "cooccurrence_count": 6,
-      "weight": 0.545,
+      "weight": 0.6,
       "windows": [
-        "2026-09-06T15"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "tool-use",
-      "cooccurrence_count": 6,
-      "weight": 0.545,
-      "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "agents",
       "cooccurrence_count": 6,
-      "weight": 0.545,
+      "weight": 0.6,
       "windows": [
-        "2026-09-06T15"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "agent",
-      "cooccurrence_count": 6,
-      "weight": 0.545,
-      "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "agents",
       "cooccurrence_count": 5,
-      "weight": 0.455,
+      "weight": 0.5,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "tool-use",
+      "cooccurrence_count": 5,
+      "weight": 0.5,
+      "windows": [
+        "2026-09-06T18"
       ]
     },
     {
       "source": "mcp",
       "target": "model-context-protocol",
       "cooccurrence_count": 5,
-      "weight": 0.455,
+      "weight": 0.5,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "robotics",
       "target": "world-model",
       "cooccurrence_count": 5,
-      "weight": 0.455,
+      "weight": 0.5,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "mcp",
       "cooccurrence_count": 4,
-      "weight": 0.364,
+      "weight": 0.4,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "knowledge",
       "cooccurrence_count": 4,
-      "weight": 0.364,
+      "weight": 0.4,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "engineering",
       "cooccurrence_count": 4,
-      "weight": 0.364,
+      "weight": 0.4,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "rag",
       "cooccurrence_count": 4,
-      "weight": 0.364,
+      "weight": 0.4,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "agents",
       "cooccurrence_count": 3,
-      "weight": 0.273,
+      "weight": 0.3,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "curated",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "list",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "tool-use",
       "cooccurrence_count": 3,
-      "weight": 0.273,
+      "weight": 0.3,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "curated",
+      "target": "list",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "coding",
       "cooccurrence_count": 3,
-      "weight": 0.273,
+      "weight": 0.3,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "coding",
       "cooccurrence_count": 3,
-      "weight": 0.273,
+      "weight": 0.3,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "alignment",
       "target": "llm-security",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "artificial",
       "target": "intelligence",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "intelligence",
       "target": "machine",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "intelligence",
       "target": "platform",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "your",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "model-context-protocol",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "mcp",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "mcp",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "every",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "tool-use",
       "target": "every",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "agent",
+      "target": "curated",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "agent",
+      "target": "list",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-09-06T18"
       ]
     },
     {
       "source": "tool-use",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "curated",
-      "cooccurrence_count": 2,
-      "weight": 0.182,
-      "windows": [
-        "2026-09-06T15"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "list",
-      "cooccurrence_count": 2,
-      "weight": 0.182,
-      "windows": [
-        "2026-09-06T15"
-      ]
-    },
-    {
-      "source": "curated",
-      "target": "list",
-      "cooccurrence_count": 2,
-      "weight": 0.182,
-      "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "reasoning",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "world-model",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "building",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "building",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "coding",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "system",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "research",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "knowledge",
       "target": "rag",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "agents",
-      "cooccurrence_count": 2,
-      "weight": 0.182,
-      "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "agents",
       "target": "engineering",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "agents",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "building",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "practical",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "mcp",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "model-context-protocol",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "agent",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "mcp",
       "target": "rag",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     },
     {
       "source": "rag",
       "target": "course",
       "cooccurrence_count": 2,
-      "weight": 0.182,
+      "weight": 0.2,
       "windows": [
-        "2026-09-06T15"
+        "2026-09-06T18"
       ]
     }
   ]
