@@ -1,5 +1,5 @@
 {
-  "window": "2026-09-07T04",
+  "window": "2026-09-07T12",
   "nodes": [
     {
       "id": "agents",
@@ -19,8 +19,8 @@
       "id": "model-context-protocol",
       "label": "Model Context Protocol",
       "type": "topic",
-      "count": 9,
-      "weight": 0.65
+      "count": 8,
+      "weight": 0.6
     },
     {
       "id": "tool-use",
@@ -58,20 +58,6 @@
       "weight": 0.5
     },
     {
-      "id": "machine",
-      "label": "machine",
-      "type": "keyword",
-      "count": 5,
-      "weight": 0.45
-    },
-    {
-      "id": "mcp",
-      "label": "MCP",
-      "type": "method",
-      "count": 5,
-      "weight": 0.45
-    },
-    {
       "id": "world-model",
       "label": "World Model",
       "type": "topic",
@@ -86,6 +72,27 @@
       "weight": 0.45
     },
     {
+      "id": "machine",
+      "label": "machine",
+      "type": "keyword",
+      "count": 4,
+      "weight": 0.4
+    },
+    {
+      "id": "system",
+      "label": "system",
+      "type": "keyword",
+      "count": 4,
+      "weight": 0.4
+    },
+    {
+      "id": "mcp",
+      "label": "MCP",
+      "type": "method",
+      "count": 4,
+      "weight": 0.4
+    },
+    {
       "id": "free",
       "label": "free",
       "type": "keyword",
@@ -93,15 +100,15 @@
       "weight": 0.35
     },
     {
-      "id": "intelligence",
-      "label": "intelligence",
+      "id": "course",
+      "label": "course",
       "type": "keyword",
       "count": 3,
       "weight": 0.35
     },
     {
-      "id": "system",
-      "label": "system",
+      "id": "engineering",
+      "label": "engineering",
       "type": "keyword",
       "count": 3,
       "weight": 0.35
@@ -121,15 +128,15 @@
       "weight": 0.3
     },
     {
-      "id": "tracking",
-      "label": "tracking",
+      "id": "intelligence",
+      "label": "intelligence",
       "type": "keyword",
       "count": 2,
       "weight": 0.3
     },
     {
-      "id": "course",
-      "label": "course",
+      "id": "tracking",
+      "label": "tracking",
       "type": "keyword",
       "count": 2,
       "weight": 0.3
@@ -156,15 +163,8 @@
       "weight": 0.3
     },
     {
-      "id": "financial-ai",
-      "label": "Financial AI",
-      "type": "topic",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
-      "id": "engineering",
-      "label": "engineering",
+      "id": "materials",
+      "label": "materials",
       "type": "keyword",
       "count": 2,
       "weight": 0.3
@@ -184,22 +184,8 @@
       "weight": 0.3
     },
     {
-      "id": "platform",
-      "label": "platform",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
       "id": "cybersecurity",
       "label": "cybersecurity",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
-      "id": "web",
-      "label": "web",
       "type": "keyword",
       "count": 2,
       "weight": 0.3
@@ -240,22 +226,8 @@
       "weight": 0.3
     },
     {
-      "id": "llm",
-      "label": "llm",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
-      "id": "dreamers-laboratory",
-      "label": "dreamers-laboratory",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
-      "id": "long-context",
-      "label": "Long Context",
+      "id": "evaluation",
+      "label": "Evaluation",
       "type": "topic",
       "count": 2,
       "weight": 0.3
@@ -289,6 +261,27 @@
       "weight": 0.3
     },
     {
+      "id": "multimodal",
+      "label": "multimodal",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
+      "id": "multimodal",
+      "label": "Multimodal",
+      "type": "topic",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
+      "id": "open",
+      "label": "open",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.3
+    },
+    {
       "id": "microduck",
       "label": "microduck",
       "type": "keyword",
@@ -299,13 +292,6 @@
       "id": "reinforcement-learning",
       "label": "Reinforcement Learning",
       "type": "topic",
-      "count": 2,
-      "weight": 0.3
-    },
-    {
-      "id": "open",
-      "label": "open",
-      "type": "keyword",
       "count": 2,
       "weight": 0.3
     },
@@ -420,6 +406,20 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.25
+    },
+    {
+      "id": "machine-readable",
+      "label": "machine-readable",
+      "type": "keyword",
+      "count": 1,
+      "weight": 0.25
+    },
+    {
+      "id": "modelregistry",
+      "label": "modelregistry",
+      "type": "keyword",
+      "count": 1,
+      "weight": 0.25
     }
   ],
   "edges": [
@@ -429,16 +429,7 @@
       "cooccurrence_count": 12,
       "weight": 1.0,
       "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 8,
-      "weight": 0.667,
-      "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -447,7 +438,7 @@
       "cooccurrence_count": 8,
       "weight": 0.667,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -456,16 +447,16 @@
       "cooccurrence_count": 8,
       "weight": 0.667,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
       "source": "agents",
-      "target": "rag",
-      "cooccurrence_count": 8,
-      "weight": 0.667,
+      "target": "model-context-protocol",
+      "cooccurrence_count": 7,
+      "weight": 0.583,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -474,7 +465,7 @@
       "cooccurrence_count": 7,
       "weight": 0.583,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -483,7 +474,16 @@
       "cooccurrence_count": 6,
       "weight": 0.5,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "rag",
+      "cooccurrence_count": 6,
+      "weight": 0.5,
+      "windows": [
+        "2026-09-07T12"
       ]
     },
     {
@@ -492,16 +492,7 @@
       "cooccurrence_count": 5,
       "weight": 0.417,
       "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 5,
-      "weight": 0.417,
-      "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -510,7 +501,7 @@
       "cooccurrence_count": 4,
       "weight": 0.333,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -519,7 +510,7 @@
       "cooccurrence_count": 4,
       "weight": 0.333,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -528,16 +519,16 @@
       "cooccurrence_count": 4,
       "weight": 0.333,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
-      "source": "agents",
-      "target": "mcp",
+      "source": "mcp",
+      "target": "model-context-protocol",
       "cooccurrence_count": 4,
       "weight": 0.333,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -546,7 +537,7 @@
       "cooccurrence_count": 4,
       "weight": 0.333,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -555,16 +546,16 @@
       "cooccurrence_count": 4,
       "weight": 0.333,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
       "source": "agents",
-      "target": "rag",
+      "target": "mcp",
       "cooccurrence_count": 3,
       "weight": 0.25,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -573,25 +564,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "intelligence",
-      "target": "machine",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "intelligence",
-      "target": "platform",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -600,7 +573,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -609,7 +582,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -618,7 +591,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -627,7 +600,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -636,7 +609,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -645,7 +618,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -654,7 +627,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -663,7 +636,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -672,7 +645,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -681,7 +654,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -690,7 +663,25 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "curated",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "list",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
       ]
     },
     {
@@ -699,25 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "curated",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "list",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -726,7 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -735,7 +708,34 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "engineering",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "evaluation",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "evaluation",
+      "target": "engineering",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
       ]
     },
     {
@@ -744,7 +744,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -753,7 +753,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -762,7 +762,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -771,7 +771,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -780,7 +780,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -789,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -798,43 +798,16 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
-      "source": "rag",
-      "target": "dreamers-laboratory",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "research",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "knowledge",
+      "source": "agents",
       "target": "rag",
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "long-context",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -843,7 +816,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -852,7 +825,25 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "research",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "knowledge",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
       ]
     },
     {
@@ -861,7 +852,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -870,7 +861,7 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
@@ -879,7 +870,16 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "evaluation",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
       ]
     },
     {
@@ -888,34 +888,43 @@
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
-      "source": "mcp",
+      "source": "multimodal",
+      "target": "multimodal",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "multimodal",
+      "cooccurrence_count": 2,
+      "weight": 0.167,
+      "windows": [
+        "2026-09-07T12"
+      ]
+    },
+    {
+      "source": "multimodal",
       "target": "rag",
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     },
     {
-      "source": "model-context-protocol",
-      "target": "rag",
+      "source": "rag",
+      "target": "system",
       "cooccurrence_count": 2,
       "weight": 0.167,
       "windows": [
-        "2026-09-07T04"
-      ]
-    },
-    {
-      "source": "mcp",
-      "target": "robotics",
-      "cooccurrence_count": 2,
-      "weight": 0.167,
-      "windows": [
-        "2026-09-07T04"
+        "2026-09-07T12"
       ]
     }
   ]
