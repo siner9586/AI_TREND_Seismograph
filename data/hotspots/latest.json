@@ -1,7 +1,7 @@
 {
-  "snapshot_hour": "2026-09-12T00",
-  "generated_at": "2026-09-12T00:21:39.816843+00:00",
-  "run_id": "hourly-20260912T00-0665688d",
+  "snapshot_hour": "2026-09-12T07",
+  "generated_at": "2026-09-12T07:12:01.964141+00:00",
+  "run_id": "hourly-20260912T07-06b6412d",
   "mode": "hourly",
   "total_items_scanned": 50,
   "total_papers_scanned": 0,
@@ -15,11 +15,11 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "Robotics 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=5.859，growth_rate=-0.945，z_score=-5.927，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=6.061，growth_rate=-0.945，z_score=-5.922，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 157",
-        "方法提及：MCP",
+        "24h star 增量 113",
+        "方法提及：VLA, MCP",
         "机构集中：showlab, OpenWAM-Official, v-modal"
       ],
       "metrics": {
@@ -27,27 +27,27 @@
         "current_24h_count": 7,
         "current_72h_count": 7,
         "current_7d_count": 7,
-        "baseline_daily_avg_30d": 145.526,
-        "baseline_daily_std_30d": 22.37,
-        "baseline_72h_avg_30d": 436.578,
+        "baseline_daily_avg_30d": 145.395,
+        "baseline_daily_std_30d": 22.369,
+        "baseline_72h_avg_30d": 436.186,
         "growth_rate": -0.945,
-        "z_score": -5.927,
+        "z_score": -5.922,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.477,
+        "github_signal_score": 5.456,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
         "institution_signal_score": 0.314,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.381,
+        "method_signal_score": 0.604,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 157,
-        "method_mentions": 1,
+        "github_star_delta": 113,
+        "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 7,
-        "burst_score": 5.859,
+        "burst_score": 6.061,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -108,6 +108,19 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "published_at": "2026-09-09T13:01:05Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "jangtrinh/design-os-3d-blender",
           "source_url": "https://github.com/jangtrinh/design-os-3d-blender",
           "published_at": "2026-09-06T00:18:05Z",
@@ -130,31 +143,19 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-          "published_at": "2026-09-08T04:50:12Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
         "https://github.com/GaTech-RL2/EgoWAM",
         "https://github.com/OpenWAM-Official/OpenWAM",
-        "https://github.com/UMass-Embodied-AGI/SyncWorld",
+        "https://github.com/Phyzicalorg/Phyzical_org",
         "https://github.com/YanjieZe/SR-Paper-List",
         "https://github.com/jangtrinh/design-os-3d-blender",
         "https://github.com/showlab/Show-Harness",
         "https://github.com/v-modal/vmodal_sdk_robotics"
       ],
       "related_methods": [
+        "VLA",
         "MCP"
       ],
       "related_datasets": [],
@@ -162,20 +163,20 @@
         "showlab",
         "OpenWAM-Official",
         "v-modal",
+        "Phyzicalorg",
         "jangtrinh",
         "YanjieZe",
-        "GaTech-RL2",
-        "UMass-Embodied-AGI"
+        "GaTech-RL2"
       ],
       "suggested_watch_keywords": [
         "robotics",
-        "world",
         "agent",
+        "world",
         "action",
         "world-action-model",
         "robotics-algorithms",
-        "verified",
-        "showlab"
+        "data",
+        "robot"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -188,16 +189,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Robotics:2026-09-12:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YanjieZe/SR-Paper-List\", \"source_url\": \"https://github.com/YanjieZe/SR-Paper-List\", \"published_at\": \"2026-09-09T05:28:43Z\", \"match_score\": 0.667, \"matched_keywords\": [\"robot learning\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Show-Harness\", \"source_url\": \"https://github.com/showlab/Show-Harness\", \"published_at\": \"2026-09-07T08:58:08Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenWAM-Official/OpenWAM\", \"source_url\": \"https://github.com/OpenWAM-Official/OpenWAM\", \"published_at\": \"2026-09-06T06:21:09Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"v-modal/vmodal_sdk_robotics\", \"source_url\": \"https://github.com/v-modal/vmodal_sdk_robotics\", \"published_at\": \"2026-09-06T07:05:33Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GaTech-RL2/EgoWAM\", \"source_url\": \"https://github.com/GaTech-RL2/EgoWAM\", \"published_at\": \"2026-09-06T21:25:39Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"UMass-Embodied-AGI/SyncWorld\", \"source_url\": \"https://github.com/UMass-Embodied-AGI/SyncWorld\", \"published_at\": \"2026-09-08T04:50:12Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括YanjieZe/SR-Paper-List、showlab/Show-Harness、OpenWAM-Official/OpenWAM、v-modal/vmodal_sdk_robotics、jangtrinh/design-os-3d-blender等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 157，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、OpenWAM-Official、v-modal、jangtrinh、YanjieZe、GaTech-RL2、UMass-Embodied-AGI，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、world、agent、action、world-action-model、robotics-algorithms、verified、showlab等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YanjieZe/SR-Paper-List\", \"source_url\": \"https://github.com/YanjieZe/SR-Paper-List\", \"published_at\": \"2026-09-09T05:28:43Z\", \"match_score\": 0.667, \"matched_keywords\": [\"robot learning\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Show-Harness\", \"source_url\": \"https://github.com/showlab/Show-Harness\", \"published_at\": \"2026-09-07T08:58:08Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenWAM-Official/OpenWAM\", \"source_url\": \"https://github.com/OpenWAM-Official/OpenWAM\", \"published_at\": \"2026-09-06T06:21:09Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"v-modal/vmodal_sdk_robotics\", \"source_url\": \"https://github.com/v-modal/vmodal_sdk_robotics\", \"published_at\": \"2026-09-06T07:05:33Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Phyzicalorg/Phyzical_org\", \"source_url\": \"https://github.com/Phyzicalorg/Phyzical_org\", \"published_at\": \"2026-09-09T13:01:05Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GaTech-RL2/EgoWAM\", \"source_url\": \"https://github.com/GaTech-RL2/EgoWAM\", \"published_at\": \"2026-09-06T21:25:39Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括YanjieZe/SR-Paper-List、showlab/Show-Harness、OpenWAM-Official/OpenWAM、v-modal/vmodal_sdk_robotics、Phyzicalorg/Phyzical_org等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 113，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、OpenWAM-Official、v-modal、Phyzicalorg、jangtrinh、YanjieZe、GaTech-RL2，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、data、robot等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、robotics、world、agent、action、world-action-model等线索，代表条目包括YanjieZe/SR-Paper-List、showlab/Show-Harness、OpenWAM-Official/OpenWAM、v-modal/vmodal_sdk_robotics，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 157，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及showlab、OpenWAM-Official、v-modal、jangtrinh、YanjieZe、GaTech-RL2，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "内容重点：抓取到的多个目标集中指向VLA、MCP、robotics、agent、world、action等线索，代表条目包括YanjieZe/SR-Paper-List、showlab/Show-Harness、OpenWAM-Official/OpenWAM、v-modal/vmodal_sdk_robotics，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 113，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及showlab、OpenWAM-Official、v-modal、Phyzicalorg、jangtrinh、YanjieZe，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robotics、world、agent、action、world-action-model、robotics-algorithms、verified、showlab是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、data、robot是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -226,6 +227,12 @@
             "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
           },
           {
+            "title": "Phyzicalorg/Phyzical_org",
+            "url": "https://github.com/Phyzicalorg/Phyzical_org",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
             "title": "jangtrinh/design-os-3d-blender",
             "url": "https://github.com/jangtrinh/design-os-3d-blender",
             "source": "github",
@@ -234,12 +241,6 @@
           {
             "title": "GaTech-RL2/EgoWAM",
             "url": "https://github.com/GaTech-RL2/EgoWAM",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "UMass-Embodied-AGI/SyncWorld",
-            "url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
             "source": "github",
             "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
           }
@@ -292,6 +293,17 @@
           "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "jangtrinh/design-os-3d-blender",
           "source_url": "https://github.com/jangtrinh/design-os-3d-blender",
           "source_type": "repo",
@@ -312,52 +324,41 @@
             "robotics"
           ],
           "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
         "source_mix": "当前窗口内捕获到GitHub 项目 7 个。",
         "focus_terms": [
+          "VLA",
           "MCP",
           "robotics",
-          "world",
           "agent",
+          "world",
           "action",
           "world-action-model",
-          "robotics-algorithms",
-          "verified"
+          "robotics-algorithms"
         ],
         "representative_titles": [
           "YanjieZe/SR-Paper-List",
           "showlab/Show-Harness",
           "OpenWAM-Official/OpenWAM",
           "v-modal/vmodal_sdk_robotics",
-          "jangtrinh/design-os-3d-blender"
+          "Phyzicalorg/Phyzical_org"
         ],
         "related_institutions": [
           "showlab",
           "OpenWAM-Official",
           "v-modal",
+          "Phyzicalorg",
           "jangtrinh",
           "YanjieZe",
-          "GaTech-RL2",
-          "UMass-Embodied-AGI"
+          "GaTech-RL2"
         ],
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 157,
-        "method_mentions": 1,
+        "github_star_delta": 113,
+        "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 7
       },
@@ -368,40 +369,40 @@
       "title": "Agents 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Agents 在当前窗口内出现 0 条论文信号和 22 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=10.615，growth_rate=-0.961，z_score=-8.41，cross_source=0.5。",
+      "summary": "Agents 在当前窗口内出现 0 条论文信号和 23 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=10.61，growth_rate=-0.959，z_score=-8.408，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 22 个",
-        "24h star 增量 1291",
+        "GitHub 项目 23 个",
+        "24h star 增量 441",
         "方法提及：MCP, RAG, ReAct",
         "机构集中：showlab, i-am-manware, iamzulx"
       ],
       "metrics": {
-        "current_1h_count": 22,
-        "current_24h_count": 22,
-        "current_72h_count": 22,
-        "current_7d_count": 22,
-        "baseline_daily_avg_30d": 583.291,
-        "baseline_daily_std_30d": 65.738,
-        "baseline_72h_avg_30d": 1749.873,
-        "growth_rate": -0.961,
-        "z_score": -8.41,
+        "current_1h_count": 23,
+        "current_24h_count": 23,
+        "current_72h_count": 23,
+        "current_7d_count": 23,
+        "baseline_daily_avg_30d": 583.627,
+        "baseline_daily_std_30d": 65.674,
+        "baseline_72h_avg_30d": 1750.881,
+        "growth_rate": -0.959,
+        "z_score": -8.408,
         "paper_burst_score": 0.0,
-        "github_signal_score": 9.126,
+        "github_signal_score": 9.085,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.091,
-        "institution_signal_score": 0.289,
+        "institution_concentration_score": 0.087,
+        "institution_signal_score": 0.28,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.489,
+        "method_signal_score": 1.525,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 22,
-        "github_star_delta": 1291,
-        "method_mentions": 14,
+        "repo_count": 23,
+        "github_star_delta": 441,
+        "method_mentions": 15,
         "dataset_mentions": 0,
-        "institution_mentions": 22,
-        "burst_score": 10.615,
+        "institution_mentions": 23,
+        "burst_score": 10.61,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -529,6 +530,7 @@
         "https://github.com/Albertchamberlain/Awesome-OKF",
         "https://github.com/FankChen/tracecrate",
         "https://github.com/Innei/lody-ios",
+        "https://github.com/Phyzicalorg/Phyzical_org",
         "https://github.com/VaderChen/YourDesk",
         "https://github.com/achimala/dream-loop",
         "https://github.com/alchaincyf/huashu-mac-use",
@@ -545,13 +547,14 @@
         "https://github.com/showlab/Awesome-Multimodal-Embodied-Agent",
         "https://github.com/showlab/Show-Harness",
         "https://github.com/songs-aaa/shared-memory-vault",
-        "https://github.com/tshemsedinov/reslop",
-        "https://github.com/viettranx/3dviz-pro-max"
+        "https://github.com/viettranx/3dviz-pro-max",
+        "https://github.com/xiaomoBoy/pi-bluebook"
       ],
       "related_methods": [
         "MCP",
         "RAG",
-        "ReAct"
+        "ReAct",
+        "VLA"
       ],
       "related_datasets": [],
       "related_institutions": [
@@ -567,8 +570,8 @@
       "suggested_watch_keywords": [
         "agent",
         "skill",
-        "code",
         "agents",
+        "code",
         "rag",
         "knowledge",
         "memory",
@@ -586,15 +589,15 @@
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-09-12:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"FankChen/tracecrate\", \"source_url\": \"https://github.com/FankChen/tracecrate\", \"published_at\": \"2026-09-10T09:27:41Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gcjordi/aigraphstudio\", \"source_url\": \"https://github.com/gcjordi/aigraphstudio\", \"published_at\": \"2026-09-07T08:47:20Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Albertchamberlain/Awesome-OKF\", \"source_url\": \"https://github.com/Albertchamberlain/Awesome-OKF\", \"published_at\": \"2026-09-07T06:12:39Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okf-memory/okf-agent-memory\", \"source_url\": \"https://github.com/okf-memory/okf-agent-memory\", \"published_at\": \"2026-09-05T21:26:04Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"quqxui/dsh-memgas\", \"source_url\": \"https://github.com/quqxui/dsh-memgas\", \"published_at\": \"2026-09-05T08:07:47Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Awesome-Multimodal-Embodied-Agent\", \"source_url\": \"https://github.com/showlab/Awesome-Multimodal-Embodied-Agent\", \"published_at\": \"2026-09-10T10:37:56Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"1554151614-maker/pan-campus-agent\", \"source_url\": \"https://github.com/1554151614-maker/pan-campus-agent\", \"published_at\": \"2026-09-07T07:40:09Z\", \"match_score\": 0.475, \"matched_keywords\": [\"agent\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Innei/lody-ios\", \"source_url\": \"https://github.com/Innei/lody-ios\", \"published_at\": \"2026-09-05T18:37:43Z\", \"match_score\": 0.475, \"matched_keywords\": [\"agent\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 22 个。代表性目标包括FankChen/tracecrate、gcjordi/aigraphstudio、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory、quqxui/dsh-memgas等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1291，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 14 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、i-am-manware、iamzulx、Albertchamberlain、songs-aaa、achimala、okf-memory、browser-use，累计提及 22 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、skill、code、agents、rag、knowledge、memory、blender等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 23 个。代表性目标包括FankChen/tracecrate、gcjordi/aigraphstudio、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory、quqxui/dsh-memgas等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 441，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct、VLA等线索，方法提及 15 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、i-am-manware、iamzulx、Albertchamberlain、songs-aaa、achimala、okf-memory、browser-use，累计提及 23 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、skill、agents、code、rag、knowledge、memory、blender等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 22 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agent、skill、code等线索，代表条目包括FankChen/tracecrate、gcjordi/aigraphstudio、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 22 个 GitHub 项目，24 小时 star 增量约 1291，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 14 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及showlab、i-am-manware、iamzulx、Albertchamberlain、songs-aaa、achimala，累计提及 22 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 23 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、VLA、agent、skill等线索，代表条目包括FankChen/tracecrate、gcjordi/aigraphstudio、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 23 个 GitHub 项目，24 小时 star 增量约 441，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 15 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及showlab、i-am-manware、iamzulx、Albertchamberlain、songs-aaa、achimala，累计提及 23 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agent、skill、code、agents、rag、knowledge、memory、blender是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、skill、agents、code、rag、knowledge、memory、blender是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -647,14 +650,14 @@
             "reason": "命中 agent、ReAct，匹配分 0.475，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "VaderChen/YourDesk",
-            "url": "https://github.com/VaderChen/YourDesk",
+            "title": "Phyzicalorg/Phyzical_org",
+            "url": "https://github.com/Phyzicalorg/Phyzical_org",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           },
           {
-            "title": "achimala/dream-loop",
-            "url": "https://github.com/achimala/dream-loop",
+            "title": "VaderChen/YourDesk",
+            "url": "https://github.com/VaderChen/YourDesk",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
@@ -762,16 +765,16 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 22 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 23 个。",
         "focus_terms": [
           "MCP",
           "RAG",
           "ReAct",
+          "VLA",
           "agent",
           "skill",
-          "code",
           "agents",
-          "knowledge"
+          "code"
         ],
         "representative_titles": [
           "FankChen/tracecrate",
@@ -791,11 +794,11 @@
           "browser-use"
         ],
         "paper_count": 0,
-        "repo_count": 22,
-        "github_star_delta": 1291,
-        "method_mentions": 14,
+        "repo_count": 23,
+        "github_star_delta": 441,
+        "method_mentions": 15,
         "dataset_mentions": 0,
-        "institution_mentions": 22
+        "institution_mentions": 23
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -805,10 +808,10 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=6.799，growth_rate=-0.943，z_score=-6.237，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=6.706，growth_rate=-0.943，z_score=-6.203，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 9 个",
-        "24h star 增量 844",
+        "24h star 增量 43",
         "方法提及：RAG, ReAct, MCP",
         "机构集中：vishwaswarup, iamzulx, arnsri33"
       ],
@@ -817,13 +820,13 @@
         "current_24h_count": 9,
         "current_72h_count": 9,
         "current_7d_count": 9,
-        "baseline_daily_avg_30d": 173.063,
-        "baseline_daily_std_30d": 25.304,
-        "baseline_72h_avg_30d": 519.19,
+        "baseline_daily_avg_30d": 173.085,
+        "baseline_daily_std_30d": 25.451,
+        "baseline_72h_avg_30d": 519.254,
         "growth_rate": -0.943,
-        "z_score": -6.237,
+        "z_score": -6.203,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.432,
+        "github_signal_score": 5.339,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.111,
@@ -833,11 +836,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 844,
+        "github_star_delta": 43,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 9,
-        "burst_score": 6.799,
+        "burst_score": 6.706,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -980,7 +983,7 @@
         "1554151614-maker",
         "gcjordi",
         "jfan2202-alt",
-        "akira399"
+        "quqxui"
       ],
       "suggested_watch_keywords": [
         "rag",
@@ -1003,11 +1006,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:RAG:2026-09-12:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"arnsri33/embedflow\", \"source_url\": \"https://github.com/arnsri33/embedflow\", \"published_at\": \"2026-09-07T20:10:13Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bluesky585/nibble\", \"source_url\": \"https://github.com/bluesky585/nibble\", \"published_at\": \"2026-09-08T06:58:42Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"quqxui/dsh-memgas\", \"source_url\": \"https://github.com/quqxui/dsh-memgas\", \"published_at\": \"2026-09-05T08:07:47Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vishwaswarup/portfolio\", \"source_url\": \"https://github.com/vishwaswarup/portfolio\", \"published_at\": \"2026-09-09T04:03:55Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"iamzulx/crypto-rag\", \"source_url\": \"https://github.com/iamzulx/crypto-rag\", \"published_at\": \"2026-09-05T06:20:08Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"1554151614-maker/pan-campus-agent\", \"source_url\": \"https://github.com/1554151614-maker/pan-campus-agent\", \"published_at\": \"2026-09-07T07:40:09Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gcjordi/aigraphstudio\", \"source_url\": \"https://github.com/gcjordi/aigraphstudio\", \"published_at\": \"2026-09-07T08:47:20Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jfan2202-alt/course-compass-agent\", \"source_url\": \"https://github.com/jfan2202-alt/course-compass-agent\", \"published_at\": \"2026-09-05T10:11:06Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括arnsri33/embedflow、bluesky585/nibble、quqxui/dsh-memgas、vishwaswarup/portfolio、iamzulx/crypto-rag等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 844，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCP等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及vishwaswarup、iamzulx、arnsri33、bluesky585、1554151614-maker、gcjordi、jfan2202-alt、akira399，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、data、ai-agents、portfolio、vishwaswarup、you、can、find等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括arnsri33/embedflow、bluesky585/nibble、quqxui/dsh-memgas、vishwaswarup/portfolio、iamzulx/crypto-rag等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 43，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCP等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及vishwaswarup、iamzulx、arnsri33、bluesky585、1554151614-maker、gcjordi、jfan2202-alt、quqxui，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、data、ai-agents、portfolio、vishwaswarup、you、can、find等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：RAG 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCP、data、ai-agents、portfolio等线索，代表条目包括arnsri33/embedflow、bluesky585/nibble、quqxui/dsh-memgas、vishwaswarup/portfolio，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 844，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 43，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及vishwaswarup、iamzulx、arnsri33、bluesky585、1554151614-maker、gcjordi，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1189,11 +1192,11 @@
           "1554151614-maker",
           "gcjordi",
           "jfan2202-alt",
-          "akira399"
+          "quqxui"
         ],
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 844,
+        "github_star_delta": 43,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 9
@@ -1206,10 +1209,10 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "Memory 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=6.284，growth_rate=-0.972，z_score=-3.403，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=6.313，growth_rate=-0.972，z_score=-3.396，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 9 个",
-        "24h star 增量 136",
+        "24h star 增量 152",
         "方法提及：MCP, RAG, ReAct",
         "机构集中：i-am-manware, Albertchamberlain, songs-aaa"
       ],
@@ -1218,13 +1221,13 @@
         "current_24h_count": 9,
         "current_72h_count": 9,
         "current_7d_count": 9,
-        "baseline_daily_avg_30d": 359.085,
-        "baseline_daily_std_30d": 101.879,
-        "baseline_72h_avg_30d": 1077.254,
+        "baseline_daily_avg_30d": 359.285,
+        "baseline_daily_std_30d": 102.145,
+        "baseline_72h_avg_30d": 1077.855,
         "growth_rate": -0.972,
-        "z_score": -3.403,
+        "z_score": -3.396,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.14,
+        "github_signal_score": 5.169,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.111,
@@ -1234,11 +1237,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 136,
+        "github_star_delta": 152,
         "method_mentions": 7,
         "dataset_mentions": 0,
         "institution_mentions": 9,
-        "burst_score": 6.284,
+        "burst_score": 6.313,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -1389,11 +1392,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Memory:2026-09-12:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"quqxui/dsh-memgas\", \"source_url\": \"https://github.com/quqxui/dsh-memgas\", \"published_at\": \"2026-09-05T08:07:47Z\", \"match_score\": 0.63, \"matched_keywords\": [\"long-term memory\", \"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Albertchamberlain/Awesome-OKF\", \"source_url\": \"https://github.com/Albertchamberlain/Awesome-OKF\", \"published_at\": \"2026-09-07T06:12:39Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okf-memory/okf-agent-memory\", \"source_url\": \"https://github.com/okf-memory/okf-agent-memory\", \"published_at\": \"2026-09-05T21:26:04Z\", \"match_score\": 0.35, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"songs-aaa/shared-memory-vault\", \"source_url\": \"https://github.com/songs-aaa/shared-memory-vault\", \"published_at\": \"2026-09-05T05:15:51Z\", \"match_score\": 0.28, \"matched_keywords\": [\"memory\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"i-am-manware/Manware-s-AI-Learning-Toolkit\", \"source_url\": \"https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit\", \"published_at\": \"2026-09-05T16:46:07Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VaderChen/YourDesk\", \"source_url\": \"https://github.com/VaderChen/YourDesk\", \"published_at\": \"2026-09-08T03:53:34Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gcjordi/aigraphstudio\", \"source_url\": \"https://github.com/gcjordi/aigraphstudio\", \"published_at\": \"2026-09-07T08:47:20Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Awesome-Multimodal-Embodied-Agent\", \"source_url\": \"https://github.com/showlab/Awesome-Multimodal-Embodied-Agent\", \"published_at\": \"2026-09-10T10:37:56Z\", \"match_score\": 0.07, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括quqxui/dsh-memgas、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory、songs-aaa/shared-memory-vault、i-am-manware/Manware-s-AI-Learning-Toolkit等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 136，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及i-am-manware、Albertchamberlain、songs-aaa、okf-memory、VaderChen、gcjordi、quqxui、showlab，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、memory、mcp、code、okf、knowledge、agent-memory、agent等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「Memory」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括quqxui/dsh-memgas、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory、songs-aaa/shared-memory-vault、i-am-manware/Manware-s-AI-Learning-Toolkit等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 152，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及i-am-manware、Albertchamberlain、songs-aaa、okf-memory、VaderChen、gcjordi、quqxui、showlab，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、memory、mcp、code、okf、knowledge、agent-memory、agent等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Memory 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、memory、code等线索，代表条目包括quqxui/dsh-memgas、Albertchamberlain/Awesome-OKF、okf-memory/okf-agent-memory、songs-aaa/shared-memory-vault，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 136，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 152，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及i-am-manware、Albertchamberlain、songs-aaa、okf-memory、VaderChen、gcjordi，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1572,7 +1575,7 @@
         ],
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 136,
+        "github_star_delta": 152,
         "method_mentions": 7,
         "dataset_mentions": 0,
         "institution_mentions": 9
@@ -1585,10 +1588,10 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 10 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.162，growth_rate=-0.971，z_score=-4.061，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=8.193，growth_rate=-0.971，z_score=-4.063，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 10 个",
-        "24h star 增量 121",
+        "24h star 增量 140",
         "方法提及：MCP, RAG, ReAct",
         "机构集中：i-am-manware, Albertchamberlain, okf-memory"
       ],
@@ -1597,13 +1600,13 @@
         "current_24h_count": 10,
         "current_72h_count": 10,
         "current_7d_count": 10,
-        "baseline_daily_avg_30d": 372.253,
-        "baseline_daily_std_30d": 88.205,
-        "baseline_72h_avg_30d": 1116.759,
+        "baseline_daily_avg_30d": 372.61,
+        "baseline_daily_std_30d": 88.249,
+        "baseline_72h_avg_30d": 1117.831,
         "growth_rate": -0.971,
-        "z_score": -4.061,
+        "z_score": -4.063,
         "paper_burst_score": 0.0,
-        "github_signal_score": 6.896,
+        "github_signal_score": 6.927,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.1,
@@ -1613,11 +1616,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 10,
-        "github_star_delta": 121,
+        "github_star_delta": 140,
         "method_mentions": 9,
         "dataset_mentions": 0,
         "institution_mentions": 10,
-        "burst_score": 8.162,
+        "burst_score": 8.193,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -1785,11 +1788,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Model Context Protocol:2026-09-12:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okf-memory/okf-agent-memory\", \"source_url\": \"https://github.com/okf-memory/okf-agent-memory\", \"published_at\": \"2026-09-05T21:26:04Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Albertchamberlain/Awesome-OKF\", \"source_url\": \"https://github.com/Albertchamberlain/Awesome-OKF\", \"published_at\": \"2026-09-07T06:12:39Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VaderChen/YourDesk\", \"source_url\": \"https://github.com/VaderChen/YourDesk\", \"published_at\": \"2026-09-08T03:53:34Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"quqxui/dsh-memgas\", \"source_url\": \"https://github.com/quqxui/dsh-memgas\", \"published_at\": \"2026-09-05T08:07:47Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"daishuge/pcb-skill\", \"source_url\": \"https://github.com/daishuge/pcb-skill\", \"published_at\": \"2026-09-08T10:15:23Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"i-am-manware/Manware-s-AI-Learning-Toolkit\", \"source_url\": \"https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit\", \"published_at\": \"2026-09-05T16:46:07Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"gcjordi/aigraphstudio\", \"source_url\": \"https://github.com/gcjordi/aigraphstudio\", \"published_at\": \"2026-09-07T08:47:20Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 10 个。代表性目标包括okf-memory/okf-agent-memory、Albertchamberlain/Awesome-OKF、VaderChen/YourDesk、quqxui/dsh-memgas、jangtrinh/design-os-3d-blender等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 121，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及i-am-manware、Albertchamberlain、okf-memory、VaderChen、gcjordi、quqxui、jangtrinh、showlab，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、mcp、agent、code、okf、knowledge、skills、agent-memory等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 10 个。代表性目标包括okf-memory/okf-agent-memory、Albertchamberlain/Awesome-OKF、VaderChen/YourDesk、quqxui/dsh-memgas、jangtrinh/design-os-3d-blender等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 140，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及i-am-manware、Albertchamberlain、okf-memory、VaderChen、gcjordi、quqxui、jangtrinh、showlab，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、mcp、agent、code、okf、knowledge、skills、agent-memory等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 10 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、agent、code等线索，代表条目包括okf-memory/okf-agent-memory、Albertchamberlain/Awesome-OKF、VaderChen/YourDesk、quqxui/dsh-memgas，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 10 个 GitHub 项目，24 小时 star 增量约 121，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 10 个 GitHub 项目，24 小时 star 增量约 140，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 9 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及i-am-manware、Albertchamberlain、okf-memory、VaderChen、gcjordi、quqxui，累计提及 10 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1978,7 +1981,7 @@
         ],
         "paper_count": 0,
         "repo_count": 10,
-        "github_star_delta": 121,
+        "github_star_delta": 140,
         "method_mentions": 9,
         "dataset_mentions": 0,
         "institution_mentions": 10
@@ -1988,13 +1991,13 @@
     {
       "topic": "Browser Agent",
       "title": "Browser Agent 出现强趋势震荡",
-      "magnitude": 5.18,
+      "magnitude": 5.19,
       "severity_label": "强趋势震荡",
       "summary": "Browser Agent 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.18，burst=3.961，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.19，burst=3.971，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
-        "24h star 增量 9",
+        "24h star 增量 10",
         "机构集中：browser-use"
       ],
       "metrics": {
@@ -2008,7 +2011,7 @@
         "growth_rate": -0.92,
         "z_score": -23.0,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.961,
+        "github_signal_score": 3.971,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 1.0,
@@ -2018,13 +2021,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 9,
+        "github_star_delta": 10,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 1,
-        "burst_score": 3.961,
+        "burst_score": 3.971,
         "low_history_confidence": false,
-        "magnitude": 5.18
+        "magnitude": 5.19
       },
       "evidence": [
         {
@@ -2070,11 +2073,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Browser Agent:2026-09-12:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"browser-use/browser-use-pi\", \"source_url\": \"https://github.com/browser-use/browser-use-pi\", \"published_at\": \"2026-09-05T19:47:45Z\", \"match_score\": 0.613, \"matched_keywords\": [\"browser-use\", \"web agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Browser Agent」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括browser-use/browser-use-pi等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 9，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及browser-use，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察browser-use、browser-use-pi、tiny、typescript、web、agent、hill、climbed等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
+      "curated_summary": "本次抓取围绕「Browser Agent」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括browser-use/browser-use-pi等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 10，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及browser-use，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察browser-use、browser-use-pi、tiny、typescript、web、agent、hill、climbed等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
       "signal_takeaways": [
         "总体判断：Browser Agent 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“强趋势震荡”（M5.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向browser-use、browser-use-pi、tiny、typescript、web、agent等线索，代表条目包括browser-use/browser-use-pi，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 9，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 10，说明该方向在开源生态中已出现可量化的短期关注度。",
         "机构与账号归纳：相关信号涉及browser-use，累计提及 1 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察browser-use、browser-use-pi、tiny、typescript、web、agent、hill、climbed是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
@@ -2124,7 +2127,7 @@
         ],
         "paper_count": 0,
         "repo_count": 1,
-        "github_star_delta": 9,
+        "github_star_delta": 10,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 1
@@ -2132,16 +2135,16 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
-      "topic": "Vision-Language-Action Model",
-      "title": "Vision-Language-Action Model 出现疑似爆发",
-      "magnitude": 4.45,
+      "topic": "Embodied AI",
+      "title": "Embodied AI 出现疑似爆发",
+      "magnitude": 4.54,
       "severity_label": "疑似爆发",
-      "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.45，burst=3.806，growth_rate=-0.938，z_score=-7.365，cross_source=0.5。",
+      "summary": "Embodied AI 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.54，burst=4.016，growth_rate=-0.944，z_score=-8.332，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 157",
-        "方法提及：MCP",
+        "24h star 增量 113",
+        "方法提及：VLA, MCP",
         "机构集中：showlab, OpenWAM-Official, v-modal"
       ],
       "metrics": {
@@ -2149,29 +2152,362 @@
         "current_24h_count": 7,
         "current_72h_count": 7,
         "current_7d_count": 7,
-        "baseline_daily_avg_30d": 128.949,
-        "baseline_daily_std_30d": 15.559,
-        "baseline_72h_avg_30d": 386.847,
-        "growth_rate": -0.938,
-        "z_score": -7.365,
+        "baseline_daily_avg_30d": 142.909,
+        "baseline_daily_std_30d": 15.312,
+        "baseline_72h_avg_30d": 428.727,
+        "growth_rate": -0.944,
+        "z_score": -8.332,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.424,
+        "github_signal_score": 3.411,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
         "institution_signal_score": 0.314,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 0.381,
+        "method_signal_score": 0.604,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 157,
-        "method_mentions": 1,
+        "github_star_delta": 113,
+        "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 7,
-        "burst_score": 3.806,
+        "burst_score": 4.016,
+        "low_history_confidence": true,
+        "magnitude": 4.54
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "published_at": "2026-09-09T13:01:05Z",
+          "match_score": 0.417,
+          "matched_keywords": [
+            "embodied ai"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "showlab/Show-Harness",
+          "source_url": "https://github.com/showlab/Show-Harness",
+          "published_at": "2026-09-07T08:58:08Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "OpenWAM-Official/OpenWAM",
+          "source_url": "https://github.com/OpenWAM-Official/OpenWAM",
+          "published_at": "2026-09-06T06:21:09Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "v-modal/vmodal_sdk_robotics",
+          "source_url": "https://github.com/v-modal/vmodal_sdk_robotics",
+          "published_at": "2026-09-06T07:05:33Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "jangtrinh/design-os-3d-blender",
+          "source_url": "https://github.com/jangtrinh/design-os-3d-blender",
+          "published_at": "2026-09-06T00:18:05Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "YanjieZe/SR-Paper-List",
+          "source_url": "https://github.com/YanjieZe/SR-Paper-List",
+          "published_at": "2026-09-09T05:28:43Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "GaTech-RL2/EgoWAM",
+          "source_url": "https://github.com/GaTech-RL2/EgoWAM",
+          "published_at": "2026-09-06T21:25:39Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/GaTech-RL2/EgoWAM",
+        "https://github.com/OpenWAM-Official/OpenWAM",
+        "https://github.com/Phyzicalorg/Phyzical_org",
+        "https://github.com/YanjieZe/SR-Paper-List",
+        "https://github.com/jangtrinh/design-os-3d-blender",
+        "https://github.com/showlab/Show-Harness",
+        "https://github.com/v-modal/vmodal_sdk_robotics"
+      ],
+      "related_methods": [
+        "VLA",
+        "MCP"
+      ],
+      "related_datasets": [],
+      "related_institutions": [
+        "showlab",
+        "OpenWAM-Official",
+        "v-modal",
+        "Phyzicalorg",
+        "jangtrinh",
+        "YanjieZe",
+        "GaTech-RL2"
+      ],
+      "suggested_watch_keywords": [
+        "robotics",
+        "agent",
+        "world",
+        "action",
+        "world-action-model",
+        "robotics-algorithms",
+        "data",
+        "robot"
+      ],
+      "confidence": 0.57,
+      "caveats": [
+        "历史样本不足 30 天，基线置信度较低。"
+      ],
+      "tags": [
+        "GitHub 暴涨",
+        "方法扩散",
+        "机构集中",
+        "开源驱动",
+        "低置信度",
+        "历史不足",
+        "Watchlist 命中"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:Embodied AI:2026-09-12:疑似爆发",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Phyzicalorg/Phyzical_org\", \"source_url\": \"https://github.com/Phyzicalorg/Phyzical_org\", \"published_at\": \"2026-09-09T13:01:05Z\", \"match_score\": 0.417, \"matched_keywords\": [\"embodied ai\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Show-Harness\", \"source_url\": \"https://github.com/showlab/Show-Harness\", \"published_at\": \"2026-09-07T08:58:08Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenWAM-Official/OpenWAM\", \"source_url\": \"https://github.com/OpenWAM-Official/OpenWAM\", \"published_at\": \"2026-09-06T06:21:09Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"v-modal/vmodal_sdk_robotics\", \"source_url\": \"https://github.com/v-modal/vmodal_sdk_robotics\", \"published_at\": \"2026-09-06T07:05:33Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YanjieZe/SR-Paper-List\", \"source_url\": \"https://github.com/YanjieZe/SR-Paper-List\", \"published_at\": \"2026-09-09T05:28:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GaTech-RL2/EgoWAM\", \"source_url\": \"https://github.com/GaTech-RL2/EgoWAM\", \"published_at\": \"2026-09-06T21:25:39Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Embodied AI」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括Phyzicalorg/Phyzical_org、showlab/Show-Harness、OpenWAM-Official/OpenWAM、v-modal/vmodal_sdk_robotics、jangtrinh/design-os-3d-blender等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 113，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、OpenWAM-Official、v-modal、Phyzicalorg、jangtrinh、YanjieZe、GaTech-RL2，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、data、robot等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+      "signal_takeaways": [
+        "总体判断：Embodied AI 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“疑似爆发”（M4.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向VLA、MCP、robotics、agent、world、action等线索，代表条目包括Phyzicalorg/Phyzical_org、showlab/Show-Harness、OpenWAM-Official/OpenWAM、v-modal/vmodal_sdk_robotics，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 113，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及showlab、OpenWAM-Official、v-modal、Phyzicalorg、jangtrinh、YanjieZe，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、data、robot是否继续出现。当前置信度为 0.6，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "Phyzicalorg/Phyzical_org",
+            "url": "https://github.com/Phyzicalorg/Phyzical_org",
+            "source": "github",
+            "reason": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "showlab/Show-Harness",
+            "url": "https://github.com/showlab/Show-Harness",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "OpenWAM-Official/OpenWAM",
+            "url": "https://github.com/OpenWAM-Official/OpenWAM",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "v-modal/vmodal_sdk_robotics",
+            "url": "https://github.com/v-modal/vmodal_sdk_robotics",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "jangtrinh/design-os-3d-blender",
+            "url": "https://github.com/jangtrinh/design-os-3d-blender",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "YanjieZe/SR-Paper-List",
+            "url": "https://github.com/YanjieZe/SR-Paper-List",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "GaTech-RL2/EgoWAM",
+            "url": "https://github.com/GaTech-RL2/EgoWAM",
+            "source": "github",
+            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.417,
+          "matched_terms": [
+            "embodied ai"
+          ],
+          "why_included": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "showlab/Show-Harness",
+          "source_url": "https://github.com/showlab/Show-Harness",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "OpenWAM-Official/OpenWAM",
+          "source_url": "https://github.com/OpenWAM-Official/OpenWAM",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "v-modal/vmodal_sdk_robotics",
+          "source_url": "https://github.com/v-modal/vmodal_sdk_robotics",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "jangtrinh/design-os-3d-blender",
+          "source_url": "https://github.com/jangtrinh/design-os-3d-blender",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "YanjieZe/SR-Paper-List",
+          "source_url": "https://github.com/YanjieZe/SR-Paper-List",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "GaTech-RL2/EgoWAM",
+          "source_url": "https://github.com/GaTech-RL2/EgoWAM",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.083,
+          "matched_terms": [],
+          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 7 个。",
+        "focus_terms": [
+          "VLA",
+          "MCP",
+          "robotics",
+          "agent",
+          "world",
+          "action",
+          "world-action-model",
+          "robotics-algorithms"
+        ],
+        "representative_titles": [
+          "Phyzicalorg/Phyzical_org",
+          "showlab/Show-Harness",
+          "OpenWAM-Official/OpenWAM",
+          "v-modal/vmodal_sdk_robotics",
+          "jangtrinh/design-os-3d-blender"
+        ],
+        "related_institutions": [
+          "showlab",
+          "OpenWAM-Official",
+          "v-modal",
+          "Phyzicalorg",
+          "jangtrinh",
+          "YanjieZe",
+          "GaTech-RL2"
+        ],
+        "paper_count": 0,
+        "repo_count": 7,
+        "github_star_delta": 113,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 7
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
+      "topic": "Vision-Language-Action Model",
+      "title": "Vision-Language-Action Model 出现疑似爆发",
+      "magnitude": 4.54,
+      "severity_label": "疑似爆发",
+      "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.54，burst=4.016，growth_rate=-0.939，z_score=-7.236，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 7 个",
+        "24h star 增量 113",
+        "方法提及：VLA, MCP",
+        "机构集中：showlab, OpenWAM-Official, v-modal"
+      ],
+      "metrics": {
+        "current_1h_count": 7,
+        "current_24h_count": 7,
+        "current_72h_count": 7,
+        "current_7d_count": 7,
+        "baseline_daily_avg_30d": 129.277,
+        "baseline_daily_std_30d": 15.898,
+        "baseline_72h_avg_30d": 387.832,
+        "growth_rate": -0.939,
+        "z_score": -7.236,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 3.411,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.143,
+        "institution_signal_score": 0.314,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 0.604,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 7,
+        "github_star_delta": 113,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 7,
+        "burst_score": 4.016,
         "low_history_confidence": false,
-        "magnitude": 4.45
+        "magnitude": 4.54
       },
       "evidence": [
         {
@@ -2183,6 +2519,19 @@
           "match_score": 0.417,
           "matched_keywords": [
             "action model"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "published_at": "2026-09-09T13:01:05Z",
+          "match_score": 0.417,
+          "matched_keywords": [
+            "VLA"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -2241,29 +2590,19 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-          "published_at": "2026-09-08T04:50:12Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
         "https://github.com/GaTech-RL2/EgoWAM",
         "https://github.com/OpenWAM-Official/OpenWAM",
-        "https://github.com/UMass-Embodied-AGI/SyncWorld",
+        "https://github.com/Phyzicalorg/Phyzical_org",
         "https://github.com/YanjieZe/SR-Paper-List",
         "https://github.com/jangtrinh/design-os-3d-blender",
         "https://github.com/showlab/Show-Harness",
         "https://github.com/v-modal/vmodal_sdk_robotics"
       ],
       "related_methods": [
+        "VLA",
         "MCP"
       ],
       "related_datasets": [],
@@ -2271,20 +2610,20 @@
         "showlab",
         "OpenWAM-Official",
         "v-modal",
+        "Phyzicalorg",
         "jangtrinh",
         "YanjieZe",
-        "GaTech-RL2",
-        "UMass-Embodied-AGI"
+        "GaTech-RL2"
       ],
       "suggested_watch_keywords": [
         "robotics",
-        "world",
         "agent",
+        "world",
         "action",
         "world-action-model",
         "robotics-algorithms",
-        "verified",
-        "showlab"
+        "data",
+        "robot"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -2297,16 +2636,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Vision-Language-Action Model:2026-09-12:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenWAM-Official/OpenWAM\", \"source_url\": \"https://github.com/OpenWAM-Official/OpenWAM\", \"published_at\": \"2026-09-06T06:21:09Z\", \"match_score\": 0.417, \"matched_keywords\": [\"action model\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Show-Harness\", \"source_url\": \"https://github.com/showlab/Show-Harness\", \"published_at\": \"2026-09-07T08:58:08Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"v-modal/vmodal_sdk_robotics\", \"source_url\": \"https://github.com/v-modal/vmodal_sdk_robotics\", \"published_at\": \"2026-09-06T07:05:33Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YanjieZe/SR-Paper-List\", \"source_url\": \"https://github.com/YanjieZe/SR-Paper-List\", \"published_at\": \"2026-09-09T05:28:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GaTech-RL2/EgoWAM\", \"source_url\": \"https://github.com/GaTech-RL2/EgoWAM\", \"published_at\": \"2026-09-06T21:25:39Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"UMass-Embodied-AGI/SyncWorld\", \"source_url\": \"https://github.com/UMass-Embodied-AGI/SyncWorld\", \"published_at\": \"2026-09-08T04:50:12Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括OpenWAM-Official/OpenWAM、showlab/Show-Harness、v-modal/vmodal_sdk_robotics、jangtrinh/design-os-3d-blender、YanjieZe/SR-Paper-List等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 157，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、OpenWAM-Official、v-modal、jangtrinh、YanjieZe、GaTech-RL2、UMass-Embodied-AGI，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、world、agent、action、world-action-model、robotics-algorithms、verified、showlab等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenWAM-Official/OpenWAM\", \"source_url\": \"https://github.com/OpenWAM-Official/OpenWAM\", \"published_at\": \"2026-09-06T06:21:09Z\", \"match_score\": 0.417, \"matched_keywords\": [\"action model\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Phyzicalorg/Phyzical_org\", \"source_url\": \"https://github.com/Phyzicalorg/Phyzical_org\", \"published_at\": \"2026-09-09T13:01:05Z\", \"match_score\": 0.417, \"matched_keywords\": [\"VLA\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Show-Harness\", \"source_url\": \"https://github.com/showlab/Show-Harness\", \"published_at\": \"2026-09-07T08:58:08Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"v-modal/vmodal_sdk_robotics\", \"source_url\": \"https://github.com/v-modal/vmodal_sdk_robotics\", \"published_at\": \"2026-09-06T07:05:33Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YanjieZe/SR-Paper-List\", \"source_url\": \"https://github.com/YanjieZe/SR-Paper-List\", \"published_at\": \"2026-09-09T05:28:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GaTech-RL2/EgoWAM\", \"source_url\": \"https://github.com/GaTech-RL2/EgoWAM\", \"published_at\": \"2026-09-06T21:25:39Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括OpenWAM-Official/OpenWAM、Phyzicalorg/Phyzical_org、showlab/Show-Harness、v-modal/vmodal_sdk_robotics、jangtrinh/design-os-3d-blender等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 113，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、MCP等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、OpenWAM-Official、v-modal、Phyzicalorg、jangtrinh、YanjieZe、GaTech-RL2，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、data、robot等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“疑似爆发”（M4.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、robotics、world、agent、action、world-action-model等线索，代表条目包括OpenWAM-Official/OpenWAM、showlab/Show-Harness、v-modal/vmodal_sdk_robotics、jangtrinh/design-os-3d-blender，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 157，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及showlab、OpenWAM-Official、v-modal、jangtrinh、YanjieZe、GaTech-RL2，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "内容重点：抓取到的多个目标集中指向VLA、MCP、robotics、agent、world、action等线索，代表条目包括OpenWAM-Official/OpenWAM、Phyzicalorg/Phyzical_org、showlab/Show-Harness、v-modal/vmodal_sdk_robotics，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 113，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及showlab、OpenWAM-Official、v-modal、Phyzicalorg、jangtrinh、YanjieZe，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robotics、world、agent、action、world-action-model、robotics-algorithms、verified、showlab是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、data、robot是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -2315,6 +2654,12 @@
             "url": "https://github.com/OpenWAM-Official/OpenWAM",
             "source": "github",
             "reason": "命中 action model，匹配分 0.417，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "Phyzicalorg/Phyzical_org",
+            "url": "https://github.com/Phyzicalorg/Phyzical_org",
+            "source": "github",
+            "reason": "命中 VLA，匹配分 0.417，因此被纳入本轮代表性证据。"
           },
           {
             "title": "showlab/Show-Harness",
@@ -2343,12 +2688,6 @@
           {
             "title": "GaTech-RL2/EgoWAM",
             "url": "https://github.com/GaTech-RL2/EgoWAM",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "UMass-Embodied-AGI/SyncWorld",
-            "url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
             "source": "github",
             "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           }
@@ -2367,6 +2706,17 @@
           "why_included": "命中 action model，匹配分 0.417，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.417,
+          "matched_terms": [
+            "VLA"
+          ],
+          "why_included": "命中 VLA，匹配分 0.417，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "showlab/Show-Harness",
           "source_url": "https://github.com/showlab/Show-Harness",
           "source_type": "repo",
@@ -2405,15 +2755,6 @@
         {
           "title": "GaTech-RL2/EgoWAM",
           "source_url": "https://github.com/GaTech-RL2/EgoWAM",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.083,
@@ -2425,438 +2766,81 @@
         "dominant_source": "开源项目",
         "source_mix": "当前窗口内捕获到GitHub 项目 7 个。",
         "focus_terms": [
-          "MCP",
-          "robotics",
-          "world",
-          "agent",
-          "action",
-          "world-action-model",
-          "robotics-algorithms",
-          "verified"
-        ],
-        "representative_titles": [
-          "OpenWAM-Official/OpenWAM",
-          "showlab/Show-Harness",
-          "v-modal/vmodal_sdk_robotics",
-          "jangtrinh/design-os-3d-blender",
-          "YanjieZe/SR-Paper-List"
-        ],
-        "related_institutions": [
-          "showlab",
-          "OpenWAM-Official",
-          "v-modal",
-          "jangtrinh",
-          "YanjieZe",
-          "GaTech-RL2",
-          "UMass-Embodied-AGI"
-        ],
-        "paper_count": 0,
-        "repo_count": 7,
-        "github_star_delta": 157,
-        "method_mentions": 1,
-        "dataset_mentions": 0,
-        "institution_mentions": 7
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
-      "topic": "World Model",
-      "title": "World Model 出现疑似爆发",
-      "magnitude": 4.44,
-      "severity_label": "疑似爆发",
-      "summary": "World Model 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.44，burst=3.817，growth_rate=-0.943，z_score=-5.37，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 8 个",
-        "24h star 增量 174",
-        "方法提及：MCP",
-        "机构集中：showlab, OpenWAM-Official, v-modal"
-      ],
-      "metrics": {
-        "current_1h_count": 8,
-        "current_24h_count": 8,
-        "current_72h_count": 8,
-        "current_7d_count": 8,
-        "baseline_daily_avg_30d": 157.793,
-        "baseline_daily_std_30d": 26.896,
-        "baseline_72h_avg_30d": 473.379,
-        "growth_rate": -0.943,
-        "z_score": -5.37,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 3.436,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.125,
-        "institution_signal_score": 0.288,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 0.381,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 8,
-        "github_star_delta": 174,
-        "method_mentions": 1,
-        "dataset_mentions": 0,
-        "institution_mentions": 8,
-        "burst_score": 3.817,
-        "low_history_confidence": false,
-        "magnitude": 4.44
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-          "published_at": "2026-09-08T04:50:12Z",
-          "match_score": 0.417,
-          "matched_keywords": [
-            "world models"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "v-modal/vmodal_sdk_robotics",
-          "source_url": "https://github.com/v-modal/vmodal_sdk_robotics",
-          "published_at": "2026-09-06T07:05:33Z",
-          "match_score": 0.167,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "showlab/Show-Harness",
-          "source_url": "https://github.com/showlab/Show-Harness",
-          "published_at": "2026-09-07T08:58:08Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "OpenWAM-Official/OpenWAM",
-          "source_url": "https://github.com/OpenWAM-Official/OpenWAM",
-          "published_at": "2026-09-06T06:21:09Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "jangtrinh/design-os-3d-blender",
-          "source_url": "https://github.com/jangtrinh/design-os-3d-blender",
-          "published_at": "2026-09-06T00:18:05Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "YanjieZe/SR-Paper-List",
-          "source_url": "https://github.com/YanjieZe/SR-Paper-List",
-          "published_at": "2026-09-09T05:28:43Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "GaTech-RL2/EgoWAM",
-          "source_url": "https://github.com/GaTech-RL2/EgoWAM",
-          "published_at": "2026-09-06T21:25:39Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "tshemsedinov/reslop",
-          "source_url": "https://github.com/tshemsedinov/reslop",
-          "published_at": "2026-09-06T21:28:21Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/GaTech-RL2/EgoWAM",
-        "https://github.com/OpenWAM-Official/OpenWAM",
-        "https://github.com/UMass-Embodied-AGI/SyncWorld",
-        "https://github.com/YanjieZe/SR-Paper-List",
-        "https://github.com/jangtrinh/design-os-3d-blender",
-        "https://github.com/showlab/Show-Harness",
-        "https://github.com/tshemsedinov/reslop",
-        "https://github.com/v-modal/vmodal_sdk_robotics"
-      ],
-      "related_methods": [
-        "MCP"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "showlab",
-        "OpenWAM-Official",
-        "v-modal",
-        "jangtrinh",
-        "YanjieZe",
-        "GaTech-RL2",
-        "UMass-Embodied-AGI",
-        "tshemsedinov"
-      ],
-      "suggested_watch_keywords": [
-        "robotics",
-        "agent",
-        "world",
-        "action",
-        "world-action-model",
-        "robotics-algorithms",
-        "verified",
-        "showlab"
-      ],
-      "confidence": 0.72,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动",
-        "Watchlist 命中"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:World Model:2026-09-12:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"UMass-Embodied-AGI/SyncWorld\", \"source_url\": \"https://github.com/UMass-Embodied-AGI/SyncWorld\", \"published_at\": \"2026-09-08T04:50:12Z\", \"match_score\": 0.417, \"matched_keywords\": [\"world models\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"v-modal/vmodal_sdk_robotics\", \"source_url\": \"https://github.com/v-modal/vmodal_sdk_robotics\", \"published_at\": \"2026-09-06T07:05:33Z\", \"match_score\": 0.167, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"showlab/Show-Harness\", \"source_url\": \"https://github.com/showlab/Show-Harness\", \"published_at\": \"2026-09-07T08:58:08Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OpenWAM-Official/OpenWAM\", \"source_url\": \"https://github.com/OpenWAM-Official/OpenWAM\", \"published_at\": \"2026-09-06T06:21:09Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jangtrinh/design-os-3d-blender\", \"source_url\": \"https://github.com/jangtrinh/design-os-3d-blender\", \"published_at\": \"2026-09-06T00:18:05Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YanjieZe/SR-Paper-List\", \"source_url\": \"https://github.com/YanjieZe/SR-Paper-List\", \"published_at\": \"2026-09-09T05:28:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GaTech-RL2/EgoWAM\", \"source_url\": \"https://github.com/GaTech-RL2/EgoWAM\", \"published_at\": \"2026-09-06T21:25:39Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"tshemsedinov/reslop\", \"source_url\": \"https://github.com/tshemsedinov/reslop\", \"published_at\": \"2026-09-06T21:28:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「World Model」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括UMass-Embodied-AGI/SyncWorld、v-modal/vmodal_sdk_robotics、showlab/Show-Harness、OpenWAM-Official/OpenWAM、jangtrinh/design-os-3d-blender等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 174，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及showlab、OpenWAM-Official、v-modal、jangtrinh、YanjieZe、GaTech-RL2、UMass-Embodied-AGI、tshemsedinov，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、verified、showlab等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
-      "signal_takeaways": [
-        "总体判断：World Model 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“疑似爆发”（M4.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、robotics、agent、world、action、world-action-model等线索，代表条目包括UMass-Embodied-AGI/SyncWorld、v-modal/vmodal_sdk_robotics、showlab/Show-Harness、OpenWAM-Official/OpenWAM，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 174，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及showlab、OpenWAM-Official、v-modal、jangtrinh、YanjieZe、GaTech-RL2，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robotics、agent、world、action、world-action-model、robotics-algorithms、verified、showlab是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "UMass-Embodied-AGI/SyncWorld",
-            "url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-            "source": "github",
-            "reason": "命中 world models，匹配分 0.417，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "v-modal/vmodal_sdk_robotics",
-            "url": "https://github.com/v-modal/vmodal_sdk_robotics",
-            "source": "github",
-            "reason": "匹配分 0.167，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "showlab/Show-Harness",
-            "url": "https://github.com/showlab/Show-Harness",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "OpenWAM-Official/OpenWAM",
-            "url": "https://github.com/OpenWAM-Official/OpenWAM",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "jangtrinh/design-os-3d-blender",
-            "url": "https://github.com/jangtrinh/design-os-3d-blender",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "YanjieZe/SR-Paper-List",
-            "url": "https://github.com/YanjieZe/SR-Paper-List",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "GaTech-RL2/EgoWAM",
-            "url": "https://github.com/GaTech-RL2/EgoWAM",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "tshemsedinov/reslop",
-            "url": "https://github.com/tshemsedinov/reslop",
-            "source": "github",
-            "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.417,
-          "matched_terms": [
-            "world models"
-          ],
-          "why_included": "命中 world models，匹配分 0.417，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "v-modal/vmodal_sdk_robotics",
-          "source_url": "https://github.com/v-modal/vmodal_sdk_robotics",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.167,
-          "matched_terms": [],
-          "why_included": "匹配分 0.167，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "showlab/Show-Harness",
-          "source_url": "https://github.com/showlab/Show-Harness",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "OpenWAM-Official/OpenWAM",
-          "source_url": "https://github.com/OpenWAM-Official/OpenWAM",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "jangtrinh/design-os-3d-blender",
-          "source_url": "https://github.com/jangtrinh/design-os-3d-blender",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "YanjieZe/SR-Paper-List",
-          "source_url": "https://github.com/YanjieZe/SR-Paper-List",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "GaTech-RL2/EgoWAM",
-          "source_url": "https://github.com/GaTech-RL2/EgoWAM",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "tshemsedinov/reslop",
-          "source_url": "https://github.com/tshemsedinov/reslop",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.083,
-          "matched_terms": [],
-          "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
-        "focus_terms": [
+          "VLA",
           "MCP",
           "robotics",
           "agent",
           "world",
           "action",
           "world-action-model",
-          "robotics-algorithms",
-          "verified"
+          "robotics-algorithms"
         ],
         "representative_titles": [
-          "UMass-Embodied-AGI/SyncWorld",
-          "v-modal/vmodal_sdk_robotics",
-          "showlab/Show-Harness",
           "OpenWAM-Official/OpenWAM",
+          "Phyzicalorg/Phyzical_org",
+          "showlab/Show-Harness",
+          "v-modal/vmodal_sdk_robotics",
           "jangtrinh/design-os-3d-blender"
         ],
         "related_institutions": [
           "showlab",
           "OpenWAM-Official",
           "v-modal",
+          "Phyzicalorg",
           "jangtrinh",
           "YanjieZe",
-          "GaTech-RL2",
-          "UMass-Embodied-AGI",
-          "tshemsedinov"
+          "GaTech-RL2"
         ],
         "paper_count": 0,
-        "repo_count": 8,
-        "github_star_delta": 174,
-        "method_mentions": 1,
+        "repo_count": 7,
+        "github_star_delta": 113,
+        "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 8
+        "institution_mentions": 7
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "AI Coding",
       "title": "AI Coding 出现疑似爆发",
-      "magnitude": 4.42,
+      "magnitude": 4.37,
       "severity_label": "疑似爆发",
-      "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.42，burst=3.701，growth_rate=-0.977，z_score=-4.015，cross_source=0.5。",
+      "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+      "calculation_summary": "magnitude=4.37，burst=3.706，growth_rate=-0.971，z_score=-3.938，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 3 个",
-        "24h star 增量 31",
+        "GitHub 项目 4 个",
+        "24h star 增量 34",
         "方法提及：MCP, ReAct",
-        "机构集中：SpikeNOIP, okf-memory, Innei"
+        "机构集中：SpikeNOIP, okf-memory, xiaomoBoy"
       ],
       "metrics": {
-        "current_1h_count": 3,
-        "current_24h_count": 3,
-        "current_72h_count": 3,
-        "current_7d_count": 3,
-        "baseline_daily_avg_30d": 170.228,
-        "baseline_daily_std_30d": 40.652,
-        "baseline_72h_avg_30d": 510.684,
-        "growth_rate": -0.977,
-        "z_score": -4.015,
+        "current_1h_count": 4,
+        "current_24h_count": 4,
+        "current_72h_count": 4,
+        "current_7d_count": 4,
+        "baseline_daily_avg_30d": 170.034,
+        "baseline_daily_std_30d": 41.165,
+        "baseline_72h_avg_30d": 510.102,
+        "growth_rate": -0.971,
+        "z_score": -3.938,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.097,
+        "github_signal_score": 3.101,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.333,
-        "institution_signal_score": 0.536,
+        "institution_concentration_score": 0.25,
+        "institution_signal_score": 0.448,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.604,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 3,
-        "github_star_delta": 31,
+        "repo_count": 4,
+        "github_star_delta": 34,
         "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 3,
-        "burst_score": 3.701,
+        "institution_mentions": 4,
+        "burst_score": 3.706,
         "low_history_confidence": false,
-        "magnitude": 4.42
+        "magnitude": 4.37
       },
       "evidence": [
         {
@@ -2868,6 +2852,19 @@
           "match_score": 0.417,
           "matched_keywords": [
             "ai coding"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "xiaomoBoy/pi-bluebook",
+          "source_url": "https://github.com/xiaomoBoy/pi-bluebook",
+          "published_at": "2026-09-08T12:59:19Z",
+          "match_score": 0.417,
+          "matched_keywords": [
+            "coding agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -2898,7 +2895,8 @@
       "source_urls": [
         "https://github.com/Innei/lody-ios",
         "https://github.com/SpikeNOIP/MachineLearning-playbook",
-        "https://github.com/okf-memory/okf-agent-memory"
+        "https://github.com/okf-memory/okf-agent-memory",
+        "https://github.com/xiaomoBoy/pi-bluebook"
       ],
       "related_methods": [
         "MCP",
@@ -2908,19 +2906,20 @@
       "related_institutions": [
         "SpikeNOIP",
         "okf-memory",
+        "xiaomoBoy",
         "Innei"
       ],
       "suggested_watch_keywords": [
+        "coding",
+        "agent",
+        "coding-agent",
         "machine",
         "spikenoip",
         "machinelearning-playbook",
         "study",
-        "notes",
-        "undergraduate",
-        "software",
-        "engineering"
+        "notes"
       ],
-      "confidence": 0.55,
+      "confidence": 0.61,
       "caveats": [],
       "tags": [
         "GitHub 暴涨",
@@ -2931,16 +2930,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-09-12:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okf-memory/okf-agent-memory\", \"source_url\": \"https://github.com/okf-memory/okf-agent-memory\", \"published_at\": \"2026-09-05T21:26:04Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SpikeNOIP/MachineLearning-playbook\", \"source_url\": \"https://github.com/SpikeNOIP/MachineLearning-playbook\", \"published_at\": \"2026-09-06T08:47:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Innei/lody-ios\", \"source_url\": \"https://github.com/Innei/lody-ios\", \"published_at\": \"2026-09-05T18:37:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括okf-memory/okf-agent-memory、SpikeNOIP/MachineLearning-playbook、Innei/lody-ios等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 31，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、ReAct等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及SpikeNOIP、okf-memory、Innei，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察machine、spikenoip、machinelearning-playbook、study、notes、undergraduate、software、engineering等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okf-memory/okf-agent-memory\", \"source_url\": \"https://github.com/okf-memory/okf-agent-memory\", \"published_at\": \"2026-09-05T21:26:04Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"xiaomoBoy/pi-bluebook\", \"source_url\": \"https://github.com/xiaomoBoy/pi-bluebook\", \"published_at\": \"2026-09-08T12:59:19Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"SpikeNOIP/MachineLearning-playbook\", \"source_url\": \"https://github.com/SpikeNOIP/MachineLearning-playbook\", \"published_at\": \"2026-09-06T08:47:21Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Innei/lody-ios\", \"source_url\": \"https://github.com/Innei/lody-ios\", \"published_at\": \"2026-09-05T18:37:43Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括okf-memory/okf-agent-memory、xiaomoBoy/pi-bluebook、SpikeNOIP/MachineLearning-playbook、Innei/lody-ios等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 34，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、ReAct等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及SpikeNOIP、okf-memory、xiaomoBoy、Innei，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agent、coding-agent、machine、spikenoip、machinelearning-playbook、study、notes等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
-        "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“疑似爆发”（M4.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、ReAct、machine、spikenoip、machinelearning-playbook、study等线索，代表条目包括okf-memory/okf-agent-memory、SpikeNOIP/MachineLearning-playbook、Innei/lody-ios，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 31，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、ReAct、coding、agent、coding-agent、machine等线索，代表条目包括okf-memory/okf-agent-memory、xiaomoBoy/pi-bluebook、SpikeNOIP/MachineLearning-playbook、Innei/lody-ios，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 34，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及SpikeNOIP、okf-memory、Innei，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察machine、spikenoip、machinelearning-playbook、study、notes、undergraduate、software、engineering是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "机构与账号归纳：相关信号涉及SpikeNOIP、okf-memory、xiaomoBoy、Innei，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察coding、agent、coding-agent、machine、spikenoip、machinelearning-playbook、study、notes是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -2949,6 +2948,12 @@
             "url": "https://github.com/okf-memory/okf-agent-memory",
             "source": "github",
             "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "xiaomoBoy/pi-bluebook",
+            "url": "https://github.com/xiaomoBoy/pi-bluebook",
+            "source": "github",
+            "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
           },
           {
             "title": "SpikeNOIP/MachineLearning-playbook",
@@ -2977,6 +2982,17 @@
           "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "xiaomoBoy/pi-bluebook",
+          "source_url": "https://github.com/xiaomoBoy/pi-bluebook",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.417,
+          "matched_terms": [
+            "coding agent"
+          ],
+          "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "SpikeNOIP/MachineLearning-playbook",
           "source_url": "https://github.com/SpikeNOIP/MachineLearning-playbook",
           "source_type": "repo",
@@ -2997,46 +3013,48 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
         "focus_terms": [
           "MCP",
           "ReAct",
+          "coding",
+          "agent",
+          "coding-agent",
           "machine",
           "spikenoip",
-          "machinelearning-playbook",
-          "study",
-          "notes",
-          "undergraduate"
+          "machinelearning-playbook"
         ],
         "representative_titles": [
           "okf-memory/okf-agent-memory",
+          "xiaomoBoy/pi-bluebook",
           "SpikeNOIP/MachineLearning-playbook",
           "Innei/lody-ios"
         ],
         "related_institutions": [
           "SpikeNOIP",
           "okf-memory",
+          "xiaomoBoy",
           "Innei"
         ],
         "paper_count": 0,
-        "repo_count": 3,
-        "github_star_delta": 31,
+        "repo_count": 4,
+        "github_star_delta": 34,
         "method_mentions": 2,
         "dataset_mentions": 0,
-        "institution_mentions": 3
+        "institution_mentions": 4
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Tool Use",
       "title": "Tool Use 出现疑似爆发",
-      "magnitude": 4.02,
+      "magnitude": 4.03,
       "severity_label": "疑似爆发",
       "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 11 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.02，burst=3.759，growth_rate=-0.964，z_score=-3.756，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.03，burst=3.772，growth_rate=-0.964，z_score=-3.76，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 11 个",
-        "24h star 增量 123",
+        "24h star 增量 142",
         "方法提及：MCP, RAG, ReAct",
         "机构集中：i-am-manware, Albertchamberlain, okf-memory"
       ],
@@ -3045,13 +3063,13 @@
         "current_24h_count": 11,
         "current_72h_count": 11,
         "current_7d_count": 11,
-        "baseline_daily_avg_30d": 335.351,
-        "baseline_daily_std_30d": 85.353,
-        "baseline_72h_avg_30d": 1006.054,
+        "baseline_daily_avg_30d": 336.329,
+        "baseline_daily_std_30d": 85.524,
+        "baseline_72h_avg_30d": 1008.986,
         "growth_rate": -0.964,
-        "z_score": -3.756,
+        "z_score": -3.76,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.392,
+        "github_signal_score": 2.406,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.091,
@@ -3061,13 +3079,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 11,
-        "github_star_delta": 123,
+        "github_star_delta": 142,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 11,
-        "burst_score": 3.759,
+        "burst_score": 3.772,
         "low_history_confidence": false,
-        "magnitude": 4.02
+        "magnitude": 4.03
       },
       "evidence": [
         {
@@ -3217,11 +3235,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Tool Use:2026-09-12:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jfan2202-alt/course-compass-agent\", \"source_url\": \"https://github.com/jfan2202-alt/course-compass-agent\", \"published_at\": \"2026-09-05T10:11:06Z\", \"match_score\": 0.293, \"matched_keywords\": [\"function calling\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"FankChen/tracecrate\", \"source_url\": \"https://github.com/FankChen/tracecrate\", \"published_at\": \"2026-09-10T09:27:41Z\", \"match_score\": 0.22, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"1554151614-maker/pan-campus-agent\", \"source_url\": \"https://github.com/1554151614-maker/pan-campus-agent\", \"published_at\": \"2026-09-07T07:40:09Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Innei/lody-ios\", \"source_url\": \"https://github.com/Innei/lody-ios\", \"published_at\": \"2026-09-05T18:37:43Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"i-am-manware/Manware-s-AI-Learning-Toolkit\", \"source_url\": \"https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit\", \"published_at\": \"2026-09-05T16:46:07Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Albertchamberlain/Awesome-OKF\", \"source_url\": \"https://github.com/Albertchamberlain/Awesome-OKF\", \"published_at\": \"2026-09-07T06:12:39Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"okf-memory/okf-agent-memory\", \"source_url\": \"https://github.com/okf-memory/okf-agent-memory\", \"published_at\": \"2026-09-05T21:26:04Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VaderChen/YourDesk\", \"source_url\": \"https://github.com/VaderChen/YourDesk\", \"published_at\": \"2026-09-08T03:53:34Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括jfan2202-alt/course-compass-agent、FankChen/tracecrate、1554151614-maker/pan-campus-agent、Innei/lody-ios、i-am-manware/Manware-s-AI-Learning-Toolkit等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 123，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及i-am-manware、Albertchamberlain、okf-memory、VaderChen、1554151614-maker、gcjordi、jfan2202-alt、quqxui，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、mcp、code、okf、agent-memory、memory、rag、ai-agents等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 11 个。代表性目标包括jfan2202-alt/course-compass-agent、FankChen/tracecrate、1554151614-maker/pan-campus-agent、Innei/lody-ios、i-am-manware/Manware-s-AI-Learning-Toolkit等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 142，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及i-am-manware、Albertchamberlain、okf-memory、VaderChen、1554151614-maker、gcjordi、jfan2202-alt、quqxui，累计提及 11 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、mcp、code、okf、agent-memory、memory、rag、ai-agents等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：Tool Use 本轮由论文 0 条、GitHub 项目 11 个共同构成观测基础，当前强度为“疑似爆发”（M4.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agents、code、okf等线索，代表条目包括jfan2202-alt/course-compass-agent、FankChen/tracecrate、1554151614-maker/pan-campus-agent、Innei/lody-ios，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 123，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 11 个 GitHub 项目，24 小时 star 增量约 142，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及i-am-manware、Albertchamberlain、okf-memory、VaderChen、1554151614-maker、gcjordi，累计提及 11 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -3405,7 +3423,7 @@
         ],
         "paper_count": 0,
         "repo_count": 11,
-        "github_star_delta": 123,
+        "github_star_delta": 142,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 11
@@ -3469,8 +3487,56 @@
     },
     {
       "watchlist_name": "具身智能观察",
+      "topic": "Embodied AI",
+      "magnitude": 4.54,
+      "severity_label": "疑似爆发",
+      "threshold_magnitude": 3.5,
+      "threshold_growth_rate": 1.2,
+      "push_enabled": true,
+      "reason": "震级超过阈值、关键词命中",
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "published_at": "2026-09-09T13:01:05Z",
+          "match_score": 0.417,
+          "matched_keywords": [
+            "embodied ai"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "showlab/Show-Harness",
+          "source_url": "https://github.com/showlab/Show-Harness",
+          "published_at": "2026-09-07T08:58:08Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "OpenWAM-Official/OpenWAM",
+          "source_url": "https://github.com/OpenWAM-Official/OpenWAM",
+          "published_at": "2026-09-06T06:21:09Z",
+          "match_score": 0.083,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "dedupe_key": "watchlist:具身智能观察:Embodied AI:疑似爆发"
+    },
+    {
+      "watchlist_name": "具身智能观察",
       "topic": "Vision-Language-Action Model",
-      "magnitude": 4.45,
+      "magnitude": 4.54,
       "severity_label": "疑似爆发",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3493,20 +3559,22 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "showlab/Show-Harness",
-          "source_url": "https://github.com/showlab/Show-Harness",
-          "published_at": "2026-09-07T08:58:08Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
+          "title": "Phyzicalorg/Phyzical_org",
+          "source_url": "https://github.com/Phyzicalorg/Phyzical_org",
+          "published_at": "2026-09-09T13:01:05Z",
+          "match_score": 0.417,
+          "matched_keywords": [
+            "VLA"
+          ],
           "matched_methods": [],
           "matched_datasets": []
         },
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "v-modal/vmodal_sdk_robotics",
-          "source_url": "https://github.com/v-modal/vmodal_sdk_robotics",
-          "published_at": "2026-09-06T07:05:33Z",
+          "title": "showlab/Show-Harness",
+          "source_url": "https://github.com/showlab/Show-Harness",
+          "published_at": "2026-09-07T08:58:08Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3518,26 +3586,13 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "World Model",
-      "magnitude": 4.44,
-      "severity_label": "疑似爆发",
+      "magnitude": 2.9,
+      "severity_label": "局部升温",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
       "push_enabled": true,
-      "reason": "震级超过阈值、关键词命中",
+      "reason": "关键词命中",
       "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "UMass-Embodied-AGI/SyncWorld",
-          "source_url": "https://github.com/UMass-Embodied-AGI/SyncWorld",
-          "published_at": "2026-09-08T04:50:12Z",
-          "match_score": 0.417,
-          "matched_keywords": [
-            "world models"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -3559,30 +3614,6 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        }
-      ],
-      "dedupe_key": "watchlist:具身智能观察:World Model:疑似爆发"
-    },
-    {
-      "watchlist_name": "具身智能观察",
-      "topic": "Embodied AI",
-      "magnitude": 2.26,
-      "severity_label": "局部升温",
-      "threshold_magnitude": 3.5,
-      "threshold_growth_rate": 1.2,
-      "push_enabled": true,
-      "reason": "关键词命中",
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "showlab/Show-Harness",
-          "source_url": "https://github.com/showlab/Show-Harness",
-          "published_at": "2026-09-07T08:58:08Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         },
         {
           "source_type": "repo",
@@ -3594,20 +3625,9 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "v-modal/vmodal_sdk_robotics",
-          "source_url": "https://github.com/v-modal/vmodal_sdk_robotics",
-          "published_at": "2026-09-06T07:05:33Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
-      "dedupe_key": "watchlist:具身智能观察:Embodied AI:局部升温"
+      "dedupe_key": "watchlist:具身智能观察:World Model:局部升温"
     },
     {
       "watchlist_name": "AI Coding 观察",
@@ -3670,12 +3690,12 @@
     {
       "watchlist_name": "AI Coding 观察",
       "topic": "AI Coding",
-      "magnitude": 4.42,
+      "magnitude": 4.37,
       "severity_label": "疑似爆发",
       "threshold_magnitude": 3.2,
       "threshold_growth_rate": 1.0,
       "push_enabled": true,
-      "reason": "震级超过阈值",
+      "reason": "震级超过阈值、关键词命中",
       "evidence": [
         {
           "source_type": "repo",
@@ -3693,20 +3713,22 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "SpikeNOIP/MachineLearning-playbook",
-          "source_url": "https://github.com/SpikeNOIP/MachineLearning-playbook",
-          "published_at": "2026-09-06T08:47:21Z",
-          "match_score": 0.083,
-          "matched_keywords": [],
+          "title": "xiaomoBoy/pi-bluebook",
+          "source_url": "https://github.com/xiaomoBoy/pi-bluebook",
+          "published_at": "2026-09-08T12:59:19Z",
+          "match_score": 0.417,
+          "matched_keywords": [
+            "coding agent"
+          ],
           "matched_methods": [],
           "matched_datasets": []
         },
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Innei/lody-ios",
-          "source_url": "https://github.com/Innei/lody-ios",
-          "published_at": "2026-09-05T18:37:43Z",
+          "title": "SpikeNOIP/MachineLearning-playbook",
+          "source_url": "https://github.com/SpikeNOIP/MachineLearning-playbook",
+          "published_at": "2026-09-06T08:47:21Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3718,7 +3740,7 @@
     {
       "watchlist_name": "AI Coding 观察",
       "topic": "Computer Use Agent",
-      "magnitude": 3.39,
+      "magnitude": 3.37,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.2,
       "threshold_growth_rate": 1.0,
@@ -3744,7 +3766,7 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "LLM Security",
-      "magnitude": 3.77,
+      "magnitude": 3.8,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
@@ -3842,29 +3864,13 @@
   ],
   "github_surges": [
     {
-      "repo_full_name": "iamzulx/crypto-rag",
-      "url": "https://github.com/iamzulx/crypto-rag",
-      "stars": 903,
-      "star_delta_1h": 0,
-      "star_delta_24h": 806,
-      "star_delta_72h": 806,
-      "star_delta_7d": 806,
-      "matched_topics": [
-        "RAG",
-        "Agents"
-      ],
-      "language": "Python",
-      "description": "Asisten crypto berbahasa Indonesia: RAG pengetahuan 267 topik + data pasar realtime (6 bursa, WebSocket, derivatif, on-chain, TVL, DeFi) + tool-calling agent + LLM synthesis",
-      "source_url": "https://github.com/iamzulx/crypto-rag"
-    },
-    {
       "repo_full_name": "achimala/dream-loop",
       "url": "https://github.com/achimala/dream-loop",
-      "stars": 845,
-      "star_delta_1h": 6,
-      "star_delta_24h": 141,
-      "star_delta_72h": 478,
-      "star_delta_7d": 684,
+      "stars": 871,
+      "star_delta_1h": 25,
+      "star_delta_24h": 118,
+      "star_delta_72h": 481,
+      "star_delta_7d": 710,
       "matched_topics": [
         "Agents"
       ],
@@ -3873,13 +3879,28 @@
       "source_url": "https://github.com/achimala/dream-loop"
     },
     {
+      "repo_full_name": "xiaYuTian11/maskit",
+      "url": "https://github.com/xiaYuTian11/maskit",
+      "stars": 160,
+      "star_delta_1h": 14,
+      "star_delta_24h": 82,
+      "star_delta_72h": 82,
+      "star_delta_7d": 82,
+      "matched_topics": [
+        "LLM Security"
+      ],
+      "language": "Python",
+      "description": "数据面具 Data Maskit — 专为大模型打造的本地隐私脱敏网关（请求自动打码，回复流式还原；支持 Cursor / Claude Code / Codex / Pi 等任意可配 Base URL 工具）",
+      "source_url": "https://github.com/xiaYuTian11/maskit"
+    },
+    {
       "repo_full_name": "showlab/Show-Harness",
       "url": "https://github.com/showlab/Show-Harness",
-      "stars": 259,
-      "star_delta_1h": 4,
-      "star_delta_24h": 101,
-      "star_delta_72h": 215,
-      "star_delta_7d": 215,
+      "stars": 264,
+      "star_delta_1h": 5,
+      "star_delta_24h": 73,
+      "star_delta_72h": 220,
+      "star_delta_7d": 220,
       "matched_topics": [
         "Robotics",
         "Agents",
@@ -3892,59 +3913,13 @@
       "source_url": "https://github.com/showlab/Show-Harness"
     },
     {
-      "repo_full_name": "xiaYuTian11/maskit",
-      "url": "https://github.com/xiaYuTian11/maskit",
-      "stars": 146,
-      "star_delta_1h": 3,
-      "star_delta_24h": 68,
-      "star_delta_72h": 68,
-      "star_delta_7d": 68,
-      "matched_topics": [
-        "LLM Security"
-      ],
-      "language": "Python",
-      "description": "数据面具 Data Maskit — 专为大模型打造的本地隐私脱敏网关（请求自动打码，回复流式还原；支持 Cursor / Claude Code / Codex / Pi 等任意可配 Base URL 工具）",
-      "source_url": "https://github.com/xiaYuTian11/maskit"
-    },
-    {
-      "repo_full_name": "ops120/wechat-local-viewer",
-      "url": "https://github.com/ops120/wechat-local-viewer",
-      "stars": 131,
-      "star_delta_1h": 0,
-      "star_delta_24h": 64,
-      "star_delta_72h": 64,
-      "star_delta_7d": 64,
-      "matched_topics": [],
-      "language": "Python",
-      "description": "微信本地聊天记录查看器 — 会话浏览/全文搜索/多格式导出/可选 LLM 智能总结，全部本地运行，零外部依赖。",
-      "source_url": "https://github.com/ops120/wechat-local-viewer"
-    },
-    {
-      "repo_full_name": "OpenWAM-Official/OpenWAM",
-      "url": "https://github.com/OpenWAM-Official/OpenWAM",
-      "stars": 536,
-      "star_delta_1h": 0,
-      "star_delta_24h": 43,
-      "star_delta_72h": 349,
-      "star_delta_7d": 506,
-      "matched_topics": [
-        "Vision-Language-Action Model",
-        "Robotics",
-        "World Model",
-        "Embodied AI"
-      ],
-      "language": "Python",
-      "description": "Official repository for \"OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining\".",
-      "source_url": "https://github.com/OpenWAM-Official/OpenWAM"
-    },
-    {
       "repo_full_name": "viettranx/3dviz-pro-max",
       "url": "https://github.com/viettranx/3dviz-pro-max",
-      "stars": 174,
-      "star_delta_1h": 3,
-      "star_delta_24h": 43,
-      "star_delta_72h": 67,
-      "star_delta_7d": 67,
+      "stars": 181,
+      "star_delta_1h": 7,
+      "star_delta_24h": 36,
+      "star_delta_72h": 74,
+      "star_delta_7d": 74,
       "matched_topics": [
         "Agents"
       ],
@@ -3953,31 +3928,13 @@
       "source_url": "https://github.com/viettranx/3dviz-pro-max"
     },
     {
-      "repo_full_name": "i-am-manware/Manware-s-AI-Learning-Toolkit",
-      "url": "https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit",
-      "stars": 353,
-      "star_delta_1h": 0,
-      "star_delta_24h": 32,
-      "star_delta_72h": 107,
-      "star_delta_7d": 330,
-      "matched_topics": [
-        "Agents",
-        "Model Context Protocol",
-        "Tool Use",
-        "Memory"
-      ],
-      "language": null,
-      "description": "An AI toolkit that turns agents into teachers rather than code yapping machines",
-      "source_url": "https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit"
-    },
-    {
       "repo_full_name": "showlab/Awesome-Multimodal-Embodied-Agent",
       "url": "https://github.com/showlab/Awesome-Multimodal-Embodied-Agent",
-      "stars": 42,
-      "star_delta_1h": 1,
-      "star_delta_24h": 32,
-      "star_delta_72h": 32,
-      "star_delta_7d": 32,
+      "stars": 45,
+      "star_delta_1h": 3,
+      "star_delta_24h": 35,
+      "star_delta_72h": 35,
+      "star_delta_7d": 35,
       "matched_topics": [
         "Agents",
         "Multimodal",
@@ -3992,11 +3949,11 @@
     {
       "repo_full_name": "okf-memory/okf-agent-memory",
       "url": "https://github.com/okf-memory/okf-agent-memory",
-      "stars": 577,
-      "star_delta_1h": 4,
-      "star_delta_24h": 29,
-      "star_delta_72h": 87,
-      "star_delta_7d": 458,
+      "stars": 583,
+      "star_delta_1h": 6,
+      "star_delta_24h": 32,
+      "star_delta_72h": 85,
+      "star_delta_7d": 464,
       "matched_topics": [
         "Model Context Protocol",
         "Agents",
@@ -4007,10 +3964,81 @@
       "language": "Go",
       "description": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go.",
       "source_url": "https://github.com/okf-memory/okf-agent-memory"
+    },
+    {
+      "repo_full_name": "OpenWAM-Official/OpenWAM",
+      "url": "https://github.com/OpenWAM-Official/OpenWAM",
+      "stars": 540,
+      "star_delta_1h": 4,
+      "star_delta_24h": 32,
+      "star_delta_72h": 306,
+      "star_delta_7d": 510,
+      "matched_topics": [
+        "Vision-Language-Action Model",
+        "Robotics",
+        "World Model",
+        "Embodied AI"
+      ],
+      "language": "Python",
+      "description": "Official repository for \"OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining\".",
+      "source_url": "https://github.com/OpenWAM-Official/OpenWAM"
+    },
+    {
+      "repo_full_name": "i-am-manware/Manware-s-AI-Learning-Toolkit",
+      "url": "https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit",
+      "stars": 360,
+      "star_delta_1h": 7,
+      "star_delta_24h": 29,
+      "star_delta_72h": 109,
+      "star_delta_7d": 337,
+      "matched_topics": [
+        "Agents",
+        "Model Context Protocol",
+        "Tool Use",
+        "Memory"
+      ],
+      "language": null,
+      "description": "An AI toolkit that turns agents into teachers rather than code yapping machines",
+      "source_url": "https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit"
+    },
+    {
+      "repo_full_name": "ops120/wechat-local-viewer",
+      "url": "https://github.com/ops120/wechat-local-viewer",
+      "stars": 134,
+      "star_delta_1h": 3,
+      "star_delta_24h": 22,
+      "star_delta_72h": 67,
+      "star_delta_7d": 67,
+      "matched_topics": [],
+      "language": "Python",
+      "description": "微信本地聊天记录查看器 — 会话浏览/全文搜索/多格式导出/可选 LLM 智能总结，全部本地运行，零外部依赖。",
+      "source_url": "https://github.com/ops120/wechat-local-viewer"
+    },
+    {
+      "repo_full_name": "songs-aaa/shared-memory-vault",
+      "url": "https://github.com/songs-aaa/shared-memory-vault",
+      "stars": 83,
+      "star_delta_1h": 2,
+      "star_delta_24h": 21,
+      "star_delta_72h": 46,
+      "star_delta_7d": 46,
+      "matched_topics": [
+        "Agents",
+        "Multi-Agent",
+        "Memory"
+      ],
+      "language": null,
+      "description": "A memory governance engine for multi-agent cloud knowledge bases — one knowledge base shared by every agent and every device, with consistency guaranteed. Pure Markdown, nine governance automations, zero dependencies.",
+      "source_url": "https://github.com/songs-aaa/shared-memory-vault"
     }
   ],
   "dataset_bursts": [],
   "method_bursts": [
+    {
+      "topic": "Robotics",
+      "term": "VLA",
+      "magnitude": 6.0
+    },
     {
       "topic": "Robotics",
       "term": "MCP",
@@ -4032,6 +4060,11 @@
       "magnitude": 6.0
     },
     {
+      "topic": "Agents",
+      "term": "VLA",
+      "magnitude": 6.0
+    },
+    {
       "topic": "RAG",
       "term": "RAG",
       "magnitude": 6.0
@@ -4075,41 +4108,31 @@
       "topic": "Model Context Protocol",
       "term": "ReAct",
       "magnitude": 6.0
+    },
+    {
+      "topic": "Embodied AI",
+      "term": "VLA",
+      "magnitude": 4.54
+    },
+    {
+      "topic": "Embodied AI",
+      "term": "MCP",
+      "magnitude": 4.54
+    },
+    {
+      "topic": "Vision-Language-Action Model",
+      "term": "VLA",
+      "magnitude": 4.54
     },
     {
       "topic": "Vision-Language-Action Model",
       "term": "MCP",
-      "magnitude": 4.45
-    },
-    {
-      "topic": "World Model",
-      "term": "MCP",
-      "magnitude": 4.44
+      "magnitude": 4.54
     },
     {
       "topic": "AI Coding",
       "term": "MCP",
-      "magnitude": 4.42
-    },
-    {
-      "topic": "AI Coding",
-      "term": "ReAct",
-      "magnitude": 4.42
-    },
-    {
-      "topic": "Tool Use",
-      "term": "MCP",
-      "magnitude": 4.02
-    },
-    {
-      "topic": "Tool Use",
-      "term": "RAG",
-      "magnitude": 4.02
-    },
-    {
-      "topic": "Tool Use",
-      "term": "ReAct",
-      "magnitude": 4.02
+      "magnitude": 4.37
     }
   ],
   "institution_signals": [
@@ -4130,12 +4153,12 @@
     },
     {
       "topic": "Robotics",
-      "term": "jangtrinh",
+      "term": "Phyzicalorg",
       "magnitude": 6.0
     },
     {
       "topic": "Robotics",
-      "term": "YanjieZe",
+      "term": "jangtrinh",
       "magnitude": 6.0
     },
     {
@@ -4219,10 +4242,10 @@
       "source_name": "arxiv",
       "source_type": "paper",
       "ok": false,
-      "error": "GET https://export.arxiv.org/api/query failed after retries: 429: Rate exceeded.",
+      "error": "GET https://export.arxiv.org/api/query failed after retries: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=20)",
       "items": 0,
       "partial": true,
-      "fetched_at": "2026-09-12T00:20:42.909142+00:00"
+      "fetched_at": "2026-09-12T07:11:29.849571+00:00"
     },
     {
       "source_name": "github",
@@ -4231,7 +4254,7 @@
       "error": null,
       "items": 50,
       "partial": false,
-      "fetched_at": "2026-09-12T00:21:34.702344+00:00"
+      "fetched_at": "2026-09-12T07:11:57.300161+00:00"
     }
   ],
   "partial": true,
