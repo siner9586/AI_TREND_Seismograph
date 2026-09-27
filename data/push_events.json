@@ -408245,6 +408245,836 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Speech",
+      "magnitude": 5.09,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Speech",
+          "title": "Speech 出现强趋势震荡",
+          "magnitude": 5.09,
+          "severity_label": "强趋势震荡",
+          "summary": "Speech 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.09，burst=3.856，growth_rate=-0.971，z_score=-2.987，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 1 个",
+            "24h star 增量 192",
+            "机构集中：lemomo-ai"
+          ],
+          "metrics": {
+            "current_1h_count": 1,
+            "current_24h_count": 1,
+            "current_72h_count": 1,
+            "current_7d_count": 1,
+            "baseline_daily_avg_30d": 69.12,
+            "baseline_daily_std_30d": 21.807,
+            "baseline_72h_avg_30d": 207.36,
+            "growth_rate": -0.971,
+            "z_score": -2.987,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.856,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 1.0,
+            "institution_signal_score": 1.099,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 192,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 1,
+            "burst_score": 3.856,
+            "low_history_confidence": false,
+            "magnitude": 5.09
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lemomo-ai/lemo-opuscar",
+              "source_url": "https://github.com/lemomo-ai/lemo-opuscar",
+              "published_at": "2026-09-26T10:10:41Z",
+              "match_score": 0.547,
+              "matched_keywords": [
+                "speech",
+                "text-to-speech"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/lemomo-ai/lemo-opuscar"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "lemomo-ai"
+          ],
+          "suggested_watch_keywords": [
+            "film",
+            "style",
+            "claude",
+            "your",
+            "lemomo-ai",
+            "lemo-opuscar",
+            "styles",
+            "each"
+          ],
+          "confidence": 0.43,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Speech:2026-09-27:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lemomo-ai/lemo-opuscar\", \"source_url\": \"https://github.com/lemomo-ai/lemo-opuscar\", \"published_at\": \"2026-09-26T10:10:41Z\", \"match_score\": 0.547, \"matched_keywords\": [\"speech\", \"text-to-speech\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Speech」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.1）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括lemomo-ai/lemo-opuscar等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 192，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及lemomo-ai，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察film、style、claude、your、lemomo-ai、lemo-opuscar、styles、each等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。",
+          "signal_takeaways": [
+            "总体判断：Speech 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“强趋势震荡”（M5.1）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向film、style、claude、your、lemomo-ai、lemo-opuscar等线索，代表条目包括lemomo-ai/lemo-opuscar，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 192，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及lemomo-ai，累计提及 1 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察film、style、claude、your、lemomo-ai、lemo-opuscar、styles、each是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "lemomo-ai/lemo-opuscar",
+                "url": "https://github.com/lemomo-ai/lemo-opuscar",
+                "source": "github",
+                "reason": "命中 speech、text-to-speech，匹配分 0.547，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "lemomo-ai/lemo-opuscar",
+              "source_url": "https://github.com/lemomo-ai/lemo-opuscar",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.547,
+              "matched_terms": [
+                "speech",
+                "text-to-speech"
+              ],
+              "why_included": "命中 speech、text-to-speech，匹配分 0.547，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 1 个。",
+            "focus_terms": [
+              "film",
+              "style",
+              "claude",
+              "your",
+              "lemomo-ai",
+              "lemo-opuscar",
+              "styles",
+              "each"
+            ],
+            "representative_titles": [
+              "lemomo-ai/lemo-opuscar"
+            ],
+            "related_institutions": [
+              "lemomo-ai"
+            ],
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 192,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 1
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-09-27T14"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-09-27T14:02:28.366835+00:00",
+      "dedupe_key": "trend:Speech:2026-09-27:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "AI Coding",
+      "magnitude": 5.03,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "AI Coding",
+          "title": "AI Coding 出现强趋势震荡",
+          "magnitude": 5.03,
+          "severity_label": "强趋势震荡",
+          "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.03，burst=4.618，growth_rate=-0.941，z_score=-3.57，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 8 个",
+            "24h star 增量 656",
+            "方法提及：MCP, RAG",
+            "机构集中：zai-org, dzhng, ismailperim"
+          ],
+          "metrics": {
+            "current_1h_count": 8,
+            "current_24h_count": 8,
+            "current_72h_count": 8,
+            "current_7d_count": 8,
+            "baseline_daily_avg_30d": 150.761,
+            "baseline_daily_std_30d": 38.988,
+            "baseline_72h_avg_30d": 452.282,
+            "growth_rate": -0.941,
+            "z_score": -3.57,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 4.014,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.125,
+            "institution_signal_score": 0.33,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 8,
+            "github_star_delta": 656,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 12,
+            "burst_score": 4.618,
+            "low_history_confidence": false,
+            "magnitude": 5.03
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "zai-org/ZCode",
+              "source_url": "https://github.com/zai-org/ZCode",
+              "published_at": "2026-09-20T12:01:16Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "LockedinLabs-AI/agent-console",
+              "source_url": "https://github.com/LockedinLabs-AI/agent-console",
+              "published_at": "2026-09-20T17:55:58Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "ai coding"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "qybaihe/mu",
+              "source_url": "https://github.com/qybaihe/mu",
+              "published_at": "2026-09-22T11:56:05Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "merijjeyn/jive",
+              "source_url": "https://github.com/merijjeyn/jive",
+              "published_at": "2026-09-21T15:07:55Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "yibie/jev-engineering-zh",
+              "source_url": "https://github.com/yibie/jev-engineering-zh",
+              "published_at": "2026-09-22T04:28:47Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "coding agent"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "dzhng/jevgrep",
+              "source_url": "https://github.com/dzhng/jevgrep",
+              "published_at": "2026-09-26T04:06:56Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "ismailperim/briefd",
+              "source_url": "https://github.com/ismailperim/briefd",
+              "published_at": "2026-09-20T13:57:03Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "lemomo-ai/lemo-opuscar",
+              "source_url": "https://github.com/lemomo-ai/lemo-opuscar",
+              "published_at": "2026-09-26T10:10:41Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/LockedinLabs-AI/agent-console",
+            "https://github.com/dzhng/jevgrep",
+            "https://github.com/ismailperim/briefd",
+            "https://github.com/lemomo-ai/lemo-opuscar",
+            "https://github.com/merijjeyn/jive",
+            "https://github.com/qybaihe/mu",
+            "https://github.com/yibie/jev-engineering-zh",
+            "https://github.com/zai-org/ZCode"
+          ],
+          "related_methods": [
+            "MCP",
+            "RAG"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "zai-org",
+            "dzhng",
+            "ismailperim",
+            "Anthropic",
+            "Apple",
+            "LockedinLabs-AI",
+            "MIT",
+            "OpenAI"
+          ],
+          "suggested_watch_keywords": [
+            "coding",
+            "agent",
+            "coding agent",
+            "code",
+            "agents",
+            "jev",
+            "does",
+            "context"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:AI Coding:2026-09-27:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zai-org/ZCode\", \"source_url\": \"https://github.com/zai-org/ZCode\", \"published_at\": \"2026-09-20T12:01:16Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"LockedinLabs-AI/agent-console\", \"source_url\": \"https://github.com/LockedinLabs-AI/agent-console\", \"published_at\": \"2026-09-20T17:55:58Z\", \"match_score\": 0.417, \"matched_keywords\": [\"ai coding\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"qybaihe/mu\", \"source_url\": \"https://github.com/qybaihe/mu\", \"published_at\": \"2026-09-22T11:56:05Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"merijjeyn/jive\", \"source_url\": \"https://github.com/merijjeyn/jive\", \"published_at\": \"2026-09-21T15:07:55Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yibie/jev-engineering-zh\", \"source_url\": \"https://github.com/yibie/jev-engineering-zh\", \"published_at\": \"2026-09-22T04:28:47Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dzhng/jevgrep\", \"source_url\": \"https://github.com/dzhng/jevgrep\", \"published_at\": \"2026-09-26T04:06:56Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ismailperim/briefd\", \"source_url\": \"https://github.com/ismailperim/briefd\", \"published_at\": \"2026-09-20T13:57:03Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lemomo-ai/lemo-opuscar\", \"source_url\": \"https://github.com/lemomo-ai/lemo-opuscar\", \"published_at\": \"2026-09-26T10:10:41Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括zai-org/ZCode、LockedinLabs-AI/agent-console、qybaihe/mu、merijjeyn/jive、yibie/jev-engineering-zh等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 656，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及zai-org、dzhng、ismailperim、Anthropic、Apple、LockedinLabs-AI、MIT、OpenAI，累计提及 12 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察coding、agent、coding agent、code、agents、jev、does、context等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向MCP、RAG、coding、agent、coding agent、code等线索，代表条目包括zai-org/ZCode、LockedinLabs-AI/agent-console、qybaihe/mu、merijjeyn/jive，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 656，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及zai-org、dzhng、ismailperim、Anthropic、Apple、LockedinLabs-AI，累计提及 12 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察coding、agent、coding agent、code、agents、jev、does、context是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "zai-org/ZCode",
+                "url": "https://github.com/zai-org/ZCode",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "LockedinLabs-AI/agent-console",
+                "url": "https://github.com/LockedinLabs-AI/agent-console",
+                "source": "github",
+                "reason": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "qybaihe/mu",
+                "url": "https://github.com/qybaihe/mu",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "merijjeyn/jive",
+                "url": "https://github.com/merijjeyn/jive",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "yibie/jev-engineering-zh",
+                "url": "https://github.com/yibie/jev-engineering-zh",
+                "source": "github",
+                "reason": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "dzhng/jevgrep",
+                "url": "https://github.com/dzhng/jevgrep",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "ismailperim/briefd",
+                "url": "https://github.com/ismailperim/briefd",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "lemomo-ai/lemo-opuscar",
+                "url": "https://github.com/lemomo-ai/lemo-opuscar",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "zai-org/ZCode",
+              "source_url": "https://github.com/zai-org/ZCode",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "LockedinLabs-AI/agent-console",
+              "source_url": "https://github.com/LockedinLabs-AI/agent-console",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "ai coding"
+              ],
+              "why_included": "命中 ai coding，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "qybaihe/mu",
+              "source_url": "https://github.com/qybaihe/mu",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "merijjeyn/jive",
+              "source_url": "https://github.com/merijjeyn/jive",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "yibie/jev-engineering-zh",
+              "source_url": "https://github.com/yibie/jev-engineering-zh",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "coding agent"
+              ],
+              "why_included": "命中 coding agent，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "dzhng/jevgrep",
+              "source_url": "https://github.com/dzhng/jevgrep",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "ismailperim/briefd",
+              "source_url": "https://github.com/ismailperim/briefd",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "lemomo-ai/lemo-opuscar",
+              "source_url": "https://github.com/lemomo-ai/lemo-opuscar",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
+            "focus_terms": [
+              "MCP",
+              "RAG",
+              "coding",
+              "agent",
+              "coding agent",
+              "code",
+              "agents",
+              "jev"
+            ],
+            "representative_titles": [
+              "zai-org/ZCode",
+              "LockedinLabs-AI/agent-console",
+              "qybaihe/mu",
+              "merijjeyn/jive",
+              "yibie/jev-engineering-zh"
+            ],
+            "related_institutions": [
+              "zai-org",
+              "dzhng",
+              "ismailperim",
+              "Anthropic",
+              "Apple",
+              "LockedinLabs-AI",
+              "MIT",
+              "OpenAI"
+            ],
+            "paper_count": 0,
+            "repo_count": 8,
+            "github_star_delta": 656,
+            "method_mentions": 2,
+            "dataset_mentions": 0,
+            "institution_mentions": 12
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-09-27T14"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-09-27T14:02:28.366835+00:00",
+      "dedupe_key": "trend:AI Coding:2026-09-27:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Multimodal",
+      "magnitude": 3.86,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Multimodal",
+          "title": "Multimodal 出现明显异常",
+          "magnitude": 3.86,
+          "severity_label": "明显异常",
+          "summary": "Multimodal 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.86，burst=2.905，growth_rate=-0.916，z_score=-2.045，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 3 个",
+            "24h star 增量 5",
+            "方法提及：VLA",
+            "机构集中：GehaoZhang6, bingaochen, shapsider"
+          ],
+          "metrics": {
+            "current_1h_count": 3,
+            "current_24h_count": 3,
+            "current_72h_count": 3,
+            "current_7d_count": 3,
+            "baseline_daily_avg_30d": 46.667,
+            "baseline_daily_std_30d": 20.352,
+            "baseline_72h_avg_30d": 140.0,
+            "growth_rate": -0.916,
+            "z_score": -2.045,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.524,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.333,
+            "institution_signal_score": 0.536,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 5,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 3,
+            "burst_score": 2.905,
+            "low_history_confidence": true,
+            "magnitude": 3.86
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "shapsider/OmniJev",
+              "source_url": "https://github.com/shapsider/OmniJev",
+              "published_at": "2026-09-22T04:55:06Z",
+              "match_score": 0.627,
+              "matched_keywords": [
+                "VLM",
+                "multimodal"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "GehaoZhang6/Grounded-Action-Model",
+              "source_url": "https://github.com/GehaoZhang6/Grounded-Action-Model",
+              "published_at": "2026-09-22T02:56:39Z",
+              "match_score": 0.392,
+              "matched_keywords": [
+                "vision-language"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "bingaochen/Astra-on-RoboMME",
+              "source_url": "https://github.com/bingaochen/Astra-on-RoboMME",
+              "published_at": "2026-09-21T19:32:30Z",
+              "match_score": 0.313,
+              "matched_keywords": [
+                "VLM"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/GehaoZhang6/Grounded-Action-Model",
+            "https://github.com/bingaochen/Astra-on-RoboMME",
+            "https://github.com/shapsider/OmniJev"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "GehaoZhang6",
+            "bingaochen",
+            "shapsider"
+          ],
+          "suggested_watch_keywords": [
+            "robotics",
+            "manipulation",
+            "gehaozhang6",
+            "grounded-action-model",
+            "grounded",
+            "action",
+            "grounding",
+            "foundation"
+          ],
+          "confidence": 0.4,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Multimodal:2026-09-27:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"shapsider/OmniJev\", \"source_url\": \"https://github.com/shapsider/OmniJev\", \"published_at\": \"2026-09-22T04:55:06Z\", \"match_score\": 0.627, \"matched_keywords\": [\"VLM\", \"multimodal\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"GehaoZhang6/Grounded-Action-Model\", \"source_url\": \"https://github.com/GehaoZhang6/Grounded-Action-Model\", \"published_at\": \"2026-09-22T02:56:39Z\", \"match_score\": 0.392, \"matched_keywords\": [\"vision-language\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bingaochen/Astra-on-RoboMME\", \"source_url\": \"https://github.com/bingaochen/Astra-on-RoboMME\", \"published_at\": \"2026-09-21T19:32:30Z\", \"match_score\": 0.313, \"matched_keywords\": [\"VLM\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Multimodal」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括shapsider/OmniJev、GehaoZhang6/Grounded-Action-Model、bingaochen/Astra-on-RoboMME等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 5，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及GehaoZhang6、bingaochen、shapsider，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、manipulation、gehaozhang6、grounded-action-model、grounded、action、grounding、foundation等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.4。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Multimodal 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“明显异常”（M3.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、robotics、manipulation、gehaozhang6、grounded-action-model、grounded等线索，代表条目包括shapsider/OmniJev、GehaoZhang6/Grounded-Action-Model、bingaochen/Astra-on-RoboMME，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 5，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及GehaoZhang6、bingaochen、shapsider，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察robotics、manipulation、gehaozhang6、grounded-action-model、grounded、action、grounding、foundation是否继续出现。当前置信度为 0.4，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "shapsider/OmniJev",
+                "url": "https://github.com/shapsider/OmniJev",
+                "source": "github",
+                "reason": "命中 VLM、multimodal，匹配分 0.627，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "GehaoZhang6/Grounded-Action-Model",
+                "url": "https://github.com/GehaoZhang6/Grounded-Action-Model",
+                "source": "github",
+                "reason": "命中 vision-language，匹配分 0.392，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "bingaochen/Astra-on-RoboMME",
+                "url": "https://github.com/bingaochen/Astra-on-RoboMME",
+                "source": "github",
+                "reason": "命中 VLM，匹配分 0.313，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "shapsider/OmniJev",
+              "source_url": "https://github.com/shapsider/OmniJev",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.627,
+              "matched_terms": [
+                "VLM",
+                "multimodal"
+              ],
+              "why_included": "命中 VLM、multimodal，匹配分 0.627，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "GehaoZhang6/Grounded-Action-Model",
+              "source_url": "https://github.com/GehaoZhang6/Grounded-Action-Model",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.392,
+              "matched_terms": [
+                "vision-language"
+              ],
+              "why_included": "命中 vision-language，匹配分 0.392，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "bingaochen/Astra-on-RoboMME",
+              "source_url": "https://github.com/bingaochen/Astra-on-RoboMME",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.313,
+              "matched_terms": [
+                "VLM"
+              ],
+              "why_included": "命中 VLM，匹配分 0.313，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
+            "focus_terms": [
+              "VLA",
+              "robotics",
+              "manipulation",
+              "gehaozhang6",
+              "grounded-action-model",
+              "grounded",
+              "action",
+              "grounding"
+            ],
+            "representative_titles": [
+              "shapsider/OmniJev",
+              "GehaoZhang6/Grounded-Action-Model",
+              "bingaochen/Astra-on-RoboMME"
+            ],
+            "related_institutions": [
+              "GehaoZhang6",
+              "bingaochen",
+              "shapsider"
+            ],
+            "paper_count": 0,
+            "repo_count": 3,
+            "github_star_delta": 5,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 3
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-09-27T14"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-09-27T14:02:28.366835+00:00",
+      "dedupe_key": "trend:Multimodal:2026-09-27:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
