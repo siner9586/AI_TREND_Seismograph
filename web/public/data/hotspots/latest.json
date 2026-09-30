@@ -1,11 +1,11 @@
 {
-  "snapshot_hour": "2026-09-30T05",
-  "generated_at": "2026-09-30T05:37:19.379648+00:00",
-  "run_id": "hourly-20260930T05-144ba44d",
+  "snapshot_hour": "2026-09-30T12",
+  "generated_at": "2026-09-30T12:39:50.367748+00:00",
+  "run_id": "hourly-20260930T12-2e3fbefc",
   "mode": "hourly",
-  "total_items_scanned": 48,
+  "total_items_scanned": 49,
   "total_papers_scanned": 0,
-  "total_repos_scanned": 48,
+  "total_repos_scanned": 49,
   "total_topics_tracked": 40,
   "max_magnitude": 6.0,
   "top_hotspots": [
@@ -14,44 +14,74 @@
       "title": "Agents 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Agents 在当前窗口内出现 0 条论文信号和 20 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=7.855，growth_rate=-0.959，z_score=-8.885，cross_source=0.5。",
+      "summary": "Agents 在当前窗口内出现 0 条论文信号和 22 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=11.404，growth_rate=-0.956，z_score=-8.876，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 20 个",
-        "24h star 增量 3063",
-        "方法提及：RAG, ReAct, MCTS",
-        "机构集中：amitshekhariitbhu, OpenAI, yetone"
+        "GitHub 项目 22 个",
+        "24h star 增量 3130",
+        "方法提及：RAG, MCP, ReAct",
+        "机构集中：OpenAI, amitshekhariitbhu, yetone"
       ],
       "metrics": {
-        "current_1h_count": 20,
-        "current_24h_count": 20,
-        "current_72h_count": 20,
-        "current_7d_count": 20,
-        "baseline_daily_avg_30d": 516.169,
-        "baseline_daily_std_30d": 54.843,
-        "baseline_72h_avg_30d": 1548.507,
-        "growth_rate": -0.959,
-        "z_score": -8.885,
+        "current_1h_count": 22,
+        "current_24h_count": 22,
+        "current_72h_count": 22,
+        "current_7d_count": 22,
+        "baseline_daily_avg_30d": 516.338,
+        "baseline_daily_std_30d": 54.694,
+        "baseline_72h_avg_30d": 1549.014,
+        "growth_rate": -0.956,
+        "z_score": -8.876,
         "paper_burst_score": 0.0,
-        "github_signal_score": 6.711,
+        "github_signal_score": 10.138,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.1,
-        "institution_signal_score": 0.314,
+        "institution_concentration_score": 0.136,
+        "institution_signal_score": 0.444,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.144,
+        "method_signal_score": 1.266,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 20,
-        "github_star_delta": 3063,
-        "method_mentions": 7,
+        "repo_count": 22,
+        "github_star_delta": 3130,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 22,
-        "burst_score": 7.855,
+        "institution_mentions": 25,
+        "burst_score": 11.404,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "published_at": "2026-09-29T23:06:00Z",
+          "match_score": 0.95,
+          "matched_keywords": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
+          "published_at": "2026-09-27T01:18:37Z",
+          "match_score": 0.95,
+          "matched_keywords": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -135,33 +165,6 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "aaddrick/building-with-typesafe-jev",
-          "source_url": "https://github.com/aaddrick/building-with-typesafe-jev",
-          "published_at": "2026-09-26T00:01:19Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Perruer/keelflow",
-          "source_url": "https://github.com/Perruer/keelflow",
-          "published_at": "2026-09-24T09:31:18Z",
-          "match_score": 0.396,
-          "matched_keywords": [
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -175,7 +178,9 @@
         "https://github.com/chenkanglin198904/Personal_External_Brain",
         "https://github.com/disler/ten-levels-of-jev",
         "https://github.com/dzhng/jevgrep",
+        "https://github.com/feder-cr/dots",
         "https://github.com/feitangyuan/onetake",
+        "https://github.com/heaven999b/hello-agent-system",
         "https://github.com/kaankiziltug/logo-design-skill",
         "https://github.com/lemomo-ai/lemo-opuscar",
         "https://github.com/majidmanzarpour/blender-game-skills",
@@ -188,13 +193,14 @@
       ],
       "related_methods": [
         "RAG",
+        "MCP",
         "ReAct",
         "MCTS"
       ],
       "related_datasets": [],
       "related_institutions": [
-        "amitshekhariitbhu",
         "OpenAI",
+        "amitshekhariitbhu",
         "yetone",
         "zouyuxuan122",
         "JoinArtisanVent",
@@ -204,13 +210,13 @@
       ],
       "suggested_watch_keywords": [
         "agents",
+        "agent",
         "your",
         "claude",
         "code",
-        "agent",
+        "rag",
         "llm",
-        "coding",
-        "rag"
+        "one"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -223,19 +229,31 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Agents:2026-09-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JoinArtisanVent/x-scraper-no-api\", \"source_url\": \"https://github.com/JoinArtisanVent/x-scraper-no-api\", \"published_at\": \"2026-09-26T01:57:59Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/golive-skill\", \"source_url\": \"https://github.com/mikehasa/golive-skill\", \"published_at\": \"2026-09-23T13:37:26Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kaankiziltug/logo-design-skill\", \"source_url\": \"https://github.com/kaankiziltug/logo-design-skill\", \"published_at\": \"2026-09-26T08:23:34Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lemomo-ai/lemo-opuscar\", \"source_url\": \"https://github.com/lemomo-ai/lemo-opuscar\", \"published_at\": \"2026-09-26T10:10:41Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ssddxg/agentic-rl-forge\", \"source_url\": \"https://github.com/ssddxg/agentic-rl-forge\", \"published_at\": \"2026-09-23T06:58:00Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zhuyansen/awesome-claude-video-skills\", \"source_url\": \"https://github.com/zhuyansen/awesome-claude-video-skills\", \"published_at\": \"2026-09-27T04:06:05Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"aaddrick/building-with-typesafe-jev\", \"source_url\": \"https://github.com/aaddrick/building-with-typesafe-jev\", \"published_at\": \"2026-09-26T00:01:19Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Perruer/keelflow\", \"source_url\": \"https://github.com/Perruer/keelflow\", \"published_at\": \"2026-09-24T09:31:18Z\", \"match_score\": 0.396, \"matched_keywords\": [\"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 20 个。代表性目标包括JoinArtisanVent/x-scraper-no-api、mikehasa/golive-skill、kaankiziltug/logo-design-skill、lemomo-ai/lemo-opuscar、ssddxg/agentic-rl-forge等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 3063，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCTS等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、OpenAI、yetone、zouyuxuan122、JoinArtisanVent、scarletkc、dzhng、mikehasa，累计提及 22 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、your、claude、code、agent、llm、coding、rag等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"feder-cr/dots\", \"source_url\": \"https://github.com/feder-cr/dots\", \"published_at\": \"2026-09-29T23:06:00Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"heaven999b/hello-agent-system\", \"source_url\": \"https://github.com/heaven999b/hello-agent-system\", \"published_at\": \"2026-09-27T01:18:37Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"JoinArtisanVent/x-scraper-no-api\", \"source_url\": \"https://github.com/JoinArtisanVent/x-scraper-no-api\", \"published_at\": \"2026-09-26T01:57:59Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/golive-skill\", \"source_url\": \"https://github.com/mikehasa/golive-skill\", \"published_at\": \"2026-09-23T13:37:26Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kaankiziltug/logo-design-skill\", \"source_url\": \"https://github.com/kaankiziltug/logo-design-skill\", \"published_at\": \"2026-09-26T08:23:34Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lemomo-ai/lemo-opuscar\", \"source_url\": \"https://github.com/lemomo-ai/lemo-opuscar\", \"published_at\": \"2026-09-26T10:10:41Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ssddxg/agentic-rl-forge\", \"source_url\": \"https://github.com/ssddxg/agentic-rl-forge\", \"published_at\": \"2026-09-23T06:58:00Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zhuyansen/awesome-claude-video-skills\", \"source_url\": \"https://github.com/zhuyansen/awesome-claude-video-skills\", \"published_at\": \"2026-09-27T04:06:05Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 22 个。代表性目标包括feder-cr/dots、heaven999b/hello-agent-system、JoinArtisanVent/x-scraper-no-api、mikehasa/golive-skill、kaankiziltug/logo-design-skill等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 3130，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct、MCTS等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、amitshekhariitbhu、yetone、zouyuxuan122、JoinArtisanVent、scarletkc、dzhng、mikehasa，累计提及 25 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、your、claude、code、rag、llm、one等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 20 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCTS、agents、your、claude等线索，代表条目包括JoinArtisanVent/x-scraper-no-api、mikehasa/golive-skill、kaankiziltug/logo-design-skill、lemomo-ai/lemo-opuscar，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 20 个 GitHub 项目，24 小时 star 增量约 3063，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及amitshekhariitbhu、OpenAI、yetone、zouyuxuan122、JoinArtisanVent、scarletkc，累计提及 22 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 22 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、MCTS、agents、agent等线索，代表条目包括feder-cr/dots、heaven999b/hello-agent-system、JoinArtisanVent/x-scraper-no-api、mikehasa/golive-skill，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 22 个 GitHub 项目，24 小时 star 增量约 3130，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 9 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、amitshekhariitbhu、yetone、zouyuxuan122、JoinArtisanVent、scarletkc，累计提及 25 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、your、claude、code、agent、llm、coding、rag是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、agent、your、claude、code、rag、llm、one是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "feder-cr/dots",
+            "url": "https://github.com/feder-cr/dots",
+            "source": "github",
+            "reason": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "heaven999b/hello-agent-system",
+            "url": "https://github.com/heaven999b/hello-agent-system",
+            "source": "github",
+            "reason": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "JoinArtisanVent/x-scraper-no-api",
             "url": "https://github.com/JoinArtisanVent/x-scraper-no-api",
@@ -273,32 +291,46 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "aaddrick/building-with-typesafe-jev",
-            "url": "https://github.com/aaddrick/building-with-typesafe-jev",
-            "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Perruer/keelflow",
-            "url": "https://github.com/Perruer/keelflow",
-            "source": "github",
-            "reason": "命中 agents，匹配分 0.396，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "AgentSystemLabs/agent-office",
             "url": "https://github.com/AgentSystemLabs/agent-office",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           },
           {
-            "title": "amitshekhariitbhu/ai-engineering-course",
-            "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+            "title": "Perruer/keelflow",
+            "url": "https://github.com/Perruer/keelflow",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
         ]
       },
       "evidence_digest": [
+        {
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.95,
+          "matched_terms": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.95,
+          "matched_terms": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+        },
         {
           "title": "JoinArtisanVent/x-scraper-no-api",
           "source_url": "https://github.com/JoinArtisanVent/x-scraper-no-api",
@@ -370,54 +402,31 @@
             "agents"
           ],
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "aaddrick/building-with-typesafe-jev",
-          "source_url": "https://github.com/aaddrick/building-with-typesafe-jev",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "agents"
-          ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Perruer/keelflow",
-          "source_url": "https://github.com/Perruer/keelflow",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.396,
-          "matched_terms": [
-            "agents"
-          ],
-          "why_included": "命中 agents，匹配分 0.396，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 20 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 22 个。",
         "focus_terms": [
           "RAG",
+          "MCP",
           "ReAct",
           "MCTS",
           "agents",
+          "agent",
           "your",
-          "claude",
-          "code",
-          "agent"
+          "claude"
         ],
         "representative_titles": [
+          "feder-cr/dots",
+          "heaven999b/hello-agent-system",
           "JoinArtisanVent/x-scraper-no-api",
           "mikehasa/golive-skill",
-          "kaankiziltug/logo-design-skill",
-          "lemomo-ai/lemo-opuscar",
-          "ssddxg/agentic-rl-forge"
+          "kaankiziltug/logo-design-skill"
         ],
         "related_institutions": [
-          "amitshekhariitbhu",
           "OpenAI",
+          "amitshekhariitbhu",
           "yetone",
           "zouyuxuan122",
           "JoinArtisanVent",
@@ -426,11 +435,11 @@
           "mikehasa"
         ],
         "paper_count": 0,
-        "repo_count": 20,
-        "github_star_delta": 3063,
-        "method_mentions": 7,
+        "repo_count": 22,
+        "github_star_delta": 3130,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 22
+        "institution_mentions": 25
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -440,10 +449,10 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=6.587，growth_rate=-0.947，z_score=-6.043，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=6.581，growth_rate=-0.948，z_score=-6.172，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 9 个",
-        "24h star 增量 438",
+        "24h star 增量 367",
         "方法提及：RAG, ReAct, MCTS",
         "机构集中：amitshekhariitbhu, dzhng, chenkanglin198904"
       ],
@@ -452,13 +461,13 @@
         "current_24h_count": 9,
         "current_72h_count": 9,
         "current_7d_count": 9,
-        "baseline_daily_avg_30d": 189.465,
-        "baseline_daily_std_30d": 28.866,
-        "baseline_72h_avg_30d": 568.394,
-        "growth_rate": -0.947,
-        "z_score": -6.043,
+        "baseline_daily_avg_30d": 190.141,
+        "baseline_daily_std_30d": 28.351,
+        "baseline_72h_avg_30d": 570.423,
+        "growth_rate": -0.948,
+        "z_score": -6.172,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.269,
+        "github_signal_score": 5.262,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.222,
@@ -468,11 +477,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 438,
+        "github_star_delta": 367,
         "method_mentions": 10,
         "dataset_mentions": 0,
         "institution_mentions": 10,
-        "burst_score": 6.587,
+        "burst_score": 6.581,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -578,9 +587,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Anirudh10-png/model-guard",
-          "source_url": "https://github.com/Anirudh10-png/model-guard",
-          "published_at": "2026-09-29T08:26:45Z",
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
+          "published_at": "2026-09-27T01:18:37Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -592,13 +601,13 @@
       ],
       "source_urls": [
         "https://github.com/AbdoslamB/InkDoc",
-        "https://github.com/Anirudh10-png/model-guard",
         "https://github.com/Perruer/keelflow",
         "https://github.com/amitshekhariitbhu/ai-engineering-course",
         "https://github.com/amitshekhariitbhu/ai-system-design",
         "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
         "https://github.com/chenkanglin198904/Personal_External_Brain",
         "https://github.com/dzhng/jevgrep",
+        "https://github.com/heaven999b/hello-agent-system",
         "https://github.com/ssddxg/agentic-rl-forge"
       ],
       "related_methods": [
@@ -618,14 +627,14 @@
         "AbdoslamB"
       ],
       "suggested_watch_keywords": [
-        "agents",
         "rag",
+        "agents",
+        "learn",
         "llm",
+        "system",
         "your",
         "step",
-        "amitshekhariitbhu",
-        "complete",
-        "learn"
+        "amitshekhariitbhu"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -637,16 +646,16 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:RAG:2026-09-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-system-design\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-system-design\", \"published_at\": \"2026-09-25T04:50:06Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chenkanglin198904/Personal_External_Brain\", \"source_url\": \"https://github.com/chenkanglin198904/Personal_External_Brain\", \"published_at\": \"2026-09-23T20:37:07Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"source_url\": \"https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"published_at\": \"2026-09-23T11:55:30Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Perruer/keelflow\", \"source_url\": \"https://github.com/Perruer/keelflow\", \"published_at\": \"2026-09-24T09:31:18Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ssddxg/agentic-rl-forge\", \"source_url\": \"https://github.com/ssddxg/agentic-rl-forge\", \"published_at\": \"2026-09-23T06:58:00Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"AbdoslamB/InkDoc\", \"source_url\": \"https://github.com/AbdoslamB/InkDoc\", \"published_at\": \"2026-09-27T01:28:04Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Anirudh10-png/model-guard\", \"source_url\": \"https://github.com/Anirudh10-png/model-guard\", \"published_at\": \"2026-09-29T08:26:45Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、chenkanglin198904/Personal_External_Brain、bodepudimuneendra-netizen/laya-jev-GraphRAG、Perruer/keelflow等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 438，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCTS等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、dzhng、chenkanglin198904、bodepudimuneendra-netizen、OpenAI、Perruer、ssddxg、AbdoslamB，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、rag、llm、your、step、amitshekhariitbhu、complete、learn等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-system-design\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-system-design\", \"published_at\": \"2026-09-25T04:50:06Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chenkanglin198904/Personal_External_Brain\", \"source_url\": \"https://github.com/chenkanglin198904/Personal_External_Brain\", \"published_at\": \"2026-09-23T20:37:07Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"source_url\": \"https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"published_at\": \"2026-09-23T11:55:30Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Perruer/keelflow\", \"source_url\": \"https://github.com/Perruer/keelflow\", \"published_at\": \"2026-09-24T09:31:18Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ssddxg/agentic-rl-forge\", \"source_url\": \"https://github.com/ssddxg/agentic-rl-forge\", \"published_at\": \"2026-09-23T06:58:00Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"AbdoslamB/InkDoc\", \"source_url\": \"https://github.com/AbdoslamB/InkDoc\", \"published_at\": \"2026-09-27T01:28:04Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"heaven999b/hello-agent-system\", \"source_url\": \"https://github.com/heaven999b/hello-agent-system\", \"published_at\": \"2026-09-27T01:18:37Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、chenkanglin198904/Personal_External_Brain、bodepudimuneendra-netizen/laya-jev-GraphRAG、Perruer/keelflow等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 367，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCTS等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、dzhng、chenkanglin198904、bodepudimuneendra-netizen、OpenAI、Perruer、ssddxg、AbdoslamB，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、agents、learn、llm、system、your、step、amitshekhariitbhu等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：RAG 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCTS、agents、llm、your等线索，代表条目包括amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、chenkanglin198904/Personal_External_Brain、bodepudimuneendra-netizen/laya-jev-GraphRAG，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 438，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCTS、agents、learn、llm等线索，代表条目包括amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、chenkanglin198904/Personal_External_Brain、bodepudimuneendra-netizen/laya-jev-GraphRAG，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 367，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 10 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及amitshekhariitbhu、dzhng、chenkanglin198904、bodepudimuneendra-netizen、OpenAI、Perruer，累计提及 10 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、rag、llm、your、step、amitshekhariitbhu、complete、learn是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察rag、agents、learn、llm、system、your、step、amitshekhariitbhu是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -693,8 +702,8 @@
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Anirudh10-png/model-guard",
-            "url": "https://github.com/Anirudh10-png/model-guard",
+            "title": "heaven999b/hello-agent-system",
+            "url": "https://github.com/heaven999b/hello-agent-system",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
@@ -785,8 +794,8 @@
           "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Anirudh10-png/model-guard",
-          "source_url": "https://github.com/Anirudh10-png/model-guard",
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.56,
@@ -804,10 +813,10 @@
           "ReAct",
           "MCTS",
           "agents",
+          "learn",
           "llm",
-          "your",
-          "step",
-          "amitshekhariitbhu"
+          "system",
+          "your"
         ],
         "representative_titles": [
           "amitshekhariitbhu/ai-engineering-course",
@@ -828,7 +837,7 @@
         ],
         "paper_count": 0,
         "repo_count": 9,
-        "github_star_delta": 438,
+        "github_star_delta": 367,
         "method_mentions": 10,
         "dataset_mentions": 0,
         "institution_mentions": 10
@@ -838,46 +847,61 @@
     {
       "topic": "Model Context Protocol",
       "title": "Model Context Protocol 出现强趋势震荡",
-      "magnitude": 5.96,
+      "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 13 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.96，burst=5.91，growth_rate=-0.95，z_score=-4.953，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 15 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=6.874，growth_rate=-0.943，z_score=-4.949，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 13 个",
-        "24h star 增量 4012",
+        "GitHub 项目 15 个",
+        "24h star 增量 2842",
         "方法提及：RAG, MCP, MCTS",
-        "机构集中：amitshekhariitbhu, OpenAI, KKKKhazix"
+        "机构集中：OpenAI, amitshekhariitbhu, KKKKhazix"
       ],
       "metrics": {
-        "current_1h_count": 13,
-        "current_24h_count": 13,
-        "current_72h_count": 13,
-        "current_7d_count": 13,
-        "baseline_daily_avg_30d": 281.239,
-        "baseline_daily_std_30d": 53.162,
-        "baseline_72h_avg_30d": 843.718,
-        "growth_rate": -0.95,
-        "z_score": -4.953,
+        "current_1h_count": 15,
+        "current_24h_count": 15,
+        "current_72h_count": 15,
+        "current_7d_count": 15,
+        "baseline_daily_avg_30d": 281.915,
+        "baseline_daily_std_30d": 52.938,
+        "baseline_72h_avg_30d": 845.746,
+        "growth_rate": -0.943,
+        "z_score": -4.949,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.84,
+        "github_signal_score": 5.666,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.154,
-        "institution_signal_score": 0.427,
+        "institution_concentration_score": 0.2,
+        "institution_signal_score": 0.589,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.07,
+        "method_signal_score": 1.208,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 13,
-        "github_star_delta": 4012,
-        "method_mentions": 6,
+        "repo_count": 15,
+        "github_star_delta": 2842,
+        "method_mentions": 8,
         "dataset_mentions": 0,
-        "institution_mentions": 15,
-        "burst_score": 5.91,
+        "institution_mentions": 18,
+        "burst_score": 6.874,
         "low_history_confidence": false,
-        "magnitude": 5.96
+        "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "published_at": "2026-09-29T23:06:00Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -907,9 +931,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "amitshekhariitbhu/ai-system-design",
-          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
-          "published_at": "2026-09-25T04:50:06Z",
+          "title": "zouyuxuan122/dsh-our-free-model",
+          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+          "published_at": "2026-09-24T16:17:19Z",
           "match_score": 0.077,
           "matched_keywords": [],
           "matched_methods": [],
@@ -918,9 +942,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "zouyuxuan122/dsh-our-free-model",
-          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
-          "published_at": "2026-09-24T16:17:19Z",
+          "title": "amitshekhariitbhu/ai-system-design",
+          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
+          "published_at": "2026-09-25T04:50:06Z",
           "match_score": 0.077,
           "matched_keywords": [],
           "matched_methods": [],
@@ -958,17 +982,6 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "kaankiziltug/logo-design-skill",
-          "source_url": "https://github.com/kaankiziltug/logo-design-skill",
-          "published_at": "2026-09-26T08:23:34Z",
-          "match_score": 0.077,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -978,6 +991,8 @@
         "https://github.com/amitshekhariitbhu/ai-engineering-course",
         "https://github.com/amitshekhariitbhu/ai-system-design",
         "https://github.com/dzhng/jevgrep",
+        "https://github.com/feder-cr/dots",
+        "https://github.com/heaven999b/hello-agent-system",
         "https://github.com/kaankiziltug/logo-design-skill",
         "https://github.com/lemomo-ai/lemo-opuscar",
         "https://github.com/mikehasa/golive-skill",
@@ -993,24 +1008,24 @@
       ],
       "related_datasets": [],
       "related_institutions": [
-        "amitshekhariitbhu",
         "OpenAI",
+        "amitshekhariitbhu",
         "KKKKhazix",
         "zouyuxuan122",
         "scarletkc",
         "dzhng",
         "mikehasa",
-        "kaankiziltug"
+        "feder-cr"
       ],
       "suggested_watch_keywords": [
         "agents",
-        "llm",
         "rag",
+        "llm",
+        "agent",
+        "learn",
+        "ai-agents",
         "cli",
-        "code",
-        "coding",
-        "your",
-        "skill"
+        "code"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -1022,19 +1037,25 @@
       ],
       "push_recommended": true,
       "dedupe_key": "trend:Model Context Protocol:2026-09-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KKKKhazix/AIHOT\", \"source_url\": \"https://github.com/KKKKhazix/AIHOT\", \"published_at\": \"2026-09-28T23:40:05Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-system-design\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-system-design\", \"published_at\": \"2026-09-25T04:50:06Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zouyuxuan122/dsh-our-free-model\", \"source_url\": \"https://github.com/zouyuxuan122/dsh-our-free-model\", \"published_at\": \"2026-09-24T16:17:19Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"scarletkc/seiso\", \"source_url\": \"https://github.com/scarletkc/seiso\", \"published_at\": \"2026-09-27T13:27:28Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dzhng/jevgrep\", \"source_url\": \"https://github.com/dzhng/jevgrep\", \"published_at\": \"2026-09-26T04:06:56Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/golive-skill\", \"source_url\": \"https://github.com/mikehasa/golive-skill\", \"published_at\": \"2026-09-23T13:37:26Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kaankiziltug/logo-design-skill\", \"source_url\": \"https://github.com/kaankiziltug/logo-design-skill\", \"published_at\": \"2026-09-26T08:23:34Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 13 个。代表性目标包括KKKKhazix/AIHOT、amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、zouyuxuan122/dsh-our-free-model、scarletkc/seiso等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 4012，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、MCTS等线索，方法提及 6 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、OpenAI、KKKKhazix、zouyuxuan122、scarletkc、dzhng、mikehasa、kaankiziltug，累计提及 15 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、llm、rag、cli、code、coding、your、skill等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"feder-cr/dots\", \"source_url\": \"https://github.com/feder-cr/dots\", \"published_at\": \"2026-09-29T23:06:00Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KKKKhazix/AIHOT\", \"source_url\": \"https://github.com/KKKKhazix/AIHOT\", \"published_at\": \"2026-09-28T23:40:05Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zouyuxuan122/dsh-our-free-model\", \"source_url\": \"https://github.com/zouyuxuan122/dsh-our-free-model\", \"published_at\": \"2026-09-24T16:17:19Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-system-design\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-system-design\", \"published_at\": \"2026-09-25T04:50:06Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"scarletkc/seiso\", \"source_url\": \"https://github.com/scarletkc/seiso\", \"published_at\": \"2026-09-27T13:27:28Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dzhng/jevgrep\", \"source_url\": \"https://github.com/dzhng/jevgrep\", \"published_at\": \"2026-09-26T04:06:56Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/golive-skill\", \"source_url\": \"https://github.com/mikehasa/golive-skill\", \"published_at\": \"2026-09-23T13:37:26Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 15 个。代表性目标包括feder-cr/dots、KKKKhazix/AIHOT、amitshekhariitbhu/ai-engineering-course、zouyuxuan122/dsh-our-free-model、amitshekhariitbhu/ai-system-design等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 2842，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、MCTS等线索，方法提及 8 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、amitshekhariitbhu、KKKKhazix、zouyuxuan122、scarletkc、dzhng、mikehasa、feder-cr，累计提及 18 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、rag、llm、agent、learn、ai-agents、cli、code等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 13 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、MCTS、agents、llm、cli等线索，代表条目包括KKKKhazix/AIHOT、amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、zouyuxuan122/dsh-our-free-model，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 13 个 GitHub 项目，24 小时 star 增量约 4012，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 6 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及amitshekhariitbhu、OpenAI、KKKKhazix、zouyuxuan122、scarletkc、dzhng，累计提及 15 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 15 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、MCTS、agents、llm、agent等线索，代表条目包括feder-cr/dots、KKKKhazix/AIHOT、amitshekhariitbhu/ai-engineering-course、zouyuxuan122/dsh-our-free-model，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 15 个 GitHub 项目，24 小时 star 增量约 2842，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 8 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、amitshekhariitbhu、KKKKhazix、zouyuxuan122、scarletkc、dzhng，累计提及 18 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、llm、rag、cli、code、coding、your、skill是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、rag、llm、agent、learn、ai-agents、cli、code是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "feder-cr/dots",
+            "url": "https://github.com/feder-cr/dots",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "KKKKhazix/AIHOT",
             "url": "https://github.com/KKKKhazix/AIHOT",
@@ -1048,14 +1069,14 @@
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "amitshekhariitbhu/ai-system-design",
-            "url": "https://github.com/amitshekhariitbhu/ai-system-design",
+            "title": "zouyuxuan122/dsh-our-free-model",
+            "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "zouyuxuan122/dsh-our-free-model",
-            "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+            "title": "amitshekhariitbhu/ai-system-design",
+            "url": "https://github.com/amitshekhariitbhu/ai-system-design",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
@@ -1078,12 +1099,6 @@
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "kaankiziltug/logo-design-skill",
-            "url": "https://github.com/kaankiziltug/logo-design-skill",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "Perruer/keelflow",
             "url": "https://github.com/Perruer/keelflow",
             "source": "github",
@@ -1098,6 +1113,17 @@
         ]
       },
       "evidence_digest": [
+        {
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+        },
         {
           "title": "KKKKhazix/AIHOT",
           "source_url": "https://github.com/KKKKhazix/AIHOT",
@@ -1119,8 +1145,8 @@
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "amitshekhariitbhu/ai-system-design",
-          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
+          "title": "zouyuxuan122/dsh-our-free-model",
+          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.077,
@@ -1128,8 +1154,8 @@
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "zouyuxuan122/dsh-our-free-model",
-          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+          "title": "amitshekhariitbhu/ai-system-design",
+          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.077,
@@ -1162,66 +1188,382 @@
           "match_score": 0.077,
           "matched_terms": [],
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "kaankiziltug/logo-design-skill",
-          "source_url": "https://github.com/kaankiziltug/logo-design-skill",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.077,
-          "matched_terms": [],
-          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 13 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 15 个。",
         "focus_terms": [
           "RAG",
           "MCP",
           "MCTS",
           "agents",
           "llm",
-          "cli",
-          "code",
-          "coding"
+          "agent",
+          "learn",
+          "ai-agents"
         ],
         "representative_titles": [
+          "feder-cr/dots",
           "KKKKhazix/AIHOT",
           "amitshekhariitbhu/ai-engineering-course",
-          "amitshekhariitbhu/ai-system-design",
           "zouyuxuan122/dsh-our-free-model",
-          "scarletkc/seiso"
+          "amitshekhariitbhu/ai-system-design"
         ],
         "related_institutions": [
-          "amitshekhariitbhu",
           "OpenAI",
+          "amitshekhariitbhu",
           "KKKKhazix",
           "zouyuxuan122",
           "scarletkc",
           "dzhng",
           "mikehasa",
-          "kaankiziltug"
+          "feder-cr"
         ],
         "paper_count": 0,
-        "repo_count": 13,
-        "github_star_delta": 4012,
-        "method_mentions": 6,
+        "repo_count": 15,
+        "github_star_delta": 2842,
+        "method_mentions": 8,
         "dataset_mentions": 0,
-        "institution_mentions": 15
+        "institution_mentions": 18
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
+      "topic": "Robotics",
+      "title": "Robotics 出现强趋势震荡",
+      "magnitude": 5.66,
+      "severity_label": "强趋势震荡",
+      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.66，burst=5.105，growth_rate=-0.951，z_score=-6.307，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 6 个",
+        "24h star 增量 19",
+        "方法提及：VLA, Diffusion Policy",
+        "机构集中：KingKongRobotics, Mondo-Robotics, llros007"
+      ],
+      "metrics": {
+        "current_1h_count": 6,
+        "current_24h_count": 6,
+        "current_72h_count": 6,
+        "current_7d_count": 6,
+        "baseline_daily_avg_30d": 141.313,
+        "baseline_daily_std_30d": 20.453,
+        "baseline_72h_avg_30d": 423.94,
+        "growth_rate": -0.951,
+        "z_score": -6.307,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 4.5,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.333,
+        "institution_signal_score": 0.732,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 0.604,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 6,
+        "github_star_delta": 19,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 7,
+        "burst_score": 5.105,
+        "low_history_confidence": false,
+        "magnitude": 5.66
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "12-Twelve-12/robolings",
+          "source_url": "https://github.com/12-Twelve-12/robolings",
+          "published_at": "2026-09-29T07:08:17Z",
+          "match_score": 0.833,
+          "matched_keywords": [
+            "robot learning",
+            "robotics"
+          ],
+          "matched_methods": [
+            "Diffusion Policy"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Mondo-Robotics/open-beni",
+          "source_url": "https://github.com/Mondo-Robotics/open-beni",
+          "published_at": "2026-09-24T07:57:00Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "KingKongRobotics/jumper",
+          "source_url": "https://github.com/KingKongRobotics/jumper",
+          "published_at": "2026-09-28T05:56:04Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "llros007/lerobot_android",
+          "source_url": "https://github.com/llros007/lerobot_android",
+          "published_at": "2026-09-25T07:44:25Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "KingKongRobotics/jumper-design",
+          "source_url": "https://github.com/KingKongRobotics/jumper-design",
+          "published_at": "2026-09-26T12:41:48Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+          "source_url": "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+          "published_at": "2026-09-24T01:57:47Z",
+          "match_score": 0.333,
+          "matched_keywords": [
+            "robotics"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/12-Twelve-12/robolings",
+        "https://github.com/KingKongRobotics/jumper",
+        "https://github.com/KingKongRobotics/jumper-design",
+        "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+        "https://github.com/Mondo-Robotics/open-beni",
+        "https://github.com/llros007/lerobot_android"
+      ],
+      "related_methods": [
+        "VLA",
+        "Diffusion Policy"
+      ],
+      "related_datasets": [],
+      "related_institutions": [
+        "KingKongRobotics",
+        "Mondo-Robotics",
+        "llros007",
+        "12-Twelve-12",
+        "MIT",
+        "MIT-CDFG"
+      ],
+      "suggested_watch_keywords": [
+        "robot",
+        "robotics",
+        "jumper",
+        "kingkongrobotics",
+        "open-source",
+        "crab",
+        "crab-robot",
+        "open-source-robots"
+      ],
+      "confidence": 0.72,
+      "caveats": [],
+      "tags": [
+        "GitHub 暴涨",
+        "方法扩散",
+        "机构集中",
+        "开源驱动",
+        "Watchlist 命中"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:Robotics:2026-09-30:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"12-Twelve-12/robolings\", \"source_url\": \"https://github.com/12-Twelve-12/robolings\", \"published_at\": \"2026-09-29T07:08:17Z\", \"match_score\": 0.833, \"matched_keywords\": [\"robot learning\", \"robotics\"], \"matched_methods\": [\"Diffusion Policy\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Mondo-Robotics/open-beni\", \"source_url\": \"https://github.com/Mondo-Robotics/open-beni\", \"published_at\": \"2026-09-24T07:57:00Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KingKongRobotics/jumper\", \"source_url\": \"https://github.com/KingKongRobotics/jumper\", \"published_at\": \"2026-09-28T05:56:04Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"llros007/lerobot_android\", \"source_url\": \"https://github.com/llros007/lerobot_android\", \"published_at\": \"2026-09-25T07:44:25Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KingKongRobotics/jumper-design\", \"source_url\": \"https://github.com/KingKongRobotics/jumper-design\", \"published_at\": \"2026-09-26T12:41:48Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"MIT-CDFG/Survey-AI-for-3D-modeling-Robotics\", \"source_url\": \"https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics\", \"published_at\": \"2026-09-24T01:57:47Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括12-Twelve-12/robolings、Mondo-Robotics/open-beni、KingKongRobotics/jumper、llros007/lerobot_android、KingKongRobotics/jumper-design等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 19，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、Diffusion Policy等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、12-Twelve-12、MIT、MIT-CDFG，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "signal_takeaways": [
+        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“强趋势震荡”（M5.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向VLA、Diffusion Policy、robot、robotics、jumper、kingkongrobotics等线索，代表条目包括12-Twelve-12/robolings、Mondo-Robotics/open-beni、KingKongRobotics/jumper、llros007/lerobot_android，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 19，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、12-Twelve-12、MIT、MIT-CDFG，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "12-Twelve-12/robolings",
+            "url": "https://github.com/12-Twelve-12/robolings",
+            "source": "github",
+            "reason": "命中 robot learning、robotics、Diffusion Policy，匹配分 0.833，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "Mondo-Robotics/open-beni",
+            "url": "https://github.com/Mondo-Robotics/open-beni",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "KingKongRobotics/jumper",
+            "url": "https://github.com/KingKongRobotics/jumper",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "llros007/lerobot_android",
+            "url": "https://github.com/llros007/lerobot_android",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "KingKongRobotics/jumper-design",
+            "url": "https://github.com/KingKongRobotics/jumper-design",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+            "url": "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+            "source": "github",
+            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "12-Twelve-12/robolings",
+          "source_url": "https://github.com/12-Twelve-12/robolings",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.833,
+          "matched_terms": [
+            "robot learning",
+            "robotics",
+            "Diffusion Policy"
+          ],
+          "why_included": "命中 robot learning、robotics、Diffusion Policy，匹配分 0.833，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "Mondo-Robotics/open-beni",
+          "source_url": "https://github.com/Mondo-Robotics/open-beni",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "KingKongRobotics/jumper",
+          "source_url": "https://github.com/KingKongRobotics/jumper",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "llros007/lerobot_android",
+          "source_url": "https://github.com/llros007/lerobot_android",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "KingKongRobotics/jumper-design",
+          "source_url": "https://github.com/KingKongRobotics/jumper-design",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+          "source_url": "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.333,
+          "matched_terms": [
+            "robotics"
+          ],
+          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 6 个。",
+        "focus_terms": [
+          "VLA",
+          "Diffusion Policy",
+          "robot",
+          "robotics",
+          "jumper",
+          "kingkongrobotics",
+          "open-source",
+          "crab"
+        ],
+        "representative_titles": [
+          "12-Twelve-12/robolings",
+          "Mondo-Robotics/open-beni",
+          "KingKongRobotics/jumper",
+          "llros007/lerobot_android",
+          "KingKongRobotics/jumper-design"
+        ],
+        "related_institutions": [
+          "KingKongRobotics",
+          "Mondo-Robotics",
+          "llros007",
+          "12-Twelve-12",
+          "MIT",
+          "MIT-CDFG"
+        ],
+        "paper_count": 0,
+        "repo_count": 6,
+        "github_star_delta": 19,
+        "method_mentions": 2,
+        "dataset_mentions": 0,
+        "institution_mentions": 7
       },
       "curation_method": "deterministic_natural_language_v2"
     },
     {
       "topic": "Speech",
       "title": "Speech 出现强趋势震荡",
-      "magnitude": 5.57,
+      "magnitude": 5.56,
       "severity_label": "强趋势震荡",
       "summary": "Speech 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.57，burst=5.019，growth_rate=-0.952，z_score=-2.549，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.56，burst=5.01，growth_rate=-0.952，z_score=-2.554，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 2 个",
-        "24h star 增量 146",
+        "24h star 增量 129",
         "方法提及：RAG, ReAct",
         "机构集中：lemomo-ai, chenkanglin198904"
       ],
@@ -1230,13 +1572,13 @@
         "current_24h_count": 2,
         "current_72h_count": 2,
         "current_7d_count": 2,
-        "baseline_daily_avg_30d": 61.714,
-        "baseline_daily_std_30d": 22.43,
-        "baseline_72h_avg_30d": 185.143,
+        "baseline_daily_avg_30d": 61.333,
+        "baseline_daily_std_30d": 22.231,
+        "baseline_72h_avg_30d": 184.0,
         "growth_rate": -0.952,
-        "z_score": -2.549,
+        "z_score": -2.554,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.415,
+        "github_signal_score": 4.405,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.5,
@@ -1246,13 +1588,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 2,
-        "github_star_delta": 146,
+        "github_star_delta": 129,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 2,
-        "burst_score": 5.019,
+        "burst_score": 5.01,
         "low_history_confidence": false,
-        "magnitude": 5.57
+        "magnitude": 5.56
       },
       "evidence": [
         {
@@ -1317,11 +1659,11 @@
       "push_recommended": true,
       "dedupe_key": "trend:Speech:2026-09-30:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lemomo-ai/lemo-opuscar\", \"source_url\": \"https://github.com/lemomo-ai/lemo-opuscar\", \"published_at\": \"2026-09-26T10:10:41Z\", \"match_score\": 0.547, \"matched_keywords\": [\"speech\", \"text-to-speech\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chenkanglin198904/Personal_External_Brain\", \"source_url\": \"https://github.com/chenkanglin198904/Personal_External_Brain\", \"published_at\": \"2026-09-23T20:37:07Z\", \"match_score\": 0.273, \"matched_keywords\": [\"audio\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Speech」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括lemomo-ai/lemo-opuscar、chenkanglin198904/Personal_External_Brain等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 146，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及lemomo-ai、chenkanglin198904，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察your、film、style、claude、lemomo-ai、lemo-opuscar、styles、each等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。",
+      "curated_summary": "本次抓取围绕「Speech」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括lemomo-ai/lemo-opuscar、chenkanglin198904/Personal_External_Brain等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。开源侧 24 小时 star 增量约为 129，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及lemomo-ai、chenkanglin198904，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察your、film、style、claude、lemomo-ai、lemo-opuscar、styles、each等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。",
       "signal_takeaways": [
         "总体判断：Speech 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“强趋势震荡”（M5.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向RAG、ReAct、your、film、style、claude等线索，代表条目包括lemomo-ai/lemo-opuscar、chenkanglin198904/Personal_External_Brain，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 146，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 2 个 GitHub 项目，24 小时 star 增量约 129，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
         "机构与账号归纳：相关信号涉及lemomo-ai、chenkanglin198904，累计提及 2 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 2 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
@@ -1391,335 +1733,10 @@
         ],
         "paper_count": 0,
         "repo_count": 2,
-        "github_star_delta": 146,
+        "github_star_delta": 129,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 2
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
-      "topic": "Robotics",
-      "title": "Robotics 出现强趋势震荡",
-      "magnitude": 5.48,
-      "severity_label": "强趋势震荡",
-      "summary": "Robotics 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.48，burst=4.872，growth_rate=-0.951，z_score=-6.278，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 6 个",
-        "24h star 增量 13",
-        "方法提及：VLA, Diffusion Policy",
-        "机构集中：KingKongRobotics, Mondo-Robotics, llros007"
-      ],
-      "metrics": {
-        "current_1h_count": 6,
-        "current_24h_count": 6,
-        "current_72h_count": 6,
-        "current_7d_count": 6,
-        "baseline_daily_avg_30d": 141.493,
-        "baseline_daily_std_30d": 20.581,
-        "baseline_72h_avg_30d": 424.478,
-        "growth_rate": -0.951,
-        "z_score": -6.278,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 4.268,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.333,
-        "institution_signal_score": 0.732,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 0.604,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 6,
-        "github_star_delta": 13,
-        "method_mentions": 2,
-        "dataset_mentions": 0,
-        "institution_mentions": 7,
-        "burst_score": 4.872,
-        "low_history_confidence": false,
-        "magnitude": 5.48
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "12-Twelve-12/robolings",
-          "source_url": "https://github.com/12-Twelve-12/robolings",
-          "published_at": "2026-09-29T07:08:17Z",
-          "match_score": 0.833,
-          "matched_keywords": [
-            "robot learning",
-            "robotics"
-          ],
-          "matched_methods": [
-            "Diffusion Policy"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Mondo-Robotics/open-beni",
-          "source_url": "https://github.com/Mondo-Robotics/open-beni",
-          "published_at": "2026-09-24T07:57:00Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "llros007/lerobot_android",
-          "source_url": "https://github.com/llros007/lerobot_android",
-          "published_at": "2026-09-25T07:44:25Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "KingKongRobotics/jumper",
-          "source_url": "https://github.com/KingKongRobotics/jumper",
-          "published_at": "2026-09-28T05:56:04Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "KingKongRobotics/jumper-design",
-          "source_url": "https://github.com/KingKongRobotics/jumper-design",
-          "published_at": "2026-09-26T12:41:48Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-          "source_url": "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-          "published_at": "2026-09-24T01:57:47Z",
-          "match_score": 0.333,
-          "matched_keywords": [
-            "robotics"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/12-Twelve-12/robolings",
-        "https://github.com/KingKongRobotics/jumper",
-        "https://github.com/KingKongRobotics/jumper-design",
-        "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-        "https://github.com/Mondo-Robotics/open-beni",
-        "https://github.com/llros007/lerobot_android"
-      ],
-      "related_methods": [
-        "VLA",
-        "Diffusion Policy"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "KingKongRobotics",
-        "Mondo-Robotics",
-        "llros007",
-        "MIT",
-        "MIT-CDFG",
-        "12-Twelve-12"
-      ],
-      "suggested_watch_keywords": [
-        "robot",
-        "robotics",
-        "jumper",
-        "kingkongrobotics",
-        "open-source",
-        "crab",
-        "crab-robot",
-        "open-source-robots"
-      ],
-      "confidence": 0.72,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动",
-        "Watchlist 命中"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:Robotics:2026-09-30:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"12-Twelve-12/robolings\", \"source_url\": \"https://github.com/12-Twelve-12/robolings\", \"published_at\": \"2026-09-29T07:08:17Z\", \"match_score\": 0.833, \"matched_keywords\": [\"robot learning\", \"robotics\"], \"matched_methods\": [\"Diffusion Policy\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Mondo-Robotics/open-beni\", \"source_url\": \"https://github.com/Mondo-Robotics/open-beni\", \"published_at\": \"2026-09-24T07:57:00Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"llros007/lerobot_android\", \"source_url\": \"https://github.com/llros007/lerobot_android\", \"published_at\": \"2026-09-25T07:44:25Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KingKongRobotics/jumper\", \"source_url\": \"https://github.com/KingKongRobotics/jumper\", \"published_at\": \"2026-09-28T05:56:04Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KingKongRobotics/jumper-design\", \"source_url\": \"https://github.com/KingKongRobotics/jumper-design\", \"published_at\": \"2026-09-26T12:41:48Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"MIT-CDFG/Survey-AI-for-3D-modeling-Robotics\", \"source_url\": \"https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics\", \"published_at\": \"2026-09-24T01:57:47Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括12-Twelve-12/robolings、Mondo-Robotics/open-beni、llros007/lerobot_android、KingKongRobotics/jumper、KingKongRobotics/jumper-design等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 13，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、Diffusion Policy等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、MIT、MIT-CDFG、12-Twelve-12，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
-      "signal_takeaways": [
-        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“强趋势震荡”（M5.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向VLA、Diffusion Policy、robot、robotics、jumper、kingkongrobotics等线索，代表条目包括12-Twelve-12/robolings、Mondo-Robotics/open-beni、llros007/lerobot_android、KingKongRobotics/jumper，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 13，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、MIT、MIT-CDFG、12-Twelve-12，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "12-Twelve-12/robolings",
-            "url": "https://github.com/12-Twelve-12/robolings",
-            "source": "github",
-            "reason": "命中 robot learning、robotics、Diffusion Policy，匹配分 0.833，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Mondo-Robotics/open-beni",
-            "url": "https://github.com/Mondo-Robotics/open-beni",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "llros007/lerobot_android",
-            "url": "https://github.com/llros007/lerobot_android",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "KingKongRobotics/jumper",
-            "url": "https://github.com/KingKongRobotics/jumper",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "KingKongRobotics/jumper-design",
-            "url": "https://github.com/KingKongRobotics/jumper-design",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-            "url": "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-            "source": "github",
-            "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "12-Twelve-12/robolings",
-          "source_url": "https://github.com/12-Twelve-12/robolings",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.833,
-          "matched_terms": [
-            "robot learning",
-            "robotics",
-            "Diffusion Policy"
-          ],
-          "why_included": "命中 robot learning、robotics、Diffusion Policy，匹配分 0.833，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Mondo-Robotics/open-beni",
-          "source_url": "https://github.com/Mondo-Robotics/open-beni",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "llros007/lerobot_android",
-          "source_url": "https://github.com/llros007/lerobot_android",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "KingKongRobotics/jumper",
-          "source_url": "https://github.com/KingKongRobotics/jumper",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "KingKongRobotics/jumper-design",
-          "source_url": "https://github.com/KingKongRobotics/jumper-design",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-          "source_url": "https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.333,
-          "matched_terms": [
-            "robotics"
-          ],
-          "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 6 个。",
-        "focus_terms": [
-          "VLA",
-          "Diffusion Policy",
-          "robot",
-          "robotics",
-          "jumper",
-          "kingkongrobotics",
-          "open-source",
-          "crab"
-        ],
-        "representative_titles": [
-          "12-Twelve-12/robolings",
-          "Mondo-Robotics/open-beni",
-          "llros007/lerobot_android",
-          "KingKongRobotics/jumper",
-          "KingKongRobotics/jumper-design"
-        ],
-        "related_institutions": [
-          "KingKongRobotics",
-          "Mondo-Robotics",
-          "llros007",
-          "MIT",
-          "MIT-CDFG",
-          "12-Twelve-12"
-        ],
-        "paper_count": 0,
-        "repo_count": 6,
-        "github_star_delta": 13,
-        "method_mentions": 2,
-        "dataset_mentions": 0,
-        "institution_mentions": 7
       },
       "curation_method": "deterministic_natural_language_v2"
     },
@@ -1729,10 +1746,10 @@
       "magnitude": 4.69,
       "severity_label": "疑似爆发",
       "summary": "AI Coding 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.69，burst=3.943，growth_rate=-0.948，z_score=-3.739，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.69，burst=3.938，growth_rate=-0.948，z_score=-3.756，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 591",
+        "24h star 增量 483",
         "机构集中：scarletkc, dzhng, lemomo-ai"
       ],
       "metrics": {
@@ -1740,13 +1757,13 @@
         "current_24h_count": 7,
         "current_72h_count": 7,
         "current_7d_count": 7,
-        "baseline_daily_avg_30d": 153.127,
-        "baseline_daily_std_30d": 38.079,
-        "baseline_72h_avg_30d": 459.38,
+        "baseline_daily_avg_30d": 153.465,
+        "baseline_daily_std_30d": 37.996,
+        "baseline_72h_avg_30d": 460.394,
         "growth_rate": -0.948,
-        "z_score": -3.739,
+        "z_score": -3.756,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.943,
+        "github_signal_score": 3.938,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
@@ -1756,11 +1773,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 591,
+        "github_star_delta": 483,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 7,
-        "burst_score": 3.943,
+        "burst_score": 3.938,
         "low_history_confidence": false,
         "magnitude": 4.69
       },
@@ -1864,8 +1881,8 @@
         "lemomo-ai",
         "zhuyansen",
         "aaddrick",
-        "majidmanzarpour",
-        "disler"
+        "disler",
+        "majidmanzarpour"
       ],
       "suggested_watch_keywords": [
         "agents",
@@ -1888,12 +1905,12 @@
       "push_recommended": true,
       "dedupe_key": "trend:AI Coding:2026-09-30:疑似爆发",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"disler/ten-levels-of-jev\", \"source_url\": \"https://github.com/disler/ten-levels-of-jev\", \"published_at\": \"2026-09-27T17:19:00Z\", \"match_score\": 0.417, \"matched_keywords\": [\"coding agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"majidmanzarpour/blender-game-skills\", \"source_url\": \"https://github.com/majidmanzarpour/blender-game-skills\", \"published_at\": \"2026-09-24T00:08:40Z\", \"match_score\": 0.333, \"matched_keywords\": [\"code agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"scarletkc/seiso\", \"source_url\": \"https://github.com/scarletkc/seiso\", \"published_at\": \"2026-09-27T13:27:28Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dzhng/jevgrep\", \"source_url\": \"https://github.com/dzhng/jevgrep\", \"published_at\": \"2026-09-26T04:06:56Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lemomo-ai/lemo-opuscar\", \"source_url\": \"https://github.com/lemomo-ai/lemo-opuscar\", \"published_at\": \"2026-09-26T10:10:41Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zhuyansen/awesome-claude-video-skills\", \"source_url\": \"https://github.com/zhuyansen/awesome-claude-video-skills\", \"published_at\": \"2026-09-27T04:06:05Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"aaddrick/building-with-typesafe-jev\", \"source_url\": \"https://github.com/aaddrick/building-with-typesafe-jev\", \"published_at\": \"2026-09-26T00:01:19Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括disler/ten-levels-of-jev、majidmanzarpour/blender-game-skills、scarletkc/seiso、dzhng/jevgrep、lemomo-ai/lemo-opuscar等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 591，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及scarletkc、dzhng、lemomo-ai、zhuyansen、aaddrick、majidmanzarpour、disler，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、code、coding、jev、claude、cli、your、each等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「AI Coding」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括disler/ten-levels-of-jev、majidmanzarpour/blender-game-skills、scarletkc/seiso、dzhng/jevgrep、lemomo-ai/lemo-opuscar等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 483，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及scarletkc、dzhng、lemomo-ai、zhuyansen、aaddrick、disler、majidmanzarpour，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、code、coding、jev、claude、cli、your、each等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：AI Coding 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“疑似爆发”（M4.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向agents、code、coding、jev、claude、cli等线索，代表条目包括disler/ten-levels-of-jev、majidmanzarpour/blender-game-skills、scarletkc/seiso、dzhng/jevgrep，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 591，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "机构与账号归纳：相关信号涉及scarletkc、dzhng、lemomo-ai、zhuyansen、aaddrick、majidmanzarpour，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 483，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "机构与账号归纳：相关信号涉及scarletkc、dzhng、lemomo-ai、zhuyansen、aaddrick、disler，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察agents、code、coding、jev、claude、cli、your、each是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -2038,12 +2055,12 @@
           "lemomo-ai",
           "zhuyansen",
           "aaddrick",
-          "majidmanzarpour",
-          "disler"
+          "disler",
+          "majidmanzarpour"
         ],
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 591,
+        "github_star_delta": 483,
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 7
@@ -2056,7 +2073,7 @@
       "magnitude": 4.2,
       "severity_label": "疑似爆发",
       "summary": "Reinforcement Learning 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.2，burst=2.998，growth_rate=-0.961，z_score=-3.149，cross_source=0.5。",
+      "calculation_summary": "magnitude=4.2，burst=2.998，growth_rate=-0.96，z_score=-3.054，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 1 个",
         "24h star 增量 3",
@@ -2068,11 +2085,11 @@
         "current_24h_count": 1,
         "current_72h_count": 1,
         "current_7d_count": 1,
-        "baseline_daily_avg_30d": 50.0,
-        "baseline_daily_std_30d": 14.56,
-        "baseline_72h_avg_30d": 150.0,
-        "growth_rate": -0.961,
-        "z_score": -3.149,
+        "baseline_daily_avg_30d": 49.469,
+        "baseline_daily_std_30d": 14.872,
+        "baseline_72h_avg_30d": 148.408,
+        "growth_rate": -0.96,
+        "z_score": -3.054,
         "paper_burst_score": 0.0,
         "github_signal_score": 2.393,
         "source_diversity_score": 0.5,
@@ -2202,234 +2219,15 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
-      "topic": "Evaluation",
-      "title": "Evaluation 出现明显异常",
-      "magnitude": 3.84,
-      "severity_label": "明显异常",
-      "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.84，burst=3.094，growth_rate=-0.928，z_score=-2.249，cross_source=0.5。",
-      "key_drivers": [
-        "GitHub 项目 3 个",
-        "24h star 增量 22",
-        "方法提及：RAG, MCTS",
-        "机构集中：amitshekhariitbhu, bodepudimuneendra-netizen, ssddxg"
-      ],
-      "metrics": {
-        "current_1h_count": 3,
-        "current_24h_count": 3,
-        "current_72h_count": 3,
-        "current_7d_count": 3,
-        "baseline_daily_avg_30d": 54.476,
-        "baseline_daily_std_30d": 21.891,
-        "baseline_72h_avg_30d": 163.429,
-        "growth_rate": -0.928,
-        "z_score": -2.249,
-        "paper_burst_score": 0.0,
-        "github_signal_score": 2.209,
-        "source_diversity_score": 0.5,
-        "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.333,
-        "institution_signal_score": 0.536,
-        "dataset_signal_score": 0.0,
-        "method_signal_score": 0.885,
-        "cold_revival_score": 0.0,
-        "paper_count": 0,
-        "repo_count": 3,
-        "github_star_delta": 22,
-        "method_mentions": 4,
-        "dataset_mentions": 0,
-        "institution_mentions": 3,
-        "burst_score": 3.094,
-        "low_history_confidence": false,
-        "magnitude": 3.84
-      },
-      "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "amitshekhariitbhu/ai-engineering-course",
-          "source_url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
-          "published_at": "2026-09-23T08:04:42Z",
-          "match_score": 0.3,
-          "matched_keywords": [
-            "evaluation"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
-          "source_url": "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
-          "published_at": "2026-09-23T11:55:30Z",
-          "match_score": 0.3,
-          "matched_keywords": [
-            "evaluation"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "ssddxg/agentic-rl-forge",
-          "source_url": "https://github.com/ssddxg/agentic-rl-forge",
-          "published_at": "2026-09-23T06:58:00Z",
-          "match_score": 0.3,
-          "matched_keywords": [
-            "evaluation"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        }
-      ],
-      "source_urls": [
-        "https://github.com/amitshekhariitbhu/ai-engineering-course",
-        "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
-        "https://github.com/ssddxg/agentic-rl-forge"
-      ],
-      "related_methods": [
-        "RAG",
-        "MCTS"
-      ],
-      "related_datasets": [],
-      "related_institutions": [
-        "amitshekhariitbhu",
-        "bodepudimuneendra-netizen",
-        "ssddxg"
-      ],
-      "suggested_watch_keywords": [
-        "complete",
-        "rag",
-        "engineering",
-        "ai-engineering-course",
-        "course",
-        "step",
-        "engineering course",
-        "amitshekhariitbhu"
-      ],
-      "confidence": 0.55,
-      "caveats": [],
-      "tags": [
-        "GitHub 暴涨",
-        "方法扩散",
-        "机构集中",
-        "开源驱动",
-        "Watchlist 命中"
-      ],
-      "push_recommended": true,
-      "dedupe_key": "trend:Evaluation:2026-09-30:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"source_url\": \"https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"published_at\": \"2026-09-23T11:55:30Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ssddxg/agentic-rl-forge\", \"source_url\": \"https://github.com/ssddxg/agentic-rl-forge\", \"published_at\": \"2026-09-23T06:58:00Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括amitshekhariitbhu/ai-engineering-course、bodepudimuneendra-netizen/laya-jev-GraphRAG、ssddxg/agentic-rl-forge等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 22，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCTS等线索，方法提及 4 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、bodepudimuneendra-netizen、ssddxg，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察complete、rag、engineering、ai-engineering-course、course、step、engineering course、amitshekhariitbhu等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
-      "signal_takeaways": [
-        "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“明显异常”（M3.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCTS、complete、engineering、ai-engineering-course、course等线索，代表条目包括amitshekhariitbhu/ai-engineering-course、bodepudimuneendra-netizen/laya-jev-GraphRAG、ssddxg/agentic-rl-forge，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 22，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 4 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及amitshekhariitbhu、bodepudimuneendra-netizen、ssddxg，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察complete、rag、engineering、ai-engineering-course、course、step、engineering course、amitshekhariitbhu是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
-      ],
-      "source_link_groups": {
-        "代表项目": [
-          {
-            "title": "amitshekhariitbhu/ai-engineering-course",
-            "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
-            "source": "github",
-            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
-            "url": "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
-            "source": "github",
-            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "ssddxg/agentic-rl-forge",
-            "url": "https://github.com/ssddxg/agentic-rl-forge",
-            "source": "github",
-            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
-          }
-        ]
-      },
-      "evidence_digest": [
-        {
-          "title": "amitshekhariitbhu/ai-engineering-course",
-          "source_url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.3,
-          "matched_terms": [
-            "evaluation"
-          ],
-          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
-          "source_url": "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.3,
-          "matched_terms": [
-            "evaluation"
-          ],
-          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "ssddxg/agentic-rl-forge",
-          "source_url": "https://github.com/ssddxg/agentic-rl-forge",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.3,
-          "matched_terms": [
-            "evaluation"
-          ],
-          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
-        }
-      ],
-      "signal_focus": {
-        "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
-        "focus_terms": [
-          "RAG",
-          "MCTS",
-          "complete",
-          "engineering",
-          "ai-engineering-course",
-          "course",
-          "step",
-          "engineering course"
-        ],
-        "representative_titles": [
-          "amitshekhariitbhu/ai-engineering-course",
-          "bodepudimuneendra-netizen/laya-jev-GraphRAG",
-          "ssddxg/agentic-rl-forge"
-        ],
-        "related_institutions": [
-          "amitshekhariitbhu",
-          "bodepudimuneendra-netizen",
-          "ssddxg"
-        ],
-        "paper_count": 0,
-        "repo_count": 3,
-        "github_star_delta": 22,
-        "method_mentions": 4,
-        "dataset_mentions": 0,
-        "institution_mentions": 3
-      },
-      "curation_method": "deterministic_natural_language_v2"
-    },
-    {
       "topic": "Vision-Language-Action Model",
       "title": "Vision-Language-Action Model 出现明显异常",
-      "magnitude": 3.77,
+      "magnitude": 3.86,
       "severity_label": "明显异常",
       "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 6 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.77，burst=2.741，growth_rate=-0.952，z_score=-6.836，cross_source=0.5。",
+      "calculation_summary": "magnitude=3.86，burst=2.857，growth_rate=-0.952，z_score=-6.902，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 6 个",
-        "24h star 增量 13",
+        "24h star 增量 19",
         "方法提及：VLA, Diffusion Policy",
         "机构集中：KingKongRobotics, Mondo-Robotics, llros007"
       ],
@@ -2438,13 +2236,13 @@
         "current_24h_count": 6,
         "current_72h_count": 6,
         "current_7d_count": 6,
-        "baseline_daily_avg_30d": 144.0,
-        "baseline_daily_std_30d": 19.188,
-        "baseline_72h_avg_30d": 432.0,
+        "baseline_daily_avg_30d": 144.247,
+        "baseline_daily_std_30d": 19.031,
+        "baseline_72h_avg_30d": 432.742,
         "growth_rate": -0.952,
-        "z_score": -6.836,
+        "z_score": -6.902,
         "paper_burst_score": 0.0,
-        "github_signal_score": 2.137,
+        "github_signal_score": 2.253,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.333,
@@ -2454,13 +2252,13 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 13,
+        "github_star_delta": 19,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 7,
-        "burst_score": 2.741,
+        "burst_score": 2.857,
         "low_history_confidence": false,
-        "magnitude": 3.77
+        "magnitude": 3.86
       },
       "evidence": [
         {
@@ -2551,9 +2349,9 @@
         "KingKongRobotics",
         "Mondo-Robotics",
         "llros007",
+        "12-Twelve-12",
         "MIT",
-        "MIT-CDFG",
-        "12-Twelve-12"
+        "MIT-CDFG"
       ],
       "suggested_watch_keywords": [
         "robot",
@@ -2577,13 +2375,13 @@
       "push_recommended": true,
       "dedupe_key": "trend:Vision-Language-Action Model:2026-09-30:明显异常",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"llros007/lerobot_android\", \"source_url\": \"https://github.com/llros007/lerobot_android\", \"published_at\": \"2026-09-25T07:44:25Z\", \"match_score\": 0.417, \"matched_keywords\": [\"VLA\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"12-Twelve-12/robolings\", \"source_url\": \"https://github.com/12-Twelve-12/robolings\", \"published_at\": \"2026-09-29T07:08:17Z\", \"match_score\": 0.25, \"matched_keywords\": [], \"matched_methods\": [\"Diffusion Policy\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Mondo-Robotics/open-beni\", \"source_url\": \"https://github.com/Mondo-Robotics/open-beni\", \"published_at\": \"2026-09-24T07:57:00Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KingKongRobotics/jumper\", \"source_url\": \"https://github.com/KingKongRobotics/jumper\", \"published_at\": \"2026-09-28T05:56:04Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KingKongRobotics/jumper-design\", \"source_url\": \"https://github.com/KingKongRobotics/jumper-design\", \"published_at\": \"2026-09-26T12:41:48Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"MIT-CDFG/Survey-AI-for-3D-modeling-Robotics\", \"source_url\": \"https://github.com/MIT-CDFG/Survey-AI-for-3D-modeling-Robotics\", \"published_at\": \"2026-09-24T01:57:47Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括llros007/lerobot_android、12-Twelve-12/robolings、Mondo-Robotics/open-beni、KingKongRobotics/jumper、KingKongRobotics/jumper-design等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 13，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、Diffusion Policy等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、MIT、MIT-CDFG、12-Twelve-12，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 6 个。代表性目标包括llros007/lerobot_android、12-Twelve-12/robolings、Mondo-Robotics/open-beni、KingKongRobotics/jumper、KingKongRobotics/jumper-design等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 6 条。开源侧 24 小时 star 增量约为 19，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA、Diffusion Policy等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、12-Twelve-12、MIT、MIT-CDFG，累计提及 7 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“明显异常”（M3.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 6 个共同构成观测基础，当前强度为“明显异常”（M3.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向VLA、Diffusion Policy、robot、robotics、jumper、kingkongrobotics等线索，代表条目包括llros007/lerobot_android、12-Twelve-12/robolings、Mondo-Robotics/open-beni、KingKongRobotics/jumper，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 13，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "工程侧归纳：本轮包含 6 个 GitHub 项目，24 小时 star 增量约 19，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、MIT、MIT-CDFG、12-Twelve-12，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及KingKongRobotics、Mondo-Robotics、llros007、12-Twelve-12、MIT、MIT-CDFG，累计提及 7 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 6 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察robot、robotics、jumper、kingkongrobotics、open-source、crab、crab-robot、open-source-robots是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -2711,13 +2509,13 @@
           "KingKongRobotics",
           "Mondo-Robotics",
           "llros007",
+          "12-Twelve-12",
           "MIT",
-          "MIT-CDFG",
-          "12-Twelve-12"
+          "MIT-CDFG"
         ],
         "paper_count": 0,
         "repo_count": 6,
-        "github_star_delta": 13,
+        "github_star_delta": 19,
         "method_mentions": 2,
         "dataset_mentions": 0,
         "institution_mentions": 7
@@ -2725,48 +2523,312 @@
       "curation_method": "deterministic_natural_language_v2"
     },
     {
-      "topic": "Tool Use",
-      "title": "Tool Use 出现明显异常",
-      "magnitude": 3.29,
+      "topic": "Evaluation",
+      "title": "Evaluation 出现明显异常",
+      "magnitude": 3.83,
       "severity_label": "明显异常",
-      "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 13 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
-      "calculation_summary": "magnitude=3.29，burst=2.603，growth_rate=-0.951，z_score=-6.8，cross_source=0.5。",
+      "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+      "calculation_summary": "magnitude=3.83，burst=3.191，growth_rate=-0.911，z_score=-2.262，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 13 个",
-        "24h star 增量 1227",
-        "方法提及：RAG, ReAct, MCTS",
-        "机构集中：amitshekhariitbhu, OpenAI, zouyuxuan122"
+        "GitHub 项目 4 个",
+        "24h star 增量 18",
+        "方法提及：RAG, MCTS",
+        "机构集中：amitshekhariitbhu, bodepudimuneendra-netizen, ssddxg"
       ],
       "metrics": {
-        "current_1h_count": 13,
-        "current_24h_count": 13,
-        "current_72h_count": 13,
-        "current_7d_count": 13,
-        "baseline_daily_avg_30d": 285.529,
-        "baseline_daily_std_30d": 39.078,
-        "baseline_72h_avg_30d": 856.588,
-        "growth_rate": -0.951,
-        "z_score": -6.8,
+        "current_1h_count": 4,
+        "current_24h_count": 4,
+        "current_72h_count": 4,
+        "current_7d_count": 4,
+        "baseline_daily_avg_30d": 55.238,
+        "baseline_daily_std_30d": 21.651,
+        "baseline_72h_avg_30d": 165.714,
+        "growth_rate": -0.911,
+        "z_score": -2.262,
         "paper_burst_score": 0.0,
-        "github_signal_score": 1.459,
+        "github_signal_score": 2.206,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.154,
-        "institution_signal_score": 0.427,
+        "institution_concentration_score": 0.25,
+        "institution_signal_score": 0.448,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.144,
+        "method_signal_score": 0.985,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 13,
-        "github_star_delta": 1227,
-        "method_mentions": 7,
+        "repo_count": 4,
+        "github_star_delta": 18,
+        "method_mentions": 5,
         "dataset_mentions": 0,
-        "institution_mentions": 15,
-        "burst_score": 2.603,
+        "institution_mentions": 4,
+        "burst_score": 3.191,
         "low_history_confidence": false,
-        "magnitude": 3.29
+        "magnitude": 3.83
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "amitshekhariitbhu/ai-engineering-course",
+          "source_url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+          "published_at": "2026-09-23T08:04:42Z",
+          "match_score": 0.3,
+          "matched_keywords": [
+            "evaluation"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
+          "source_url": "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
+          "published_at": "2026-09-23T11:55:30Z",
+          "match_score": 0.3,
+          "matched_keywords": [
+            "evaluation"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "ssddxg/agentic-rl-forge",
+          "source_url": "https://github.com/ssddxg/agentic-rl-forge",
+          "published_at": "2026-09-23T06:58:00Z",
+          "match_score": 0.3,
+          "matched_keywords": [
+            "evaluation"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
+          "published_at": "2026-09-27T01:18:37Z",
+          "match_score": 0.3,
+          "matched_keywords": [
+            "evals"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        }
+      ],
+      "source_urls": [
+        "https://github.com/amitshekhariitbhu/ai-engineering-course",
+        "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
+        "https://github.com/heaven999b/hello-agent-system",
+        "https://github.com/ssddxg/agentic-rl-forge"
+      ],
+      "related_methods": [
+        "RAG",
+        "MCTS"
+      ],
+      "related_datasets": [],
+      "related_institutions": [
+        "amitshekhariitbhu",
+        "bodepudimuneendra-netizen",
+        "ssddxg",
+        "heaven999b"
+      ],
+      "suggested_watch_keywords": [
+        "rag",
+        "complete",
+        "learn",
+        "system",
+        "layer",
+        "agent",
+        "engineering",
+        "ai-engineering-course"
+      ],
+      "confidence": 0.61,
+      "caveats": [],
+      "tags": [
+        "GitHub 暴涨",
+        "方法扩散",
+        "机构集中",
+        "开源驱动",
+        "Watchlist 命中"
+      ],
+      "push_recommended": true,
+      "dedupe_key": "trend:Evaluation:2026-09-30:明显异常",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"source_url\": \"https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG\", \"published_at\": \"2026-09-23T11:55:30Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ssddxg/agentic-rl-forge\", \"source_url\": \"https://github.com/ssddxg/agentic-rl-forge\", \"published_at\": \"2026-09-23T06:58:00Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"heaven999b/hello-agent-system\", \"source_url\": \"https://github.com/heaven999b/hello-agent-system\", \"published_at\": \"2026-09-27T01:18:37Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evals\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括amitshekhariitbhu/ai-engineering-course、bodepudimuneendra-netizen/laya-jev-GraphRAG、ssddxg/agentic-rl-forge、heaven999b/hello-agent-system等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 18，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCTS等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、bodepudimuneendra-netizen、ssddxg、heaven999b，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、complete、learn、system、layer、agent、engineering、ai-engineering-course等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "signal_takeaways": [
+        "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“明显异常”（M3.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCTS、complete、learn、system、layer等线索，代表条目包括amitshekhariitbhu/ai-engineering-course、bodepudimuneendra-netizen/laya-jev-GraphRAG、ssddxg/agentic-rl-forge、heaven999b/hello-agent-system，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 18，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 5 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及amitshekhariitbhu、bodepudimuneendra-netizen、ssddxg、heaven999b，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察rag、complete、learn、system、layer、agent、engineering、ai-engineering-course是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+      ],
+      "source_link_groups": {
+        "代表项目": [
+          {
+            "title": "amitshekhariitbhu/ai-engineering-course",
+            "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+            "source": "github",
+            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
+            "url": "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
+            "source": "github",
+            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "ssddxg/agentic-rl-forge",
+            "url": "https://github.com/ssddxg/agentic-rl-forge",
+            "source": "github",
+            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "heaven999b/hello-agent-system",
+            "url": "https://github.com/heaven999b/hello-agent-system",
+            "source": "github",
+            "reason": "命中 evals，匹配分 0.3，因此被纳入本轮代表性证据。"
+          }
+        ]
+      },
+      "evidence_digest": [
+        {
+          "title": "amitshekhariitbhu/ai-engineering-course",
+          "source_url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.3,
+          "matched_terms": [
+            "evaluation"
+          ],
+          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
+          "source_url": "https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.3,
+          "matched_terms": [
+            "evaluation"
+          ],
+          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "ssddxg/agentic-rl-forge",
+          "source_url": "https://github.com/ssddxg/agentic-rl-forge",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.3,
+          "matched_terms": [
+            "evaluation"
+          ],
+          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.3,
+          "matched_terms": [
+            "evals"
+          ],
+          "why_included": "命中 evals，匹配分 0.3，因此被纳入本轮代表性证据。"
+        }
+      ],
+      "signal_focus": {
+        "dominant_source": "开源项目",
+        "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+        "focus_terms": [
+          "RAG",
+          "MCTS",
+          "complete",
+          "learn",
+          "system",
+          "layer",
+          "agent",
+          "engineering"
+        ],
+        "representative_titles": [
+          "amitshekhariitbhu/ai-engineering-course",
+          "bodepudimuneendra-netizen/laya-jev-GraphRAG",
+          "ssddxg/agentic-rl-forge",
+          "heaven999b/hello-agent-system"
+        ],
+        "related_institutions": [
+          "amitshekhariitbhu",
+          "bodepudimuneendra-netizen",
+          "ssddxg",
+          "heaven999b"
+        ],
+        "paper_count": 0,
+        "repo_count": 4,
+        "github_star_delta": 18,
+        "method_mentions": 5,
+        "dataset_mentions": 0,
+        "institution_mentions": 4
+      },
+      "curation_method": "deterministic_natural_language_v2"
+    },
+    {
+      "topic": "Tool Use",
+      "title": "Tool Use 出现明显异常",
+      "magnitude": 3.44,
+      "severity_label": "明显异常",
+      "summary": "Tool Use 在当前窗口内出现 0 条论文信号和 15 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+      "calculation_summary": "magnitude=3.44，burst=2.728，growth_rate=-0.944，z_score=-6.786，cross_source=0.5。",
+      "key_drivers": [
+        "GitHub 项目 15 个",
+        "24h star 增量 1081",
+        "方法提及：RAG, MCP, ReAct",
+        "机构集中：OpenAI, amitshekhariitbhu, zouyuxuan122"
+      ],
+      "metrics": {
+        "current_1h_count": 15,
+        "current_24h_count": 15,
+        "current_72h_count": 15,
+        "current_7d_count": 15,
+        "baseline_daily_avg_30d": 285.913,
+        "baseline_daily_std_30d": 38.922,
+        "baseline_72h_avg_30d": 857.739,
+        "growth_rate": -0.944,
+        "z_score": -6.786,
+        "paper_burst_score": 0.0,
+        "github_signal_score": 1.462,
+        "source_diversity_score": 0.5,
+        "cross_source_confirmation_score": 0.5,
+        "institution_concentration_score": 0.2,
+        "institution_signal_score": 0.589,
+        "dataset_signal_score": 0.0,
+        "method_signal_score": 1.266,
+        "cold_revival_score": 0.0,
+        "paper_count": 0,
+        "repo_count": 15,
+        "github_star_delta": 1081,
+        "method_mentions": 9,
+        "dataset_mentions": 0,
+        "institution_mentions": 18,
+        "burst_score": 2.728,
+        "low_history_confidence": false,
+        "magnitude": 3.44
+      },
+      "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "published_at": "2026-09-29T23:06:00Z",
+          "match_score": 0.147,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -2794,9 +2856,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "amitshekhariitbhu/ai-system-design",
-          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
-          "published_at": "2026-09-25T04:50:06Z",
+          "title": "zouyuxuan122/dsh-our-free-model",
+          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+          "published_at": "2026-09-24T16:17:19Z",
           "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
@@ -2805,9 +2867,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "zouyuxuan122/dsh-our-free-model",
-          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
-          "published_at": "2026-09-24T16:17:19Z",
+          "title": "amitshekhariitbhu/ai-system-design",
+          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
+          "published_at": "2026-09-25T04:50:06Z",
           "match_score": 0.073,
           "matched_keywords": [],
           "matched_methods": [],
@@ -2845,17 +2907,6 @@
           "matched_keywords": [],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "kaankiziltug/logo-design-skill",
-          "source_url": "https://github.com/kaankiziltug/logo-design-skill",
-          "published_at": "2026-09-26T08:23:34Z",
-          "match_score": 0.073,
-          "matched_keywords": [],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "source_urls": [
@@ -2865,6 +2916,8 @@
         "https://github.com/amitshekhariitbhu/ai-system-design",
         "https://github.com/chenkanglin198904/Personal_External_Brain",
         "https://github.com/dzhng/jevgrep",
+        "https://github.com/feder-cr/dots",
+        "https://github.com/heaven999b/hello-agent-system",
         "https://github.com/kaankiziltug/logo-design-skill",
         "https://github.com/lemomo-ai/lemo-opuscar",
         "https://github.com/mikehasa/golive-skill",
@@ -2875,29 +2928,30 @@
       ],
       "related_methods": [
         "RAG",
+        "MCP",
         "ReAct",
         "MCTS"
       ],
       "related_datasets": [],
       "related_institutions": [
-        "amitshekhariitbhu",
         "OpenAI",
+        "amitshekhariitbhu",
         "zouyuxuan122",
         "scarletkc",
         "dzhng",
         "mikehasa",
-        "kaankiziltug",
-        "lemomo-ai"
+        "feder-cr",
+        "kaankiziltug"
       ],
       "suggested_watch_keywords": [
         "agents",
-        "your",
         "rag",
+        "your",
+        "agent",
+        "learn",
         "llm",
-        "cli",
-        "code",
-        "coding",
-        "skill"
+        "ai-agents",
+        "cli"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -2909,19 +2963,25 @@
       ],
       "push_recommended": false,
       "dedupe_key": "trend:Tool Use:2026-09-30:明显异常",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chenkanglin198904/Personal_External_Brain\", \"source_url\": \"https://github.com/chenkanglin198904/Personal_External_Brain\", \"published_at\": \"2026-09-23T20:37:07Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-system-design\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-system-design\", \"published_at\": \"2026-09-25T04:50:06Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zouyuxuan122/dsh-our-free-model\", \"source_url\": \"https://github.com/zouyuxuan122/dsh-our-free-model\", \"published_at\": \"2026-09-24T16:17:19Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"scarletkc/seiso\", \"source_url\": \"https://github.com/scarletkc/seiso\", \"published_at\": \"2026-09-27T13:27:28Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dzhng/jevgrep\", \"source_url\": \"https://github.com/dzhng/jevgrep\", \"published_at\": \"2026-09-26T04:06:56Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/golive-skill\", \"source_url\": \"https://github.com/mikehasa/golive-skill\", \"published_at\": \"2026-09-23T13:37:26Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kaankiziltug/logo-design-skill\", \"source_url\": \"https://github.com/kaankiziltug/logo-design-skill\", \"published_at\": \"2026-09-26T08:23:34Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.3）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 13 个。代表性目标包括chenkanglin198904/Personal_External_Brain、amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、zouyuxuan122/dsh-our-free-model、scarletkc/seiso等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1227，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCTS等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及amitshekhariitbhu、OpenAI、zouyuxuan122、scarletkc、dzhng、mikehasa、kaankiziltug、lemomo-ai，累计提及 15 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、your、rag、llm、cli、code、coding、skill等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"feder-cr/dots\", \"source_url\": \"https://github.com/feder-cr/dots\", \"published_at\": \"2026-09-29T23:06:00Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chenkanglin198904/Personal_External_Brain\", \"source_url\": \"https://github.com/chenkanglin198904/Personal_External_Brain\", \"published_at\": \"2026-09-23T20:37:07Z\", \"match_score\": 0.147, \"matched_keywords\": [], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-engineering-course\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-engineering-course\", \"published_at\": \"2026-09-23T08:04:42Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"zouyuxuan122/dsh-our-free-model\", \"source_url\": \"https://github.com/zouyuxuan122/dsh-our-free-model\", \"published_at\": \"2026-09-24T16:17:19Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amitshekhariitbhu/ai-system-design\", \"source_url\": \"https://github.com/amitshekhariitbhu/ai-system-design\", \"published_at\": \"2026-09-25T04:50:06Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"scarletkc/seiso\", \"source_url\": \"https://github.com/scarletkc/seiso\", \"published_at\": \"2026-09-27T13:27:28Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dzhng/jevgrep\", \"source_url\": \"https://github.com/dzhng/jevgrep\", \"published_at\": \"2026-09-26T04:06:56Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mikehasa/golive-skill\", \"source_url\": \"https://github.com/mikehasa/golive-skill\", \"published_at\": \"2026-09-23T13:37:26Z\", \"match_score\": 0.073, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Tool Use」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.4）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 15 个。代表性目标包括feder-cr/dots、chenkanglin198904/Personal_External_Brain、amitshekhariitbhu/ai-engineering-course、zouyuxuan122/dsh-our-free-model、amitshekhariitbhu/ai-system-design等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1081，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct、MCTS等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、amitshekhariitbhu、zouyuxuan122、scarletkc、dzhng、mikehasa、feder-cr、kaankiziltug，累计提及 18 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、rag、your、agent、learn、llm、ai-agents、cli等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Tool Use 本轮由论文 0 条、GitHub 项目 13 个共同构成观测基础，当前强度为“明显异常”（M3.3）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCTS、agents、your、llm等线索，代表条目包括chenkanglin198904/Personal_External_Brain、amitshekhariitbhu/ai-engineering-course、amitshekhariitbhu/ai-system-design、zouyuxuan122/dsh-our-free-model，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 13 个 GitHub 项目，24 小时 star 增量约 1227，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及amitshekhariitbhu、OpenAI、zouyuxuan122、scarletkc、dzhng、mikehasa，累计提及 15 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Tool Use 本轮由论文 0 条、GitHub 项目 15 个共同构成观测基础，当前强度为“明显异常”（M3.4）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、MCTS、agents、your等线索，代表条目包括feder-cr/dots、chenkanglin198904/Personal_External_Brain、amitshekhariitbhu/ai-engineering-course、zouyuxuan122/dsh-our-free-model，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 15 个 GitHub 项目，24 小时 star 增量约 1081，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 9 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、amitshekhariitbhu、zouyuxuan122、scarletkc、dzhng、mikehasa，累计提及 18 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、your、rag、llm、cli、code、coding、skill是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、rag、your、agent、learn、llm、ai-agents、cli是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "feder-cr/dots",
+            "url": "https://github.com/feder-cr/dots",
+            "source": "github",
+            "reason": "匹配分 0.147，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "chenkanglin198904/Personal_External_Brain",
             "url": "https://github.com/chenkanglin198904/Personal_External_Brain",
@@ -2935,14 +2995,14 @@
             "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "amitshekhariitbhu/ai-system-design",
-            "url": "https://github.com/amitshekhariitbhu/ai-system-design",
+            "title": "zouyuxuan122/dsh-our-free-model",
+            "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
             "source": "github",
             "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "zouyuxuan122/dsh-our-free-model",
-            "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+            "title": "amitshekhariitbhu/ai-system-design",
+            "url": "https://github.com/amitshekhariitbhu/ai-system-design",
             "source": "github",
             "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
@@ -2965,12 +3025,6 @@
             "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "kaankiziltug/logo-design-skill",
-            "url": "https://github.com/kaankiziltug/logo-design-skill",
-            "source": "github",
-            "reason": "匹配分 0.073，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "Perruer/keelflow",
             "url": "https://github.com/Perruer/keelflow",
             "source": "github",
@@ -2985,6 +3039,15 @@
         ]
       },
       "evidence_digest": [
+        {
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.147,
+          "matched_terms": [],
+          "why_included": "匹配分 0.147，因此被纳入本轮代表性证据。"
+        },
         {
           "title": "chenkanglin198904/Personal_External_Brain",
           "source_url": "https://github.com/chenkanglin198904/Personal_External_Brain",
@@ -3006,8 +3069,8 @@
           "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "amitshekhariitbhu/ai-system-design",
-          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
+          "title": "zouyuxuan122/dsh-our-free-model",
+          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.073,
@@ -3015,8 +3078,8 @@
           "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "zouyuxuan122/dsh-our-free-model",
-          "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+          "title": "amitshekhariitbhu/ai-system-design",
+          "source_url": "https://github.com/amitshekhariitbhu/ai-system-design",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.073,
@@ -3049,53 +3112,44 @@
           "match_score": 0.073,
           "matched_terms": [],
           "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "kaankiziltug/logo-design-skill",
-          "source_url": "https://github.com/kaankiziltug/logo-design-skill",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.073,
-          "matched_terms": [],
-          "why_included": "匹配分 0.073，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 13 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 15 个。",
         "focus_terms": [
           "RAG",
+          "MCP",
           "ReAct",
           "MCTS",
           "agents",
           "your",
-          "llm",
-          "cli",
-          "code"
+          "agent",
+          "learn"
         ],
         "representative_titles": [
+          "feder-cr/dots",
           "chenkanglin198904/Personal_External_Brain",
           "amitshekhariitbhu/ai-engineering-course",
-          "amitshekhariitbhu/ai-system-design",
           "zouyuxuan122/dsh-our-free-model",
-          "scarletkc/seiso"
+          "amitshekhariitbhu/ai-system-design"
         ],
         "related_institutions": [
-          "amitshekhariitbhu",
           "OpenAI",
+          "amitshekhariitbhu",
           "zouyuxuan122",
           "scarletkc",
           "dzhng",
           "mikehasa",
-          "kaankiziltug",
-          "lemomo-ai"
+          "feder-cr",
+          "kaankiziltug"
         ],
         "paper_count": 0,
-        "repo_count": 13,
-        "github_star_delta": 1227,
-        "method_mentions": 7,
+        "repo_count": 15,
+        "github_star_delta": 1081,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 15
+        "institution_mentions": 18
       },
       "curation_method": "deterministic_natural_language_v2"
     }
@@ -3104,7 +3158,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Robotics",
-      "magnitude": 5.48,
+      "magnitude": 5.66,
       "severity_label": "强趋势震荡",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3143,9 +3197,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "llros007/lerobot_android",
-          "source_url": "https://github.com/llros007/lerobot_android",
-          "published_at": "2026-09-25T07:44:25Z",
+          "title": "KingKongRobotics/jumper",
+          "source_url": "https://github.com/KingKongRobotics/jumper",
+          "published_at": "2026-09-28T05:56:04Z",
           "match_score": 0.333,
           "matched_keywords": [
             "robotics"
@@ -3159,7 +3213,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Vision-Language-Action Model",
-      "magnitude": 3.77,
+      "magnitude": 3.86,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3209,7 +3263,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "Embodied AI",
-      "magnitude": 3.09,
+      "magnitude": 3.14,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3243,9 +3297,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "llros007/lerobot_android",
-          "source_url": "https://github.com/llros007/lerobot_android",
-          "published_at": "2026-09-25T07:44:25Z",
+          "title": "KingKongRobotics/jumper",
+          "source_url": "https://github.com/KingKongRobotics/jumper",
+          "published_at": "2026-09-28T05:56:04Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3257,7 +3311,7 @@
     {
       "watchlist_name": "具身智能观察",
       "topic": "World Model",
-      "magnitude": 2.4,
+      "magnitude": 2.42,
       "severity_label": "局部升温",
       "threshold_magnitude": 3.5,
       "threshold_growth_rate": 1.2,
@@ -3278,9 +3332,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "llros007/lerobot_android",
-          "source_url": "https://github.com/llros007/lerobot_android",
-          "published_at": "2026-09-25T07:44:25Z",
+          "title": "KingKongRobotics/jumper",
+          "source_url": "https://github.com/KingKongRobotics/jumper",
+          "published_at": "2026-09-28T05:56:04Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3289,9 +3343,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "KingKongRobotics/jumper",
-          "source_url": "https://github.com/KingKongRobotics/jumper",
-          "published_at": "2026-09-28T05:56:04Z",
+          "title": "llros007/lerobot_android",
+          "source_url": "https://github.com/llros007/lerobot_android",
+          "published_at": "2026-09-25T07:44:25Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -3313,12 +3367,13 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "JoinArtisanVent/x-scraper-no-api",
-          "source_url": "https://github.com/JoinArtisanVent/x-scraper-no-api",
-          "published_at": "2026-09-26T01:57:59Z",
-          "match_score": 0.633,
+          "title": "feder-cr/dots",
+          "source_url": "https://github.com/feder-cr/dots",
+          "published_at": "2026-09-29T23:06:00Z",
+          "match_score": 0.95,
           "matched_keywords": [
             "agent",
+            "agents",
             "ai agent"
           ],
           "matched_methods": [],
@@ -3327,13 +3382,14 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "mikehasa/golive-skill",
-          "source_url": "https://github.com/mikehasa/golive-skill",
-          "published_at": "2026-09-23T13:37:26Z",
-          "match_score": 0.633,
+          "title": "heaven999b/hello-agent-system",
+          "source_url": "https://github.com/heaven999b/hello-agent-system",
+          "published_at": "2026-09-27T01:18:37Z",
+          "match_score": 0.95,
           "matched_keywords": [
             "agent",
-            "agents"
+            "agents",
+            "ai agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -3341,13 +3397,13 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "kaankiziltug/logo-design-skill",
-          "source_url": "https://github.com/kaankiziltug/logo-design-skill",
-          "published_at": "2026-09-26T08:23:34Z",
+          "title": "JoinArtisanVent/x-scraper-no-api",
+          "source_url": "https://github.com/JoinArtisanVent/x-scraper-no-api",
+          "published_at": "2026-09-26T01:57:59Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
-            "agents"
+            "ai agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -3408,7 +3464,7 @@
     {
       "watchlist_name": "安全与对齐观察",
       "topic": "Evaluation",
-      "magnitude": 3.84,
+      "magnitude": 3.83,
       "severity_label": "明显异常",
       "threshold_magnitude": 3.4,
       "threshold_growth_rate": 1.0,
@@ -3462,11 +3518,11 @@
     {
       "repo_full_name": "KKKKhazix/AIHOT",
       "url": "https://github.com/KKKKhazix/AIHOT",
-      "stars": 3513,
-      "star_delta_1h": 340,
-      "star_delta_24h": 2836,
-      "star_delta_72h": 2862,
-      "star_delta_7d": 2862,
+      "stars": 3862,
+      "star_delta_1h": 349,
+      "star_delta_24h": 1808,
+      "star_delta_72h": 3211,
+      "star_delta_7d": 3211,
       "matched_topics": [
         "Model Context Protocol"
       ],
@@ -3477,11 +3533,11 @@
     {
       "repo_full_name": "yetone/magpie",
       "url": "https://github.com/yetone/magpie",
-      "stars": 3078,
-      "star_delta_1h": 485,
-      "star_delta_24h": 1460,
-      "star_delta_72h": 2056,
-      "star_delta_7d": 2850,
+      "stars": 3496,
+      "star_delta_1h": 418,
+      "star_delta_24h": 1719,
+      "star_delta_72h": 2369,
+      "star_delta_7d": 3268,
       "matched_topics": [
         "Agents"
       ],
@@ -3492,11 +3548,11 @@
     {
       "repo_full_name": "kaankiziltug/logo-design-skill",
       "url": "https://github.com/kaankiziltug/logo-design-skill",
-      "stars": 889,
-      "star_delta_1h": 46,
-      "star_delta_24h": 422,
-      "star_delta_72h": 423,
-      "star_delta_7d": 423,
+      "stars": 969,
+      "star_delta_1h": 80,
+      "star_delta_24h": 378,
+      "star_delta_72h": 503,
+      "star_delta_7d": 503,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
@@ -3510,11 +3566,11 @@
     {
       "repo_full_name": "dzhng/jevgrep",
       "url": "https://github.com/dzhng/jevgrep",
-      "stars": 1804,
-      "star_delta_1h": 28,
-      "star_delta_24h": 349,
-      "star_delta_72h": 1674,
-      "star_delta_7d": 1675,
+      "stars": 1856,
+      "star_delta_1h": 52,
+      "star_delta_24h": 290,
+      "star_delta_72h": 1576,
+      "star_delta_7d": 1727,
       "matched_topics": [
         "Agents",
         "AI Coding",
@@ -3529,11 +3585,11 @@
     {
       "repo_full_name": "feitangyuan/onetake",
       "url": "https://github.com/feitangyuan/onetake",
-      "stars": 992,
-      "star_delta_1h": 11,
-      "star_delta_24h": 139,
-      "star_delta_72h": 532,
-      "star_delta_7d": 532,
+      "stars": 1031,
+      "star_delta_1h": 39,
+      "star_delta_24h": 134,
+      "star_delta_72h": 571,
+      "star_delta_7d": 571,
       "matched_topics": [
         "Agents"
       ],
@@ -3542,13 +3598,31 @@
       "source_url": "https://github.com/feitangyuan/onetake"
     },
     {
+      "repo_full_name": "zouyuxuan122/dsh-our-free-model",
+      "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+      "stars": 480,
+      "star_delta_1h": 41,
+      "star_delta_24h": 112,
+      "star_delta_72h": 177,
+      "star_delta_7d": 177,
+      "matched_topics": [
+        "Agents",
+        "Model Context Protocol",
+        "Tool Use",
+        "Memory"
+      ],
+      "language": "JavaScript",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, Muse Spark 1.3 and MiMo V2.6 among them. Completely free, with no usage cap.",
+      "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model"
+    },
+    {
       "repo_full_name": "AgentSystemLabs/agent-office",
       "url": "https://github.com/AgentSystemLabs/agent-office",
-      "stars": 403,
-      "star_delta_1h": 15,
-      "star_delta_24h": 123,
-      "star_delta_72h": 265,
-      "star_delta_7d": 265,
+      "stars": 417,
+      "star_delta_1h": 14,
+      "star_delta_24h": 109,
+      "star_delta_72h": 279,
+      "star_delta_7d": 279,
       "matched_topics": [
         "Agents"
       ],
@@ -3557,32 +3631,13 @@
       "source_url": "https://github.com/AgentSystemLabs/agent-office"
     },
     {
-      "repo_full_name": "zhuyansen/awesome-claude-video-skills",
-      "url": "https://github.com/zhuyansen/awesome-claude-video-skills",
-      "stars": 303,
-      "star_delta_1h": 8,
-      "star_delta_24h": 112,
-      "star_delta_72h": 159,
-      "star_delta_7d": 159,
-      "matched_topics": [
-        "Agents",
-        "AI Coding",
-        "Model Context Protocol",
-        "LLM Security",
-        "Tool Use"
-      ],
-      "language": null,
-      "description": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文.",
-      "source_url": "https://github.com/zhuyansen/awesome-claude-video-skills"
-    },
-    {
       "repo_full_name": "lemomo-ai/lemo-opuscar",
       "url": "https://github.com/lemomo-ai/lemo-opuscar",
-      "stars": 623,
-      "star_delta_1h": 12,
-      "star_delta_24h": 95,
-      "star_delta_72h": 525,
-      "star_delta_7d": 525,
+      "stars": 650,
+      "star_delta_1h": 27,
+      "star_delta_24h": 82,
+      "star_delta_72h": 445,
+      "star_delta_7d": 552,
       "matched_topics": [
         "Agents",
         "Speech",
@@ -3595,37 +3650,42 @@
       "source_url": "https://github.com/lemomo-ai/lemo-opuscar"
     },
     {
-      "repo_full_name": "angusdevgo/Seep-Reverse-Lab",
-      "url": "https://github.com/angusdevgo/Seep-Reverse-Lab",
-      "stars": 578,
-      "star_delta_1h": 12,
-      "star_delta_24h": 91,
-      "star_delta_72h": 223,
-      "star_delta_7d": 223,
+      "repo_full_name": "zhuyansen/awesome-claude-video-skills",
+      "url": "https://github.com/zhuyansen/awesome-claude-video-skills",
+      "stars": 312,
+      "star_delta_1h": 9,
+      "star_delta_24h": 74,
+      "star_delta_72h": 168,
+      "star_delta_7d": 168,
       "matched_topics": [
-        "Agents"
+        "Agents",
+        "AI Coding",
+        "Model Context Protocol",
+        "LLM Security",
+        "Tool Use"
       ],
-      "language": "Lua",
-      "description": "Agent-Native multi-platform reverse engineering and CWE-602 client-side authorization audit workbench.",
-      "source_url": "https://github.com/angusdevgo/Seep-Reverse-Lab"
+      "language": null,
+      "description": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文.",
+      "source_url": "https://github.com/zhuyansen/awesome-claude-video-skills"
     },
     {
-      "repo_full_name": "zouyuxuan122/dsh-our-free-model",
-      "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
-      "stars": 439,
-      "star_delta_1h": 14,
-      "star_delta_24h": 85,
-      "star_delta_72h": 136,
-      "star_delta_7d": 136,
+      "repo_full_name": "mikehasa/golive-skill",
+      "url": "https://github.com/mikehasa/golive-skill",
+      "stars": 1137,
+      "star_delta_1h": 17,
+      "star_delta_24h": 65,
+      "star_delta_72h": 151,
+      "star_delta_7d": 316,
       "matched_topics": [
         "Agents",
         "Model Context Protocol",
         "Tool Use",
-        "Memory"
+        "Memory",
+        "Edge AI"
       ],
-      "language": "JavaScript",
-      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, Muse Spark 1.3 and MiMo V2.6 among them. Completely free, with no usage cap.",
-      "source_url": "https://github.com/zouyuxuan122/dsh-our-free-model"
+      "language": "TypeScript",
+      "description": "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.",
+      "source_url": "https://github.com/mikehasa/golive-skill"
     }
   ],
   "dataset_bursts": [],
@@ -3637,6 +3697,11 @@
     },
     {
       "topic": "Agents",
+      "term": "MCP",
+      "magnitude": 6.0
+    },
+    {
+      "topic": "Agents",
       "term": "ReAct",
       "magnitude": 6.0
     },
@@ -3663,37 +3728,37 @@
     {
       "topic": "Model Context Protocol",
       "term": "RAG",
-      "magnitude": 5.96
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "MCP",
-      "magnitude": 5.96
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "MCTS",
-      "magnitude": 5.96
+      "magnitude": 6.0
+    },
+    {
+      "topic": "Robotics",
+      "term": "VLA",
+      "magnitude": 5.66
+    },
+    {
+      "topic": "Robotics",
+      "term": "Diffusion Policy",
+      "magnitude": 5.66
     },
     {
       "topic": "Speech",
       "term": "RAG",
-      "magnitude": 5.57
+      "magnitude": 5.56
     },
     {
       "topic": "Speech",
       "term": "ReAct",
-      "magnitude": 5.57
-    },
-    {
-      "topic": "Robotics",
-      "term": "VLA",
-      "magnitude": 5.48
-    },
-    {
-      "topic": "Robotics",
-      "term": "Diffusion Policy",
-      "magnitude": 5.48
+      "magnitude": 5.56
     },
     {
       "topic": "Reinforcement Learning",
@@ -3706,40 +3771,35 @@
       "magnitude": 4.2
     },
     {
-      "topic": "Evaluation",
-      "term": "RAG",
-      "magnitude": 3.84
-    },
-    {
-      "topic": "Evaluation",
-      "term": "MCTS",
-      "magnitude": 3.84
-    },
-    {
       "topic": "Vision-Language-Action Model",
       "term": "VLA",
-      "magnitude": 3.77
+      "magnitude": 3.86
     },
     {
       "topic": "Vision-Language-Action Model",
       "term": "Diffusion Policy",
-      "magnitude": 3.77
+      "magnitude": 3.86
     },
     {
-      "topic": "Tool Use",
+      "topic": "Evaluation",
       "term": "RAG",
-      "magnitude": 3.29
+      "magnitude": 3.83
+    },
+    {
+      "topic": "Evaluation",
+      "term": "MCTS",
+      "magnitude": 3.83
     }
   ],
   "institution_signals": [
     {
       "topic": "Agents",
-      "term": "amitshekhariitbhu",
+      "term": "OpenAI",
       "magnitude": 6.0
     },
     {
       "topic": "Agents",
-      "term": "OpenAI",
+      "term": "amitshekhariitbhu",
       "magnitude": 6.0
     },
     {
@@ -3784,53 +3844,53 @@
     },
     {
       "topic": "Model Context Protocol",
-      "term": "amitshekhariitbhu",
-      "magnitude": 5.96
+      "term": "OpenAI",
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
-      "term": "OpenAI",
-      "magnitude": 5.96
+      "term": "amitshekhariitbhu",
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "KKKKhazix",
-      "magnitude": 5.96
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "zouyuxuan122",
-      "magnitude": 5.96
+      "magnitude": 6.0
     },
     {
       "topic": "Model Context Protocol",
       "term": "scarletkc",
-      "magnitude": 5.96
-    },
-    {
-      "topic": "Speech",
-      "term": "lemomo-ai",
-      "magnitude": 5.57
-    },
-    {
-      "topic": "Speech",
-      "term": "chenkanglin198904",
-      "magnitude": 5.57
+      "magnitude": 6.0
     },
     {
       "topic": "Robotics",
       "term": "KingKongRobotics",
-      "magnitude": 5.48
+      "magnitude": 5.66
     },
     {
       "topic": "Robotics",
       "term": "Mondo-Robotics",
-      "magnitude": 5.48
+      "magnitude": 5.66
     },
     {
       "topic": "Robotics",
       "term": "llros007",
-      "magnitude": 5.48
+      "magnitude": 5.66
+    },
+    {
+      "topic": "Robotics",
+      "term": "12-Twelve-12",
+      "magnitude": 5.66
+    },
+    {
+      "topic": "Robotics",
+      "term": "MIT",
+      "magnitude": 5.66
     }
   ],
   "source_status": [
@@ -3841,16 +3901,16 @@
       "error": null,
       "items": 0,
       "partial": false,
-      "fetched_at": "2026-09-30T05:37:10.847783+00:00"
+      "fetched_at": "2026-09-30T12:39:41.290264+00:00"
     },
     {
       "source_name": "github",
       "source_type": "repo",
       "ok": true,
       "error": null,
-      "items": 48,
+      "items": 49,
       "partial": false,
-      "fetched_at": "2026-09-30T05:37:14.411761+00:00"
+      "fetched_at": "2026-09-30T12:39:44.657219+00:00"
     }
   ],
   "partial": false,
