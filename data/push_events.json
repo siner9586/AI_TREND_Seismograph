@@ -463101,6 +463101,732 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "RAG",
+      "magnitude": 4.97,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "RAG",
+          "title": "RAG 出现疑似爆发",
+          "magnitude": 4.97,
+          "severity_label": "疑似爆发",
+          "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.97，burst=4.871，growth_rate=-0.954，z_score=-8.964，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 8 个",
+            "24h star 增量 5",
+            "方法提及：RAG, MCP",
+            "机构集中：p10node, final-bench, OceanOver"
+          ],
+          "metrics": {
+            "current_1h_count": 8,
+            "current_24h_count": 8,
+            "current_72h_count": 8,
+            "current_7d_count": 8,
+            "baseline_daily_avg_30d": 195.484,
+            "baseline_daily_std_30d": 19.916,
+            "baseline_72h_avg_30d": 586.452,
+            "growth_rate": -0.954,
+            "z_score": -8.964,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.552,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.125,
+            "institution_signal_score": 0.3,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 1.319,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 8,
+            "github_star_delta": 5,
+            "method_mentions": 10,
+            "dataset_mentions": 0,
+            "institution_mentions": 9,
+            "burst_score": 4.871,
+            "low_history_confidence": false,
+            "magnitude": 4.97
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "final-bench/ongrid",
+              "source_url": "https://github.com/final-bench/ongrid",
+              "published_at": "2026-10-09T20:46:45Z",
+              "match_score": 0.63,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "cdcailf/cjkfold",
+              "source_url": "https://github.com/cdcailf/cjkfold",
+              "published_at": "2026-10-13T02:16:26Z",
+              "match_score": 0.63,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "p10node/docflare-ai",
+              "source_url": "https://github.com/p10node/docflare-ai",
+              "published_at": "2026-10-07T20:22:02Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "OceanOver/Tomechat",
+              "source_url": "https://github.com/OceanOver/Tomechat",
+              "published_at": "2026-10-08T10:59:51Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "liaosiliangCodeLife/harness-mate-plat",
+              "source_url": "https://github.com/liaosiliangCodeLife/harness-mate-plat",
+              "published_at": "2026-10-08T02:03:17Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "a1958749/zhiyuan-rag",
+              "source_url": "https://github.com/a1958749/zhiyuan-rag",
+              "published_at": "2026-10-10T10:57:48Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "graphersal/graphersal",
+              "source_url": "https://github.com/graphersal/graphersal",
+              "published_at": "2026-10-11T14:33:39Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "BaruqueRodrigues/rag_especialistas",
+              "source_url": "https://github.com/BaruqueRodrigues/rag_especialistas",
+              "published_at": "2026-10-06T16:14:32Z",
+              "match_score": 0.56,
+              "matched_keywords": [
+                "RAG",
+                "rag"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/BaruqueRodrigues/rag_especialistas",
+            "https://github.com/OceanOver/Tomechat",
+            "https://github.com/a1958749/zhiyuan-rag",
+            "https://github.com/cdcailf/cjkfold",
+            "https://github.com/final-bench/ongrid",
+            "https://github.com/graphersal/graphersal",
+            "https://github.com/liaosiliangCodeLife/harness-mate-plat",
+            "https://github.com/p10node/docflare-ai"
+          ],
+          "related_methods": [
+            "RAG",
+            "MCP"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "p10node",
+            "final-bench",
+            "OceanOver",
+            "OpenAI",
+            "liaosiliangCodeLife",
+            "a1958749",
+            "cdcailf",
+            "graphersal"
+          ],
+          "suggested_watch_keywords": [
+            "rag",
+            "chatbot",
+            "graph",
+            "graphrag",
+            "vectorize",
+            "free",
+            "p10node",
+            "docflare-ai"
+          ],
+          "confidence": 0.72,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:RAG:2026-10-13:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"final-bench/ongrid\", \"source_url\": \"https://github.com/final-bench/ongrid\", \"published_at\": \"2026-10-09T20:46:45Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"cdcailf/cjkfold\", \"source_url\": \"https://github.com/cdcailf/cjkfold\", \"published_at\": \"2026-10-13T02:16:26Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"p10node/docflare-ai\", \"source_url\": \"https://github.com/p10node/docflare-ai\", \"published_at\": \"2026-10-07T20:22:02Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"OceanOver/Tomechat\", \"source_url\": \"https://github.com/OceanOver/Tomechat\", \"published_at\": \"2026-10-08T10:59:51Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"liaosiliangCodeLife/harness-mate-plat\", \"source_url\": \"https://github.com/liaosiliangCodeLife/harness-mate-plat\", \"published_at\": \"2026-10-08T02:03:17Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"a1958749/zhiyuan-rag\", \"source_url\": \"https://github.com/a1958749/zhiyuan-rag\", \"published_at\": \"2026-10-10T10:57:48Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"graphersal/graphersal\", \"source_url\": \"https://github.com/graphersal/graphersal\", \"published_at\": \"2026-10-11T14:33:39Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"BaruqueRodrigues/rag_especialistas\", \"source_url\": \"https://github.com/BaruqueRodrigues/rag_especialistas\", \"published_at\": \"2026-10-06T16:14:32Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括final-bench/ongrid、cdcailf/cjkfold、p10node/docflare-ai、OceanOver/Tomechat、liaosiliangCodeLife/harness-mate-plat等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 5，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及p10node、final-bench、OceanOver、OpenAI、liaosiliangCodeLife、a1958749、cdcailf、graphersal，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、chatbot、graph、graphrag、vectorize、free、p10node、docflare-ai等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“疑似爆发”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向RAG、MCP、chatbot、graph、graphrag、vectorize等线索，代表条目包括final-bench/ongrid、cdcailf/cjkfold、p10node/docflare-ai、OceanOver/Tomechat，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 5，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 10 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及p10node、final-bench、OceanOver、OpenAI、liaosiliangCodeLife、a1958749，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察rag、chatbot、graph、graphrag、vectorize、free、p10node、docflare-ai是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "final-bench/ongrid",
+                "url": "https://github.com/final-bench/ongrid",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "cdcailf/cjkfold",
+                "url": "https://github.com/cdcailf/cjkfold",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "p10node/docflare-ai",
+                "url": "https://github.com/p10node/docflare-ai",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "OceanOver/Tomechat",
+                "url": "https://github.com/OceanOver/Tomechat",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "liaosiliangCodeLife/harness-mate-plat",
+                "url": "https://github.com/liaosiliangCodeLife/harness-mate-plat",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "a1958749/zhiyuan-rag",
+                "url": "https://github.com/a1958749/zhiyuan-rag",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "graphersal/graphersal",
+                "url": "https://github.com/graphersal/graphersal",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "BaruqueRodrigues/rag_especialistas",
+                "url": "https://github.com/BaruqueRodrigues/rag_especialistas",
+                "source": "github",
+                "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "final-bench/ongrid",
+              "source_url": "https://github.com/final-bench/ongrid",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.63,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "cdcailf/cjkfold",
+              "source_url": "https://github.com/cdcailf/cjkfold",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.63,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "p10node/docflare-ai",
+              "source_url": "https://github.com/p10node/docflare-ai",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "OceanOver/Tomechat",
+              "source_url": "https://github.com/OceanOver/Tomechat",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "liaosiliangCodeLife/harness-mate-plat",
+              "source_url": "https://github.com/liaosiliangCodeLife/harness-mate-plat",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "a1958749/zhiyuan-rag",
+              "source_url": "https://github.com/a1958749/zhiyuan-rag",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "graphersal/graphersal",
+              "source_url": "https://github.com/graphersal/graphersal",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "BaruqueRodrigues/rag_especialistas",
+              "source_url": "https://github.com/BaruqueRodrigues/rag_especialistas",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.56,
+              "matched_terms": [
+                "RAG"
+              ],
+              "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
+            "focus_terms": [
+              "RAG",
+              "MCP",
+              "chatbot",
+              "graph",
+              "graphrag",
+              "vectorize",
+              "free",
+              "p10node"
+            ],
+            "representative_titles": [
+              "final-bench/ongrid",
+              "cdcailf/cjkfold",
+              "p10node/docflare-ai",
+              "OceanOver/Tomechat",
+              "liaosiliangCodeLife/harness-mate-plat"
+            ],
+            "related_institutions": [
+              "p10node",
+              "final-bench",
+              "OceanOver",
+              "OpenAI",
+              "liaosiliangCodeLife",
+              "a1958749",
+              "cdcailf",
+              "graphersal"
+            ],
+            "paper_count": 0,
+            "repo_count": 8,
+            "github_star_delta": 5,
+            "method_mentions": 10,
+            "dataset_mentions": 0,
+            "institution_mentions": 9
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-10-13T21"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-10-13T21:18:16.536829+00:00",
+      "dedupe_key": "trend:RAG:2026-10-13:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Embodied AI",
+      "magnitude": 4.19,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Embodied AI",
+          "title": "Embodied AI 出现疑似爆发",
+          "magnitude": 4.19,
+          "severity_label": "疑似爆发",
+          "summary": "Embodied AI 在当前窗口内出现 0 条论文信号和 5 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.19，burst=3.683，growth_rate=-0.951，z_score=-6.836，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 5 个",
+            "24h star 增量 78",
+            "方法提及：VLA",
+            "数据集/Benchmark：LIBERO",
+            "机构集中：rzc156, manifoldor, DexForce"
+          ],
+          "metrics": {
+            "current_1h_count": 5,
+            "current_24h_count": 5,
+            "current_72h_count": 5,
+            "current_7d_count": 5,
+            "baseline_daily_avg_30d": 120.706,
+            "baseline_daily_std_30d": 15.925,
+            "baseline_72h_avg_30d": 362.118,
+            "growth_rate": -0.951,
+            "z_score": -6.836,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.663,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.2,
+            "institution_signal_score": 0.389,
+            "dataset_signal_score": 0.416,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 78,
+            "method_mentions": 2,
+            "dataset_mentions": 1,
+            "institution_mentions": 5,
+            "burst_score": 3.683,
+            "low_history_confidence": false,
+            "magnitude": 4.19
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "fendouai/awesome-embodied-ai",
+              "source_url": "https://github.com/fendouai/awesome-embodied-ai",
+              "published_at": "2026-10-09T14:46:00Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "embodied ai"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "rzc156/dreamforge",
+              "source_url": "https://github.com/rzc156/dreamforge",
+              "published_at": "2026-10-12T05:09:09Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "manifoldor/jumper-replica",
+              "source_url": "https://github.com/manifoldor/jumper-replica",
+              "published_at": "2026-10-07T23:58:19Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DexForce/UNITAS",
+              "source_url": "https://github.com/DexForce/UNITAS",
+              "published_at": "2026-10-08T05:19:38Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "EzraBrooks/beet",
+              "source_url": "https://github.com/EzraBrooks/beet",
+              "published_at": "2026-10-07T00:49:44Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/DexForce/UNITAS",
+            "https://github.com/EzraBrooks/beet",
+            "https://github.com/fendouai/awesome-embodied-ai",
+            "https://github.com/manifoldor/jumper-replica",
+            "https://github.com/rzc156/dreamforge"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [
+            "LIBERO"
+          ],
+          "related_institutions": [
+            "rzc156",
+            "manifoldor",
+            "DexForce",
+            "fendouai",
+            "EzraBrooks"
+          ],
+          "suggested_watch_keywords": [
+            "robotics",
+            "embodied",
+            "world-model",
+            "libero",
+            "rzc156",
+            "dreamforge",
+            "turn",
+            "imagination"
+          ],
+          "confidence": 0.67,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "Benchmark 爆发",
+            "数据集升温",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Embodied AI:2026-10-13:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"fendouai/awesome-embodied-ai\", \"source_url\": \"https://github.com/fendouai/awesome-embodied-ai\", \"published_at\": \"2026-10-09T14:46:00Z\", \"match_score\": 0.417, \"matched_keywords\": [\"embodied ai\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rzc156/dreamforge\", \"source_url\": \"https://github.com/rzc156/dreamforge\", \"published_at\": \"2026-10-12T05:09:09Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"manifoldor/jumper-replica\", \"source_url\": \"https://github.com/manifoldor/jumper-replica\", \"published_at\": \"2026-10-07T23:58:19Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DexForce/UNITAS\", \"source_url\": \"https://github.com/DexForce/UNITAS\", \"published_at\": \"2026-10-08T05:19:38Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"EzraBrooks/beet\", \"source_url\": \"https://github.com/EzraBrooks/beet\", \"published_at\": \"2026-10-07T00:49:44Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Embodied AI」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.2）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 5 个。代表性目标包括fendouai/awesome-embodied-ai、rzc156/dreamforge、manifoldor/jumper-replica、DexForce/UNITAS、EzraBrooks/beet等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 5 条。开源侧 24 小时 star 增量约为 78，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。数据集或 Benchmark 层面出现LIBERO等信号，累计提及 1 次，可作为判断研究评测侧是否跟进的重要线索。机构与账号层面，相关信号涉及rzc156、manifoldor、DexForce、fendouai、EzraBrooks，累计提及 5 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、embodied、world-model、libero、rzc156、dreamforge、turn、imagination等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+          "signal_takeaways": [
+            "总体判断：Embodied AI 本轮由论文 0 条、GitHub 项目 5 个共同构成观测基础，当前强度为“疑似爆发”（M4.2）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、LIBERO、robotics、embodied、world-model、rzc156等线索，代表条目包括fendouai/awesome-embodied-ai、rzc156/dreamforge、manifoldor/jumper-replica、DexForce/UNITAS，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 5 个 GitHub 项目，24 小时 star 增量约 78，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 1 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及rzc156、manifoldor、DexForce、fendouai、EzraBrooks，累计提及 5 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 5 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察robotics、embodied、world-model、libero、rzc156、dreamforge、turn、imagination是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "fendouai/awesome-embodied-ai",
+                "url": "https://github.com/fendouai/awesome-embodied-ai",
+                "source": "github",
+                "reason": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "rzc156/dreamforge",
+                "url": "https://github.com/rzc156/dreamforge",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "manifoldor/jumper-replica",
+                "url": "https://github.com/manifoldor/jumper-replica",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "DexForce/UNITAS",
+                "url": "https://github.com/DexForce/UNITAS",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "EzraBrooks/beet",
+                "url": "https://github.com/EzraBrooks/beet",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "fendouai/awesome-embodied-ai",
+              "source_url": "https://github.com/fendouai/awesome-embodied-ai",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "embodied ai"
+              ],
+              "why_included": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "rzc156/dreamforge",
+              "source_url": "https://github.com/rzc156/dreamforge",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "manifoldor/jumper-replica",
+              "source_url": "https://github.com/manifoldor/jumper-replica",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "DexForce/UNITAS",
+              "source_url": "https://github.com/DexForce/UNITAS",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "EzraBrooks/beet",
+              "source_url": "https://github.com/EzraBrooks/beet",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 5 个。",
+            "focus_terms": [
+              "VLA",
+              "LIBERO",
+              "robotics",
+              "embodied",
+              "world-model",
+              "rzc156",
+              "dreamforge",
+              "turn"
+            ],
+            "representative_titles": [
+              "fendouai/awesome-embodied-ai",
+              "rzc156/dreamforge",
+              "manifoldor/jumper-replica",
+              "DexForce/UNITAS",
+              "EzraBrooks/beet"
+            ],
+            "related_institutions": [
+              "rzc156",
+              "manifoldor",
+              "DexForce",
+              "fendouai",
+              "EzraBrooks"
+            ],
+            "paper_count": 0,
+            "repo_count": 5,
+            "github_star_delta": 78,
+            "method_mentions": 2,
+            "dataset_mentions": 1,
+            "institution_mentions": 5
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-10-13T21"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-10-13T21:18:16.536829+00:00",
+      "dedupe_key": "trend:Embodied AI:2026-10-13:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
