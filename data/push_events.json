@@ -470940,6 +470940,464 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Browser Agent",
+      "magnitude": 5.0,
+      "severity_label": "强趋势震荡",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Browser Agent",
+          "title": "Browser Agent 出现强趋势震荡",
+          "magnitude": 5.0,
+          "severity_label": "强趋势震荡",
+          "summary": "Browser Agent 在当前窗口内出现 0 条论文信号和 1 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+          "calculation_summary": "magnitude=5.0，burst=3.906，growth_rate=-0.92，z_score=-23.0，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 1 个",
+            "24h star 增量 354",
+            "方法提及：Browser Agent",
+            "机构集中：outcrawlai"
+          ],
+          "metrics": {
+            "current_1h_count": 1,
+            "current_24h_count": 1,
+            "current_72h_count": 1,
+            "current_7d_count": 1,
+            "baseline_daily_avg_30d": 24.0,
+            "baseline_daily_std_30d": 0.0,
+            "baseline_72h_avg_30d": 72.0,
+            "growth_rate": -0.92,
+            "z_score": -23.0,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 3.524,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 1.0,
+            "institution_signal_score": 1.099,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.381,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 354,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 1,
+            "burst_score": 3.906,
+            "low_history_confidence": true,
+            "magnitude": 5.0
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "outcrawlai/scout",
+              "source_url": "https://github.com/outcrawlai/scout",
+              "published_at": "2026-10-13T09:18:55Z",
+              "match_score": 0.46,
+              "matched_keywords": [
+                "browser agent"
+              ],
+              "matched_methods": [
+                "Browser Agent"
+              ],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/outcrawlai/scout"
+          ],
+          "related_methods": [
+            "Browser Agent"
+          ],
+          "related_datasets": [],
+          "related_institutions": [
+            "outcrawlai"
+          ],
+          "suggested_watch_keywords": [
+            "scout",
+            "outcrawl",
+            "outcrawlai",
+            "open-source",
+            "browser",
+            "agent",
+            "mirrored",
+            "automatically"
+          ],
+          "confidence": 0.28,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Browser Agent:2026-10-15:强趋势震荡",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"outcrawlai/scout\", \"source_url\": \"https://github.com/outcrawlai/scout\", \"published_at\": \"2026-10-13T09:18:55Z\", \"match_score\": 0.46, \"matched_keywords\": [\"browser agent\"], \"matched_methods\": [\"Browser Agent\"], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Browser Agent」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 1 个。代表性目标包括outcrawlai/scout等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 1 条。开源侧 24 小时 star 增量约为 354，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到Browser Agent等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及outcrawlai，累计提及 1 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察scout、outcrawl、outcrawlai、open-source、browser、agent、mirrored、automatically等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Browser Agent 本轮由论文 0 条、GitHub 项目 1 个共同构成观测基础，当前强度为“强趋势震荡”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向Browser Agent、scout、outcrawl、outcrawlai、open-source、browser等线索，代表条目包括outcrawlai/scout，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 1 个 GitHub 项目，24 小时 star 增量约 354，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及outcrawlai，累计提及 1 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 1 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察scout、outcrawl、outcrawlai、open-source、browser、agent、mirrored、automatically是否继续出现。当前置信度为 0.3，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "outcrawlai/scout",
+                "url": "https://github.com/outcrawlai/scout",
+                "source": "github",
+                "reason": "命中 browser agent，匹配分 0.46，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "outcrawlai/scout",
+              "source_url": "https://github.com/outcrawlai/scout",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.46,
+              "matched_terms": [
+                "browser agent"
+              ],
+              "why_included": "命中 browser agent，匹配分 0.46，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 1 个。",
+            "focus_terms": [
+              "Browser Agent",
+              "scout",
+              "outcrawl",
+              "outcrawlai",
+              "open-source",
+              "browser",
+              "agent",
+              "mirrored"
+            ],
+            "representative_titles": [
+              "outcrawlai/scout"
+            ],
+            "related_institutions": [
+              "outcrawlai"
+            ],
+            "paper_count": 0,
+            "repo_count": 1,
+            "github_star_delta": 354,
+            "method_mentions": 1,
+            "dataset_mentions": 0,
+            "institution_mentions": 1
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-10-15T17"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-10-15T17:05:11.344238+00:00",
+      "dedupe_key": "trend:Browser Agent:2026-10-15:强趋势震荡",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Embodied AI",
+      "magnitude": 4.3,
+      "severity_label": "疑似爆发",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Embodied AI",
+          "title": "Embodied AI 出现疑似爆发",
+          "magnitude": 4.3,
+          "severity_label": "疑似爆发",
+          "summary": "Embodied AI 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
+          "calculation_summary": "magnitude=4.3，burst=3.771，growth_rate=-0.958，z_score=-6.238，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 4 个",
+            "24h star 增量 21",
+            "方法提及：VLA",
+            "数据集/Benchmark：LIBERO",
+            "机构集中：rzc156, DexForce, fendouai"
+          ],
+          "metrics": {
+            "current_1h_count": 4,
+            "current_24h_count": 4,
+            "current_72h_count": 4,
+            "current_7d_count": 4,
+            "baseline_daily_avg_30d": 119.25,
+            "baseline_daily_std_30d": 17.477,
+            "baseline_72h_avg_30d": 357.75,
+            "growth_rate": -0.958,
+            "z_score": -6.238,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.75,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.25,
+            "institution_signal_score": 0.448,
+            "dataset_signal_score": 0.416,
+            "method_signal_score": 0.604,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 21,
+            "method_mentions": 2,
+            "dataset_mentions": 1,
+            "institution_mentions": 4,
+            "burst_score": 3.771,
+            "low_history_confidence": false,
+            "magnitude": 4.3
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "fendouai/awesome-embodied-ai",
+              "source_url": "https://github.com/fendouai/awesome-embodied-ai",
+              "published_at": "2026-10-09T14:46:00Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "embodied ai"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "rzc156/dreamforge",
+              "source_url": "https://github.com/rzc156/dreamforge",
+              "published_at": "2026-10-12T05:09:09Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "DexForce/UNITAS",
+              "source_url": "https://github.com/DexForce/UNITAS",
+              "published_at": "2026-10-08T05:19:38Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "mbzuai-nlp/ChemLab-Assets",
+              "source_url": "https://github.com/mbzuai-nlp/ChemLab-Assets",
+              "published_at": "2026-10-14T12:14:03Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/DexForce/UNITAS",
+            "https://github.com/fendouai/awesome-embodied-ai",
+            "https://github.com/mbzuai-nlp/ChemLab-Assets",
+            "https://github.com/rzc156/dreamforge"
+          ],
+          "related_methods": [
+            "VLA"
+          ],
+          "related_datasets": [
+            "LIBERO"
+          ],
+          "related_institutions": [
+            "rzc156",
+            "DexForce",
+            "fendouai",
+            "mbzuai-nlp"
+          ],
+          "suggested_watch_keywords": [
+            "embodied",
+            "robotics",
+            "embodied-ai",
+            "world-model",
+            "libero",
+            "rzc156",
+            "dreamforge",
+            "turn"
+          ],
+          "confidence": 0.61,
+          "caveats": [],
+          "tags": [
+            "GitHub 暴涨",
+            "方法扩散",
+            "Benchmark 爆发",
+            "数据集升温",
+            "机构集中",
+            "开源驱动",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Embodied AI:2026-10-15:疑似爆发",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"fendouai/awesome-embodied-ai\", \"source_url\": \"https://github.com/fendouai/awesome-embodied-ai\", \"published_at\": \"2026-10-09T14:46:00Z\", \"match_score\": 0.417, \"matched_keywords\": [\"embodied ai\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"rzc156/dreamforge\", \"source_url\": \"https://github.com/rzc156/dreamforge\", \"published_at\": \"2026-10-12T05:09:09Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DexForce/UNITAS\", \"source_url\": \"https://github.com/DexForce/UNITAS\", \"published_at\": \"2026-10-08T05:19:38Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mbzuai-nlp/ChemLab-Assets\", \"source_url\": \"https://github.com/mbzuai-nlp/ChemLab-Assets\", \"published_at\": \"2026-10-14T12:14:03Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Embodied AI」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.3）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括fendouai/awesome-embodied-ai、rzc156/dreamforge、DexForce/UNITAS、mbzuai-nlp/ChemLab-Assets等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 21，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 2 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。数据集或 Benchmark 层面出现LIBERO等信号，累计提及 1 次，可作为判断研究评测侧是否跟进的重要线索。机构与账号层面，相关信号涉及rzc156、DexForce、fendouai、mbzuai-nlp，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察embodied、robotics、embodied-ai、world-model、libero、rzc156、dreamforge、turn等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+          "signal_takeaways": [
+            "总体判断：Embodied AI 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.3）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向VLA、LIBERO、embodied、robotics、embodied-ai、world-model等线索，代表条目包括fendouai/awesome-embodied-ai、rzc156/dreamforge、DexForce/UNITAS、mbzuai-nlp/ChemLab-Assets，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 21，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "研究侧归纳：虽然论文条目不足，但方法相关提及 2 次、数据集/Benchmark 相关提及 1 次，说明仍有研究线索值得跟踪。",
+            "机构与账号归纳：相关信号涉及rzc156、DexForce、fendouai、mbzuai-nlp，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察embodied、robotics、embodied-ai、world-model、libero、rzc156、dreamforge、turn是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "fendouai/awesome-embodied-ai",
+                "url": "https://github.com/fendouai/awesome-embodied-ai",
+                "source": "github",
+                "reason": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "rzc156/dreamforge",
+                "url": "https://github.com/rzc156/dreamforge",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "DexForce/UNITAS",
+                "url": "https://github.com/DexForce/UNITAS",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "mbzuai-nlp/ChemLab-Assets",
+                "url": "https://github.com/mbzuai-nlp/ChemLab-Assets",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "fendouai/awesome-embodied-ai",
+              "source_url": "https://github.com/fendouai/awesome-embodied-ai",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "embodied ai"
+              ],
+              "why_included": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "rzc156/dreamforge",
+              "source_url": "https://github.com/rzc156/dreamforge",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "DexForce/UNITAS",
+              "source_url": "https://github.com/DexForce/UNITAS",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "mbzuai-nlp/ChemLab-Assets",
+              "source_url": "https://github.com/mbzuai-nlp/ChemLab-Assets",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+            "focus_terms": [
+              "VLA",
+              "LIBERO",
+              "embodied",
+              "robotics",
+              "embodied-ai",
+              "world-model",
+              "rzc156",
+              "dreamforge"
+            ],
+            "representative_titles": [
+              "fendouai/awesome-embodied-ai",
+              "rzc156/dreamforge",
+              "DexForce/UNITAS",
+              "mbzuai-nlp/ChemLab-Assets"
+            ],
+            "related_institutions": [
+              "rzc156",
+              "DexForce",
+              "fendouai",
+              "mbzuai-nlp"
+            ],
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 21,
+            "method_mentions": 2,
+            "dataset_mentions": 1,
+            "institution_mentions": 4
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-10-15T17"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-10-15T17:05:11.344238+00:00",
+      "dedupe_key": "trend:Embodied AI:2026-10-15:疑似爆发",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
