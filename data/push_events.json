@@ -503956,6 +503956,274 @@
           "reason": "PUSH_WEBHOOK_URL not configured"
         }
       ]
+    },
+    {
+      "event_type": "hotspot",
+      "topic": "Embodied AI",
+      "magnitude": 3.55,
+      "severity_label": "明显异常",
+      "payload_json": {
+        "hotspot": {
+          "topic": "Embodied AI",
+          "title": "Embodied AI 出现明显异常",
+          "magnitude": 3.55,
+          "severity_label": "明显异常",
+          "summary": "Embodied AI 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为明显异常。",
+          "calculation_summary": "magnitude=3.55，burst=2.414，growth_rate=-0.953，z_score=-3.725，cross_source=0.5。",
+          "key_drivers": [
+            "GitHub 项目 4 个",
+            "24h star 增量 29",
+            "机构集中：mozihe, Animan-AI, Shimingyi"
+          ],
+          "metrics": {
+            "current_1h_count": 4,
+            "current_24h_count": 4,
+            "current_72h_count": 4,
+            "current_7d_count": 4,
+            "baseline_daily_avg_30d": 104.842,
+            "baseline_daily_std_30d": 26.071,
+            "baseline_72h_avg_30d": 314.526,
+            "growth_rate": -0.953,
+            "z_score": -3.725,
+            "paper_burst_score": 0.0,
+            "github_signal_score": 2.414,
+            "source_diversity_score": 0.5,
+            "cross_source_confirmation_score": 0.5,
+            "institution_concentration_score": 0.25,
+            "institution_signal_score": 0.448,
+            "dataset_signal_score": 0.0,
+            "method_signal_score": 0.0,
+            "cold_revival_score": 0.0,
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 29,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 4,
+            "burst_score": 2.414,
+            "low_history_confidence": true,
+            "magnitude": 3.55
+          },
+          "evidence": [
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Animan-AI/DuckBuddy",
+              "source_url": "https://github.com/Animan-AI/DuckBuddy",
+              "published_at": "2026-10-18T12:57:22Z",
+              "match_score": 0.417,
+              "matched_keywords": [
+                "embodied ai"
+              ],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "mozihe/z-localization",
+              "source_url": "https://github.com/mozihe/z-localization",
+              "published_at": "2026-10-22T08:49:49Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "Shimingyi/awesome-animation-datasets",
+              "source_url": "https://github.com/Shimingyi/awesome-animation-datasets",
+              "published_at": "2026-10-19T10:00:52Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            },
+            {
+              "source_type": "repo",
+              "source_name": "github",
+              "title": "suniique/assembly-nist",
+              "source_url": "https://github.com/suniique/assembly-nist",
+              "published_at": "2026-10-22T00:40:03Z",
+              "match_score": 0.083,
+              "matched_keywords": [],
+              "matched_methods": [],
+              "matched_datasets": []
+            }
+          ],
+          "source_urls": [
+            "https://github.com/Animan-AI/DuckBuddy",
+            "https://github.com/Shimingyi/awesome-animation-datasets",
+            "https://github.com/mozihe/z-localization",
+            "https://github.com/suniique/assembly-nist"
+          ],
+          "related_methods": [],
+          "related_datasets": [],
+          "related_institutions": [
+            "mozihe",
+            "Animan-AI",
+            "Shimingyi",
+            "suniique"
+          ],
+          "suggested_watch_keywords": [
+            "robotics",
+            "mozihe",
+            "z-localization",
+            "t-dt",
+            "robomaster",
+            "lidar-imu-odometry",
+            "livox-mid360",
+            "localization"
+          ],
+          "confidence": 0.46,
+          "caveats": [
+            "历史样本不足 30 天，基线置信度较低。"
+          ],
+          "tags": [
+            "GitHub 暴涨",
+            "机构集中",
+            "开源驱动",
+            "低置信度",
+            "历史不足",
+            "Watchlist 命中"
+          ],
+          "push_recommended": true,
+          "dedupe_key": "trend:Embodied AI:2026-10-24:明显异常",
+          "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Animan-AI/DuckBuddy\", \"source_url\": \"https://github.com/Animan-AI/DuckBuddy\", \"published_at\": \"2026-10-18T12:57:22Z\", \"match_score\": 0.417, \"matched_keywords\": [\"embodied ai\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"mozihe/z-localization\", \"source_url\": \"https://github.com/mozihe/z-localization\", \"published_at\": \"2026-10-22T08:49:49Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Shimingyi/awesome-animation-datasets\", \"source_url\": \"https://github.com/Shimingyi/awesome-animation-datasets\", \"published_at\": \"2026-10-19T10:00:52Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"suniique/assembly-nist\", \"source_url\": \"https://github.com/suniique/assembly-nist\", \"published_at\": \"2026-10-22T00:40:03Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+          "curated_summary": "本次抓取围绕「Embodied AI」相关公开信号进行汇总，系统将其判定为“明显异常”（M3.5）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括Animan-AI/DuckBuddy、mozihe/z-localization、Shimingyi/awesome-animation-datasets、suniique/assembly-nist等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 29，说明该方向至少在短期工程关注度上出现了可观察的聚集。机构与账号层面，相关信号涉及mozihe、Animan-AI、Shimingyi、suniique，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、mozihe、z-localization、t-dt、robomaster、lidar-imu-odometry、livox-mid360、localization等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.5。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+          "signal_takeaways": [
+            "总体判断：Embodied AI 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“明显异常”（M3.5）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+            "内容重点：抓取到的多个目标集中指向robotics、mozihe、z-localization、t-dt、robomaster、lidar-imu-odometry等线索，代表条目包括Animan-AI/DuckBuddy、mozihe/z-localization、Shimingyi/awesome-animation-datasets、suniique/assembly-nist，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+            "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 29，说明该方向在开源生态中已出现可量化的短期关注度。",
+            "机构与账号归纳：相关信号涉及mozihe、Animan-AI、Shimingyi、suniique，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+            "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+            "观察建议：后续重点观察robotics、mozihe、z-localization、t-dt、robomaster、lidar-imu-odometry、livox-mid360、localization是否继续出现。当前置信度为 0.5，同时需要注意：历史样本不足 30 天，基线置信度较低。"
+          ],
+          "source_link_groups": {
+            "代表项目": [
+              {
+                "title": "Animan-AI/DuckBuddy",
+                "url": "https://github.com/Animan-AI/DuckBuddy",
+                "source": "github",
+                "reason": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "mozihe/z-localization",
+                "url": "https://github.com/mozihe/z-localization",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "Shimingyi/awesome-animation-datasets",
+                "url": "https://github.com/Shimingyi/awesome-animation-datasets",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              },
+              {
+                "title": "suniique/assembly-nist",
+                "url": "https://github.com/suniique/assembly-nist",
+                "source": "github",
+                "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
+              }
+            ]
+          },
+          "evidence_digest": [
+            {
+              "title": "Animan-AI/DuckBuddy",
+              "source_url": "https://github.com/Animan-AI/DuckBuddy",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.417,
+              "matched_terms": [
+                "embodied ai"
+              ],
+              "why_included": "命中 embodied ai，匹配分 0.417，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "mozihe/z-localization",
+              "source_url": "https://github.com/mozihe/z-localization",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "Shimingyi/awesome-animation-datasets",
+              "source_url": "https://github.com/Shimingyi/awesome-animation-datasets",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            },
+            {
+              "title": "suniique/assembly-nist",
+              "source_url": "https://github.com/suniique/assembly-nist",
+              "source_type": "repo",
+              "source_name": "github",
+              "match_score": 0.083,
+              "matched_terms": [],
+              "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
+            }
+          ],
+          "signal_focus": {
+            "dominant_source": "开源项目",
+            "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+            "focus_terms": [
+              "robotics",
+              "mozihe",
+              "z-localization",
+              "t-dt",
+              "robomaster",
+              "lidar-imu-odometry",
+              "livox-mid360",
+              "localization"
+            ],
+            "representative_titles": [
+              "Animan-AI/DuckBuddy",
+              "mozihe/z-localization",
+              "Shimingyi/awesome-animation-datasets",
+              "suniique/assembly-nist"
+            ],
+            "related_institutions": [
+              "mozihe",
+              "Animan-AI",
+              "Shimingyi",
+              "suniique"
+            ],
+            "paper_count": 0,
+            "repo_count": 4,
+            "github_star_delta": 29,
+            "method_mentions": 0,
+            "dataset_mentions": 0,
+            "institution_mentions": 4
+          },
+          "curation_method": "deterministic_natural_language_v2"
+        },
+        "snapshot_hour": "2026-10-24T18"
+      },
+      "pushed_channels": [],
+      "pushed_at": "2026-10-24T18:49:21.002776+00:00",
+      "dedupe_key": "trend:Embodied AI:2026-10-24:明显异常",
+      "results": [
+        {
+          "channel": "telegram",
+          "skipped": true,
+          "reason": "Telegram env not configured"
+        },
+        {
+          "channel": "email",
+          "skipped": true,
+          "reason": "SMTP env not configured"
+        },
+        {
+          "channel": "webhook",
+          "skipped": true,
+          "reason": "PUSH_WEBHOOK_URL not configured"
+        }
+      ]
     }
   ]
 }
