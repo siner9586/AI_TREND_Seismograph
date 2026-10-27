@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-26T00:29:04.803970+00:00",
-  "latest_report_date": "2026-10-26",
-  "report_json_path": "data/reports/2026-10-26.json",
-  "report_md_path": "data/reports/2026-10-26.md",
+  "updated_at": "2026-10-27T01:32:06.727934+00:00",
+  "latest_report_date": "2026-10-27",
+  "report_json_path": "data/reports/2026-10-27.json",
+  "report_md_path": "data/reports/2026-10-27.md",
   "max_magnitude": 6.0,
   "top_anomalies": [
     {
@@ -10,44 +10,58 @@
       "title": "Agents 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Agents 在当前窗口内出现 0 条论文信号和 23 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=6.907，growth_rate=-0.986，z_score=-24.461，cross_source=0.5。",
+      "summary": "Agents 在当前窗口内出现 0 条论文信号和 21 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=7.845，growth_rate=-0.987，z_score=-25.823，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 23 个",
-        "24h star 增量 141",
-        "方法提及：RAG, MCP, ReAct",
-        "机构集中：Austjnr20, h9-tec, liyupi"
+        "GitHub 项目 21 个",
+        "24h star 增量 467",
+        "方法提及：RAG, MCP",
+        "机构集中：Austjnr20, Cattmonkey, h9-tec"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
-        "current_72h_count": 23,
-        "current_7d_count": 23,
-        "baseline_daily_avg_30d": 570.811,
-        "baseline_daily_std_30d": 68.066,
-        "baseline_72h_avg_30d": 1712.432,
-        "growth_rate": -0.986,
-        "z_score": -24.461,
+        "current_72h_count": 21,
+        "current_7d_count": 21,
+        "baseline_daily_avg_30d": 575.351,
+        "baseline_daily_std_30d": 65.029,
+        "baseline_72h_avg_30d": 1726.054,
+        "growth_rate": -0.987,
+        "z_score": -25.823,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.698,
+        "github_signal_score": 6.775,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.043,
-        "institution_signal_score": 0.142,
+        "institution_concentration_score": 0.048,
+        "institution_signal_score": 0.149,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.208,
+        "method_signal_score": 1.07,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 23,
-        "github_star_delta": 141,
-        "method_mentions": 8,
+        "repo_count": 21,
+        "github_star_delta": 467,
+        "method_mentions": 6,
         "dataset_mentions": 0,
-        "institution_mentions": 24,
-        "burst_score": 6.907,
+        "institution_mentions": 21,
+        "burst_score": 7.845,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Cattmonkey/ChaosIntelligence",
+          "source_url": "https://github.com/Cattmonkey/ChaosIntelligence",
+          "published_at": "2026-10-23T13:04:31Z",
+          "match_score": 0.712,
+          "matched_keywords": [
+            "agent",
+            "agents"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -65,23 +79,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "emrahaydemir960-ai/daimon-data-agent",
-          "source_url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
-          "published_at": "2026-10-22T20:09:29Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "published_at": "2026-10-22T20:09:30Z",
+          "title": "morganlinton/BeautifulRust",
+          "source_url": "https://github.com/morganlinton/BeautifulRust",
+          "published_at": "2026-10-23T03:01:11Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -121,9 +121,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "lovisdotio/motion2code",
-          "source_url": "https://github.com/lovisdotio/motion2code",
-          "published_at": "2026-10-20T04:18:10Z",
+          "title": "ZiChuanLan/agent-purge",
+          "source_url": "https://github.com/ZiChuanLan/agent-purge",
+          "published_at": "2026-10-25T06:06:02Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -149,13 +149,12 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "xingjian-bai/opal",
-          "source_url": "https://github.com/xingjian-bai/opal",
-          "published_at": "2026-10-21T14:17:50Z",
-          "match_score": 0.633,
+          "title": "Austjnr20/JustAsk",
+          "source_url": "https://github.com/Austjnr20/JustAsk",
+          "published_at": "2026-10-21T10:48:51Z",
+          "match_score": 0.317,
           "matched_keywords": [
-            "agent",
-            "agents"
+            "agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -164,53 +163,50 @@
       "source_urls": [
         "https://github.com/Alejandros17487/ai-jailbreaks",
         "https://github.com/Austjnr20/JustAsk",
+        "https://github.com/Cattmonkey/ChaosIntelligence",
         "https://github.com/Charonyuu/whatsmyagentdoing",
         "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-        "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
         "https://github.com/QuickButlerPace65/AnythingLLM-Desktop",
-        "https://github.com/YOLOW92/pagesift",
-        "https://github.com/Zafer-Liu/claude-super-sidebar",
+        "https://github.com/THUSI-Lab/RoboDoctor",
+        "https://github.com/ZiChuanLan/agent-purge",
         "https://github.com/actionow-ai/vvv",
-        "https://github.com/dominikmartn/harp",
-        "https://github.com/emrahaydemir960-ai/daimon-data-agent",
+        "https://github.com/amigoscode/spring-ai-course",
+        "https://github.com/andyhuo520/digital-human-koubo",
+        "https://github.com/ccch1mneyyy/dsh-go",
         "https://github.com/h9-tec/ai-roadmap-2026",
-        "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-        "https://github.com/jss8649/quiet-tizen",
         "https://github.com/khanhtq29vn/contextcraft",
-        "https://github.com/lesnolie/Tigris",
         "https://github.com/liyupi/dafeiyu-cleaner",
-        "https://github.com/lovisdotio/motion2code",
+        "https://github.com/morganlinton/BeautifulRust",
+        "https://github.com/smhanov/agentloop",
+        "https://github.com/t3dotgg/tstack",
         "https://github.com/udhaykumarbala/cleanyourtv-app",
-        "https://github.com/victorgassuncao21/piper-morgan-assistant",
         "https://github.com/wangrongding/tv-fresh",
-        "https://github.com/xingjian-bai/opal",
         "https://github.com/xuyicheng-zju/TARSphere"
       ],
       "related_methods": [
         "RAG",
-        "MCP",
-        "ReAct"
+        "MCP"
       ],
       "related_datasets": [],
       "related_institutions": [
         "Austjnr20",
+        "Cattmonkey",
         "h9-tec",
         "liyupi",
-        "KhulekanisiyandaMchunu",
-        "Anthropic",
-        "emrahaydemir960-ai",
-        "victorgassuncao21",
-        "heitorcarvalhohlbryzeis6-cloud"
+        "smhanov",
+        "ccch1mneyyy",
+        "t3dotgg",
+        "morganlinton"
       ],
       "suggested_watch_keywords": [
-        "agents",
         "agent",
-        "claude",
+        "agents",
         "llm",
+        "claude",
         "code",
         "codex",
-        "ai-agents",
-        "coding"
+        "coding",
+        "skill"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -222,20 +218,26 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Agents:2026-10-26:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"liyupi/dafeiyu-cleaner\", \"source_url\": \"https://github.com/liyupi/dafeiyu-cleaner\", \"published_at\": \"2026-10-23T03:39:33Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"emrahaydemir960-ai/daimon-data-agent\", \"source_url\": \"https://github.com/emrahaydemir960-ai/daimon-data-agent\", \"published_at\": \"2026-10-22T20:09:29Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server\", \"source_url\": \"https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server\", \"published_at\": \"2026-10-22T20:09:30Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DenisSergeevitch/ex-ussr-kinship-research\", \"source_url\": \"https://github.com/DenisSergeevitch/ex-ussr-kinship-research\", \"published_at\": \"2026-10-25T10:05:56Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"actionow-ai/vvv\", \"source_url\": \"https://github.com/actionow-ai/vvv\", \"published_at\": \"2026-10-22T07:29:54Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lovisdotio/motion2code\", \"source_url\": \"https://github.com/lovisdotio/motion2code\", \"published_at\": \"2026-10-20T04:18:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Charonyuu/whatsmyagentdoing\", \"source_url\": \"https://github.com/Charonyuu/whatsmyagentdoing\", \"published_at\": \"2026-10-23T14:15:26Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"xingjian-bai/opal\", \"source_url\": \"https://github.com/xingjian-bai/opal\", \"published_at\": \"2026-10-21T14:17:50Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 23 个。代表性目标包括liyupi/dafeiyu-cleaner、emrahaydemir960-ai/daimon-data-agent、heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server、DenisSergeevitch/ex-ussr-kinship-research、actionow-ai/vvv等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 141，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 8 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Austjnr20、h9-tec、liyupi、KhulekanisiyandaMchunu、Anthropic、emrahaydemir960-ai、victorgassuncao21、heitorcarvalhohlbryzeis6-cloud，累计提及 24 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、agent、claude、llm、code、codex、ai-agents、coding等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Agents:2026-10-27:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Cattmonkey/ChaosIntelligence\", \"source_url\": \"https://github.com/Cattmonkey/ChaosIntelligence\", \"published_at\": \"2026-10-23T13:04:31Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"liyupi/dafeiyu-cleaner\", \"source_url\": \"https://github.com/liyupi/dafeiyu-cleaner\", \"published_at\": \"2026-10-23T03:39:33Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"morganlinton/BeautifulRust\", \"source_url\": \"https://github.com/morganlinton/BeautifulRust\", \"published_at\": \"2026-10-23T03:01:11Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DenisSergeevitch/ex-ussr-kinship-research\", \"source_url\": \"https://github.com/DenisSergeevitch/ex-ussr-kinship-research\", \"published_at\": \"2026-10-25T10:05:56Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"actionow-ai/vvv\", \"source_url\": \"https://github.com/actionow-ai/vvv\", \"published_at\": \"2026-10-22T07:29:54Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ZiChuanLan/agent-purge\", \"source_url\": \"https://github.com/ZiChuanLan/agent-purge\", \"published_at\": \"2026-10-25T06:06:02Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Charonyuu/whatsmyagentdoing\", \"source_url\": \"https://github.com/Charonyuu/whatsmyagentdoing\", \"published_at\": \"2026-10-23T14:15:26Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Austjnr20/JustAsk\", \"source_url\": \"https://github.com/Austjnr20/JustAsk\", \"published_at\": \"2026-10-21T10:48:51Z\", \"match_score\": 0.317, \"matched_keywords\": [\"agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 21 个。代表性目标包括Cattmonkey/ChaosIntelligence、liyupi/dafeiyu-cleaner、morganlinton/BeautifulRust、DenisSergeevitch/ex-ussr-kinship-research、actionow-ai/vvv等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 467，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 6 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Austjnr20、Cattmonkey、h9-tec、liyupi、smhanov、ccch1mneyyy、t3dotgg、morganlinton，累计提及 21 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、llm、claude、code、codex、coding、skill等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 23 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agents、agent、claude等线索，代表条目包括liyupi/dafeiyu-cleaner、emrahaydemir960-ai/daimon-data-agent、heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server、DenisSergeevitch/ex-ussr-kinship-research，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 23 个 GitHub 项目，24 小时 star 增量约 141，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 8 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Austjnr20、h9-tec、liyupi、KhulekanisiyandaMchunu、Anthropic、emrahaydemir960-ai，累计提及 24 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 21 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、agent、agents、llm、claude等线索，代表条目包括Cattmonkey/ChaosIntelligence、liyupi/dafeiyu-cleaner、morganlinton/BeautifulRust、DenisSergeevitch/ex-ussr-kinship-research，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 21 个 GitHub 项目，24 小时 star 增量约 467，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 6 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及Austjnr20、Cattmonkey、h9-tec、liyupi、smhanov、ccch1mneyyy，累计提及 21 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、agent、claude、llm、code、codex、ai-agents、coding是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、agents、llm、claude、code、codex、coding、skill是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "Cattmonkey/ChaosIntelligence",
+            "url": "https://github.com/Cattmonkey/ChaosIntelligence",
+            "source": "github",
+            "reason": "命中 agent、agents，匹配分 0.712，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "liyupi/dafeiyu-cleaner",
             "url": "https://github.com/liyupi/dafeiyu-cleaner",
@@ -243,14 +245,8 @@
             "reason": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "emrahaydemir960-ai/daimon-data-agent",
-            "url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
-            "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-            "url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
+            "title": "morganlinton/BeautifulRust",
+            "url": "https://github.com/morganlinton/BeautifulRust",
             "source": "github",
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
@@ -267,8 +263,8 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "lovisdotio/motion2code",
-            "url": "https://github.com/lovisdotio/motion2code",
+            "title": "ZiChuanLan/agent-purge",
+            "url": "https://github.com/ZiChuanLan/agent-purge",
             "source": "github",
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
@@ -279,10 +275,10 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "xingjian-bai/opal",
-            "url": "https://github.com/xingjian-bai/opal",
+            "title": "Austjnr20/JustAsk",
+            "url": "https://github.com/Austjnr20/JustAsk",
             "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+            "reason": "命中 agent，匹配分 0.317，因此被纳入本轮代表性证据。"
           },
           {
             "title": "Alejandros17487/ai-jailbreaks",
@@ -291,14 +287,26 @@
             "reason": "关联到该热点的原始信号链接。"
           },
           {
-            "title": "Austjnr20/JustAsk",
-            "url": "https://github.com/Austjnr20/JustAsk",
+            "title": "QuickButlerPace65/AnythingLLM-Desktop",
+            "url": "https://github.com/QuickButlerPace65/AnythingLLM-Desktop",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
         ]
       },
       "evidence_digest": [
+        {
+          "title": "Cattmonkey/ChaosIntelligence",
+          "source_url": "https://github.com/Cattmonkey/ChaosIntelligence",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.712,
+          "matched_terms": [
+            "agent",
+            "agents"
+          ],
+          "why_included": "命中 agent、agents，匹配分 0.712，因此被纳入本轮代表性证据。"
+        },
         {
           "title": "liyupi/dafeiyu-cleaner",
           "source_url": "https://github.com/liyupi/dafeiyu-cleaner",
@@ -312,20 +320,8 @@
           "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "emrahaydemir960-ai/daimon-data-agent",
-          "source_url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "agents"
-          ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
+          "title": "morganlinton/BeautifulRust",
+          "source_url": "https://github.com/morganlinton/BeautifulRust",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.633,
@@ -360,8 +356,8 @@
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "lovisdotio/motion2code",
-          "source_url": "https://github.com/lovisdotio/motion2code",
+          "title": "ZiChuanLan/agent-purge",
+          "source_url": "https://github.com/ZiChuanLan/agent-purge",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.633,
@@ -384,59 +380,72 @@
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "xingjian-bai/opal",
-          "source_url": "https://github.com/xingjian-bai/opal",
+          "title": "Austjnr20/JustAsk",
+          "source_url": "https://github.com/Austjnr20/JustAsk",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.633,
+          "match_score": 0.317,
           "matched_terms": [
-            "agent",
-            "agents"
+            "agent"
           ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
+          "why_included": "命中 agent，匹配分 0.317，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 23 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 21 个。",
         "focus_terms": [
           "RAG",
           "MCP",
-          "ReAct",
-          "agents",
           "agent",
-          "claude",
+          "agents",
           "llm",
-          "code"
+          "claude",
+          "code",
+          "codex"
         ],
         "representative_titles": [
+          "Cattmonkey/ChaosIntelligence",
           "liyupi/dafeiyu-cleaner",
-          "emrahaydemir960-ai/daimon-data-agent",
-          "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
+          "morganlinton/BeautifulRust",
           "DenisSergeevitch/ex-ussr-kinship-research",
           "actionow-ai/vvv"
         ],
         "related_institutions": [
           "Austjnr20",
+          "Cattmonkey",
           "h9-tec",
           "liyupi",
-          "KhulekanisiyandaMchunu",
-          "Anthropic",
-          "emrahaydemir960-ai",
-          "victorgassuncao21",
-          "heitorcarvalhohlbryzeis6-cloud"
+          "smhanov",
+          "ccch1mneyyy",
+          "t3dotgg",
+          "morganlinton"
         ],
         "paper_count": 0,
-        "repo_count": 23,
-        "github_star_delta": 141,
-        "method_mentions": 8,
+        "repo_count": 21,
+        "github_star_delta": 467,
+        "method_mentions": 6,
         "dataset_mentions": 0,
-        "institution_mentions": 24
+        "institution_mentions": 21
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
       "representative_papers": [],
       "related_repos": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "Cattmonkey/ChaosIntelligence",
+          "source_url": "https://github.com/Cattmonkey/ChaosIntelligence",
+          "published_at": "2026-10-23T13:04:31Z",
+          "match_score": 0.712,
+          "matched_keywords": [
+            "agent",
+            "agents"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -454,23 +463,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "emrahaydemir960-ai/daimon-data-agent",
-          "source_url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
-          "published_at": "2026-10-22T20:09:29Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "published_at": "2026-10-22T20:09:30Z",
+          "title": "morganlinton/BeautifulRust",
+          "source_url": "https://github.com/morganlinton/BeautifulRust",
+          "published_at": "2026-10-23T03:01:11Z",
           "match_score": 0.633,
           "matched_keywords": [
             "agent",
@@ -510,41 +505,6 @@
       ],
       "trend_30d": [
         {
-          "ts": "2026-09-26T05",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 838
-        },
-        {
-          "ts": "2026-09-26T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 860
-        },
-        {
-          "ts": "2026-09-26T16",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 18,
-          "github_star_delta": 916
-        },
-        {
-          "ts": "2026-09-26T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 18,
-          "github_star_delta": 871
-        },
-        {
-          "ts": "2026-09-27T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 860
-        },
-        {
           "ts": "2026-09-27T08",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -1383,38 +1343,38 @@
           "paper_count": 0,
           "repo_count": 21,
           "github_star_delta": 858
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 23,
+          "github_star_delta": 1019
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 852
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 1390
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 1749
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-02T16",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 20,
-          "github_star_delta": 1128
-        },
-        {
-          "ts": "2026-09-02T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 1025
-        },
-        {
-          "ts": "2026-09-03T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1043
-        },
-        {
-          "ts": "2026-09-03T07",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1569
-        },
-        {
           "ts": "2026-09-03T12",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -3065,38 +3025,38 @@
           "paper_count": 0,
           "repo_count": 21,
           "github_star_delta": 858
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 23,
+          "github_star_delta": 1019
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 852
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 1390
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 1749
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-02T16",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 20,
-          "github_star_delta": 1128
-        },
-        {
-          "ts": "2026-09-02T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 1025
-        },
-        {
-          "ts": "2026-09-03T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1043
-        },
-        {
-          "ts": "2026-09-03T07",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1569
-        },
-        {
           "ts": "2026-09-03T12",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -4747,6 +4707,34 @@
           "paper_count": 0,
           "repo_count": 21,
           "github_star_delta": 858
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 23,
+          "github_star_delta": 1019
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 852
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 1390
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 20,
+          "github_star_delta": 1749
         }
       ]
     },
@@ -4756,25 +4744,25 @@
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
       "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=7.028，growth_rate=-0.985，z_score=-43.636，cross_source=0.5。",
+      "calculation_summary": "magnitude=6.0，burst=6.784，growth_rate=-0.985，z_score=-46.121，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 8 个",
-        "24h star 增量 12",
+        "24h star 增量 1",
         "方法提及：RAG, MCP, Retrieval Augmented Generation",
-        "机构集中：h9-tec, YOLOW92, khanhtq29vn"
+        "机构集中：h9-tec, khanhtq29vn, Sanpan53"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
         "current_72h_count": 8,
         "current_7d_count": 8,
-        "baseline_daily_avg_30d": 195.892,
-        "baseline_daily_std_30d": 12.284,
-        "baseline_72h_avg_30d": 587.676,
+        "baseline_daily_avg_30d": 194.811,
+        "baseline_daily_std_30d": 11.498,
+        "baseline_72h_avg_30d": 584.432,
         "growth_rate": -0.985,
-        "z_score": -43.636,
+        "z_score": -46.121,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.661,
+        "github_signal_score": 5.417,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.125,
@@ -4784,11 +4772,11 @@
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 8,
-        "github_star_delta": 12,
+        "github_star_delta": 1,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 8,
-        "burst_score": 7.028,
+        "burst_score": 6.784,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -4816,20 +4804,6 @@
           "title": "h9-tec/ai-roadmap-2026",
           "source_url": "https://github.com/h9-tec/ai-roadmap-2026",
           "published_at": "2026-10-21T12:23:43Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "YOLOW92/pagesift",
-          "source_url": "https://github.com/YOLOW92/pagesift",
-          "published_at": "2026-10-20T17:30:59Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -4883,9 +4857,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Litmeb/RAW-RAG",
-          "source_url": "https://github.com/Litmeb/RAW-RAG",
-          "published_at": "2026-10-20T01:56:28Z",
+          "title": "jperram92/sfdocs-rag",
+          "source_url": "https://github.com/jperram92/sfdocs-rag",
+          "published_at": "2026-10-22T21:35:32Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -4897,9 +4871,23 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "hvqo/MediGraphRAG",
-          "source_url": "https://github.com/hvqo/MediGraphRAG",
-          "published_at": "2026-10-20T07:27:20Z",
+          "title": "anwarhermuche/suporte-ampere",
+          "source_url": "https://github.com/anwarhermuche/suporte-ampere",
+          "published_at": "2026-10-21T16:45:46Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "amigoscode/spring-ai-course",
+          "source_url": "https://github.com/amigoscode/spring-ai-course",
+          "published_at": "2026-10-26T16:56:41Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -4910,13 +4898,13 @@
         }
       ],
       "source_urls": [
-        "https://github.com/Litmeb/RAW-RAG",
         "https://github.com/QuickButlerPace65/AnythingLLM-Desktop",
         "https://github.com/Sanpan53/zhixin-campus-showcase",
-        "https://github.com/YOLOW92/pagesift",
+        "https://github.com/amigoscode/spring-ai-course",
+        "https://github.com/anwarhermuche/suporte-ampere",
         "https://github.com/dolev31/lasagna",
         "https://github.com/h9-tec/ai-roadmap-2026",
-        "https://github.com/hvqo/MediGraphRAG",
+        "https://github.com/jperram92/sfdocs-rag",
         "https://github.com/khanhtq29vn/contextcraft"
       ],
       "related_methods": [
@@ -4927,20 +4915,20 @@
       "related_datasets": [],
       "related_institutions": [
         "h9-tec",
-        "YOLOW92",
         "khanhtq29vn",
         "Sanpan53",
         "QuickButlerPace65",
-        "Litmeb",
-        "hvqo",
-        "dolev31"
+        "jperram92",
+        "dolev31",
+        "anwarhermuche",
+        "amigoscode"
       ],
       "suggested_watch_keywords": [
         "rag",
         "llm",
-        "verified",
-        "roadmap",
         "agents",
+        "chatbot",
+        "roadmap",
         "evaluation",
         "h9-tec",
         "ai-roadmap-2026"
@@ -4954,17 +4942,17 @@
         "开源驱动"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:RAG:2026-10-26:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dolev31/lasagna\", \"source_url\": \"https://github.com/dolev31/lasagna\", \"published_at\": \"2026-10-21T18:58:43Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"retrieval augmented generation\"], \"matched_methods\": [\"Retrieval Augmented Generation\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"h9-tec/ai-roadmap-2026\", \"source_url\": \"https://github.com/h9-tec/ai-roadmap-2026\", \"published_at\": \"2026-10-21T12:23:43Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YOLOW92/pagesift\", \"source_url\": \"https://github.com/YOLOW92/pagesift\", \"published_at\": \"2026-10-20T17:30:59Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"khanhtq29vn/contextcraft\", \"source_url\": \"https://github.com/khanhtq29vn/contextcraft\", \"published_at\": \"2026-10-22T07:20:53Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Sanpan53/zhixin-campus-showcase\", \"source_url\": \"https://github.com/Sanpan53/zhixin-campus-showcase\", \"published_at\": \"2026-10-21T16:02:09Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuickButlerPace65/AnythingLLM-Desktop\", \"source_url\": \"https://github.com/QuickButlerPace65/AnythingLLM-Desktop\", \"published_at\": \"2026-10-23T21:51:47Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Litmeb/RAW-RAG\", \"source_url\": \"https://github.com/Litmeb/RAW-RAG\", \"published_at\": \"2026-10-20T01:56:28Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"hvqo/MediGraphRAG\", \"source_url\": \"https://github.com/hvqo/MediGraphRAG\", \"published_at\": \"2026-10-20T07:27:20Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括dolev31/lasagna、h9-tec/ai-roadmap-2026、YOLOW92/pagesift、khanhtq29vn/contextcraft、Sanpan53/zhixin-campus-showcase等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 12，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、Retrieval Augmented Generation等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及h9-tec、YOLOW92、khanhtq29vn、Sanpan53、QuickButlerPace65、Litmeb、hvqo、dolev31，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、verified、roadmap、agents、evaluation、h9-tec、ai-roadmap-2026等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:RAG:2026-10-27:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dolev31/lasagna\", \"source_url\": \"https://github.com/dolev31/lasagna\", \"published_at\": \"2026-10-21T18:58:43Z\", \"match_score\": 0.84, \"matched_keywords\": [\"RAG\", \"rag\", \"retrieval augmented generation\"], \"matched_methods\": [\"Retrieval Augmented Generation\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"h9-tec/ai-roadmap-2026\", \"source_url\": \"https://github.com/h9-tec/ai-roadmap-2026\", \"published_at\": \"2026-10-21T12:23:43Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"khanhtq29vn/contextcraft\", \"source_url\": \"https://github.com/khanhtq29vn/contextcraft\", \"published_at\": \"2026-10-22T07:20:53Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Sanpan53/zhixin-campus-showcase\", \"source_url\": \"https://github.com/Sanpan53/zhixin-campus-showcase\", \"published_at\": \"2026-10-21T16:02:09Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"QuickButlerPace65/AnythingLLM-Desktop\", \"source_url\": \"https://github.com/QuickButlerPace65/AnythingLLM-Desktop\", \"published_at\": \"2026-10-23T21:51:47Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"jperram92/sfdocs-rag\", \"source_url\": \"https://github.com/jperram92/sfdocs-rag\", \"published_at\": \"2026-10-22T21:35:32Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"anwarhermuche/suporte-ampere\", \"source_url\": \"https://github.com/anwarhermuche/suporte-ampere\", \"published_at\": \"2026-10-21T16:45:46Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amigoscode/spring-ai-course\", \"source_url\": \"https://github.com/amigoscode/spring-ai-course\", \"published_at\": \"2026-10-26T16:56:41Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括dolev31/lasagna、h9-tec/ai-roadmap-2026、khanhtq29vn/contextcraft、Sanpan53/zhixin-campus-showcase、QuickButlerPace65/AnythingLLM-Desktop等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 1，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、Retrieval Augmented Generation等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及h9-tec、khanhtq29vn、Sanpan53、QuickButlerPace65、jperram92、dolev31、anwarhermuche、amigoscode，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、agents、chatbot、roadmap、evaluation、h9-tec、ai-roadmap-2026等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
         "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、Retrieval Augmented Generation、llm、verified、roadmap等线索，代表条目包括dolev31/lasagna、h9-tec/ai-roadmap-2026、YOLOW92/pagesift、khanhtq29vn/contextcraft，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 12，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、Retrieval Augmented Generation、llm、agents、chatbot等线索，代表条目包括dolev31/lasagna、h9-tec/ai-roadmap-2026、khanhtq29vn/contextcraft、Sanpan53/zhixin-campus-showcase，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 1，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及h9-tec、YOLOW92、khanhtq29vn、Sanpan53、QuickButlerPace65、Litmeb，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及h9-tec、khanhtq29vn、Sanpan53、QuickButlerPace65、jperram92、dolev31，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察rag、llm、verified、roadmap、agents、evaluation、h9-tec、ai-roadmap-2026是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察rag、llm、agents、chatbot、roadmap、evaluation、h9-tec、ai-roadmap-2026是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -4977,12 +4965,6 @@
           {
             "title": "h9-tec/ai-roadmap-2026",
             "url": "https://github.com/h9-tec/ai-roadmap-2026",
-            "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "YOLOW92/pagesift",
-            "url": "https://github.com/YOLOW92/pagesift",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
@@ -5005,14 +4987,20 @@
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Litmeb/RAW-RAG",
-            "url": "https://github.com/Litmeb/RAW-RAG",
+            "title": "jperram92/sfdocs-rag",
+            "url": "https://github.com/jperram92/sfdocs-rag",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "hvqo/MediGraphRAG",
-            "url": "https://github.com/hvqo/MediGraphRAG",
+            "title": "anwarhermuche/suporte-ampere",
+            "url": "https://github.com/anwarhermuche/suporte-ampere",
+            "source": "github",
+            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "amigoscode/spring-ai-course",
+            "url": "https://github.com/amigoscode/spring-ai-course",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           }
@@ -5034,17 +5022,6 @@
         {
           "title": "h9-tec/ai-roadmap-2026",
           "source_url": "https://github.com/h9-tec/ai-roadmap-2026",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.56,
-          "matched_terms": [
-            "RAG"
-          ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "YOLOW92/pagesift",
-          "source_url": "https://github.com/YOLOW92/pagesift",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.56,
@@ -5087,8 +5064,8 @@
           "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Litmeb/RAW-RAG",
-          "source_url": "https://github.com/Litmeb/RAW-RAG",
+          "title": "jperram92/sfdocs-rag",
+          "source_url": "https://github.com/jperram92/sfdocs-rag",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.56,
@@ -5098,8 +5075,19 @@
           "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "hvqo/MediGraphRAG",
-          "source_url": "https://github.com/hvqo/MediGraphRAG",
+          "title": "anwarhermuche/suporte-ampere",
+          "source_url": "https://github.com/anwarhermuche/suporte-ampere",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.56,
+          "matched_terms": [
+            "RAG"
+          ],
+          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "amigoscode/spring-ai-course",
+          "source_url": "https://github.com/amigoscode/spring-ai-course",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.56,
@@ -5117,31 +5105,31 @@
           "MCP",
           "Retrieval Augmented Generation",
           "llm",
-          "verified",
-          "roadmap",
           "agents",
+          "chatbot",
+          "roadmap",
           "evaluation"
         ],
         "representative_titles": [
           "dolev31/lasagna",
           "h9-tec/ai-roadmap-2026",
-          "YOLOW92/pagesift",
           "khanhtq29vn/contextcraft",
-          "Sanpan53/zhixin-campus-showcase"
+          "Sanpan53/zhixin-campus-showcase",
+          "QuickButlerPace65/AnythingLLM-Desktop"
         ],
         "related_institutions": [
           "h9-tec",
-          "YOLOW92",
           "khanhtq29vn",
           "Sanpan53",
           "QuickButlerPace65",
-          "Litmeb",
-          "hvqo",
-          "dolev31"
+          "jperram92",
+          "dolev31",
+          "anwarhermuche",
+          "amigoscode"
         ],
         "paper_count": 0,
         "repo_count": 8,
-        "github_star_delta": 12,
+        "github_star_delta": 1,
         "method_mentions": 11,
         "dataset_mentions": 0,
         "institution_mentions": 8
@@ -5184,20 +5172,6 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "YOLOW92/pagesift",
-          "source_url": "https://github.com/YOLOW92/pagesift",
-          "published_at": "2026-10-20T17:30:59Z",
-          "match_score": 0.56,
-          "matched_keywords": [
-            "RAG",
-            "rag"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
           "title": "khanhtq29vn/contextcraft",
           "source_url": "https://github.com/khanhtq29vn/contextcraft",
           "published_at": "2026-10-22T07:20:53Z",
@@ -5222,45 +5196,24 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "QuickButlerPace65/AnythingLLM-Desktop",
+          "source_url": "https://github.com/QuickButlerPace65/AnythingLLM-Desktop",
+          "published_at": "2026-10-23T21:51:47Z",
+          "match_score": 0.56,
+          "matched_keywords": [
+            "RAG",
+            "rag"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
         }
       ],
       "trend_30d": [
         {
-          "ts": "2026-09-26T05",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 204
-        },
-        {
-          "ts": "2026-09-26T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 283
-        },
-        {
-          "ts": "2026-09-26T16",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 340
-        },
-        {
-          "ts": "2026-09-26T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 321
-        },
-        {
-          "ts": "2026-09-27T00",
-          "magnitude": 5.96,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 305
-        },
-        {
           "ts": "2026-09-27T08",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -6099,38 +6052,38 @@
           "paper_count": 0,
           "repo_count": 8,
           "github_star_delta": 31
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 56
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 68
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 5.25,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 61
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.26,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 60
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-02T16",
-          "magnitude": 5.28,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 40
-        },
-        {
-          "ts": "2026-09-02T21",
-          "magnitude": 5.31,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 44
-        },
-        {
-          "ts": "2026-09-03T00",
-          "magnitude": 5.29,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 45
-        },
-        {
-          "ts": "2026-09-03T07",
-          "magnitude": 4.92,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 41
-        },
-        {
           "ts": "2026-09-03T12",
           "magnitude": 4.93,
           "paper_count": 0,
@@ -7781,38 +7734,38 @@
           "paper_count": 0,
           "repo_count": 8,
           "github_star_delta": 31
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 56
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 68
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 5.25,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 61
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.26,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 60
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-02T16",
-          "magnitude": 5.28,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 40
-        },
-        {
-          "ts": "2026-09-02T21",
-          "magnitude": 5.31,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 44
-        },
-        {
-          "ts": "2026-09-03T00",
-          "magnitude": 5.29,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 45
-        },
-        {
-          "ts": "2026-09-03T07",
-          "magnitude": 4.92,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 41
-        },
-        {
           "ts": "2026-09-03T12",
           "magnitude": 4.93,
           "paper_count": 0,
@@ -9463,74 +9416,86 @@
           "paper_count": 0,
           "repo_count": 8,
           "github_star_delta": 31
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 56
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 68
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 5.25,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 61
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.26,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 60
         }
       ]
     },
     {
       "topic": "Model Context Protocol",
       "title": "Model Context Protocol 出现强趋势震荡",
-      "magnitude": 6.0,
+      "magnitude": 5.86,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 18 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=8.505，growth_rate=-0.983，z_score=-11.209，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 14 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.86，burst=6.039，growth_rate=-0.987，z_score=-11.634，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 18 个",
-        "24h star 增量 56",
-        "方法提及：RAG, MCP, ReAct",
-        "机构集中：h9-tec, KhulekanisiyandaMchunu, Anthropic"
+        "GitHub 项目 14 个",
+        "24h star 增量 331",
+        "方法提及：RAG, MCP, Retrieval Augmented Generation",
+        "机构集中：Cattmonkey, h9-tec, morganlinton"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
-        "current_72h_count": 18,
-        "current_7d_count": 18,
-        "baseline_daily_avg_30d": 382.879,
-        "baseline_daily_std_30d": 99.869,
-        "baseline_72h_avg_30d": 1148.636,
-        "growth_rate": -0.983,
-        "z_score": -11.209,
+        "current_72h_count": 14,
+        "current_7d_count": 14,
+        "baseline_daily_avg_30d": 394.766,
+        "baseline_daily_std_30d": 99.591,
+        "baseline_72h_avg_30d": 1184.299,
+        "growth_rate": -0.987,
+        "z_score": -11.634,
         "paper_burst_score": 0.0,
-        "github_signal_score": 7.138,
+        "github_signal_score": 4.773,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.056,
-        "institution_signal_score": 0.169,
+        "institution_concentration_score": 0.071,
+        "institution_signal_score": 0.198,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.367,
+        "method_signal_score": 1.266,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 18,
-        "github_star_delta": 56,
-        "method_mentions": 11,
+        "repo_count": 14,
+        "github_star_delta": 331,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 19,
-        "burst_score": 8.505,
+        "institution_mentions": 14,
+        "burst_score": 6.039,
         "low_history_confidence": false,
-        "magnitude": 6.0
+        "magnitude": 5.86
       },
       "evidence": [
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "published_at": "2026-10-22T20:09:30Z",
-          "match_score": 0.843,
-          "matched_keywords": [
-            "MCP",
-            "MCP server"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "YOLOW92/pagesift",
-          "source_url": "https://github.com/YOLOW92/pagesift",
-          "published_at": "2026-10-20T17:30:59Z",
+          "title": "amigoscode/spring-ai-course",
+          "source_url": "https://github.com/amigoscode/spring-ai-course",
+          "published_at": "2026-10-26T16:56:41Z",
           "match_score": 0.537,
           "matched_keywords": [
             "MCP"
@@ -9543,9 +9508,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "victorgassuncao21/piper-morgan-assistant",
-          "source_url": "https://github.com/victorgassuncao21/piper-morgan-assistant",
-          "published_at": "2026-10-22T20:09:31Z",
+          "title": "andyhuo520/digital-human-koubo",
+          "source_url": "https://github.com/andyhuo520/digital-human-koubo",
+          "published_at": "2026-10-26T04:34:09Z",
           "match_score": 0.46,
           "matched_keywords": [
             "MCP"
@@ -9573,6 +9538,17 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "Cattmonkey/ChaosIntelligence",
+          "source_url": "https://github.com/Cattmonkey/ChaosIntelligence",
+          "published_at": "2026-10-23T13:04:31Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "h9-tec/ai-roadmap-2026",
           "source_url": "https://github.com/h9-tec/ai-roadmap-2026",
           "published_at": "2026-10-21T12:23:43Z",
@@ -9584,9 +9560,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-          "source_url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
-          "published_at": "2026-10-23T19:33:58Z",
+          "title": "morganlinton/BeautifulRust",
+          "source_url": "https://github.com/morganlinton/BeautifulRust",
+          "published_at": "2026-10-23T03:01:11Z",
           "match_score": 0.077,
           "matched_keywords": [],
           "matched_methods": [],
@@ -9595,9 +9571,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "emrahaydemir960-ai/daimon-data-agent",
-          "source_url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
-          "published_at": "2026-10-22T20:09:29Z",
+          "title": "DenisSergeevitch/ex-ussr-kinship-research",
+          "source_url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+          "published_at": "2026-10-25T10:05:56Z",
           "match_score": 0.077,
           "matched_keywords": [],
           "matched_methods": [],
@@ -9606,9 +9582,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "dominikmartn/harp",
-          "source_url": "https://github.com/dominikmartn/harp",
-          "published_at": "2026-10-20T10:39:43Z",
+          "title": "Alejandros17487/ai-jailbreaks",
+          "source_url": "https://github.com/Alejandros17487/ai-jailbreaks",
+          "published_at": "2026-10-21T14:44:06Z",
           "match_score": 0.077,
           "matched_keywords": [],
           "matched_methods": [],
@@ -9617,50 +9593,45 @@
       ],
       "source_urls": [
         "https://github.com/Alejandros17487/ai-jailbreaks",
+        "https://github.com/Cattmonkey/ChaosIntelligence",
         "https://github.com/Charonyuu/whatsmyagentdoing",
         "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-        "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
         "https://github.com/QuickButlerPace65/AnythingLLM-Desktop",
-        "https://github.com/YOLOW92/pagesift",
-        "https://github.com/Zafer-Liu/claude-super-sidebar",
+        "https://github.com/ZiChuanLan/agent-purge",
         "https://github.com/actionow-ai/vvv",
+        "https://github.com/amigoscode/spring-ai-course",
+        "https://github.com/andyhuo520/digital-human-koubo",
         "https://github.com/dolev31/lasagna",
-        "https://github.com/dominikmartn/harp",
-        "https://github.com/emrahaydemir960-ai/daimon-data-agent",
         "https://github.com/h9-tec/ai-roadmap-2026",
-        "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
         "https://github.com/khanhtq29vn/contextcraft",
-        "https://github.com/lovisdotio/motion2code",
-        "https://github.com/victorgassuncao21/piper-morgan-assistant",
-        "https://github.com/xingjian-bai/opal",
+        "https://github.com/morganlinton/BeautifulRust",
         "https://github.com/xuyicheng-zju/TARSphere"
       ],
       "related_methods": [
         "RAG",
         "MCP",
-        "ReAct",
         "Retrieval Augmented Generation"
       ],
       "related_datasets": [],
       "related_institutions": [
+        "Cattmonkey",
         "h9-tec",
-        "KhulekanisiyandaMchunu",
-        "Anthropic",
-        "emrahaydemir960-ai",
-        "victorgassuncao21",
-        "heitorcarvalhohlbryzeis6-cloud",
-        "dominikmartn",
-        "DenisSergeevitch"
+        "morganlinton",
+        "DenisSergeevitch",
+        "andyhuo520",
+        "Alejandros17487",
+        "actionow-ai",
+        "khanhtq29vn"
       ],
       "suggested_watch_keywords": [
         "agents",
         "claude",
         "llm",
-        "code",
         "agent",
         "codex",
-        "ai-agents",
-        "live"
+        "coding",
+        "skill",
+        "code"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -9671,35 +9642,29 @@
         "开源驱动"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Model Context Protocol:2026-10-26:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server\", \"source_url\": \"https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server\", \"published_at\": \"2026-10-22T20:09:30Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YOLOW92/pagesift\", \"source_url\": \"https://github.com/YOLOW92/pagesift\", \"published_at\": \"2026-10-20T17:30:59Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"victorgassuncao21/piper-morgan-assistant\", \"source_url\": \"https://github.com/victorgassuncao21/piper-morgan-assistant\", \"published_at\": \"2026-10-22T20:09:31Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dolev31/lasagna\", \"source_url\": \"https://github.com/dolev31/lasagna\", \"published_at\": \"2026-10-21T18:58:43Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"h9-tec/ai-roadmap-2026\", \"source_url\": \"https://github.com/h9-tec/ai-roadmap-2026\", \"published_at\": \"2026-10-21T12:23:43Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KhulekanisiyandaMchunu/llm-trading-arena\", \"source_url\": \"https://github.com/KhulekanisiyandaMchunu/llm-trading-arena\", \"published_at\": \"2026-10-23T19:33:58Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"emrahaydemir960-ai/daimon-data-agent\", \"source_url\": \"https://github.com/emrahaydemir960-ai/daimon-data-agent\", \"published_at\": \"2026-10-22T20:09:29Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dominikmartn/harp\", \"source_url\": \"https://github.com/dominikmartn/harp\", \"published_at\": \"2026-10-20T10:39:43Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 18 个。代表性目标包括heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server、YOLOW92/pagesift、victorgassuncao21/piper-morgan-assistant、dolev31/lasagna、h9-tec/ai-roadmap-2026等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 56，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct、Retrieval Augmented Generation等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及h9-tec、KhulekanisiyandaMchunu、Anthropic、emrahaydemir960-ai、victorgassuncao21、heitorcarvalhohlbryzeis6-cloud、dominikmartn、DenisSergeevitch，累计提及 19 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、llm、code、agent、codex、ai-agents、live等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Model Context Protocol:2026-10-27:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"amigoscode/spring-ai-course\", \"source_url\": \"https://github.com/amigoscode/spring-ai-course\", \"published_at\": \"2026-10-26T16:56:41Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"andyhuo520/digital-human-koubo\", \"source_url\": \"https://github.com/andyhuo520/digital-human-koubo\", \"published_at\": \"2026-10-26T04:34:09Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dolev31/lasagna\", \"source_url\": \"https://github.com/dolev31/lasagna\", \"published_at\": \"2026-10-21T18:58:43Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Cattmonkey/ChaosIntelligence\", \"source_url\": \"https://github.com/Cattmonkey/ChaosIntelligence\", \"published_at\": \"2026-10-23T13:04:31Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"h9-tec/ai-roadmap-2026\", \"source_url\": \"https://github.com/h9-tec/ai-roadmap-2026\", \"published_at\": \"2026-10-21T12:23:43Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"morganlinton/BeautifulRust\", \"source_url\": \"https://github.com/morganlinton/BeautifulRust\", \"published_at\": \"2026-10-23T03:01:11Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"DenisSergeevitch/ex-ussr-kinship-research\", \"source_url\": \"https://github.com/DenisSergeevitch/ex-ussr-kinship-research\", \"published_at\": \"2026-10-25T10:05:56Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Alejandros17487/ai-jailbreaks\", \"source_url\": \"https://github.com/Alejandros17487/ai-jailbreaks\", \"published_at\": \"2026-10-21T14:44:06Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 14 个。代表性目标包括amigoscode/spring-ai-course、andyhuo520/digital-human-koubo、dolev31/lasagna、Cattmonkey/ChaosIntelligence、h9-tec/ai-roadmap-2026等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 331，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、Retrieval Augmented Generation等线索，方法提及 9 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Cattmonkey、h9-tec、morganlinton、DenisSergeevitch、andyhuo520、Alejandros17487、actionow-ai、khanhtq29vn，累计提及 14 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agents、claude、llm、agent、codex、coding、skill、code等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 18 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、Retrieval Augmented Generation、agents、claude等线索，代表条目包括heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server、YOLOW92/pagesift、victorgassuncao21/piper-morgan-assistant、dolev31/lasagna，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 18 个 GitHub 项目，24 小时 star 增量约 56，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及h9-tec、KhulekanisiyandaMchunu、Anthropic、emrahaydemir960-ai、victorgassuncao21、heitorcarvalhohlbryzeis6-cloud，累计提及 19 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 14 个共同构成观测基础，当前强度为“强趋势震荡”（M5.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、Retrieval Augmented Generation、agents、claude、llm等线索，代表条目包括amigoscode/spring-ai-course、andyhuo520/digital-human-koubo、dolev31/lasagna、Cattmonkey/ChaosIntelligence，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 14 个 GitHub 项目，24 小时 star 增量约 331，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 9 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及Cattmonkey、h9-tec、morganlinton、DenisSergeevitch、andyhuo520、Alejandros17487，累计提及 14 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agents、claude、llm、code、agent、codex、ai-agents、live是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agents、claude、llm、agent、codex、coding、skill、code是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
           {
-            "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-            "url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-            "source": "github",
-            "reason": "命中 MCP、MCP server，匹配分 0.843，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "YOLOW92/pagesift",
-            "url": "https://github.com/YOLOW92/pagesift",
+            "title": "amigoscode/spring-ai-course",
+            "url": "https://github.com/amigoscode/spring-ai-course",
             "source": "github",
             "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "victorgassuncao21/piper-morgan-assistant",
-            "url": "https://github.com/victorgassuncao21/piper-morgan-assistant",
+            "title": "andyhuo520/digital-human-koubo",
+            "url": "https://github.com/andyhuo520/digital-human-koubo",
             "source": "github",
             "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
           },
@@ -9710,26 +9675,26 @@
             "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
           },
           {
+            "title": "Cattmonkey/ChaosIntelligence",
+            "url": "https://github.com/Cattmonkey/ChaosIntelligence",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
             "title": "h9-tec/ai-roadmap-2026",
             "url": "https://github.com/h9-tec/ai-roadmap-2026",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-            "url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
+            "title": "morganlinton/BeautifulRust",
+            "url": "https://github.com/morganlinton/BeautifulRust",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "emrahaydemir960-ai/daimon-data-agent",
-            "url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
-            "source": "github",
-            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "dominikmartn/harp",
-            "url": "https://github.com/dominikmartn/harp",
+            "title": "DenisSergeevitch/ex-ussr-kinship-research",
+            "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
             "source": "github",
             "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
@@ -9737,11 +9702,17 @@
             "title": "Alejandros17487/ai-jailbreaks",
             "url": "https://github.com/Alejandros17487/ai-jailbreaks",
             "source": "github",
-            "reason": "关联到该热点的原始信号链接。"
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
           },
           {
             "title": "Charonyuu/whatsmyagentdoing",
             "url": "https://github.com/Charonyuu/whatsmyagentdoing",
+            "source": "github",
+            "reason": "关联到该热点的原始信号链接。"
+          },
+          {
+            "title": "QuickButlerPace65/AnythingLLM-Desktop",
+            "url": "https://github.com/QuickButlerPace65/AnythingLLM-Desktop",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
@@ -9749,20 +9720,8 @@
       },
       "evidence_digest": [
         {
-          "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.843,
-          "matched_terms": [
-            "MCP",
-            "MCP server"
-          ],
-          "why_included": "命中 MCP、MCP server，匹配分 0.843，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "YOLOW92/pagesift",
-          "source_url": "https://github.com/YOLOW92/pagesift",
+          "title": "amigoscode/spring-ai-course",
+          "source_url": "https://github.com/amigoscode/spring-ai-course",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.537,
@@ -9772,8 +9731,8 @@
           "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "victorgassuncao21/piper-morgan-assistant",
-          "source_url": "https://github.com/victorgassuncao21/piper-morgan-assistant",
+          "title": "andyhuo520/digital-human-koubo",
+          "source_url": "https://github.com/andyhuo520/digital-human-koubo",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.46,
@@ -9794,6 +9753,15 @@
           "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
         },
         {
+          "title": "Cattmonkey/ChaosIntelligence",
+          "source_url": "https://github.com/Cattmonkey/ChaosIntelligence",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
+        },
+        {
           "title": "h9-tec/ai-roadmap-2026",
           "source_url": "https://github.com/h9-tec/ai-roadmap-2026",
           "source_type": "repo",
@@ -9803,8 +9771,8 @@
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-          "source_url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
+          "title": "morganlinton/BeautifulRust",
+          "source_url": "https://github.com/morganlinton/BeautifulRust",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.077,
@@ -9812,8 +9780,8 @@
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "emrahaydemir960-ai/daimon-data-agent",
-          "source_url": "https://github.com/emrahaydemir960-ai/daimon-data-agent",
+          "title": "DenisSergeevitch/ex-ussr-kinship-research",
+          "source_url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.077,
@@ -9821,8 +9789,8 @@
           "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "dominikmartn/harp",
-          "source_url": "https://github.com/dominikmartn/harp",
+          "title": "Alejandros17487/ai-jailbreaks",
+          "source_url": "https://github.com/Alejandros17487/ai-jailbreaks",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.077,
@@ -9832,40 +9800,40 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 18 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 14 个。",
         "focus_terms": [
           "RAG",
           "MCP",
-          "ReAct",
           "Retrieval Augmented Generation",
           "agents",
           "claude",
           "llm",
-          "code"
+          "agent",
+          "codex"
         ],
         "representative_titles": [
-          "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "YOLOW92/pagesift",
-          "victorgassuncao21/piper-morgan-assistant",
+          "amigoscode/spring-ai-course",
+          "andyhuo520/digital-human-koubo",
           "dolev31/lasagna",
+          "Cattmonkey/ChaosIntelligence",
           "h9-tec/ai-roadmap-2026"
         ],
         "related_institutions": [
+          "Cattmonkey",
           "h9-tec",
-          "KhulekanisiyandaMchunu",
-          "Anthropic",
-          "emrahaydemir960-ai",
-          "victorgassuncao21",
-          "heitorcarvalhohlbryzeis6-cloud",
-          "dominikmartn",
-          "DenisSergeevitch"
+          "morganlinton",
+          "DenisSergeevitch",
+          "andyhuo520",
+          "Alejandros17487",
+          "actionow-ai",
+          "khanhtq29vn"
         ],
         "paper_count": 0,
-        "repo_count": 18,
-        "github_star_delta": 56,
-        "method_mentions": 11,
+        "repo_count": 14,
+        "github_star_delta": 331,
+        "method_mentions": 9,
         "dataset_mentions": 0,
-        "institution_mentions": 19
+        "institution_mentions": 14
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
@@ -9874,25 +9842,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "source_url": "https://github.com/heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
-          "published_at": "2026-10-22T20:09:30Z",
-          "match_score": 0.843,
-          "matched_keywords": [
-            "MCP",
-            "MCP server"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "YOLOW92/pagesift",
-          "source_url": "https://github.com/YOLOW92/pagesift",
-          "published_at": "2026-10-20T17:30:59Z",
+          "title": "amigoscode/spring-ai-course",
+          "source_url": "https://github.com/amigoscode/spring-ai-course",
+          "published_at": "2026-10-26T16:56:41Z",
           "match_score": 0.537,
           "matched_keywords": [
             "MCP"
@@ -9905,9 +9857,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "victorgassuncao21/piper-morgan-assistant",
-          "source_url": "https://github.com/victorgassuncao21/piper-morgan-assistant",
-          "published_at": "2026-10-22T20:09:31Z",
+          "title": "andyhuo520/digital-human-koubo",
+          "source_url": "https://github.com/andyhuo520/digital-human-koubo",
+          "published_at": "2026-10-26T04:34:09Z",
           "match_score": 0.46,
           "matched_keywords": [
             "MCP"
@@ -9935,6 +9887,17 @@
         {
           "source_type": "repo",
           "source_name": "github",
+          "title": "Cattmonkey/ChaosIntelligence",
+          "source_url": "https://github.com/Cattmonkey/ChaosIntelligence",
+          "published_at": "2026-10-23T13:04:31Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
           "title": "h9-tec/ai-roadmap-2026",
           "source_url": "https://github.com/h9-tec/ai-roadmap-2026",
           "published_at": "2026-10-21T12:23:43Z",
@@ -9946,41 +9909,6 @@
       ],
       "trend_30d": [
         {
-          "ts": "2026-09-26T05",
-          "magnitude": 5.79,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 395
-        },
-        {
-          "ts": "2026-09-26T11",
-          "magnitude": 5.86,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 440
-        },
-        {
-          "ts": "2026-09-26T16",
-          "magnitude": 5.91,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 443
-        },
-        {
-          "ts": "2026-09-26T21",
-          "magnitude": 5.92,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 405
-        },
-        {
-          "ts": "2026-09-27T00",
-          "magnitude": 5.85,
-          "paper_count": 0,
-          "repo_count": 10,
-          "github_star_delta": 367
-        },
-        {
           "ts": "2026-09-27T08",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -10791,38 +10719,38 @@
           "paper_count": 0,
           "repo_count": 18,
           "github_star_delta": 459
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 18,
+          "github_star_delta": 529
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 17,
+          "github_star_delta": 483
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 17,
+          "github_star_delta": 668
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.87,
+          "paper_count": 0,
+          "repo_count": 13,
+          "github_star_delta": 917
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-01T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 366
-        },
-        {
-          "ts": "2026-09-02T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 311
-        },
-        {
-          "ts": "2026-09-02T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 325
-        },
-        {
-          "ts": "2026-09-02T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 10,
-          "github_star_delta": 280
-        },
-        {
           "ts": "2026-09-02T16",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -12473,38 +12401,38 @@
           "paper_count": 0,
           "repo_count": 18,
           "github_star_delta": 459
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 18,
+          "github_star_delta": 529
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 17,
+          "github_star_delta": 483
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 17,
+          "github_star_delta": 668
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.87,
+          "paper_count": 0,
+          "repo_count": 13,
+          "github_star_delta": 917
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-01T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 366
-        },
-        {
-          "ts": "2026-09-02T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 311
-        },
-        {
-          "ts": "2026-09-02T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 9,
-          "github_star_delta": 325
-        },
-        {
-          "ts": "2026-09-02T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 10,
-          "github_star_delta": 280
-        },
-        {
           "ts": "2026-09-02T16",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -14155,16 +14083,44 @@
           "paper_count": 0,
           "repo_count": 18,
           "github_star_delta": 459
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 18,
+          "github_star_delta": 529
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 17,
+          "github_star_delta": 483
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 17,
+          "github_star_delta": 668
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.87,
+          "paper_count": 0,
+          "repo_count": 13,
+          "github_star_delta": 917
         }
       ]
     },
     {
       "topic": "Reinforcement Learning",
       "title": "Reinforcement Learning 出现强趋势震荡",
-      "magnitude": 5.35,
+      "magnitude": 5.61,
       "severity_label": "强趋势震荡",
       "summary": "Reinforcement Learning 在当前窗口内出现 0 条论文信号和 2 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.35，burst=4.479，growth_rate=-0.977，z_score=-8.286，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.61，burst=4.808，growth_rate=-0.977，z_score=-8.286，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 2 个",
         "机构集中：suniique, AquaHorseM"
@@ -14180,7 +14136,7 @@
         "growth_rate": -0.977,
         "z_score": -8.286,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.479,
+        "github_signal_score": 4.808,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.5,
@@ -14194,9 +14150,9 @@
         "method_mentions": 0,
         "dataset_mentions": 0,
         "institution_mentions": 2,
-        "burst_score": 4.479,
+        "burst_score": 4.808,
         "low_history_confidence": true,
-        "magnitude": 5.35
+        "magnitude": 5.61
       },
       "evidence": [
         {
@@ -14257,11 +14213,11 @@
         "历史不足"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Reinforcement Learning:2026-10-26:强趋势震荡",
+      "dedupe_key": "trend:Reinforcement Learning:2026-10-27:强趋势震荡",
       "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"AquaHorseM/Awesome-Diffusion-Flow-RL\", \"source_url\": \"https://github.com/AquaHorseM/Awesome-Diffusion-Flow-RL\", \"published_at\": \"2026-10-23T08:51:43Z\", \"match_score\": 0.9, \"matched_keywords\": [\"RL\", \"reinforcement learning\", \"rl\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"suniique/assembly-nist\", \"source_url\": \"https://github.com/suniique/assembly-nist\", \"published_at\": \"2026-10-22T00:40:03Z\", \"match_score\": 0.075, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.3）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括AquaHorseM/Awesome-Diffusion-Flow-RL、suniique/assembly-nist等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。当前尚未形成显著 star 增量，但多个项目同时进入抓取窗口，仍说明工程侧正在出现同步试验或主题聚合。机构与账号层面，相关信号涉及suniique、AquaHorseM，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察assembly、nist、franka、mujoco、ppo、suniique、assembly-nist、policy等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
+      "curated_summary": "本次抓取围绕「Reinforcement Learning」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.6）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 2 个。代表性目标包括AquaHorseM/Awesome-Diffusion-Flow-RL、suniique/assembly-nist等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 2 条。当前尚未形成显著 star 增量，但多个项目同时进入抓取窗口，仍说明工程侧正在出现同步试验或主题聚合。机构与账号层面，相关信号涉及suniique、AquaHorseM，累计提及 2 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察assembly、nist、franka、mujoco、ppo、suniique、assembly-nist、policy等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.3。需要注意的是，历史样本不足 30 天，基线置信度较低。",
       "signal_takeaways": [
-        "总体判断：Reinforcement Learning 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“强趋势震荡”（M5.3）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "总体判断：Reinforcement Learning 本轮由论文 0 条、GitHub 项目 2 个共同构成观测基础，当前强度为“强趋势震荡”（M5.6）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
         "内容重点：抓取到的多个目标集中指向assembly、nist、franka、mujoco、ppo、suniique等线索，代表条目包括AquaHorseM/Awesome-Diffusion-Flow-RL、suniique/assembly-nist，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
         "工程侧归纳：本轮包含 2 个 GitHub 项目。即便 star 增量尚不明显，多个项目同时出现也说明该方向正在发生工程侧试验或工具化探索。",
         "机构与账号归纳：相关信号涉及suniique、AquaHorseM，累计提及 2 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
@@ -14443,51 +14399,37 @@
           "paper_count": 0,
           "repo_count": 2,
           "github_star_delta": 9
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 5.52,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 19
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 5.56,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 19
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 5.58,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 15
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.58,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 15
         }
       ],
       "trend_90d": [
-        {
-          "ts": "2026-07-28T06",
-          "magnitude": 4.65,
-          "paper_count": 0,
-          "repo_count": 1,
-          "github_star_delta": 41
-        },
-        {
-          "ts": "2026-07-28T10",
-          "magnitude": 5.22,
-          "paper_count": 0,
-          "repo_count": 1,
-          "github_star_delta": 135
-        },
-        {
-          "ts": "2026-07-28T14",
-          "magnitude": 5.22,
-          "paper_count": 0,
-          "repo_count": 1,
-          "github_star_delta": 135
-        },
-        {
-          "ts": "2026-07-28T17",
-          "magnitude": 4.99,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 136
-        },
-        {
-          "ts": "2026-07-28T21",
-          "magnitude": 3.55,
-          "paper_count": 0,
-          "repo_count": 1,
-          "github_star_delta": 1
-        },
-        {
-          "ts": "2026-07-28T23",
-          "magnitude": 5.22,
-          "paper_count": 0,
-          "repo_count": 1,
-          "github_star_delta": 135
-        },
         {
           "ts": "2026-07-29T03",
           "magnitude": 5.22,
@@ -15418,37 +15360,37 @@
           "paper_count": 0,
           "repo_count": 2,
           "github_star_delta": 9
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 5.52,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 19
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 5.56,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 19
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 5.58,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 15
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.58,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 15
         }
       ],
       "trend_180d": [
-        {
-          "ts": "2026-06-27T10",
-          "magnitude": 5.41,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 113
-        },
-        {
-          "ts": "2026-06-27T14",
-          "magnitude": 5.42,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 110
-        },
-        {
-          "ts": "2026-06-27T15",
-          "magnitude": 5.43,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 116
-        },
-        {
-          "ts": "2026-06-27T17",
-          "magnitude": 5.43,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 98
-        },
         {
           "ts": "2026-06-27T19",
           "magnitude": 5.43,
@@ -17100,66 +17042,80 @@
           "paper_count": 0,
           "repo_count": 2,
           "github_star_delta": 9
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 5.52,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 19
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 5.56,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 19
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 5.58,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 15
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 5.58,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 15
         }
       ]
     },
     {
       "topic": "Evaluation",
-      "title": "Evaluation 出现疑似爆发",
-      "magnitude": 4.93,
-      "severity_label": "疑似爆发",
-      "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 4 个 GitHub 项目信号，来源覆盖 repo，系统判定为疑似爆发。",
-      "calculation_summary": "magnitude=4.93，burst=4.571，growth_rate=-0.977，z_score=-9.028，cross_source=0.5。",
+      "title": "Evaluation 出现强趋势震荡",
+      "magnitude": 5.0,
+      "severity_label": "强趋势震荡",
+      "summary": "Evaluation 在当前窗口内出现 0 条论文信号和 3 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.0，burst=4.589，growth_rate=-0.98，z_score=-6.879，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 4 个",
-        "24h star 增量 4",
-        "方法提及：RAG, ReAct, MCP",
-        "机构集中：Mannuru-Mahesh, h9-tec, KhulekanisiyandaMchunu"
+        "GitHub 项目 3 个",
+        "24h star 增量 1",
+        "方法提及：RAG, MCP, Retrieval Augmented Generation",
+        "机构集中：h9-tec, dolev31, anwarhermuche"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
-        "current_72h_count": 4,
-        "current_7d_count": 4,
-        "baseline_daily_avg_30d": 71.333,
-        "baseline_daily_std_30d": 22.261,
-        "baseline_72h_avg_30d": 214.0,
-        "growth_rate": -0.977,
-        "z_score": -9.028,
+        "current_72h_count": 3,
+        "current_7d_count": 3,
+        "baseline_daily_avg_30d": 65.514,
+        "baseline_daily_std_30d": 27.135,
+        "baseline_72h_avg_30d": 196.541,
+        "growth_rate": -0.98,
+        "z_score": -6.879,
         "paper_burst_score": 0.0,
-        "github_signal_score": 3.586,
+        "github_signal_score": 3.604,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.25,
-        "institution_signal_score": 0.448,
+        "institution_concentration_score": 0.333,
+        "institution_signal_score": 0.536,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.985,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 4,
-        "github_star_delta": 4,
+        "repo_count": 3,
+        "github_star_delta": 1,
         "method_mentions": 5,
         "dataset_mentions": 0,
-        "institution_mentions": 4,
-        "burst_score": 4.571,
+        "institution_mentions": 3,
+        "burst_score": 4.589,
         "low_history_confidence": false,
-        "magnitude": 4.93
+        "magnitude": 5.0
       },
       "evidence": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Mannuru-Mahesh/crop-disease-identification-r",
-          "source_url": "https://github.com/Mannuru-Mahesh/crop-disease-identification-r",
-          "published_at": "2026-10-20T15:24:42Z",
-          "match_score": 0.6,
-          "matched_keywords": [
-            "evaluation",
-            "model evaluation"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -17190,47 +17146,44 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-          "source_url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
-          "published_at": "2026-10-23T19:33:58Z",
+          "title": "anwarhermuche/suporte-ampere",
+          "source_url": "https://github.com/anwarhermuche/suporte-ampere",
+          "published_at": "2026-10-21T16:45:46Z",
           "match_score": 0.3,
           "matched_keywords": [
-            "evaluation"
+            "evals"
           ],
           "matched_methods": [],
           "matched_datasets": []
         }
       ],
       "source_urls": [
-        "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
-        "https://github.com/Mannuru-Mahesh/crop-disease-identification-r",
+        "https://github.com/anwarhermuche/suporte-ampere",
         "https://github.com/dolev31/lasagna",
         "https://github.com/h9-tec/ai-roadmap-2026"
       ],
       "related_methods": [
         "RAG",
-        "ReAct",
         "MCP",
         "Retrieval Augmented Generation"
       ],
       "related_datasets": [],
       "related_institutions": [
-        "Mannuru-Mahesh",
         "h9-tec",
-        "KhulekanisiyandaMchunu",
-        "dolev31"
+        "dolev31",
+        "anwarhermuche"
       ],
       "suggested_watch_keywords": [
-        "data",
+        "rag",
+        "roadmap",
         "llm",
         "agents",
-        "image",
-        "analysis",
-        "mannuru-mahesh",
-        "crop-disease-identification-r",
-        "crop"
+        "evaluation",
+        "h9-tec",
+        "ai-roadmap-2026",
+        "beginner"
       ],
-      "confidence": 0.61,
+      "confidence": 0.55,
       "caveats": [],
       "tags": [
         "GitHub 暴涨",
@@ -17240,26 +17193,20 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Evaluation:2026-10-26:疑似爆发",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Mannuru-Mahesh/crop-disease-identification-r\", \"source_url\": \"https://github.com/Mannuru-Mahesh/crop-disease-identification-r\", \"published_at\": \"2026-10-20T15:24:42Z\", \"match_score\": 0.6, \"matched_keywords\": [\"evaluation\", \"model evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dolev31/lasagna\", \"source_url\": \"https://github.com/dolev31/lasagna\", \"published_at\": \"2026-10-21T18:58:43Z\", \"match_score\": 0.6, \"matched_keywords\": [\"benchmark evaluation\", \"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"h9-tec/ai-roadmap-2026\", \"source_url\": \"https://github.com/h9-tec/ai-roadmap-2026\", \"published_at\": \"2026-10-21T12:23:43Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KhulekanisiyandaMchunu/llm-trading-arena\", \"source_url\": \"https://github.com/KhulekanisiyandaMchunu/llm-trading-arena\", \"published_at\": \"2026-10-23T19:33:58Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“疑似爆发”（M4.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 4 个。代表性目标包括Mannuru-Mahesh/crop-disease-identification-r、dolev31/lasagna、h9-tec/ai-roadmap-2026、KhulekanisiyandaMchunu/llm-trading-arena等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 4 条。开源侧 24 小时 star 增量约为 4，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、ReAct、MCP、Retrieval Augmented Generation等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Mannuru-Mahesh、h9-tec、KhulekanisiyandaMchunu、dolev31，累计提及 4 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察data、llm、agents、image、analysis、mannuru-mahesh、crop-disease-identification-r、crop等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
+      "dedupe_key": "trend:Evaluation:2026-10-27:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dolev31/lasagna\", \"source_url\": \"https://github.com/dolev31/lasagna\", \"published_at\": \"2026-10-21T18:58:43Z\", \"match_score\": 0.6, \"matched_keywords\": [\"benchmark evaluation\", \"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"h9-tec/ai-roadmap-2026\", \"source_url\": \"https://github.com/h9-tec/ai-roadmap-2026\", \"published_at\": \"2026-10-21T12:23:43Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evaluation\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"anwarhermuche/suporte-ampere\", \"source_url\": \"https://github.com/anwarhermuche/suporte-ampere\", \"published_at\": \"2026-10-21T16:45:46Z\", \"match_score\": 0.3, \"matched_keywords\": [\"evals\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Evaluation」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 3 个。代表性目标包括dolev31/lasagna、h9-tec/ai-roadmap-2026、anwarhermuche/suporte-ampere等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 3 条。开源侧 24 小时 star 增量约为 1，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、Retrieval Augmented Generation等线索，方法提及 5 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及h9-tec、dolev31、anwarhermuche，累计提及 3 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、roadmap、llm、agents、evaluation、h9-tec、ai-roadmap-2026、beginner等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.6。",
       "signal_takeaways": [
-        "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 4 个共同构成观测基础，当前强度为“疑似爆发”（M4.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、ReAct、MCP、Retrieval Augmented Generation、data、llm等线索，代表条目包括Mannuru-Mahesh/crop-disease-identification-r、dolev31/lasagna、h9-tec/ai-roadmap-2026、KhulekanisiyandaMchunu/llm-trading-arena，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 4 个 GitHub 项目，24 小时 star 增量约 4，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：Evaluation 本轮由论文 0 条、GitHub 项目 3 个共同构成观测基础，当前强度为“强趋势震荡”（M5.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、Retrieval Augmented Generation、roadmap、llm、agents等线索，代表条目包括dolev31/lasagna、h9-tec/ai-roadmap-2026、anwarhermuche/suporte-ampere，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 3 个 GitHub 项目，24 小时 star 增量约 1，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 5 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Mannuru-Mahesh、h9-tec、KhulekanisiyandaMchunu、dolev31，累计提及 4 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
-        "证据链归纳：代表性证据覆盖 repo 4 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察data、llm、agents、image、analysis、mannuru-mahesh、crop-disease-identification-r、crop是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "机构与账号归纳：相关信号涉及h9-tec、dolev31、anwarhermuche，累计提及 3 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "证据链归纳：代表性证据覆盖 repo 3 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
+        "观察建议：后续重点观察rag、roadmap、llm、agents、evaluation、h9-tec、ai-roadmap-2026、beginner是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
-          {
-            "title": "Mannuru-Mahesh/crop-disease-identification-r",
-            "url": "https://github.com/Mannuru-Mahesh/crop-disease-identification-r",
-            "source": "github",
-            "reason": "命中 evaluation、model evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
-          },
           {
             "title": "dolev31/lasagna",
             "url": "https://github.com/dolev31/lasagna",
@@ -17273,26 +17220,14 @@
             "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-            "url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
+            "title": "anwarhermuche/suporte-ampere",
+            "url": "https://github.com/anwarhermuche/suporte-ampere",
             "source": "github",
-            "reason": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+            "reason": "命中 evals，匹配分 0.3，因此被纳入本轮代表性证据。"
           }
         ]
       },
       "evidence_digest": [
-        {
-          "title": "Mannuru-Mahesh/crop-disease-identification-r",
-          "source_url": "https://github.com/Mannuru-Mahesh/crop-disease-identification-r",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.6,
-          "matched_terms": [
-            "evaluation",
-            "model evaluation"
-          ],
-          "why_included": "命中 evaluation、model evaluation，匹配分 0.6，因此被纳入本轮代表性证据。"
-        },
         {
           "title": "dolev31/lasagna",
           "source_url": "https://github.com/dolev31/lasagna",
@@ -17317,67 +17252,51 @@
           "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-          "source_url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
+          "title": "anwarhermuche/suporte-ampere",
+          "source_url": "https://github.com/anwarhermuche/suporte-ampere",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.3,
           "matched_terms": [
-            "evaluation"
+            "evals"
           ],
-          "why_included": "命中 evaluation，匹配分 0.3，因此被纳入本轮代表性证据。"
+          "why_included": "命中 evals，匹配分 0.3，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 4 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 3 个。",
         "focus_terms": [
           "RAG",
-          "ReAct",
           "MCP",
           "Retrieval Augmented Generation",
-          "data",
+          "roadmap",
           "llm",
           "agents",
-          "image"
+          "evaluation",
+          "h9-tec"
         ],
         "representative_titles": [
-          "Mannuru-Mahesh/crop-disease-identification-r",
           "dolev31/lasagna",
           "h9-tec/ai-roadmap-2026",
-          "KhulekanisiyandaMchunu/llm-trading-arena"
+          "anwarhermuche/suporte-ampere"
         ],
         "related_institutions": [
-          "Mannuru-Mahesh",
           "h9-tec",
-          "KhulekanisiyandaMchunu",
-          "dolev31"
+          "dolev31",
+          "anwarhermuche"
         ],
         "paper_count": 0,
-        "repo_count": 4,
-        "github_star_delta": 4,
+        "repo_count": 3,
+        "github_star_delta": 1,
         "method_mentions": 5,
         "dataset_mentions": 0,
-        "institution_mentions": 4
+        "institution_mentions": 3
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
       "representative_papers": [],
       "related_repos": [
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Mannuru-Mahesh/crop-disease-identification-r",
-          "source_url": "https://github.com/Mannuru-Mahesh/crop-disease-identification-r",
-          "published_at": "2026-10-20T15:24:42Z",
-          "match_score": 0.6,
-          "matched_keywords": [
-            "evaluation",
-            "model evaluation"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -17408,12 +17327,12 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "KhulekanisiyandaMchunu/llm-trading-arena",
-          "source_url": "https://github.com/KhulekanisiyandaMchunu/llm-trading-arena",
-          "published_at": "2026-10-23T19:33:58Z",
+          "title": "anwarhermuche/suporte-ampere",
+          "source_url": "https://github.com/anwarhermuche/suporte-ampere",
+          "published_at": "2026-10-21T16:45:46Z",
           "match_score": 0.3,
           "matched_keywords": [
-            "evaluation"
+            "evals"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -17421,41 +17340,6 @@
       ],
       "trend_30d": [
         {
-          "ts": "2026-09-26T05",
-          "magnitude": 3.81,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 79
-        },
-        {
-          "ts": "2026-09-26T11",
-          "magnitude": 3.82,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 70
-        },
-        {
-          "ts": "2026-09-26T16",
-          "magnitude": 3.83,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 62
-        },
-        {
-          "ts": "2026-09-26T21",
-          "magnitude": 3.82,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 55
-        },
-        {
-          "ts": "2026-09-27T00",
-          "magnitude": 3.82,
-          "paper_count": 0,
-          "repo_count": 2,
-          "github_star_delta": 51
-        },
-        {
           "ts": "2026-09-27T08",
           "magnitude": 3.85,
           "paper_count": 0,
@@ -17769,59 +17653,38 @@
           "paper_count": 0,
           "repo_count": 3,
           "github_star_delta": 11
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 5.03,
+          "paper_count": 0,
+          "repo_count": 3,
+          "github_star_delta": 12
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 5.02,
+          "paper_count": 0,
+          "repo_count": 3,
+          "github_star_delta": 14
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 4.85,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 8
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 4.83,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 7
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-07-28T03",
-          "magnitude": 4.85,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 15
-        },
-        {
-          "ts": "2026-07-28T06",
-          "magnitude": 4.89,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 23
-        },
-        {
-          "ts": "2026-07-28T10",
-          "magnitude": 4.86,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 26
-        },
-        {
-          "ts": "2026-07-28T14",
-          "magnitude": 4.87,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 28
-        },
-        {
-          "ts": "2026-07-28T17",
-          "magnitude": 4.88,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 29
-        },
-        {
-          "ts": "2026-07-28T19",
-          "magnitude": 4.89,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 29
-        },
-        {
-          "ts": "2026-07-28T21",
-          "magnitude": 4.9,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 31
-        },
-        {
           "ts": "2026-08-10T02",
           "magnitude": 3.36,
           "paper_count": 0,
@@ -19423,38 +19286,38 @@
           "paper_count": 0,
           "repo_count": 3,
           "github_star_delta": 11
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 5.03,
+          "paper_count": 0,
+          "repo_count": 3,
+          "github_star_delta": 12
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 5.02,
+          "paper_count": 0,
+          "repo_count": 3,
+          "github_star_delta": 14
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 4.85,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 8
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 4.83,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 7
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-07-27T17",
-          "magnitude": 4.79,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 9
-        },
-        {
-          "ts": "2026-07-27T19",
-          "magnitude": 4.78,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 8
-        },
-        {
-          "ts": "2026-07-27T21",
-          "magnitude": 4.78,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 7
-        },
-        {
-          "ts": "2026-07-27T23",
-          "magnitude": 4.79,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 8
-        },
-        {
           "ts": "2026-07-28T03",
           "magnitude": 4.85,
           "paper_count": 0,
@@ -21105,6 +20968,34 @@
           "paper_count": 0,
           "repo_count": 3,
           "github_star_delta": 11
+        },
+        {
+          "ts": "2026-10-26T07",
+          "magnitude": 5.03,
+          "paper_count": 0,
+          "repo_count": 3,
+          "github_star_delta": 12
+        },
+        {
+          "ts": "2026-10-26T15",
+          "magnitude": 5.02,
+          "paper_count": 0,
+          "repo_count": 3,
+          "github_star_delta": 14
+        },
+        {
+          "ts": "2026-10-26T21",
+          "magnitude": 4.85,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 8
+        },
+        {
+          "ts": "2026-10-27T01",
+          "magnitude": 4.83,
+          "paper_count": 0,
+          "repo_count": 2,
+          "github_star_delta": 7
         }
       ]
     }
