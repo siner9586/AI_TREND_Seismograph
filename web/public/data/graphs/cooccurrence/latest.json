@@ -1,5 +1,5 @@
 {
-  "window": "2026-11-01T13",
+  "window": "2026-11-01T18",
   "nodes": [
     {
       "id": "agents",
@@ -26,6 +26,13 @@
       "id": "ai-coding",
       "label": "AI Coding",
       "type": "topic",
+      "count": 7,
+      "weight": 0.533
+    },
+    {
+      "id": "agent",
+      "label": "agent",
+      "type": "keyword",
       "count": 6,
       "weight": 0.486
     },
@@ -33,13 +40,6 @@
       "id": "tool-use",
       "label": "Tool Use",
       "type": "topic",
-      "count": 6,
-      "weight": 0.486
-    },
-    {
-      "id": "agent",
-      "label": "agent",
-      "type": "keyword",
       "count": 5,
       "weight": 0.438
     },
@@ -65,8 +65,8 @@
       "weight": 0.39
     },
     {
-      "id": "prediction",
-      "label": "prediction",
+      "id": "machine",
+      "label": "machine",
       "type": "keyword",
       "count": 4,
       "weight": 0.39
@@ -93,13 +93,6 @@
       "weight": 0.39
     },
     {
-      "id": "codex",
-      "label": "codex",
-      "type": "keyword",
-      "count": 4,
-      "weight": 0.39
-    },
-    {
       "id": "robotics",
       "label": "Robotics",
       "type": "topic",
@@ -107,8 +100,8 @@
       "weight": 0.39
     },
     {
-      "id": "machine",
-      "label": "machine",
+      "id": "prediction",
+      "label": "prediction",
       "type": "keyword",
       "count": 3,
       "weight": 0.343
@@ -149,6 +142,20 @@
       "weight": 0.343
     },
     {
+      "id": "codex",
+      "label": "codex",
+      "type": "keyword",
+      "count": 3,
+      "weight": 0.343
+    },
+    {
+      "id": "coding",
+      "label": "coding",
+      "type": "keyword",
+      "count": 3,
+      "weight": 0.343
+    },
+    {
       "id": "scientific-discovery",
       "label": "Scientific Discovery",
       "type": "topic",
@@ -184,15 +191,8 @@
       "weight": 0.295
     },
     {
-      "id": "analysis",
-      "label": "analysis",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.295
-    },
-    {
-      "id": "data",
-      "label": "data",
+      "id": "system",
+      "label": "system",
       "type": "keyword",
       "count": 2,
       "weight": 0.295
@@ -233,13 +233,6 @@
       "weight": 0.295
     },
     {
-      "id": "coding",
-      "label": "coding",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.295
-    },
-    {
       "id": "astrbot",
       "label": "astrbot",
       "type": "keyword",
@@ -261,13 +254,6 @@
       "weight": 0.295
     },
     {
-      "id": "bot",
-      "label": "bot",
-      "type": "keyword",
-      "count": 2,
-      "weight": 0.295
-    },
-    {
       "id": "open-source",
       "label": "open-source",
       "type": "keyword",
@@ -282,9 +268,16 @@
       "weight": 0.295
     },
     {
-      "id": "benchmark",
-      "label": "Benchmark",
-      "type": "topic",
+      "id": "bot",
+      "label": "bot",
+      "type": "keyword",
+      "count": 2,
+      "weight": 0.295
+    },
+    {
+      "id": "real",
+      "label": "real",
+      "type": "keyword",
       "count": 2,
       "weight": 0.295
     },
@@ -296,9 +289,9 @@
       "weight": 0.295
     },
     {
-      "id": "code",
-      "label": "code",
-      "type": "keyword",
+      "id": "benchmark",
+      "label": "Benchmark",
+      "type": "topic",
       "count": 2,
       "weight": 0.295
     },
@@ -324,8 +317,8 @@
       "weight": 0.295
     },
     {
-      "id": "your",
-      "label": "your",
+      "id": "skills",
+      "label": "skills",
       "type": "keyword",
       "count": 2,
       "weight": 0.295
@@ -420,6 +413,13 @@
       "type": "keyword",
       "count": 1,
       "weight": 0.248
+    },
+    {
+      "id": "security",
+      "label": "security",
+      "type": "keyword",
+      "count": 1,
+      "weight": 0.248
     }
   ],
   "edges": [
@@ -429,7 +429,7 @@
       "cooccurrence_count": 10,
       "weight": 1.0,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -438,7 +438,7 @@
       "cooccurrence_count": 8,
       "weight": 0.8,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -447,7 +447,7 @@
       "cooccurrence_count": 8,
       "weight": 0.8,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -456,16 +456,25 @@
       "cooccurrence_count": 8,
       "weight": 0.8,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
       "source": "ai-coding",
       "target": "agents",
+      "cooccurrence_count": 7,
+      "weight": 0.7,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "agent",
       "cooccurrence_count": 6,
       "weight": 0.6,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -474,16 +483,16 @@
       "cooccurrence_count": 6,
       "weight": 0.6,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
-      "source": "agents",
-      "target": "agent",
+      "source": "ai-coding",
+      "target": "model-context-protocol",
       "cooccurrence_count": 5,
       "weight": 0.5,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -492,16 +501,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "tool-use",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -510,7 +510,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -519,7 +519,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -528,7 +528,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -537,34 +537,7 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "codex",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "model-context-protocol",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "codex",
-      "cooccurrence_count": 4,
-      "weight": 0.4,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -573,7 +546,16 @@
       "cooccurrence_count": 4,
       "weight": 0.4,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "tool-use",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-11-01T18"
       ]
     },
     {
@@ -582,7 +564,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -591,7 +573,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -600,7 +582,52 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "codex",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "agents",
+      "target": "coding",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "ai-coding",
+      "target": "coding",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "codex",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "coding",
+      "cooccurrence_count": 3,
+      "weight": 0.3,
+      "windows": [
+        "2026-11-01T18"
       ]
     },
     {
@@ -609,7 +636,7 @@
       "cooccurrence_count": 3,
       "weight": 0.3,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -618,16 +645,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "analysis",
-      "target": "prediction",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -636,7 +654,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -645,7 +663,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -654,7 +672,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -663,7 +681,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -672,7 +690,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -681,7 +699,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -690,7 +708,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -699,7 +717,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -708,7 +726,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -717,7 +735,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -726,16 +744,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "agents",
-      "target": "coding",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -744,7 +753,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -753,7 +762,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -762,7 +771,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -771,25 +780,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "ai-coding",
-      "target": "coding",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "coding",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -798,7 +789,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -807,7 +798,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -816,25 +807,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "tool-use",
-      "target": "codex",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "model-context-protocol",
-      "target": "tool-use",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -843,7 +816,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -852,7 +825,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -861,34 +834,7 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "edge-ai",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "rag",
-      "target": "tool-use",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
-      ]
-    },
-    {
-      "source": "multi-agent",
-      "target": "rag",
-      "cooccurrence_count": 2,
-      "weight": 0.2,
-      "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
       ]
     },
     {
@@ -897,7 +843,61 @@
       "cooccurrence_count": 2,
       "weight": 0.2,
       "windows": [
-        "2026-11-01T13"
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "open-source",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "self-hosted",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "edge-ai",
+      "target": "rag",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-11-01T18"
+      ]
+    },
+    {
+      "source": "rag",
+      "target": "tool-use",
+      "cooccurrence_count": 2,
+      "weight": 0.2,
+      "windows": [
+        "2026-11-01T18"
       ]
     }
   ]
