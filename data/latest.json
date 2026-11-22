@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-21T03:17:35.937414+00:00",
-  "latest_report_date": "2026-11-21",
-  "report_json_path": "data/reports/2026-11-21.json",
-  "report_md_path": "data/reports/2026-11-21.md",
+  "updated_at": "2026-11-22T02:22:12.186389+00:00",
+  "latest_report_date": "2026-11-22",
+  "report_json_path": "data/reports/2026-11-22.json",
+  "report_md_path": "data/reports/2026-11-22.md",
   "max_magnitude": 6.0,
   "top_anomalies": [
     {
@@ -10,44 +10,59 @@
       "title": "Agents 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Agents 在当前窗口内出现 0 条论文信号和 22 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=10.023，growth_rate=-0.986，z_score=-22.68，cross_source=0.5。",
+      "summary": "Agents 在当前窗口内出现 0 条论文信号和 25 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=10.685，growth_rate=-0.984，z_score=-22.49，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 22 个",
-        "24h star 增量 247",
+        "GitHub 项目 25 个",
+        "24h star 增量 604",
         "方法提及：RAG, MCP, ReAct",
-        "机构集中：Tarikh792, VortexPerfumer, bookwjitchieni1986"
+        "机构集中：OpenAI, Anthropic, detailedinc"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
-        "current_72h_count": 22,
-        "current_7d_count": 22,
-        "baseline_daily_avg_30d": 547.75,
-        "baseline_daily_std_30d": 70.484,
-        "baseline_72h_avg_30d": 1643.25,
-        "growth_rate": -0.986,
-        "z_score": -22.68,
+        "current_72h_count": 25,
+        "current_7d_count": 25,
+        "baseline_daily_avg_30d": 547.404,
+        "baseline_daily_std_30d": 70.909,
+        "baseline_72h_avg_30d": 1642.213,
+        "growth_rate": -0.984,
+        "z_score": -22.49,
         "paper_burst_score": 0.0,
-        "github_signal_score": 8.879,
+        "github_signal_score": 9.318,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.045,
-        "institution_signal_score": 0.15,
+        "institution_concentration_score": 0.08,
+        "institution_signal_score": 0.275,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.144,
+        "method_signal_score": 1.367,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 22,
-        "github_star_delta": 247,
-        "method_mentions": 7,
+        "repo_count": 25,
+        "github_star_delta": 604,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 25,
-        "burst_score": 10.023,
+        "institution_mentions": 30,
+        "burst_score": 10.685,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
       "evidence": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "w01fb0ss/PiBot",
+          "source_url": "https://github.com/w01fb0ss/PiBot",
+          "published_at": "2026-11-21T06:54:24Z",
+          "match_score": 0.95,
+          "matched_keywords": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -66,9 +81,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "pierridotite/mobile-agent-testers",
-          "source_url": "https://github.com/pierridotite/mobile-agent-testers",
-          "published_at": "2026-11-16T19:11:44Z",
+          "title": "Johnson-Durui/ApexCluster",
+          "source_url": "https://github.com/Johnson-Durui/ApexCluster",
+          "published_at": "2026-11-19T01:31:12Z",
           "match_score": 0.792,
           "matched_keywords": [
             "agent",
@@ -82,13 +97,13 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "VortexPerfumer/awesome-ai-tools",
-          "source_url": "https://github.com/VortexPerfumer/awesome-ai-tools",
-          "published_at": "2026-11-18T23:57:34Z",
-          "match_score": 0.712,
+          "title": "detailedinc/FREE-AI-AGENT-CODER",
+          "source_url": "https://github.com/detailedinc/FREE-AI-AGENT-CODER",
+          "published_at": "2026-11-21T16:03:04Z",
+          "match_score": 0.633,
           "matched_keywords": [
             "agent",
-            "agents"
+            "ai agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -117,34 +132,6 @@
           "matched_keywords": [
             "agent",
             "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "diego3g/craft",
-          "source_url": "https://github.com/diego3g/craft",
-          "published_at": "2026-11-15T20:08:15Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "lizhenjie137/intelligent-organization",
-          "source_url": "https://github.com/lizhenjie137/intelligent-organization",
-          "published_at": "2026-11-15T15:32:16Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "ai agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -162,29 +149,46 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "yzsind/mydb",
+          "source_url": "https://github.com/yzsind/mydb",
+          "published_at": "2026-11-16T22:52:44Z",
+          "match_score": 0.633,
+          "matched_keywords": [
+            "agent",
+            "agents"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
         }
       ],
       "source_urls": [
         "https://github.com/Agentic-Intelligence-Lab/CleanRUA",
+        "https://github.com/EL4CTEO/fast-anything",
+        "https://github.com/INK-Q/agy-fast",
+        "https://github.com/Johnson-Durui/ApexCluster",
         "https://github.com/KaelLee335/enterprise-support-agent-v2",
-        "https://github.com/Nihongo-editor/crypto-accumulation-scanner",
-        "https://github.com/SamaEk111/exasol-agent-skills",
+        "https://github.com/MoritzPindorek/Five-Laws-of-AI-Agents",
         "https://github.com/Tarikh792/Tarikh792",
-        "https://github.com/VortexPerfumer/awesome-ai-tools",
+        "https://github.com/bl8ds/AgentDesk-Private-Deployable-Knowledge-Base-Agent-Platform",
         "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
         "https://github.com/boringmarketer/boring-marketing-skills",
         "https://github.com/chase1225/anythingllm-verona-document-chat",
         "https://github.com/danielwh2/sprite-stacking",
-        "https://github.com/diego3g/craft",
+        "https://github.com/detailedinc/FREE-AI-AGENT-CODER",
         "https://github.com/dmitrykurash/holospot",
-        "https://github.com/ineedfoundmyway/planrelay",
         "https://github.com/jweihe/Awesome-3D-Coding",
-        "https://github.com/leostera/git-twig",
-        "https://github.com/lizhenjie137/intelligent-organization",
         "https://github.com/pansy-ai/pansy",
-        "https://github.com/pierridotite/mobile-agent-testers",
+        "https://github.com/punit2911/meridian-multimodal-rag",
+        "https://github.com/sam-ivanov-io1995u2/cs2-skin-changer-win11",
+        "https://github.com/sous-labs/songe",
         "https://github.com/staryone/motlab",
         "https://github.com/sybil-solutions/inference-optimisation-skill",
+        "https://github.com/w01fb0ss/PiBot",
+        "https://github.com/wozniakalan323-bit/opencode-project-workbench",
         "https://github.com/yzsind/mydb",
         "https://github.com/zavi2997-droid/claude-code-agent-workspace"
       ],
@@ -195,24 +199,24 @@
       ],
       "related_datasets": [],
       "related_institutions": [
+        "OpenAI",
+        "Anthropic",
+        "detailedinc",
         "Tarikh792",
-        "VortexPerfumer",
         "bookwjitchieni1986",
         "sybil-solutions",
-        "MIT",
-        "boringmarketer",
-        "diego3g",
-        "staryone"
+        "INK-Q",
+        "w01fb0ss"
       ],
       "suggested_watch_keywords": [
         "agent",
+        "llm",
+        "your",
+        "rag",
         "agents",
         "code",
-        "skills",
-        "your",
-        "llm",
-        "rag",
-        "claude"
+        "python",
+        "mcp"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -224,20 +228,26 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Agents:2026-11-21:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"boringmarketer/boring-marketing-skills\", \"source_url\": \"https://github.com/boringmarketer/boring-marketing-skills\", \"published_at\": \"2026-11-16T15:09:46Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"pierridotite/mobile-agent-testers\", \"source_url\": \"https://github.com/pierridotite/mobile-agent-testers\", \"published_at\": \"2026-11-16T19:11:44Z\", \"match_score\": 0.792, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VortexPerfumer/awesome-ai-tools\", \"source_url\": \"https://github.com/VortexPerfumer/awesome-ai-tools\", \"published_at\": \"2026-11-18T23:57:34Z\", \"match_score\": 0.712, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tarikh792/Tarikh792\", \"source_url\": \"https://github.com/Tarikh792/Tarikh792\", \"published_at\": \"2026-11-17T21:30:33Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bookwjitchieni1986/blender-ai-mcp-addon\", \"source_url\": \"https://github.com/bookwjitchieni1986/blender-ai-mcp-addon\", \"published_at\": \"2026-11-19T14:43:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"diego3g/craft\", \"source_url\": \"https://github.com/diego3g/craft\", \"published_at\": \"2026-11-15T20:08:15Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"lizhenjie137/intelligent-organization\", \"source_url\": \"https://github.com/lizhenjie137/intelligent-organization\", \"published_at\": \"2026-11-15T15:32:16Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dmitrykurash/holospot\", \"source_url\": \"https://github.com/dmitrykurash/holospot\", \"published_at\": \"2026-11-17T13:38:59Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 22 个。代表性目标包括boringmarketer/boring-marketing-skills、pierridotite/mobile-agent-testers、VortexPerfumer/awesome-ai-tools、Tarikh792/Tarikh792、bookwjitchieni1986/blender-ai-mcp-addon等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 247，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 7 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Tarikh792、VortexPerfumer、bookwjitchieni1986、sybil-solutions、MIT、boringmarketer、diego3g、staryone，累计提及 25 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、code、skills、your、llm、rag、claude等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Agents:2026-11-22:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"w01fb0ss/PiBot\", \"source_url\": \"https://github.com/w01fb0ss/PiBot\", \"published_at\": \"2026-11-21T06:54:24Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"boringmarketer/boring-marketing-skills\", \"source_url\": \"https://github.com/boringmarketer/boring-marketing-skills\", \"published_at\": \"2026-11-16T15:09:46Z\", \"match_score\": 0.95, \"matched_keywords\": [\"agent\", \"agents\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Johnson-Durui/ApexCluster\", \"source_url\": \"https://github.com/Johnson-Durui/ApexCluster\", \"published_at\": \"2026-11-19T01:31:12Z\", \"match_score\": 0.792, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [\"ReAct\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"detailedinc/FREE-AI-AGENT-CODER\", \"source_url\": \"https://github.com/detailedinc/FREE-AI-AGENT-CODER\", \"published_at\": \"2026-11-21T16:03:04Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tarikh792/Tarikh792\", \"source_url\": \"https://github.com/Tarikh792/Tarikh792\", \"published_at\": \"2026-11-17T21:30:33Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bookwjitchieni1986/blender-ai-mcp-addon\", \"source_url\": \"https://github.com/bookwjitchieni1986/blender-ai-mcp-addon\", \"published_at\": \"2026-11-19T14:43:10Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"dmitrykurash/holospot\", \"source_url\": \"https://github.com/dmitrykurash/holospot\", \"published_at\": \"2026-11-17T13:38:59Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"ai agent\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yzsind/mydb\", \"source_url\": \"https://github.com/yzsind/mydb\", \"published_at\": \"2026-11-16T22:52:44Z\", \"match_score\": 0.633, \"matched_keywords\": [\"agent\", \"agents\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Agents」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 25 个。代表性目标包括w01fb0ss/PiBot、boringmarketer/boring-marketing-skills、Johnson-Durui/ApexCluster、detailedinc/FREE-AI-AGENT-CODER、Tarikh792/Tarikh792等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 604，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP、ReAct等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、Anthropic、detailedinc、Tarikh792、bookwjitchieni1986、sybil-solutions、INK-Q、w01fb0ss，累计提及 30 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、llm、your、rag、agents、code、python、mcp等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 22 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agent、agents、code等线索，代表条目包括boringmarketer/boring-marketing-skills、pierridotite/mobile-agent-testers、VortexPerfumer/awesome-ai-tools、Tarikh792/Tarikh792，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 22 个 GitHub 项目，24 小时 star 增量约 247，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 7 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Tarikh792、VortexPerfumer、bookwjitchieni1986、sybil-solutions、MIT、boringmarketer，累计提及 25 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Agents 本轮由论文 0 条、GitHub 项目 25 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、ReAct、agent、llm、your等线索，代表条目包括w01fb0ss/PiBot、boringmarketer/boring-marketing-skills、Johnson-Durui/ApexCluster、detailedinc/FREE-AI-AGENT-CODER，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 25 个 GitHub 项目，24 小时 star 增量约 604，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、Anthropic、detailedinc、Tarikh792、bookwjitchieni1986、sybil-solutions，累计提及 30 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察agent、agents、code、skills、your、llm、rag、claude是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、llm、your、rag、agents、code、python、mcp是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
+          {
+            "title": "w01fb0ss/PiBot",
+            "url": "https://github.com/w01fb0ss/PiBot",
+            "source": "github",
+            "reason": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+          },
           {
             "title": "boringmarketer/boring-marketing-skills",
             "url": "https://github.com/boringmarketer/boring-marketing-skills",
@@ -245,16 +255,16 @@
             "reason": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "pierridotite/mobile-agent-testers",
-            "url": "https://github.com/pierridotite/mobile-agent-testers",
+            "title": "Johnson-Durui/ApexCluster",
+            "url": "https://github.com/Johnson-Durui/ApexCluster",
             "source": "github",
             "reason": "命中 agent、agents、ReAct，匹配分 0.792，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "VortexPerfumer/awesome-ai-tools",
-            "url": "https://github.com/VortexPerfumer/awesome-ai-tools",
+            "title": "detailedinc/FREE-AI-AGENT-CODER",
+            "url": "https://github.com/detailedinc/FREE-AI-AGENT-CODER",
             "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.712，因此被纳入本轮代表性证据。"
+            "reason": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
             "title": "Tarikh792/Tarikh792",
@@ -269,22 +279,16 @@
             "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "diego3g/craft",
-            "url": "https://github.com/diego3g/craft",
-            "source": "github",
-            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "lizhenjie137/intelligent-organization",
-            "url": "https://github.com/lizhenjie137/intelligent-organization",
-            "source": "github",
-            "reason": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
-          },
-          {
             "title": "dmitrykurash/holospot",
             "url": "https://github.com/dmitrykurash/holospot",
             "source": "github",
             "reason": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "yzsind/mydb",
+            "url": "https://github.com/yzsind/mydb",
+            "source": "github",
+            "reason": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
           },
           {
             "title": "Agentic-Intelligence-Lab/CleanRUA",
@@ -293,14 +297,27 @@
             "reason": "关联到该热点的原始信号链接。"
           },
           {
-            "title": "KaelLee335/enterprise-support-agent-v2",
-            "url": "https://github.com/KaelLee335/enterprise-support-agent-v2",
+            "title": "EL4CTEO/fast-anything",
+            "url": "https://github.com/EL4CTEO/fast-anything",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
         ]
       },
       "evidence_digest": [
+        {
+          "title": "w01fb0ss/PiBot",
+          "source_url": "https://github.com/w01fb0ss/PiBot",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.95,
+          "matched_terms": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "why_included": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
+        },
         {
           "title": "boringmarketer/boring-marketing-skills",
           "source_url": "https://github.com/boringmarketer/boring-marketing-skills",
@@ -315,8 +332,8 @@
           "why_included": "命中 agent、agents、ai agent，匹配分 0.95，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "pierridotite/mobile-agent-testers",
-          "source_url": "https://github.com/pierridotite/mobile-agent-testers",
+          "title": "Johnson-Durui/ApexCluster",
+          "source_url": "https://github.com/Johnson-Durui/ApexCluster",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.792,
@@ -328,16 +345,16 @@
           "why_included": "命中 agent、agents、ReAct，匹配分 0.792，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "VortexPerfumer/awesome-ai-tools",
-          "source_url": "https://github.com/VortexPerfumer/awesome-ai-tools",
+          "title": "detailedinc/FREE-AI-AGENT-CODER",
+          "source_url": "https://github.com/detailedinc/FREE-AI-AGENT-CODER",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.712,
+          "match_score": 0.633,
           "matched_terms": [
             "agent",
-            "agents"
+            "ai agent"
           ],
-          "why_included": "命中 agent、agents，匹配分 0.712，因此被纳入本轮代表性证据。"
+          "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
           "title": "Tarikh792/Tarikh792",
@@ -364,30 +381,6 @@
           "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "diego3g/craft",
-          "source_url": "https://github.com/diego3g/craft",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "agents"
-          ],
-          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "lizhenjie137/intelligent-organization",
-          "source_url": "https://github.com/lizhenjie137/intelligent-organization",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.633,
-          "matched_terms": [
-            "agent",
-            "ai agent"
-          ],
-          "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
-        },
-        {
           "title": "dmitrykurash/holospot",
           "source_url": "https://github.com/dmitrykurash/holospot",
           "source_type": "repo",
@@ -398,49 +391,76 @@
             "ai agent"
           ],
           "why_included": "命中 agent、ai agent，匹配分 0.633，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "yzsind/mydb",
+          "source_url": "https://github.com/yzsind/mydb",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.633,
+          "matched_terms": [
+            "agent",
+            "agents"
+          ],
+          "why_included": "命中 agent、agents，匹配分 0.633，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 22 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 25 个。",
         "focus_terms": [
           "RAG",
           "MCP",
           "ReAct",
           "agent",
+          "llm",
+          "your",
           "agents",
-          "code",
-          "skills",
-          "your"
+          "code"
         ],
         "representative_titles": [
+          "w01fb0ss/PiBot",
           "boringmarketer/boring-marketing-skills",
-          "pierridotite/mobile-agent-testers",
-          "VortexPerfumer/awesome-ai-tools",
-          "Tarikh792/Tarikh792",
-          "bookwjitchieni1986/blender-ai-mcp-addon"
+          "Johnson-Durui/ApexCluster",
+          "detailedinc/FREE-AI-AGENT-CODER",
+          "Tarikh792/Tarikh792"
         ],
         "related_institutions": [
+          "OpenAI",
+          "Anthropic",
+          "detailedinc",
           "Tarikh792",
-          "VortexPerfumer",
           "bookwjitchieni1986",
           "sybil-solutions",
-          "MIT",
-          "boringmarketer",
-          "diego3g",
-          "staryone"
+          "INK-Q",
+          "w01fb0ss"
         ],
         "paper_count": 0,
-        "repo_count": 22,
-        "github_star_delta": 247,
-        "method_mentions": 7,
+        "repo_count": 25,
+        "github_star_delta": 604,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 25
+        "institution_mentions": 30
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
       "representative_papers": [],
       "related_repos": [
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "w01fb0ss/PiBot",
+          "source_url": "https://github.com/w01fb0ss/PiBot",
+          "published_at": "2026-11-21T06:54:24Z",
+          "match_score": 0.95,
+          "matched_keywords": [
+            "agent",
+            "agents",
+            "ai agent"
+          ],
+          "matched_methods": [],
+          "matched_datasets": []
+        },
         {
           "source_type": "repo",
           "source_name": "github",
@@ -459,9 +479,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "pierridotite/mobile-agent-testers",
-          "source_url": "https://github.com/pierridotite/mobile-agent-testers",
-          "published_at": "2026-11-16T19:11:44Z",
+          "title": "Johnson-Durui/ApexCluster",
+          "source_url": "https://github.com/Johnson-Durui/ApexCluster",
+          "published_at": "2026-11-19T01:31:12Z",
           "match_score": 0.792,
           "matched_keywords": [
             "agent",
@@ -475,13 +495,13 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "VortexPerfumer/awesome-ai-tools",
-          "source_url": "https://github.com/VortexPerfumer/awesome-ai-tools",
-          "published_at": "2026-11-18T23:57:34Z",
-          "match_score": 0.712,
+          "title": "detailedinc/FREE-AI-AGENT-CODER",
+          "source_url": "https://github.com/detailedinc/FREE-AI-AGENT-CODER",
+          "published_at": "2026-11-21T16:03:04Z",
+          "match_score": 0.633,
           "matched_keywords": [
             "agent",
-            "agents"
+            "ai agent"
           ],
           "matched_methods": [],
           "matched_datasets": []
@@ -499,59 +519,10 @@
           ],
           "matched_methods": [],
           "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "bookwjitchieni1986/blender-ai-mcp-addon",
-          "source_url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-          "published_at": "2026-11-19T14:43:10Z",
-          "match_score": 0.633,
-          "matched_keywords": [
-            "agent",
-            "agents"
-          ],
-          "matched_methods": [],
-          "matched_datasets": []
         }
       ],
       "trend_30d": [
         {
-          "ts": "2026-10-22T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 21,
-          "github_star_delta": 1418
-        },
-        {
-          "ts": "2026-10-22T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 20,
-          "github_star_delta": 1250
-        },
-        {
-          "ts": "2026-10-22T17",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 20,
-          "github_star_delta": 1140
-        },
-        {
-          "ts": "2026-10-22T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 1016
-        },
-        {
-          "ts": "2026-10-23T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 21,
-          "github_star_delta": 867
-        },
-        {
           "ts": "2026-10-23T07",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -1264,31 +1235,31 @@
           "paper_count": 0,
           "repo_count": 25,
           "github_star_delta": 1591
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 25,
+          "github_star_delta": 1904
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 26,
+          "github_star_delta": 2021
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 22,
+          "github_star_delta": 1771
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-20T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1166
-        },
-        {
-          "ts": "2026-09-20T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1145
-        },
-        {
-          "ts": "2026-09-20T16",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 21,
-          "github_star_delta": 1230
-        },
-        {
           "ts": "2026-09-20T18",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -2946,31 +2917,31 @@
           "paper_count": 0,
           "repo_count": 25,
           "github_star_delta": 1591
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 25,
+          "github_star_delta": 1904
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 26,
+          "github_star_delta": 2021
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 22,
+          "github_star_delta": 1771
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-20T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1166
-        },
-        {
-          "ts": "2026-09-20T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 23,
-          "github_star_delta": 1145
-        },
-        {
-          "ts": "2026-09-20T16",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 21,
-          "github_star_delta": 1230
-        },
-        {
           "ts": "2026-09-20T18",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -4628,6 +4599,27 @@
           "paper_count": 0,
           "repo_count": 25,
           "github_star_delta": 1591
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 25,
+          "github_star_delta": 1904
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 26,
+          "github_star_delta": 2021
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 22,
+          "github_star_delta": 1771
         }
       ]
     },
@@ -4636,40 +4628,40 @@
       "title": "Model Context Protocol 出现强趋势震荡",
       "magnitude": 6.0,
       "severity_label": "强趋势震荡",
-      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 18 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=6.0，burst=9.006，growth_rate=-0.982，z_score=-11.872，cross_source=0.5。",
+      "summary": "Model Context Protocol 在当前窗口内出现 0 条论文信号和 16 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=6.0，burst=9.272，growth_rate=-0.984，z_score=-12.048，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 18 个",
-        "24h star 增量 239",
+        "GitHub 项目 16 个",
+        "24h star 增量 318",
         "方法提及：MCP, RAG, ReAct",
-        "机构集中：VortexPerfumer, bookwjitchieni1986, YellowLaborerMarket"
+        "机构集中：OpenAI, vzhyvov, bookwjitchieni1986"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
-        "current_72h_count": 18,
-        "current_7d_count": 18,
-        "baseline_daily_avg_30d": 352.25,
-        "baseline_daily_std_30d": 86.498,
-        "baseline_72h_avg_30d": 1056.75,
-        "growth_rate": -0.982,
-        "z_score": -11.872,
+        "current_72h_count": 16,
+        "current_7d_count": 16,
+        "baseline_daily_avg_30d": 349.277,
+        "baseline_daily_std_30d": 84.644,
+        "baseline_72h_avg_30d": 1047.83,
+        "growth_rate": -0.984,
+        "z_score": -12.048,
         "paper_burst_score": 0.0,
-        "github_signal_score": 7.555,
+        "github_signal_score": 7.861,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.056,
-        "institution_signal_score": 0.172,
+        "institution_concentration_score": 0.188,
+        "institution_signal_score": 0.588,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.451,
+        "method_signal_score": 1.411,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 18,
-        "github_star_delta": 239,
-        "method_mentions": 13,
+        "repo_count": 16,
+        "github_star_delta": 318,
+        "method_mentions": 12,
         "dataset_mentions": 0,
-        "institution_mentions": 20,
-        "burst_score": 9.006,
+        "institution_mentions": 21,
+        "burst_score": 9.272,
         "low_history_confidence": false,
         "magnitude": 6.0
       },
@@ -4693,9 +4685,39 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "YellowLaborerMarket/Gemini-Config-Checker-",
-          "source_url": "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:48:18Z",
+          "title": "w01fb0ss/PiBot",
+          "source_url": "https://github.com/w01fb0ss/PiBot",
+          "published_at": "2026-11-21T06:54:24Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "EL4CTEO/fast-anything",
+          "source_url": "https://github.com/EL4CTEO/fast-anything",
+          "published_at": "2026-11-21T14:40:27Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "vzhyvov/data-science-case-studies",
+          "source_url": "https://github.com/vzhyvov/data-science-case-studies",
+          "published_at": "2026-11-17T18:04:49Z",
           "match_score": 0.46,
           "matched_keywords": [
             "MCP"
@@ -4708,54 +4730,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "weightcashiercupola/Gemini-Config-Checker-",
-          "source_url": "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:47:11Z",
-          "match_score": 0.46,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "WinnerSpecialist/Gemini-Config-Checker-",
-          "source_url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:47:17Z",
-          "match_score": 0.46,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "VortexHostFeel/Gemini-Config-Checker-",
-          "source_url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:46:07Z",
-          "match_score": 0.46,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "Visionbeyondtrack/Gemini-Config-Checker-",
-          "source_url": "https://github.com/Visionbeyondtrack/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:46:05Z",
+          "title": "INK-Q/agy-fast",
+          "source_url": "https://github.com/INK-Q/agy-fast",
+          "published_at": "2026-11-19T04:58:46Z",
           "match_score": 0.46,
           "matched_keywords": [
             "MCP"
@@ -4794,26 +4771,35 @@
             "MCP"
           ],
           "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "sous-labs/songe",
+          "source_url": "https://github.com/sous-labs/songe",
+          "published_at": "2026-11-20T11:01:20Z",
+          "match_score": 0.077,
+          "matched_keywords": [],
+          "matched_methods": [],
+          "matched_datasets": []
         }
       ],
       "source_urls": [
         "https://github.com/Agentic-Intelligence-Lab/CleanRUA",
-        "https://github.com/Visionbeyondtrack/Gemini-Config-Checker-",
-        "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-        "https://github.com/VortexPerfumer/awesome-ai-tools",
-        "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
-        "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-",
+        "https://github.com/EL4CTEO/fast-anything",
+        "https://github.com/INK-Q/agy-fast",
+        "https://github.com/Johnson-Durui/ApexCluster",
+        "https://github.com/MoritzPindorek/Five-Laws-of-AI-Agents",
         "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
         "https://github.com/boringmarketer/boring-marketing-skills",
         "https://github.com/chase1225/anythingllm-verona-document-chat",
-        "https://github.com/diego3g/craft",
-        "https://github.com/ineedfoundmyway/planrelay",
         "https://github.com/jweihe/Awesome-3D-Coding",
         "https://github.com/kenzz-devv/open-webui-talora-ai-workspace",
-        "https://github.com/leostera/git-twig",
         "https://github.com/ntu0831/RAG-MCP-Server",
-        "https://github.com/pierridotite/mobile-agent-testers",
-        "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
+        "https://github.com/sam-ivanov-io1995u2/cs2-skin-changer-win11",
+        "https://github.com/sous-labs/songe",
+        "https://github.com/vzhyvov/data-science-case-studies",
+        "https://github.com/w01fb0ss/PiBot",
         "https://github.com/yzsind/mydb"
       ],
       "related_methods": [
@@ -4823,24 +4809,24 @@
       ],
       "related_datasets": [],
       "related_institutions": [
-        "VortexPerfumer",
+        "OpenAI",
+        "vzhyvov",
         "bookwjitchieni1986",
-        "YellowLaborerMarket",
-        "weightcashiercupola",
-        "WinnerSpecialist",
-        "VortexHostFeel",
-        "Visionbeyondtrack",
-        "MIT"
+        "INK-Q",
+        "w01fb0ss",
+        "sous-labs",
+        "MIT",
+        "boringmarketer"
       ],
       "suggested_watch_keywords": [
-        "gemini",
+        "agent",
         "agents",
-        "gemini-config-checker-",
-        "chain",
-        "region",
-        "scanner",
-        "find",
-        "proxy"
+        "llm",
+        "your",
+        "inference",
+        "mcp",
+        "chat",
+        "data"
       ],
       "confidence": 0.72,
       "caveats": [],
@@ -4851,17 +4837,17 @@
         "开源驱动"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Model Context Protocol:2026-11-21:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bookwjitchieni1986/blender-ai-mcp-addon\", \"source_url\": \"https://github.com/bookwjitchieni1986/blender-ai-mcp-addon\", \"published_at\": \"2026-11-19T14:43:10Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"YellowLaborerMarket/Gemini-Config-Checker-\", \"source_url\": \"https://github.com/YellowLaborerMarket/Gemini-Config-Checker-\", \"published_at\": \"2026-11-15T16:48:18Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"weightcashiercupola/Gemini-Config-Checker-\", \"source_url\": \"https://github.com/weightcashiercupola/Gemini-Config-Checker-\", \"published_at\": \"2026-11-15T16:47:11Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"WinnerSpecialist/Gemini-Config-Checker-\", \"source_url\": \"https://github.com/WinnerSpecialist/Gemini-Config-Checker-\", \"published_at\": \"2026-11-15T16:47:17Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"VortexHostFeel/Gemini-Config-Checker-\", \"source_url\": \"https://github.com/VortexHostFeel/Gemini-Config-Checker-\", \"published_at\": \"2026-11-15T16:46:07Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Visionbeyondtrack/Gemini-Config-Checker-\", \"source_url\": \"https://github.com/Visionbeyondtrack/Gemini-Config-Checker-\", \"published_at\": \"2026-11-15T16:46:05Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kenzz-devv/open-webui-talora-ai-workspace\", \"source_url\": \"https://github.com/kenzz-devv/open-webui-talora-ai-workspace\", \"published_at\": \"2026-11-18T14:18:51Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ntu0831/RAG-MCP-Server\", \"source_url\": \"https://github.com/ntu0831/RAG-MCP-Server\", \"published_at\": \"2026-11-19T06:37:11Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 18 个。代表性目标包括bookwjitchieni1986/blender-ai-mcp-addon、YellowLaborerMarket/Gemini-Config-Checker-、weightcashiercupola/Gemini-Config-Checker-、WinnerSpecialist/Gemini-Config-Checker-、VortexHostFeel/Gemini-Config-Checker-等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 239，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 13 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及VortexPerfumer、bookwjitchieni1986、YellowLaborerMarket、weightcashiercupola、WinnerSpecialist、VortexHostFeel、Visionbeyondtrack、MIT，累计提及 20 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察gemini、agents、gemini-config-checker-、chain、region、scanner、find、proxy等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Model Context Protocol:2026-11-22:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"bookwjitchieni1986/blender-ai-mcp-addon\", \"source_url\": \"https://github.com/bookwjitchieni1986/blender-ai-mcp-addon\", \"published_at\": \"2026-11-19T14:43:10Z\", \"match_score\": 0.843, \"matched_keywords\": [\"MCP\", \"MCP server\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"w01fb0ss/PiBot\", \"source_url\": \"https://github.com/w01fb0ss/PiBot\", \"published_at\": \"2026-11-21T06:54:24Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"EL4CTEO/fast-anything\", \"source_url\": \"https://github.com/EL4CTEO/fast-anything\", \"published_at\": \"2026-11-21T14:40:27Z\", \"match_score\": 0.537, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"vzhyvov/data-science-case-studies\", \"source_url\": \"https://github.com/vzhyvov/data-science-case-studies\", \"published_at\": \"2026-11-17T18:04:49Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"INK-Q/agy-fast\", \"source_url\": \"https://github.com/INK-Q/agy-fast\", \"published_at\": \"2026-11-19T04:58:46Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kenzz-devv/open-webui-talora-ai-workspace\", \"source_url\": \"https://github.com/kenzz-devv/open-webui-talora-ai-workspace\", \"published_at\": \"2026-11-18T14:18:51Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ntu0831/RAG-MCP-Server\", \"source_url\": \"https://github.com/ntu0831/RAG-MCP-Server\", \"published_at\": \"2026-11-19T06:37:11Z\", \"match_score\": 0.46, \"matched_keywords\": [\"MCP\"], \"matched_methods\": [\"MCP\"], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"sous-labs/songe\", \"source_url\": \"https://github.com/sous-labs/songe\", \"published_at\": \"2026-11-20T11:01:20Z\", \"match_score\": 0.077, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Model Context Protocol」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M6.0）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 16 个。代表性目标包括bookwjitchieni1986/blender-ai-mcp-addon、w01fb0ss/PiBot、EL4CTEO/fast-anything、vzhyvov/data-science-case-studies、INK-Q/agy-fast等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 318，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到MCP、RAG、ReAct等线索，方法提及 12 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及OpenAI、vzhyvov、bookwjitchieni1986、INK-Q、w01fb0ss、sous-labs、MIT、boringmarketer，累计提及 21 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察agent、agents、llm、your、inference、mcp、chat、data等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 18 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、gemini、agents、gemini-config-checker-等线索，代表条目包括bookwjitchieni1986/blender-ai-mcp-addon、YellowLaborerMarket/Gemini-Config-Checker-、weightcashiercupola/Gemini-Config-Checker-、WinnerSpecialist/Gemini-Config-Checker-，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 18 个 GitHub 项目，24 小时 star 增量约 239，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 13 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及VortexPerfumer、bookwjitchieni1986、YellowLaborerMarket、weightcashiercupola、WinnerSpecialist、VortexHostFeel，累计提及 20 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：Model Context Protocol 本轮由论文 0 条、GitHub 项目 16 个共同构成观测基础，当前强度为“强趋势震荡”（M6.0）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向MCP、RAG、ReAct、agent、agents、llm等线索，代表条目包括bookwjitchieni1986/blender-ai-mcp-addon、w01fb0ss/PiBot、EL4CTEO/fast-anything、vzhyvov/data-science-case-studies，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 16 个 GitHub 项目，24 小时 star 增量约 318，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 12 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及OpenAI、vzhyvov、bookwjitchieni1986、INK-Q、w01fb0ss、sous-labs，累计提及 21 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察gemini、agents、gemini-config-checker-、chain、region、scanner、find、proxy是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察agent、agents、llm、your、inference、mcp、chat、data是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -4872,32 +4858,26 @@
             "reason": "命中 MCP、MCP server，匹配分 0.843，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "YellowLaborerMarket/Gemini-Config-Checker-",
-            "url": "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-",
+            "title": "w01fb0ss/PiBot",
+            "url": "https://github.com/w01fb0ss/PiBot",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "EL4CTEO/fast-anything",
+            "url": "https://github.com/EL4CTEO/fast-anything",
+            "source": "github",
+            "reason": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "vzhyvov/data-science-case-studies",
+            "url": "https://github.com/vzhyvov/data-science-case-studies",
             "source": "github",
             "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "weightcashiercupola/Gemini-Config-Checker-",
-            "url": "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
-            "source": "github",
-            "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "WinnerSpecialist/Gemini-Config-Checker-",
-            "url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
-            "source": "github",
-            "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "VortexHostFeel/Gemini-Config-Checker-",
-            "url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-            "source": "github",
-            "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
-          },
-          {
-            "title": "Visionbeyondtrack/Gemini-Config-Checker-",
-            "url": "https://github.com/Visionbeyondtrack/Gemini-Config-Checker-",
+            "title": "INK-Q/agy-fast",
+            "url": "https://github.com/INK-Q/agy-fast",
             "source": "github",
             "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
           },
@@ -4914,14 +4894,20 @@
             "reason": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
           },
           {
+            "title": "sous-labs/songe",
+            "url": "https://github.com/sous-labs/songe",
+            "source": "github",
+            "reason": "匹配分 0.077，因此被纳入本轮代表性证据。"
+          },
+          {
             "title": "Agentic-Intelligence-Lab/CleanRUA",
             "url": "https://github.com/Agentic-Intelligence-Lab/CleanRUA",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           },
           {
-            "title": "VortexPerfumer/awesome-ai-tools",
-            "url": "https://github.com/VortexPerfumer/awesome-ai-tools",
+            "title": "Johnson-Durui/ApexCluster",
+            "url": "https://github.com/Johnson-Durui/ApexCluster",
             "source": "github",
             "reason": "关联到该热点的原始信号链接。"
           }
@@ -4941,8 +4927,30 @@
           "why_included": "命中 MCP、MCP server，匹配分 0.843，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "YellowLaborerMarket/Gemini-Config-Checker-",
-          "source_url": "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-",
+          "title": "w01fb0ss/PiBot",
+          "source_url": "https://github.com/w01fb0ss/PiBot",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "EL4CTEO/fast-anything",
+          "source_url": "https://github.com/EL4CTEO/fast-anything",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.537,
+          "matched_terms": [
+            "MCP"
+          ],
+          "why_included": "命中 MCP，匹配分 0.537，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "vzhyvov/data-science-case-studies",
+          "source_url": "https://github.com/vzhyvov/data-science-case-studies",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.46,
@@ -4952,41 +4960,8 @@
           "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "weightcashiercupola/Gemini-Config-Checker-",
-          "source_url": "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.46,
-          "matched_terms": [
-            "MCP"
-          ],
-          "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "WinnerSpecialist/Gemini-Config-Checker-",
-          "source_url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.46,
-          "matched_terms": [
-            "MCP"
-          ],
-          "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "VortexHostFeel/Gemini-Config-Checker-",
-          "source_url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-          "source_type": "repo",
-          "source_name": "github",
-          "match_score": 0.46,
-          "matched_terms": [
-            "MCP"
-          ],
-          "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
-        },
-        {
-          "title": "Visionbeyondtrack/Gemini-Config-Checker-",
-          "source_url": "https://github.com/Visionbeyondtrack/Gemini-Config-Checker-",
+          "title": "INK-Q/agy-fast",
+          "source_url": "https://github.com/INK-Q/agy-fast",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.46,
@@ -5016,44 +4991,53 @@
             "MCP"
           ],
           "why_included": "命中 MCP，匹配分 0.46，因此被纳入本轮代表性证据。"
+        },
+        {
+          "title": "sous-labs/songe",
+          "source_url": "https://github.com/sous-labs/songe",
+          "source_type": "repo",
+          "source_name": "github",
+          "match_score": 0.077,
+          "matched_terms": [],
+          "why_included": "匹配分 0.077，因此被纳入本轮代表性证据。"
         }
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 18 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 16 个。",
         "focus_terms": [
           "MCP",
           "RAG",
           "ReAct",
-          "gemini",
+          "agent",
           "agents",
-          "gemini-config-checker-",
-          "chain",
-          "region"
+          "llm",
+          "your",
+          "inference"
         ],
         "representative_titles": [
           "bookwjitchieni1986/blender-ai-mcp-addon",
-          "YellowLaborerMarket/Gemini-Config-Checker-",
-          "weightcashiercupola/Gemini-Config-Checker-",
-          "WinnerSpecialist/Gemini-Config-Checker-",
-          "VortexHostFeel/Gemini-Config-Checker-"
+          "w01fb0ss/PiBot",
+          "EL4CTEO/fast-anything",
+          "vzhyvov/data-science-case-studies",
+          "INK-Q/agy-fast"
         ],
         "related_institutions": [
-          "VortexPerfumer",
+          "OpenAI",
+          "vzhyvov",
           "bookwjitchieni1986",
-          "YellowLaborerMarket",
-          "weightcashiercupola",
-          "WinnerSpecialist",
-          "VortexHostFeel",
-          "Visionbeyondtrack",
-          "MIT"
+          "INK-Q",
+          "w01fb0ss",
+          "sous-labs",
+          "MIT",
+          "boringmarketer"
         ],
         "paper_count": 0,
-        "repo_count": 18,
-        "github_star_delta": 239,
-        "method_mentions": 13,
+        "repo_count": 16,
+        "github_star_delta": 318,
+        "method_mentions": 12,
         "dataset_mentions": 0,
-        "institution_mentions": 20
+        "institution_mentions": 21
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
@@ -5078,9 +5062,39 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "YellowLaborerMarket/Gemini-Config-Checker-",
-          "source_url": "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:48:18Z",
+          "title": "w01fb0ss/PiBot",
+          "source_url": "https://github.com/w01fb0ss/PiBot",
+          "published_at": "2026-11-21T06:54:24Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "EL4CTEO/fast-anything",
+          "source_url": "https://github.com/EL4CTEO/fast-anything",
+          "published_at": "2026-11-21T14:40:27Z",
+          "match_score": 0.537,
+          "matched_keywords": [
+            "MCP"
+          ],
+          "matched_methods": [
+            "MCP"
+          ],
+          "matched_datasets": []
+        },
+        {
+          "source_type": "repo",
+          "source_name": "github",
+          "title": "vzhyvov/data-science-case-studies",
+          "source_url": "https://github.com/vzhyvov/data-science-case-studies",
+          "published_at": "2026-11-17T18:04:49Z",
           "match_score": 0.46,
           "matched_keywords": [
             "MCP"
@@ -5093,39 +5107,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "weightcashiercupola/Gemini-Config-Checker-",
-          "source_url": "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:47:11Z",
-          "match_score": 0.46,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "WinnerSpecialist/Gemini-Config-Checker-",
-          "source_url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:47:17Z",
-          "match_score": 0.46,
-          "matched_keywords": [
-            "MCP"
-          ],
-          "matched_methods": [
-            "MCP"
-          ],
-          "matched_datasets": []
-        },
-        {
-          "source_type": "repo",
-          "source_name": "github",
-          "title": "VortexHostFeel/Gemini-Config-Checker-",
-          "source_url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-          "published_at": "2026-11-15T16:46:07Z",
+          "title": "INK-Q/agy-fast",
+          "source_url": "https://github.com/INK-Q/agy-fast",
+          "published_at": "2026-11-19T04:58:46Z",
           "match_score": 0.46,
           "matched_keywords": [
             "MCP"
@@ -5138,41 +5122,6 @@
       ],
       "trend_30d": [
         {
-          "ts": "2026-10-22T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 1275
-        },
-        {
-          "ts": "2026-10-22T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 18,
-          "github_star_delta": 1103
-        },
-        {
-          "ts": "2026-10-22T17",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 18,
-          "github_star_delta": 1002
-        },
-        {
-          "ts": "2026-10-22T21",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 18,
-          "github_star_delta": 849
-        },
-        {
-          "ts": "2026-10-23T00",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 19,
-          "github_star_delta": 611
-        },
-        {
           "ts": "2026-10-23T07",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -5885,31 +5834,31 @@
           "paper_count": 0,
           "repo_count": 17,
           "github_star_delta": 1441
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1520
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1512
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1031
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-19T12",
-          "magnitude": 5.8,
-          "paper_count": 0,
-          "repo_count": 12,
-          "github_star_delta": 624
-        },
-        {
-          "ts": "2026-09-19T17",
-          "magnitude": 5.85,
-          "paper_count": 0,
-          "repo_count": 13,
-          "github_star_delta": 531
-        },
-        {
-          "ts": "2026-09-19T20",
-          "magnitude": 5.85,
-          "paper_count": 0,
-          "repo_count": 13,
-          "github_star_delta": 438
-        },
-        {
           "ts": "2026-09-20T00",
           "magnitude": 5.33,
           "paper_count": 0,
@@ -7567,31 +7516,31 @@
           "paper_count": 0,
           "repo_count": 17,
           "github_star_delta": 1441
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1520
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1512
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1031
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-19T12",
-          "magnitude": 5.8,
-          "paper_count": 0,
-          "repo_count": 12,
-          "github_star_delta": 624
-        },
-        {
-          "ts": "2026-09-19T17",
-          "magnitude": 5.85,
-          "paper_count": 0,
-          "repo_count": 13,
-          "github_star_delta": 531
-        },
-        {
-          "ts": "2026-09-19T20",
-          "magnitude": 5.85,
-          "paper_count": 0,
-          "repo_count": 13,
-          "github_star_delta": 438
-        },
-        {
           "ts": "2026-09-20T00",
           "magnitude": 5.33,
           "paper_count": 0,
@@ -9249,19 +9198,40 @@
           "paper_count": 0,
           "repo_count": 17,
           "github_star_delta": 1441
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1520
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1512
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 6.0,
+          "paper_count": 0,
+          "repo_count": 16,
+          "github_star_delta": 1031
         }
       ]
     },
     {
       "topic": "Robotics",
       "title": "Robotics 出现强趋势震荡",
-      "magnitude": 5.77,
+      "magnitude": 5.87,
       "severity_label": "强趋势震荡",
       "summary": "Robotics 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.77，burst=5.451，growth_rate=-0.979，z_score=-13.427，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.87，burst=5.562，growth_rate=-0.979，z_score=-13.427，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 10",
+        "24h star 增量 19",
         "方法提及：VLA",
         "机构集中：Google DeepMind, google-deepmind, podomy"
       ],
@@ -9276,23 +9246,23 @@
         "growth_rate": -0.979,
         "z_score": -13.427,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.069,
+        "github_signal_score": 5.181,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
-        "institution_signal_score": 0.329,
+        "institution_signal_score": 0.343,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.381,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 10,
+        "github_star_delta": 19,
         "method_mentions": 1,
         "dataset_mentions": 0,
-        "institution_mentions": 8,
-        "burst_score": 5.451,
+        "institution_mentions": 9,
+        "burst_score": 5.562,
         "low_history_confidence": false,
-        "magnitude": 5.77
+        "magnitude": 5.87
       },
       "evidence": [
         {
@@ -9351,9 +9321,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Axellwppr/HITCH",
-          "source_url": "https://github.com/Axellwppr/HITCH",
-          "published_at": "2026-11-16T15:56:30Z",
+          "title": "stevens-katherine04/descript-win",
+          "source_url": "https://github.com/stevens-katherine04/descript-win",
+          "published_at": "2026-11-21T16:11:48Z",
           "match_score": 0.333,
           "matched_keywords": [
             "robotics"
@@ -9377,9 +9347,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "REVSIX/Pivot",
-          "source_url": "https://github.com/REVSIX/Pivot",
-          "published_at": "2026-11-20T04:58:28Z",
+          "title": "Axellwppr/HITCH",
+          "source_url": "https://github.com/Axellwppr/HITCH",
+          "published_at": "2026-11-16T15:56:30Z",
           "match_score": 0.333,
           "matched_keywords": [
             "robotics"
@@ -9393,9 +9363,9 @@
         "https://github.com/Axellwppr/HITCH",
         "https://github.com/General-Sequences/sequence-ai",
         "https://github.com/PlantPotatoOnMoon/TwoPass",
-        "https://github.com/REVSIX/Pivot",
         "https://github.com/google-deepmind/robotics-antigravity-plugin",
-        "https://github.com/podomy/weld"
+        "https://github.com/podomy/weld",
+        "https://github.com/stevens-katherine04/descript-win"
       ],
       "related_methods": [
         "VLA"
@@ -9406,15 +9376,15 @@
         "google-deepmind",
         "podomy",
         "Agentic-Intelligence-Lab",
-        "Axellwppr",
-        "General-Sequences",
-        "REVSIX",
-        "PlantPotatoOnMoon"
+        "Apple",
+        "stevens-katherine04",
+        "PlantPotatoOnMoon",
+        "General-Sequences"
       ],
       "suggested_watch_keywords": [
         "robotics",
-        "mujoco",
         "embodied-ai",
+        "video",
         "google-deepmind",
         "robotics-antigravity-plugin",
         "gdm",
@@ -9431,17 +9401,17 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Robotics:2026-11-21:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PlantPotatoOnMoon/TwoPass\", \"source_url\": \"https://github.com/PlantPotatoOnMoon/TwoPass\", \"published_at\": \"2026-11-18T05:41:16Z\", \"match_score\": 0.75, \"matched_keywords\": [\"manipulation\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"google-deepmind/robotics-antigravity-plugin\", \"source_url\": \"https://github.com/google-deepmind/robotics-antigravity-plugin\", \"published_at\": \"2026-11-16T18:50:28Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"podomy/weld\", \"source_url\": \"https://github.com/podomy/weld\", \"published_at\": \"2026-11-20T16:57:50Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Agentic-Intelligence-Lab/CleanRUA\", \"source_url\": \"https://github.com/Agentic-Intelligence-Lab/CleanRUA\", \"published_at\": \"2026-11-16T03:02:15Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Axellwppr/HITCH\", \"source_url\": \"https://github.com/Axellwppr/HITCH\", \"published_at\": \"2026-11-16T15:56:30Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"General-Sequences/sequence-ai\", \"source_url\": \"https://github.com/General-Sequences/sequence-ai\", \"published_at\": \"2026-11-17T00:14:54Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"REVSIX/Pivot\", \"source_url\": \"https://github.com/REVSIX/Pivot\", \"published_at\": \"2026-11-20T04:58:28Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld、Agentic-Intelligence-Lab/CleanRUA、Axellwppr/HITCH等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 10，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Axellwppr、General-Sequences、REVSIX、PlantPotatoOnMoon，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、mujoco、embodied-ai、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Robotics:2026-11-22:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PlantPotatoOnMoon/TwoPass\", \"source_url\": \"https://github.com/PlantPotatoOnMoon/TwoPass\", \"published_at\": \"2026-11-18T05:41:16Z\", \"match_score\": 0.75, \"matched_keywords\": [\"manipulation\", \"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"google-deepmind/robotics-antigravity-plugin\", \"source_url\": \"https://github.com/google-deepmind/robotics-antigravity-plugin\", \"published_at\": \"2026-11-16T18:50:28Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"podomy/weld\", \"source_url\": \"https://github.com/podomy/weld\", \"published_at\": \"2026-11-20T16:57:50Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Agentic-Intelligence-Lab/CleanRUA\", \"source_url\": \"https://github.com/Agentic-Intelligence-Lab/CleanRUA\", \"published_at\": \"2026-11-16T03:02:15Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"stevens-katherine04/descript-win\", \"source_url\": \"https://github.com/stevens-katherine04/descript-win\", \"published_at\": \"2026-11-21T16:11:48Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"General-Sequences/sequence-ai\", \"source_url\": \"https://github.com/General-Sequences/sequence-ai\", \"published_at\": \"2026-11-17T00:14:54Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Axellwppr/HITCH\", \"source_url\": \"https://github.com/Axellwppr/HITCH\", \"published_at\": \"2026-11-16T15:56:30Z\", \"match_score\": 0.333, \"matched_keywords\": [\"robotics\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Robotics」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld、Agentic-Intelligence-Lab/CleanRUA、stevens-katherine04/descript-win等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 19，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Apple、stevens-katherine04、PlantPotatoOnMoon、General-Sequences，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、embodied-ai、video、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“强趋势震荡”（M5.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向VLA、robotics、mujoco、embodied-ai、google-deepmind、robotics-antigravity-plugin等线索，代表条目包括PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld、Agentic-Intelligence-Lab/CleanRUA，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 10，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：Robotics 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“强趋势震荡”（M5.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向VLA、robotics、embodied-ai、video、google-deepmind、robotics-antigravity-plugin等线索，代表条目包括PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld、Agentic-Intelligence-Lab/CleanRUA，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 19，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Axellwppr、General-Sequences，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Apple、stevens-katherine04，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robotics、mujoco、embodied-ai、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察robotics、embodied-ai、video、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -9470,8 +9440,8 @@
             "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Axellwppr/HITCH",
-            "url": "https://github.com/Axellwppr/HITCH",
+            "title": "stevens-katherine04/descript-win",
+            "url": "https://github.com/stevens-katherine04/descript-win",
             "source": "github",
             "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
           },
@@ -9482,8 +9452,8 @@
             "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "REVSIX/Pivot",
-            "url": "https://github.com/REVSIX/Pivot",
+            "title": "Axellwppr/HITCH",
+            "url": "https://github.com/Axellwppr/HITCH",
             "source": "github",
             "reason": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
           }
@@ -9536,8 +9506,8 @@
           "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Axellwppr/HITCH",
-          "source_url": "https://github.com/Axellwppr/HITCH",
+          "title": "stevens-katherine04/descript-win",
+          "source_url": "https://github.com/stevens-katherine04/descript-win",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.333,
@@ -9558,8 +9528,8 @@
           "why_included": "命中 robotics，匹配分 0.333，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "REVSIX/Pivot",
-          "source_url": "https://github.com/REVSIX/Pivot",
+          "title": "Axellwppr/HITCH",
+          "source_url": "https://github.com/Axellwppr/HITCH",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.333,
@@ -9575,8 +9545,8 @@
         "focus_terms": [
           "VLA",
           "robotics",
-          "mujoco",
           "embodied-ai",
+          "video",
           "google-deepmind",
           "robotics-antigravity-plugin",
           "gdm",
@@ -9587,24 +9557,24 @@
           "google-deepmind/robotics-antigravity-plugin",
           "podomy/weld",
           "Agentic-Intelligence-Lab/CleanRUA",
-          "Axellwppr/HITCH"
+          "stevens-katherine04/descript-win"
         ],
         "related_institutions": [
           "Google DeepMind",
           "google-deepmind",
           "podomy",
           "Agentic-Intelligence-Lab",
-          "Axellwppr",
-          "General-Sequences",
-          "REVSIX",
-          "PlantPotatoOnMoon"
+          "Apple",
+          "stevens-katherine04",
+          "PlantPotatoOnMoon",
+          "General-Sequences"
         ],
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 10,
+        "github_star_delta": 19,
         "method_mentions": 1,
         "dataset_mentions": 0,
-        "institution_mentions": 8
+        "institution_mentions": 9
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
@@ -9666,9 +9636,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Axellwppr/HITCH",
-          "source_url": "https://github.com/Axellwppr/HITCH",
-          "published_at": "2026-11-16T15:56:30Z",
+          "title": "stevens-katherine04/descript-win",
+          "source_url": "https://github.com/stevens-katherine04/descript-win",
+          "published_at": "2026-11-21T16:11:48Z",
           "match_score": 0.333,
           "matched_keywords": [
             "robotics"
@@ -9679,34 +9649,6 @@
       ],
       "trend_30d": [
         {
-          "ts": "2026-10-22T04",
-          "magnitude": 3.72,
-          "paper_count": 0,
-          "repo_count": 6,
-          "github_star_delta": 72
-        },
-        {
-          "ts": "2026-10-22T17",
-          "magnitude": 3.72,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 46
-        },
-        {
-          "ts": "2026-10-22T21",
-          "magnitude": 3.75,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 37
-        },
-        {
-          "ts": "2026-10-23T00",
-          "magnitude": 3.75,
-          "paper_count": 0,
-          "repo_count": 4,
-          "github_star_delta": 37
-        },
-        {
           "ts": "2026-10-23T07",
           "magnitude": 3.77,
           "paper_count": 0,
@@ -10209,31 +10151,31 @@
           "paper_count": 0,
           "repo_count": 6,
           "github_star_delta": 95
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 3.49,
+          "paper_count": 0,
+          "repo_count": 6,
+          "github_star_delta": 109
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 3.51,
+          "paper_count": 0,
+          "repo_count": 6,
+          "github_star_delta": 99
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.96,
+          "paper_count": 0,
+          "repo_count": 7,
+          "github_star_delta": 62
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-12T22",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 159
-        },
-        {
-          "ts": "2026-09-13T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 192
-        },
-        {
-          "ts": "2026-09-13T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 314
-        },
-        {
           "ts": "2026-09-13T16",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -11891,31 +11833,31 @@
           "paper_count": 0,
           "repo_count": 6,
           "github_star_delta": 95
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 3.49,
+          "paper_count": 0,
+          "repo_count": 6,
+          "github_star_delta": 109
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 3.51,
+          "paper_count": 0,
+          "repo_count": 6,
+          "github_star_delta": 99
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.96,
+          "paper_count": 0,
+          "repo_count": 7,
+          "github_star_delta": 62
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-12T22",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 159
-        },
-        {
-          "ts": "2026-09-13T04",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 192
-        },
-        {
-          "ts": "2026-09-13T11",
-          "magnitude": 6.0,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 314
-        },
-        {
           "ts": "2026-09-13T16",
           "magnitude": 6.0,
           "paper_count": 0,
@@ -13573,19 +13515,40 @@
           "paper_count": 0,
           "repo_count": 6,
           "github_star_delta": 95
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 3.49,
+          "paper_count": 0,
+          "repo_count": 6,
+          "github_star_delta": 109
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 3.51,
+          "paper_count": 0,
+          "repo_count": 6,
+          "github_star_delta": 99
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.96,
+          "paper_count": 0,
+          "repo_count": 7,
+          "github_star_delta": 62
         }
       ]
     },
     {
       "topic": "Vision-Language-Action Model",
       "title": "Vision-Language-Action Model 出现强趋势震荡",
-      "magnitude": 5.77,
+      "magnitude": 5.87,
       "severity_label": "强趋势震荡",
       "summary": "Vision-Language-Action Model 在当前窗口内出现 0 条论文信号和 7 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.77，burst=5.451，growth_rate=-0.978，z_score=-10.093，cross_source=0.5。",
+      "calculation_summary": "magnitude=5.87，burst=5.562，growth_rate=-0.978，z_score=-10.09，cross_source=0.5。",
       "key_drivers": [
         "GitHub 项目 7 个",
-        "24h star 增量 10",
+        "24h star 增量 19",
         "方法提及：VLA",
         "机构集中：Google DeepMind, google-deepmind, podomy"
       ],
@@ -13594,29 +13557,29 @@
         "current_24h_count": 0,
         "current_72h_count": 7,
         "current_7d_count": 7,
-        "baseline_daily_avg_30d": 122.743,
-        "baseline_daily_std_30d": 34.789,
-        "baseline_72h_avg_30d": 368.229,
+        "baseline_daily_avg_30d": 121.297,
+        "baseline_daily_std_30d": 34.372,
+        "baseline_72h_avg_30d": 363.892,
         "growth_rate": -0.978,
-        "z_score": -10.093,
+        "z_score": -10.09,
         "paper_burst_score": 0.0,
-        "github_signal_score": 5.069,
+        "github_signal_score": 5.181,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
         "institution_concentration_score": 0.143,
-        "institution_signal_score": 0.329,
+        "institution_signal_score": 0.343,
         "dataset_signal_score": 0.0,
         "method_signal_score": 0.381,
         "cold_revival_score": 0.0,
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 10,
+        "github_star_delta": 19,
         "method_mentions": 1,
         "dataset_mentions": 0,
-        "institution_mentions": 8,
-        "burst_score": 5.451,
+        "institution_mentions": 9,
+        "burst_score": 5.562,
         "low_history_confidence": false,
-        "magnitude": 5.77
+        "magnitude": 5.87
       },
       "evidence": [
         {
@@ -13680,9 +13643,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Axellwppr/HITCH",
-          "source_url": "https://github.com/Axellwppr/HITCH",
-          "published_at": "2026-11-16T15:56:30Z",
+          "title": "stevens-katherine04/descript-win",
+          "source_url": "https://github.com/stevens-katherine04/descript-win",
+          "published_at": "2026-11-21T16:11:48Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -13691,9 +13654,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "REVSIX/Pivot",
-          "source_url": "https://github.com/REVSIX/Pivot",
-          "published_at": "2026-11-20T04:58:28Z",
+          "title": "Axellwppr/HITCH",
+          "source_url": "https://github.com/Axellwppr/HITCH",
+          "published_at": "2026-11-16T15:56:30Z",
           "match_score": 0.083,
           "matched_keywords": [],
           "matched_methods": [],
@@ -13705,9 +13668,9 @@
         "https://github.com/Axellwppr/HITCH",
         "https://github.com/General-Sequences/sequence-ai",
         "https://github.com/PlantPotatoOnMoon/TwoPass",
-        "https://github.com/REVSIX/Pivot",
         "https://github.com/google-deepmind/robotics-antigravity-plugin",
-        "https://github.com/podomy/weld"
+        "https://github.com/podomy/weld",
+        "https://github.com/stevens-katherine04/descript-win"
       ],
       "related_methods": [
         "VLA"
@@ -13718,15 +13681,15 @@
         "google-deepmind",
         "podomy",
         "Agentic-Intelligence-Lab",
-        "Axellwppr",
-        "General-Sequences",
-        "REVSIX",
-        "PlantPotatoOnMoon"
+        "Apple",
+        "stevens-katherine04",
+        "PlantPotatoOnMoon",
+        "General-Sequences"
       ],
       "suggested_watch_keywords": [
         "robotics",
-        "mujoco",
         "embodied-ai",
+        "video",
         "google-deepmind",
         "robotics-antigravity-plugin",
         "gdm",
@@ -13743,17 +13706,17 @@
         "Watchlist 命中"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:Vision-Language-Action Model:2026-11-21:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"General-Sequences/sequence-ai\", \"source_url\": \"https://github.com/General-Sequences/sequence-ai\", \"published_at\": \"2026-11-17T00:14:54Z\", \"match_score\": 0.75, \"matched_keywords\": [\"VLA\", \"vision-language-action\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PlantPotatoOnMoon/TwoPass\", \"source_url\": \"https://github.com/PlantPotatoOnMoon/TwoPass\", \"published_at\": \"2026-11-18T05:41:16Z\", \"match_score\": 0.167, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"google-deepmind/robotics-antigravity-plugin\", \"source_url\": \"https://github.com/google-deepmind/robotics-antigravity-plugin\", \"published_at\": \"2026-11-16T18:50:28Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"podomy/weld\", \"source_url\": \"https://github.com/podomy/weld\", \"published_at\": \"2026-11-20T16:57:50Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Agentic-Intelligence-Lab/CleanRUA\", \"source_url\": \"https://github.com/Agentic-Intelligence-Lab/CleanRUA\", \"published_at\": \"2026-11-16T03:02:15Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Axellwppr/HITCH\", \"source_url\": \"https://github.com/Axellwppr/HITCH\", \"published_at\": \"2026-11-16T15:56:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"REVSIX/Pivot\", \"source_url\": \"https://github.com/REVSIX/Pivot\", \"published_at\": \"2026-11-20T04:58:28Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.8）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括General-Sequences/sequence-ai、PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld、Agentic-Intelligence-Lab/CleanRUA等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 10，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Axellwppr、General-Sequences、REVSIX、PlantPotatoOnMoon，累计提及 8 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、mujoco、embodied-ai、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:Vision-Language-Action Model:2026-11-22:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"General-Sequences/sequence-ai\", \"source_url\": \"https://github.com/General-Sequences/sequence-ai\", \"published_at\": \"2026-11-17T00:14:54Z\", \"match_score\": 0.75, \"matched_keywords\": [\"VLA\", \"vision-language-action\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"PlantPotatoOnMoon/TwoPass\", \"source_url\": \"https://github.com/PlantPotatoOnMoon/TwoPass\", \"published_at\": \"2026-11-18T05:41:16Z\", \"match_score\": 0.167, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"google-deepmind/robotics-antigravity-plugin\", \"source_url\": \"https://github.com/google-deepmind/robotics-antigravity-plugin\", \"published_at\": \"2026-11-16T18:50:28Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"podomy/weld\", \"source_url\": \"https://github.com/podomy/weld\", \"published_at\": \"2026-11-20T16:57:50Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Agentic-Intelligence-Lab/CleanRUA\", \"source_url\": \"https://github.com/Agentic-Intelligence-Lab/CleanRUA\", \"published_at\": \"2026-11-16T03:02:15Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"stevens-katherine04/descript-win\", \"source_url\": \"https://github.com/stevens-katherine04/descript-win\", \"published_at\": \"2026-11-21T16:11:48Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Axellwppr/HITCH\", \"source_url\": \"https://github.com/Axellwppr/HITCH\", \"published_at\": \"2026-11-16T15:56:30Z\", \"match_score\": 0.083, \"matched_keywords\": [], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「Vision-Language-Action Model」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.9）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 7 个。代表性目标包括General-Sequences/sequence-ai、PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld、Agentic-Intelligence-Lab/CleanRUA等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 7 条。开源侧 24 小时 star 增量约为 19，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到VLA等线索，方法提及 1 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Apple、stevens-katherine04、PlantPotatoOnMoon、General-Sequences，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察robotics、embodied-ai、video、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“强趋势震荡”（M5.8）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向VLA、robotics、mujoco、embodied-ai、google-deepmind、robotics-antigravity-plugin等线索，代表条目包括General-Sequences/sequence-ai、PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 10，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "总体判断：Vision-Language-Action Model 本轮由论文 0 条、GitHub 项目 7 个共同构成观测基础，当前强度为“强趋势震荡”（M5.9）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向VLA、robotics、embodied-ai、video、google-deepmind、robotics-antigravity-plugin等线索，代表条目包括General-Sequences/sequence-ai、PlantPotatoOnMoon/TwoPass、google-deepmind/robotics-antigravity-plugin、podomy/weld，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 7 个 GitHub 项目，24 小时 star 增量约 19，说明该方向在开源生态中已出现可量化的短期关注度。",
         "研究侧归纳：虽然论文条目不足，但方法相关提及 1 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Axellwppr、General-Sequences，累计提及 8 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "机构与账号归纳：相关信号涉及Google DeepMind、google-deepmind、podomy、Agentic-Intelligence-Lab、Apple、stevens-katherine04，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 7 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
-        "观察建议：后续重点观察robotics、mujoco、embodied-ai、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
+        "观察建议：后续重点观察robotics、embodied-ai、video、google-deepmind、robotics-antigravity-plugin、gdm、skills、agentic是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
       "source_link_groups": {
         "代表项目": [
@@ -13788,14 +13751,14 @@
             "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Axellwppr/HITCH",
-            "url": "https://github.com/Axellwppr/HITCH",
+            "title": "stevens-katherine04/descript-win",
+            "url": "https://github.com/stevens-katherine04/descript-win",
             "source": "github",
             "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "REVSIX/Pivot",
-            "url": "https://github.com/REVSIX/Pivot",
+            "title": "Axellwppr/HITCH",
+            "url": "https://github.com/Axellwppr/HITCH",
             "source": "github",
             "reason": "匹配分 0.083，因此被纳入本轮代表性证据。"
           }
@@ -13851,8 +13814,8 @@
           "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Axellwppr/HITCH",
-          "source_url": "https://github.com/Axellwppr/HITCH",
+          "title": "stevens-katherine04/descript-win",
+          "source_url": "https://github.com/stevens-katherine04/descript-win",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.083,
@@ -13860,8 +13823,8 @@
           "why_included": "匹配分 0.083，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "REVSIX/Pivot",
-          "source_url": "https://github.com/REVSIX/Pivot",
+          "title": "Axellwppr/HITCH",
+          "source_url": "https://github.com/Axellwppr/HITCH",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.083,
@@ -13875,8 +13838,8 @@
         "focus_terms": [
           "VLA",
           "robotics",
-          "mujoco",
           "embodied-ai",
+          "video",
           "google-deepmind",
           "robotics-antigravity-plugin",
           "gdm",
@@ -13894,17 +13857,17 @@
           "google-deepmind",
           "podomy",
           "Agentic-Intelligence-Lab",
-          "Axellwppr",
-          "General-Sequences",
-          "REVSIX",
-          "PlantPotatoOnMoon"
+          "Apple",
+          "stevens-katherine04",
+          "PlantPotatoOnMoon",
+          "General-Sequences"
         ],
         "paper_count": 0,
         "repo_count": 7,
-        "github_star_delta": 10,
+        "github_star_delta": 19,
         "method_mentions": 1,
         "dataset_mentions": 0,
-        "institution_mentions": 8
+        "institution_mentions": 9
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
@@ -14249,86 +14212,16 @@
           "paper_count": 0,
           "repo_count": 7,
           "github_star_delta": 111
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.96,
+          "paper_count": 0,
+          "repo_count": 7,
+          "github_star_delta": 62
         }
       ],
       "trend_90d": [
-        {
-          "ts": "2026-08-23T04",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 22
-        },
-        {
-          "ts": "2026-08-23T07",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 22
-        },
-        {
-          "ts": "2026-08-23T08",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 21
-        },
-        {
-          "ts": "2026-08-23T10",
-          "magnitude": 4.02,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 17
-        },
-        {
-          "ts": "2026-08-23T13",
-          "magnitude": 4.02,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 17
-        },
-        {
-          "ts": "2026-08-23T14",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 21
-        },
-        {
-          "ts": "2026-08-23T16",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 24
-        },
-        {
-          "ts": "2026-08-23T18",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 24
-        },
-        {
-          "ts": "2026-08-23T20",
-          "magnitude": 4.04,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 28
-        },
-        {
-          "ts": "2026-08-23T22",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 30
-        },
-        {
-          "ts": "2026-08-24T01",
-          "magnitude": 4.0,
-          "paper_count": 0,
-          "repo_count": 6,
-          "github_star_delta": 39
-        },
         {
           "ts": "2026-08-24T03",
           "magnitude": 4.0,
@@ -15875,16 +15768,16 @@
           "paper_count": 0,
           "repo_count": 7,
           "github_star_delta": 111
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.96,
+          "paper_count": 0,
+          "repo_count": 7,
+          "github_star_delta": 62
         }
       ],
       "trend_180d": [
-        {
-          "ts": "2026-08-22T13",
-          "magnitude": 4.03,
-          "paper_count": 0,
-          "repo_count": 5,
-          "github_star_delta": 27
-        },
         {
           "ts": "2026-08-22T14",
           "magnitude": 4.03,
@@ -17557,50 +17450,57 @@
           "paper_count": 0,
           "repo_count": 7,
           "github_star_delta": 111
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.96,
+          "paper_count": 0,
+          "repo_count": 7,
+          "github_star_delta": 62
         }
       ]
     },
     {
       "topic": "RAG",
       "title": "RAG 出现强趋势震荡",
-      "magnitude": 5.67,
+      "magnitude": 5.69,
       "severity_label": "强趋势震荡",
-      "summary": "RAG 在当前窗口内出现 0 条论文信号和 8 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
-      "calculation_summary": "magnitude=5.67，burst=5.749，growth_rate=-0.984，z_score=-26.967，cross_source=0.5。",
+      "summary": "RAG 在当前窗口内出现 0 条论文信号和 9 个 GitHub 项目信号，来源覆盖 repo，系统判定为强趋势震荡。",
+      "calculation_summary": "magnitude=5.69，burst=5.813，growth_rate=-0.982，z_score=-26.691，cross_source=0.5。",
       "key_drivers": [
-        "GitHub 项目 8 个",
-        "24h star 增量 86",
+        "GitHub 项目 9 个",
+        "24h star 增量 10",
         "方法提及：RAG, MCP",
-        "机构集中：Tarikh792, Nihongo-editor, han938"
+        "机构集中：Tarikh792, han938, OpenAI"
       ],
       "metrics": {
         "current_1h_count": 0,
         "current_24h_count": 0,
-        "current_72h_count": 8,
-        "current_7d_count": 8,
-        "baseline_daily_avg_30d": 181.895,
-        "baseline_daily_std_30d": 18.939,
-        "baseline_72h_avg_30d": 545.684,
-        "growth_rate": -0.984,
-        "z_score": -26.967,
+        "current_72h_count": 9,
+        "current_7d_count": 9,
+        "baseline_daily_avg_30d": 181.677,
+        "baseline_daily_std_30d": 19.083,
+        "baseline_72h_avg_30d": 545.032,
+        "growth_rate": -0.982,
+        "z_score": -26.691,
         "paper_burst_score": 0.0,
-        "github_signal_score": 4.43,
+        "github_signal_score": 4.446,
         "source_diversity_score": 0.5,
         "cross_source_confirmation_score": 0.5,
-        "institution_concentration_score": 0.125,
-        "institution_signal_score": 0.3,
+        "institution_concentration_score": 0.111,
+        "institution_signal_score": 0.276,
         "dataset_signal_score": 0.0,
-        "method_signal_score": 1.319,
+        "method_signal_score": 1.367,
         "cold_revival_score": 0.0,
         "paper_count": 0,
-        "repo_count": 8,
-        "github_star_delta": 86,
-        "method_mentions": 10,
+        "repo_count": 9,
+        "github_star_delta": 10,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 9,
-        "burst_score": 5.749,
+        "institution_mentions": 10,
+        "burst_score": 5.813,
         "low_history_confidence": false,
-        "magnitude": 5.67
+        "magnitude": 5.69
       },
       "evidence": [
         {
@@ -17620,10 +17520,10 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Tarikh792/Tarikh792",
-          "source_url": "https://github.com/Tarikh792/Tarikh792",
-          "published_at": "2026-11-17T21:30:33Z",
-          "match_score": 0.56,
+          "title": "punit2911/meridian-multimodal-rag",
+          "source_url": "https://github.com/punit2911/meridian-multimodal-rag",
+          "published_at": "2026-11-16T12:11:22Z",
+          "match_score": 0.63,
           "matched_keywords": [
             "RAG",
             "rag"
@@ -17634,9 +17534,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Nihongo-editor/crypto-accumulation-scanner",
-          "source_url": "https://github.com/Nihongo-editor/crypto-accumulation-scanner",
-          "published_at": "2026-11-15T19:41:23Z",
+          "title": "Tarikh792/Tarikh792",
+          "source_url": "https://github.com/Tarikh792/Tarikh792",
+          "published_at": "2026-11-17T21:30:33Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -17718,12 +17618,13 @@
       ],
       "source_urls": [
         "https://github.com/KaelLee335/enterprise-support-agent-v2",
-        "https://github.com/Nihongo-editor/crypto-accumulation-scanner",
         "https://github.com/Tarikh792/Tarikh792",
+        "https://github.com/bl8ds/AgentDesk-Private-Deployable-Knowledge-Base-Agent-Platform",
         "https://github.com/chase1225/anythingllm-verona-document-chat",
         "https://github.com/han938/open-webui-private-ai-desk",
         "https://github.com/kenzz-devv/open-webui-talora-ai-workspace",
         "https://github.com/ntu0831/RAG-MCP-Server",
+        "https://github.com/punit2911/meridian-multimodal-rag",
         "https://github.com/yzsind/mydb"
       ],
       "related_methods": [
@@ -17733,13 +17634,13 @@
       "related_datasets": [],
       "related_institutions": [
         "Tarikh792",
-        "Nihongo-editor",
         "han938",
         "OpenAI",
         "kenzz-devv",
         "chase1225",
         "KaelLee335",
-        "yzsind"
+        "yzsind",
+        "punit2911"
       ],
       "suggested_watch_keywords": [
         "rag",
@@ -17760,15 +17661,15 @@
         "开源驱动"
       ],
       "push_recommended": true,
-      "dedupe_key": "trend:RAG:2026-11-21:强趋势震荡",
-      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yzsind/mydb\", \"source_url\": \"https://github.com/yzsind/mydb\", \"published_at\": \"2026-11-16T22:52:44Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tarikh792/Tarikh792\", \"source_url\": \"https://github.com/Tarikh792/Tarikh792\", \"published_at\": \"2026-11-17T21:30:33Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Nihongo-editor/crypto-accumulation-scanner\", \"source_url\": \"https://github.com/Nihongo-editor/crypto-accumulation-scanner\", \"published_at\": \"2026-11-15T19:41:23Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"han938/open-webui-private-ai-desk\", \"source_url\": \"https://github.com/han938/open-webui-private-ai-desk\", \"published_at\": \"2026-11-20T14:25:27Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kenzz-devv/open-webui-talora-ai-workspace\", \"source_url\": \"https://github.com/kenzz-devv/open-webui-talora-ai-workspace\", \"published_at\": \"2026-11-18T14:18:51Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chase1225/anythingllm-verona-document-chat\", \"source_url\": \"https://github.com/chase1225/anythingllm-verona-document-chat\", \"published_at\": \"2026-11-19T23:46:33Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KaelLee335/enterprise-support-agent-v2\", \"source_url\": \"https://github.com/KaelLee335/enterprise-support-agent-v2\", \"published_at\": \"2026-11-16T02:40:22Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ntu0831/RAG-MCP-Server\", \"source_url\": \"https://github.com/ntu0831/RAG-MCP-Server\", \"published_at\": \"2026-11-19T06:37:11Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
-      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 8 个。代表性目标包括yzsind/mydb、Tarikh792/Tarikh792、Nihongo-editor/crypto-accumulation-scanner、han938/open-webui-private-ai-desk、kenzz-devv/open-webui-talora-ai-workspace等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 86，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 10 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Tarikh792、Nihongo-editor、han938、OpenAI、kenzz-devv、chase1225、KaelLee335、yzsind，累计提及 9 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、agent、chat、chatbot、python、knowledge-base、workspace等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
+      "dedupe_key": "trend:RAG:2026-11-22:强趋势震荡",
+      "evidence_json_string": "[{\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"yzsind/mydb\", \"source_url\": \"https://github.com/yzsind/mydb\", \"published_at\": \"2026-11-16T22:52:44Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"punit2911/meridian-multimodal-rag\", \"source_url\": \"https://github.com/punit2911/meridian-multimodal-rag\", \"published_at\": \"2026-11-16T12:11:22Z\", \"match_score\": 0.63, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"Tarikh792/Tarikh792\", \"source_url\": \"https://github.com/Tarikh792/Tarikh792\", \"published_at\": \"2026-11-17T21:30:33Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"han938/open-webui-private-ai-desk\", \"source_url\": \"https://github.com/han938/open-webui-private-ai-desk\", \"published_at\": \"2026-11-20T14:25:27Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"kenzz-devv/open-webui-talora-ai-workspace\", \"source_url\": \"https://github.com/kenzz-devv/open-webui-talora-ai-workspace\", \"published_at\": \"2026-11-18T14:18:51Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"chase1225/anythingllm-verona-document-chat\", \"source_url\": \"https://github.com/chase1225/anythingllm-verona-document-chat\", \"published_at\": \"2026-11-19T23:46:33Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"KaelLee335/enterprise-support-agent-v2\", \"source_url\": \"https://github.com/KaelLee335/enterprise-support-agent-v2\", \"published_at\": \"2026-11-16T02:40:22Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}, {\"source_type\": \"repo\", \"source_name\": \"github\", \"title\": \"ntu0831/RAG-MCP-Server\", \"source_url\": \"https://github.com/ntu0831/RAG-MCP-Server\", \"published_at\": \"2026-11-19T06:37:11Z\", \"match_score\": 0.56, \"matched_keywords\": [\"RAG\", \"rag\"], \"matched_methods\": [], \"matched_datasets\": []}]",
+      "curated_summary": "本次抓取围绕「RAG」相关公开信号进行汇总，系统将其判定为“强趋势震荡”（M5.7）。从抓取目标看，当前信号主要来自开源项目，当前窗口内捕获到GitHub 项目 9 个。代表性目标包括yzsind/mydb、punit2911/meridian-multimodal-rag、Tarikh792/Tarikh792、han938/open-webui-private-ai-desk、kenzz-devv/open-webui-talora-ai-workspace等，它们构成了本轮判断的主要证据链；代表性证据覆盖repo 8 条。开源侧 24 小时 star 增量约为 10，说明该方向至少在短期工程关注度上出现了可观察的聚集。方法层面，抓取内容集中关联到RAG、MCP等线索，方法提及 11 次，反映出该热点并非单一项目噪声，而是与具体技术路径或工具范式相连。机构与账号层面，相关信号涉及Tarikh792、han938、OpenAI、kenzz-devv、chase1225、KaelLee335、yzsind、punit2911，累计提及 10 次，提示该热点可能存在机构发布、开发者群体或生态账号的集中活动。后续应重点观察rag、llm、agent、chat、chatbot、python、knowledge-base、workspace等词是否继续在论文、repo 和项目描述中同时出现。当前置信度为 0.7。",
       "signal_takeaways": [
-        "总体判断：RAG 本轮由论文 0 条、GitHub 项目 8 个共同构成观测基础，当前强度为“强趋势震荡”（M5.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
-        "内容重点：抓取到的多个目标集中指向RAG、MCP、llm、agent、chat、chatbot等线索，代表条目包括yzsind/mydb、Tarikh792/Tarikh792、Nihongo-editor/crypto-accumulation-scanner、han938/open-webui-private-ai-desk，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
-        "工程侧归纳：本轮包含 8 个 GitHub 项目，24 小时 star 增量约 86，说明该方向在开源生态中已出现可量化的短期关注度。",
-        "研究侧归纳：虽然论文条目不足，但方法相关提及 10 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
-        "机构与账号归纳：相关信号涉及Tarikh792、Nihongo-editor、han938、OpenAI、kenzz-devv、chase1225，累计提及 9 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
+        "总体判断：RAG 本轮由论文 0 条、GitHub 项目 9 个共同构成观测基础，当前强度为“强趋势震荡”（M5.7）。这说明系统捕获到的不是孤立条目，而是一组围绕同一方向聚合的公开信号。",
+        "内容重点：抓取到的多个目标集中指向RAG、MCP、llm、agent、chat、chatbot等线索，代表条目包括yzsind/mydb、punit2911/meridian-multimodal-rag、Tarikh792/Tarikh792、han938/open-webui-private-ai-desk，说明该热点已经从关键词命中延伸到具体项目、论文或工具对象。",
+        "工程侧归纳：本轮包含 9 个 GitHub 项目，24 小时 star 增量约 10，说明该方向在开源生态中已出现可量化的短期关注度。",
+        "研究侧归纳：虽然论文条目不足，但方法相关提及 11 次、数据集/Benchmark 相关提及 0 次，说明仍有研究线索值得跟踪。",
+        "机构与账号归纳：相关信号涉及Tarikh792、han938、OpenAI、kenzz-devv、chase1225、KaelLee335，累计提及 10 次。该信息更适合作为生态活跃度线索，不宜直接解释为机构正式战略判断。",
         "证据链归纳：代表性证据覆盖 repo 8 条。下方信号链接保留原始来源，便于回看每个判断所依据的项目、论文或网页。",
         "观察建议：后续重点观察rag、llm、agent、chat、chatbot、python、knowledge-base、workspace是否继续出现。如果后续 3-7 天仍能同时看到项目、论文、方法词或机构账号信号，该热点的趋势可信度才会进一步提高。"
       ],
@@ -17781,14 +17682,14 @@
             "reason": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Tarikh792/Tarikh792",
-            "url": "https://github.com/Tarikh792/Tarikh792",
+            "title": "punit2911/meridian-multimodal-rag",
+            "url": "https://github.com/punit2911/meridian-multimodal-rag",
             "source": "github",
-            "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+            "reason": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
           },
           {
-            "title": "Nihongo-editor/crypto-accumulation-scanner",
-            "url": "https://github.com/Nihongo-editor/crypto-accumulation-scanner",
+            "title": "Tarikh792/Tarikh792",
+            "url": "https://github.com/Tarikh792/Tarikh792",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
           },
@@ -17821,6 +17722,12 @@
             "url": "https://github.com/ntu0831/RAG-MCP-Server",
             "source": "github",
             "reason": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          },
+          {
+            "title": "bl8ds/AgentDesk-Private-Deployable-Knowledge-Base-Agent-Platform",
+            "url": "https://github.com/bl8ds/AgentDesk-Private-Deployable-Knowledge-Base-Agent-Platform",
+            "source": "github",
+            "reason": "关联到该热点的原始信号链接。"
           }
         ]
       },
@@ -17837,19 +17744,19 @@
           "why_included": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Tarikh792/Tarikh792",
-          "source_url": "https://github.com/Tarikh792/Tarikh792",
+          "title": "punit2911/meridian-multimodal-rag",
+          "source_url": "https://github.com/punit2911/meridian-multimodal-rag",
           "source_type": "repo",
           "source_name": "github",
-          "match_score": 0.56,
+          "match_score": 0.63,
           "matched_terms": [
             "RAG"
           ],
-          "why_included": "命中 RAG，匹配分 0.56，因此被纳入本轮代表性证据。"
+          "why_included": "命中 RAG，匹配分 0.63，因此被纳入本轮代表性证据。"
         },
         {
-          "title": "Nihongo-editor/crypto-accumulation-scanner",
-          "source_url": "https://github.com/Nihongo-editor/crypto-accumulation-scanner",
+          "title": "Tarikh792/Tarikh792",
+          "source_url": "https://github.com/Tarikh792/Tarikh792",
           "source_type": "repo",
           "source_name": "github",
           "match_score": 0.56,
@@ -17916,7 +17823,7 @@
       ],
       "signal_focus": {
         "dominant_source": "开源项目",
-        "source_mix": "当前窗口内捕获到GitHub 项目 8 个。",
+        "source_mix": "当前窗口内捕获到GitHub 项目 9 个。",
         "focus_terms": [
           "RAG",
           "MCP",
@@ -17929,27 +17836,27 @@
         ],
         "representative_titles": [
           "yzsind/mydb",
+          "punit2911/meridian-multimodal-rag",
           "Tarikh792/Tarikh792",
-          "Nihongo-editor/crypto-accumulation-scanner",
           "han938/open-webui-private-ai-desk",
           "kenzz-devv/open-webui-talora-ai-workspace"
         ],
         "related_institutions": [
           "Tarikh792",
-          "Nihongo-editor",
           "han938",
           "OpenAI",
           "kenzz-devv",
           "chase1225",
           "KaelLee335",
-          "yzsind"
+          "yzsind",
+          "punit2911"
         ],
         "paper_count": 0,
-        "repo_count": 8,
-        "github_star_delta": 86,
-        "method_mentions": 10,
+        "repo_count": 9,
+        "github_star_delta": 10,
+        "method_mentions": 11,
         "dataset_mentions": 0,
-        "institution_mentions": 9
+        "institution_mentions": 10
       },
       "curation_method": "deterministic_natural_language_v2",
       "why_it_matters": "开源项目出现同步信号，可能意味着工程生态正在加速试验。",
@@ -17972,10 +17879,10 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Tarikh792/Tarikh792",
-          "source_url": "https://github.com/Tarikh792/Tarikh792",
-          "published_at": "2026-11-17T21:30:33Z",
-          "match_score": 0.56,
+          "title": "punit2911/meridian-multimodal-rag",
+          "source_url": "https://github.com/punit2911/meridian-multimodal-rag",
+          "published_at": "2026-11-16T12:11:22Z",
+          "match_score": 0.63,
           "matched_keywords": [
             "RAG",
             "rag"
@@ -17986,9 +17893,9 @@
         {
           "source_type": "repo",
           "source_name": "github",
-          "title": "Nihongo-editor/crypto-accumulation-scanner",
-          "source_url": "https://github.com/Nihongo-editor/crypto-accumulation-scanner",
-          "published_at": "2026-11-15T19:41:23Z",
+          "title": "Tarikh792/Tarikh792",
+          "source_url": "https://github.com/Tarikh792/Tarikh792",
+          "published_at": "2026-11-17T21:30:33Z",
           "match_score": 0.56,
           "matched_keywords": [
             "RAG",
@@ -18028,41 +17935,6 @@
       ],
       "trend_30d": [
         {
-          "ts": "2026-10-22T04",
-          "magnitude": 5.25,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 79
-        },
-        {
-          "ts": "2026-10-22T11",
-          "magnitude": 5.31,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 107
-        },
-        {
-          "ts": "2026-10-22T17",
-          "magnitude": 5.34,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 121
-        },
-        {
-          "ts": "2026-10-22T21",
-          "magnitude": 5.35,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 106
-        },
-        {
-          "ts": "2026-10-23T00",
-          "magnitude": 5.31,
-          "paper_count": 0,
-          "repo_count": 8,
-          "github_star_delta": 89
-        },
-        {
           "ts": "2026-10-23T07",
           "magnitude": 5.34,
           "paper_count": 0,
@@ -18768,31 +18640,31 @@
           "paper_count": 0,
           "repo_count": 9,
           "github_star_delta": 126
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 5.72,
+          "paper_count": 0,
+          "repo_count": 9,
+          "github_star_delta": 129
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 5.69,
+          "paper_count": 0,
+          "repo_count": 9,
+          "github_star_delta": 110
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.64,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 68
         }
       ],
       "trend_90d": [
         {
-          "ts": "2026-09-20T00",
-          "magnitude": 4.87,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 16
-        },
-        {
-          "ts": "2026-09-20T04",
-          "magnitude": 5.23,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 20
-        },
-        {
-          "ts": "2026-09-20T11",
-          "magnitude": 5.28,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 24
-        },
-        {
           "ts": "2026-09-20T16",
           "magnitude": 5.29,
           "paper_count": 0,
@@ -20450,31 +20322,31 @@
           "paper_count": 0,
           "repo_count": 9,
           "github_star_delta": 126
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 5.72,
+          "paper_count": 0,
+          "repo_count": 9,
+          "github_star_delta": 129
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 5.69,
+          "paper_count": 0,
+          "repo_count": 9,
+          "github_star_delta": 110
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.64,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 68
         }
       ],
       "trend_180d": [
         {
-          "ts": "2026-09-20T00",
-          "magnitude": 4.87,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 16
-        },
-        {
-          "ts": "2026-09-20T04",
-          "magnitude": 5.23,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 20
-        },
-        {
-          "ts": "2026-09-20T11",
-          "magnitude": 5.28,
-          "paper_count": 0,
-          "repo_count": 7,
-          "github_star_delta": 24
-        },
-        {
           "ts": "2026-09-20T16",
           "magnitude": 5.29,
           "paper_count": 0,
@@ -22132,6 +22004,27 @@
           "paper_count": 0,
           "repo_count": 9,
           "github_star_delta": 126
+        },
+        {
+          "ts": "2026-11-21T12",
+          "magnitude": 5.72,
+          "paper_count": 0,
+          "repo_count": 9,
+          "github_star_delta": 129
+        },
+        {
+          "ts": "2026-11-21T20",
+          "magnitude": 5.69,
+          "paper_count": 0,
+          "repo_count": 9,
+          "github_star_delta": 110
+        },
+        {
+          "ts": "2026-11-22T02",
+          "magnitude": 5.64,
+          "paper_count": 0,
+          "repo_count": 8,
+          "github_star_delta": 68
         }
       ]
     }
